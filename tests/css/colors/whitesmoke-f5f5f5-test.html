@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSS Test: whitesmoke == #f5f5f5</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<style type="text/css">
+div { width: 100px; height: 100px; border: 1px solid black }
+div#control { background-color: #f5f5f5 }
+div#test { background-color: whitesmoke }
+</style>
+<body>
+<p>The following two squares should be the same color:</p>
+<div id="control"></div>
+<br>
+<div id="test"></div>
+<script type="text/javascript">
+function testNamedColorWhitesmokef5f5f5() {
+  assertEquals("whitesmoke == #f5f5f5",
+    encyclopedia.getComputedStyleById('control').getPropertyValue('background-color'),
+    encyclopedia.getComputedStyleById('test')   .getPropertyValue('background-color'));
+}
+</script>
+</body>
+</head>
+</html>
