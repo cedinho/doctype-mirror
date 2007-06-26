@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>window.window typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[WindowWindowProperty] typeOf(window.window) != 'undefined'",
+    encyclopedia.typeOf(window.window),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>document.cookie typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[DocumentCookieProperty] typeOf(document.cookie) != 'undefined'",
+    encyclopedia.typeOf(document.cookie),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>

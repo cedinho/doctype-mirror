@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>navigator.mimeTypes typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[NavigatorMimetypesProperty] typeOf(navigator.mimeTypes) != 'undefined'",
+    encyclopedia.typeOf(navigator.mimeTypes),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>

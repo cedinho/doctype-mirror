@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>navigator.product typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[NavigatorProductProperty] typeOf(navigator.product) != 'undefined'",
+    encyclopedia.typeOf(navigator.product),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>

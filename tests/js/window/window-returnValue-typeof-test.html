@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>window.returnValue typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[WindowReturnvalueProperty] typeOf(window.returnValue) != 'undefined'",
+    encyclopedia.typeOf(window.returnValue),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>

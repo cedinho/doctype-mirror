@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>window.scrollbars typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[WindowScrollbarsProperty] typeOf(window.scrollbars) != 'undefined'",
+    encyclopedia.typeOf(window.scrollbars),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>

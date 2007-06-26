@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>window.menubar typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[WindowMenubarProperty] typeOf(window.menubar) != 'undefined'",
+    encyclopedia.typeOf(window.menubar),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>

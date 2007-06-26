@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>window.setInterval typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[WindowSetintervalMethod] typeOf(window.setInterval) != 'undefined'",
+    encyclopedia.typeOf(window.setInterval),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>

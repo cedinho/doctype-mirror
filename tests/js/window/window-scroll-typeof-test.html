@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>window.scroll typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[WindowScrollMethod] typeOf(window.scroll) != 'undefined'",
+    encyclopedia.typeOf(window.scroll),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>

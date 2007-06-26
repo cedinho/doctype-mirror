@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>window.controllers typeof test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[WindowControllersProperty] typeOf(window.controllers) != 'undefined'",
+    encyclopedia.typeOf(window.controllers),
+    "undefined");
+}
+</script>
+</body>
+</head>
+</html>
