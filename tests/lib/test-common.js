@@ -1,10 +1,10 @@
 var encyclopedia = {
-    getComputedStyle: function(elem) {
-	return document.defaultView.getComputedStyle(elem, null);
+    getComputedStyle: function(elem, style) {
+	return goog.style.getStyle_(elem, style);
     },
 
-    getComputedStyleById: function(id) {
-	return this.getComputedStyle(document.getElementById(id));
+    getComputedStyleById: function(id, style) {
+	return this.getComputedStyle(document.getElementById(id), style);
     },
 
     typeOf: function(value) {

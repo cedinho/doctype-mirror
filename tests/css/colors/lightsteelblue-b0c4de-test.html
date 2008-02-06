@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8">
 <title>CSS Test: lightsteelblue == #b0c4de</title>
+background-color')); -> ', 'background-color'));): <script type="text/javascript" src="../../../goog/base.js"></script>
+<script type="text/javascript" src="../../../goog/array.js"></script>
+<script type="text/javascript" src="../../../goog/math.js"></script>
+<script type="text/javascript" src="../../../goog/string.js"></script>
+<script type="text/javascript" src="../../../goog/useragent.js"></script>
+<script type="text/javascript" src="../../../goog/dom.js"></script>
+<script type="text/javascript" src="../../../goog/base.js"></script>
+<script type="text/javascript" src="../../../goog/style.js"></script>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 <style type="text/css">
@@ -18,8 +26,8 @@ div#test { background-color: lightsteelblue }
 <script type="text/javascript">
 function testNamedColorLightsteelblueb0c4de() {
   assertEquals("lightsteelblue == #b0c4de",
-    encyclopedia.getComputedStyleById('control').getPropertyValue('background-color'),
-    encyclopedia.getComputedStyleById('test')   .getPropertyValue('background-color'));
+    encyclopedia.getComputedStyleById('control', 'background-color'),
+    encyclopedia.getComputedStyleById('test', 'background-color'));
 }
 </script>
 </body>
