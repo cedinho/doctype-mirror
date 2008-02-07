@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[canvas] element appears in DOM test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<canvas id="test"></canvas>
+<script type="text/javascript">
+function testDOM() {
+  assertNotEquals("[CanvasElement] [canvas] element appears in DOM",
+    document.getElementById('test'),
+    null);
+}
+</script>
+<pre>&lt;canvas&gt; element <script type="text/javascript">
+document.write((document.getElementById('test') != null) ? 'appears' : 'does not appear');
+</script> in DOM</pre>
+</body>
+</html>

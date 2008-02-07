@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[section] element appears in DOM test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<section id="test"></section>
+<script type="text/javascript">
+function testDOM() {
+  assertNotEquals("[SectionElement] [section] element appears in DOM",
+    document.getElementById('test'),
+    null);
+}
+</script>
+<pre>&lt;section&gt; element <script type="text/javascript">
+document.write((document.getElementById('test') != null) ? 'appears' : 'does not appear');
+</script> in DOM</pre>
+</body>
+</html>

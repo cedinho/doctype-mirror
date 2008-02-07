@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[cite] element appears in DOM test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<cite id="test"></cite>
+<script type="text/javascript">
+function testDOM() {
+  assertNotEquals("[CiteElement] [cite] element appears in DOM",
+    document.getElementById('test'),
+    null);
+}
+</script>
+<pre>&lt;cite&gt; element <script type="text/javascript">
+document.write((document.getElementById('test') != null) ? 'appears' : 'does not appear');
+</script> in DOM</pre>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[tbody] element as child of [table] appears in DOM test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table>
+<tbody id="test"></tbody>
+</table>
+<script type="text/javascript">
+function testDOM() {
+  assertNotEquals("[TbodyElement] [tbody] element as child of [table] appears in DOM",
+    document.getElementById('test'),
+    null);
+}
+</script>
+<pre>&lt;tbody&gt; element as child of &lt;table&gt; <script type="text/javascript">
+document.write((document.getElementById('test') != null) ? 'appears' : 'does not appear');
+</script> in DOM</pre>
+</body>
+</html>

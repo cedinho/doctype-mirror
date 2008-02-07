@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[colgroup] element as child of [table] appears in DOM test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table>
+<colgroup id="test"></colgroup>
+</table>
+<script type="text/javascript">
+function testDOM() {
+  assertNotEquals("[ColgroupElement] [colgroup] element as child of [table] appears in DOM",
+    document.getElementById('test'),
+    null);
+}
+</script>
+<pre>&lt;colgroup&gt; element as child of &lt;table&gt; <script type="text/javascript">
+document.write((document.getElementById('test') != null) ? 'appears' : 'does not appear');
+</script> in DOM</pre>
+</body>
+</html>

@@ -1,3 +1,9 @@
+function htmlelementssuite() {
+    var testSuite = new top.jsUnitTestSuite();
+    testSuite.addTestSuite(htmlelementappliesstylesuite());
+    testSuite.addTestSuite(htmlelementappearsindomsuite());
+    return testSuite;
+}
 function htmlelementappliesstylesuite() {
   var testSuite = new top.jsUnitTestSuite();
   testSuite.addTestPage("../tests/html/elements/a-element-applies-style-test.html");
@@ -163,11 +169,14 @@ function htmlelementappearsindomsuite() {
   testSuite.addTestPage("../tests/html/elements/button-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/canvas-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/caption-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/caption-element-as-child-of-table-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/center-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/cite-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/code-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/col-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/col-element-as-child-of-table-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/colgroup-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/colgroup-element-as-child-of-table-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/command-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/comment-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/datagrid-element-appears-in-dom-test.html");
@@ -218,6 +227,7 @@ function htmlelementappearsindomsuite() {
   testSuite.addTestPage("../tests/html/elements/label-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/layer-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/legend-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/legend-element-as-child-of-fieldset-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/li-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/link-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/listing-element-appears-in-dom-test.html");
@@ -238,9 +248,12 @@ function htmlelementappearsindomsuite() {
   testSuite.addTestPage("../tests/html/elements/object-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/ol-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/optgroup-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/optgroup-element-as-child-of-select-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/option-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/option-element-as-child-of-select-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/p-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/param-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/param-element-as-child-of-object-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/plaintext-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/pre-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/progress-element-appears-in-dom-test.html");
@@ -261,14 +274,19 @@ function htmlelementappearsindomsuite() {
   testSuite.addTestPage("../tests/html/elements/sup-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/table-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/tbody-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/tbody-element-as-child-of-table-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/td-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/textarea-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/tfoot-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/tfoot-element-as-child-of-table-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/th-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/th-element-as-child-of-table-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/thead-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/thead-element-as-child-of-table-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/time-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/title-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/tr-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/tr-element-as-child-of-table-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/tt-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/u-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/ul-element-appears-in-dom-test.html");

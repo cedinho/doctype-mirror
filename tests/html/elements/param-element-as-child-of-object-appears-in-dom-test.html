@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[param] element as child of [object] appears in DOM test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<object>
+<param id="test"></param>
+</object>
+<script type="text/javascript">
+function testDOM() {
+  assertNotEquals("[ParamElement] [param] element as child of [object] appears in DOM",
+    document.getElementById('test'),
+    null);
+}
+</script>
+<pre>&lt;param&gt; element as child of &lt;object&gt; <script type="text/javascript">
+document.write((document.getElementById('test') != null) ? 'appears' : 'does not appear');
+</script> in DOM</pre>
+</body>
+</html>
