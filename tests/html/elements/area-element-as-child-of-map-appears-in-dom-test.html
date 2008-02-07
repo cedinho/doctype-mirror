@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[area] element as child of [map] appears in DOM test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<map>
+<area id="test"></area>
+</map>
+<script type="text/javascript">
+function testDOM() {
+  assertNotEquals("[AreaElement] [area] element as child of [map] appears in DOM",
+    document.getElementById('test'),
+    null);
+}
+</script>
+<pre>&lt;area&gt; element as child of &lt;map&gt; <script type="text/javascript">
+document.write((document.getElementById('test') != null) ? 'appears' : 'does not appear');
+</script> in DOM</pre>
+</body>
+</html>

@@ -146,6 +146,7 @@ function htmlelementappearsindomsuite() {
   testSuite.addTestPage("../tests/html/elements/address-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/applet-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/area-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/area-element-as-child-of-map-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/article-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/aside-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/audio-element-appears-in-dom-test.html");
