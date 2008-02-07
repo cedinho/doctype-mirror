@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[th headers] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<th id="test" headers="foo"></th>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ThHeadersAttribute] th.headers reflects <th headers>",
+    document.getElementById('test').headers,
+    "foo");
+}
+</script>
+<pre>th.headers property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').headers == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;th headers&gt; attribute</pre>
+</body>
+</html>

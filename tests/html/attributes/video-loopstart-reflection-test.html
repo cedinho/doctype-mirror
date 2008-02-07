@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[video loopstart] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<video id="test" loopstart="foo"></video>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[VideoLoopstartAttribute] video.loopstart reflects <video loopstart>",
+    document.getElementById('test').loopstart,
+    "foo");
+}
+</script>
+<pre>video.loopstart property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').loopstart == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;video loopstart&gt; attribute</pre>
+</body>
+</html>

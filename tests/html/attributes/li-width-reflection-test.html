@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[li width] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<li id="test" width="42"></li>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[LiWidthAttribute] li.width reflects <li width>",
+    document.getElementById('test').width,
+    42);
+}
+</script>
+<pre>li.width property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').width == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;li width&gt; attribute</pre>
+</body>
+</html>

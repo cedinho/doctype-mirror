@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[col charoff] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<col id="test" charoff="42"></col>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ColCharoffAttribute] col.charoff reflects <col charoff>",
+    document.getElementById('test').charoff,
+    42);
+}
+</script>
+<pre>col.charoff property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').charoff == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;col charoff&gt; attribute</pre>
+</body>
+</html>

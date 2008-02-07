@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[dir compact] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<dir id="test" compact="foo"></dir>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[DirCompactAttribute] dir.compact reflects <dir compact>",
+    document.getElementById('test').compact,
+    "foo");
+}
+</script>
+<pre>dir.compact property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').compact == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;dir compact&gt; attribute</pre>
+</body>
+</html>

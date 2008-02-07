@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[dir start] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<dir id="test" start="foo"></dir>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[DirStartAttribute] dir.start reflects <dir start>",
+    document.getElementById('test').start,
+    "foo");
+}
+</script>
+<pre>dir.start property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').start == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;dir start&gt; attribute</pre>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[input size] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<input id="test" size="foo"></input>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[InputSizeAttribute] input.size reflects <input size>",
+    document.getElementById('test').size,
+    "foo");
+}
+</script>
+<pre>input.size property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').size == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;input size&gt; attribute</pre>
+</body>
+</html>

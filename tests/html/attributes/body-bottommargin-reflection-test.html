@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[body bottommargin] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<body id="test" bottommargin="foo"></body>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[BodyBottommarginAttribute] body.bottommargin reflects <body bottommargin>",
+    document.getElementById('test').bottommargin,
+    "foo");
+}
+</script>
+<pre>body.bottommargin property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').bottommargin == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;body bottommargin&gt; attribute</pre>
+</body>
+</html>

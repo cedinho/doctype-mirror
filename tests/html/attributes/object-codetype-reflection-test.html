@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[object codetype] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<object id="test" codetype="foo"></object>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ObjectCodetypeAttribute] object.codetype reflects <object codetype>",
+    document.getElementById('test').codetype,
+    "foo");
+}
+</script>
+<pre>object.codetype property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').codetype == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;object codetype&gt; attribute</pre>
+</body>
+</html>

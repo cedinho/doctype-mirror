@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[object standby] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<object id="test" standby="foo"></object>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ObjectStandbyAttribute] object.standby reflects <object standby>",
+    document.getElementById('test').standby,
+    "foo");
+}
+</script>
+<pre>object.standby property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').standby == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;object standby&gt; attribute</pre>
+</body>
+</html>

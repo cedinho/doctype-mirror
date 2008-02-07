@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[thead valign] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<thead id="test" valign="left"></thead>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[TheadValignAttribute] thead.valign reflects <thead valign>",
+    document.getElementById('test').valign,
+    "left");
+}
+</script>
+<pre>thead.valign property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').valign == "left") ? 'reflects' : 'does not reflect');
+</script></a> &lt;thead valign&gt; attribute</pre>
+</body>
+</html>

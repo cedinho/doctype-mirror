@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[meter min] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<meter id="test" min="foo"></meter>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[MeterMinAttribute] meter.min reflects <meter min>",
+    document.getElementById('test').min,
+    "foo");
+}
+</script>
+<pre>meter.min property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').min == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;meter min&gt; attribute</pre>
+</body>
+</html>

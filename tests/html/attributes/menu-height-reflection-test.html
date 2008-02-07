@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[menu height] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<menu id="test" height="42"></menu>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[MenuHeightAttribute] menu.height reflects <menu height>",
+    document.getElementById('test').height,
+    42);
+}
+</script>
+<pre>menu.height property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').height == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;menu height&gt; attribute</pre>
+</body>
+</html>

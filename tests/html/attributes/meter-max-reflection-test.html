@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[meter max] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<meter id="test" max="foo"></meter>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[MeterMaxAttribute] meter.max reflects <meter max>",
+    document.getElementById('test').max,
+    "foo");
+}
+</script>
+<pre>meter.max property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').max == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;meter max&gt; attribute</pre>
+</body>
+</html>

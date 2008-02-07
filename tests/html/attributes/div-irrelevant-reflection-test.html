@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[div irrelevant] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<div id="test" irrelevant></div>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[IrrelevantAttribute] div.irrelevant reflects <div irrelevant>",
+    document.getElementById('test').irrelevant,
+    "true");
+}
+</script>
+<pre>div.irrelevant property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').irrelevant == "true") ? 'reflects' : 'does not reflect');
+</script></a> &lt;div irrelevant&gt; attribute</pre>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[ilayer background] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<ilayer id="test" background="foo"></ilayer>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[IlayerBackgroundAttribute] ilayer.background reflects <ilayer background>",
+    document.getElementById('test').background,
+    "foo");
+}
+</script>
+<pre>ilayer.background property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').background == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;ilayer background&gt; attribute</pre>
+</body>
+</html>

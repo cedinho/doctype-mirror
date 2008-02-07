@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[layer pagey] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<layer id="test" pagey="foo"></layer>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[LayerPageyAttribute] layer.pagey reflects <layer pagey>",
+    document.getElementById('test').pagey,
+    "foo");
+}
+</script>
+<pre>layer.pagey property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').pagey == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;layer pagey&gt; attribute</pre>
+</body>
+</html>

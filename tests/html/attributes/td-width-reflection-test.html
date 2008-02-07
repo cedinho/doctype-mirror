@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[td width] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<td id="test" width="42"></td>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[TdWidthAttribute] td.width reflects <td width>",
+    document.getElementById('test').width,
+    42);
+}
+</script>
+<pre>td.width property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').width == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;td width&gt; attribute</pre>
+</body>
+</html>

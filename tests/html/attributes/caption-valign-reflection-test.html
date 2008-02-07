@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[caption valign] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<caption id="test" valign="left"></caption>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[CaptionValignAttribute] caption.valign reflects <caption valign>",
+    document.getElementById('test').valign,
+    "left");
+}
+</script>
+<pre>caption.valign property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').valign == "left") ? 'reflects' : 'does not reflect');
+</script></a> &lt;caption valign&gt; attribute</pre>
+</body>
+</html>

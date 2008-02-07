@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[frame noresize] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<frame id="test" noresize="foo"></frame>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[FrameNoresizeAttribute] frame.noresize reflects <frame noresize>",
+    document.getElementById('test').noresize,
+    "foo");
+}
+</script>
+<pre>frame.noresize property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').noresize == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;frame noresize&gt; attribute</pre>
+</body>
+</html>

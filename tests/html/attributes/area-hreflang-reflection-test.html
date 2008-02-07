@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[area hreflang] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<area id="test" hreflang="en"></area>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[AreaHreflangAttribute] area.hreflang reflects <area hreflang>",
+    document.getElementById('test').hreflang,
+    "en");
+}
+</script>
+<pre>area.hreflang property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').hreflang == "en") ? 'reflects' : 'does not reflect');
+</script></a> &lt;area hreflang&gt; attribute</pre>
+</body>
+</html>

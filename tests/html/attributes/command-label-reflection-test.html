@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[command label] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<command id="test" label="foo"></command>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[CommandLabelAttribute] command.label reflects <command label>",
+    document.getElementById('test').label,
+    "foo");
+}
+</script>
+<pre>command.label property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').label == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;command label&gt; attribute</pre>
+</body>
+</html>

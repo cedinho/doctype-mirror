@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[hr size] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<hr id="test" size="foo"></hr>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[HrSizeAttribute] hr.size reflects <hr size>",
+    document.getElementById('test').size,
+    "foo");
+}
+</script>
+<pre>hr.size property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').size == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;hr size&gt; attribute</pre>
+</body>
+</html>

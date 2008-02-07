@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[ol compact] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<ol id="test" compact="foo"></ol>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[OlCompactAttribute] ol.compact reflects <ol compact>",
+    document.getElementById('test').compact,
+    "foo");
+}
+</script>
+<pre>ol.compact property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').compact == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;ol compact&gt; attribute</pre>
+</body>
+</html>

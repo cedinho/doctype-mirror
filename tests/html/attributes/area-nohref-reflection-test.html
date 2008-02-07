@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[area nohref] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<area id="test" nohref="http://www.example.com/"></area>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[AreaNohrefAttribute] area.nohref reflects <area nohref>",
+    document.getElementById('test').nohref,
+    "http://www.example.com/");
+}
+</script>
+<pre>area.nohref property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').nohref == "http://www.example.com/") ? 'reflects' : 'does not reflect');
+</script></a> &lt;area nohref&gt; attribute</pre>
+</body>
+</html>

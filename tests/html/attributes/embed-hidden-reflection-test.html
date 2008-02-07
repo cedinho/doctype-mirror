@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[embed hidden] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<embed id="test" hidden="foo"></embed>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[EmbedHiddenAttribute] embed.hidden reflects <embed hidden>",
+    document.getElementById('test').hidden,
+    "foo");
+}
+</script>
+<pre>embed.hidden property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').hidden == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;embed hidden&gt; attribute</pre>
+</body>
+</html>

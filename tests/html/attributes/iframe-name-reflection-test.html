@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[iframe name] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<iframe id="test" name="foo"></iframe>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[IframeNameAttribute] iframe.name reflects <iframe name>",
+    document.getElementById('test').name,
+    "foo");
+}
+</script>
+<pre>iframe.name property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').name == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;iframe name&gt; attribute</pre>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[fontpointsize point-size] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<fontpointsize id="test" point-size="foo"></fontpointsize>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[FontPointSizeAttribute] fontpointsize.pointSize reflects <fontpointsize point-size>",
+    document.getElementById('test').pointSize,
+    "foo");
+}
+</script>
+<pre>fontpointsize.pointSize property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').pointSize == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;fontpointsize point-size&gt; attribute</pre>
+</body>
+</html>

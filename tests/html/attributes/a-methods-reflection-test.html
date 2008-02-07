@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[a methods] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<a id="test" methods="foo"></a>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[AMethodsAttribute] a.methods reflects <a methods>",
+    document.getElementById('test').methods,
+    "foo");
+}
+</script>
+<pre>a.methods property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').methods == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;a methods&gt; attribute</pre>
+</body>
+</html>

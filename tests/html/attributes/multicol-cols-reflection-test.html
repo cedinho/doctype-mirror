@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[multicol cols] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<multicol id="test" cols="foo"></multicol>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[MulticolColsAttribute] multicol.cols reflects <multicol cols>",
+    document.getElementById('test').cols,
+    "foo");
+}
+</script>
+<pre>multicol.cols property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').cols == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;multicol cols&gt; attribute</pre>
+</body>
+</html>

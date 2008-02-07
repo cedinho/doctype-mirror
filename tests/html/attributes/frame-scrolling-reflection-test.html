@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[frame scrolling] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<frame id="test" scrolling="foo"></frame>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[FrameScrollingAttribute] frame.scrolling reflects <frame scrolling>",
+    document.getElementById('test').scrolling,
+    "foo");
+}
+</script>
+<pre>frame.scrolling property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').scrolling == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;frame scrolling&gt; attribute</pre>
+</body>
+</html>

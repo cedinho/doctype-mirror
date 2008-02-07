@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[colgroup span] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<colgroup id="test" span="foo"></colgroup>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ColgroupSpanAttribute] colgroup.span reflects <colgroup span>",
+    document.getElementById('test').span,
+    "foo");
+}
+</script>
+<pre>colgroup.span property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').span == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;colgroup span&gt; attribute</pre>
+</body>
+</html>

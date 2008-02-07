@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[menu clear] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<menu id="test" clear="both"></menu>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[MenuClearAttribute] menu.clear reflects <menu clear>",
+    document.getElementById('test').clear,
+    "both");
+}
+</script>
+<pre>menu.clear property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').clear == "both") ? 'reflects' : 'does not reflect');
+</script></a> &lt;menu clear&gt; attribute</pre>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[marquee scrolldelay] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<marquee id="test" scrolldelay="foo"></marquee>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[MarqueeScrolldelayAttribute] marquee.scrolldelay reflects <marquee scrolldelay>",
+    document.getElementById('test').scrolldelay,
+    "foo");
+}
+</script>
+<pre>marquee.scrolldelay property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').scrolldelay == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;marquee scrolldelay&gt; attribute</pre>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[iframe longdesc] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<iframe id="test" longdesc="foo"></iframe>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[IframeLongdescAttribute] iframe.longdesc reflects <iframe longdesc>",
+    document.getElementById('test').longdesc,
+    "foo");
+}
+</script>
+<pre>iframe.longdesc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').longdesc == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;iframe longdesc&gt; attribute</pre>
+</body>
+</html>

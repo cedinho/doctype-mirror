@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[embed vspace] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<embed id="test" vspace="foo"></embed>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[EmbedVspaceAttribute] embed.vspace reflects <embed vspace>",
+    document.getElementById('test').vspace,
+    "foo");
+}
+</script>
+<pre>embed.vspace property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').vspace == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;embed vspace&gt; attribute</pre>
+</body>
+</html>

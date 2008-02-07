@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[select size] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<select id="test" size="foo"></select>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[SelectSizeAttribute] select.size reflects <select size>",
+    document.getElementById('test').size,
+    "foo");
+}
+</script>
+<pre>select.size property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').size == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;select size&gt; attribute</pre>
+</body>
+</html>

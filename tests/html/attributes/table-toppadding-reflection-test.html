@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[table toppadding] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table id="test" toppadding="foo"></table>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[TableToppaddingAttribute] table.toppadding reflects <table toppadding>",
+    document.getElementById('test').toppadding,
+    "foo");
+}
+</script>
+<pre>table.toppadding property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').toppadding == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;table toppadding&gt; attribute</pre>
+</body>
+</html>

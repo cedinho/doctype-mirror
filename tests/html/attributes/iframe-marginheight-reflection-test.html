@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[iframe marginheight] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<iframe id="test" marginheight="42"></iframe>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[IframeMarginheightAttribute] iframe.marginheight reflects <iframe marginheight>",
+    document.getElementById('test').marginheight,
+    42);
+}
+</script>
+<pre>iframe.marginheight property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').marginheight == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;iframe marginheight&gt; attribute</pre>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[font color] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<font id="test" color="#ffffff"></font>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[FontColorAttribute] font.color reflects <font color>",
+    document.getElementById('test').color,
+    "#ffffff");
+}
+</script>
+<pre>font.color property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').color == "#ffffff") ? 'reflects' : 'does not reflect');
+</script></a> &lt;font color&gt; attribute</pre>
+</body>
+</html>

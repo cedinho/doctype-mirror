@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[fieldset height] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<fieldset id="test" height="42"></fieldset>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[FieldsetHeightAttribute] fieldset.height reflects <fieldset height>",
+    document.getElementById('test').height,
+    42);
+}
+</script>
+<pre>fieldset.height property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').height == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;fieldset height&gt; attribute</pre>
+</body>
+</html>

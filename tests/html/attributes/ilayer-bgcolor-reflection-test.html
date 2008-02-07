@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[ilayer bgcolor] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<ilayer id="test" bgcolor="#ffffff"></ilayer>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[IlayerBgcolorAttribute] ilayer.bgColor reflects <ilayer bgcolor>",
+    document.getElementById('test').bgColor,
+    "#ffffff");
+}
+</script>
+<pre>ilayer.bgColor property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').bgColor == "#ffffff") ? 'reflects' : 'does not reflect');
+</script></a> &lt;ilayer bgcolor&gt; attribute</pre>
+</body>
+</html>

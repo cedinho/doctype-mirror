@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[input maxlength] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<input id="test" maxlength="foo"></input>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[InputMaxlengthAttribute] input.maxlength reflects <input maxlength>",
+    document.getElementById('test').maxlength,
+    "foo");
+}
+</script>
+<pre>input.maxlength property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').maxlength == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;input maxlength&gt; attribute</pre>
+</body>
+</html>

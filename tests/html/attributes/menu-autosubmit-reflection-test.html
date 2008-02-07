@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[menu autosubmit] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<menu id="test" autosubmit="foo"></menu>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[MenuAutosubmitAttribute] menu.autosubmit reflects <menu autosubmit>",
+    document.getElementById('test').autosubmit,
+    "foo");
+}
+</script>
+<pre>menu.autosubmit property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').autosubmit == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;menu autosubmit&gt; attribute</pre>
+</body>
+</html>

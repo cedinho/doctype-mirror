@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[img lowsrc] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<img id="test" lowsrc="foo"></img>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ImgLowsrcAttribute] img.lowsrc reflects <img lowsrc>",
+    document.getElementById('test').lowsrc,
+    "foo");
+}
+</script>
+<pre>img.lowsrc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').lowsrc == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;img lowsrc&gt; attribute</pre>
+</body>
+</html>

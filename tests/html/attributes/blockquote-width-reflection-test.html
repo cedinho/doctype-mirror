@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[blockquote width] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<blockquote id="test" width="42"></blockquote>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[BlockquoteWidthAttribute] blockquote.width reflects <blockquote width>",
+    document.getElementById('test').width,
+    42);
+}
+</script>
+<pre>blockquote.width property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').width == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;blockquote width&gt; attribute</pre>
+</body>
+</html>

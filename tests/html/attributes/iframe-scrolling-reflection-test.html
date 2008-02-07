@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[iframe scrolling] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<iframe id="test" scrolling="foo"></iframe>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[IframeScrollingAttribute] iframe.scrolling reflects <iframe scrolling>",
+    document.getElementById('test').scrolling,
+    "foo");
+}
+</script>
+<pre>iframe.scrolling property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').scrolling == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;iframe scrolling&gt; attribute</pre>
+</body>
+</html>

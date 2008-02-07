@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[input loop] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<input id="test" loop="foo"></input>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[InputLoopAttribute] input.loop reflects <input loop>",
+    document.getElementById('test').loop,
+    "foo");
+}
+</script>
+<pre>input.loop property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').loop == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;input loop&gt; attribute</pre>
+</body>
+</html>

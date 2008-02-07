@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[input border] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<input id="test" border="42"></input>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[InputBorderAttribute] input.border reflects <input border>",
+    document.getElementById('test').border,
+    42);
+}
+</script>
+<pre>input.border property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').border == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;input border&gt; attribute</pre>
+</body>
+</html>

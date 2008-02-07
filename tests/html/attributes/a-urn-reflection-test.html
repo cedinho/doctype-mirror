@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[a urn] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<a id="test" urn="foo"></a>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[AURNAttribute] a.urn reflects <a urn>",
+    document.getElementById('test').urn,
+    "foo");
+}
+</script>
+<pre>a.urn property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').urn == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;a urn&gt; attribute</pre>
+</body>
+</html>

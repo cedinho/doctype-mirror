@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[marquee scrollamount] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<marquee id="test" scrollamount="foo"></marquee>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[MarqueeScrollamountAttribute] marquee.scrollamount reflects <marquee scrollamount>",
+    document.getElementById('test').scrollamount,
+    "foo");
+}
+</script>
+<pre>marquee.scrollamount property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').scrollamount == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;marquee scrollamount&gt; attribute</pre>
+</body>
+</html>

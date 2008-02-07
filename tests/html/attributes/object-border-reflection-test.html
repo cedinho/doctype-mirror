@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[object border] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<object id="test" border="42"></object>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ObjectBorderAttribute] object.border reflects <object border>",
+    document.getElementById('test').border,
+    42);
+}
+</script>
+<pre>object.border property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').border == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;object border&gt; attribute</pre>
+</body>
+</html>

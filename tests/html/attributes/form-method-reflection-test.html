@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[form method] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<form id="test" method="foo"></form>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[FormMethodAttribute] form.method reflects <form method>",
+    document.getElementById('test').method,
+    "foo");
+}
+</script>
+<pre>form.method property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').method == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;form method&gt; attribute</pre>
+</body>
+</html>

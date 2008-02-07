@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[object usemap] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<object id="test" usemap="foo"></object>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ObjectUsemapAttribute] object.usemap reflects <object usemap>",
+    document.getElementById('test').usemap,
+    "foo");
+}
+</script>
+<pre>object.usemap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').usemap == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;object usemap&gt; attribute</pre>
+</body>
+</html>

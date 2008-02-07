@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[embed palette] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<embed id="test" palette="foo"></embed>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[EmbedPaletteAttribute] embed.palette reflects <embed palette>",
+    document.getElementById('test').palette,
+    "foo");
+}
+</script>
+<pre>embed.palette property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').palette == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;embed palette&gt; attribute</pre>
+</body>
+</html>

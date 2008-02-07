@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[th abbr] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<th id="test" abbr="foo"></th>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ThAbbrAttribute] th.abbr reflects <th abbr>",
+    document.getElementById('test').abbr,
+    "foo");
+}
+</script>
+<pre>th.abbr property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').abbr == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;th abbr&gt; attribute</pre>
+</body>
+</html>

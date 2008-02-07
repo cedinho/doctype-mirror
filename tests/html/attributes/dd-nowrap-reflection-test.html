@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[dd nowrap] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<dd id="test" nowrap="true"></dd>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[DdNowrapAttribute] dd.noWrap reflects <dd nowrap>",
+    document.getElementById('test').noWrap,
+    true);
+}
+</script>
+<pre>dd.noWrap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').noWrap == true) ? 'reflects' : 'does not reflect');
+</script></a> &lt;dd nowrap&gt; attribute</pre>
+</body>
+</html>

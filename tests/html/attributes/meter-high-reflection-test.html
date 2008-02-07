@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[meter high] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<meter id="test" high="foo"></meter>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[MeterHighAttribute] meter.high reflects <meter high>",
+    document.getElementById('test').high,
+    "foo");
+}
+</script>
+<pre>meter.high property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').high == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;meter high&gt; attribute</pre>
+</body>
+</html>

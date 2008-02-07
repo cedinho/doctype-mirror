@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[body bgproperties] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<body id="test" bgproperties="foo"></body>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[BodyBgpropertiesAttribute] body.bgproperties reflects <body bgproperties>",
+    document.getElementById('test').bgproperties,
+    "foo");
+}
+</script>
+<pre>body.bgproperties property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').bgproperties == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;body bgproperties&gt; attribute</pre>
+</body>
+</html>

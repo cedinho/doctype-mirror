@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[input readonly] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<input id="test" readonly="foo"></input>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[InputReadonlyAttribute] input.readonly reflects <input readonly>",
+    document.getElementById('test').readonly,
+    "foo");
+}
+</script>
+<pre>input.readonly property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').readonly == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;input readonly&gt; attribute</pre>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[del datetime] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<del id="test" datetime="foo"></del>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[DelDatetimeAttribute] del.datetime reflects <del datetime>",
+    document.getElementById('test').datetime,
+    "foo");
+}
+</script>
+<pre>del.datetime property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').datetime == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;del datetime&gt; attribute</pre>
+</body>
+</html>

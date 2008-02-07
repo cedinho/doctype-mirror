@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[bgsound loop] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<bgsound id="test" loop="foo"></bgsound>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[BgsoundLoopAttribute] bgsound.loop reflects <bgsound loop>",
+    document.getElementById('test').loop,
+    "foo");
+}
+</script>
+<pre>bgsound.loop property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').loop == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;bgsound loop&gt; attribute</pre>
+</body>
+</html>

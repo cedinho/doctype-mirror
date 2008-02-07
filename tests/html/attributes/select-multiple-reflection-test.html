@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[select multiple] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<select id="test" multiple="foo"></select>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[SelectMultipleAttribute] select.multiple reflects <select multiple>",
+    document.getElementById('test').multiple,
+    "foo");
+}
+</script>
+<pre>select.multiple property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').multiple == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;select multiple&gt; attribute</pre>
+</body>
+</html>

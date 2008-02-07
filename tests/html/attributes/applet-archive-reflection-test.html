@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[applet archive] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<applet id="test" archive="foo"></applet>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[AppletArchiveAttribute] applet.archive reflects <applet archive>",
+    document.getElementById('test').archive,
+    "foo");
+}
+</script>
+<pre>applet.archive property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').archive == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;applet archive&gt; attribute</pre>
+</body>
+</html>

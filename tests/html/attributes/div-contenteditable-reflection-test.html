@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[div contenteditable] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<div id="test" contenteditable></div>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ContenteditableAttribute] div.contentEditable reflects <div contenteditable>",
+    document.getElementById('test').contentEditable,
+    "true");
+}
+</script>
+<pre>div.contentEditable property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').contentEditable == "true") ? 'reflects' : 'does not reflect');
+</script></a> &lt;div contenteditable&gt; attribute</pre>
+</body>
+</html>

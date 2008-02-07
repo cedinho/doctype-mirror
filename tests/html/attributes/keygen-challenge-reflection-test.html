@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[keygen challenge] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<keygen id="test" challenge="foo"></keygen>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[KeygenChallengeAttribute] keygen.challenge reflects <keygen challenge>",
+    document.getElementById('test').challenge,
+    "foo");
+}
+</script>
+<pre>keygen.challenge property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').challenge == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;keygen challenge&gt; attribute</pre>
+</body>
+</html>

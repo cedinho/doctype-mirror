@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[th choff] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<th id="test" choff="42"></th>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ThChoffAttribute] th.choff reflects <th choff>",
+    document.getElementById('test').choff,
+    42);
+}
+</script>
+<pre>th.choff property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').choff == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;th choff&gt; attribute</pre>
+</body>
+</html>

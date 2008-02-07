@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[table bordercolordark] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table id="test" bordercolordark="foo"></table>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[TableBordercolordarkAttribute] table.bordercolordark reflects <table bordercolordark>",
+    document.getElementById('test').bordercolordark,
+    "foo");
+}
+</script>
+<pre>table.bordercolordark property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').bordercolordark == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;table bordercolordark&gt; attribute</pre>
+</body>
+</html>

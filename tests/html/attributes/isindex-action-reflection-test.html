@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[isindex action] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<isindex id="test" action="foo"></isindex>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[IsindexActionAttribute] isindex.action reflects <isindex action>",
+    document.getElementById('test').action,
+    "foo");
+}
+</script>
+<pre>isindex.action property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').action == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;isindex action&gt; attribute</pre>
+</body>
+</html>

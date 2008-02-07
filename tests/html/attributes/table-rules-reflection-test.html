@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[table rules] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table id="test" rules="foo"></table>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[TableRulesAttribute] table.rules reflects <table rules>",
+    document.getElementById('test').rules,
+    "foo");
+}
+</script>
+<pre>table.rules property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').rules == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;table rules&gt; attribute</pre>
+</body>
+</html>

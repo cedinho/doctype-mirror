@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[img controls] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<img id="test" controls="foo"></img>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[ImgControlsAttribute] img.controls reflects <img controls>",
+    document.getElementById('test').controls,
+    "foo");
+}
+</script>
+<pre>img.controls property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').controls == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;img controls&gt; attribute</pre>
+</body>
+</html>

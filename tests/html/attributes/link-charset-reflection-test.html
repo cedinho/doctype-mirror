@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[link charset] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<link id="test" charset="utf-8"></link>
+<script type="text/javascript">
+function testDisplay() {
+  assertEquals("[LinkCharsetAttribute] link.charset reflects <link charset>",
+    document.getElementById('test').charset,
+    "utf-8");
+}
+</script>
+<pre>link.charset property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').charset == "utf-8") ? 'reflects' : 'does not reflect');
+</script></a> &lt;link charset&gt; attribute</pre>
+</body>
+</html>
