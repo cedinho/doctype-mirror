@@ -4,6 +4,7 @@
 <title>document.createElementNS typeof test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
 <body>
 <script type="text/javascript">
 function testTypeOf() {
@@ -12,6 +13,8 @@ function testTypeOf() {
     "undefined");
 }
 </script>
+<pre>typeOf(document.createElementNS) <script type="text/javascript">
+document.write((encyclopedia.typeOf(document.createElementNS) != 'undefined') ? '!=' : '==');
+</script> 'undefined'</pre>
 </body>
-</head>
 </html>
