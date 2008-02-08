@@ -8,14 +8,14 @@
 <body>
 <script id="test" for="foo"></script>
 <script type="text/javascript">
-function testDisplay() {
-  assertEquals("[ScriptForAttribute] script.for reflects <script for>",
-    document.getElementById('test').for,
+function testReflection() {
+  assertEquals("[ScriptForAttribute] script.htmlFor reflects <script for>",
+    document.getElementById('test').htmlFor,
     "foo");
 }
 </script>
-<pre>script.for property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').for == "foo") ? 'reflects' : 'does not reflect');
+<pre>script.htmlFor property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').htmlFor == "foo") ? 'reflects' : 'does not reflect');
 </script></a> &lt;script for&gt; attribute</pre>
 </body>
 </html>

@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<link id="test" methods="foo"></link>
+<link id="test" methods="GET"></link>
 <script type="text/javascript">
-function testDisplay() {
+function testReflection() {
   assertEquals("[LinkMethodsAttribute] link.methods reflects <link methods>",
     document.getElementById('test').methods,
-    "foo");
+    "GET");
 }
 </script>
 <pre>link.methods property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').methods == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').methods == "GET") ? 'reflects' : 'does not reflect');
 </script></a> &lt;link methods&gt; attribute</pre>
 </body>
 </html>

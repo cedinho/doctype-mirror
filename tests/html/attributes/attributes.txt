@@ -29,7 +29,7 @@ ACoordsAttribute a coords coords coordinates
 ADisabledAttribute a disabled disabled existencereallyboolean
 AHrefLangAttribute a hreflang hreflang language
 AMediaAttribute a media media mediatype
-AMethodsAttribute a methods methods string
+AMethodsAttribute a methods methods httpmethod
 APingAttribute a ping ping uri
 ARelAttribute a rel rel string
 ARevAttribute a rev rev string
@@ -211,7 +211,7 @@ FormAlignAttribute form align align alignment
 FormAutocompleteAttribute form autocomplete autocomplete onoff
 FormEnctypeAttribute form enctype enctype mimetype
 FormHeightAttribute form height height integer
-FormMethodAttribute form method method string
+FormMethodAttribute form method method httpmethod
 FormNameAttribute form name name string
 FormTargetAttribute form target target string
 FormWidthAttribute form width width integer
@@ -239,7 +239,7 @@ FramesetFramespacingAttribute frameset framespacing frameSpacing integer
 FramesetNameAttribute frameset name name string
 FramesetRowsAttribute frameset rows rows integer
 FramesetWidthAttribute frameset width width integer
-HeadProfileAttribute head profile profile uri
+#HeadProfileAttribute head profile profile uri
 HrAlignAttribute hr align align alignment
 HrClearAttribute hr clear clear clear
 HrColorAttribute hr color color color
@@ -332,7 +332,7 @@ IsindexActionAttribute isindex action action uri
 IsindexAlignAttribute isindex align align alignment
 IsindexEnctypeAttribute isindex enctype enctype mimetype
 IsindexHeightAttribute isindex height height integer
-IsindexMethodAttribute isindex method method string
+IsindexMethodAttribute isindex method method httpmethod
 IsindexPromptAttribute isindex prompt prompt string
 IsindexTargetAttribute isindex target target string
 IsindexWidthAttribute isindex width width integer
@@ -340,7 +340,7 @@ KeygenChallengeAttribute keygen challenge challenge string
 KeygenKeytypeAttribute keygen keytype keytype string
 KeygenNameAttribute keygen name name string
 KeygenPqgAttribute keygen pqg pqg string
-LabelForAttribute label for for string
+LabelForAttribute label for htmlFor string
 LayerAboveAttribute layer above above string
 LayerBelowAttribute layer below below string
 LayerBgcolorAttribute layer bgcolor bgColor color
@@ -368,7 +368,7 @@ LinkDisabledAttribute link disabled disabled existencereallyboolean
 LinkHrefAttribute link href href uri
 LinkHreflangAttribute link hreflang hreflang language
 LinkMediaAttribute link media media mediatype
-LinkMethodsAttribute link methods methods string
+LinkMethodsAttribute link methods methods httpmethod
 LinkNameAttribute link name name string
 LinkRelAttribute link rel rel string
 LinkRevAttribute link rev rev string
@@ -469,7 +469,7 @@ ScriptAsyncAttribute script async async existencereallyboolean
 ScriptCharsetAttribute script charset charset encoding
 ScriptDeferAttribute script defer defer existencereallyboolean
 ScriptEventAttribute script event event string
-ScriptForAttribute script for for string
+ScriptForAttribute script for htmlFor string
 ScriptLanguageAttribute script language language string
 ScriptSrcAttribute script src src uri
 ScriptTypeAttribute script type type mimetype

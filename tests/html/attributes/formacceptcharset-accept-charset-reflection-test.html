@@ -8,7 +8,7 @@
 <body>
 <formacceptcharset id="test" accept-charset="foo"></formacceptcharset>
 <script type="text/javascript">
-function testDisplay() {
+function testReflection() {
   assertEquals("[FormAcceptCharsetAttribute] formacceptcharset.acceptCharset reflects <formacceptcharset accept-charset>",
     document.getElementById('test').acceptCharset,
     "foo");

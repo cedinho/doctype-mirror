@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[input vcard_name] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<input id="test" vcard_name="foo"></input>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals("[InputVcardNameAttribute] input.vcard_name reflects <input vcard_name>",
+    document.getElementById('test').vcard_name,
+    "foo");
+}
+</script>
+<pre>input.vcard_name property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').vcard_name == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;input vcard_name&gt; attribute</pre>
+</body>
+</html>
