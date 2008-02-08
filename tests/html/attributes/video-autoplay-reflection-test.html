@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<video id="test" autoplay="foo"></video>
+<video id="test" autoplay></video>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[VideoAutoplayAttribute] video.autoplay reflects <video autoplay>",
     document.getElementById('test').autoplay,
-    "foo");
+    "true");
 }
 </script>
 <pre>video.autoplay property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').autoplay == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').autoplay == "true") ? 'reflects' : 'does not reflect');
 </script></a> &lt;video autoplay&gt; attribute</pre>
 </body>
 </html>

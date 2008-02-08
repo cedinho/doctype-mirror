@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<hr id="test" noshade="foo"></hr>
+<hr id="test" noshade></hr>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[HrNoshadeAttribute] hr.noshade reflects <hr noshade>",
-    document.getElementById('test').noshade,
-    "foo");
+  assertEquals("[HrNoshadeAttribute] hr.noShade reflects <hr noshade>",
+    document.getElementById('test').noShade,
+    true);
 }
 </script>
-<pre>hr.noshade property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').noshade == "foo") ? 'reflects' : 'does not reflect');
+<pre>hr.noShade property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').noShade == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;hr noshade&gt; attribute</pre>
 </body>
 </html>

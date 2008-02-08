@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<progress id="test" max="foo"></progress>
+<progress id="test" max="42"></progress>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[ProgressMaxAttribute] progress.max reflects <progress max>",
     document.getElementById('test').max,
-    "foo");
+    42);
 }
 </script>
 <pre>progress.max property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').max == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').max == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;progress max&gt; attribute</pre>
 </body>
 </html>

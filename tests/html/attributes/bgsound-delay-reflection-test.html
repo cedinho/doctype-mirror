@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<bgsound id="test" delay="foo"></bgsound>
+<bgsound id="test" delay="42"></bgsound>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[BgsoundDelayAttribute] bgsound.delay reflects <bgsound delay>",
     document.getElementById('test').delay,
-    "foo");
+    42);
 }
 </script>
 <pre>bgsound.delay property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').delay == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').delay == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;bgsound delay&gt; attribute</pre>
 </body>
 </html>

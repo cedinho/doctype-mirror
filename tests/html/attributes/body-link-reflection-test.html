@@ -5,17 +5,17 @@
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
-<body>
-<body id="test" link="foo"></body>
+
+<body id="test" link="#ffffff">
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[BodyLinkAttribute] body.link reflects <body link>",
-    document.getElementById('test').link,
-    "foo");
+    document.body.link,
+    "#ffffff");
 }
 </script>
 <pre>body.link property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').link == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.body.link == "#ffffff") ? 'reflects' : 'does not reflect');
 </script></a> &lt;body link&gt; attribute</pre>
-</body>
+
 </html>

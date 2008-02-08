@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<layer id="test" overflow="foo"></layer>
+<layer id="test" overflow="clip"></layer>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[LayerOverflowAttribute] layer.overflow reflects <layer overflow>",
     document.getElementById('test').overflow,
-    "foo");
+    "clip");
 }
 </script>
 <pre>layer.overflow property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').overflow == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').overflow == "clip") ? 'reflects' : 'does not reflect');
 </script></a> &lt;layer overflow&gt; attribute</pre>
 </body>
 </html>

@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<table id="test" background="foo"></table>
+<table id="test" background="http://www.example.com/"></table>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[TableBackgroundAttribute] table.background reflects <table background>",
     document.getElementById('test').background,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>table.background property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').background == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').background == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;table background&gt; attribute</pre>
 </body>
 </html>

@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<applet id="test" src="foo"></applet>
+<applet id="test" src="http://www.example.com/"></applet>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[AppletSrcAttribute] applet.src reflects <applet src>",
     document.getElementById('test').src,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>applet.src property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').src == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').src == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;applet src&gt; attribute</pre>
 </body>
 </html>

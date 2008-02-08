@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<ilayer id="test" src="foo"></ilayer>
+<ilayer id="test" src="http://www.example.com/"></ilayer>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[IlayerSrcAttribute] ilayer.src reflects <ilayer src>",
     document.getElementById('test').src,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>ilayer.src property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').src == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').src == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;ilayer src&gt; attribute</pre>
 </body>
 </html>

@@ -5,17 +5,17 @@
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
-<body>
-<body id="test" rightmargin="foo"></body>
+
+<body id="test" rightmargin="42">
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[BodyRightmarginAttribute] body.rightmargin reflects <body rightmargin>",
-    document.getElementById('test').rightmargin,
-    "foo");
+  assertEquals("[BodyRightmarginAttribute] body.rightMargin reflects <body rightmargin>",
+    document.body.rightMargin,
+    42);
 }
 </script>
-<pre>body.rightmargin property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').rightmargin == "foo") ? 'reflects' : 'does not reflect');
+<pre>body.rightMargin property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.body.rightMargin == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;body rightmargin&gt; attribute</pre>
-</body>
+
 </html>

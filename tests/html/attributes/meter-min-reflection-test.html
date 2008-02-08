@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<meter id="test" min="foo"></meter>
+<meter id="test" min="42"></meter>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[MeterMinAttribute] meter.min reflects <meter min>",
     document.getElementById('test').min,
-    "foo");
+    42);
 }
 </script>
 <pre>meter.min property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').min == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').min == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;meter min&gt; attribute</pre>
 </body>
 </html>

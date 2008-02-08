@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<marquee id="test" hspace="foo"></marquee>
+<marquee id="test" hspace="42"></marquee>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[MarqueeHspaceAttribute] marquee.hspace reflects <marquee hspace>",
     document.getElementById('test').hspace,
-    "foo");
+    42);
 }
 </script>
 <pre>marquee.hspace property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').hspace == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').hspace == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;marquee hspace&gt; attribute</pre>
 </body>
 </html>

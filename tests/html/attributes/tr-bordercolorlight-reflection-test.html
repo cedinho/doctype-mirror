@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<tr id="test" bordercolorlight="foo"></tr>
+<tr id="test" bordercolorlight="#ffffff"></tr>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[TrBordercolorlightAttribute] tr.bordercolorlight reflects <tr bordercolorlight>",
-    document.getElementById('test').bordercolorlight,
-    "foo");
+  assertEquals("[TrBordercolorlightAttribute] tr.borderColorLight reflects <tr bordercolorlight>",
+    document.getElementById('test').borderColorLight,
+    "#ffffff");
 }
 </script>
-<pre>tr.bordercolorlight property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').bordercolorlight == "foo") ? 'reflects' : 'does not reflect');
+<pre>tr.borderColorLight property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').borderColorLight == "#ffffff") ? 'reflects' : 'does not reflect');
 </script></a> &lt;tr bordercolorlight&gt; attribute</pre>
 </body>
 </html>

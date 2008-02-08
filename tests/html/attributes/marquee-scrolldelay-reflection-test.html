@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<marquee id="test" scrolldelay="foo"></marquee>
+<marquee id="test" scrolldelay="42"></marquee>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[MarqueeScrolldelayAttribute] marquee.scrolldelay reflects <marquee scrolldelay>",
-    document.getElementById('test').scrolldelay,
-    "foo");
+  assertEquals("[MarqueeScrolldelayAttribute] marquee.scrollDelay reflects <marquee scrolldelay>",
+    document.getElementById('test').scrollDelay,
+    42);
 }
 </script>
-<pre>marquee.scrolldelay property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').scrolldelay == "foo") ? 'reflects' : 'does not reflect');
+<pre>marquee.scrollDelay property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').scrollDelay == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;marquee scrolldelay&gt; attribute</pre>
 </body>
 </html>

@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<del id="test" cite="foo"></del>
+<del id="test" cite="http://www.example.com/"></del>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[DelCiteAttribute] del.cite reflects <del cite>",
     document.getElementById('test').cite,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>del.cite property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').cite == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').cite == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;del cite&gt; attribute</pre>
 </body>
 </html>

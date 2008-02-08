@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<img id="test" vspace="foo"></img>
+<img id="test" vspace="42"></img>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[ImgVspaceAttribute] img.vspace reflects <img vspace>",
     document.getElementById('test').vspace,
-    "foo");
+    42);
 }
 </script>
 <pre>img.vspace property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').vspace == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').vspace == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;img vspace&gt; attribute</pre>
 </body>
 </html>

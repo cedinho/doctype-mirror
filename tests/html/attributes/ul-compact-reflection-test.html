@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<ul id="test" compact="foo"></ul>
+<ul id="test" compact></ul>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[UlCompactAttribute] ul.compact reflects <ul compact>",
     document.getElementById('test').compact,
-    "foo");
+    true);
 }
 </script>
 <pre>ul.compact property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').compact == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').compact == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;ul compact&gt; attribute</pre>
 </body>
 </html>

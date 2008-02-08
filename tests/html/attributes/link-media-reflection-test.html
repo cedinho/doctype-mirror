@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<link id="test" media="foo"></link>
+<link id="test" media="screen"></link>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[LinkMediaAttribute] link.media reflects <link media>",
     document.getElementById('test').media,
-    "foo");
+    "screen");
 }
 </script>
 <pre>link.media property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').media == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').media == "screen") ? 'reflects' : 'does not reflect');
 </script></a> &lt;link media&gt; attribute</pre>
 </body>
 </html>

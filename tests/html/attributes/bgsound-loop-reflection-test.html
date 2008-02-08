@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<bgsound id="test" loop="foo"></bgsound>
+<bgsound id="test" loop="42"></bgsound>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[BgsoundLoopAttribute] bgsound.loop reflects <bgsound loop>",
     document.getElementById('test').loop,
-    "foo");
+    42);
 }
 </script>
 <pre>bgsound.loop property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').loop == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').loop == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;bgsound loop&gt; attribute</pre>
 </body>
 </html>

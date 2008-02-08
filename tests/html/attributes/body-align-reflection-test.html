@@ -5,17 +5,17 @@
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
-<body>
-<body id="test" align="left"></body>
+
+<body id="test" align="left">
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[BodyAlignAttribute] body.align reflects <body align>",
-    document.getElementById('test').align,
+    document.body.align,
     "left");
 }
 </script>
 <pre>body.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').align == "left") ? 'reflects' : 'does not reflect');
+document.write((document.body.align == "left") ? 'reflects' : 'does not reflect');
 </script></a> &lt;body align&gt; attribute</pre>
-</body>
+
 </html>

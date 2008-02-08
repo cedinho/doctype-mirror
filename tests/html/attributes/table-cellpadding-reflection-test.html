@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<table id="test" cellpadding="foo"></table>
+<table id="test" cellpadding="42"></table>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[TableCellpaddingAttribute] table.cellpadding reflects <table cellpadding>",
-    document.getElementById('test').cellpadding,
-    "foo");
+  assertEquals("[TableCellpaddingAttribute] table.cellPadding reflects <table cellpadding>",
+    document.getElementById('test').cellPadding,
+    42);
 }
 </script>
-<pre>table.cellpadding property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').cellpadding == "foo") ? 'reflects' : 'does not reflect');
+<pre>table.cellPadding property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').cellPadding == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;table cellpadding&gt; attribute</pre>
 </body>
 </html>

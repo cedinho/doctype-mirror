@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<spacer id="test" type="foo"></spacer>
+<spacer id="test" type="vertical"></spacer>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[SpacerTypeAttribute] spacer.type reflects <spacer type>",
     document.getElementById('test').type,
-    "foo");
+    "vertical");
 }
 </script>
 <pre>spacer.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').type == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').type == "vertical") ? 'reflects' : 'does not reflect');
 </script></a> &lt;spacer type&gt; attribute</pre>
 </body>
 </html>

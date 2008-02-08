@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<textarea id="test" readonly="foo"></textarea>
+<textarea id="test" readonly></textarea>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[TextareaReadonlyAttribute] textarea.readonly reflects <textarea readonly>",
     document.getElementById('test').readonly,
-    "foo");
+    true);
 }
 </script>
 <pre>textarea.readonly property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').readonly == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').readonly == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;textarea readonly&gt; attribute</pre>
 </body>
 </html>

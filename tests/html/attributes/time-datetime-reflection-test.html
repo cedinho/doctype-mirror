@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<time id="test" datetime="foo"></time>
+<time id="test" datetime="2008-01-01T12:00:00Z"></time>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[TimeDatetimeAttribute] time.datetime reflects <time datetime>",
-    document.getElementById('test').datetime,
-    "foo");
+  assertEquals("[TimeDatetimeAttribute] time.dateTime reflects <time datetime>",
+    document.getElementById('test').dateTime,
+    "2008-01-01T12:00:00Z");
 }
 </script>
-<pre>time.datetime property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').datetime == "foo") ? 'reflects' : 'does not reflect');
+<pre>time.dateTime property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').dateTime == "2008-01-01T12:00:00Z") ? 'reflects' : 'does not reflect');
 </script></a> &lt;time datetime&gt; attribute</pre>
 </body>
 </html>

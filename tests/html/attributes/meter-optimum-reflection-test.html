@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<meter id="test" optimum="foo"></meter>
+<meter id="test" optimum="42"></meter>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[MeterOptimumAttribute] meter.optimum reflects <meter optimum>",
     document.getElementById('test').optimum,
-    "foo");
+    42);
 }
 </script>
 <pre>meter.optimum property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').optimum == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').optimum == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;meter optimum&gt; attribute</pre>
 </body>
 </html>

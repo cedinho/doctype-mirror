@@ -5,17 +5,17 @@
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
-<body>
-<body id="test" leftmargin="foo"></body>
+
+<body id="test" leftmargin="42">
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[BodyLeftmarginAttribute] body.leftmargin reflects <body leftmargin>",
-    document.getElementById('test').leftmargin,
-    "foo");
+  assertEquals("[BodyLeftmarginAttribute] body.leftMargin reflects <body leftmargin>",
+    document.body.leftMargin,
+    42);
 }
 </script>
-<pre>body.leftmargin property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').leftmargin == "foo") ? 'reflects' : 'does not reflect');
+<pre>body.leftMargin property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.body.leftMargin == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;body leftmargin&gt; attribute</pre>
-</body>
+
 </html>

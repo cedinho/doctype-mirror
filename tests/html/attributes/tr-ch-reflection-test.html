@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<tr id="test" ch="foo"></tr>
+<tr id="test" ch="C"></tr>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[TrChAttribute] tr.ch reflects <tr ch>",
     document.getElementById('test').ch,
-    "foo");
+    "C");
 }
 </script>
 <pre>tr.ch property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').ch == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').ch == "C") ? 'reflects' : 'does not reflect');
 </script></a> &lt;tr ch&gt; attribute</pre>
 </body>
 </html>

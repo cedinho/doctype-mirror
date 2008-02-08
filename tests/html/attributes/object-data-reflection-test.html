@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<object id="test" data="foo"></object>
+<object id="test" data="http://www.example.com/"></object>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[ObjectDataAttribute] object.data reflects <object data>",
     document.getElementById('test').data,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>object.data property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').data == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').data == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;object data&gt; attribute</pre>
 </body>
 </html>

@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<table id="test" toppadding="foo"></table>
+<table id="test" toppadding="42"></table>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[TableToppaddingAttribute] table.toppadding reflects <table toppadding>",
-    document.getElementById('test').toppadding,
-    "foo");
+  assertEquals("[TableToppaddingAttribute] table.topPadding reflects <table toppadding>",
+    document.getElementById('test').topPadding,
+    42);
 }
 </script>
-<pre>table.toppadding property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').toppadding == "foo") ? 'reflects' : 'does not reflect');
+<pre>table.topPadding property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').topPadding == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;table toppadding&gt; attribute</pre>
 </body>
 </html>

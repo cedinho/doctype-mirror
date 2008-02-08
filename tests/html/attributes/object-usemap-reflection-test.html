@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<object id="test" usemap="foo"></object>
+<object id="test" usemap="http://www.example.com/"></object>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[ObjectUsemapAttribute] object.usemap reflects <object usemap>",
-    document.getElementById('test').usemap,
-    "foo");
+  assertEquals("[ObjectUsemapAttribute] object.useMap reflects <object usemap>",
+    document.getElementById('test').useMap,
+    "http://www.example.com/");
 }
 </script>
-<pre>object.usemap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').usemap == "foo") ? 'reflects' : 'does not reflect');
+<pre>object.useMap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').useMap == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;object usemap&gt; attribute</pre>
 </body>
 </html>

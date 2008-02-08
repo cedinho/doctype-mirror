@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<head id="test" profile="foo"></head>
+<head id="test" profile="http://www.example.com/"></head>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[HeadProfileAttribute] head.profile reflects <head profile>",
     document.getElementById('test').profile,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>head.profile property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').profile == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').profile == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;head profile&gt; attribute</pre>
 </body>
 </html>

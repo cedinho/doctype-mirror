@@ -9,13 +9,13 @@
 <frame id="test" frameborder="42"></frame>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[FrameFrameborderAttribute] frame.frameborder reflects <frame frameborder>",
-    document.getElementById('test').frameborder,
+  assertEquals("[FrameFrameborderAttribute] frame.frameBorder reflects <frame frameborder>",
+    document.getElementById('test').frameBorder,
     42);
 }
 </script>
-<pre>frame.frameborder property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').frameborder == 42) ? 'reflects' : 'does not reflect');
+<pre>frame.frameBorder property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').frameBorder == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;frame frameborder&gt; attribute</pre>
 </body>
 </html>

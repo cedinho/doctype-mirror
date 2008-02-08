@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<input id="test" ismap="foo"></input>
+<input id="test" ismap></input>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[InputIsmapAttribute] input.ismap reflects <input ismap>",
-    document.getElementById('test').ismap,
-    "foo");
+  assertEquals("[InputIsmapAttribute] input.isMap reflects <input ismap>",
+    document.getElementById('test').isMap,
+    true);
 }
 </script>
-<pre>input.ismap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').ismap == "foo") ? 'reflects' : 'does not reflect');
+<pre>input.isMap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').isMap == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;input ismap&gt; attribute</pre>
 </body>
 </html>

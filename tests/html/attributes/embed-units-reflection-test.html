@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<embed id="test" units="foo"></embed>
+<embed id="test" units="px"></embed>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[EmbedUnitsAttribute] embed.units reflects <embed units>",
     document.getElementById('test').units,
-    "foo");
+    "px");
 }
 </script>
 <pre>embed.units property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').units == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').units == "px") ? 'reflects' : 'does not reflect');
 </script></a> &lt;embed units&gt; attribute</pre>
 </body>
 </html>

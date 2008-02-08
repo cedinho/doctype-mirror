@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<textarea id="test" wrap="foo"></textarea>
+<textarea id="test" wrap="hard"></textarea>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[TextareaWrapAttribute] textarea.wrap reflects <textarea wrap>",
     document.getElementById('test').wrap,
-    "foo");
+    "hard");
 }
 </script>
 <pre>textarea.wrap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').wrap == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').wrap == "hard") ? 'reflects' : 'does not reflect');
 </script></a> &lt;textarea wrap&gt; attribute</pre>
 </body>
 </html>

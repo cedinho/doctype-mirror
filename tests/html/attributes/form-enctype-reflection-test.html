@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<form id="test" enctype="foo"></form>
+<form id="test" enctype="text/html"></form>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[FormEnctypeAttribute] form.enctype reflects <form enctype>",
     document.getElementById('test').enctype,
-    "foo");
+    "text/html");
 }
 </script>
 <pre>form.enctype property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').enctype == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').enctype == "text/html") ? 'reflects' : 'does not reflect');
 </script></a> &lt;form enctype&gt; attribute</pre>
 </body>
 </html>

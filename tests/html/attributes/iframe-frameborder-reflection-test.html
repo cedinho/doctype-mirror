@@ -9,13 +9,13 @@
 <iframe id="test" frameborder="42"></iframe>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[IframeFrameborderAttribute] iframe.frameborder reflects <iframe frameborder>",
-    document.getElementById('test').frameborder,
+  assertEquals("[IframeFrameborderAttribute] iframe.frameBorder reflects <iframe frameborder>",
+    document.getElementById('test').frameBorder,
     42);
 }
 </script>
-<pre>iframe.frameborder property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').frameborder == 42) ? 'reflects' : 'does not reflect');
+<pre>iframe.frameBorder property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').frameBorder == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;iframe frameborder&gt; attribute</pre>
 </body>
 </html>

@@ -9,13 +9,13 @@
 <param id="test" valuetype="foo"></param>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[ParamValuetypeAttribute] param.valuetype reflects <param valuetype>",
-    document.getElementById('test').valuetype,
+  assertEquals("[ParamValuetypeAttribute] param.valueType reflects <param valuetype>",
+    document.getElementById('test').valueType,
     "foo");
 }
 </script>
-<pre>param.valuetype property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').valuetype == "foo") ? 'reflects' : 'does not reflect');
+<pre>param.valueType property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').valueType == "foo") ? 'reflects' : 'does not reflect');
 </script></a> &lt;param valuetype&gt; attribute</pre>
 </body>
 </html>

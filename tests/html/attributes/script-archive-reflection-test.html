@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<script id="test" archive="foo"></script>
+<script id="test" archive="http://www.example.com/"></script>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[ScriptArchiveAttribute] script.archive reflects <script archive>",
     document.getElementById('test').archive,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>script.archive property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').archive == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').archive == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;script archive&gt; attribute</pre>
 </body>
 </html>

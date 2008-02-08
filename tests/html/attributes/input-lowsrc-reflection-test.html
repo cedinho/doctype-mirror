@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<input id="test" lowsrc="foo"></input>
+<input id="test" lowsrc="http://www.example.com/"></input>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[InputLowsrcAttribute] input.lowsrc reflects <input lowsrc>",
     document.getElementById('test').lowsrc,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>input.lowsrc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').lowsrc == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').lowsrc == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;input lowsrc&gt; attribute</pre>
 </body>
 </html>

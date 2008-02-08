@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<area id="test" coords="foo"></area>
+<area id="test" coords="0,0,10,10"></area>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[AreaCoordsAttribute] area.coords reflects <area coords>",
     document.getElementById('test').coords,
-    "foo");
+    "0,0,10,10");
 }
 </script>
 <pre>area.coords property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').coords == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').coords == "0,0,10,10") ? 'reflects' : 'does not reflect');
 </script></a> &lt;area coords&gt; attribute</pre>
 </body>
 </html>

@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<object id="test" codetype="foo"></object>
+<object id="test" codetype="text/html"></object>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[ObjectCodetypeAttribute] object.codetype reflects <object codetype>",
     document.getElementById('test').codetype,
-    "foo");
+    "text/html");
 }
 </script>
 <pre>object.codetype property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').codetype == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').codetype == "text/html") ? 'reflects' : 'does not reflect');
 </script></a> &lt;object codetype&gt; attribute</pre>
 </body>
 </html>

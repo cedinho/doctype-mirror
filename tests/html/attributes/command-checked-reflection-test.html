@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<command id="test" checked="foo"></command>
+<command id="test" checked></command>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[CommandCheckedAttribute] command.checked reflects <command checked>",
     document.getElementById('test').checked,
-    "foo");
+    true);
 }
 </script>
 <pre>command.checked property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').checked == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').checked == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;command checked&gt; attribute</pre>
 </body>
 </html>

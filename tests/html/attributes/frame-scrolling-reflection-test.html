@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frame id="test" scrolling="foo"></frame>
+<frame id="test" scrolling="yes"></frame>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[FrameScrollingAttribute] frame.scrolling reflects <frame scrolling>",
     document.getElementById('test').scrolling,
-    "foo");
+    "yes");
 }
 </script>
 <pre>frame.scrolling property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').scrolling == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').scrolling == "yes") ? 'reflects' : 'does not reflect');
 </script></a> &lt;frame scrolling&gt; attribute</pre>
 </body>
 </html>

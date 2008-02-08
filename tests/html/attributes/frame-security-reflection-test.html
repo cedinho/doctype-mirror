@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frame id="test" security="foo"></frame>
+<frame id="test" security="restricted"></frame>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[FrameSecurityAttribute] frame.security reflects <frame security>",
     document.getElementById('test').security,
-    "foo");
+    "restricted");
 }
 </script>
 <pre>frame.security property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').security == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').security == "restricted") ? 'reflects' : 'does not reflect');
 </script></a> &lt;frame security&gt; attribute</pre>
 </body>
 </html>

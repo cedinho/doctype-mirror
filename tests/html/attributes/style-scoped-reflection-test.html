@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<style id="test" scoped="foo"></style>
+<style id="test" scoped></style>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[StyleScopedAttribute] style.scoped reflects <style scoped>",
     document.getElementById('test').scoped,
-    "foo");
+    true);
 }
 </script>
 <pre>style.scoped property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').scoped == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').scoped == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;style scoped&gt; attribute</pre>
 </body>
 </html>

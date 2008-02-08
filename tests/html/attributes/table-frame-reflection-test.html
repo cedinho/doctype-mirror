@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<table id="test" frame="foo"></table>
+<table id="test" frame="void"></table>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[TableFrameAttribute] table.frame reflects <table frame>",
     document.getElementById('test').frame,
-    "foo");
+    "void");
 }
 </script>
 <pre>table.frame property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').frame == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').frame == "void") ? 'reflects' : 'does not reflect');
 </script></a> &lt;table frame&gt; attribute</pre>
 </body>
 </html>

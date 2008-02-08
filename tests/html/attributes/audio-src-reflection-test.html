@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<audio id="test" src="foo"></audio>
+<audio id="test" src="http://www.example.com/"></audio>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[AudioSrcAttribute] audio.src reflects <audio src>",
     document.getElementById('test').src,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>audio.src property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').src == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').src == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;audio src&gt; attribute</pre>
 </body>
 </html>

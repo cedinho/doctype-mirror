@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<script id="test" type="foo"></script>
+<script id="test" type="text/html"></script>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[ScriptTypeAttribute] script.type reflects <script type>",
     document.getElementById('test').type,
-    "foo");
+    "text/html");
 }
 </script>
 <pre>script.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').type == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').type == "text/html") ? 'reflects' : 'does not reflect');
 </script></a> &lt;script type&gt; attribute</pre>
 </body>
 </html>

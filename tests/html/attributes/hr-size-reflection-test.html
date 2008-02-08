@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<hr id="test" size="foo"></hr>
+<hr id="test" size="42"></hr>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[HrSizeAttribute] hr.size reflects <hr size>",
     document.getElementById('test').size,
-    "foo");
+    42);
 }
 </script>
 <pre>hr.size property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').size == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').size == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;hr size&gt; attribute</pre>
 </body>
 </html>

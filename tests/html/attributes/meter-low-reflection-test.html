@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<meter id="test" low="foo"></meter>
+<meter id="test" low="42"></meter>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[MeterLowAttribute] meter.low reflects <meter low>",
     document.getElementById('test').low,
-    "foo");
+    42);
 }
 </script>
 <pre>meter.low property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').low == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').low == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;meter low&gt; attribute</pre>
 </body>
 </html>

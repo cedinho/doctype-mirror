@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<img id="test" ismap="foo"></img>
+<img id="test" ismap></img>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[ImgIsmapAttribute] img.ismap reflects <img ismap>",
-    document.getElementById('test').ismap,
-    "foo");
+  assertEquals("[ImgIsmapAttribute] img.isMap reflects <img ismap>",
+    document.getElementById('test').isMap,
+    true);
 }
 </script>
-<pre>img.ismap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').ismap == "foo") ? 'reflects' : 'does not reflect');
+<pre>img.isMap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').isMap == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;img ismap&gt; attribute</pre>
 </body>
 </html>

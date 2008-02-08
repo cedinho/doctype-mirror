@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<layer id="test" top="foo"></layer>
+<layer id="test" top="42"></layer>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[LayerTopAttribute] layer.top reflects <layer top>",
     document.getElementById('test').top,
-    "foo");
+    42);
 }
 </script>
 <pre>layer.top property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').top == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').top == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;layer top&gt; attribute</pre>
 </body>
 </html>

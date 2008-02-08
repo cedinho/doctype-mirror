@@ -5,17 +5,17 @@
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
-<body>
-<body id="test" marginwidth="42"></body>
+
+<body id="test" marginwidth="42">
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[BodyMarginwidthAttribute] body.marginwidth reflects <body marginwidth>",
-    document.getElementById('test').marginwidth,
+  assertEquals("[BodyMarginwidthAttribute] body.marginWidth reflects <body marginwidth>",
+    document.body.marginWidth,
     42);
 }
 </script>
-<pre>body.marginwidth property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').marginwidth == 42) ? 'reflects' : 'does not reflect');
+<pre>body.marginWidth property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.body.marginWidth == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;body marginwidth&gt; attribute</pre>
-</body>
+
 </html>

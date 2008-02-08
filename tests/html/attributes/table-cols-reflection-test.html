@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<table id="test" cols="foo"></table>
+<table id="test" cols="42"></table>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[TableColsAttribute] table.cols reflects <table cols>",
     document.getElementById('test').cols,
-    "foo");
+    42);
 }
 </script>
 <pre>table.cols property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').cols == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').cols == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;table cols&gt; attribute</pre>
 </body>
 </html>

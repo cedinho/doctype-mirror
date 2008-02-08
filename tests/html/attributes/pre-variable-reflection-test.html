@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<pre id="test" variable="foo"></pre>
+<pre id="test" variable></pre>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[PreVariableAttribute] pre.variable reflects <pre variable>",
     document.getElementById('test').variable,
-    "foo");
+    true);
 }
 </script>
 <pre>pre.variable property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').variable == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').variable == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;pre variable&gt; attribute</pre>
 </body>
 </html>

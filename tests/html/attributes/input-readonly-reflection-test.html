@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<input id="test" readonly="foo"></input>
+<input id="test" readonly></input>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[InputReadonlyAttribute] input.readonly reflects <input readonly>",
-    document.getElementById('test').readonly,
-    "foo");
+  assertEquals("[InputReadonlyAttribute] input.readOnly reflects <input readonly>",
+    document.getElementById('test').readOnly,
+    true);
 }
 </script>
-<pre>input.readonly property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').readonly == "foo") ? 'reflects' : 'does not reflect');
+<pre>input.readOnly property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').readOnly == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;input readonly&gt; attribute</pre>
 </body>
 </html>

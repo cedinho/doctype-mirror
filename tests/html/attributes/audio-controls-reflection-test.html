@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<audio id="test" controls="foo"></audio>
+<audio id="test" controls></audio>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[AudioControlsAttribute] audio.controls reflects <audio controls>",
     document.getElementById('test').controls,
-    "foo");
+    "true");
 }
 </script>
 <pre>audio.controls property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').controls == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').controls == "true") ? 'reflects' : 'does not reflect');
 </script></a> &lt;audio controls&gt; attribute</pre>
 </body>
 </html>

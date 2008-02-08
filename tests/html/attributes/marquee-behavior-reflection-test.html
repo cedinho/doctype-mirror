@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<marquee id="test" behavior="foo"></marquee>
+<marquee id="test" behavior="alternate"></marquee>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[MarqueeBehaviorAttribute] marquee.behavior reflects <marquee behavior>",
     document.getElementById('test').behavior,
-    "foo");
+    "alternate");
 }
 </script>
 <pre>marquee.behavior property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').behavior == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').behavior == "alternate") ? 'reflects' : 'does not reflect');
 </script></a> &lt;marquee behavior&gt; attribute</pre>
 </body>
 </html>

@@ -9,13 +9,13 @@
 <frame id="test" marginheight="42"></frame>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[FrameMarginheightAttribute] frame.marginheight reflects <frame marginheight>",
-    document.getElementById('test').marginheight,
+  assertEquals("[FrameMarginheightAttribute] frame.marginHeight reflects <frame marginheight>",
+    document.getElementById('test').marginHeight,
     42);
 }
 </script>
-<pre>frame.marginheight property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').marginheight == 42) ? 'reflects' : 'does not reflect');
+<pre>frame.marginHeight property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').marginHeight == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;frame marginheight&gt; attribute</pre>
 </body>
 </html>

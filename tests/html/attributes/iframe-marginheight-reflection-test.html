@@ -9,13 +9,13 @@
 <iframe id="test" marginheight="42"></iframe>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[IframeMarginheightAttribute] iframe.marginheight reflects <iframe marginheight>",
-    document.getElementById('test').marginheight,
+  assertEquals("[IframeMarginheightAttribute] iframe.marginHeight reflects <iframe marginheight>",
+    document.getElementById('test').marginHeight,
     42);
 }
 </script>
-<pre>iframe.marginheight property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').marginheight == 42) ? 'reflects' : 'does not reflect');
+<pre>iframe.marginHeight property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').marginHeight == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;iframe marginheight&gt; attribute</pre>
 </body>
 </html>

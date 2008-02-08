@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<video id="test" loopend="foo"></video>
+<video id="test" loopend="00:00:00.00"></video>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[VideoLoopendAttribute] video.loopend reflects <video loopend>",
-    document.getElementById('test').loopend,
-    "foo");
+  assertEquals("[VideoLoopendAttribute] video.loopEnd reflects <video loopend>",
+    document.getElementById('test').loopEnd,
+    "00:00:00.00");
 }
 </script>
-<pre>video.loopend property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').loopend == "foo") ? 'reflects' : 'does not reflect');
+<pre>video.loopEnd property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').loopEnd == "00:00:00.00") ? 'reflects' : 'does not reflect');
 </script></a> &lt;video loopend&gt; attribute</pre>
 </body>
 </html>

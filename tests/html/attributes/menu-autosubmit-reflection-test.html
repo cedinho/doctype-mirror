@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<menu id="test" autosubmit="foo"></menu>
+<menu id="test" autosubmit></menu>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[MenuAutosubmitAttribute] menu.autosubmit reflects <menu autosubmit>",
     document.getElementById('test').autosubmit,
-    "foo");
+    true);
 }
 </script>
 <pre>menu.autosubmit property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').autosubmit == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').autosubmit == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;menu autosubmit&gt; attribute</pre>
 </body>
 </html>

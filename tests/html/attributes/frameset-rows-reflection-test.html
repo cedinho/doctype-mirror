@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frameset id="test" rows="foo"></frameset>
+<frameset id="test" rows="42"></frameset>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[FramesetRowsAttribute] frameset.rows reflects <frameset rows>",
     document.getElementById('test').rows,
-    "foo");
+    42);
 }
 </script>
 <pre>frameset.rows property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').rows == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').rows == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;frameset rows&gt; attribute</pre>
 </body>
 </html>

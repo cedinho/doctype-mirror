@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<table id="test" cellspacing="foo"></table>
+<table id="test" cellspacing="42"></table>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[TableCellspacingAttribute] table.cellspacing reflects <table cellspacing>",
-    document.getElementById('test').cellspacing,
-    "foo");
+  assertEquals("[TableCellspacingAttribute] table.cellSpacing reflects <table cellspacing>",
+    document.getElementById('test').cellSpacing,
+    42);
 }
 </script>
-<pre>table.cellspacing property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').cellspacing == "foo") ? 'reflects' : 'does not reflect');
+<pre>table.cellSpacing property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').cellSpacing == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;table cellspacing&gt; attribute</pre>
 </body>
 </html>

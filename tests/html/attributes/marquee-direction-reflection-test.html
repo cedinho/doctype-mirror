@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<marquee id="test" direction="foo"></marquee>
+<marquee id="test" direction="left"></marquee>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[MarqueeDirectionAttribute] marquee.direction reflects <marquee direction>",
     document.getElementById('test').direction,
-    "foo");
+    "left");
 }
 </script>
 <pre>marquee.direction property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').direction == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').direction == "left") ? 'reflects' : 'does not reflect');
 </script></a> &lt;marquee direction&gt; attribute</pre>
 </body>
 </html>

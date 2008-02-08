@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<table id="test" rightpadding="foo"></table>
+<table id="test" rightpadding="42"></table>
 <script type="text/javascript">
 function testDisplay() {
-  assertEquals("[TableRightpaddingAttribute] table.rightpadding reflects <table rightpadding>",
-    document.getElementById('test').rightpadding,
-    "foo");
+  assertEquals("[TableRightpaddingAttribute] table.rightPadding reflects <table rightpadding>",
+    document.getElementById('test').rightPadding,
+    42);
 }
 </script>
-<pre>table.rightpadding property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').rightpadding == "foo") ? 'reflects' : 'does not reflect');
+<pre>table.rightPadding property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').rightPadding == 42) ? 'reflects' : 'does not reflect');
 </script></a> &lt;table rightpadding&gt; attribute</pre>
 </body>
 </html>

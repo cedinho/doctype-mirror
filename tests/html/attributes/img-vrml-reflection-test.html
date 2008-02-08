@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<img id="test" vrml="foo"></img>
+<img id="test" vrml="http://www.example.com/"></img>
 <script type="text/javascript">
 function testDisplay() {
   assertEquals("[ImgVrmlAttribute] img.vrml reflects <img vrml>",
     document.getElementById('test').vrml,
-    "foo");
+    "http://www.example.com/");
 }
 </script>
 <pre>img.vrml property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').vrml == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').vrml == "http://www.example.com/") ? 'reflects' : 'does not reflect');
 </script></a> &lt;img vrml&gt; attribute</pre>
 </body>
 </html>
