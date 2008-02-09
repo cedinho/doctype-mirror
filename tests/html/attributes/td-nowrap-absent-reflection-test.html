@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[td] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><td id="test"></td></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[TdNowrapAttribute] td.noWrap reflects <td>',
+    false,
+    document.getElementById('test').noWrap);
+}
+</script>
+<pre>td.noWrap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').noWrap == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;td&gt; attribute</pre>
+</body>
+</html>
