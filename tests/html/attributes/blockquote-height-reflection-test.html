@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[blockquote height] reflection test</title>
+<title>[blockquote height="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<blockquote id="test" height="42"></blockquote>
+<blockquote id="test" height="7"></blockquote>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[BlockquoteHeightAttribute] blockquote.height reflects <blockquote height>",
-    document.getElementById('test').height,
-    42);
+  assertEquals('[BlockquoteHeightAttribute] blockquote.height reflects <blockquote height="7">',
+    "7",
+    document.getElementById('test').height);
 }
 </script>
 <pre>blockquote.height property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').height == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;blockquote height&gt; attribute</pre>
+document.write((document.getElementById('test').height == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;blockquote height="7"&gt; attribute</pre>
 </body>
 </html>
