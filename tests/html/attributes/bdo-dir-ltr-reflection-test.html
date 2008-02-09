@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[bdo dir="ltr"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<bdo id="test" dir="ltr"></bdo>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[BdoDirAttribute] bdo.dir reflects <bdo dir="ltr">',
+    "ltr",
+    document.getElementById('test').dir);
+}
+</script>
+<pre>bdo.dir property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').dir == "ltr") ? 'reflects' : 'does not reflect');
+</script></a> &lt;bdo dir="ltr"&gt; attribute</pre>
+</body>
+</html>
