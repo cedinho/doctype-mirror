@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[dt align="justify"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<dt id="test" align="justify"></dt>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[DtAlignAttribute] dt.align reflects <dt align="justify">',
+    "justify",
+    document.getElementById('test').align);
+}
+</script>
+<pre>dt.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "justify") ? 'reflects' : 'does not reflect');
+</script></a> &lt;dt align="justify"&gt; attribute</pre>
+</body>
+</html>
