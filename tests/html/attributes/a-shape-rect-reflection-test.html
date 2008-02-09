@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[a shape="rect"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<a id="test" shape="rect"></a>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[AShapeAttribute] a.shape reflects <a shape="rect">',
+    "rect",
+    document.getElementById('test').shape);
+}
+</script>
+<pre>a.shape property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').shape == "rect") ? 'reflects' : 'does not reflect');
+</script></a> &lt;a shape="rect"&gt; attribute</pre>
+</body>
+</html>
