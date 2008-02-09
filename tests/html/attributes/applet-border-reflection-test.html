@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[applet border] reflection test</title>
+<title>[applet border="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<applet id="test" border="42"></applet>
+<applet id="test" border="7"></applet>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AppletBorderAttribute] applet.border reflects <applet border>",
-    document.getElementById('test').border,
-    42);
+  assertEquals('[AppletBorderAttribute] applet.border reflects <applet border="7">',
+    "7",
+    document.getElementById('test').border);
 }
 </script>
 <pre>applet.border property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').border == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;applet border&gt; attribute</pre>
+document.write((document.getElementById('test').border == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;applet border="7"&gt; attribute</pre>
 </body>
 </html>
