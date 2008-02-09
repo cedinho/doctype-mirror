@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[col valign="top"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<col id="test" valign="top"></col>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[ColValignAttribute] col.vAlign reflects <col valign="top">',
+    "top",
+    document.getElementById('test').vAlign);
+}
+</script>
+<pre>col.vAlign property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').vAlign == "top") ? 'reflects' : 'does not reflect');
+</script></a> &lt;col valign="top"&gt; attribute</pre>
+</body>
+</html>
