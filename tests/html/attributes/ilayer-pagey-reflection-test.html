@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[ilayer pagey] reflection test</title>
+<title>[ilayer pagey="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <ilayer id="test" pagey="42"></ilayer>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IlayerPageyAttribute] ilayer.pagey reflects <ilayer pagey>",
-    document.getElementById('test').pagey,
-    42);
+  assertEquals('[IlayerPageyAttribute] ilayer.pagey reflects <ilayer pagey="42">',
+    42,
+    document.getElementById('test').pagey);
 }
 </script>
 <pre>ilayer.pagey property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').pagey == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;ilayer pagey&gt; attribute</pre>
+</script></a> &lt;ilayer pagey="42"&gt; attribute</pre>
 </body>
 </html>
