@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[hr] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<hr id="test"></hr>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[HrNoshadeAttribute] hr.noShade reflects <hr>',
+    false,
+    document.getElementById('test').noShade);
+}
+</script>
+<pre>hr.noShade property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').noShade == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;hr&gt; attribute</pre>
+</body>
+</html>
