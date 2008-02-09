@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[form action] reflection test</title>
+<title>[form action="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <form id="test" action="http://www.example.com/"></form>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FormActionAttribute] form.action reflects <form action>",
-    document.getElementById('test').action,
-    "http://www.example.com/");
+  assertEquals('[FormActionAttribute] form.action reflects <form action="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').action);
 }
 </script>
 <pre>form.action property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').action == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;form action&gt; attribute</pre>
+</script></a> &lt;form action="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
