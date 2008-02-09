@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[object align="absbottom"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<object id="test" align="absbottom"></object>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[ObjectAlignAttribute] object.align reflects <object align="absbottom">',
+    "absBottom",
+    document.getElementById('test').align);
+}
+</script>
+<pre>object.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "absBottom") ? 'reflects' : 'does not reflect');
+</script></a> &lt;object align="absbottom"&gt; attribute</pre>
+</body>
+</html>
