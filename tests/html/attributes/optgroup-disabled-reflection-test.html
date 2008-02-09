@@ -6,12 +6,12 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<optgroup id="test" disabled></optgroup>
+<select><optgroup id="test" disabled></optgroup></select>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[OptgroupDisabledAttribute] optgroup.disabled reflects <optgroup disabled>",
-    document.getElementById('test').disabled,
-    true);
+  assertEquals('[OptgroupDisabledAttribute] optgroup.disabled reflects <select><optgroup disabled>',
+    true,
+    document.getElementById('test').disabled);
 }
 </script>
 <pre>optgroup.disabled property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
