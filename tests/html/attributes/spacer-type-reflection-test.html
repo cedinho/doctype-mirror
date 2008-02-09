@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[spacer type] reflection test</title>
+<title>[spacer type="vertical"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <spacer id="test" type="vertical"></spacer>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[SpacerTypeAttribute] spacer.type reflects <spacer type>",
-    document.getElementById('test').type,
-    "vertical");
+  assertEquals('[SpacerTypeAttribute] spacer.type reflects <spacer type="vertical">',
+    "vertical",
+    document.getElementById('test').type);
 }
 </script>
 <pre>spacer.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').type == "vertical") ? 'reflects' : 'does not reflect');
-</script></a> &lt;spacer type&gt; attribute</pre>
+</script></a> &lt;spacer type="vertical"&gt; attribute</pre>
 </body>
 </html>
