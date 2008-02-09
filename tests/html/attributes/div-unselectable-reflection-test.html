@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<div id="test" unselectable="foo"></div>
+<div id="test" unselectable></div>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[UnselectableAttribute] div.unselectable reflects <div unselectable>",
-    document.getElementById('test').unselectable,
-    "foo");
+  assertEquals('[UnselectableAttribute] div.unselectable reflects <div unselectable>',
+    true,
+    document.getElementById('test').unselectable);
 }
 </script>
 <pre>div.unselectable property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').unselectable == "foo") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').unselectable == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;div unselectable&gt; attribute</pre>
 </body>
 </html>
