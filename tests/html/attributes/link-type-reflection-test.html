@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[link type] reflection test</title>
+<title>[link type="text/html"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <link id="test" type="text/html"></link>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LinkTypeAttribute] link.type reflects <link type>",
-    document.getElementById('test').type,
-    "text/html");
+  assertEquals('[LinkTypeAttribute] link.type reflects <link type="text/html">',
+    "text/html",
+    document.getElementById('test').type);
 }
 </script>
 <pre>link.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').type == "text/html") ? 'reflects' : 'does not reflect');
-</script></a> &lt;link type&gt; attribute</pre>
+</script></a> &lt;link type="text/html"&gt; attribute</pre>
 </body>
 </html>
