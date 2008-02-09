@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[input dynsrc] reflection test</title>
+<title>[input dynsrc="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <input id="test" dynsrc="http://www.example.com/"></input>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[InputDynsrcAttribute] input.dynsrc reflects <input dynsrc>",
-    document.getElementById('test').dynsrc,
-    "http://www.example.com/");
+  assertEquals('[InputDynsrcAttribute] input.dynsrc reflects <input dynsrc="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').dynsrc);
 }
 </script>
 <pre>input.dynsrc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').dynsrc == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;input dynsrc&gt; attribute</pre>
+</script></a> &lt;input dynsrc="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
