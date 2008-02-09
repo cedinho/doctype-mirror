@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[marquee scrollamount] reflection test</title>
+<title>[marquee scrollamount="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <marquee id="test" scrollamount="42"></marquee>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[MarqueeScrollamountAttribute] marquee.scrollAmount reflects <marquee scrollamount>",
-    document.getElementById('test').scrollAmount,
-    42);
+  assertEquals('[MarqueeScrollamountAttribute] marquee.scrollAmount reflects <marquee scrollamount="42">',
+    42,
+    document.getElementById('test').scrollAmount);
 }
 </script>
 <pre>marquee.scrollAmount property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').scrollAmount == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;marquee scrollamount&gt; attribute</pre>
+</script></a> &lt;marquee scrollamount="42"&gt; attribute</pre>
 </body>
 </html>
