@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[sound delay] reflection test</title>
+<title>[sound delay="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <sound id="test" delay="42"></sound>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[SoundDelayAttribute] sound.delay reflects <sound delay>",
-    document.getElementById('test').delay,
-    42);
+  assertEquals('[SoundDelayAttribute] sound.delay reflects <sound delay="42">',
+    42,
+    document.getElementById('test').delay);
 }
 </script>
 <pre>sound.delay property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').delay == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;sound delay&gt; attribute</pre>
+</script></a> &lt;sound delay="42"&gt; attribute</pre>
 </body>
 </html>
