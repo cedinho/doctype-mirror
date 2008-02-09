@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[ul start] reflection test</title>
+<title>[ul start="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <ul id="test" start="42"></ul>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[UlStartAttribute] ul.start reflects <ul start>",
-    document.getElementById('test').start,
-    42);
+  assertEquals('[UlStartAttribute] ul.start reflects <ul start="42">',
+    42,
+    document.getElementById('test').start);
 }
 </script>
 <pre>ul.start property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').start == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;ul start&gt; attribute</pre>
+</script></a> &lt;ul start="42"&gt; attribute</pre>
 </body>
 </html>
