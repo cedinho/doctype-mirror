@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[link methods] reflection test</title>
+<title>[link methods="GET"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <link id="test" methods="GET"></link>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LinkMethodsAttribute] link.methods reflects <link methods>",
-    document.getElementById('test').methods,
-    "GET");
+  assertEquals('[LinkMethodsAttribute] link.Methods reflects <link methods="GET">',
+    "GET",
+    document.getElementById('test').Methods);
 }
 </script>
-<pre>link.methods property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').methods == "GET") ? 'reflects' : 'does not reflect');
-</script></a> &lt;link methods&gt; attribute</pre>
+<pre>link.Methods property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').Methods == "GET") ? 'reflects' : 'does not reflect');
+</script></a> &lt;link methods="GET"&gt; attribute</pre>
 </body>
 </html>
