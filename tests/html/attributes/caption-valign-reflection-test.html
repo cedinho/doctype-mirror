@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[caption valign] reflection test</title>
+<title>[caption valign="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<caption id="test" valign="left"></caption>
+<table><caption id="test" valign="foo"></caption></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[CaptionValignAttribute] caption.valign reflects <caption valign>",
-    document.getElementById('test').valign,
-    "left");
+  assertEquals('[CaptionValignAttribute] caption.vAlign reflects <caption valign="foo">',
+    "foo",
+    document.getElementById('test').vAlign);
 }
 </script>
-<pre>caption.valign property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').valign == "left") ? 'reflects' : 'does not reflect');
-</script></a> &lt;caption valign&gt; attribute</pre>
+<pre>caption.vAlign property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').vAlign == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;caption valign="foo"&gt; attribute</pre>
 </body>
 </html>
