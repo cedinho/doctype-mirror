@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[a suppress] reflection test</title>
+<title>[a suppress="true"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <a id="test" suppress="true"></a>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ASuppressAttribute] a.suppress reflects <a suppress>",
-    document.getElementById('test').suppress,
-    true);
+  assertEquals('[ASuppressAttribute] a.suppress reflects <a suppress="true">',
+    true,
+    document.getElementById('test').suppress);
 }
 </script>
 <pre>a.suppress property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').suppress == true) ? 'reflects' : 'does not reflect');
-</script></a> &lt;a suppress&gt; attribute</pre>
+</script></a> &lt;a suppress="true"&gt; attribute</pre>
 </body>
 </html>
