@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[object alt] reflection test</title>
+<title>[object alt="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <object id="test" alt="foo"></object>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ObjectAltAttribute] object.alt reflects <object alt>",
-    document.getElementById('test').alt,
-    "foo");
+  assertEquals('[ObjectAltAttribute] object.alt reflects <object alt="foo">',
+    "foo",
+    document.getElementById('test').alt);
 }
 </script>
 <pre>object.alt property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').alt == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;object alt&gt; attribute</pre>
+</script></a> &lt;object alt="foo"&gt; attribute</pre>
 </body>
 </html>
