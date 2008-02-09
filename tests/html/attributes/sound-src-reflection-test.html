@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[sound src] reflection test</title>
+<title>[sound src="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <sound id="test" src="http://www.example.com/"></sound>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[SoundSrcAttribute] sound.src reflects <sound src>",
-    document.getElementById('test').src,
-    "http://www.example.com/");
+  assertEquals('[SoundSrcAttribute] sound.src reflects <sound src="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').src);
 }
 </script>
 <pre>sound.src property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').src == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;sound src&gt; attribute</pre>
+</script></a> &lt;sound src="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
