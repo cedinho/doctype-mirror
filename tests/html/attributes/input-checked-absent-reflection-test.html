@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[input] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<input id="test"></input>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[InputCheckedAttribute] input.checked reflects <input>',
+    false,
+    document.getElementById('test').checked);
+}
+</script>
+<pre>input.checked property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').checked == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;input&gt; attribute</pre>
+</body>
+</html>
