@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[th scope="rowgroup"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><th id="test" scope="rowgroup"></th></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[ThScopeAttribute] th.scope reflects <th scope="rowgroup">',
+    "rowgroup",
+    document.getElementById('test').scope);
+}
+</script>
+<pre>th.scope property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').scope == "rowgroup") ? 'reflects' : 'does not reflect');
+</script></a> &lt;th scope="rowgroup"&gt; attribute</pre>
+</body>
+</html>
