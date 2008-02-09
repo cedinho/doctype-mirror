@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[object usemap] reflection test</title>
+<title>[object usemap="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <object id="test" usemap="http://www.example.com/"></object>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ObjectUsemapAttribute] object.useMap reflects <object usemap>",
-    document.getElementById('test').useMap,
-    "http://www.example.com/");
+  assertEquals('[ObjectUsemapAttribute] object.useMap reflects <object usemap="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').useMap);
 }
 </script>
 <pre>object.useMap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').useMap == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;object usemap&gt; attribute</pre>
+</script></a> &lt;object usemap="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
