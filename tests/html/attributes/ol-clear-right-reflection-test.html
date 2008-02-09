@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[ol clear="right"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<ol id="test" clear="right"></ol>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[OlClearAttribute] ol.clear reflects <ol clear="right">',
+    "right",
+    document.getElementById('test').clear);
+}
+</script>
+<pre>ol.clear property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').clear == "right") ? 'reflects' : 'does not reflect');
+</script></a> &lt;ol clear="right"&gt; attribute</pre>
+</body>
+</html>
