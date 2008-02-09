@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[frame security] reflection test</title>
+<title>[frame security="restricted"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frame id="test" security="restricted"></frame>
+<frameset><frame id="test" src="blank.html" security="restricted"></frame></frameset>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FrameSecurityAttribute] frame.security reflects <frame security>",
-    document.getElementById('test').security,
-    "restricted");
+  assertEquals('[FrameSecurityAttribute] frame.security reflects <frame security="restricted">',
+    "restricted",
+    document.getElementById('test').security);
 }
 </script>
 <pre>frame.security property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').security == "restricted") ? 'reflects' : 'does not reflect');
-</script></a> &lt;frame security&gt; attribute</pre>
+</script></a> &lt;frame security="restricted"&gt; attribute</pre>
 </body>
 </html>
