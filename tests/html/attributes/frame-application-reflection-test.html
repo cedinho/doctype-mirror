@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[frame application] reflection test</title>
+<title>[frame application="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frame id="test" application="foo"></frame>
+<frameset><frame id="test" src="blank.html" application="foo"></frame></frameset>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FrameApplicationAttribute] frame.application reflects <frame application>",
-    document.getElementById('test').application,
-    "foo");
+  assertEquals('[FrameApplicationAttribute] frame.application reflects <frame application="foo">',
+    "foo",
+    document.getElementById('test').application);
 }
 </script>
 <pre>frame.application property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').application == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;frame application&gt; attribute</pre>
+</script></a> &lt;frame application="foo"&gt; attribute</pre>
 </body>
 </html>
