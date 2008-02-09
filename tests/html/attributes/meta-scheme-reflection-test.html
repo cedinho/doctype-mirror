@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[meta scheme] reflection test</title>
+<title>[meta scheme="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <meta id="test" scheme="foo"></meta>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[MetaSchemeAttribute] meta.scheme reflects <meta scheme>",
-    document.getElementById('test').scheme,
-    "foo");
+  assertEquals('[MetaSchemeAttribute] meta.scheme reflects <meta scheme="foo">',
+    "foo",
+    document.getElementById('test').scheme);
 }
 </script>
 <pre>meta.scheme property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').scheme == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;meta scheme&gt; attribute</pre>
+</script></a> &lt;meta scheme="foo"&gt; attribute</pre>
 </body>
 </html>
