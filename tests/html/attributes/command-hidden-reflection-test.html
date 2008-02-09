@@ -9,9 +9,9 @@
 <command id="test" hidden></command>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[CommandHiddenAttribute] command.hidden reflects <command hidden>",
-    document.getElementById('test').hidden,
-    true);
+  assertEquals('[CommandHiddenAttribute] command.hidden reflects <command hidden>',
+    true,
+    document.getElementById('test').hidden);
 }
 </script>
 <pre>command.hidden property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
