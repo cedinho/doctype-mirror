@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[pre] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<pre id="test"></pre>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[PreVariableAttribute] pre.variable reflects <pre>',
+    false,
+    document.getElementById('test').variable);
+}
+</script>
+<pre>pre.variable property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').variable == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;pre&gt; attribute</pre>
+</body>
+</html>
