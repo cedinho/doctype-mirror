@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[command icon] reflection test</title>
+<title>[command icon="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <command id="test" icon="foo"></command>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[CommandIconAttribute] command.icon reflects <command icon>",
-    document.getElementById('test').icon,
-    "foo");
+  assertEquals('[CommandIconAttribute] command.icon reflects <command icon="foo">',
+    "foo",
+    document.getElementById('test').icon);
 }
 </script>
 <pre>command.icon property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').icon == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;command icon&gt; attribute</pre>
+</script></a> &lt;command icon="foo"&gt; attribute</pre>
 </body>
 </html>
