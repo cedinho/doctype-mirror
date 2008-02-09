@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[dl clear="left"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<dl id="test" clear="left"></dl>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[DlClearAttribute] dl.clear reflects <dl clear="left">',
+    "left",
+    document.getElementById('test').clear);
+}
+</script>
+<pre>dl.clear property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').clear == "left") ? 'reflects' : 'does not reflect');
+</script></a> &lt;dl clear="left"&gt; attribute</pre>
+</body>
+</html>
