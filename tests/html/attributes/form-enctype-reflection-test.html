@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[form enctype] reflection test</title>
+<title>[form enctype="application/x-www-form-urlencoded"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<form id="test" enctype="text/html"></form>
+<form id="test" enctype="application/x-www-form-urlencoded"></form>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FormEnctypeAttribute] form.enctype reflects <form enctype>",
-    document.getElementById('test').enctype,
-    "text/html");
+  assertEquals('[FormEnctypeAttribute] form.enctype reflects <form enctype="application/x-www-form-urlencoded">',
+    "application/x-www-form-urlencoded",
+    document.getElementById('test').enctype);
 }
 </script>
 <pre>form.enctype property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').enctype == "text/html") ? 'reflects' : 'does not reflect');
-</script></a> &lt;form enctype&gt; attribute</pre>
+document.write((document.getElementById('test').enctype == "application/x-www-form-urlencoded") ? 'reflects' : 'does not reflect');
+</script></a> &lt;form enctype="application/x-www-form-urlencoded"&gt; attribute</pre>
 </body>
 </html>
