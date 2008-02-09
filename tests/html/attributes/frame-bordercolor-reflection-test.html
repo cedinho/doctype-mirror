@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[frame bordercolor] reflection test</title>
+<title>[frame bordercolor="#ffffff"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frame id="test" bordercolor="#ffffff"></frame>
+<frameset><frame id="test" src="blank.html" bordercolor="#ffffff"></frame></frameset>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FrameBordercolorAttribute] frame.borderColor reflects <frame bordercolor>",
-    document.getElementById('test').borderColor,
-    "#ffffff");
+  assertEquals('[FrameBordercolorAttribute] frame.borderColor reflects <frame bordercolor="#ffffff">',
+    "#ffffff",
+    document.getElementById('test').borderColor);
 }
 </script>
 <pre>frame.borderColor property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').borderColor == "#ffffff") ? 'reflects' : 'does not reflect');
-</script></a> &lt;frame bordercolor&gt; attribute</pre>
+</script></a> &lt;frame bordercolor="#ffffff"&gt; attribute</pre>
 </body>
 </html>
