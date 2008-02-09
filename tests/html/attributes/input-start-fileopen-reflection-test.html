@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[input start="fileopen"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<input id="test" start="fileopen"></input>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[InputStartAttribute] input.start reflects <input start="fileopen">',
+    "fileopen",
+    document.getElementById('test').start);
+}
+</script>
+<pre>input.start property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').start == "fileopen") ? 'reflects' : 'does not reflect');
+</script></a> &lt;input start="fileopen"&gt; attribute</pre>
+</body>
+</html>
