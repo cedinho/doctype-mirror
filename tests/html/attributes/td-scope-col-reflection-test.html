@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[td scope="col"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><td id="test" scope="col"></td></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[TdScopeAttribute] td.scope reflects <td scope="col">',
+    "col",
+    document.getElementById('test').scope);
+}
+</script>
+<pre>td.scope property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').scope == "col") ? 'reflects' : 'does not reflect');
+</script></a> &lt;td scope="col"&gt; attribute</pre>
+</body>
+</html>
