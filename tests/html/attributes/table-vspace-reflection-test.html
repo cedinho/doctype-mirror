@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[table vspace] reflection test</title>
+<title>[table vspace="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <table id="test" vspace="42"></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TableVspaceAttribute] table.vspace reflects <table vspace>",
-    document.getElementById('test').vspace,
-    42);
+  assertEquals('[TableVspaceAttribute] table.vspace reflects <table vspace="42">',
+    42,
+    document.getElementById('test').vspace);
 }
 </script>
 <pre>table.vspace property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').vspace == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;table vspace&gt; attribute</pre>
+</script></a> &lt;table vspace="42"&gt; attribute</pre>
 </body>
 </html>
