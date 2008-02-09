@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[tr align="left"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><tr id="test" align="left"></tr></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[TrAlignAttribute] tr.align reflects <tr align="left">',
+    "left",
+    document.getElementById('test').align);
+}
+</script>
+<pre>tr.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "left") ? 'reflects' : 'does not reflect');
+</script></a> &lt;tr align="left"&gt; attribute</pre>
+</body>
+</html>
