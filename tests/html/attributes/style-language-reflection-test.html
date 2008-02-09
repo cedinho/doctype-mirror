@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[style language] reflection test</title>
+<title>[style language="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <style id="test" language="foo"></style>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[StyleLanguageAttribute] style.language reflects <style language>",
-    document.getElementById('test').language,
-    "foo");
+  assertEquals('[StyleLanguageAttribute] style.language reflects <style language="foo">',
+    "foo",
+    document.getElementById('test').language);
 }
 </script>
 <pre>style.language property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').language == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;style language&gt; attribute</pre>
+</script></a> &lt;style language="foo"&gt; attribute</pre>
 </body>
 </html>
