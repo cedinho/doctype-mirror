@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[embed hspace] reflection test</title>
+<title>[embed hspace="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<embed id="test" hspace="42"></embed>
+<embed id="test" hspace="7"></embed>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[EmbedHspaceAttribute] embed.hspace reflects <embed hspace>",
-    document.getElementById('test').hspace,
-    42);
+  assertEquals('[EmbedHspaceAttribute] embed.hspace reflects <embed hspace="7">',
+    "7",
+    document.getElementById('test').hspace);
 }
 </script>
 <pre>embed.hspace property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').hspace == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;embed hspace&gt; attribute</pre>
+document.write((document.getElementById('test').hspace == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;embed hspace="7"&gt; attribute</pre>
 </body>
 </html>
