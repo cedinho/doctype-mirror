@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[command radiogroup] reflection test</title>
+<title>[command radiogroup="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <command id="test" radiogroup="foo"></command>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[CommandRadiogroupAttribute] command.radiogroup reflects <command radiogroup>",
-    document.getElementById('test').radiogroup,
-    "foo");
+  assertEquals('[CommandRadiogroupAttribute] command.radiogroup reflects <command radiogroup="foo">',
+    "foo",
+    document.getElementById('test').radiogroup);
 }
 </script>
 <pre>command.radiogroup property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').radiogroup == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;command radiogroup&gt; attribute</pre>
+</script></a> &lt;command radiogroup="foo"&gt; attribute</pre>
 </body>
 </html>
