@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[bdo lang] reflection test</title>
+<title>[bdo lang="en"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <bdo id="test" lang="en"></bdo>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[BdoLangAttribute] bdo.lang reflects <bdo lang>",
-    document.getElementById('test').lang,
-    "en");
+  assertEquals('[BdoLangAttribute] bdo.lang reflects <bdo lang="en">',
+    "en",
+    document.getElementById('test').lang);
 }
 </script>
 <pre>bdo.lang property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').lang == "en") ? 'reflects' : 'does not reflect');
-</script></a> &lt;bdo lang&gt; attribute</pre>
+</script></a> &lt;bdo lang="en"&gt; attribute</pre>
 </body>
 </html>
