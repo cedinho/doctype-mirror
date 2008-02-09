@@ -9,9 +9,9 @@
 <input id="test" checked></input>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[InputCheckedAttribute] input.checked reflects <input checked>",
-    document.getElementById('test').checked,
-    true);
+  assertEquals('[InputCheckedAttribute] input.checked reflects <input checked>',
+    true,
+    document.getElementById('test').checked);
 }
 </script>
 <pre>input.checked property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
