@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[td rowspan] reflection test</title>
+<title>[td rowspan="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<td id="test" rowspan="42"></td>
+<table><td id="test" rowspan="42"></td></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TdRowspanAttribute] td.rowspan reflects <td rowspan>",
-    document.getElementById('test').rowspan,
-    42);
+  assertEquals('[TdRowspanAttribute] td.rowSpan reflects <td rowspan="42">',
+    42,
+    document.getElementById('test').rowSpan);
 }
 </script>
-<pre>td.rowspan property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').rowspan == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;td rowspan&gt; attribute</pre>
+<pre>td.rowSpan property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').rowSpan == 42) ? 'reflects' : 'does not reflect');
+</script></a> &lt;td rowspan="42"&gt; attribute</pre>
 </body>
 </html>
