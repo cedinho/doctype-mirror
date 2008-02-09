@@ -6,16 +6,16 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frame id="test" noresize></frame>
+<frameset><frame id="test" src="blank.html" noresize></frame></frameset>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FrameNoresizeAttribute] frame.noresize reflects <frame noresize>",
-    document.getElementById('test').noresize,
-    "true");
+  assertEquals('[FrameNoresizeAttribute] frame.noResize reflects <frame noresize>',
+    true,
+    document.getElementById('test').noResize);
 }
 </script>
-<pre>frame.noresize property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').noresize == "true") ? 'reflects' : 'does not reflect');
+<pre>frame.noResize property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').noResize == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;frame noresize&gt; attribute</pre>
 </body>
 </html>
