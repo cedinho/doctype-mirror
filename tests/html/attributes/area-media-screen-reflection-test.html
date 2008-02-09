@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[area media="screen"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<map><area id="test" media="screen"></area></map>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[AreaMediaAttribute] area.media reflects <area media="screen">',
+    "screen",
+    document.getElementById('test').media);
+}
+</script>
+<pre>area.media property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').media == "screen") ? 'reflects' : 'does not reflect');
+</script></a> &lt;area media="screen"&gt; attribute</pre>
+</body>
+</html>
