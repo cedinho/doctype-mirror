@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[div lang] reflection test</title>
+<title>[div lang="en"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <div id="test" lang="en"></div>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LangAttribute] div.lang reflects <div lang>",
-    document.getElementById('test').lang,
-    "en");
+  assertEquals('[LangAttribute] div.lang reflects <div lang="en">',
+    "en",
+    document.getElementById('test').lang);
 }
 </script>
 <pre>div.lang property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').lang == "en") ? 'reflects' : 'does not reflect');
-</script></a> &lt;div lang&gt; attribute</pre>
+</script></a> &lt;div lang="en"&gt; attribute</pre>
 </body>
 </html>
