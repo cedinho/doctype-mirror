@@ -9,9 +9,9 @@
 <div id="test" contenteditable></div>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ContenteditableAttribute] div.contentEditable reflects <div contenteditable>",
-    document.getElementById('test').contentEditable,
-    "true");
+  assertEquals('[ContenteditableAttribute] div.contentEditable reflects <div contenteditable>',
+    "true",
+    document.getElementById('test').contentEditable);
 }
 </script>
 <pre>div.contentEditable property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
