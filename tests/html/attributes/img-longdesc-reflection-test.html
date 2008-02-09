@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[img longdesc] reflection test</title>
+<title>[img longdesc="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <img id="test" longdesc="http://www.example.com/"></img>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ImgLongdescAttribute] img.longdesc reflects <img longdesc>",
-    document.getElementById('test').longdesc,
-    "http://www.example.com/");
+  assertEquals('[ImgLongdescAttribute] img.longDesc reflects <img longdesc="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').longDesc);
 }
 </script>
-<pre>img.longdesc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').longdesc == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;img longdesc&gt; attribute</pre>
+<pre>img.longDesc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').longDesc == "http://www.example.com/") ? 'reflects' : 'does not reflect');
+</script></a> &lt;img longdesc="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
