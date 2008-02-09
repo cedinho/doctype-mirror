@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[table cellpadding] reflection test</title>
+<title>[table cellpadding="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<table id="test" cellpadding="42"></table>
+<table id="test" cellpadding="7"></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TableCellpaddingAttribute] table.cellPadding reflects <table cellpadding>",
-    document.getElementById('test').cellPadding,
-    42);
+  assertEquals('[TableCellpaddingAttribute] table.cellPadding reflects <table cellpadding="7">',
+    "7",
+    document.getElementById('test').cellPadding);
 }
 </script>
 <pre>table.cellPadding property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').cellPadding == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;table cellpadding&gt; attribute</pre>
+document.write((document.getElementById('test').cellPadding == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;table cellpadding="7"&gt; attribute</pre>
 </body>
 </html>
