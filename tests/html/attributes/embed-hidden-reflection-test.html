@@ -9,9 +9,9 @@
 <embed id="test" hidden></embed>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[EmbedHiddenAttribute] embed.hidden reflects <embed hidden>",
-    document.getElementById('test').hidden,
-    "true");
+  assertEquals('[EmbedHiddenAttribute] embed.hidden reflects <embed hidden>',
+    "true",
+    document.getElementById('test').hidden);
 }
 </script>
 <pre>embed.hidden property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
