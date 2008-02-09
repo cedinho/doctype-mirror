@@ -9,9 +9,9 @@
 <embed id="test" disabled></embed>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[EmbedDisabledAttribute] embed.disabled reflects <embed disabled>",
-    document.getElementById('test').disabled,
-    true);
+  assertEquals('[EmbedDisabledAttribute] embed.disabled reflects <embed disabled>',
+    true,
+    document.getElementById('test').disabled);
 }
 </script>
 <pre>embed.disabled property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
