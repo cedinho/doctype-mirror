@@ -9,9 +9,9 @@
 <script id="test" async></script>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ScriptAsyncAttribute] script.async reflects <script async>",
-    document.getElementById('test').async,
-    true);
+  assertEquals('[ScriptAsyncAttribute] script.async reflects <script async>',
+    true,
+    document.getElementById('test').async);
 }
 </script>
 <pre>script.async property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
