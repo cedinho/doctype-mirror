@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[fieldset height] reflection test</title>
+<title>[fieldset height="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<fieldset id="test" height="42"></fieldset>
+<fieldset id="test" height="7"></fieldset>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FieldsetHeightAttribute] fieldset.height reflects <fieldset height>",
-    document.getElementById('test').height,
-    42);
+  assertEquals('[FieldsetHeightAttribute] fieldset.height reflects <fieldset height="7">',
+    "7",
+    document.getElementById('test').height);
 }
 </script>
 <pre>fieldset.height property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').height == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;fieldset height&gt; attribute</pre>
+document.write((document.getElementById('test').height == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;fieldset height="7"&gt; attribute</pre>
 </body>
 </html>
