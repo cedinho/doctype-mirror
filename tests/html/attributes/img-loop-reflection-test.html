@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[img loop] reflection test</title>
+<title>[img loop="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <img id="test" loop="42"></img>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ImgLoopAttribute] img.loop reflects <img loop>",
-    document.getElementById('test').loop,
-    42);
+  assertEquals('[ImgLoopAttribute] img.loop reflects <img loop="42">',
+    42,
+    document.getElementById('test').loop);
 }
 </script>
 <pre>img.loop property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').loop == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;img loop&gt; attribute</pre>
+</script></a> &lt;img loop="42"&gt; attribute</pre>
 </body>
 </html>
