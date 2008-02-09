@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[tr background] reflection test</title>
+<title>[tr background="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<tr id="test" background="http://www.example.com/"></tr>
+<table><tr id="test" background="http://www.example.com/"></tr></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TrBackgroundAttribute] tr.background reflects <tr background>",
-    document.getElementById('test').background,
-    "http://www.example.com/");
+  assertEquals('[TrBackgroundAttribute] tr.background reflects <tr background="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').background);
 }
 </script>
 <pre>tr.background property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').background == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;tr background&gt; attribute</pre>
+</script></a> &lt;tr background="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
