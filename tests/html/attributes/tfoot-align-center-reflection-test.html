@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[tfoot align="center"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><tfoot id="test" align="center"></tfoot></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[TfootAlignAttribute] tfoot.align reflects <tfoot align="center">',
+    "center",
+    document.getElementById('test').align);
+}
+</script>
+<pre>tfoot.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "center") ? 'reflects' : 'does not reflect');
+</script></a> &lt;tfoot align="center"&gt; attribute</pre>
+</body>
+</html>
