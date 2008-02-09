@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[layer width] reflection test</title>
+<title>[layer width="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<layer id="test" width="42"></layer>
+<layer id="test" width="7"></layer>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LayerWidthAttribute] layer.width reflects <layer width>",
-    document.getElementById('test').width,
-    42);
+  assertEquals('[LayerWidthAttribute] layer.width reflects <layer width="7">',
+    "7",
+    document.getElementById('test').width);
 }
 </script>
 <pre>layer.width property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').width == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;layer width&gt; attribute</pre>
+document.write((document.getElementById('test').width == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;layer width="7"&gt; attribute</pre>
 </body>
 </html>
