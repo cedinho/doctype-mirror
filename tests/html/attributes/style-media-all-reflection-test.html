@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[style media="all"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<style id="test" media="all"></style>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[StyleMediaAttribute] style.media reflects <style media="all">',
+    "all",
+    document.getElementById('test').media);
+}
+</script>
+<pre>style.media property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').media == "all") ? 'reflects' : 'does not reflect');
+</script></a> &lt;style media="all"&gt; attribute</pre>
+</body>
+</html>
