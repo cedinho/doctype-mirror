@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[area type] reflection test</title>
+<title>[area type="text/html"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<area id="test" type="foo"></area>
+<map><area id="test" type="text/html"></area></map>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AreaTypeAttribute] area.type reflects <area type>",
-    document.getElementById('test').type,
-    "foo");
+  assertEquals('[AreaTypeAttribute] area.type reflects <area type="text/html">',
+    "text/html",
+    document.getElementById('test').type);
 }
 </script>
 <pre>area.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').type == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;area type&gt; attribute</pre>
+document.write((document.getElementById('test').type == "text/html") ? 'reflects' : 'does not reflect');
+</script></a> &lt;area type="text/html"&gt; attribute</pre>
 </body>
 </html>
