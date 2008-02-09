@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[body bgproperties] reflection test</title>
+<title>[body bgproperties="fixed"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <body id="test" bgproperties="fixed">
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[BodyBgpropertiesAttribute] body.bgProperties reflects <body bgproperties>",
-    document.body.bgProperties,
-    "fixed");
+  assertEquals('[BodyBgpropertiesAttribute] body.bgProperties reflects <body bgproperties="fixed">',
+    "fixed",
+    document.body.bgProperties);
 }
 </script>
 <pre>body.bgProperties property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.body.bgProperties == "fixed") ? 'reflects' : 'does not reflect');
-</script></a> &lt;body bgproperties&gt; attribute</pre>
+</script></a> &lt;body bgproperties="fixed"&gt; attribute</pre>
 
 </html>
