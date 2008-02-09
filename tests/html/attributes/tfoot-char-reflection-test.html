@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[tfoot char] reflection test</title>
+<title>[tfoot char="C"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<tfoot id="test" char="C"></tfoot>
+<table><tfoot id="test" char="C"></tfoot></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TfootCharAttribute] tfoot.char reflects <tfoot char>",
-    document.getElementById('test').char,
-    "C");
+  assertEquals('[TfootCharAttribute] tfoot.char reflects <tfoot char="C">',
+    "C",
+    document.getElementById('test').char);
 }
 </script>
 <pre>tfoot.char property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').char == "C") ? 'reflects' : 'does not reflect');
-</script></a> &lt;tfoot char&gt; attribute</pre>
+</script></a> &lt;tfoot char="C"&gt; attribute</pre>
 </body>
 </html>
