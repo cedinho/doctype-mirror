@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[label for] reflection test</title>
+<title>[label for="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <label id="test" for="foo"></label>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LabelForAttribute] label.htmlFor reflects <label for>",
-    document.getElementById('test').htmlFor,
-    "foo");
+  assertEquals('[LabelForAttribute] label.htmlFor reflects <label for="foo">',
+    "foo",
+    document.getElementById('test').htmlFor);
 }
 </script>
 <pre>label.htmlFor property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').htmlFor == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;label for&gt; attribute</pre>
+</script></a> &lt;label for="foo"&gt; attribute</pre>
 </body>
 </html>
