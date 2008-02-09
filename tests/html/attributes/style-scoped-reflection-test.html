@@ -9,9 +9,9 @@
 <style id="test" scoped></style>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[StyleScopedAttribute] style.scoped reflects <style scoped>",
-    document.getElementById('test').scoped,
-    true);
+  assertEquals('[StyleScopedAttribute] style.scoped reflects <style scoped>',
+    true,
+    document.getElementById('test').scoped);
 }
 </script>
 <pre>style.scoped property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
