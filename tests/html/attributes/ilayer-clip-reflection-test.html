@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[ilayer clip] reflection test</title>
+<title>[ilayer clip="0,0,10,10"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <ilayer id="test" clip="0,0,10,10"></ilayer>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IlayerClipAttribute] ilayer.clip reflects <ilayer clip>",
-    document.getElementById('test').clip,
-    "0,0,10,10");
+  assertEquals('[IlayerClipAttribute] ilayer.clip reflects <ilayer clip="0,0,10,10">',
+    "0,0,10,10",
+    document.getElementById('test').clip);
 }
 </script>
 <pre>ilayer.clip property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').clip == "0,0,10,10") ? 'reflects' : 'does not reflect');
-</script></a> &lt;ilayer clip&gt; attribute</pre>
+</script></a> &lt;ilayer clip="0,0,10,10"&gt; attribute</pre>
 </body>
 </html>
