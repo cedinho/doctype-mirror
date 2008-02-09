@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[td headers] reflection test</title>
+<title>[td headers="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<td id="test" headers="foo"></td>
+<table><td id="test" headers="foo"></td></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TdHeadersAttribute] td.headers reflects <td headers>",
-    document.getElementById('test').headers,
-    "foo");
+  assertEquals('[TdHeadersAttribute] td.headers reflects <td headers="foo">',
+    "foo",
+    document.getElementById('test').headers);
 }
 </script>
 <pre>td.headers property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').headers == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;td headers&gt; attribute</pre>
+</script></a> &lt;td headers="foo"&gt; attribute</pre>
 </body>
 </html>
