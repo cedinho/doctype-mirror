@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[optgroup label] reflection test</title>
+<title>[optgroup label="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<optgroup id="test" label="foo"></optgroup>
+<select><optgroup id="test" label="foo"></optgroup></select>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[OptgroupLabelAttribute] optgroup.label reflects <optgroup label>",
-    document.getElementById('test').label,
-    "foo");
+  assertEquals('[OptgroupLabelAttribute] optgroup.label reflects <select><optgroup label="foo">',
+    "foo",
+    document.getElementById('test').label);
 }
 </script>
 <pre>optgroup.label property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').label == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;optgroup label&gt; attribute</pre>
+</script></a> &lt;optgroup label="foo"&gt; attribute</pre>
 </body>
 </html>
