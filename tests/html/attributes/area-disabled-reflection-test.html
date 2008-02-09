@@ -6,12 +6,12 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<area id="test" disabled></area>
+<map><area id="test" disabled></area></map>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AreaDisabledAttribute] area.disabled reflects <area disabled>",
-    document.getElementById('test').disabled,
-    true);
+  assertEquals('[AreaDisabledAttribute] area.disabled reflects <area disabled>',
+    true,
+    document.getElementById('test').disabled);
 }
 </script>
 <pre>area.disabled property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
