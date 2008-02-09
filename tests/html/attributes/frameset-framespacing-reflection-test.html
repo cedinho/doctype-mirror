@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[frameset framespacing] reflection test</title>
+<title>[frameset framespacing="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <frameset id="test" framespacing="42"></frameset>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FramesetFramespacingAttribute] frameset.frameSpacing reflects <frameset framespacing>",
-    document.getElementById('test').frameSpacing,
-    42);
+  assertEquals('[FramesetFramespacingAttribute] frameset.frameSpacing reflects <frameset framespacing="42">',
+    42,
+    document.getElementById('test').frameSpacing);
 }
 </script>
 <pre>frameset.frameSpacing property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').frameSpacing == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;frameset framespacing&gt; attribute</pre>
+</script></a> &lt;frameset framespacing="42"&gt; attribute</pre>
 </body>
 </html>
