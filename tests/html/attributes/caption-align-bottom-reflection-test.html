@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[caption align="bottom"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><caption id="test" align="bottom"></caption></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[CaptionAlignAttribute] caption.align reflects <caption align="bottom">',
+    "bottom",
+    document.getElementById('test').align);
+}
+</script>
+<pre>caption.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "bottom") ? 'reflects' : 'does not reflect');
+</script></a> &lt;caption align="bottom"&gt; attribute</pre>
+</body>
+</html>
