@@ -9,9 +9,9 @@
 <command id="test" default></command>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[CommandDefaultAttribute] command.default reflects <command default>",
-    document.getElementById('test').default,
-    true);
+  assertEquals('[CommandDefaultAttribute] command.default reflects <command default>',
+    true,
+    document.getElementById('test').default);
 }
 </script>
 <pre>command.default property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
