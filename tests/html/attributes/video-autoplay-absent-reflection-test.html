@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[video] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<video id="test"></video>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[VideoAutoplayAttribute] video.autoplay reflects <video>',
+    false,
+    document.getElementById('test').autoplay);
+}
+</script>
+<pre>video.autoplay property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').autoplay == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;video&gt; attribute</pre>
+</body>
+</html>
