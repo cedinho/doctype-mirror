@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[iframe security] reflection test</title>
+<title>[iframe security="restricted"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<iframe id="test" security="restricted"></iframe>
+<iframe id="test" src="blank.html" security="restricted"></iframe>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IframeSecurityAttribute] iframe.security reflects <iframe security>",
-    document.getElementById('test').security,
-    "restricted");
+  assertEquals('[IframeSecurityAttribute] iframe.security reflects <iframe security="restricted">',
+    "restricted",
+    document.getElementById('test').security);
 }
 </script>
 <pre>iframe.security property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').security == "restricted") ? 'reflects' : 'does not reflect');
-</script></a> &lt;iframe security&gt; attribute</pre>
+</script></a> &lt;iframe security="restricted"&gt; attribute</pre>
 </body>
 </html>
