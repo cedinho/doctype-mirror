@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[div tabindex] reflection test</title>
+<title>[div tabindex="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <div id="test" tabindex="42"></div>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TabindexAttribute] div.tabIndex reflects <div tabindex>",
-    document.getElementById('test').tabIndex,
-    42);
+  assertEquals('[TabindexAttribute] div.tabIndex reflects <div tabindex="42">',
+    42,
+    document.getElementById('test').tabIndex);
 }
 </script>
 <pre>div.tabIndex property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').tabIndex == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;div tabindex&gt; attribute</pre>
+</script></a> &lt;div tabindex="42"&gt; attribute</pre>
 </body>
 </html>
