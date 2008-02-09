@@ -9,13 +9,13 @@
 <div id="test" draggable></div>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[DraggableAttribute] div.draggable reflects <div draggable>",
-    document.getElementById('test').draggable,
-    "true");
+  assertEquals('[DraggableAttribute] div.draggable reflects <div draggable>',
+    true,
+    document.getElementById('test').draggable);
 }
 </script>
 <pre>div.draggable property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').draggable == "true") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').draggable == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;div draggable&gt; attribute</pre>
 </body>
 </html>
