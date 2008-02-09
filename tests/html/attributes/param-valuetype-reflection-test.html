@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[param valuetype] reflection test</title>
+<title>[param valuetype="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <param id="test" valuetype="foo"></param>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ParamValuetypeAttribute] param.valueType reflects <param valuetype>",
-    document.getElementById('test').valueType,
-    "foo");
+  assertEquals('[ParamValuetypeAttribute] param.valueType reflects <param valuetype="foo">',
+    "foo",
+    document.getElementById('test').valueType);
 }
 </script>
 <pre>param.valueType property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').valueType == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;param valuetype&gt; attribute</pre>
+</script></a> &lt;param valuetype="foo"&gt; attribute</pre>
 </body>
 </html>
