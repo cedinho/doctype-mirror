@@ -6,12 +6,12 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<dd id="test" nowrap="true"></dd>
+<dd id="test" nowrap></dd>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[DdNowrapAttribute] dd.noWrap reflects <dd nowrap>",
-    document.getElementById('test').noWrap,
-    true);
+  assertEquals('[DdNowrapAttribute] dd.noWrap reflects <dd nowrap>',
+    true,
+    document.getElementById('test').noWrap);
 }
 </script>
 <pre>dd.noWrap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
