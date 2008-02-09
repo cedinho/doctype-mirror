@@ -9,9 +9,9 @@
 <textarea id="test" disabled></textarea>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TextareaDisabledAttribute] textarea.disabled reflects <textarea disabled>",
-    document.getElementById('test').disabled,
-    true);
+  assertEquals('[TextareaDisabledAttribute] textarea.disabled reflects <textarea disabled>',
+    true,
+    document.getElementById('test').disabled);
 }
 </script>
 <pre>textarea.disabled property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
