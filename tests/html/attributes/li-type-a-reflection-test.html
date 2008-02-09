@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[li type="A"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<li id="test" type="A"></li>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[LiTypeAttribute] li.type reflects <li type="A">',
+    "A",
+    document.getElementById('test').type);
+}
+</script>
+<pre>li.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').type == "A") ? 'reflects' : 'does not reflect');
+</script></a> &lt;li type="A"&gt; attribute</pre>
+</body>
+</html>
