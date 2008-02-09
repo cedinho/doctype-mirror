@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[frame longdesc] reflection test</title>
+<title>[frame longdesc="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frame id="test" longdesc="http://www.example.com/"></frame>
+<frameset><frame id="test" src="blank.html" longdesc="http://www.example.com/"></frame></frameset>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FrameLongdescAttribute] frame.longdesc reflects <frame longdesc>",
-    document.getElementById('test').longdesc,
-    "http://www.example.com/");
+  assertEquals('[FrameLongdescAttribute] frame.longDesc reflects <frame longdesc="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').longDesc);
 }
 </script>
-<pre>frame.longdesc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').longdesc == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;frame longdesc&gt; attribute</pre>
+<pre>frame.longDesc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').longDesc == "http://www.example.com/") ? 'reflects' : 'does not reflect');
+</script></a> &lt;frame longdesc="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
