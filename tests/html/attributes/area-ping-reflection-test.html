@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[area ping] reflection test</title>
+<title>[area ping="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<area id="test" ping="http://www.example.com/"></area>
+<map><area id="test" ping="http://www.example.com/"></area></map>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AreaPingAttribute] area.ping reflects <area ping>",
-    document.getElementById('test').ping,
-    "http://www.example.com/");
+  assertEquals('[AreaPingAttribute] area.ping reflects <area ping="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').ping);
 }
 </script>
 <pre>area.ping property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').ping == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;area ping&gt; attribute</pre>
+</script></a> &lt;area ping="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
