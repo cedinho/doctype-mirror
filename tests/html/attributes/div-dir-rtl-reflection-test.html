@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[div dir="rtl"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<div id="test" dir="rtl"></div>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[DirAttribute] div.dir reflects <div dir="rtl">',
+    "rtl",
+    document.getElementById('test').dir);
+}
+</script>
+<pre>div.dir property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').dir == "rtl") ? 'reflects' : 'does not reflect');
+</script></a> &lt;div dir="rtl"&gt; attribute</pre>
+</body>
+</html>
