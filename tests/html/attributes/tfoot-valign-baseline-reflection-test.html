@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[tfoot valign="baseline"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><tfoot id="test" valign="baseline"></tfoot></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[TfootValignAttribute] tfoot.vAlign reflects <tfoot valign="baseline">',
+    "baseline",
+    document.getElementById('test').vAlign);
+}
+</script>
+<pre>tfoot.vAlign property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').vAlign == "baseline") ? 'reflects' : 'does not reflect');
+</script></a> &lt;tfoot valign="baseline"&gt; attribute</pre>
+</body>
+</html>
