@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[address width] reflection test</title>
+<title>[address width="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<address id="test" width="42"></address>
+<address id="test" width="7"></address>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AddressWidthAttribute] address.width reflects <address width>",
-    document.getElementById('test').width,
-    42);
+  assertEquals('[AddressWidthAttribute] address.width reflects <address width="7">',
+    "7",
+    document.getElementById('test').width);
 }
 </script>
 <pre>address.width property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').width == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;address width&gt; attribute</pre>
+document.write((document.getElementById('test').width == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;address width="7"&gt; attribute</pre>
 </body>
 </html>
