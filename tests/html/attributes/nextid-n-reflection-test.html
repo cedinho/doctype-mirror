@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[nextid n] reflection test</title>
+<title>[nextid n="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <nextid id="test" n="foo"></nextid>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[NextidNAttribute] nextid.n reflects <nextid n>",
-    document.getElementById('test').n,
-    "foo");
+  assertEquals('[NextidNAttribute] nextid.n reflects <nextid n="foo">',
+    "foo",
+    document.getElementById('test').n);
 }
 </script>
 <pre>nextid.n property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').n == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;nextid n&gt; attribute</pre>
+</script></a> &lt;nextid n="foo"&gt; attribute</pre>
 </body>
 </html>
