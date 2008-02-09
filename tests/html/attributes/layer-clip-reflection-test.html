@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[layer clip] reflection test</title>
+<title>[layer clip="0,0,10,10"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <layer id="test" clip="0,0,10,10"></layer>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LayerClipAttribute] layer.clip reflects <layer clip>",
-    document.getElementById('test').clip,
-    "0,0,10,10");
+  assertEquals('[LayerClipAttribute] layer.clip reflects <layer clip="0,0,10,10">',
+    "0,0,10,10",
+    document.getElementById('test').clip);
 }
 </script>
 <pre>layer.clip property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').clip == "0,0,10,10") ? 'reflects' : 'does not reflect');
-</script></a> &lt;layer clip&gt; attribute</pre>
+</script></a> &lt;layer clip="0,0,10,10"&gt; attribute</pre>
 </body>
 </html>
