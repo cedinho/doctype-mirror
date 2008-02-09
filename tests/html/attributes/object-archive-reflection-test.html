@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[object archive] reflection test</title>
+<title>[object archive="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <object id="test" archive="foo"></object>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ObjectArchiveAttribute] object.archive reflects <object archive>",
-    document.getElementById('test').archive,
-    "foo");
+  assertEquals('[ObjectArchiveAttribute] object.archive reflects <object archive="foo">',
+    "foo",
+    document.getElementById('test').archive);
 }
 </script>
 <pre>object.archive property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').archive == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;object archive&gt; attribute</pre>
+</script></a> &lt;object archive="foo"&gt; attribute</pre>
 </body>
 </html>
