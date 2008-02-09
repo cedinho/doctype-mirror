@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[script] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<script id="test"></script>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[ScriptDeferAttribute] script.defer reflects <script>',
+    false,
+    document.getElementById('test').defer);
+}
+</script>
+<pre>script.defer property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').defer == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;script&gt; attribute</pre>
+</body>
+</html>
