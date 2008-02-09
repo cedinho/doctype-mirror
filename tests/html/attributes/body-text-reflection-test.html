@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[body text] reflection test</title>
+<title>[body text="#ffffff"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 
-<body id="test" text="foo">
+<body id="test" text="#ffffff">
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[BodyTextAttribute] body.text reflects <body text>",
-    document.body.text,
-    "foo");
+  assertEquals('[BodyTextAttribute] body.text reflects <body text="#ffffff">',
+    "#ffffff",
+    document.body.text);
 }
 </script>
 <pre>body.text property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.body.text == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;body text&gt; attribute</pre>
+document.write((document.body.text == "#ffffff") ? 'reflects' : 'does not reflect');
+</script></a> &lt;body text="#ffffff"&gt; attribute</pre>
 
 </html>
