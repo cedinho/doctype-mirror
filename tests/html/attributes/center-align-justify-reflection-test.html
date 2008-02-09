@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[center align="justify"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<center id="test" align="justify"></center>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[CenterAlignAttribute] center.align reflects <center align="justify">',
+    "justify",
+    document.getElementById('test').align);
+}
+</script>
+<pre>center.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "justify") ? 'reflects' : 'does not reflect');
+</script></a> &lt;center align="justify"&gt; attribute</pre>
+</body>
+</html>
