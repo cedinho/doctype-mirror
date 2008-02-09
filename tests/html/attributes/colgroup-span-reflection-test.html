@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[colgroup span] reflection test</title>
+<title>[colgroup span="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <colgroup id="test" span="foo"></colgroup>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ColgroupSpanAttribute] colgroup.span reflects <colgroup span>",
-    document.getElementById('test').span,
-    "foo");
+  assertEquals('[ColgroupSpanAttribute] colgroup.span reflects <colgroup span="foo">',
+    "foo",
+    document.getElementById('test').span);
 }
 </script>
 <pre>colgroup.span property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').span == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;colgroup span&gt; attribute</pre>
+</script></a> &lt;colgroup span="foo"&gt; attribute</pre>
 </body>
 </html>
