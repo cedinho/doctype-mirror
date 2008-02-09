@@ -9,9 +9,9 @@
 <command id="test" checked></command>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[CommandCheckedAttribute] command.checked reflects <command checked>",
-    document.getElementById('test').checked,
-    true);
+  assertEquals('[CommandCheckedAttribute] command.checked reflects <command checked>',
+    true,
+    document.getElementById('test').checked);
 }
 </script>
 <pre>command.checked property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
