@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[layer overflow] reflection test</title>
+<title>[layer overflow="clip"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <layer id="test" overflow="clip"></layer>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LayerOverflowAttribute] layer.overflow reflects <layer overflow>",
-    document.getElementById('test').overflow,
-    "clip");
+  assertEquals('[LayerOverflowAttribute] layer.overflow reflects <layer overflow="clip">',
+    "clip",
+    document.getElementById('test').overflow);
 }
 </script>
 <pre>layer.overflow property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').overflow == "clip") ? 'reflects' : 'does not reflect');
-</script></a> &lt;layer overflow&gt; attribute</pre>
+</script></a> &lt;layer overflow="clip"&gt; attribute</pre>
 </body>
 </html>
