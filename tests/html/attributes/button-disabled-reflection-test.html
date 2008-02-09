@@ -9,9 +9,9 @@
 <button id="test" disabled></button>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ButtonDisabledAttribute] button.disabled reflects <button disabled>",
-    document.getElementById('test').disabled,
-    true);
+  assertEquals('[ButtonDisabledAttribute] button.disabled reflects <button disabled>',
+    true,
+    document.getElementById('test').disabled);
 }
 </script>
 <pre>button.disabled property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
