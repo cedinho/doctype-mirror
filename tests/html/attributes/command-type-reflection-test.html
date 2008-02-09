@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[command type] reflection test</title>
+<title>[command type="command"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<command id="test" type="foo"></command>
+<command id="test" type="command"></command>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[CommandTypeAttribute] command.type reflects <command type>",
-    document.getElementById('test').type,
-    "foo");
+  assertEquals('[CommandTypeAttribute] command.type reflects <command type="command">',
+    "command",
+    document.getElementById('test').type);
 }
 </script>
 <pre>command.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').type == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;command type&gt; attribute</pre>
+document.write((document.getElementById('test').type == "command") ? 'reflects' : 'does not reflect');
+</script></a> &lt;command type="command"&gt; attribute</pre>
 </body>
 </html>
