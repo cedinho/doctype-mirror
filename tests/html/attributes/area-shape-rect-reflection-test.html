@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[area shape="rect"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<map><area id="test" shape="rect"></area></map>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[AreaShapeAttribute] area.shape reflects <area shape="rect">',
+    "RECT",
+    document.getElementById('test').shape);
+}
+</script>
+<pre>area.shape property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').shape == "RECT") ? 'reflects' : 'does not reflect');
+</script></a> &lt;area shape="rect"&gt; attribute</pre>
+</body>
+</html>
