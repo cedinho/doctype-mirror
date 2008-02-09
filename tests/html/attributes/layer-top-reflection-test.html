@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[layer top] reflection test</title>
+<title>[layer top="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <layer id="test" top="42"></layer>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LayerTopAttribute] layer.top reflects <layer top>",
-    document.getElementById('test').top,
-    42);
+  assertEquals('[LayerTopAttribute] layer.top reflects <layer top="42">',
+    42,
+    document.getElementById('test').top);
 }
 </script>
 <pre>layer.top property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').top == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;layer top&gt; attribute</pre>
+</script></a> &lt;layer top="42"&gt; attribute</pre>
 </body>
 </html>
