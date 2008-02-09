@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[textarea wrap="off"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<textarea id="test" wrap="off"></textarea>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[TextareaWrapAttribute] textarea.wrap reflects <textarea wrap="off">',
+    "off",
+    document.getElementById('test').wrap);
+}
+</script>
+<pre>textarea.wrap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').wrap == "off") ? 'reflects' : 'does not reflect');
+</script></a> &lt;textarea wrap="off"&gt; attribute</pre>
+</body>
+</html>
