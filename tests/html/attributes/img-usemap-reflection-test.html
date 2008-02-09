@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[img usemap] reflection test</title>
+<title>[img usemap="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <img id="test" usemap="http://www.example.com/"></img>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ImgUsemapAttribute] img.useMap reflects <img usemap>",
-    document.getElementById('test').useMap,
-    "http://www.example.com/");
+  assertEquals('[ImgUsemapAttribute] img.useMap reflects <img usemap="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').useMap);
 }
 </script>
 <pre>img.useMap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').useMap == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;img usemap&gt; attribute</pre>
+</script></a> &lt;img usemap="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
