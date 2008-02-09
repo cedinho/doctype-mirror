@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[layer bgcolor] reflection test</title>
+<title>[layer bgcolor="#ffffff"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <layer id="test" bgcolor="#ffffff"></layer>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LayerBgcolorAttribute] layer.bgColor reflects <layer bgcolor>",
-    document.getElementById('test').bgColor,
-    "#ffffff");
+  assertEquals('[LayerBgcolorAttribute] layer.bgColor reflects <layer bgcolor="#ffffff">',
+    "#ffffff",
+    document.getElementById('test').bgColor);
 }
 </script>
 <pre>layer.bgColor property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').bgColor == "#ffffff") ? 'reflects' : 'does not reflect');
-</script></a> &lt;layer bgcolor&gt; attribute</pre>
+</script></a> &lt;layer bgcolor="#ffffff"&gt; attribute</pre>
 </body>
 </html>
