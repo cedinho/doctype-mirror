@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[link media="print"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<link id="test" media="print"></link>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[LinkMediaAttribute] link.media reflects <link media="print">',
+    "print",
+    document.getElementById('test').media);
+}
+</script>
+<pre>link.media property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').media == "print") ? 'reflects' : 'does not reflect');
+</script></a> &lt;link media="print"&gt; attribute</pre>
+</body>
+</html>
