@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[frameset cols] reflection test</title>
+<title>[frameset cols="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frameset id="test" cols="42"></frameset>
+<frameset id="test" cols="7"></frameset>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FramesetColsAttribute] frameset.cols reflects <frameset cols>",
-    document.getElementById('test').cols,
-    42);
+  assertEquals('[FramesetColsAttribute] frameset.cols reflects <frameset cols="7">',
+    "7",
+    document.getElementById('test').cols);
 }
 </script>
 <pre>frameset.cols property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').cols == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;frameset cols&gt; attribute</pre>
+document.write((document.getElementById('test').cols == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;frameset cols="7"&gt; attribute</pre>
 </body>
 </html>
