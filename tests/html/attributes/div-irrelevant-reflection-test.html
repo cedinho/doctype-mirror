@@ -9,13 +9,13 @@
 <div id="test" irrelevant></div>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IrrelevantAttribute] div.irrelevant reflects <div irrelevant>",
-    document.getElementById('test').irrelevant,
-    "true");
+  assertEquals('[IrrelevantAttribute] div.irrelevant reflects <div irrelevant>',
+    true,
+    document.getElementById('test').irrelevant);
 }
 </script>
 <pre>div.irrelevant property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').irrelevant == "true") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').irrelevant == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;div irrelevant&gt; attribute</pre>
 </body>
 </html>
