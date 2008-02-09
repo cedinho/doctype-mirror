@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[input accept] reflection test</title>
+<title>[input accept="text/html"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <input id="test" accept="text/html"></input>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[InputAcceptAttribute] input.accept reflects <input accept>",
-    document.getElementById('test').accept,
-    "text/html");
+  assertEquals('[InputAcceptAttribute] input.accept reflects <input accept="text/html">',
+    "text/html",
+    document.getElementById('test').accept);
 }
 </script>
 <pre>input.accept property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').accept == "text/html") ? 'reflects' : 'does not reflect');
-</script></a> &lt;input accept&gt; attribute</pre>
+</script></a> &lt;input accept="text/html"&gt; attribute</pre>
 </body>
 </html>
