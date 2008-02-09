@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[body] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+
+<body id="test">
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[BodyNowrapAttribute] body.noWrap reflects <body>',
+    false,
+    document.body.noWrap);
+}
+</script>
+<pre>body.noWrap property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.body.noWrap == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;body&gt; attribute</pre>
+
+</html>
