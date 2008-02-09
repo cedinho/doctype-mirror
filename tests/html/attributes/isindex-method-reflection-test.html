@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[isindex method] reflection test</title>
+<title>[isindex method="GET"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <isindex id="test" method="GET"></isindex>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IsindexMethodAttribute] isindex.method reflects <isindex method>",
-    document.getElementById('test').method,
-    "GET");
+  assertEquals('[IsindexMethodAttribute] isindex.method reflects <isindex method="GET">',
+    "get",
+    document.getElementById('test').method);
 }
 </script>
 <pre>isindex.method property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').method == "GET") ? 'reflects' : 'does not reflect');
-</script></a> &lt;isindex method&gt; attribute</pre>
+document.write((document.getElementById('test').method == "get") ? 'reflects' : 'does not reflect');
+</script></a> &lt;isindex method="GET"&gt; attribute</pre>
 </body>
 </html>
