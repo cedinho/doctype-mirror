@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[iframe longdesc] reflection test</title>
+<title>[iframe longdesc="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<iframe id="test" longdesc="http://www.example.com/"></iframe>
+<iframe id="test" src="blank.html" longdesc="http://www.example.com/"></iframe>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IframeLongdescAttribute] iframe.longdesc reflects <iframe longdesc>",
-    document.getElementById('test').longdesc,
-    "http://www.example.com/");
+  assertEquals('[IframeLongdescAttribute] iframe.longDesc reflects <iframe longdesc="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').longDesc);
 }
 </script>
-<pre>iframe.longdesc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').longdesc == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;iframe longdesc&gt; attribute</pre>
+<pre>iframe.longDesc property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').longDesc == "http://www.example.com/") ? 'reflects' : 'does not reflect');
+</script></a> &lt;iframe longdesc="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
