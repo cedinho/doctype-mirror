@@ -9,9 +9,9 @@
 <input id="test" readonly></input>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[InputReadonlyAttribute] input.readOnly reflects <input readonly>",
-    document.getElementById('test').readOnly,
-    true);
+  assertEquals('[InputReadonlyAttribute] input.readOnly reflects <input readonly>',
+    true,
+    document.getElementById('test').readOnly);
 }
 </script>
 <pre>input.readOnly property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
