@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[marquee bgcolor] reflection test</title>
+<title>[marquee bgcolor="#ffffff"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <marquee id="test" bgcolor="#ffffff"></marquee>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[MarqueeBgcolorAttribute] marquee.bgColor reflects <marquee bgcolor>",
-    document.getElementById('test').bgColor,
-    "#ffffff");
+  assertEquals('[MarqueeBgcolorAttribute] marquee.bgColor reflects <marquee bgcolor="#ffffff">',
+    "#ffffff",
+    document.getElementById('test').bgColor);
 }
 </script>
 <pre>marquee.bgColor property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').bgColor == "#ffffff") ? 'reflects' : 'does not reflect');
-</script></a> &lt;marquee bgcolor&gt; attribute</pre>
+</script></a> &lt;marquee bgcolor="#ffffff"&gt; attribute</pre>
 </body>
 </html>
