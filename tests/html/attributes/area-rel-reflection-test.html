@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[area rel] reflection test</title>
+<title>[area rel="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<area id="test" rel="foo"></area>
+<map><area id="test" rel="foo"></area></map>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AreaRelAttribute] area.rel reflects <area rel>",
-    document.getElementById('test').rel,
-    "foo");
+  assertEquals('[AreaRelAttribute] area.rel reflects <area rel="foo">',
+    "foo",
+    document.getElementById('test').rel);
 }
 </script>
 <pre>area.rel property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').rel == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;area rel&gt; attribute</pre>
+</script></a> &lt;area rel="foo"&gt; attribute</pre>
 </body>
 </html>
