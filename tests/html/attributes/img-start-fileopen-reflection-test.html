@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[img start="fileopen"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<img id="test" start="fileopen"></img>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[ImgStartAttribute] img.start reflects <img start="fileopen">',
+    "fileopen",
+    document.getElementById('test').start);
+}
+</script>
+<pre>img.start property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').start == "fileopen") ? 'reflects' : 'does not reflect');
+</script></a> &lt;img start="fileopen"&gt; attribute</pre>
+</body>
+</html>
