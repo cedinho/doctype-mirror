@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[fieldset align="bottom"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<fieldset id="test" align="bottom"></fieldset>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="bottom">',
+    "bottom",
+    document.getElementById('test').align);
+}
+</script>
+<pre>fieldset.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "bottom") ? 'reflects' : 'does not reflect');
+</script></a> &lt;fieldset align="bottom"&gt; attribute</pre>
+</body>
+</html>
