@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[layer below] reflection test</title>
+<title>[layer below="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <layer id="test" below="foo"></layer>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[LayerBelowAttribute] layer.below reflects <layer below>",
-    document.getElementById('test').below,
-    "foo");
+  assertEquals('[LayerBelowAttribute] layer.below reflects <layer below="foo">',
+    "foo",
+    document.getElementById('test').below);
 }
 </script>
 <pre>layer.below property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').below == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;layer below&gt; attribute</pre>
+</script></a> &lt;layer below="foo"&gt; attribute</pre>
 </body>
 </html>
