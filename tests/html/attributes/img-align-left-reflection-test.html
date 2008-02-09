@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[img align="left"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<img id="test" align="left"></img>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[ImgAlignAttribute] img.align reflects <img align="left">',
+    "left",
+    document.getElementById('test').align);
+}
+</script>
+<pre>img.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "left") ? 'reflects' : 'does not reflect');
+</script></a> &lt;img align="left"&gt; attribute</pre>
+</body>
+</html>
