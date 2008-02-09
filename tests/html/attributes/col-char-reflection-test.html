@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[col char] reflection test</title>
+<title>[col char="C"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <col id="test" char="C"></col>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ColCharAttribute] col.char reflects <col char>",
-    document.getElementById('test').char,
-    "C");
+  assertEquals('[ColCharAttribute] col.char reflects <col char="C">',
+    "C",
+    document.getElementById('test').char);
 }
 </script>
 <pre>col.char property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').char == "C") ? 'reflects' : 'does not reflect');
-</script></a> &lt;col char&gt; attribute</pre>
+</script></a> &lt;col char="C"&gt; attribute</pre>
 </body>
 </html>
