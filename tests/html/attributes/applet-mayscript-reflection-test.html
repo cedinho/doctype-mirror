@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[applet mayscript] reflection test</title>
+<title>[applet mayscript="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <applet id="test" mayscript="foo"></applet>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AppletMayscriptAttribute] applet.mayscript reflects <applet mayscript>",
-    document.getElementById('test').mayscript,
-    "foo");
+  assertEquals('[AppletMayscriptAttribute] applet.mayScript reflects <applet mayscript="foo">',
+    "foo",
+    document.getElementById('test').mayScript);
 }
 </script>
-<pre>applet.mayscript property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').mayscript == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;applet mayscript&gt; attribute</pre>
+<pre>applet.mayScript property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').mayScript == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;applet mayscript="foo"&gt; attribute</pre>
 </body>
 </html>
