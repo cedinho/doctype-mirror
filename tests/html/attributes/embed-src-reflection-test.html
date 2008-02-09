@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[embed src] reflection test</title>
+<title>[embed src="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <embed id="test" src="http://www.example.com/"></embed>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[EmbedSrcAttribute] embed.src reflects <embed src>",
-    document.getElementById('test').src,
-    "http://www.example.com/");
+  assertEquals('[EmbedSrcAttribute] embed.src reflects <embed src="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').src);
 }
 </script>
 <pre>embed.src property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').src == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;embed src&gt; attribute</pre>
+</script></a> &lt;embed src="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
