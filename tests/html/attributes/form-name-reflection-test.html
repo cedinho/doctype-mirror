@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[form name] reflection test</title>
+<title>[form name="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <form id="test" name="foo"></form>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FormNameAttribute] form.name reflects <form name>",
-    document.getElementById('test').name,
-    "foo");
+  assertEquals('[FormNameAttribute] form.name reflects <form name="foo">',
+    "foo",
+    document.getElementById('test').name);
 }
 </script>
 <pre>form.name property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').name == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;form name&gt; attribute</pre>
+</script></a> &lt;form name="foo"&gt; attribute</pre>
 </body>
 </html>
