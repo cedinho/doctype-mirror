@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[iframe application] reflection test</title>
+<title>[iframe application="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<iframe id="test" application="foo"></iframe>
+<iframe id="test" src="blank.html" application="foo"></iframe>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IframeApplicationAttribute] iframe.application reflects <iframe application>",
-    document.getElementById('test').application,
-    "foo");
+  assertEquals('[IframeApplicationAttribute] iframe.application reflects <iframe application="foo">',
+    "foo",
+    document.getElementById('test').application);
 }
 </script>
 <pre>iframe.application property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').application == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;iframe application&gt; attribute</pre>
+</script></a> &lt;iframe application="foo"&gt; attribute</pre>
 </body>
 </html>
