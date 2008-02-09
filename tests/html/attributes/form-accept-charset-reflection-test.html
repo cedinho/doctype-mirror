@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[form accept-charset="foo"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<form id="test" accept-charset="foo"></form>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[FormAcceptCharsetAttribute] form.acceptCharset reflects <form accept-charset="foo">',
+    "foo",
+    document.getElementById('test').acceptCharset);
+}
+</script>
+<pre>form.acceptCharset property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').acceptCharset == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;form accept-charset="foo"&gt; attribute</pre>
+</body>
+</html>
