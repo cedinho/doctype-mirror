@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[keygen name] reflection test</title>
+<title>[keygen name="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <keygen id="test" name="foo"></keygen>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[KeygenNameAttribute] keygen.name reflects <keygen name>",
-    document.getElementById('test').name,
-    "foo");
+  assertEquals('[KeygenNameAttribute] keygen.name reflects <keygen name="foo">',
+    "foo",
+    document.getElementById('test').name);
 }
 </script>
 <pre>keygen.name property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').name == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;keygen name&gt; attribute</pre>
+</script></a> &lt;keygen name="foo"&gt; attribute</pre>
 </body>
 </html>
