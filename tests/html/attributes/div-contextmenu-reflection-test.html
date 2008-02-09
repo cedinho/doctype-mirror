@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[div contextmenu] reflection test</title>
+<title>[div contextmenu="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <div id="test" contextmenu="foo"></div>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ContextmenuAttribute] div.contextmenu reflects <div contextmenu>",
-    document.getElementById('test').contextmenu,
-    "foo");
+  assertEquals('[ContextmenuAttribute] div.contextmenu reflects <div contextmenu="foo">',
+    "foo",
+    document.getElementById('test').contextmenu);
 }
 </script>
 <pre>div.contextmenu property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').contextmenu == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;div contextmenu&gt; attribute</pre>
+</script></a> &lt;div contextmenu="foo"&gt; attribute</pre>
 </body>
 </html>
