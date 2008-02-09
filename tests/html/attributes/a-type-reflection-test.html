@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[a type] reflection test</title>
+<title>[a type="text/html"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<a id="test" type="foo"></a>
+<a id="test" type="text/html"></a>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ATypeAttribute] a.type reflects <a type>",
-    document.getElementById('test').type,
-    "foo");
+  assertEquals('[ATypeAttribute] a.type reflects <a type="text/html">',
+    "text/html",
+    document.getElementById('test').type);
 }
 </script>
 <pre>a.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').type == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;a type&gt; attribute</pre>
+document.write((document.getElementById('test').type == "text/html") ? 'reflects' : 'does not reflect');
+</script></a> &lt;a type="text/html"&gt; attribute</pre>
 </body>
 </html>
