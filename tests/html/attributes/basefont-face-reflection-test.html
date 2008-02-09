@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[basefont face] reflection test</title>
+<title>[basefont face="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <basefont id="test" face="foo"></basefont>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[BasefontFaceAttribute] basefont.face reflects <basefont face>",
-    document.getElementById('test').face,
-    "foo");
+  assertEquals('[BasefontFaceAttribute] basefont.face reflects <basefont face="foo">',
+    "foo",
+    document.getElementById('test').face);
 }
 </script>
 <pre>basefont.face property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').face == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;basefont face&gt; attribute</pre>
+</script></a> &lt;basefont face="foo"&gt; attribute</pre>
 </body>
 </html>
