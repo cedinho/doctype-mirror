@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[isindex enctype] reflection test</title>
+<title>[isindex enctype="text/html"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <isindex id="test" enctype="text/html"></isindex>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IsindexEnctypeAttribute] isindex.enctype reflects <isindex enctype>",
-    document.getElementById('test').enctype,
-    "text/html");
+  assertEquals('[IsindexEnctypeAttribute] isindex.enctype reflects <isindex enctype="text/html">',
+    "text/html",
+    document.getElementById('test').enctype);
 }
 </script>
 <pre>isindex.enctype property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').enctype == "text/html") ? 'reflects' : 'does not reflect');
-</script></a> &lt;isindex enctype&gt; attribute</pre>
+</script></a> &lt;isindex enctype="text/html"&gt; attribute</pre>
 </body>
 </html>
