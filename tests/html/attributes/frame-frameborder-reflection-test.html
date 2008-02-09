@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[frame frameborder] reflection test</title>
+<title>[frame frameborder="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<frame id="test" frameborder="42"></frame>
+<frameset><frame id="test" src="blank.html" frameborder="42"></frame></frameset>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[FrameFrameborderAttribute] frame.frameBorder reflects <frame frameborder>",
-    document.getElementById('test').frameBorder,
-    42);
+  assertEquals('[FrameFrameborderAttribute] frame.frameBorder reflects <frame frameborder="42">',
+    42,
+    document.getElementById('test').frameBorder);
 }
 </script>
 <pre>frame.frameBorder property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').frameBorder == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;frame frameborder&gt; attribute</pre>
+</script></a> &lt;frame frameborder="42"&gt; attribute</pre>
 </body>
 </html>
