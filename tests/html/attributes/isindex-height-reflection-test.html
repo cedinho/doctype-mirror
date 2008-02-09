@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[isindex height] reflection test</title>
+<title>[isindex height="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<isindex id="test" height="42"></isindex>
+<isindex id="test" height="7"></isindex>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IsindexHeightAttribute] isindex.height reflects <isindex height>",
-    document.getElementById('test').height,
-    42);
+  assertEquals('[IsindexHeightAttribute] isindex.height reflects <isindex height="7">',
+    "7",
+    document.getElementById('test').height);
 }
 </script>
 <pre>isindex.height property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').height == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;isindex height&gt; attribute</pre>
+document.write((document.getElementById('test').height == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;isindex height="7"&gt; attribute</pre>
 </body>
 </html>
