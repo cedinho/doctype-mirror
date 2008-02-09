@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[script for] reflection test</title>
+<title>[script for="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <script id="test" for="foo"></script>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ScriptForAttribute] script.htmlFor reflects <script for>",
-    document.getElementById('test').htmlFor,
-    "foo");
+  assertEquals('[ScriptForAttribute] script.htmlFor reflects <script for="foo">',
+    "foo",
+    document.getElementById('test').htmlFor);
 }
 </script>
 <pre>script.htmlFor property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').htmlFor == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;script for&gt; attribute</pre>
+</script></a> &lt;script for="foo"&gt; attribute</pre>
 </body>
 </html>
