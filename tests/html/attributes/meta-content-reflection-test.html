@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[meta content] reflection test</title>
+<title>[meta content="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <meta id="test" content="foo"></meta>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[MetaContentAttribute] meta.content reflects <meta content>",
-    document.getElementById('test').content,
-    "foo");
+  assertEquals('[MetaContentAttribute] meta.content reflects <meta content="foo">',
+    "foo",
+    document.getElementById('test').content);
 }
 </script>
 <pre>meta.content property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').content == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;meta content&gt; attribute</pre>
+</script></a> &lt;meta content="foo"&gt; attribute</pre>
 </body>
 </html>
