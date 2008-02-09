@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[embed vspace] reflection test</title>
+<title>[embed vspace="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<embed id="test" vspace="42"></embed>
+<embed id="test" vspace="7"></embed>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[EmbedVspaceAttribute] embed.vspace reflects <embed vspace>",
-    document.getElementById('test').vspace,
-    42);
+  assertEquals('[EmbedVspaceAttribute] embed.vspace reflects <embed vspace="7">',
+    "7",
+    document.getElementById('test').vspace);
 }
 </script>
 <pre>embed.vspace property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').vspace == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;embed vspace&gt; attribute</pre>
+document.write((document.getElementById('test').vspace == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;embed vspace="7"&gt; attribute</pre>
 </body>
 </html>
