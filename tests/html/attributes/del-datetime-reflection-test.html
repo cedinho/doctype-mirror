@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[del datetime] reflection test</title>
+<title>[del datetime="2008-01-01T00:00:00Z"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<del id="test" datetime="2008-01-01T12:00:00Z"></del>
+<del id="test" datetime="2008-01-01T00:00:00Z"></del>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[DelDatetimeAttribute] del.dateTime reflects <del datetime>",
-    document.getElementById('test').dateTime,
-    "2008-01-01T12:00:00Z");
+  assertEquals('[DelDatetimeAttribute] del.dateTime reflects <del datetime="2008-01-01T00:00:00Z">',
+    "2008-01-01T00:00:00Z",
+    document.getElementById('test').dateTime);
 }
 </script>
 <pre>del.dateTime property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').dateTime == "2008-01-01T12:00:00Z") ? 'reflects' : 'does not reflect');
-</script></a> &lt;del datetime&gt; attribute</pre>
+document.write((document.getElementById('test').dateTime == "2008-01-01T00:00:00Z") ? 'reflects' : 'does not reflect');
+</script></a> &lt;del datetime="2008-01-01T00:00:00Z"&gt; attribute</pre>
 </body>
 </html>
