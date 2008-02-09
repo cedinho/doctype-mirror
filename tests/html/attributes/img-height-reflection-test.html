@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[img height] reflection test</title>
+<title>[img height="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <img id="test" height="42"></img>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ImgHeightAttribute] img.height reflects <img height>",
-    document.getElementById('test').height,
-    42);
+  assertEquals('[ImgHeightAttribute] img.height reflects <img height="42">',
+    42,
+    document.getElementById('test').height);
 }
 </script>
 <pre>img.height property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').height == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;img height&gt; attribute</pre>
+</script></a> &lt;img height="42"&gt; attribute</pre>
 </body>
 </html>
