@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[body alink] reflection test</title>
+<title>[body alink="#ffffff"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <body id="test" alink="#ffffff">
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[BodyAlinkAttribute] body.aLink reflects <body alink>",
-    document.body.aLink,
-    "#ffffff");
+  assertEquals('[BodyAlinkAttribute] body.aLink reflects <body alink="#ffffff">',
+    "#ffffff",
+    document.body.aLink);
 }
 </script>
 <pre>body.aLink property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.body.aLink == "#ffffff") ? 'reflects' : 'does not reflect');
-</script></a> &lt;body alink&gt; attribute</pre>
+</script></a> &lt;body alink="#ffffff"&gt; attribute</pre>
 
 </html>
