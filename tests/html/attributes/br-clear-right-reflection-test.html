@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[br clear="right"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<br id="test" clear="right"></br>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[BrClearAttribute] br.clear reflects <br clear="right">',
+    "right",
+    document.getElementById('test').clear);
+}
+</script>
+<pre>br.clear property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').clear == "right") ? 'reflects' : 'does not reflect');
+</script></a> &lt;br clear="right"&gt; attribute</pre>
+</body>
+</html>
