@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[li clear="none"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<li id="test" clear="none"></li>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[LiClearAttribute] li.clear reflects <li clear="none">',
+    "none",
+    document.getElementById('test').clear);
+}
+</script>
+<pre>li.clear property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').clear == "none") ? 'reflects' : 'does not reflect');
+</script></a> &lt;li clear="none"&gt; attribute</pre>
+</body>
+</html>
