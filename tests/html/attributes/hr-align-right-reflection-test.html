@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[hr align="right"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<hr id="test" align="right"></hr>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[HrAlignAttribute] hr.align reflects <hr align="right">',
+    "right",
+    document.getElementById('test').align);
+}
+</script>
+<pre>hr.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "right") ? 'reflects' : 'does not reflect');
+</script></a> &lt;hr align="right"&gt; attribute</pre>
+</body>
+</html>
