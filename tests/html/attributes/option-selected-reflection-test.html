@@ -6,12 +6,12 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<option id="test" selected></option>
+<select><option id="test" selected></option></select>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[OptionSelectedAttribute] option.selected reflects <option selected>",
-    document.getElementById('test').selected,
-    true);
+  assertEquals('[OptionSelectedAttribute] option.selected reflects <select><option selected>',
+    true,
+    document.getElementById('test').selected);
 }
 </script>
 <pre>option.selected property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
