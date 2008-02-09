@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[th valign="bottom"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><th id="test" valign="bottom"></th></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[ThValignAttribute] th.vAlign reflects <th valign="bottom">',
+    "bottom",
+    document.getElementById('test').vAlign);
+}
+</script>
+<pre>th.vAlign property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').vAlign == "bottom") ? 'reflects' : 'does not reflect');
+</script></a> &lt;th valign="bottom"&gt; attribute</pre>
+</body>
+</html>
