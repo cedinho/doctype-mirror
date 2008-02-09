@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[iframe border] reflection test</title>
+<title>[iframe border="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<iframe id="test" border="42"></iframe>
+<iframe id="test" src="blank.html" border="7"></iframe>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[IframeBorderAttribute] iframe.border reflects <iframe border>",
-    document.getElementById('test').border,
-    42);
+  assertEquals('[IframeBorderAttribute] iframe.border reflects <iframe border="7">',
+    "7",
+    document.getElementById('test').border);
 }
 </script>
 <pre>iframe.border property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').border == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;iframe border&gt; attribute</pre>
+document.write((document.getElementById('test').border == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;iframe border="7"&gt; attribute</pre>
 </body>
 </html>
