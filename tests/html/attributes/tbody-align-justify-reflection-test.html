@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[tbody align="justify"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><tbody id="test" align="justify"></tbody></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[TbodyAlignAttribute] tbody.align reflects <tbody align="justify">',
+    "justify",
+    document.getElementById('test').align);
+}
+</script>
+<pre>tbody.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "justify") ? 'reflects' : 'does not reflect');
+</script></a> &lt;tbody align="justify"&gt; attribute</pre>
+</body>
+</html>
