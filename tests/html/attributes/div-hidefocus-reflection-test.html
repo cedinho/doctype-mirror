@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[div hidefocus] reflection test</title>
+<title>[div hidefocus="true"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <div id="test" hidefocus="true"></div>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[HidefocusAttribute] div.hideFocus reflects <div hidefocus>",
-    document.getElementById('test').hideFocus,
-    true);
+  assertEquals('[HidefocusAttribute] div.hideFocus reflects <div hidefocus="true">',
+    true,
+    document.getElementById('test').hideFocus);
 }
 </script>
 <pre>div.hideFocus property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').hideFocus == true) ? 'reflects' : 'does not reflect');
-</script></a> &lt;div hidefocus&gt; attribute</pre>
+</script></a> &lt;div hidefocus="true"&gt; attribute</pre>
 </body>
 </html>
