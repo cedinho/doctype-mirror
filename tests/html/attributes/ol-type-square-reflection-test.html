@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[ol type="square"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<ol id="test" type="square"></ol>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[OlTypeAttribute] ol.type reflects <ol type="square">',
+    "square",
+    document.getElementById('test').type);
+}
+</script>
+<pre>ol.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').type == "square") ? 'reflects' : 'does not reflect');
+</script></a> &lt;ol type="square"&gt; attribute</pre>
+</body>
+</html>
