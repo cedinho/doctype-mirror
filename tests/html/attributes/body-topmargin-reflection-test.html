@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[body topmargin] reflection test</title>
+<title>[body topmargin="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 
-<body id="test" topmargin="42">
+<body id="test" topmargin="7">
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[BodyTopmarginAttribute] body.topMargin reflects <body topmargin>",
-    document.body.topMargin,
-    42);
+  assertEquals('[BodyTopmarginAttribute] body.topMargin reflects <body topmargin="7">',
+    "7",
+    document.body.topMargin);
 }
 </script>
 <pre>body.topMargin property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.body.topMargin == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;body topmargin&gt; attribute</pre>
+document.write((document.body.topMargin == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;body topmargin="7"&gt; attribute</pre>
 
 </html>
