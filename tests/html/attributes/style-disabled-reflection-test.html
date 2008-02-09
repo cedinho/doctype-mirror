@@ -9,9 +9,9 @@
 <style id="test" disabled></style>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[StyleDisabledAttribute] style.disabled reflects <style disabled>",
-    document.getElementById('test').disabled,
-    true);
+  assertEquals('[StyleDisabledAttribute] style.disabled reflects <style disabled>',
+    true,
+    document.getElementById('test').disabled);
 }
 </script>
 <pre>style.disabled property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
