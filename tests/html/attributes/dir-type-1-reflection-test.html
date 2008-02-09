@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[dir type="1"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<dir id="test" type="1"></dir>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[DirTypeAttribute] dir.type reflects <dir type="1">',
+    "1",
+    document.getElementById('test').type);
+}
+</script>
+<pre>dir.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').type == "1") ? 'reflects' : 'does not reflect');
+</script></a> &lt;dir type="1"&gt; attribute</pre>
+</body>
+</html>

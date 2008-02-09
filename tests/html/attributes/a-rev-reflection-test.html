@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[a rev] reflection test</title>
+<title>[a rev="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <a id="test" rev="foo"></a>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ARevAttribute] a.rev reflects <a rev>",
-    document.getElementById('test').rev,
-    "foo");
+  assertEquals('[ARevAttribute] a.rev reflects <a rev="foo">',
+    "foo",
+    document.getElementById('test').rev);
 }
 </script>
 <pre>a.rev property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').rev == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;a rev&gt; attribute</pre>
+</script></a> &lt;a rev="foo"&gt; attribute</pre>
 </body>
 </html>

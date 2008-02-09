@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[a ping] reflection test</title>
+<title>[a ping="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <a id="test" ping="http://www.example.com/"></a>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[APingAttribute] a.ping reflects <a ping>",
-    document.getElementById('test').ping,
-    "http://www.example.com/");
+  assertEquals('[APingAttribute] a.ping reflects <a ping="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').ping);
 }
 </script>
 <pre>a.ping property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').ping == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;a ping&gt; attribute</pre>
+</script></a> &lt;a ping="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>

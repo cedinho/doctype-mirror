@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[area] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<map><area id="test"></area></map>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[AreaDisabledAttribute] area.disabled reflects <area>',
+    false,
+    document.getElementById('test').disabled);
+}
+</script>
+<pre>area.disabled property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').disabled == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;area&gt; attribute</pre>
+</body>
+</html>

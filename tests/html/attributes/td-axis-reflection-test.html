@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[td axis] reflection test</title>
+<title>[td axis="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<td id="test" axis="foo"></td>
+<table><td id="test" axis="foo"></td></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TdAxisAttribute] td.axis reflects <td axis>",
-    document.getElementById('test').axis,
-    "foo");
+  assertEquals('[TdAxisAttribute] td.axis reflects <td axis="foo">',
+    "foo",
+    document.getElementById('test').axis);
 }
 </script>
 <pre>td.axis property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').axis == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;td axis&gt; attribute</pre>
+</script></a> &lt;td axis="foo"&gt; attribute</pre>
 </body>
 </html>

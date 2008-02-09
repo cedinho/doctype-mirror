@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[input align="absmiddle"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<input id="test" align="absmiddle"></input>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[InputAlignAttribute] input.align reflects <input align="absmiddle">',
+    "absMiddle",
+    document.getElementById('test').align);
+}
+</script>
+<pre>input.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').align == "absMiddle") ? 'reflects' : 'does not reflect');
+</script></a> &lt;input align="absmiddle"&gt; attribute</pre>
+</body>
+</html>

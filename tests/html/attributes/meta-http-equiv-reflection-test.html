@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[meta http-equiv="foo"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<meta id="test" http-equiv="foo"></meta>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[MetaHttpEquivAttribute] meta.httpEquiv reflects <meta http-equiv="foo">',
+    "foo",
+    document.getElementById('test').httpEquiv);
+}
+</script>
+<pre>meta.httpEquiv property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').httpEquiv == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;meta http-equiv="foo"&gt; attribute</pre>
+</body>
+</html>

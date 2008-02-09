@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[dd clear="both"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<dd id="test" clear="both"></dd>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[DdClearAttribute] dd.clear reflects <dd clear="both">',
+    "both",
+    document.getElementById('test').clear);
+}
+</script>
+<pre>dd.clear property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').clear == "both") ? 'reflects' : 'does not reflect');
+</script></a> &lt;dd clear="both"&gt; attribute</pre>
+</body>
+</html>

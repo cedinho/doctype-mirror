@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[area coords] reflection test</title>
+<title>[area coords="0,0,10,10"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<area id="test" coords="0,0,10,10"></area>
+<map><area id="test" coords="0,0,10,10"></area></map>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AreaCoordsAttribute] area.coords reflects <area coords>",
-    document.getElementById('test').coords,
-    "0,0,10,10");
+  assertEquals('[AreaCoordsAttribute] area.coords reflects <area coords="0,0,10,10">',
+    "0,0,10,10",
+    document.getElementById('test').coords);
 }
 </script>
 <pre>area.coords property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').coords == "0,0,10,10") ? 'reflects' : 'does not reflect');
-</script></a> &lt;area coords&gt; attribute</pre>
+</script></a> &lt;area coords="0,0,10,10"&gt; attribute</pre>
 </body>
 </html>

@@ -9,13 +9,13 @@
 <video id="test" controls></video>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[VideoControlsAttribute] video.controls reflects <video controls>",
-    document.getElementById('test').controls,
-    "true");
+  assertEquals('[VideoControlsAttribute] video.controls reflects <video controls>',
+    true,
+    document.getElementById('test').controls);
 }
 </script>
 <pre>video.controls property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').controls == "true") ? 'reflects' : 'does not reflect');
+document.write((document.getElementById('test').controls == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;video controls&gt; attribute</pre>
 </body>
 </html>

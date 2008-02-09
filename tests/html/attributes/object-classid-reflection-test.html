@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[object classid] reflection test</title>
+<title>[object classid="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <object id="test" classid="foo"></object>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[ObjectClassidAttribute] object.classid reflects <object classid>",
-    document.getElementById('test').classid,
-    "foo");
+  assertEquals('[ObjectClassidAttribute] object.classid reflects <object classid="foo">',
+    "foo",
+    document.getElementById('test').classid);
 }
 </script>
 <pre>object.classid property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').classid == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;object classid&gt; attribute</pre>
+</script></a> &lt;object classid="foo"&gt; attribute</pre>
 </body>
 </html>
