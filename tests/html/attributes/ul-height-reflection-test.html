@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[ul height] reflection test</title>
+<title>[ul height="7"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<ul id="test" height="42"></ul>
+<ul id="test" height="7"></ul>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[UlHeightAttribute] ul.height reflects <ul height>",
-    document.getElementById('test').height,
-    42);
+  assertEquals('[UlHeightAttribute] ul.height reflects <ul height="7">',
+    "7",
+    document.getElementById('test').height);
 }
 </script>
 <pre>ul.height property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').height == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;ul height&gt; attribute</pre>
+document.write((document.getElementById('test').height == "7") ? 'reflects' : 'does not reflect');
+</script></a> &lt;ul height="7"&gt; attribute</pre>
 </body>
 </html>
