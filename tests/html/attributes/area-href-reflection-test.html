@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[area href] reflection test</title>
+<title>[area href="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<area id="test" href="http://www.example.com/"></area>
+<map><area id="test" href="http://www.example.com/"></area></map>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AreaHrefAttribute] area.href reflects <area href>",
-    document.getElementById('test').href,
-    "http://www.example.com/");
+  assertEquals('[AreaHrefAttribute] area.href reflects <area href="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').href);
 }
 </script>
 <pre>area.href property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').href == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;area href&gt; attribute</pre>
+</script></a> &lt;area href="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
