@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[canvas width] reflection test</title>
+<title>[canvas width="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <canvas id="test" width="42"></canvas>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[CanvasWidthAttribute] canvas.width reflects <canvas width>",
-    document.getElementById('test').width,
-    42);
+  assertEquals('[CanvasWidthAttribute] canvas.width reflects <canvas width="42">',
+    42,
+    document.getElementById('test').width);
 }
 </script>
 <pre>canvas.width property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').width == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;canvas width&gt; attribute</pre>
+</script></a> &lt;canvas width="42"&gt; attribute</pre>
 </body>
 </html>
