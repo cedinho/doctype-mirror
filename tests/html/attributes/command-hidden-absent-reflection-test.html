@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[command] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<command id="test"></command>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[CommandHiddenAttribute] command.hidden reflects <command>',
+    false,
+    document.getElementById('test').hidden);
+}
+</script>
+<pre>command.hidden property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').hidden == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;command&gt; attribute</pre>
+</body>
+</html>
