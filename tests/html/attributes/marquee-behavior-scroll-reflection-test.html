@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[marquee behavior="scroll"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<marquee id="test" behavior="scroll"></marquee>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[MarqueeBehaviorAttribute] marquee.behavior reflects <marquee behavior="scroll">',
+    "scroll",
+    document.getElementById('test').behavior);
+}
+</script>
+<pre>marquee.behavior property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').behavior == "scroll") ? 'reflects' : 'does not reflect');
+</script></a> &lt;marquee behavior="scroll"&gt; attribute</pre>
+</body>
+</html>
