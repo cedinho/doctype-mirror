@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[area suppress] reflection test</title>
+<title>[area suppress="true"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
 <body>
-<area id="test" suppress="true"></area>
+<map><area id="test" suppress="true"></area></map>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AreaSuppressAttribute] area.suppress reflects <area suppress>",
-    document.getElementById('test').suppress,
-    true);
+  assertEquals('[AreaSuppressAttribute] area.suppress reflects <area suppress="true">',
+    true,
+    document.getElementById('test').suppress);
 }
 </script>
 <pre>area.suppress property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').suppress == true) ? 'reflects' : 'does not reflect');
-</script></a> &lt;area suppress&gt; attribute</pre>
+</script></a> &lt;area suppress="true"&gt; attribute</pre>
 </body>
 </html>
