@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[base href] reflection test</title>
+<title>[base href="http://www.example.com/"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <base id="test" href="http://www.example.com/"></base>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[BaseHrefAttribute] base.href reflects <base href>",
-    document.getElementById('test').href,
-    "http://www.example.com/");
+  assertEquals('[BaseHrefAttribute] base.href reflects <base href="http://www.example.com/">',
+    "http://www.example.com/",
+    document.getElementById('test').href);
 }
 </script>
 <pre>base.href property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').href == "http://www.example.com/") ? 'reflects' : 'does not reflect');
-</script></a> &lt;base href&gt; attribute</pre>
+</script></a> &lt;base href="http://www.example.com/"&gt; attribute</pre>
 </body>
 </html>
