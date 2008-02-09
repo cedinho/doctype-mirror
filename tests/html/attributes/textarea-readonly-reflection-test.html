@@ -9,13 +9,13 @@
 <textarea id="test" readonly></textarea>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TextareaReadonlyAttribute] textarea.readonly reflects <textarea readonly>",
-    document.getElementById('test').readonly,
-    true);
+  assertEquals('[TextareaReadonlyAttribute] textarea.readOnly reflects <textarea readonly>',
+    true,
+    document.getElementById('test').readOnly);
 }
 </script>
-<pre>textarea.readonly property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').readonly == true) ? 'reflects' : 'does not reflect');
+<pre>textarea.readOnly property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').readOnly == true) ? 'reflects' : 'does not reflect');
 </script></a> &lt;textarea readonly&gt; attribute</pre>
 </body>
 </html>
