@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[applet codebase] reflection test</title>
+<title>[applet codebase="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <applet id="test" codebase="foo"></applet>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[AppletCodebaseAttribute] applet.codebase reflects <applet codebase>",
-    document.getElementById('test').codebase,
-    "foo");
+  assertEquals('[AppletCodebaseAttribute] applet.codeBase reflects <applet codebase="foo">',
+    "foo",
+    document.getElementById('test').codeBase);
 }
 </script>
-<pre>applet.codebase property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').codebase == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;applet codebase&gt; attribute</pre>
+<pre>applet.codeBase property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').codeBase == "foo") ? 'reflects' : 'does not reflect');
+</script></a> &lt;applet codebase="foo"&gt; attribute</pre>
 </body>
 </html>
