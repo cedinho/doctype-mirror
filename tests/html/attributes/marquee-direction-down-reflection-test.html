@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[marquee direction="down"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<marquee id="test" direction="down"></marquee>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[MarqueeDirectionAttribute] marquee.direction reflects <marquee direction="down">',
+    "down",
+    document.getElementById('test').direction);
+}
+</script>
+<pre>marquee.direction property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').direction == "down") ? 'reflects' : 'does not reflect');
+</script></a> &lt;marquee direction="down"&gt; attribute</pre>
+</body>
+</html>
