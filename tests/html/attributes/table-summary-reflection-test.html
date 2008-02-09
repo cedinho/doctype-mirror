@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[table summary] reflection test</title>
+<title>[table summary="foo"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <table id="test" summary="foo"></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TableSummaryAttribute] table.summary reflects <table summary>",
-    document.getElementById('test').summary,
-    "foo");
+  assertEquals('[TableSummaryAttribute] table.summary reflects <table summary="foo">',
+    "foo",
+    document.getElementById('test').summary);
 }
 </script>
 <pre>table.summary property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').summary == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;table summary&gt; attribute</pre>
+</script></a> &lt;table summary="foo"&gt; attribute</pre>
 </body>
 </html>
