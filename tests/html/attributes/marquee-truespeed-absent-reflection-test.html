@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[marquee] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<marquee id="test"></marquee>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[MarqueeTruespeedAttribute] marquee.trueSpeed reflects <marquee>',
+    false,
+    document.getElementById('test').trueSpeed);
+}
+</script>
+<pre>marquee.trueSpeed property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').trueSpeed == false) ? 'reflects' : 'does not reflect');
+</script></a> &lt;marquee&gt; attribute</pre>
+</body>
+</html>
