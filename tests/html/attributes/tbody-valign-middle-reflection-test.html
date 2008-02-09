@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>[tbody valign="middle"] reflection test</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<table><tbody id="test" valign="middle"></tbody></table>
+<script type="text/javascript">
+function testReflection() {
+  assertEquals('[TbodyValignAttribute] tbody.vAlign reflects <tbody valign="middle">',
+    "middle",
+    document.getElementById('test').vAlign);
+}
+</script>
+<pre>tbody.vAlign property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
+document.write((document.getElementById('test').vAlign == "middle") ? 'reflects' : 'does not reflect');
+</script></a> &lt;tbody valign="middle"&gt; attribute</pre>
+</body>
+</html>
