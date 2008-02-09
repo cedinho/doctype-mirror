@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[table rightpadding] reflection test</title>
+<title>[table rightpadding="42"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <table id="test" rightpadding="42"></table>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[TableRightpaddingAttribute] table.rightPadding reflects <table rightpadding>",
-    document.getElementById('test').rightPadding,
-    42);
+  assertEquals('[TableRightpaddingAttribute] table.rightPadding reflects <table rightpadding="42">',
+    42,
+    document.getElementById('test').rightPadding);
 }
 </script>
 <pre>table.rightPadding property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').rightPadding == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;table rightpadding&gt; attribute</pre>
+</script></a> &lt;table rightpadding="42"&gt; attribute</pre>
 </body>
 </html>
