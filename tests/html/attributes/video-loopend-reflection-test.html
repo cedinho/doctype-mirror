@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[video loopend] reflection test</title>
+<title>[video loopend="00:00:00.00"] reflection test</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 </head>
@@ -9,13 +9,13 @@
 <video id="test" loopend="00:00:00.00"></video>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[VideoLoopendAttribute] video.loopEnd reflects <video loopend>",
-    document.getElementById('test').loopEnd,
-    "00:00:00.00");
+  assertEquals('[VideoLoopendAttribute] video.loopEnd reflects <video loopend="00:00:00.00">',
+    "00:00:00.00",
+    document.getElementById('test').loopEnd);
 }
 </script>
 <pre>video.loopEnd property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
 document.write((document.getElementById('test').loopEnd == "00:00:00.00") ? 'reflects' : 'does not reflect');
-</script></a> &lt;video loopend&gt; attribute</pre>
+</script></a> &lt;video loopend="00:00:00.00"&gt; attribute</pre>
 </body>
 </html>
