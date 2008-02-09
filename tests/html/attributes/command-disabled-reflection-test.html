@@ -9,9 +9,9 @@
 <command id="test" disabled></command>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[CommandDisabledAttribute] command.disabled reflects <command disabled>",
-    document.getElementById('test').disabled,
-    true);
+  assertEquals('[CommandDisabledAttribute] command.disabled reflects <command disabled>',
+    true,
+    document.getElementById('test').disabled);
 }
 </script>
 <pre>command.disabled property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
