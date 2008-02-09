@@ -9,9 +9,9 @@
 <input id="test" disabled></input>
 <script type="text/javascript">
 function testReflection() {
-  assertEquals("[InputDisabledAttribute] input.disabled reflects <input disabled>",
-    document.getElementById('test').disabled,
-    true);
+  assertEquals('[InputDisabledAttribute] input.disabled reflects <input disabled>',
+    true,
+    document.getElementById('test').disabled);
 }
 </script>
 <pre>input.disabled property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
