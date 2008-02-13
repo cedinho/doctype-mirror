@@ -204,7 +204,7 @@ FieldsetHeightAttribute fieldset height height stringint
 FieldsetWidthAttribute fieldset width width stringint
 FontColorAttribute font color color color
 FontFaceAttribute font face face string
-FontWeightAttribute font font-weight fontWeight integer
+FontFontWeightAttribute font font-weight fontWeight integer
 FontPointSizeAttribute font point-size pointSize integer
 FontSizeAttribute font size size stringint
 FormAcceptAttribute form accept accept mimetype
