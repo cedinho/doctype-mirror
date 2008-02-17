@@ -1,0 +1,1835 @@
+Tests with problems (184 total) - JsUnit
+
+Running on Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30)
+
+1. file:///C:/work/bigbook/trunk/tests/html/attributes/a-suppress-reflection-test.html:testReflection failed
+
+
+"[ASuppressAttribute] a.suppress reflects <a suppress="true">"
+Expected <true> (Boolean) but was <true> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+2. file:///C:/work/bigbook/trunk/tests/html/attributes/applet-mayscript-reflection-test.html:testReflection failed
+
+
+"[AppletMayscriptAttribute] applet.mayScript reflects <applet mayscript="foo">"
+Expected <foo> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+3. file:///C:/work/bigbook/trunk/tests/html/attributes/applet-object-reflection-test.html:testReflection failed
+
+
+"[AppletObjectAttribute] applet.object reflects <applet object="foo">"
+Expected <foo> (String) but was <> (Object)
+
+Stack trace follows:
+> JsUnitException
+
+
+4. file:///C:/work/bigbook/trunk/tests/html/attributes/area-nohref-reflection-test.html:testReflection failed
+
+
+"[AreaNohrefAttribute] area.noHref reflects <area nohref>"
+Expected <true> (Boolean) but was <false> (Boolean)
+
+Stack trace follows:
+> JsUnitException
+
+
+5. file:///C:/work/bigbook/trunk/tests/html/attributes/area-suppress-reflection-test.html:testReflection failed
+
+
+"[AreaSuppressAttribute] area.suppress reflects <area suppress="true">"
+Expected <true> (Boolean) but was <true> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+6. file:///C:/work/bigbook/trunk/tests/html/attributes/audio-autoplay-absent-reflection-test.html:testReflection failed
+
+
+"[AudioAutoplayAttribute] audio.autoplay reflects <audio>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+7. file:///C:/work/bigbook/trunk/tests/html/attributes/audio-autoplay-reflection-test.html:testReflection failed
+
+
+"[AudioAutoplayAttribute] audio.autoplay reflects <audio autoplay>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+8. file:///C:/work/bigbook/trunk/tests/html/attributes/audio-controls-absent-reflection-test.html:testReflection failed
+
+
+"[AudioControlsAttribute] audio.controls reflects <audio>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+9. file:///C:/work/bigbook/trunk/tests/html/attributes/audio-controls-reflection-test.html:testReflection failed
+
+
+"[AudioControlsAttribute] audio.controls reflects <audio controls>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+10. file:///C:/work/bigbook/trunk/tests/html/attributes/audio-loopcount-reflection-test.html:testReflection failed
+
+
+"[AudioLoopcountAttribute] audio.loopCount reflects <audio loopcount="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+11. file:///C:/work/bigbook/trunk/tests/html/attributes/audio-loopend-reflection-test.html:testReflection failed
+
+
+"[AudioLoopendAttribute] audio.loopEnd reflects <audio loopend="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+12. file:///C:/work/bigbook/trunk/tests/html/attributes/audio-loopstart-reflection-test.html:testReflection failed
+
+
+"[AudioLoopstartAttribute] audio.loopStart reflects <audio loopstart="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+13. file:///C:/work/bigbook/trunk/tests/html/attributes/body-marginheight-reflection-test.html:testReflection failed
+
+
+"[BodyMarginheightAttribute] body.marginHeight reflects <body marginheight="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+14. file:///C:/work/bigbook/trunk/tests/html/attributes/body-marginwidth-reflection-test.html:testReflection failed
+
+
+"[BodyMarginwidthAttribute] body.marginWidth reflects <body marginwidth="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+15. file:///C:/work/bigbook/trunk/tests/html/attributes/canvas-height-reflection-test.html:testReflection failed
+
+
+"[CanvasHeightAttribute] canvas.height reflects <canvas height="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+16. file:///C:/work/bigbook/trunk/tests/html/attributes/canvas-width-reflection-test.html:testReflection failed
+
+
+"[CanvasWidthAttribute] canvas.width reflects <canvas width="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+17. file:///C:/work/bigbook/trunk/tests/html/attributes/caption-valign-reflection-test.html:testReflection failed
+
+
+"[CaptionValignAttribute] caption.vAlign reflects <caption valign="foo">"
+Expected <foo> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+18. file:///C:/work/bigbook/trunk/tests/html/attributes/col-bgcolor-reflection-test.html:testReflection failed
+
+
+"[ColBgcolorAttribute] col.bgColor reflects <col bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+19. file:///C:/work/bigbook/trunk/tests/html/attributes/col-valign-baseline-reflection-test.html:testReflection failed
+
+
+"[ColValignAttribute] col.vAlign reflects <col valign="baseline">"
+Expected <baseline> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+20. file:///C:/work/bigbook/trunk/tests/html/attributes/col-valign-bottom-reflection-test.html:testReflection failed
+
+
+"[ColValignAttribute] col.vAlign reflects <col valign="bottom">"
+Expected <bottom> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+21. file:///C:/work/bigbook/trunk/tests/html/attributes/col-valign-middle-reflection-test.html:testReflection failed
+
+
+"[ColValignAttribute] col.vAlign reflects <col valign="middle">"
+Expected <middle> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+22. file:///C:/work/bigbook/trunk/tests/html/attributes/col-valign-top-reflection-test.html:testReflection failed
+
+
+"[ColValignAttribute] col.vAlign reflects <col valign="top">"
+Expected <top> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+23. file:///C:/work/bigbook/trunk/tests/html/attributes/colgroup-bgcolor-reflection-test.html:testReflection failed
+
+
+"[ColgroupBgcolorAttribute] colgroup.bgColor reflects <colgroup bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+24. file:///C:/work/bigbook/trunk/tests/html/attributes/colgroup-valign-baseline-reflection-test.html:testReflection failed
+
+
+"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="baseline">"
+Expected <baseline> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+25. file:///C:/work/bigbook/trunk/tests/html/attributes/colgroup-valign-bottom-reflection-test.html:testReflection failed
+
+
+"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="bottom">"
+Expected <bottom> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+26. file:///C:/work/bigbook/trunk/tests/html/attributes/colgroup-valign-middle-reflection-test.html:testReflection failed
+
+
+"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="middle">"
+Expected <middle> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+27. file:///C:/work/bigbook/trunk/tests/html/attributes/colgroup-valign-top-reflection-test.html:testReflection failed
+
+
+"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="top">"
+Expected <top> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+28. file:///C:/work/bigbook/trunk/tests/html/attributes/command-checked-absent-reflection-test.html:testReflection failed
+
+
+"[CommandCheckedAttribute] command.checked reflects <command>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+29. file:///C:/work/bigbook/trunk/tests/html/attributes/command-checked-reflection-test.html:testReflection failed
+
+
+"[CommandCheckedAttribute] command.checked reflects <command checked>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+30. file:///C:/work/bigbook/trunk/tests/html/attributes/command-default-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+31. file:///C:/work/bigbook/trunk/tests/html/attributes/command-default-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+32. file:///C:/work/bigbook/trunk/tests/html/attributes/command-hidden-absent-reflection-test.html:testReflection failed
+
+
+"[CommandHiddenAttribute] command.hidden reflects <command>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+33. file:///C:/work/bigbook/trunk/tests/html/attributes/command-hidden-reflection-test.html:testReflection failed
+
+
+"[CommandHiddenAttribute] command.hidden reflects <command hidden>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+34. file:///C:/work/bigbook/trunk/tests/html/attributes/datagrid-multiple-absent-reflection-test.html:testReflection failed
+
+
+"[DatagridMultipleAttribute] datagrid.multiple reflects <datagrid>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+35. file:///C:/work/bigbook/trunk/tests/html/attributes/datagrid-multiple-reflection-test.html:testReflection failed
+
+
+"[DatagridMultipleAttribute] datagrid.multiple reflects <datagrid multiple>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+36. file:///C:/work/bigbook/trunk/tests/html/attributes/details-open-absent-reflection-test.html:testReflection failed
+
+
+"[DetailsOpenAttribute] details.open reflects <details>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+37. file:///C:/work/bigbook/trunk/tests/html/attributes/details-open-reflection-test.html:testReflection failed
+
+
+"[DetailsOpenAttribute] details.open reflects <details open>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+38. file:///C:/work/bigbook/trunk/tests/html/attributes/div-draggable-absent-reflection-test.html:testReflection failed
+
+
+"[DraggableAttribute] div.draggable reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+39. file:///C:/work/bigbook/trunk/tests/html/attributes/div-draggable-reflection-test.html:testReflection failed
+
+
+"[DraggableAttribute] div.draggable reflects <div draggable>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+40. file:///C:/work/bigbook/trunk/tests/html/attributes/div-irrelevant-absent-reflection-test.html:testReflection failed
+
+
+"[IrrelevantAttribute] div.irrelevant reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+41. file:///C:/work/bigbook/trunk/tests/html/attributes/div-irrelevant-reflection-test.html:testReflection failed
+
+
+"[IrrelevantAttribute] div.irrelevant reflects <div irrelevant>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+42. file:///C:/work/bigbook/trunk/tests/html/attributes/div-unselectable-absent-reflection-test.html:testReflection failed
+
+
+"[UnselectableAttribute] div.unselectable reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+43. file:///C:/work/bigbook/trunk/tests/html/attributes/div-unselectable-reflection-test.html:testReflection failed
+
+
+"[UnselectableAttribute] div.unselectable reflects <div unselectable>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+44. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-align-absbottom-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="absbottom">"
+Expected <absBottom> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+45. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-align-absmiddle-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="absmiddle">"
+Expected <absMiddle> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+46. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-align-baseline-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="baseline">"
+Expected <baseline> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+47. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-align-bottom-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="bottom">"
+Expected <bottom> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+48. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-align-left-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="left">"
+Expected <left> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+49. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-align-middle-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="middle">"
+Expected <middle> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+50. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-align-right-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="right">"
+Expected <right> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+51. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-align-texttop-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="texttop">"
+Expected <textTop> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+52. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-align-top-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="top">"
+Expected <top> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+53. file:///C:/work/bigbook/trunk/tests/html/attributes/embed-type-reflection-test.html:testReflection failed
+
+
+"[EmbedTypeAttribute] embed.type reflects <embed type="text/html">"
+Expected <text/html> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+54. file:///C:/work/bigbook/trunk/tests/html/attributes/font-font-weight-reflection-test.html:testReflection failed
+
+
+"[FontWeightAttribute] font.fontWeight reflects <font font-weight="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+55. file:///C:/work/bigbook/trunk/tests/html/attributes/font-point-size-reflection-test.html:testReflection failed
+
+
+"[FontPointSizeAttribute] font.pointSize reflects <font point-size="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+56. file:///C:/work/bigbook/trunk/tests/html/attributes/frame-allowtransparency-absent-reflection-test.html:testReflection failed
+
+
+"[FrameAllowtransparencyAttribute] frame.allowTransparency reflects <frame>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+57. file:///C:/work/bigbook/trunk/tests/html/attributes/frame-allowtransparency-reflection-test.html:testReflection failed
+
+
+"[FrameAllowtransparencyAttribute] frame.allowTransparency reflects <frame allowtransparency>"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+58. file:///C:/work/bigbook/trunk/tests/html/attributes/frame-bordercolor-reflection-test.html:testReflection failed
+
+
+"[FrameBordercolorAttribute] frame.borderColor reflects <frame bordercolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+59. file:///C:/work/bigbook/trunk/tests/html/attributes/frame-frameborder-reflection-test.html:testReflection failed
+
+
+"[FrameFrameborderAttribute] frame.frameBorder reflects <frame frameborder="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+60. file:///C:/work/bigbook/trunk/tests/html/attributes/frame-longdesc-reflection-test.html:testReflection failed
+
+
+"[FrameLongdescAttribute] frame.longDesc reflects <frame longdesc="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+61. file:///C:/work/bigbook/trunk/tests/html/attributes/frame-marginheight-reflection-test.html:testReflection failed
+
+
+"[FrameMarginheightAttribute] frame.marginHeight reflects <frame marginheight="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+62. file:///C:/work/bigbook/trunk/tests/html/attributes/frame-marginwidth-reflection-test.html:testReflection failed
+
+
+"[FrameMarginwidthAttribute] frame.marginWidth reflects <frame marginwidth="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+63. file:///C:/work/bigbook/trunk/tests/html/attributes/frame-noresize-absent-reflection-test.html:testReflection failed
+
+
+"[FrameNoresizeAttribute] frame.noResize reflects <frame>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+64. file:///C:/work/bigbook/trunk/tests/html/attributes/frame-noresize-reflection-test.html:testReflection failed
+
+
+"[FrameNoresizeAttribute] frame.noResize reflects <frame noresize>"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+65. file:///C:/work/bigbook/trunk/tests/html/attributes/frameset-bordercolor-reflection-test.html:testReflection failed
+
+
+"[FramesetBordercolorAttribute] frameset.borderColor reflects <frameset bordercolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+66. file:///C:/work/bigbook/trunk/tests/html/attributes/frameset-frameborder-reflection-test.html:testReflection failed
+
+
+"[FramesetFrameborderAttribute] frameset.frameBorder reflects <frameset frameborder="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+67. file:///C:/work/bigbook/trunk/tests/html/attributes/frameset-framespacing-reflection-test.html:testReflection failed
+
+
+"[FramesetFramespacingAttribute] frameset.frameSpacing reflects <frameset framespacing="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+68. file:///C:/work/bigbook/trunk/tests/html/attributes/hr-size-reflection-test.html:testReflection failed
+
+
+"[HrSizeAttribute] hr.size reflects <hr size="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+69. file:///C:/work/bigbook/trunk/tests/html/attributes/iframe-align-justify-reflection-test.html:testReflection failed
+
+
+"[IframeAlignAttribute] iframe.align reflects <iframe align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+70. file:///C:/work/bigbook/trunk/tests/html/attributes/iframe-frameborder-reflection-test.html:testReflection failed
+
+
+"[IframeFrameborderAttribute] iframe.frameBorder reflects <iframe frameborder="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+71. file:///C:/work/bigbook/trunk/tests/html/attributes/iframe-marginheight-reflection-test.html:testReflection failed
+
+
+"[IframeMarginheightAttribute] iframe.marginHeight reflects <iframe marginheight="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+72. file:///C:/work/bigbook/trunk/tests/html/attributes/iframe-marginwidth-reflection-test.html:testReflection failed
+
+
+"[IframeMarginwidthAttribute] iframe.marginWidth reflects <iframe marginwidth="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+73. file:///C:/work/bigbook/trunk/tests/html/attributes/ilayer-bgcolor-reflection-test.html:testReflection failed
+
+
+"[IlayerBgcolorAttribute] ilayer.bgColor reflects <ilayer bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+74. file:///C:/work/bigbook/trunk/tests/html/attributes/ilayer-left-reflection-test.html:testReflection failed
+
+
+"[IlayerLeftAttribute] ilayer.left reflects <ilayer left="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+75. file:///C:/work/bigbook/trunk/tests/html/attributes/ilayer-pagex-reflection-test.html:testReflection failed
+
+
+"[IlayerPagexAttribute] ilayer.pagex reflects <ilayer pagex="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+76. file:///C:/work/bigbook/trunk/tests/html/attributes/ilayer-pagey-reflection-test.html:testReflection failed
+
+
+"[IlayerPageyAttribute] ilayer.pagey reflects <ilayer pagey="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+77. file:///C:/work/bigbook/trunk/tests/html/attributes/ilayer-top-reflection-test.html:testReflection failed
+
+
+"[IlayerTopAttribute] ilayer.top reflects <ilayer top="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+78. file:///C:/work/bigbook/trunk/tests/html/attributes/ilayer-z-index-reflection-test.html:testReflection failed
+
+
+"[IlayerZIndexAttribute] ilayer.zIndex reflects <ilayer z-index="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+79. file:///C:/work/bigbook/trunk/tests/html/attributes/img-galleryimg-no-reflection-test.html:testReflection failed
+
+
+"[ImgGalleryimgAttribute] img.galleryImg reflects <img galleryimg="no">"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+80. file:///C:/work/bigbook/trunk/tests/html/attributes/img-galleryimg-yes-reflection-test.html:testReflection failed
+
+
+"[ImgGalleryimgAttribute] img.galleryImg reflects <img galleryimg="yes">"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+81. file:///C:/work/bigbook/trunk/tests/html/attributes/img-suppress-reflection-test.html:testReflection failed
+
+
+"[ImgSuppressAttribute] img.suppress reflects <img suppress="true">"
+Expected <true> (Boolean) but was <true> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+82. file:///C:/work/bigbook/trunk/tests/html/attributes/input-align-absbottom-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="absbottom">"
+Expected <absBottom> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+83. file:///C:/work/bigbook/trunk/tests/html/attributes/input-align-absmiddle-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="absmiddle">"
+Expected <absMiddle> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+84. file:///C:/work/bigbook/trunk/tests/html/attributes/input-align-baseline-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="baseline">"
+Expected <baseline> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+85. file:///C:/work/bigbook/trunk/tests/html/attributes/input-align-bottom-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="bottom">"
+Expected <bottom> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+86. file:///C:/work/bigbook/trunk/tests/html/attributes/input-align-left-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="left">"
+Expected <left> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+87. file:///C:/work/bigbook/trunk/tests/html/attributes/input-align-middle-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="middle">"
+Expected <middle> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+88. file:///C:/work/bigbook/trunk/tests/html/attributes/input-align-right-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="right">"
+Expected <right> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+89. file:///C:/work/bigbook/trunk/tests/html/attributes/input-align-texttop-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="texttop">"
+Expected <textTop> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+90. file:///C:/work/bigbook/trunk/tests/html/attributes/input-align-top-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="top">"
+Expected <top> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+91. file:///C:/work/bigbook/trunk/tests/html/attributes/input-checked-reflection-test.html:testReflection failed
+
+
+"[InputCheckedAttribute] input.checked reflects <input checked>"
+Expected <true> (Boolean) but was <false> (Boolean)
+
+Stack trace follows:
+> JsUnitException
+
+
+92. file:///C:/work/bigbook/trunk/tests/html/attributes/input-height-reflection-test.html:testReflection failed
+
+
+"[InputHeightAttribute] input.height reflects <input height="7">"
+Expected <7> (String) but was <86196464> (Number)
+
+Stack trace follows:
+> JsUnitException
+
+
+93. file:///C:/work/bigbook/trunk/tests/html/attributes/input-hspace-reflection-test.html:testReflection failed
+
+
+"[InputHspaceAttribute] input.hspace reflects <input hspace="42">"
+Expected <42> (Number) but was <0> (Number)
+
+Stack trace follows:
+> JsUnitException
+
+
+94. file:///C:/work/bigbook/trunk/tests/html/attributes/input-ismap-absent-reflection-test.html:testReflection failed
+
+
+"[InputIsmapAttribute] input.isMap reflects <input>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+95. file:///C:/work/bigbook/trunk/tests/html/attributes/input-ismap-reflection-test.html:testReflection failed
+
+
+"[InputIsmapAttribute] input.isMap reflects <input ismap>"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+96. file:///C:/work/bigbook/trunk/tests/html/attributes/input-maxlength-reflection-test.html:testReflection failed
+
+
+"[InputMaxlengthAttribute] input.maxLength reflects <input maxlength="foo">"
+Expected <foo> (String) but was <2147483647> (Number)
+
+Stack trace follows:
+> JsUnitException
+
+
+97. file:///C:/work/bigbook/trunk/tests/html/attributes/input-width-reflection-test.html:testReflection failed
+
+
+"[InputWidthAttribute] input.width reflects <input width="7">"
+Expected <7> (String) but was <0> (Number)
+
+Stack trace follows:
+> JsUnitException
+
+
+98. file:///C:/work/bigbook/trunk/tests/html/attributes/isindex-action-reflection-test.html:testReflection failed
+
+
+"[IsindexActionAttribute] isindex.action reflects <isindex action="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+99. file:///C:/work/bigbook/trunk/tests/html/attributes/isindex-align-center-reflection-test.html:testReflection failed
+
+
+"[IsindexAlignAttribute] isindex.align reflects <isindex align="center">"
+Expected <center> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+100. file:///C:/work/bigbook/trunk/tests/html/attributes/isindex-align-justify-reflection-test.html:testReflection failed
+
+
+"[IsindexAlignAttribute] isindex.align reflects <isindex align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+101. file:///C:/work/bigbook/trunk/tests/html/attributes/isindex-align-left-reflection-test.html:testReflection failed
+
+
+"[IsindexAlignAttribute] isindex.align reflects <isindex align="left">"
+Expected <left> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+102. file:///C:/work/bigbook/trunk/tests/html/attributes/isindex-align-right-reflection-test.html:testReflection failed
+
+
+"[IsindexAlignAttribute] isindex.align reflects <isindex align="right">"
+Expected <right> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+103. file:///C:/work/bigbook/trunk/tests/html/attributes/isindex-height-reflection-test.html:testReflection failed
+
+
+"[IsindexHeightAttribute] isindex.height reflects <isindex height="7">"
+Expected <7> (String) but was <86196464> (Number)
+
+Stack trace follows:
+> JsUnitException
+
+
+104. file:///C:/work/bigbook/trunk/tests/html/attributes/isindex-method-reflection-test.html:testReflection failed
+
+
+"[IsindexMethodAttribute] isindex.method reflects <isindex method="GET">"
+Expected <get> (String) but was <GET> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+105. file:///C:/work/bigbook/trunk/tests/html/attributes/isindex-prompt-reflection-test.html:testReflection failed
+
+
+"[IsindexPromptAttribute] isindex.prompt reflects <isindex prompt="foo">"
+Expected <foo> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+106. file:///C:/work/bigbook/trunk/tests/html/attributes/isindex-width-reflection-test.html:testReflection failed
+
+
+"[IsindexWidthAttribute] isindex.width reflects <isindex width="7">"
+Expected <7> (String) but was <0> (Number)
+
+Stack trace follows:
+> JsUnitException
+
+
+107. file:///C:/work/bigbook/trunk/tests/html/attributes/layer-bgcolor-reflection-test.html:testReflection failed
+
+
+"[LayerBgcolorAttribute] layer.bgColor reflects <layer bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+108. file:///C:/work/bigbook/trunk/tests/html/attributes/layer-left-reflection-test.html:testReflection failed
+
+
+"[LayerLeftAttribute] layer.left reflects <layer left="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+109. file:///C:/work/bigbook/trunk/tests/html/attributes/layer-pagex-reflection-test.html:testReflection failed
+
+
+"[LayerPagexAttribute] layer.pagex reflects <layer pagex="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+110. file:///C:/work/bigbook/trunk/tests/html/attributes/layer-pagey-reflection-test.html:testReflection failed
+
+
+"[LayerPageyAttribute] layer.pagey reflects <layer pagey="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+111. file:///C:/work/bigbook/trunk/tests/html/attributes/layer-top-reflection-test.html:testReflection failed
+
+
+"[LayerTopAttribute] layer.top reflects <layer top="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+112. file:///C:/work/bigbook/trunk/tests/html/attributes/layer-z-index-reflection-test.html:testReflection failed
+
+
+"[LayerZIndexAttribute] layer.zIndex reflects <layer z-index="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+113. file:///C:/work/bigbook/trunk/tests/html/attributes/link-methods-reflection-test.html:testReflection failed
+
+
+"[LinkMethodsAttribute] link.Methods reflects <link methods="GET">"
+Expected <GET> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+114. file:///C:/work/bigbook/trunk/tests/html/attributes/menu-autosubmit-absent-reflection-test.html:testReflection failed
+
+
+"[MenuAutosubmitAttribute] menu.autosubmit reflects <menu>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+115. file:///C:/work/bigbook/trunk/tests/html/attributes/menu-autosubmit-reflection-test.html:testReflection failed
+
+
+"[MenuAutosubmitAttribute] menu.autosubmit reflects <menu autosubmit>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+116. file:///C:/work/bigbook/trunk/tests/html/attributes/menu-start-reflection-test.html:testReflection failed
+
+
+"[MenuStartAttribute] menu.start reflects <menu start="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+117. file:///C:/work/bigbook/trunk/tests/html/attributes/meter-high-reflection-test.html:testReflection failed
+
+
+"[MeterHighAttribute] meter.high reflects <meter high="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+118. file:///C:/work/bigbook/trunk/tests/html/attributes/meter-low-reflection-test.html:testReflection failed
+
+
+"[MeterLowAttribute] meter.low reflects <meter low="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+119. file:///C:/work/bigbook/trunk/tests/html/attributes/meter-max-reflection-test.html:testReflection failed
+
+
+"[MeterMaxAttribute] meter.max reflects <meter max="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+120. file:///C:/work/bigbook/trunk/tests/html/attributes/meter-min-reflection-test.html:testReflection failed
+
+
+"[MeterMinAttribute] meter.min reflects <meter min="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+121. file:///C:/work/bigbook/trunk/tests/html/attributes/meter-optimum-reflection-test.html:testReflection failed
+
+
+"[MeterOptimumAttribute] meter.optimum reflects <meter optimum="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+122. file:///C:/work/bigbook/trunk/tests/html/attributes/meter-value-reflection-test.html:testReflection failed
+
+
+"[MeterValueAttribute] meter.value reflects <meter value="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+123. file:///C:/work/bigbook/trunk/tests/html/attributes/multicol-cols-reflection-test.html:testReflection failed
+
+
+"[MulticolColsAttribute] multicol.cols reflects <multicol cols="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+124. file:///C:/work/bigbook/trunk/tests/html/attributes/object-codebase-reflection-test.html:testReflection failed
+
+
+"[ObjectCodebaseAttribute] object.codebase reflects <object codebase="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+125. file:///C:/work/bigbook/trunk/tests/html/attributes/object-codetype-reflection-test.html:testReflection failed
+
+
+"[ObjectCodetypeAttribute] object.codetype reflects <object codetype="text/html">"
+Expected <text/html> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+126. file:///C:/work/bigbook/trunk/tests/html/attributes/object-declare-reflection-test.html:testReflection failed
+
+
+"[ObjectDeclareAttribute] object.declare reflects <object declare="foo">"
+Expected <foo> (String) but was <true> (Boolean)
+
+Stack trace follows:
+> JsUnitException
+
+
+127. file:///C:/work/bigbook/trunk/tests/html/attributes/ol-value-reflection-test.html:testReflection failed
+
+
+"[OlValueAttribute] ol.value reflects <ol value="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+128. file:///C:/work/bigbook/trunk/tests/html/attributes/option-selected-absent-reflection-test.html:testReflection failed
+
+
+"[OptionSelectedAttribute] option.selected reflects <select><option>"
+Expected <false> (Boolean) but was <true> (Boolean)
+
+Stack trace follows:
+> JsUnitException
+
+
+129. file:///C:/work/bigbook/trunk/tests/html/attributes/p-width-reflection-test.html:testReflection failed
+
+
+"[PWidthAttribute] p.width reflects <p width="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+130. file:///C:/work/bigbook/trunk/tests/html/attributes/param-valuetype-reflection-test.html:testReflection failed
+
+
+"[ParamValuetypeAttribute] param.valueType reflects <param valuetype="foo">"
+Expected <foo> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+131. file:///C:/work/bigbook/trunk/tests/html/attributes/pre-variable-absent-reflection-test.html:testReflection failed
+
+
+"[PreVariableAttribute] pre.variable reflects <pre>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+132. file:///C:/work/bigbook/trunk/tests/html/attributes/pre-variable-reflection-test.html:testReflection failed
+
+
+"[PreVariableAttribute] pre.variable reflects <pre variable>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+133. file:///C:/work/bigbook/trunk/tests/html/attributes/progress-max-reflection-test.html:testReflection failed
+
+
+"[ProgressMaxAttribute] progress.max reflects <progress max="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+134. file:///C:/work/bigbook/trunk/tests/html/attributes/progress-value-reflection-test.html:testReflection failed
+
+
+"[ProgressValueAttribute] progress.value reflects <progress value="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+135. file:///C:/work/bigbook/trunk/tests/html/attributes/script-async-absent-reflection-test.html:testReflection failed
+
+
+"[ScriptAsyncAttribute] script.async reflects <script>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+136. file:///C:/work/bigbook/trunk/tests/html/attributes/script-async-reflection-test.html:testReflection failed
+
+
+"[ScriptAsyncAttribute] script.async reflects <script async>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+137. file:///C:/work/bigbook/trunk/tests/html/attributes/select-align-absbottom-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="absbottom">"
+Expected <absBottom> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+138. file:///C:/work/bigbook/trunk/tests/html/attributes/select-align-absmiddle-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="absmiddle">"
+Expected <absMiddle> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+139. file:///C:/work/bigbook/trunk/tests/html/attributes/select-align-baseline-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="baseline">"
+Expected <baseline> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+140. file:///C:/work/bigbook/trunk/tests/html/attributes/select-align-bottom-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="bottom">"
+Expected <bottom> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+141. file:///C:/work/bigbook/trunk/tests/html/attributes/select-align-left-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="left">"
+Expected <left> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+142. file:///C:/work/bigbook/trunk/tests/html/attributes/select-align-middle-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="middle">"
+Expected <middle> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+143. file:///C:/work/bigbook/trunk/tests/html/attributes/select-align-right-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="right">"
+Expected <right> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+144. file:///C:/work/bigbook/trunk/tests/html/attributes/select-align-texttop-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="texttop">"
+Expected <textTop> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+145. file:///C:/work/bigbook/trunk/tests/html/attributes/select-align-top-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="top">"
+Expected <top> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+146. file:///C:/work/bigbook/trunk/tests/html/attributes/select-value-reflection-test.html:testReflection failed
+
+
+"[SelectValueAttribute] select.value reflects <select value="foo">"
+Expected <foo> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+147. file:///C:/work/bigbook/trunk/tests/html/attributes/sound-delay-reflection-test.html:testReflection failed
+
+
+"[SoundDelayAttribute] sound.delay reflects <sound delay="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+148. file:///C:/work/bigbook/trunk/tests/html/attributes/sound-loop-reflection-test.html:testReflection failed
+
+
+"[SoundLoopAttribute] sound.loop reflects <sound loop="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+149. file:///C:/work/bigbook/trunk/tests/html/attributes/spacer-size-reflection-test.html:testReflection failed
+
+
+"[SpacerSizeAttribute] spacer.size reflects <spacer size="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+150. file:///C:/work/bigbook/trunk/tests/html/attributes/style-scoped-absent-reflection-test.html:testReflection failed
+
+
+"[StyleScopedAttribute] style.scoped reflects <style>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+151. file:///C:/work/bigbook/trunk/tests/html/attributes/style-scoped-reflection-test.html:testReflection failed
+
+
+"[StyleScopedAttribute] style.scoped reflects <style scoped>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+152. file:///C:/work/bigbook/trunk/tests/html/attributes/table-align-justify-reflection-test.html:testReflection failed
+
+
+"[TableAlignAttribute] table.align reflects <table align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+153. file:///C:/work/bigbook/trunk/tests/html/attributes/table-bottompadding-reflection-test.html:testReflection failed
+
+
+"[TableBottompaddingAttribute] table.bottomPadding reflects <table bottompadding="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+154. file:///C:/work/bigbook/trunk/tests/html/attributes/table-hspace-reflection-test.html:testReflection failed
+
+
+"[TableHspaceAttribute] table.hspace reflects <table hspace="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+155. file:///C:/work/bigbook/trunk/tests/html/attributes/table-leftpadding-reflection-test.html:testReflection failed
+
+
+"[TableLeftpaddingAttribute] table.leftPadding reflects <table leftpadding="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+156. file:///C:/work/bigbook/trunk/tests/html/attributes/table-rightpadding-reflection-test.html:testReflection failed
+
+
+"[TableRightpaddingAttribute] table.rightPadding reflects <table rightpadding="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+157. file:///C:/work/bigbook/trunk/tests/html/attributes/table-toppadding-reflection-test.html:testReflection failed
+
+
+"[TableToppaddingAttribute] table.topPadding reflects <table toppadding="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+158. file:///C:/work/bigbook/trunk/tests/html/attributes/table-vspace-reflection-test.html:testReflection failed
+
+
+"[TableVspaceAttribute] table.vspace reflects <table vspace="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+159. file:///C:/work/bigbook/trunk/tests/html/attributes/tbody-align-justify-reflection-test.html:testReflection failed
+
+
+"[TbodyAlignAttribute] tbody.align reflects <tbody align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+160. file:///C:/work/bigbook/trunk/tests/html/attributes/tbody-choff-reflection-test.html:testReflection failed
+
+
+"[TbodyChoffAttribute] tbody.choff reflects <tbody choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+161. file:///C:/work/bigbook/trunk/tests/html/attributes/td-align-justify-reflection-test.html:testReflection failed
+
+
+"[TdAlignAttribute] td.align reflects <td align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+162. file:///C:/work/bigbook/trunk/tests/html/attributes/td-choff-reflection-test.html:testReflection failed
+
+
+"[TdChoffAttribute] td.choff reflects <td choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+163. file:///C:/work/bigbook/trunk/tests/html/attributes/td-rowspan-reflection-test.html:testReflection failed
+
+
+"[TdRowspanAttribute] td.rowSpan reflects <td rowspan="42">"
+Expected <42> (Number) but was <1> (Number)
+
+Stack trace follows:
+> JsUnitException
+
+
+164. file:///C:/work/bigbook/trunk/tests/html/attributes/tfoot-align-justify-reflection-test.html:testReflection failed
+
+
+"[TfootAlignAttribute] tfoot.align reflects <tfoot align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+165. file:///C:/work/bigbook/trunk/tests/html/attributes/tfoot-choff-reflection-test.html:testReflection failed
+
+
+"[TfootChoffAttribute] tfoot.choff reflects <tfoot choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+166. file:///C:/work/bigbook/trunk/tests/html/attributes/th-align-justify-reflection-test.html:testReflection failed
+
+
+"[ThAlignAttribute] th.align reflects <th align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+167. file:///C:/work/bigbook/trunk/tests/html/attributes/th-choff-reflection-test.html:testReflection failed
+
+
+"[ThChoffAttribute] th.choff reflects <th choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+168. file:///C:/work/bigbook/trunk/tests/html/attributes/th-rowspan-reflection-test.html:testReflection failed
+
+
+"[ThRowspanAttribute] th.rowSpan reflects <th rowspan="42">"
+Expected <42> (Number) but was <1> (Number)
+
+Stack trace follows:
+> JsUnitException
+
+
+169. file:///C:/work/bigbook/trunk/tests/html/attributes/thead-align-justify-reflection-test.html:testReflection failed
+
+
+"[TheadAlignAttribute] thead.align reflects <thead align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+170. file:///C:/work/bigbook/trunk/tests/html/attributes/thead-choff-reflection-test.html:testReflection failed
+
+
+"[TheadChoffAttribute] thead.choff reflects <thead choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+171. file:///C:/work/bigbook/trunk/tests/html/attributes/time-datetime-reflection-test.html:testReflection failed
+
+
+"[TimeDatetimeAttribute] time.dateTime reflects <time datetime="2008-01-01T00:00:00Z">"
+Expected <2008-01-01T00:00:00Z> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+172. file:///C:/work/bigbook/trunk/tests/html/attributes/tr-align-justify-reflection-test.html:testReflection failed
+
+
+"[TrAlignAttribute] tr.align reflects <tr align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+173. file:///C:/work/bigbook/trunk/tests/html/attributes/tr-choff-reflection-test.html:testReflection failed
+
+
+"[TrChoffAttribute] tr.choff reflects <tr choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+174. file:///C:/work/bigbook/trunk/tests/html/attributes/tr-nowrap-absent-reflection-test.html:testReflection failed
+
+
+"[TrNowrapAttribute] tr.noWrap reflects <tr>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+175. file:///C:/work/bigbook/trunk/tests/html/attributes/tr-nowrap-reflection-test.html:testReflection failed
+
+
+"[TrNowrapAttribute] tr.noWrap reflects <tr nowrap>"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+176. file:///C:/work/bigbook/trunk/tests/html/attributes/ul-start-reflection-test.html:testReflection failed
+
+
+"[UlStartAttribute] ul.start reflects <ul start="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+177. file:///C:/work/bigbook/trunk/tests/html/attributes/ul-value-reflection-test.html:testReflection failed
+
+
+"[UlValueAttribute] ul.value reflects <ul value="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+178. file:///C:/work/bigbook/trunk/tests/html/attributes/video-autoplay-absent-reflection-test.html:testReflection failed
+
+
+"[VideoAutoplayAttribute] video.autoplay reflects <video>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+179. file:///C:/work/bigbook/trunk/tests/html/attributes/video-autoplay-reflection-test.html:testReflection failed
+
+
+"[VideoAutoplayAttribute] video.autoplay reflects <video autoplay>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+180. file:///C:/work/bigbook/trunk/tests/html/attributes/video-controls-absent-reflection-test.html:testReflection failed
+
+
+"[VideoControlsAttribute] video.controls reflects <video>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+181. file:///C:/work/bigbook/trunk/tests/html/attributes/video-controls-reflection-test.html:testReflection failed
+
+
+"[VideoControlsAttribute] video.controls reflects <video controls>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> JsUnitException
+
+
+182. file:///C:/work/bigbook/trunk/tests/html/attributes/video-loopcount-reflection-test.html:testReflection failed
+
+
+"[VideoLoopcountAttribute] video.loopCount reflects <video loopcount="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+183. file:///C:/work/bigbook/trunk/tests/html/attributes/video-loopend-reflection-test.html:testReflection failed
+
+
+"[VideoLoopendAttribute] video.loopEnd reflects <video loopend="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
+
+184. file:///C:/work/bigbook/trunk/tests/html/attributes/video-loopstart-reflection-test.html:testReflection failed
+
+
+"[VideoLoopstartAttribute] video.loopStart reflects <video loopstart="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+
+Stack trace follows:
+> JsUnitException
+
