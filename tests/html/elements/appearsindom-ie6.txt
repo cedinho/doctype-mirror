@@ -1,0 +1,29 @@
+Tests with problems (2 total) - JsUnit
+
+Running on Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30)
+
+1. head-element-appears-in-dom-test.html:testDOM failed
+
+
+"[HeadElement] [head] element appears in DOM"
+Expected not to be <null>
+
+Stack trace follows:
+> JsUnitException
+> _assert
+> assertNotEquals
+> testDOM
+
+
+2. html-element-appears-in-dom-test.html:testDOM failed
+
+
+"[HtmlElement] [html] element appears in DOM"
+Expected not to be <null>
+
+Stack trace follows:
+> JsUnitException
+> _assert
+> assertNotEquals
+> testDOM
+

@@ -1,0 +1,72 @@
+Tests with problems (17 total) - JsUnit
+
+Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/523.15 (KHTML, like Gecko) Version/3.0 Safari/523.15
+
+1. file:///c:/work/bigbook/trunk/tests/html/elements/area-element-appears-in-dom-test.html:testDOM failed
+
+"[AreaElement] [area] element appears in DOM"
+Expected not to be <null>
+2. file:///c:/work/bigbook/trunk/tests/html/elements/caption-element-appears-in-dom-test.html:testDOM failed
+
+"[CaptionElement] [caption] element appears in DOM"
+Expected not to be <null>
+3. file:///c:/work/bigbook/trunk/tests/html/elements/col-element-appears-in-dom-test.html:testDOM failed
+
+"[ColElement] [col] element appears in DOM"
+Expected not to be <null>
+4. file:///c:/work/bigbook/trunk/tests/html/elements/colgroup-element-appears-in-dom-test.html:testDOM failed
+
+"[ColgroupElement] [colgroup] element appears in DOM"
+Expected not to be <null>
+5. file:///c:/work/bigbook/trunk/tests/html/elements/frame-element-appears-in-dom-test.html:testDOM failed
+
+"[FrameElement] [frame] element appears in DOM"
+Expected not to be <null>
+6. file:///c:/work/bigbook/trunk/tests/html/elements/frameset-element-appears-in-dom-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Value undefined (result of expression this.containerTestFrame[this._testFunctionName]) is not object."
+7. file:///c:/work/bigbook/trunk/tests/html/elements/head-element-appears-in-dom-test.html:testDOM failed
+
+"[HeadElement] [head] element appears in DOM"
+Expected not to be <null>
+8. file:///c:/work/bigbook/trunk/tests/html/elements/legend-element-appears-in-dom-test.html:testDOM failed
+
+"[LegendElement] [legend] element appears in DOM"
+Expected not to be <null>
+9. file:///c:/work/bigbook/trunk/tests/html/elements/optgroup-element-appears-in-dom-test.html:testDOM failed
+
+"[OptgroupElement] [optgroup] element appears in DOM"
+Expected not to be <null>
+10. file:///c:/work/bigbook/trunk/tests/html/elements/option-element-appears-in-dom-test.html:testDOM failed
+
+"[OptionElement] [option] element appears in DOM"
+Expected not to be <null>
+11. file:///c:/work/bigbook/trunk/tests/html/elements/param-element-appears-in-dom-test.html:testDOM failed
+
+"[ParamElement] [param] element appears in DOM"
+Expected not to be <null>
+12. file:///c:/work/bigbook/trunk/tests/html/elements/tbody-element-appears-in-dom-test.html:testDOM failed
+
+"[TbodyElement] [tbody] element appears in DOM"
+Expected not to be <null>
+13. file:///c:/work/bigbook/trunk/tests/html/elements/td-element-appears-in-dom-test.html:testDOM failed
+
+"[TdElement] [td] element appears in DOM"
+Expected not to be <null>
+14. file:///c:/work/bigbook/trunk/tests/html/elements/tfoot-element-appears-in-dom-test.html:testDOM failed
+
+"[TfootElement] [tfoot] element appears in DOM"
+Expected not to be <null>
+15. file:///c:/work/bigbook/trunk/tests/html/elements/th-element-appears-in-dom-test.html:testDOM failed
+
+"[ThElement] [th] element appears in DOM"
+Expected not to be <null>
+16. file:///c:/work/bigbook/trunk/tests/html/elements/thead-element-appears-in-dom-test.html:testDOM failed
+
+"[TheadElement] [thead] element appears in DOM"
+Expected not to be <null>
+17. file:///c:/work/bigbook/trunk/tests/html/elements/tr-element-appears-in-dom-test.html:testDOM failed
+
+"[TrElement] [tr] element appears in DOM"
+Expected not to be <null>
