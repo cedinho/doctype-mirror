@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>background-attachment CSS reflection test</title>
+<script type='text/javascript' src='../../../goog/base.js'></script>
+<script type='text/javascript' src='../../../goog/array.js'></script>
+<script type='text/javascript' src='../../../goog/math.js'></script>
+<script type='text/javascript' src='../../../goog/string.js'></script>
+<script type='text/javascript' src='../../../goog/useragent.js'></script>
+<script type='text/javascript' src='../../../goog/dom.js'></script>
+<script type='text/javascript' src='../../../goog/style.js'></script>
+<script type='text/javascript' src='../../lib/test-common.js'></script>
+<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+</head>
+<body>
+<div id='test' style='background-attachment: scroll'></div>
+<script type='text/javascript'>
+function testReflection() {
+  assertEquals('[BackgroundAttachmentCSSProperty] style.backgroundAttachment reflects <div style='background-attachment: scroll'>',
+    'scroll',
+    encyclopedia.getComputedStyleById('test', 'backgroundAttachment'));
+}
+</script>
+<pre>style.backgroundAttachment property <a href='http://www.whatwg.org/specs/web-apps/current-work/#reflecting'><script type='text/javascript'>
+document.write((encyclopedia.getComputedStyleById('test', 'backgroundAttachment') == 'scroll') ? 'reflects' : 'does not reflect');
+</script></a> &lt;div style='background-attachment: scroll'&gt; CSS declaration</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>display CSS reflection test</title>
+<script type='text/javascript' src='../../../goog/base.js'></script>
+<script type='text/javascript' src='../../../goog/array.js'></script>
+<script type='text/javascript' src='../../../goog/math.js'></script>
+<script type='text/javascript' src='../../../goog/string.js'></script>
+<script type='text/javascript' src='../../../goog/useragent.js'></script>
+<script type='text/javascript' src='../../../goog/dom.js'></script>
+<script type='text/javascript' src='../../../goog/style.js'></script>
+<script type='text/javascript' src='../../lib/test-common.js'></script>
+<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+</head>
+<body>
+<div id='test' style='display: inline-table'></div>
+<script type='text/javascript'>
+function testReflection() {
+  assertEquals('[DisplayCSSProperty] style.display reflects <div style='display: inline-table'>',
+    'inline-table',
+    encyclopedia.getComputedStyleById('test', 'display'));
+}
+</script>
+<pre>style.display property <a href='http://www.whatwg.org/specs/web-apps/current-work/#reflecting'><script type='text/javascript'>
+document.write((encyclopedia.getComputedStyleById('test', 'display') == 'inline-table') ? 'reflects' : 'does not reflect');
+</script></a> &lt;div style='display: inline-table'&gt; CSS declaration</pre>
+</body>
+</html>

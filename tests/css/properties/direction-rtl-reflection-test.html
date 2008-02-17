@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>direction CSS reflection test</title>
+<script type='text/javascript' src='../../../goog/base.js'></script>
+<script type='text/javascript' src='../../../goog/array.js'></script>
+<script type='text/javascript' src='../../../goog/math.js'></script>
+<script type='text/javascript' src='../../../goog/string.js'></script>
+<script type='text/javascript' src='../../../goog/useragent.js'></script>
+<script type='text/javascript' src='../../../goog/dom.js'></script>
+<script type='text/javascript' src='../../../goog/style.js'></script>
+<script type='text/javascript' src='../../lib/test-common.js'></script>
+<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+</head>
+<body>
+<div id='test' style='direction: rtl'></div>
+<script type='text/javascript'>
+function testReflection() {
+  assertEquals('[DirectionCSSProperty] style.direction reflects <div style='direction: rtl'>',
+    'rtl',
+    encyclopedia.getComputedStyleById('test', 'direction'));
+}
+</script>
+<pre>style.direction property <a href='http://www.whatwg.org/specs/web-apps/current-work/#reflecting'><script type='text/javascript'>
+document.write((encyclopedia.getComputedStyleById('test', 'direction') == 'rtl') ? 'reflects' : 'does not reflect');
+</script></a> &lt;div style='direction: rtl'&gt; CSS declaration</pre>
+</body>
+</html>
