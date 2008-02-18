@@ -11,6 +11,10 @@
 <script type='text/javascript' src='../../../goog/style.js'></script>
 <script type='text/javascript' src='../../lib/test-common.js'></script>
 <script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+<style type='text/css'>
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
 </head>
 <body>
 <div id='test' style='background-repeat: repeat-y'></div>
@@ -21,8 +25,13 @@ function testReflection() {
     encyclopedia.getComputedStyleById('test', 'backgroundRepeat'));
 }
 </script>
-<pre>style.backgroundRepeat property <a href='http://www.whatwg.org/specs/web-apps/current-work/#reflecting'><script type='text/javascript'>
-document.write((encyclopedia.getComputedStyleById('test', 'backgroundRepeat') == 'repeat-y') ? 'reflects' : 'does not reflect');
-</script></a> &lt;div style='background-repeat: repeat-y'&gt; CSS declaration</pre>
+<pre>
+tested.....&lt;div style='background-repeat: repeat-y'&gt;
+expected...style.backgroundRepeat = 'repeat-y'
+found......style.backgroundRepeat = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundRepeat');
+document.write(actualValue + '\'<' + '/pre><p class=');
+document.write((actualValue == 'repeat-y') ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
 </body>
 </html>
