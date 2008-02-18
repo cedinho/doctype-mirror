@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>cursor CSS reflection test</title>
+<script type='text/javascript' src='../../../goog/base.js'></script>
+<script type='text/javascript' src='../../../goog/array.js'></script>
+<script type='text/javascript' src='../../../goog/math.js'></script>
+<script type='text/javascript' src='../../../goog/string.js'></script>
+<script type='text/javascript' src='../../../goog/useragent.js'></script>
+<script type='text/javascript' src='../../../goog/dom.js'></script>
+<script type='text/javascript' src='../../../goog/style.js'></script>
+<script type='text/javascript' src='../../lib/test-common.js'></script>
+<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+<style type='text/css'>
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
+</head>
+<body>
+<div id='test' style='cursor: vertical-text'></div>
+<script type='text/javascript'>
+function testReflection() {
+  assertEquals('[CursorCSSProperty] style.cursor reflects <div style='cursor: vertical-text'>',
+    'vertical-text',
+    encyclopedia.getComputedStyleById('test', 'cursor'));
+}
+</script>
+<pre>
+tested.....&lt;div style='cursor: vertical-text'&gt;
+expected...style.cursor = 'vertical-text'
+found......style.cursor = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'cursor');
+document.write(actualValue + '\'<' + '/pre><p class=');
+document.write((actualValue == 'vertical-text') ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
+</body>
+</html>
