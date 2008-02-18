@@ -17,21 +17,21 @@ p.fail { background: transparent; color: red }
 </style>
 </head>
 <body>
-<div id='test' style='background: scroll'></div>
+<div id='test' style='background: top'></div>
 <script type='text/javascript'>
 function testReflection() {
-  assertEquals('[BackgroundCSSProperty] style.backgroundAttachment reflects <div style='background: scroll'>',
-    'scroll',
-    encyclopedia.getComputedStyleById('test', 'backgroundAttachment'));
+  assertEquals('[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: top'>',
+    '50% top',
+    encyclopedia.getComputedStyleById('test', 'backgroundPosition'));
 }
 </script>
 <pre>
-tested.....&lt;div style='background: scroll'&gt;
-expected...style.backgroundAttachment = 'scroll'
-found......style.backgroundAttachment = '<script type='text/javascript'>
-var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundAttachment');
+tested.....&lt;div style='background: top'&gt;
+expected...style.backgroundPosition = '50% top'
+found......style.backgroundPosition = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundPosition');
 document.write(actualValue + '\'<' + '/pre><p class=');
-document.write((actualValue == 'scroll') ? 'pass>PASS' : 'fail>FAIL');
+document.write((actualValue == '50% top') ? 'pass>PASS' : 'fail>FAIL');
 </script></p>
 </body>
 </html>
