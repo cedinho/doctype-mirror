@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>border-left-width CSS reflection test</title>
+<script type='text/javascript' src='../../../goog/base.js'></script>
+<script type='text/javascript' src='../../../goog/array.js'></script>
+<script type='text/javascript' src='../../../goog/math.js'></script>
+<script type='text/javascript' src='../../../goog/string.js'></script>
+<script type='text/javascript' src='../../../goog/useragent.js'></script>
+<script type='text/javascript' src='../../../goog/dom.js'></script>
+<script type='text/javascript' src='../../../goog/style.js'></script>
+<script type='text/javascript' src='../../lib/test-common.js'></script>
+<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+<style type='text/css'>
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
+</head>
+<body>
+<div id='test' style='border-left-width: 1mm; border-style: solid'></div>
+<script type='text/javascript'>
+function testReflection() {
+  assertEquals('[BorderLeftWidthCSSProperty] style.borderLeftWidth reflects <div style='border-left-width: 1mm; border-style: solid'>',
+    '1mm',
+    encyclopedia.getComputedStyleById('test', 'borderLeftWidth'));
+}
+</script>
+<pre>
+tested.....&lt;div style='border-left-width: 1mm; border-style: solid'&gt;
+expected...style.borderLeftWidth = '1mm'
+found......style.borderLeftWidth = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'borderLeftWidth');
+document.write(actualValue + '\'<' + '/pre><p class=');
+document.write((actualValue == '1mm') ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
+</body>
+</html>
