@@ -20,18 +20,18 @@ p.fail { background: transparent; color: red }
 <div id='test' style='background: bogus'></div>
 <script type='text/javascript'>
 function testReflection() {
-  assertEquals('[BackgroundCSSProperty] style.backgroundAttachment reflects <div style='background: bogus'>',
-    'scroll',
-    encyclopedia.getComputedStyleById('test', 'backgroundAttachment'));
+  assertEquals('[BackgroundCSSProperty] style.backgroundImage reflects <div style='background: bogus'>',
+    'none',
+    encyclopedia.getComputedStyleById('test', 'backgroundImage'));
 }
 </script>
 <pre>
 tested.....&lt;div style='background: bogus'&gt;
-expected...style.backgroundAttachment = 'scroll'
-found......style.backgroundAttachment = '<script type='text/javascript'>
-var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundAttachment');
+expected...style.backgroundImage = 'none'
+found......style.backgroundImage = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundImage');
 document.write(actualValue + '\'<' + '/pre><p class=');
-document.write((actualValue == 'scroll') ? 'pass>PASS' : 'fail>FAIL');
+document.write((actualValue == 'none') ? 'pass>PASS' : 'fail>FAIL');
 </script></p>
 </body>
 </html>
