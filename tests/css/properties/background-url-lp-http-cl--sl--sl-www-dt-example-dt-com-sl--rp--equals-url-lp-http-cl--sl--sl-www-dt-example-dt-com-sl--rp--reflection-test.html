@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>background CSS reflection test</title>
+<script type='text/javascript' src='../../../goog/base.js'></script>
+<script type='text/javascript' src='../../../goog/array.js'></script>
+<script type='text/javascript' src='../../../goog/math.js'></script>
+<script type='text/javascript' src='../../../goog/string.js'></script>
+<script type='text/javascript' src='../../../goog/useragent.js'></script>
+<script type='text/javascript' src='../../../goog/dom.js'></script>
+<script type='text/javascript' src='../../../goog/style.js'></script>
+<script type='text/javascript' src='../../lib/test-common.js'></script>
+<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+<style type='text/css'>
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
+</head>
+<body>
+<div id='test' style='background: url(http://www.example.com/)'></div>
+<script type='text/javascript'>
+function testReflection() {
+  assertEquals('[BackgroundCSSProperty] style.backgroundImage reflects <div style='background: url(http://www.example.com/)'>',
+    'url(http://www.example.com/)',
+    encyclopedia.getComputedStyleById('test', 'backgroundImage'));
+}
+</script>
+<pre>
+tested.....&lt;div style='background: url(http://www.example.com/)'&gt;
+expected...style.backgroundImage = 'url(http://www.example.com/)'
+found......style.backgroundImage = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundImage');
+document.write(actualValue + '\'<' + '/pre><p class=');
+document.write((actualValue == 'url(http://www.example.com/)') ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
+</body>
+</html>
