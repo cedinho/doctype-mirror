@@ -11,6 +11,10 @@
 <script type='text/javascript' src='../../../goog/style.js'></script>
 <script type='text/javascript' src='../../lib/test-common.js'></script>
 <script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+<style type='text/css'>
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
 </head>
 <body>
 <div id='test' style='background-position-x: top'></div>
@@ -21,8 +25,13 @@ function testReflection() {
     encyclopedia.getComputedStyleById('test', 'backgroundPositionX'));
 }
 </script>
-<pre>style.backgroundPositionX property <a href='http://www.whatwg.org/specs/web-apps/current-work/#reflecting'><script type='text/javascript'>
-document.write((encyclopedia.getComputedStyleById('test', 'backgroundPositionX') == 'top') ? 'reflects' : 'does not reflect');
-</script></a> &lt;div style='background-position-x: top'&gt; CSS declaration</pre>
+<pre>
+tested.....&lt;div style='background-position-x: top'&gt;
+expected...style.backgroundPositionX = 'top'
+found......style.backgroundPositionX = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundPositionX');
+document.write(actualValue + '\'<' + '/pre><p class=');
+document.write((actualValue == 'top') ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
 </body>
 </html>
