@@ -17,21 +17,21 @@ p.fail { background: transparent; color: red }
 </style>
 </head>
 <body>
-<div id='test' style='background: center'></div>
+<div id='test' style='background: rgb(0, 0, 0)'></div>
 <script type='text/javascript'>
 function testReflection() {
-  assertEquals('[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: center'>',
-    'center',
-    encyclopedia.getComputedStyleById('test', 'backgroundPosition'));
+  assertEquals('[BackgroundCSSProperty] style.backgroundColor reflects <div style='background: rgb(0, 0, 0)'>',
+    'rgb(0,0,0)',
+    encyclopedia.getComputedStyleById('test', 'backgroundColor'));
 }
 </script>
 <pre>
-tested.....&lt;div style='background: center'&gt;
-expected...style.backgroundPosition = 'center'
-found......style.backgroundPosition = '<script type='text/javascript'>
-var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundPosition');
+tested.....&lt;div style='background: rgb(0, 0, 0)'&gt;
+expected...style.backgroundColor = 'rgb(0,0,0)'
+found......style.backgroundColor = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundColor');
 document.write(actualValue + '\'<' + '/pre><p class=');
-document.write((actualValue == 'center') ? 'pass>PASS' : 'fail>FAIL');
+document.write((actualValue == 'rgb(0,0,0)') ? 'pass>PASS' : 'fail>FAIL');
 </script></p>
 </body>
 </html>

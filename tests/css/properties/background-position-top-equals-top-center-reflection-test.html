@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang='en'>
 <head>
-<title>background CSS reflection test</title>
+<title>background-position CSS reflection test</title>
 <script type='text/javascript' src='../../../goog/base.js'></script>
 <script type='text/javascript' src='../../../goog/array.js'></script>
 <script type='text/javascript' src='../../../goog/math.js'></script>
@@ -17,21 +17,21 @@ p.fail { background: transparent; color: red }
 </style>
 </head>
 <body>
-<div id='test' style='background: center'></div>
+<div id='test' style='background-position: top'></div>
 <script type='text/javascript'>
 function testReflection() {
-  assertEquals('[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: center'>',
-    'center',
+  assertEquals('[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: top'>',
+    'top center',
     encyclopedia.getComputedStyleById('test', 'backgroundPosition'));
 }
 </script>
 <pre>
-tested.....&lt;div style='background: center'&gt;
-expected...style.backgroundPosition = 'center'
+tested.....&lt;div style='background-position: top'&gt;
+expected...style.backgroundPosition = 'top center'
 found......style.backgroundPosition = '<script type='text/javascript'>
 var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundPosition');
 document.write(actualValue + '\'<' + '/pre><p class=');
-document.write((actualValue == 'center') ? 'pass>PASS' : 'fail>FAIL');
+document.write((actualValue == 'top center') ? 'pass>PASS' : 'fail>FAIL');
 </script></p>
 </body>
 </html>

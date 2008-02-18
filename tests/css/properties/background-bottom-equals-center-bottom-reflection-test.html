@@ -17,21 +17,21 @@ p.fail { background: transparent; color: red }
 </style>
 </head>
 <body>
-<div id='test' style='background: center'></div>
+<div id='test' style='background: bottom'></div>
 <script type='text/javascript'>
 function testReflection() {
-  assertEquals('[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: center'>',
-    'center',
+  assertEquals('[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: bottom'>',
+    'center bottom',
     encyclopedia.getComputedStyleById('test', 'backgroundPosition'));
 }
 </script>
 <pre>
-tested.....&lt;div style='background: center'&gt;
-expected...style.backgroundPosition = 'center'
+tested.....&lt;div style='background: bottom'&gt;
+expected...style.backgroundPosition = 'center bottom'
 found......style.backgroundPosition = '<script type='text/javascript'>
 var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundPosition');
 document.write(actualValue + '\'<' + '/pre><p class=');
-document.write((actualValue == 'center') ? 'pass>PASS' : 'fail>FAIL');
+document.write((actualValue == 'center bottom') ? 'pass>PASS' : 'fail>FAIL');
 </script></p>
 </body>
 </html>
