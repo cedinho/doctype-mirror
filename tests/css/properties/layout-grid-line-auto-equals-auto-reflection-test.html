@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>layout-grid-line CSS reflection test</title>
+<script type='text/javascript' src='../../../goog/base.js'></script>
+<script type='text/javascript' src='../../../goog/array.js'></script>
+<script type='text/javascript' src='../../../goog/math.js'></script>
+<script type='text/javascript' src='../../../goog/string.js'></script>
+<script type='text/javascript' src='../../../goog/useragent.js'></script>
+<script type='text/javascript' src='../../../goog/dom.js'></script>
+<script type='text/javascript' src='../../../goog/style.js'></script>
+<script type='text/javascript' src='../../lib/test-common.js'></script>
+<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+<style type='text/css'>
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
+</head>
+<body>
+<div id='test' style='layout-grid-line: auto'></div>
+<script type='text/javascript'>
+function testReflection() {
+  assertEquals('[LayoutGridLineCSSProperty] style.layoutGridLine reflects <div style='layout-grid-line: auto'>',
+    'auto',
+    encyclopedia.getComputedStyleById('test', 'layoutGridLine'));
+}
+</script>
+<pre>
+tested.....&lt;div style='layout-grid-line: auto'&gt;
+expected...style.layoutGridLine = 'auto'
+found......style.layoutGridLine = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'layoutGridLine');
+document.write(actualValue + '\'<' + '/pre><p class=');
+document.write((actualValue == 'auto') ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
+</body>
+</html>

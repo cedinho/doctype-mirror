@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>outline CSS reflection test</title>
+<script type='text/javascript' src='../../../goog/base.js'></script>
+<script type='text/javascript' src='../../../goog/array.js'></script>
+<script type='text/javascript' src='../../../goog/math.js'></script>
+<script type='text/javascript' src='../../../goog/string.js'></script>
+<script type='text/javascript' src='../../../goog/useragent.js'></script>
+<script type='text/javascript' src='../../../goog/dom.js'></script>
+<script type='text/javascript' src='../../../goog/style.js'></script>
+<script type='text/javascript' src='../../lib/test-common.js'></script>
+<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+<style type='text/css'>
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
+</head>
+<body>
+<div id='test' style='outline: none'></div>
+<script type='text/javascript'>
+function testReflection() {
+  assertEquals('[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: none'>',
+    'none',
+    encyclopedia.getComputedStyleById('test', 'outlineStyle'));
+}
+</script>
+<pre>
+tested.....&lt;div style='outline: none'&gt;
+expected...style.outlineStyle = 'none'
+found......style.outlineStyle = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'outlineStyle');
+document.write(actualValue + '\'<' + '/pre><p class=');
+document.write((actualValue == 'none') ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
+</body>
+</html>

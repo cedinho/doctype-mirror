@@ -19,7 +19,7 @@ BorderBottomColorCSSProperty div border-bottom-color borderBottomColor (('rgb(0,
 BorderBottomStyleCSSProperty div border-bottom-style borderBottomStyle (('dotted', 'dotted'), ('dashed', 'dashed'), ('solid', 'solid'), ('double', 'double'), ('groove', 'groove'), ('ridge', 'ridge'), ('inset', 'inset'), ('window-inset', 'window-inset'), ('outset', 'outset'), ('none', 'none'), ('bogus', 'none'), ('hidden', 'hidden'))
 BorderBottomWidthCSSProperty div border-bottom-width borderBottomWidth (('thin', 'thin'), ('thin; border-style: solid', 'thin'), ('thick', 'thick'), ('thick; border-style: solid', 'thick'), ('thick', '5px'), ('thick; border-style: solid', '5px'), ('1cm', '1cm'), ('1cm; border-style: solid', '1cm'), ('1mm', '1mm'), ('1mm; border-style: solid', '1mm'), ('1in', '1in'), ('1in; border-style: solid', '1in'), ('1pt', '1pt'), ('1pt; border-style: solid', '1pt'), ('1pc', '1pc'), ('1pc; border-style: solid', '1pc'), ('1em', '1em'), ('1em; border-style: solid', '1em'), ('1ex', '1ex'), ('1ex; border-style: solid', '1ex'), ('1px', '1px'), ('1px; border-style: solid', '1px'), ('0', '0px'), ('0', '0pt'))
 BorderCSSProperty div border borderColor (('rgb(0, 0, 0)', 'rgb(0, 0, 0)'), ('rgb(0, 0, 0)', 'rgb(0,0,0)'), ('black', 'rgb(0, 0, 0)'), ('#808080', 'rgb(128, 128, 128)'), ('transparent', 'transparent'))
-BorderCSSProperty div border borderStyle (('dotted', 'dotted'), ('dashed', 'dashed'), ('solid', 'solid'), ('double', 'double'), ('groove', 'groove'), ('ridge', 'ridge'), ('inset', 'inset'), ('window-inset', 'window-inset'), ('outset', 'outset'), ('none', 'none'), ('bogus', 'none'), ('hidden', 'hidden'))
+BorderCSSProperty div border borderStyle (('dotted', 'dotted'), ('dashed', 'dashed'), ('solid', 'solid'), ('double', 'double'), ('groove', 'groove'), ('ridge', 'ridge'), ('inset', 'inset'), ('window-inset', 'window-inset'), ('outset', 'outset'), ('none', 'none'), ('bogus', 'none'), ('bogus', ''), ('hidden', 'hidden'))
 BorderCSSProperty div border borderWidth (('thin', 'thin thin thin thin'), ('thin solid', 'thin thin thin thin'), ('thick', 'thick thick thick thick'), ('thick solid', 'thick thick thick thick'), ('1cm', '1cm 1cm 1cm 1cm'), ('1cm solid', '1cm 1cm 1cm 1cm'), ('1mm', '1mm 1mm 1mm 1mm'), ('1mm solid', '1mm 1mm 1mm 1mm'), ('1in', '1in 1in 1in 1in'), ('1in solid', '1in 1in 1in 1in'), ('1pt', '1pt 1pt 1pt 1pt'), ('1pt solid', '1pt 1pt 1pt 1pt'), ('1pc', '1pc 1pc 1pc 1pc'), ('1pc solid', '1pc 1pc 1pc 1pc'), ('1em', '1em 1em 1em 1em'), ('1em solid', '1em 1em 1em 1em'), ('1ex', '1ex 1ex 1ex 1ex'), ('1ex solid', '1ex 1ex 1ex 1ex'), ('1px', '1px 1px 1px 1px'), ('1px solid', '1px 1px 1px 1px'), ('0', '0pt 0pt 0pt 0pt'), ('thin', 'thin'), ('thin; border-style: solid', 'thin'), ('thick', 'thick'), ('thick; border-style: solid', 'thick'), ('thick', '5px'), ('thick; border-style: solid', '5px'), ('1cm', '1cm'), ('1cm; border-style: solid', '1cm'), ('1mm', '1mm'), ('1mm; border-style: solid', '1mm'), ('1in', '1in'), ('1in; border-style: solid', '1in'), ('1pt', '1pt'), ('1pt; border-style: solid', '1pt'), ('1pc', '1pc'), ('1pc; border-style: solid', '1pc'), ('1em', '1em'), ('1em; border-style: solid', '1em'), ('1ex', '1ex'), ('1ex; border-style: solid', '1ex'), ('1px', '1px'), ('1px; border-style: solid', '1px'), ('0', '0px'), ('0', '0pt'))
 BorderCollapseCSSProperty div border-collapse borderCollapse (('collapse', 'collapse'), ('separate', 'separate'))
 BorderColorCSSProperty div border-color borderColor (('rgb(0, 0, 0)', 'rgb(0, 0, 0)'), ('rgb(0, 0, 0)', 'rgb(0,0,0)'), ('black', 'rgb(0, 0, 0)'), ('#808080', 'rgb(128, 128, 128)'), ('transparent', 'transparent'))
@@ -36,7 +36,7 @@ BorderRightColorCSSProperty div border-right-color borderRightColor (('rgb(0, 0,
 BorderRightStyleCSSProperty div border-right-style borderRightStyle (('dotted', 'dotted'), ('dashed', 'dashed'), ('solid', 'solid'), ('double', 'double'), ('groove', 'groove'), ('ridge', 'ridge'), ('inset', 'inset'), ('window-inset', 'window-inset'), ('outset', 'outset'), ('none', 'none'), ('bogus', 'none'), ('hidden', 'hidden'))
 BorderRightWidthCSSProperty div border-right-width borderRightWidth (('thin', 'thin'), ('thin; border-style: solid', 'thin'), ('thick', 'thick'), ('thick; border-style: solid', 'thick'), ('thick', '5px'), ('thick; border-style: solid', '5px'), ('1cm', '1cm'), ('1cm; border-style: solid', '1cm'), ('1mm', '1mm'), ('1mm; border-style: solid', '1mm'), ('1in', '1in'), ('1in; border-style: solid', '1in'), ('1pt', '1pt'), ('1pt; border-style: solid', '1pt'), ('1pc', '1pc'), ('1pc; border-style: solid', '1pc'), ('1em', '1em'), ('1em; border-style: solid', '1em'), ('1ex', '1ex'), ('1ex; border-style: solid', '1ex'), ('1px', '1px'), ('1px; border-style: solid', '1px'), ('0', '0px'), ('0', '0pt'))
 BorderSpacingCSSProperty table border-spacing borderSpacing (('1px', '1px 1px'), ('1px 1px', '1px 1px'))
-BorderStyleCSSProperty div border-style borderStyle (('dotted', 'dotted'), ('dashed', 'dashed'), ('solid', 'solid'), ('double', 'double'), ('groove', 'groove'), ('ridge', 'ridge'), ('inset', 'inset'), ('window-inset', 'window-inset'), ('outset', 'outset'), ('none', 'none'), ('bogus', 'none'), ('hidden', 'hidden'))
+BorderStyleCSSProperty div border-style borderStyle (('dotted', 'dotted'), ('dashed', 'dashed'), ('solid', 'solid'), ('double', 'double'), ('groove', 'groove'), ('ridge', 'ridge'), ('inset', 'inset'), ('window-inset', 'window-inset'), ('outset', 'outset'), ('none', 'none'), ('bogus', 'none'), ('bogus', ''), ('hidden', 'hidden'))
 BorderTopCSSProperty div border-top borderTopColor (('rgb(0, 0, 0)', 'rgb(0, 0, 0)'), ('rgb(0, 0, 0)', 'rgb(0,0,0)'), ('black', 'rgb(0, 0, 0)'), ('#808080', 'rgb(128, 128, 128)'), ('transparent', 'transparent'))
 BorderTopCSSProperty div border-top borderTopStyle (('dotted', 'dotted'), ('dashed', 'dashed'), ('solid', 'solid'), ('double', 'double'), ('groove', 'groove'), ('ridge', 'ridge'), ('inset', 'inset'), ('window-inset', 'window-inset'), ('outset', 'outset'), ('none', 'none'), ('bogus', 'none'), ('hidden', 'hidden'))
 BorderTopCSSProperty div border-top borderTopWidth (('thin', 'thin'), ('thin; border-style: solid', 'thin'), ('thick', 'thick'), ('thick; border-style: solid', 'thick'), ('thick', '5px'), ('thick; border-style: solid', '5px'), ('1cm', '1cm'), ('1cm; border-style: solid', '1cm'), ('1mm', '1mm'), ('1mm; border-style: solid', '1mm'), ('1in', '1in'), ('1in; border-style: solid', '1in'), ('1pt', '1pt'), ('1pt; border-style: solid', '1pt'), ('1pc', '1pc'), ('1pc; border-style: solid', '1pc'), ('1em', '1em'), ('1em; border-style: solid', '1em'), ('1ex', '1ex'), ('1ex; border-style: solid', '1ex'), ('1px', '1px'), ('1px; border-style: solid', '1px'), ('0', '0px'), ('0', '0pt'))
@@ -57,62 +57,69 @@ DirectionCSSProperty div direction direction (('ltr', 'ltr'), ('rtl', 'rtl'))
 DisplayCSSProperty div display display (('inline', 'inline'), ('block', 'block'), ('list-item', 'list-item'), ('run-in', 'run-in'), ('inline-block', 'inline-block'), ('table', 'table'), ('inline-table', 'inline-table'), ('table-row-group', 'table-row-group'), ('table-header-group', 'table-header-group'), ('table-footer-group', 'table-footer-group'), ('table-row', 'table-row'), ('table-column-group', 'table-column-group'), ('table-column', 'table-column'), ('table-cell', 'table-cell'), ('table-caption', 'table-caption'), ('none', 'none'), ('compact', 'compact'))
 EmptyCellsCSSProperty div empty-cells emptyCells
 FilterCSSProperty div filter filter
-FloatCSSProperty div float float
-FontCSSProperty div font font
+FloatCSSProperty div float cssFloat (('left', 'left'), ('right', 'right'), ('none', 'none'), ('bogus', 'none'))
+FontCSSProperty div font fontStyle (('normal', 'normal'), ('italic', 'italic'), ('oblique', 'oblique'), ('bogus', 'normal'))
+FontCSSProperty div font fontVariant (('normal normal', 'normal'), ('normal small-caps', 'small-caps'), ('normal bogus', 'normal'))
+FontCSSProperty div font fontWeight
+FontCSSProperty div font fontSize
+FontCSSProperty div font lineHeight
+FontCSSProperty div font fontFamily
 FontFamilyCSSProperty div font-family fontFamily
 FontSizeAdjustCSSProperty div font-size-adjust fontSizeAdjust
 FontSizeCSSProperty div font-size fontSize
 FontStretchCSSProperty div font-stretch fontStretch
-FontStyleCSSProperty div font-style fontStyle
-FontVariantCSSProperty div font-variant fontVariant
+FontStyleCSSProperty div font-style fontStyle (('normal', 'normal'), ('italic', 'italic'), ('oblique', 'oblique'), ('bogus', 'normal'))
+FontVariantCSSProperty div font-variant fontVariant (('normal', 'normal'), ('small-caps', 'small-caps'), ('bogus', 'normal'))
 FontWeightCSSProperty div font-weight fontWeight
 HeightCSSProperty div height height
-ImeModeCSSProperty div ime-mode imeMode
+ImeModeCSSProperty div ime-mode imeMode (('auto', 'auto'), ('active', 'active'), ('inactive', 'inactive'), ('disabled', 'disabled'), ('bogus', ''))
 IncludeSourceCSSProperty div include-source includeSource
 LayerBackgroundColorCSSProperty div layer-background-color layerBackgroundColor (('rgb(0, 0, 0)', 'rgb(0, 0, 0)'), ('rgb(0, 0, 0)', 'rgb(0,0,0)'), ('black', 'rgb(0, 0, 0)'), ('#808080', 'rgb(128, 128, 128)'), ('transparent', 'transparent'))
 LayerBackgroundImageCSSProperty div layer-background-image layerBackgroundImage
-LayoutFlowCSSProperty div layout-flow layoutFlow
+LayoutFlowCSSProperty div layout-flow layoutFlow (('horizontal', 'horizontal'), ('vertical-ideographic', 'vertical-ideographic'), ('bogus', 'horizontal'))
 LayoutGridCSSProperty div layout-grid layoutGrid
-LayoutGridCharCSSProperty div layout-grid-char layoutGridChar
+LayoutGridCharCSSProperty div layout-grid-char layoutGridChar (('none', 'none'), ('auto', 'auto'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
 LayoutGridCharSpacingCSSProperty div layout-grid-char-spacing layoutGridCharSpacing
-LayoutGridLineCSSProperty div layout-grid-line layoutGridLine
-LayoutGridModeCSSProperty div layout-grid-mode layoutGridMode
-LayoutGridTypeCSSProperty div layout-grid-type layoutGridType
+LayoutGridLineCSSProperty div layout-grid-line layoutGridLine (('none', 'none'), ('auto', 'auto'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+LayoutGridModeCSSProperty div layout-grid-mode layoutGridMode (('both', 'both'), ('none', 'none'), ('line', 'line'), ('char', 'char'), ('bogus', 'both'))
+LayoutGridTypeCSSProperty div layout-grid-type layoutGridType (('loose', 'loose'), ('strict', 'strict'), ('fixed', 'fixed'), ('bogus', 'loose'))
 LeftCSSProperty div left left
-LetterSpacingCSSProperty div letter-spacing letterSpacing
-LineBreakCSSProperty div line-break lineBreak
+LetterSpacingCSSProperty div letter-spacing letterSpacing (('normal', 'normal'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+LineBreakCSSProperty div line-break lineBreak (('normal', 'normal'), ('strict', 'strict'), ('bogus', 'normal'))
 LineHeightCSSProperty div line-height lineHeight
 ListStyleCSSProperty div list-style listStyle
 ListStyleImageCSSProperty div list-style-image listStyleImage
 ListStylePositionCSSProperty div list-style-position listStylePosition
 ListStyleTypeCSSProperty div list-style-type listStyleType
-MarginBottomCSSProperty div margin-bottom marginBottom
+MarginBottomCSSProperty div margin-bottom marginBottom (('auto', 'auto'), ('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
 MarginCSSProperty div margin margin
-MarginLeftCSSProperty div margin-left marginLeft
-MarginRightCSSProperty div margin-right marginRight
-MarginTopCSSProperty div margin-top marginTop
+MarginLeftCSSProperty div margin-left marginLeft (('auto', 'auto'), ('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+MarginRightCSSProperty div margin-right marginRight (('auto', 'auto'), ('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+MarginTopCSSProperty div margin-top marginTop (('auto', 'auto'), ('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
 MarkerOffsetCSSProperty div marker-offset markerOffset
 MarksCSSProperty div marks marks
-MaxHeightCSSProperty div max-height maxHeight
-MaxWidthCSSProperty div max-width maxWidth
-MinHeightCSSProperty div min-height minHeight
-MinWidthCSSProperty div min-width minWidth
-OrphansCSSProperty div orphans orphans
-OutlineCSSProperty div outline outline
+MaxHeightCSSProperty div max-height maxHeight (('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+MaxWidthCSSProperty div max-width maxWidth (('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+MinHeightCSSProperty div min-height minHeight (('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+MinWidthCSSProperty div min-width minWidth (('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+OrphansCSSProperty div orphans orphans (('1', '1'), ('2', '2'), ('0', '0'), ('bogus', ''))
+OutlineCSSProperty div outline outlineColor (('rgb(0, 0, 0)', 'rgb(0, 0, 0)'), ('rgb(0, 0, 0)', 'rgb(0,0,0)'), ('black', 'rgb(0, 0, 0)'), ('#808080', 'rgb(128, 128, 128)'), ('transparent', 'transparent'))
+OutlineCSSProperty div outline outlineStyle (('dotted', 'dotted'), ('dashed', 'dashed'), ('solid', 'solid'), ('double', 'double'), ('groove', 'groove'), ('ridge', 'ridge'), ('inset', 'inset'), ('window-inset', 'window-inset'), ('outset', 'outset'), ('none', 'none'), ('bogus', 'none'), ('hidden', 'hidden'))
+OutlineCSSProperty div outline outlineWidth (('thin', 'thin thin thin thin'), ('thin solid', 'thin thin thin thin'), ('thick', 'thick thick thick thick'), ('thick solid', 'thick thick thick thick'), ('1cm', '1cm 1cm 1cm 1cm'), ('1cm solid', '1cm 1cm 1cm 1cm'), ('1mm', '1mm 1mm 1mm 1mm'), ('1mm solid', '1mm 1mm 1mm 1mm'), ('1in', '1in 1in 1in 1in'), ('1in solid', '1in 1in 1in 1in'), ('1pt', '1pt 1pt 1pt 1pt'), ('1pt solid', '1pt 1pt 1pt 1pt'), ('1pc', '1pc 1pc 1pc 1pc'), ('1pc solid', '1pc 1pc 1pc 1pc'), ('1em', '1em 1em 1em 1em'), ('1em solid', '1em 1em 1em 1em'), ('1ex', '1ex 1ex 1ex 1ex'), ('1ex solid', '1ex 1ex 1ex 1ex'), ('1px', '1px 1px 1px 1px'), ('1px solid', '1px 1px 1px 1px'), ('0', '0pt 0pt 0pt 0pt'), ('thin', 'thin'), ('thin; outline-style: solid', 'thin'), ('thick', 'thick'), ('thick; outline-style: solid', 'thick'), ('thick', '5px'), ('thick; outline-style: solid', '5px'), ('1cm', '1cm'), ('1cm; outline-style: solid', '1cm'), ('1mm', '1mm'), ('1mm; outline-style: solid', '1mm'), ('1in', '1in'), ('1in; outline-style: solid', '1in'), ('1pt', '1pt'), ('1pt; outline-style: solid', '1pt'), ('1pc', '1pc'), ('1pc; outline-style: solid', '1pc'), ('1em', '1em'), ('1em; outline-style: solid', '1em'), ('1ex', '1ex'), ('1ex; outline-style: solid', '1ex'), ('1px', '1px'), ('1px; outline-style: solid', '1px'), ('0', '0px'), ('0', '0pt'))
 OutlineCSSProperty div outline outlineColor (('rgb(0, 0, 0)', 'rgb(0, 0, 0)'), ('rgb(0, 0, 0)', 'rgb(0,0,0)'), ('black', 'rgb(0, 0, 0)'), ('#808080', 'rgb(128, 128, 128)'), ('transparent', 'transparent'))
 OutlineColorCSSProperty div outline-color outlineColor (('rgb(0, 0, 0)', 'rgb(0, 0, 0)'), ('rgb(0, 0, 0)', 'rgb(0,0,0)'), ('black', 'rgb(0, 0, 0)'), ('#808080', 'rgb(128, 128, 128)'), ('transparent', 'transparent'))
 OutlineStyleCSSProperty div outline-style outlineStyle (('dotted', 'dotted'), ('dashed', 'dashed'), ('solid', 'solid'), ('double', 'double'), ('groove', 'groove'), ('ridge', 'ridge'), ('inset', 'inset'), ('window-inset', 'window-inset'), ('outset', 'outset'), ('none', 'none'), ('bogus', 'none'), ('hidden', 'hidden'))
 OutlineWidthCSSProperty div outline-width outlineWidth (('thin', 'thin thin thin thin'), ('thin solid', 'thin thin thin thin'), ('thick', 'thick thick thick thick'), ('thick solid', 'thick thick thick thick'), ('1cm', '1cm 1cm 1cm 1cm'), ('1cm solid', '1cm 1cm 1cm 1cm'), ('1mm', '1mm 1mm 1mm 1mm'), ('1mm solid', '1mm 1mm 1mm 1mm'), ('1in', '1in 1in 1in 1in'), ('1in solid', '1in 1in 1in 1in'), ('1pt', '1pt 1pt 1pt 1pt'), ('1pt solid', '1pt 1pt 1pt 1pt'), ('1pc', '1pc 1pc 1pc 1pc'), ('1pc solid', '1pc 1pc 1pc 1pc'), ('1em', '1em 1em 1em 1em'), ('1em solid', '1em 1em 1em 1em'), ('1ex', '1ex 1ex 1ex 1ex'), ('1ex solid', '1ex 1ex 1ex 1ex'), ('1px', '1px 1px 1px 1px'), ('1px solid', '1px 1px 1px 1px'), ('0', '0pt 0pt 0pt 0pt'), ('thin', 'thin'), ('thick', 'thick'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'))
-OverflowCSSProperty div overflow overflow
-OverflowXCSSProperty div overflow-x overflowX
-OverflowYCSSProperty div overflow-y overflowY
-PaddingBottomCSSProperty div padding-bottom paddingBottom
+OverflowCSSProperty div overflow overflow (('visible', 'visible'), ('hidden', 'hidden'), ('scroll', 'scroll'), ('auto', 'auto'), ('-moz-scrollbars-horizontal', '-moz-scrollbars-horizontal'), ('-moz-scrollbars-vertical', '-moz-scrollbars-vertical'), ('-moz-scrollbars-none', '-moz-scrollbars-none'), ('bogus', 'visible'))
+OverflowXCSSProperty div overflow-x overflowX (('visible', 'visible'), ('hidden', 'hidden'), ('scroll', 'scroll'), ('auto', 'auto'), ('bogus', 'visible'))
+OverflowYCSSProperty div overflow-y overflowY (('visible', 'visible'), ('hidden', 'hidden'), ('scroll', 'scroll'), ('auto', 'auto'), ('bogus', 'visible'))
+PaddingBottomCSSProperty div padding-bottom paddingBottom (('auto', 'auto'), ('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
 PaddingCSSProperty div padding padding
-PaddingLeftCSSProperty div padding-left paddingLeft
-PaddingRightCSSProperty div padding-right paddingRight
-PaddingTopCSSProperty div padding-top paddingTop
-PageBreakAfterCSSProperty div page-break-after pageBreakAfter
-PageBreakBeforeCSSProperty div page-break-before pageBreakBefore
+PaddingLeftCSSProperty div padding-left paddingLeft (('auto', 'auto'), ('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+PaddingRightCSSProperty div padding-right paddingRight (('auto', 'auto'), ('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+PaddingTopCSSProperty div padding-top paddingTop (('auto', 'auto'), ('none', 'none'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
+PageBreakAfterCSSProperty div page-break-after pageBreakAfter (('auto', 'auto'), ('always', 'always'), ('avoid', 'avoid'), ('left', 'left'), ('right', 'right'), ('bogus', ''))
+PageBreakBeforeCSSProperty div page-break-before pageBreakBefore (('auto', 'auto'), ('always', 'always'), ('avoid', 'avoid'), ('left', 'left'), ('right', 'right'), ('bogus', ''))
 PageBreakInsideCSSProperty div page-break-inside pageBreakInside
 PositionCSSProperty div position position
 QuotesCSSProperty div quotes quotes
@@ -142,10 +149,10 @@ TextTransformCSSProperty div text-transform textTransform
 TextUnderlinePositionCSSProperty div text-underline-position textUnderlinePosition
 TopCSSProperty div top top
 UnicodeBidiCSSProperty div unicode-bidi unicodeBidi
-VerticalAlignCSSProperty div vertical-align verticalAlign
+VerticalAlignCSSProperty div vertical-align verticalAlign (('baseline', 'baseline'), ('sub', 'sub'), ('super', 'super'), ('top', 'top'), ('text-top', 'text-top'), ('middle', 'middle'), ('bottom', 'bottom'), ('text-bottom', 'text-bottom'), ('42%', '42%'), ('1cm', '1cm'), ('1mm', '1mm'), ('1in', '1in'), ('1pt', '1pt'), ('1pc', '1pc'), ('1em', '1em'), ('1ex', '1ex'), ('1px', '1px'), ('0', '0px'), ('0', '0pt'))
 VisibilityCSSProperty div visibility visibility
 WhiteSpaceCSSProperty div white-space whiteSpace
-WidowsCSSProperty div widows widows
+WidowsCSSProperty div widows widows (('1', '1'), ('2', '2'), ('0', '0'), ('bogus', ''))
 WidthCSSProperty div width width
 WordBreakCSSProperty div word-break wordBreak
 WordSpacingCSSProperty div word-spacing wordSpacing

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+<title>line-break CSS reflection test</title>
+<script type='text/javascript' src='../../../goog/base.js'></script>
+<script type='text/javascript' src='../../../goog/array.js'></script>
+<script type='text/javascript' src='../../../goog/math.js'></script>
+<script type='text/javascript' src='../../../goog/string.js'></script>
+<script type='text/javascript' src='../../../goog/useragent.js'></script>
+<script type='text/javascript' src='../../../goog/dom.js'></script>
+<script type='text/javascript' src='../../../goog/style.js'></script>
+<script type='text/javascript' src='../../lib/test-common.js'></script>
+<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+<style type='text/css'>
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
+</head>
+<body>
+<div id='test' style='line-break: normal'></div>
+<script type='text/javascript'>
+function testReflection() {
+  assertEquals('[LineBreakCSSProperty] style.lineBreak reflects <div style='line-break: normal'>',
+    'normal',
+    encyclopedia.getComputedStyleById('test', 'lineBreak'));
+}
+</script>
+<pre>
+tested.....&lt;div style='line-break: normal'&gt;
+expected...style.lineBreak = 'normal'
+found......style.lineBreak = '<script type='text/javascript'>
+var actualValue = encyclopedia.getComputedStyleById('test', 'lineBreak');
+document.write(actualValue + '\'<' + '/pre><p class=');
+document.write((actualValue == 'normal') ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
+</body>
+</html>
