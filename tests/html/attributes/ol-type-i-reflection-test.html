@@ -1,21 +1,44 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[ol type="I"] reflection test</title>
+<meta charset="utf-8">
+<title>ol type="I" vs. ol.type - Google Doctype</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<style type="text/css">
+body { font-size: 100%; background-color: white; color: black }
+p#breadcrumb { font-size: smaller }
+h1 { margin-bottom: 0 }
+p#tagline { margin-top: 0; font-style: italic }
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
 </head>
 <body>
+<p id="breadcrumb">You are here: <a href="../../../index.html">Google Doctype</a> &gt; <a href="../../index.html">Tests</a> &gt; <a href="../index.html">HTML</a> &gt; <a href="index.html">Attributes</a> &gt; <b>ol type="I" vs. ol.type</b></p>
+
+<h1>Google Doctype</h1>
+<p id="tagline">Documenting the open web</p>
+
+<hr>
+
+<p>This is a test case that checks how browsers react to specific JavaScript, CSS, or HTML markup.  It does not necessarily correspond to any web standard, so you should not automatically interpret a "fail" result as a bug.</p>
+
 <ol id="test" type="I"></ol>
 <script type="text/javascript">
 function testReflection() {
   assertEquals('[OlTypeAttribute] ol.type reflects <ol type="I">',
     "I",
-    document.getElementById('test').type);
+    document.getElementById("test").type);
 }
 </script>
-<pre>ol.type property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').type == "I") ? 'reflects' : 'does not reflect');
-</script></a> &lt;ol type="I"&gt; attribute</pre>
+<pre>
+tested.....&lt;ol type="I"&gt;
+expected...ol.type = "I"
+found......ol.type = "<script type="text/javascript">
+var actualValue = document.getElementById("test").type;
+document.write(actualValue + '"<' + '/pre><p class=');
+document.write((actualValue == "I") ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
 </body>
 </html>

@@ -1,21 +1,44 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[applet align="texttop"] reflection test</title>
+<meta charset="utf-8">
+<title>applet align="texttop" vs. applet.align - Google Doctype</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<style type="text/css">
+body { font-size: 100%; background-color: white; color: black }
+p#breadcrumb { font-size: smaller }
+h1 { margin-bottom: 0 }
+p#tagline { margin-top: 0; font-style: italic }
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
 </head>
 <body>
+<p id="breadcrumb">You are here: <a href="../../../index.html">Google Doctype</a> &gt; <a href="../../index.html">Tests</a> &gt; <a href="../index.html">HTML</a> &gt; <a href="index.html">Attributes</a> &gt; <b>applet align="texttop" vs. applet.align</b></p>
+
+<h1>Google Doctype</h1>
+<p id="tagline">Documenting the open web</p>
+
+<hr>
+
+<p>This is a test case that checks how browsers react to specific JavaScript, CSS, or HTML markup.  It does not necessarily correspond to any web standard, so you should not automatically interpret a "fail" result as a bug.</p>
+
 <applet id="test" align="texttop"></applet>
 <script type="text/javascript">
 function testReflection() {
   assertEquals('[AppletAlignAttribute] applet.align reflects <applet align="texttop">',
     "textTop",
-    document.getElementById('test').align);
+    document.getElementById("test").align);
 }
 </script>
-<pre>applet.align property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').align == "textTop") ? 'reflects' : 'does not reflect');
-</script></a> &lt;applet align="texttop"&gt; attribute</pre>
+<pre>
+tested.....&lt;applet align="texttop"&gt;
+expected...applet.align = "textTop"
+found......applet.align = "<script type="text/javascript">
+var actualValue = document.getElementById("test").align;
+document.write(actualValue + '"<' + '/pre><p class=');
+document.write((actualValue == "textTop") ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
 </body>
 </html>

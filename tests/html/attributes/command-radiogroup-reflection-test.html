@@ -1,21 +1,44 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[command radiogroup="foo"] reflection test</title>
+<meta charset="utf-8">
+<title>command radiogroup="foo" vs. command.radiogroup - Google Doctype</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<style type="text/css">
+body { font-size: 100%; background-color: white; color: black }
+p#breadcrumb { font-size: smaller }
+h1 { margin-bottom: 0 }
+p#tagline { margin-top: 0; font-style: italic }
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
 </head>
 <body>
+<p id="breadcrumb">You are here: <a href="../../../index.html">Google Doctype</a> &gt; <a href="../../index.html">Tests</a> &gt; <a href="../index.html">HTML</a> &gt; <a href="index.html">Attributes</a> &gt; <b>command radiogroup="foo" vs. command.radiogroup</b></p>
+
+<h1>Google Doctype</h1>
+<p id="tagline">Documenting the open web</p>
+
+<hr>
+
+<p>This is a test case that checks how browsers react to specific JavaScript, CSS, or HTML markup.  It does not necessarily correspond to any web standard, so you should not automatically interpret a "fail" result as a bug.</p>
+
 <command id="test" radiogroup="foo"></command>
 <script type="text/javascript">
 function testReflection() {
   assertEquals('[CommandRadiogroupAttribute] command.radiogroup reflects <command radiogroup="foo">',
     "foo",
-    document.getElementById('test').radiogroup);
+    document.getElementById("test").radiogroup);
 }
 </script>
-<pre>command.radiogroup property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').radiogroup == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;command radiogroup="foo"&gt; attribute</pre>
+<pre>
+tested.....&lt;command radiogroup="foo"&gt;
+expected...command.radiogroup = "foo"
+found......command.radiogroup = "<script type="text/javascript">
+var actualValue = document.getElementById("test").radiogroup;
+document.write(actualValue + '"<' + '/pre><p class=');
+document.write((actualValue == "foo") ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
 </body>
 </html>

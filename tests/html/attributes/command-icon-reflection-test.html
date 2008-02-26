@@ -1,21 +1,44 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[command icon="foo"] reflection test</title>
+<meta charset="utf-8">
+<title>command icon="foo" vs. command.icon - Google Doctype</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<style type="text/css">
+body { font-size: 100%; background-color: white; color: black }
+p#breadcrumb { font-size: smaller }
+h1 { margin-bottom: 0 }
+p#tagline { margin-top: 0; font-style: italic }
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
 </head>
 <body>
+<p id="breadcrumb">You are here: <a href="../../../index.html">Google Doctype</a> &gt; <a href="../../index.html">Tests</a> &gt; <a href="../index.html">HTML</a> &gt; <a href="index.html">Attributes</a> &gt; <b>command icon="foo" vs. command.icon</b></p>
+
+<h1>Google Doctype</h1>
+<p id="tagline">Documenting the open web</p>
+
+<hr>
+
+<p>This is a test case that checks how browsers react to specific JavaScript, CSS, or HTML markup.  It does not necessarily correspond to any web standard, so you should not automatically interpret a "fail" result as a bug.</p>
+
 <command id="test" icon="foo"></command>
 <script type="text/javascript">
 function testReflection() {
   assertEquals('[CommandIconAttribute] command.icon reflects <command icon="foo">',
     "foo",
-    document.getElementById('test').icon);
+    document.getElementById("test").icon);
 }
 </script>
-<pre>command.icon property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').icon == "foo") ? 'reflects' : 'does not reflect');
-</script></a> &lt;command icon="foo"&gt; attribute</pre>
+<pre>
+tested.....&lt;command icon="foo"&gt;
+expected...command.icon = "foo"
+found......command.icon = "<script type="text/javascript">
+var actualValue = document.getElementById("test").icon;
+document.write(actualValue + '"<' + '/pre><p class=');
+document.write((actualValue == "foo") ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
 </body>
 </html>

@@ -1,21 +1,44 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>[font font-weight="42"] reflection test</title>
+<meta charset="utf-8">
+<title>font font-weight="42" vs. font.fontWeight - Google Doctype</title>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<style type="text/css">
+body { font-size: 100%; background-color: white; color: black }
+p#breadcrumb { font-size: smaller }
+h1 { margin-bottom: 0 }
+p#tagline { margin-top: 0; font-style: italic }
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
 </head>
 <body>
+<p id="breadcrumb">You are here: <a href="../../../index.html">Google Doctype</a> &gt; <a href="../../index.html">Tests</a> &gt; <a href="../index.html">HTML</a> &gt; <a href="index.html">Attributes</a> &gt; <b>font font-weight="42" vs. font.fontWeight</b></p>
+
+<h1>Google Doctype</h1>
+<p id="tagline">Documenting the open web</p>
+
+<hr>
+
+<p>This is a test case that checks how browsers react to specific JavaScript, CSS, or HTML markup.  It does not necessarily correspond to any web standard, so you should not automatically interpret a "fail" result as a bug.</p>
+
 <font id="test" font-weight="42"></font>
 <script type="text/javascript">
 function testReflection() {
   assertEquals('[FontFontWeightAttribute] font.fontWeight reflects <font font-weight="42">',
     42,
-    document.getElementById('test').fontWeight);
+    document.getElementById("test").fontWeight);
 }
 </script>
-<pre>font.fontWeight property <a href="http://www.whatwg.org/specs/web-apps/current-work/#reflecting"><script type="text/javascript">
-document.write((document.getElementById('test').fontWeight == 42) ? 'reflects' : 'does not reflect');
-</script></a> &lt;font font-weight="42"&gt; attribute</pre>
+<pre>
+tested.....&lt;font font-weight="42"&gt;
+expected...font.fontWeight = 42
+found......font.fontWeight = "<script type="text/javascript">
+var actualValue = document.getElementById("test").fontWeight;
+document.write(actualValue + '"<' + '/pre><p class=');
+document.write((actualValue == 42) ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
 </body>
 </html>
