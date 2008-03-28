@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>&lt;h5&gt; element appears in DOM - Google Doctype</title>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+<style type="text/css">
+body { font-size: 100%; background-color: white; color: black }
+p#breadcrumb { font-size: smaller }
+h1 { margin-bottom: 0 }
+p#tagline { margin-top: 0; font-style: italic }
+p.pass { background: transparent; color: green }
+p.fail { background: transparent; color: red }
+</style>
+</head>
+<body>
+<p id="breadcrumb">You are here: <a href="../../../index.html">Google Doctype</a> &gt; <a href="../../index.html">Tests</a> &gt; <a href="../index.html">HTML</a> &gt; <a href="index.html">Elements</a> &gt; <b>&lt;h5&gt; element appears in DOM</b></p>
+
+<h1>Google Doctype</h1>
+<p id="tagline">Documenting the open web</p>
+
+<hr>
+
+<p>This is a test case that checks how browsers react to specific JavaScript, CSS, or HTML markup.  It does not necessarily correspond to any web standard, so you should not automatically interpret a "fail" result as a bug.</p>
+
+<h5 id="test"></h5>
+<script type="text/javascript">
+function testDOM() {
+  assertNotEquals("[H1H2H3H4H5H6Element] appears in DOM",
+    document.getElementById('test'),
+    null);
+}
+</script>
+<pre>
+tested.....&lt;h5 id="test"&gt;
+expected...document.getElementById("test") != null
+found......document.getElementById("test") <script type="text/javascript">
+var actualValue = (document.getElementById("test") != null);
+document.write(actualValue ? '!=' : '==');
+document.write(' null<' + '/pre><p class=');
+document.write(actualValue ? 'pass>PASS' : 'fail>FAIL');
+</script></p>
+</body>
+</html>
