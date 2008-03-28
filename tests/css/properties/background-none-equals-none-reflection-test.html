@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <title>div style='background: none' vs. style.backgroundImage - Google Doctype</title>
-<script type='text/javascript' src='../../../goog/base.js'></script>
-<script type='text/javascript' src='../../../goog/array.js'></script>
-<script type='text/javascript' src='../../../goog/math.js'></script>
-<script type='text/javascript' src='../../../goog/string.js'></script>
-<script type='text/javascript' src='../../../goog/useragent.js'></script>
-<script type='text/javascript' src='../../../goog/dom.js'></script>
-<script type='text/javascript' src='../../../goog/style.js'></script>
-<script type='text/javascript' src='../../lib/test-common.js'></script>
-<script type='text/javascript' src='../../../jsunit/app/jsUnitCore.js'></script>
+<script type="text/javascript" src='../../../goog/base.js'></script>
+<script type="text/javascript" src='../../../goog/array.js'></script>
+<script type="text/javascript" src='../../../goog/math.js'></script>
+<script type="text/javascript" src='../../../goog/string.js'></script>
+<script type="text/javascript" src='../../../goog/useragent.js'></script>
+<script type="text/javascript" src='../../../goog/dom.js'></script>
+<script type="text/javascript" src='../../../goog/style.js'></script>
+<script type="text/javascript" src='../../lib/test-common.js'></script>
+<script type="text/javascript" src='../../../jsunit/app/jsUnitCore.js'></script>
 <style type='text/css'>
 body { font-size: 100%; background-color: white; color: black }
 p#breadcrumb { font-size: smaller }
@@ -32,9 +32,9 @@ p.fail { background: transparent; color: red }
 <p>This is a test case that checks how browsers react to specific JavaScript, CSS, or HTML markup.  It does not necessarily correspond to any web standard, so you should not automatically interpret a "fail" result as a bug.</p>
 
 <div id='test' style='background: none'></div>
-<script type='text/javascript'>
+<script type="text/javascript">
 function testReflection() {
-  assertEquals('[BackgroundCSSProperty] style.backgroundImage reflects <div style='background: none'>',
+  assertEquals("[BackgroundCSSProperty] style.backgroundImage reflects <div style='background: none'>",
     'none',
     encyclopedia.getComputedStyleById('test', 'backgroundImage'));
 }
@@ -42,7 +42,7 @@ function testReflection() {
 <pre>
 tested.....&lt;div style='background: none'&gt;
 expected...style.backgroundImage = 'none'
-found......style.backgroundImage = '<script type='text/javascript'>
+found......style.backgroundImage = '<script type="text/javascript">
 var actualValue = encyclopedia.getComputedStyleById('test', 'backgroundImage');
 document.write(actualValue + '\'<' + '/pre><p class=');
 document.write((actualValue == 'none') ? 'pass>PASS' : 'fail>FAIL');

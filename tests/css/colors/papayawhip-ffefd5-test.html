@@ -14,8 +14,8 @@
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 <style type="text/css">
 div { width: 100px; height: 100px; border: 1px solid black }
-div#control { background-color: #ffefd5; color: #ffefd5; }
-div#test { background-color: papayawhip; color: papayawhip; }
+div#control { background-color: #ffefd5 }
+div#test { background-color: papayawhip }
 </style>
 <body>
 <p>The following two squares should be the same color:</p>
@@ -24,9 +24,9 @@ div#test { background-color: papayawhip; color: papayawhip; }
 <div id="test"></div>
 <script type="text/javascript">
 function testNamedColorPapayawhipffefd5() {
-  assertEquals("papayawhip == #ffefd5",
-    encyclopedia.getComputedStyleById('control', 'color'),
-    encyclopedia.getComputedStyleById('test', 'color'));
+  assertEquals("[PapayawhipCSSColor] papayawhip == #ffefd5",
+    encyclopedia.getComputedStyleById('control', 'background-color'),
+    encyclopedia.getComputedStyleById('test', 'background-color'));
 }
 </script>
 </body>

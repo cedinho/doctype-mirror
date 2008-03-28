@@ -24,7 +24,7 @@ div#test { background-color: gray }
 <div id="test"></div>
 <script type="text/javascript">
 function testNamedColorGray808080() {
-  assertEquals("gray == #808080",
+  assertEquals("[GrayCSSColor] gray == #808080",
     encyclopedia.getComputedStyleById('control', 'background-color'),
     encyclopedia.getComputedStyleById('test', 'background-color'));
 }

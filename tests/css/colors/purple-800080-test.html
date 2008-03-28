@@ -24,7 +24,7 @@ div#test { background-color: purple }
 <div id="test"></div>
 <script type="text/javascript">
 function testNamedColorPurple800080() {
-  assertEquals("purple == #800080",
+  assertEquals("[PurpleCSSColor] purple == #800080",
     encyclopedia.getComputedStyleById('control', 'background-color'),
     encyclopedia.getComputedStyleById('test', 'background-color'));
 }
