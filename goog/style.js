@@ -1,3 +1,30 @@
+// Copyright (c) 2007-2008, Google
+// All rights reserved.
+// 
+// Redistribution and use in source and binary forms, with or without
+// modification, are permitted provided that the following conditions
+// are met:
+// 
+//  * Redistributions of source code must retain the above copyright
+//    notice, this list of conditions and the following disclaimer.
+//  * Redistributions in binary form must reproduce the above copyright
+//    notice, this list of conditions and the following disclaimer in
+//    the documentation and/or other materials provided with the
+//    distribution.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+// FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+// COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+// INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+// BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+// LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+// CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+// LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+// ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+// POSSIBILITY OF SUCH DAMAGE. 
+
 goog.style = goog.style || {};
 
 /**
@@ -236,9 +263,8 @@ goog.style.setOpacity = function(el, alpha) {
   } else if ('MozOpacity' in style) {
     style.MozOpacity = alpha;
   } else if ('KhtmlOpacity' in style) {
-    style.KhtmlOpacity = alpha
+    style.KhtmlOpacity = alpha;
   } else if ('filter' in style) {
-    // TODO(arv): Overwriting the filter might have undesired side effects.
     style.filter = 'alpha(opacity=' + (alpha * 100) + ')';
   }
 };
@@ -312,9 +338,6 @@ goog.style.getPageOffset = function(el) {
   // NOTE: If element is hidden (display none or disconnected or any the
   // ancestors are hidden) we get (0,0) by default but we still do the
   // accumulation of scroll position.
-
-  // TODO: Should we check if the node is disconnected and in that case
-  //       return (0,0)?
 
   var pos = new goog.math.Coordinate(0, 0);
   var viewportElement = goog.style.getClientViewportElement(doc);
@@ -433,7 +456,6 @@ goog.style.getRelativePosition = function(a, b) {
 goog.style.setTransparentBackgroundImage = function(el, src) {
   var style = el.style;
   if ('filter' in style) {
-    // See TODO in setOpacity.
     style.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader(' +
         'src="' + src + '", sizingMethod="crop")';
   } else {
