@@ -5,7 +5,6 @@ TEMPLATE = '''<!DOCTYPE HTML>
 <head>
 <meta charset="utf-8">
 <title>&lt;%(elementname)s&gt; element appears in DOM%(aschildof)s - Google Doctype</title>
-<script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 <style type="text/css">
 body { font-size: 100%%; background-color: white; color: black }

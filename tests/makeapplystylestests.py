@@ -6,12 +6,6 @@ TEMPLATE = '''<!DOCTYPE HTML>
 <meta charset="utf-8">
 <title>&lt;%(elementname)s&gt; element applies style%(aschildof)s - Google Doctype</title>
 <script type="text/javascript" src="../../../goog/base.js"></script>
-<script type="text/javascript" src="../../../goog/array.js"></script>
-<script type="text/javascript" src="../../../goog/math.js"></script>
-<script type="text/javascript" src="../../../goog/string.js"></script>
-<script type="text/javascript" src="../../../goog/useragent.js"></script>
-<script type="text/javascript" src="../../../goog/dom.js"></script>
-<script type="text/javascript" src="../../../goog/style.js"></script>
 <script type="text/javascript" src="../../lib/test-common.js"></script>
 <script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
 <style type="text/css">
