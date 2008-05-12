@@ -1,1634 +1,1654 @@
-Tests with problems (182 total) - JsUnit
+Tests with problems (184 total) - JsUnit
 
-Running on Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30)
+Running on Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)
 
-1. file:///C:/work/bigbook/trunk/tests/js/crypto/crypto-alert-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-"'crypto' is undefined"
-
-2. file:///C:/work/bigbook/trunk/tests/js/crypto/crypto-disableRightClick-typeof-test.html:testTypeOf had an error
+1. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-alert-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "'crypto' is undefined"
 
-3. file:///C:/work/bigbook/trunk/tests/js/crypto/crypto-enableSmartCardEvents-typeof-test.html:testTypeOf had an error
+2. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-disableRightClick-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "'crypto' is undefined"
 
-4. file:///C:/work/bigbook/trunk/tests/js/crypto/crypto-generateCRMFRequest-typeof-test.html:testTypeOf had an error
+3. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-enableSmartCardEvents-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "'crypto' is undefined"
 
-5. file:///C:/work/bigbook/trunk/tests/js/crypto/crypto-importUserCertificates-typeof-test.html:testTypeOf had an error
+4. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-generateCRMFRequest-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "'crypto' is undefined"
 
-6. file:///C:/work/bigbook/trunk/tests/js/crypto/crypto-logout-typeof-test.html:testTypeOf had an error
+5. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-importUserCertificates-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "'crypto' is undefined"
 
-7. file:///C:/work/bigbook/trunk/tests/js/crypto/crypto-popChallengeResponse-typeof-test.html:testTypeOf had an error
+6. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-logout-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "'crypto' is undefined"
 
-8. file:///C:/work/bigbook/trunk/tests/js/crypto/crypto-random-typeof-test.html:testTypeOf had an error
+7. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-popChallengeResponse-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "'crypto' is undefined"
 
-9. file:///C:/work/bigbook/trunk/tests/js/crypto/crypto-signText-typeof-test.html:testTypeOf had an error
+8. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-random-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "'crypto' is undefined"
 
-10. file:///C:/work/bigbook/trunk/tests/js/document/document-addEventListener-typeof-test.html:testTypeOf failed
+9. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-signText-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"'crypto' is undefined"
+
+10. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-addEventListener-typeof-test.html:testTypeOf failed
 
 
 "[DocumentAddeventlistenerMethod] typeOf(document.addEventListener) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-11. file:///C:/work/bigbook/trunk/tests/js/document/document-adoptNode-typeof-test.html:testTypeOf failed
+11. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-adoptNode-typeof-test.html:testTypeOf failed
 
 
 "[DocumentAdoptnodeMethod] typeOf(document.adoptNode) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-12. file:///C:/work/bigbook/trunk/tests/js/document/document-all-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-"Object doesn't support this property or method"
-
-13. file:///C:/work/bigbook/trunk/tests/js/document/document-anchors-typeof-test.html:testTypeOf had an error
+12. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-all-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-14. file:///C:/work/bigbook/trunk/tests/js/document/document-applets-typeof-test.html:testTypeOf had an error
+13. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-anchors-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-15. file:///C:/work/bigbook/trunk/tests/js/document/document-baseURI-typeof-test.html:testTypeOf failed
+14. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-applets-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+15. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-baseURI-typeof-test.html:testTypeOf failed
 
 
 "[DocumentBaseuriProperty] typeOf(document.baseURI) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-16. file:///C:/work/bigbook/trunk/tests/js/document/document-captureEvents-typeof-test.html:testTypeOf failed
+16. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-captureEvents-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCaptureeventsMethod] typeOf(document.captureEvents) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-17. file:///C:/work/bigbook/trunk/tests/js/document/document-characterSet-typeof-test.html:testTypeOf failed
+17. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-characterSet-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCharactersetProperty] typeOf(document.characterSet) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-18. file:///C:/work/bigbook/trunk/tests/js/document/document-childNodes-typeof-test.html:testTypeOf had an error
+18. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-childNodes-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-19. file:///C:/work/bigbook/trunk/tests/js/document/document-compareDocumentPosition-typeof-test.html:testTypeOf failed
+19. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-compareDocumentPosition-typeof-test.html:testTypeOf failed
 
 
 "[DocumentComparedocumentpositionMethod] typeOf(document.compareDocumentPosition) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-20. file:///C:/work/bigbook/trunk/tests/js/document/document-contentType-typeof-test.html:testTypeOf failed
+20. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-contentType-typeof-test.html:testTypeOf failed
 
 
 "[DocumentContenttypeProperty] typeOf(document.contentType) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-21. file:///C:/work/bigbook/trunk/tests/js/document/document-createAttributeNS-typeof-test.html:testTypeOf failed
+21. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createAttributeNS-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreateattributensMethod] typeOf(document.createAttributeNS) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-22. file:///C:/work/bigbook/trunk/tests/js/document/document-createCDATASection-typeof-test.html:testTypeOf failed
+22. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createCDATASection-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreatecdatasectionMethod] typeOf(document.createCDATASection) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-23. file:///C:/work/bigbook/trunk/tests/js/document/document-createElementNS-typeof-test.html:testTypeOf failed
+23. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createElementNS-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreateelementnsMethod] typeOf(document.createElementNS) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-24. file:///C:/work/bigbook/trunk/tests/js/document/document-createEntityReference-typeof-test.html:testTypeOf failed
+24. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createEntityReference-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreateentityreferenceMethod] typeOf(document.createEntityReference) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-25. file:///C:/work/bigbook/trunk/tests/js/document/document-createEvent-typeof-test.html:testTypeOf failed
+25. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createEvent-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreateeventMethod] typeOf(document.createEvent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-26. file:///C:/work/bigbook/trunk/tests/js/document/document-createExpression-typeof-test.html:testTypeOf failed
+26. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createExpression-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreateexpressionMethod] typeOf(document.createExpression) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-27. file:///C:/work/bigbook/trunk/tests/js/document/document-createNSResolver-typeof-test.html:testTypeOf failed
+27. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createNSResolver-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreatensresolverMethod] typeOf(document.createNSResolver) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-28. file:///C:/work/bigbook/trunk/tests/js/document/document-createNodeIterator-typeof-test.html:testTypeOf failed
+28. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createNodeIterator-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreatenodeiteratorMethod] typeOf(document.createNodeIterator) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-29. file:///C:/work/bigbook/trunk/tests/js/document/document-createProcessingInstruction-typeof-test.html:testTypeOf failed
+29. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createProcessingInstruction-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreateprocessinginstructionMethod] typeOf(document.createProcessingInstruction) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-30. file:///C:/work/bigbook/trunk/tests/js/document/document-createRange-typeof-test.html:testTypeOf failed
+30. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createRange-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreaterangeMethod] typeOf(document.createRange) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-31. file:///C:/work/bigbook/trunk/tests/js/document/document-createTreeWalker-typeof-test.html:testTypeOf failed
+31. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createTreeWalker-typeof-test.html:testTypeOf failed
 
 
 "[DocumentCreatetreewalkerMethod] typeOf(document.createTreeWalker) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-32. file:///C:/work/bigbook/trunk/tests/js/document/document-defaultView-typeof-test.html:testTypeOf failed
+32. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-defaultView-typeof-test.html:testTypeOf failed
 
 
 "[DocumentDefaultviewProperty] typeOf(document.defaultView) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-33. file:///C:/work/bigbook/trunk/tests/js/document/document-dispatchEvent-typeof-test.html:testTypeOf failed
+33. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-dispatchEvent-typeof-test.html:testTypeOf failed
 
 
 "[DocumentDispatcheventMethod] typeOf(document.dispatchEvent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-34. file:///C:/work/bigbook/trunk/tests/js/document/document-documentURI-typeof-test.html:testTypeOf failed
+34. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-documentURI-typeof-test.html:testTypeOf failed
 
 
 "[DocumentDocumenturiProperty] typeOf(document.documentURI) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-35. file:///C:/work/bigbook/trunk/tests/js/document/document-embeds-typeof-test.html:testTypeOf had an error
+35. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-embeds-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-36. file:///C:/work/bigbook/trunk/tests/js/document/document-enableStyleSheetsForSet-typeof-test.html:testTypeOf failed
+36. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-enableStyleSheetsForSet-typeof-test.html:testTypeOf failed
 
 
 "[DocumentEnablestylesheetsforsetMethod] typeOf(document.enableStyleSheetsForSet) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-37. file:///C:/work/bigbook/trunk/tests/js/document/document-evaluate-typeof-test.html:testTypeOf failed
+37. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-evaluate-typeof-test.html:testTypeOf failed
 
 
 "[DocumentEvaluateMethod] typeOf(document.evaluate) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-38. file:///C:/work/bigbook/trunk/tests/js/document/document-firstChild-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-"Object doesn't support this property or method"
-
-39. file:///C:/work/bigbook/trunk/tests/js/document/document-forms-typeof-test.html:testTypeOf had an error
+38. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-firstChild-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-40. file:///C:/work/bigbook/trunk/tests/js/document/document-frames-typeof-test.html:testTypeOf had an error
+39. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-forms-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-41. file:///C:/work/bigbook/trunk/tests/js/document/document-getBoxObjectFor-typeof-test.html:testTypeOf failed
+40. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-frames-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+41. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-getBoxObjectFor-typeof-test.html:testTypeOf failed
 
 
 "[DocumentGetboxobjectforMethod] typeOf(document.getBoxObjectFor) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-42. file:///C:/work/bigbook/trunk/tests/js/document/document-getElementsByClassName-typeof-test.html:testTypeOf failed
+42. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-getElementsByClassName-typeof-test.html:testTypeOf failed
 
 
 "[DocumentGetelementsbyclassnameMethod] typeOf(document.getElementsByClassName) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-43. file:///C:/work/bigbook/trunk/tests/js/document/document-getElementsByTagNameNS-typeof-test.html:testTypeOf failed
+43. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-getElementsByTagNameNS-typeof-test.html:testTypeOf failed
 
 
 "[DocumentGetelementsbytagnamensMethod] typeOf(document.getElementsByTagNameNS) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-44. file:///C:/work/bigbook/trunk/tests/js/document/document-getFeature-typeof-test.html:testTypeOf failed
+44. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-getFeature-typeof-test.html:testTypeOf failed
 
 
 "[DocumentGetfeatureMethod] typeOf(document.getFeature) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-45. file:///C:/work/bigbook/trunk/tests/js/document/document-getSelection-typeof-test.html:testTypeOf failed
+45. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-getSelection-typeof-test.html:testTypeOf failed
 
 
 "[DocumentGetselectionMethod] typeOf(document.getSelection) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-46. file:///C:/work/bigbook/trunk/tests/js/document/document-getUserData-typeof-test.html:testTypeOf failed
+46. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-getUserData-typeof-test.html:testTypeOf failed
 
 
 "[DocumentGetuserdataMethod] typeOf(document.getUserData) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-47. file:///C:/work/bigbook/trunk/tests/js/document/document-hasAttributes-typeof-test.html:testTypeOf failed
+47. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-hasAttributes-typeof-test.html:testTypeOf failed
 
 
 "[DocumentHasattributesMethod] typeOf(document.hasAttributes) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-48. file:///C:/work/bigbook/trunk/tests/js/document/document-height-typeof-test.html:testTypeOf failed
+48. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-height-typeof-test.html:testTypeOf failed
 
 
 "[DocumentHeightProperty] typeOf(document.height) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-49. file:///C:/work/bigbook/trunk/tests/js/document/document-images-typeof-test.html:testTypeOf had an error
+49. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-images-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-50. file:///C:/work/bigbook/trunk/tests/js/document/document-importNode-typeof-test.html:testTypeOf failed
+50. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-importNode-typeof-test.html:testTypeOf failed
 
 
 "[DocumentImportnodeMethod] typeOf(document.importNode) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-51. file:///C:/work/bigbook/trunk/tests/js/document/document-inputEncoding-typeof-test.html:testTypeOf failed
+51. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-inputEncoding-typeof-test.html:testTypeOf failed
 
 
 "[DocumentInputencodingProperty] typeOf(document.inputEncoding) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-52. file:///C:/work/bigbook/trunk/tests/js/document/document-isDefaultNamespace-typeof-test.html:testTypeOf failed
+52. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-isDefaultNamespace-typeof-test.html:testTypeOf failed
 
 
 "[DocumentIsdefaultnamespaceMethod] typeOf(document.isDefaultNamespace) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-53. file:///C:/work/bigbook/trunk/tests/js/document/document-isEqualNode-typeof-test.html:testTypeOf failed
+53. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-isEqualNode-typeof-test.html:testTypeOf failed
 
 
 "[DocumentIsequalnodeMethod] typeOf(document.isEqualNode) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-54. file:///C:/work/bigbook/trunk/tests/js/document/document-isSameNode-typeof-test.html:testTypeOf failed
+54. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-isSameNode-typeof-test.html:testTypeOf failed
 
 
 "[DocumentIssamenodeMethod] typeOf(document.isSameNode) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-55. file:///C:/work/bigbook/trunk/tests/js/document/document-isSupported-typeof-test.html:testTypeOf failed
+55. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-isSupported-typeof-test.html:testTypeOf failed
 
 
 "[DocumentIssupportedMethod] typeOf(document.isSupported) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-56. file:///C:/work/bigbook/trunk/tests/js/document/document-lastStyleSheetSet-typeof-test.html:testTypeOf failed
+56. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-lastStyleSheetSet-typeof-test.html:testTypeOf failed
 
 
 "[DocumentLaststylesheetsetProperty] typeOf(document.lastStyleSheetSet) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-57. file:///C:/work/bigbook/trunk/tests/js/document/document-links-typeof-test.html:testTypeOf had an error
+57. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-links-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-58. file:///C:/work/bigbook/trunk/tests/js/document/document-localName-typeof-test.html:testTypeOf failed
+58. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-localName-typeof-test.html:testTypeOf failed
 
 
 "[DocumentLocalnameProperty] typeOf(document.localName) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-59. file:///C:/work/bigbook/trunk/tests/js/document/document-lookupNamespaceURI-typeof-test.html:testTypeOf failed
+59. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-lookupNamespaceURI-typeof-test.html:testTypeOf failed
 
 
 "[DocumentLookupnamespaceuriMethod] typeOf(document.lookupNamespaceURI) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-60. file:///C:/work/bigbook/trunk/tests/js/document/document-lookupPrefix-typeof-test.html:testTypeOf failed
+60. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-lookupPrefix-typeof-test.html:testTypeOf failed
 
 
 "[DocumentLookupprefixMethod] typeOf(document.lookupPrefix) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-61. file:///C:/work/bigbook/trunk/tests/js/document/document-mergeAttributes-typeof-test.html:testTypeOf failed
+61. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-mergeAttributes-typeof-test.html:testTypeOf failed
 
 
 "[DocumentMergeattributesMethod] typeOf(document.mergeAttributes) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-62. file:///C:/work/bigbook/trunk/tests/js/document/document-namespaceURI-typeof-test.html:testTypeOf failed
+62. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-namespaceURI-typeof-test.html:testTypeOf failed
 
 
 "[DocumentNamespaceuriProperty] typeOf(document.namespaceURI) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-63. file:///C:/work/bigbook/trunk/tests/js/document/document-namespaces-typeof-test.html:testTypeOf had an error
+63. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-namespaces-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-64. file:///C:/work/bigbook/trunk/tests/js/document/document-normalize-typeof-test.html:testTypeOf failed
+64. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-normalize-typeof-test.html:testTypeOf failed
 
 
 "[DocumentNormalizeMethod] typeOf(document.normalize) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-65. file:///C:/work/bigbook/trunk/tests/js/document/document-normalizeDocument-typeof-test.html:testTypeOf failed
+65. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-normalizeDocument-typeof-test.html:testTypeOf failed
 
 
 "[DocumentNormalizedocumentMethod] typeOf(document.normalizeDocument) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-66. file:///C:/work/bigbook/trunk/tests/js/document/document-parentWindow-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-"Object doesn't support this property or method"
-
-67. file:///C:/work/bigbook/trunk/tests/js/document/document-plugins-typeof-test.html:testTypeOf had an error
+66. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-parentWindow-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-68. file:///C:/work/bigbook/trunk/tests/js/document/document-preferredStyleSheetSet-typeof-test.html:testTypeOf failed
+67. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-plugins-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+68. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-preferredStyleSheetSet-typeof-test.html:testTypeOf failed
 
 
 "[DocumentPreferredstylesheetsetProperty] typeOf(document.preferredStyleSheetSet) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-69. file:///C:/work/bigbook/trunk/tests/js/document/document-prefix-typeof-test.html:testTypeOf failed
+69. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-prefix-typeof-test.html:testTypeOf failed
 
 
 "[DocumentPrefixProperty] typeOf(document.prefix) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-70. file:///C:/work/bigbook/trunk/tests/js/document/document-releaseEvents-typeof-test.html:testTypeOf failed
+70. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-releaseEvents-typeof-test.html:testTypeOf failed
 
 
 "[DocumentReleaseeventsMethod] typeOf(document.releaseEvents) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-71. file:///C:/work/bigbook/trunk/tests/js/document/document-removeEventListener-typeof-test.html:testTypeOf failed
+71. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-removeEventListener-typeof-test.html:testTypeOf failed
 
 
 "[DocumentRemoveeventlistenerMethod] typeOf(document.removeEventListener) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-72. file:///C:/work/bigbook/trunk/tests/js/document/document-renameNode-typeof-test.html:testTypeOf failed
+72. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-renameNode-typeof-test.html:testTypeOf failed
 
 
 "[DocumentRenamenodeMethod] typeOf(document.renameNode) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-73. file:///C:/work/bigbook/trunk/tests/js/document/document-routeEvent-typeof-test.html:testTypeOf failed
+73. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-routeEvent-typeof-test.html:testTypeOf failed
 
 
 "[DocumentRouteeventMethod] typeOf(document.routeEvent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-74. file:///C:/work/bigbook/trunk/tests/js/document/document-scripts-typeof-test.html:testTypeOf had an error
+74. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-scripts-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-75. file:///C:/work/bigbook/trunk/tests/js/document/document-selectedStyleSheetSet-typeof-test.html:testTypeOf failed
+75. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-selectedStyleSheetSet-typeof-test.html:testTypeOf failed
 
 
 "[DocumentSelectedstylesheetsetProperty] typeOf(document.selectedStyleSheetSet) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-76. file:///C:/work/bigbook/trunk/tests/js/document/document-setActive-typeof-test.html:testTypeOf failed
+76. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-setActive-typeof-test.html:testTypeOf failed
 
 
 "[DocumentSetactiveMethod] typeOf(document.setActive) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-77. file:///C:/work/bigbook/trunk/tests/js/document/document-setUserData-typeof-test.html:testTypeOf failed
+77. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-setUserData-typeof-test.html:testTypeOf failed
 
 
 "[DocumentSetuserdataMethod] typeOf(document.setUserData) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-78. file:///C:/work/bigbook/trunk/tests/js/document/document-strictErrorChecking-typeof-test.html:testTypeOf failed
+78. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-strictErrorChecking-typeof-test.html:testTypeOf failed
 
 
 "[DocumentStricterrorcheckingProperty] typeOf(document.strictErrorChecking) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-79. file:///C:/work/bigbook/trunk/tests/js/document/document-styleSheetSets-typeof-test.html:testTypeOf failed
+79. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-styleSheetSets-typeof-test.html:testTypeOf failed
 
 
 "[DocumentStylesheetsetsProperty] typeOf(document.styleSheetSets) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-80. file:///C:/work/bigbook/trunk/tests/js/document/document-styleSheets-typeof-test.html:testTypeOf had an error
+80. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-styleSheets-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-81. file:///C:/work/bigbook/trunk/tests/js/document/document-textContent-typeof-test.html:testTypeOf failed
+81. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-textContent-typeof-test.html:testTypeOf failed
 
 
 "[DocumentTextcontentProperty] typeOf(document.textContent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-82. file:///C:/work/bigbook/trunk/tests/js/document/document-width-typeof-test.html:testTypeOf failed
+82. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-width-typeof-test.html:testTypeOf failed
 
 
 "[DocumentWidthProperty] typeOf(document.width) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-83. file:///C:/work/bigbook/trunk/tests/js/document/document-xmlEncoding-typeof-test.html:testTypeOf failed
+83. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-xmlEncoding-typeof-test.html:testTypeOf failed
 
 
 "[DocumentXmlencodingProperty] typeOf(document.xmlEncoding) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-84. file:///C:/work/bigbook/trunk/tests/js/document/document-xmlStandalone-typeof-test.html:testTypeOf failed
+84. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-xmlStandalone-typeof-test.html:testTypeOf failed
 
 
 "[DocumentXmlstandaloneProperty] typeOf(document.xmlStandalone) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-85. file:///C:/work/bigbook/trunk/tests/js/document/document-xmlVersion-typeof-test.html:testTypeOf failed
+85. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-xmlVersion-typeof-test.html:testTypeOf failed
 
 
 "[DocumentXmlversionProperty] typeOf(document.xmlVersion) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-86. file:///C:/work/bigbook/trunk/tests/js/external/external-AddChannel-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-""
-
-87. file:///C:/work/bigbook/trunk/tests/js/external/external-AddDesktopComponent-typeof-test.html:testTypeOf had an error
+86. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddChannel-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-""
+"Object doesn't support this property or method"
 
-88. file:///C:/work/bigbook/trunk/tests/js/external/external-AddFavorite-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-""
-
-89. file:///C:/work/bigbook/trunk/tests/js/external/external-AddSearchProvider-typeof-test.html:testTypeOf had an error
+87. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddDesktopComponent-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-""
+"Object doesn't support this property or method"
 
-90. file:///C:/work/bigbook/trunk/tests/js/external/external-AutoCompleteSaveForm-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-""
-
-91. file:///C:/work/bigbook/trunk/tests/js/external/external-AutoScan-typeof-test.html:testTypeOf had an error
+88. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddFavorite-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-""
+"Object doesn't support this property or method"
 
-92. file:///C:/work/bigbook/trunk/tests/js/external/external-ImportExportFavorites-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-""
-
-93. file:///C:/work/bigbook/trunk/tests/js/external/external-IsSearchProviderInstalled-typeof-test.html:testTypeOf had an error
+89. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddSearchProvider-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-""
+"Object doesn't support this property or method"
 
-94. file:///C:/work/bigbook/trunk/tests/js/external/external-IsSubscribed-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-""
-
-95. file:///C:/work/bigbook/trunk/tests/js/external/external-NavigateAndFind-typeof-test.html:testTypeOf had an error
+90. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AutoCompleteSaveForm-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-""
+"Object doesn't support this property or method"
 
-96. file:///C:/work/bigbook/trunk/tests/js/external/external-ShowBrowserUI-typeof-test.html:testTypeOf had an error
+91. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AutoScan-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-""
+"Object doesn't support this property or method"
 
-97. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-buildID-typeof-test.html:testTypeOf failed
+92. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-ImportExportFavorites-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+93. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-IsSearchProviderInstalled-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+94. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-IsSubscribed-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+95. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-NavigateAndFind-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+96. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-ShowBrowserUI-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+97. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-buildID-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorBuildidProperty] typeOf(navigator.buildID) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-98. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-javaEnabled-typeof-test.html:testTypeOf had an error
+98. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-javaEnabled-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-99. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-language-typeof-test.html:testTypeOf failed
+99. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-language-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorLanguageProperty] typeOf(navigator.language) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-100. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-oscpu-typeof-test.html:testTypeOf failed
+100. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-oscpu-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorOscpuProperty] typeOf(navigator.oscpu) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-101. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-product-typeof-test.html:testTypeOf failed
+101. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-product-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorProductProperty] typeOf(navigator.product) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-102. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-productSub-typeof-test.html:testTypeOf failed
+102. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-productSub-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorProductsubProperty] typeOf(navigator.productSub) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-103. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-registerContentHandler-typeof-test.html:testTypeOf failed
+103. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-registerContentHandler-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorRegistercontenthandlerMethod] typeOf(navigator.registerContentHandler) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-104. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-registerProtocolHandler-typeof-test.html:testTypeOf failed
+104. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-registerProtocolHandler-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorRegisterprotocolhandlerMethod] typeOf(navigator.registerProtocolHandler) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-105. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-securityPolicy-typeof-test.html:testTypeOf failed
+105. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-securityPolicy-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorSecuritypolicyProperty] typeOf(navigator.securityPolicy) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-106. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-taintEnabled-typeof-test.html:testTypeOf had an error
+106. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-taintEnabled-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-107. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-vendor-typeof-test.html:testTypeOf failed
+107. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-vendor-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorVendorProperty] typeOf(navigator.vendor) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-108. file:///C:/work/bigbook/trunk/tests/js/navigator/navigator-vendorSub-typeof-test.html:testTypeOf failed
+108. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-vendorSub-typeof-test.html:testTypeOf failed
 
 
 "[NavigatorVendorsubProperty] typeOf(navigator.vendorSub) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-109. file:///C:/work/bigbook/trunk/tests/js/screen/screen-availLeft-typeof-test.html:testTypeOf failed
+109. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-availLeft-typeof-test.html:testTypeOf failed
 
 
 "[ScreenAvailleftProperty] typeOf(screen.availLeft) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-110. file:///C:/work/bigbook/trunk/tests/js/screen/screen-availTop-typeof-test.html:testTypeOf failed
+110. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-availTop-typeof-test.html:testTypeOf failed
 
 
 "[ScreenAvailtopProperty] typeOf(screen.availTop) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-111. file:///C:/work/bigbook/trunk/tests/js/screen/screen-pixelDepth-typeof-test.html:testTypeOf failed
+111. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-left-typeof-test.html:testTypeOf failed
+
+
+"[ScreenLeftProperty] typeOf(screen.left) != 'undefined'"
+Expected not to be <undefined> (String)
+
+Stack trace follows:
+> anonymous
+
+
+112. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-pixelDepth-typeof-test.html:testTypeOf failed
 
 
 "[ScreenPixeldepthProperty] typeOf(screen.pixelDepth) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-112. file:///C:/work/bigbook/trunk/tests/js/sidebar/sidebar-addMicrosummaryGenerator-typeof-test.html:testTypeOf had an error
+113. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-top-typeof-test.html:testTypeOf failed
 
 
-Error message is:
-"'sidebar' is undefined"
+"[ScreenTopProperty] typeOf(screen.top) != 'undefined'"
+Expected not to be <undefined> (String)
 
-113. file:///C:/work/bigbook/trunk/tests/js/sidebar/sidebar-addPanel-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-"'sidebar' is undefined"
-
-114. file:///C:/work/bigbook/trunk/tests/js/sidebar/sidebar-addPersistentPanel-typeof-test.html:testTypeOf had an error
+Stack trace follows:
+> anonymous
 
 
-Error message is:
-"'sidebar' is undefined"
-
-115. file:///C:/work/bigbook/trunk/tests/js/sidebar/sidebar-addSearchEngine-typeof-test.html:testTypeOf had an error
+114. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addMicrosummaryGenerator-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "'sidebar' is undefined"
 
-116. file:///C:/work/bigbook/trunk/tests/js/window/window-addEventListener-typeof-test.html:testTypeOf failed
+115. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addPanel-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"'sidebar' is undefined"
+
+116. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addPersistentPanel-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"'sidebar' is undefined"
+
+117. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addSearchEngine-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"'sidebar' is undefined"
+
+118. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-addEventListener-typeof-test.html:testTypeOf failed
 
 
 "[WindowAddeventlistenerMethod] typeOf(window.addEventListener) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-117. file:///C:/work/bigbook/trunk/tests/js/window/window-atob-typeof-test.html:testTypeOf failed
+119. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-atob-typeof-test.html:testTypeOf failed
 
 
 "[WindowAtobMethod] typeOf(window.atob) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-118. file:///C:/work/bigbook/trunk/tests/js/window/window-back-typeof-test.html:testTypeOf failed
+120. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-back-typeof-test.html:testTypeOf failed
 
 
 "[WindowBackMethod] typeOf(window.back) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-119. file:///C:/work/bigbook/trunk/tests/js/window/window-btoa-typeof-test.html:testTypeOf failed
+121. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-btoa-typeof-test.html:testTypeOf failed
 
 
 "[WindowBtoaMethod] typeOf(window.btoa) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-120. file:///C:/work/bigbook/trunk/tests/js/window/window-captureEvents-typeof-test.html:testTypeOf failed
+122. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-captureEvents-typeof-test.html:testTypeOf failed
 
 
 "[WindowCaptureeventsMethod] typeOf(window.captureEvents) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-121. file:///C:/work/bigbook/trunk/tests/js/window/window-content-typeof-test.html:testTypeOf failed
+123. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-content-typeof-test.html:testTypeOf failed
 
 
 "[WindowContentProperty] typeOf(window.content) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-122. file:///C:/work/bigbook/trunk/tests/js/window/window-controllers-typeof-test.html:testTypeOf failed
+124. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-controllers-typeof-test.html:testTypeOf failed
 
 
 "[WindowControllersProperty] typeOf(window.controllers) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-123. file:///C:/work/bigbook/trunk/tests/js/window/window-crypto-typeof-test.html:testTypeOf failed
+125. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-crypto-typeof-test.html:testTypeOf failed
 
 
 "[WindowCryptoProperty] typeOf(window.crypto) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-124. file:///C:/work/bigbook/trunk/tests/js/window/window-dialogArguments-typeof-test.html:testTypeOf failed
+126. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogArguments-typeof-test.html:testTypeOf failed
 
 
 "[WindowDialogargumentsProperty] typeOf(window.dialogArguments) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-125. file:///C:/work/bigbook/trunk/tests/js/window/window-dialogHeight-typeof-test.html:testTypeOf failed
+127. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogHeight-typeof-test.html:testTypeOf failed
 
 
 "[WindowDialogheightProperty] typeOf(window.dialogHeight) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-126. file:///C:/work/bigbook/trunk/tests/js/window/window-dialogLeft-typeof-test.html:testTypeOf failed
+128. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogLeft-typeof-test.html:testTypeOf failed
 
 
 "[WindowDialogleftProperty] typeOf(window.dialogLeft) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-127. file:///C:/work/bigbook/trunk/tests/js/window/window-dialogTop-typeof-test.html:testTypeOf failed
+129. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogTop-typeof-test.html:testTypeOf failed
 
 
 "[WindowDialogtopProperty] typeOf(window.dialogTop) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-128. file:///C:/work/bigbook/trunk/tests/js/window/window-dialogWidth-typeof-test.html:testTypeOf failed
+130. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogWidth-typeof-test.html:testTypeOf failed
 
 
 "[WindowDialogwidthProperty] typeOf(window.dialogWidth) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-129. file:///C:/work/bigbook/trunk/tests/js/window/window-directories-typeof-test.html:testTypeOf failed
+131. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-directories-typeof-test.html:testTypeOf failed
 
 
 "[WindowDirectoriesProperty] typeOf(window.directories) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-130. file:///C:/work/bigbook/trunk/tests/js/window/window-disableExternalCapture-typeof-test.html:testTypeOf failed
+132. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-disableExternalCapture-typeof-test.html:testTypeOf failed
 
 
 "[WindowDisableexternalcaptureMethod] typeOf(window.disableExternalCapture) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-131. file:///C:/work/bigbook/trunk/tests/js/window/window-dispatchEvent-typeof-test.html:testTypeOf failed
+133. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dispatchEvent-typeof-test.html:testTypeOf failed
 
 
 "[WindowDispatcheventMethod] typeOf(window.dispatchEvent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-132. file:///C:/work/bigbook/trunk/tests/js/window/window-dump-typeof-test.html:testTypeOf failed
+134. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dump-typeof-test.html:testTypeOf failed
 
 
 "[WindowDumpMethod] typeOf(window.dump) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-133. file:///C:/work/bigbook/trunk/tests/js/window/window-enableExternalCapture-typeof-test.html:testTypeOf failed
+135. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-enableExternalCapture-typeof-test.html:testTypeOf failed
 
 
 "[WindowEnableexternalcaptureMethod] typeOf(window.enableExternalCapture) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-134. file:///C:/work/bigbook/trunk/tests/js/window/window-find-typeof-test.html:testTypeOf failed
+136. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-find-typeof-test.html:testTypeOf failed
 
 
 "[WindowFindMethod] typeOf(window.find) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-135. file:///C:/work/bigbook/trunk/tests/js/window/window-forward-typeof-test.html:testTypeOf failed
+137. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-forward-typeof-test.html:testTypeOf failed
 
 
 "[WindowForwardMethod] typeOf(window.forward) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-136. file:///C:/work/bigbook/trunk/tests/js/window/window-frames-typeof-test.html:testTypeOf had an error
+138. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-frames-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-137. file:///C:/work/bigbook/trunk/tests/js/window/window-fullScreen-typeof-test.html:testTypeOf failed
+139. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-fullScreen-typeof-test.html:testTypeOf failed
 
 
 "[WindowFullscreenProperty] typeOf(window.fullScreen) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-138. file:///C:/work/bigbook/trunk/tests/js/window/window-getComputedStyle-typeof-test.html:testTypeOf failed
+140. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-getComputedStyle-typeof-test.html:testTypeOf failed
 
 
 "[WindowGetcomputedstyleMethod] typeOf(window.getComputedStyle) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-139. file:///C:/work/bigbook/trunk/tests/js/window/window-getSelection-typeof-test.html:testTypeOf failed
+141. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-getSelection-typeof-test.html:testTypeOf failed
 
 
 "[WindowGetselectionMethod] typeOf(window.getSelection) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-140. file:///C:/work/bigbook/trunk/tests/js/window/window-globalStorage-typeof-test.html:testTypeOf failed
+142. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-globalStorage-typeof-test.html:testTypeOf failed
 
 
 "[WindowGlobalstorageProperty] typeOf(window.globalStorage) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-141. file:///C:/work/bigbook/trunk/tests/js/window/window-history-typeof-test.html:testTypeOf had an error
+143. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-history-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-142. file:///C:/work/bigbook/trunk/tests/js/window/window-home-typeof-test.html:testTypeOf failed
+144. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-home-typeof-test.html:testTypeOf failed
 
 
 "[WindowHomeMethod] typeOf(window.home) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-143. file:///C:/work/bigbook/trunk/tests/js/window/window-innerHeight-typeof-test.html:testTypeOf failed
+145. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-innerHeight-typeof-test.html:testTypeOf failed
 
 
 "[WindowInnerheightProperty] typeOf(window.innerHeight) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-144. file:///C:/work/bigbook/trunk/tests/js/window/window-innerWidth-typeof-test.html:testTypeOf failed
+146. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-innerWidth-typeof-test.html:testTypeOf failed
 
 
 "[WindowInnerwidthProperty] typeOf(window.innerWidth) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-145. file:///C:/work/bigbook/trunk/tests/js/window/window-locationbar-typeof-test.html:testTypeOf failed
+147. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-locationbar-typeof-test.html:testTypeOf failed
 
 
 "[WindowLocationbarProperty] typeOf(window.locationbar) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-146. file:///C:/work/bigbook/trunk/tests/js/window/window-menubar-typeof-test.html:testTypeOf failed
+148. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-menubar-typeof-test.html:testTypeOf failed
 
 
 "[WindowMenubarProperty] typeOf(window.menubar) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-147. file:///C:/work/bigbook/trunk/tests/js/window/window-openDialog-typeof-test.html:testTypeOf failed
+149. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-openDialog-typeof-test.html:testTypeOf failed
 
 
 "[WindowOpendialogMethod] typeOf(window.openDialog) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-148. file:///C:/work/bigbook/trunk/tests/js/window/window-opener-typeof-test.html:testTypeOf failed
+150. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-opener-typeof-test.html:testTypeOf failed
 
 
 "[WindowOpenerProperty] typeOf(window.opener) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-149. file:///C:/work/bigbook/trunk/tests/js/window/window-outerHeight-typeof-test.html:testTypeOf failed
+151. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-outerHeight-typeof-test.html:testTypeOf failed
 
 
 "[WindowOuterheightProperty] typeOf(window.outerHeight) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-150. file:///C:/work/bigbook/trunk/tests/js/window/window-outerWidth-typeof-test.html:testTypeOf failed
+152. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-outerWidth-typeof-test.html:testTypeOf failed
 
 
 "[WindowOuterwidthProperty] typeOf(window.outerWidth) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-151. file:///C:/work/bigbook/trunk/tests/js/window/window-pageXOffset-typeof-test.html:testTypeOf failed
+153. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-pageXOffset-typeof-test.html:testTypeOf failed
 
 
 "[WindowPagexoffsetProperty] typeOf(window.pageXOffset) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-152. file:///C:/work/bigbook/trunk/tests/js/window/window-pageYOffset-typeof-test.html:testTypeOf failed
+154. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-pageYOffset-typeof-test.html:testTypeOf failed
 
 
 "[WindowPageyoffsetProperty] typeOf(window.pageYOffset) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-153. file:///C:/work/bigbook/trunk/tests/js/window/window-parent-typeof-test.html:testTypeOf had an error
+155. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-parent-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-154. file:///C:/work/bigbook/trunk/tests/js/window/window-personalbar-typeof-test.html:testTypeOf failed
+156. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-personalbar-typeof-test.html:testTypeOf failed
 
 
 "[WindowPersonalbarProperty] typeOf(window.personalbar) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-155. file:///C:/work/bigbook/trunk/tests/js/window/window-pkcs11-typeof-test.html:testTypeOf failed
+157. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-pkcs11-typeof-test.html:testTypeOf failed
 
 
 "[WindowPkcs11Property] typeOf(window.pkcs11) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-156. file:///C:/work/bigbook/trunk/tests/js/window/window-releaseEvents-typeof-test.html:testTypeOf failed
+158. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-releaseEvents-typeof-test.html:testTypeOf failed
 
 
 "[WindowReleaseeventsMethod] typeOf(window.releaseEvents) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-157. file:///C:/work/bigbook/trunk/tests/js/window/window-removeEventListener-typeof-test.html:testTypeOf failed
+159. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-removeEventListener-typeof-test.html:testTypeOf failed
 
 
 "[WindowRemoveeventlistenerMethod] typeOf(window.removeEventListener) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-158. file:///C:/work/bigbook/trunk/tests/js/window/window-returnValue-typeof-test.html:testTypeOf failed
+160. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-returnValue-typeof-test.html:testTypeOf failed
 
 
 "[WindowReturnvalueProperty] typeOf(window.returnValue) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-159. file:///C:/work/bigbook/trunk/tests/js/window/window-routeEvent-typeof-test.html:testTypeOf failed
+161. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-routeEvent-typeof-test.html:testTypeOf failed
 
 
 "[WindowRouteeventMethod] typeOf(window.routeEvent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-160. file:///C:/work/bigbook/trunk/tests/js/window/window-screen-left-typeof-test.html:testTypeOf failed
+162. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-screen-left-typeof-test.html:testTypeOf failed
 
 
 "[WindowScreenLeftProperty] typeOf(window.screen.left) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-161. file:///C:/work/bigbook/trunk/tests/js/window/window-screen-top-typeof-test.html:testTypeOf failed
+163. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-screen-top-typeof-test.html:testTypeOf failed
 
 
 "[WindowScreenTopProperty] typeOf(window.screen.top) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-162. file:///C:/work/bigbook/trunk/tests/js/window/window-screenX-typeof-test.html:testTypeOf failed
+164. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-screenX-typeof-test.html:testTypeOf failed
 
 
 "[WindowScreenxProperty] typeOf(window.screenX) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-163. file:///C:/work/bigbook/trunk/tests/js/window/window-screenY-typeof-test.html:testTypeOf failed
+165. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-screenY-typeof-test.html:testTypeOf failed
 
 
 "[WindowScreenyProperty] typeOf(window.screenY) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-164. file:///C:/work/bigbook/trunk/tests/js/window/window-scrollByLines-typeof-test.html:testTypeOf failed
+166. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollByLines-typeof-test.html:testTypeOf failed
 
 
 "[WindowScrollbylinesMethod] typeOf(window.scrollByLines) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-165. file:///C:/work/bigbook/trunk/tests/js/window/window-scrollByPages-typeof-test.html:testTypeOf failed
+167. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollByPages-typeof-test.html:testTypeOf failed
 
 
 "[WindowScrollbypagesMethod] typeOf(window.scrollByPages) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-166. file:///C:/work/bigbook/trunk/tests/js/window/window-scrollMaxX-typeof-test.html:testTypeOf failed
+168. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollMaxX-typeof-test.html:testTypeOf failed
 
 
 "[WindowScrollmaxxProperty] typeOf(window.scrollMaxX) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-167. file:///C:/work/bigbook/trunk/tests/js/window/window-scrollMaxY-typeof-test.html:testTypeOf failed
+169. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollMaxY-typeof-test.html:testTypeOf failed
 
 
 "[WindowScrollmaxyProperty] typeOf(window.scrollMaxY) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-168. file:///C:/work/bigbook/trunk/tests/js/window/window-scrollX-typeof-test.html:testTypeOf failed
+170. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollX-typeof-test.html:testTypeOf failed
 
 
 "[WindowScrollxProperty] typeOf(window.scrollX) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-169. file:///C:/work/bigbook/trunk/tests/js/window/window-scrollY-typeof-test.html:testTypeOf failed
+171. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollY-typeof-test.html:testTypeOf failed
 
 
 "[WindowScrollyProperty] typeOf(window.scrollY) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-170. file:///C:/work/bigbook/trunk/tests/js/window/window-scrollbars-typeof-test.html:testTypeOf failed
+172. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollbars-typeof-test.html:testTypeOf failed
 
 
 "[WindowScrollbarsProperty] typeOf(window.scrollbars) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-171. file:///C:/work/bigbook/trunk/tests/js/window/window-self-typeof-test.html:testTypeOf had an error
+173. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-self-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-172. file:///C:/work/bigbook/trunk/tests/js/window/window-sessionStorage-typeof-test.html:testTypeOf failed
+174. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-sessionStorage-typeof-test.html:testTypeOf failed
 
 
 "[WindowSessionstorageProperty] typeOf(window.sessionStorage) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-173. file:///C:/work/bigbook/trunk/tests/js/window/window-setActive-typeof-test.html:testTypeOf failed
+175. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-setActive-typeof-test.html:testTypeOf failed
 
 
 "[WindowSetactiveMethod] typeOf(window.setActive) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-174. file:///C:/work/bigbook/trunk/tests/js/window/window-setResizable-typeof-test.html:testTypeOf failed
+176. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-setResizable-typeof-test.html:testTypeOf failed
 
 
 "[WindowSetresizableMethod] typeOf(window.setResizable) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-175. file:///C:/work/bigbook/trunk/tests/js/window/window-sidebar-typeof-test.html:testTypeOf failed
+177. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-sidebar-typeof-test.html:testTypeOf failed
 
 
 "[WindowSidebarProperty] typeOf(window.sidebar) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-176. file:///C:/work/bigbook/trunk/tests/js/window/window-sizeToContent-typeof-test.html:testTypeOf failed
+178. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-sizeToContent-typeof-test.html:testTypeOf failed
 
 
 "[WindowSizetocontentMethod] typeOf(window.sizeToContent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-177. file:///C:/work/bigbook/trunk/tests/js/window/window-statusbar-typeof-test.html:testTypeOf failed
+179. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-statusbar-typeof-test.html:testTypeOf failed
 
 
 "[WindowStatusbarProperty] typeOf(window.statusbar) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-178. file:///C:/work/bigbook/trunk/tests/js/window/window-stop-typeof-test.html:testTypeOf failed
+180. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-stop-typeof-test.html:testTypeOf failed
 
 
 "[WindowStopMethod] typeOf(window.stop) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-179. file:///C:/work/bigbook/trunk/tests/js/window/window-toolbar-typeof-test.html:testTypeOf failed
+181. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-toolbar-typeof-test.html:testTypeOf failed
 
 
 "[WindowToolbarProperty] typeOf(window.toolbar) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-180. file:///C:/work/bigbook/trunk/tests/js/window/window-top-typeof-test.html:testTypeOf had an error
+182. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-top-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-181. file:///C:/work/bigbook/trunk/tests/js/window/window-updateCommands-typeof-test.html:testTypeOf failed
+183. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-updateCommands-typeof-test.html:testTypeOf failed
 
 
 "[WindowUpdatecommandsMethod] typeOf(window.updateCommands) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
-182. file:///C:/work/bigbook/trunk/tests/js/window/window-window-typeof-test.html:testTypeOf had an error
+184. file:///C:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-window-typeof-test.html:testTypeOf had an error
 
 
 Error message is:

@@ -1,0 +1,3453 @@
+Tests with problems (345 total) - JsUnit
+
+Running on Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)
+
+1. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundColor reflects <div style='background: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+2. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundColor reflects <div style='background: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+3. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-bottom-equals-bottom-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: bottom'>"
+Expected <bottom> (String) but was <50% bottom> (String)
+
+Stack trace follows:
+> anonymous
+
+
+4. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-bottom-equals-center-bottom-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: bottom'>"
+Expected <center bottom> (String) but was <50% bottom> (String)
+
+Stack trace follows:
+> anonymous
+
+
+5. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-center-equals-center-center-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: center'>"
+Expected <center center> (String) but was <center 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+6. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-center-equals-center-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: center'>"
+Expected <center> (String) but was <center 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+7. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundColorCSSProperty] style.backgroundColor reflects <div style='background-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+8. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundColorCSSProperty] style.backgroundColor reflects <div style='background-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+9. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundColorCSSProperty] style.backgroundColor reflects <div style='background-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+10. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-image-url-lp--qu-http-cl--sl--sl-www-dt-example-dt-com-sl--qu--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundImageCSSProperty] style.backgroundImage reflects <div style='background-image: url("http://www.example.com/")'>"
+Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
+
+Stack trace follows:
+> anonymous
+
+
+11. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-image-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundImageCSSProperty] style.backgroundImage reflects <div style='background-image: url(http://www.example.com/)'>"
+Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
+
+Stack trace follows:
+> anonymous
+
+
+12. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-left-equals-left-center-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: left'>"
+Expected <left center> (String) but was <left 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+13. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-left-equals-left-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: left'>"
+Expected <left> (String) but was <left 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+14. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-bottom-equals-bottom-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: bottom'>"
+Expected <bottom> (String) but was <50% bottom> (String)
+
+Stack trace follows:
+> anonymous
+
+
+15. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-bottom-equals-center-bottom-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: bottom'>"
+Expected <center bottom> (String) but was <50% bottom> (String)
+
+Stack trace follows:
+> anonymous
+
+
+16. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-center-equals-center-center-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: center'>"
+Expected <center center> (String) but was <center 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+17. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-center-equals-center-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: center'>"
+Expected <center> (String) but was <center 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+18. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-left-equals-left-center-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: left'>"
+Expected <left center> (String) but was <left 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+19. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-left-equals-left-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: left'>"
+Expected <left> (String) but was <left 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+20. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-right-equals-right-center-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: right'>"
+Expected <right center> (String) but was <right 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+21. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-right-equals-right-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: right'>"
+Expected <right> (String) but was <right 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+22. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-top-equals-center-top-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: top'>"
+Expected <center top> (String) but was <50% top> (String)
+
+Stack trace follows:
+> anonymous
+
+
+23. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-top-equals-top-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: top'>"
+Expected <top> (String) but was <50% top> (String)
+
+Stack trace follows:
+> anonymous
+
+
+24. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-x-bottom-equals-bottom-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionXCSSProperty] style.backgroundPositionX reflects <div style='background-position-x: bottom'>"
+Expected <bottom> (String) but was <0%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+25. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-x-top-equals-top-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionXCSSProperty] style.backgroundPositionX reflects <div style='background-position-x: top'>"
+Expected <top> (String) but was <0%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+26. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-y-left-equals-left-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionYCSSProperty] style.backgroundPositionY reflects <div style='background-position-y: left'>"
+Expected <left> (String) but was <0%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+27. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-position-y-right-equals-right-reflection-test.html:testReflection failed
+
+
+"[BackgroundPositionYCSSProperty] style.backgroundPositionY reflects <div style='background-position-y: right'>"
+Expected <right> (String) but was <0%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+28. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundColor reflects <div style='background: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+29. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-right-equals-right-center-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: right'>"
+Expected <right center> (String) but was <right 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+30. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-right-equals-right-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: right'>"
+Expected <right> (String) but was <right 50%> (String)
+
+Stack trace follows:
+> anonymous
+
+
+31. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-top-equals-center-top-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: top'>"
+Expected <center top> (String) but was <50% top> (String)
+
+Stack trace follows:
+> anonymous
+
+
+32. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-top-equals-top-reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: top'>"
+Expected <top> (String) but was <50% top> (String)
+
+Stack trace follows:
+> anonymous
+
+
+33. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-url-lp--qu-http-cl--sl--sl-www-dt-example-dt-com-sl--qu--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundImage reflects <div style='background: url("http://www.example.com/")'>"
+Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
+
+Stack trace follows:
+> anonymous
+
+
+34. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/background-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
+
+
+"[BackgroundCSSProperty] style.backgroundImage reflects <div style='background: url(http://www.example.com/)'>"
+Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
+
+Stack trace follows:
+> anonymous
+
+
+35. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderColor reflects <div style='border: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+36. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 0'>"
+Expected <0pt 0pt 0pt 0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+37. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+38. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1cm'>"
+Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
+
+Stack trace follows:
+> anonymous
+
+
+39. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1cm solid'>"
+Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
+
+Stack trace follows:
+> anonymous
+
+
+40. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1em'>"
+Expected <1em 1em 1em 1em> (String) but was <1em> (String)
+
+Stack trace follows:
+> anonymous
+
+
+41. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1em solid'>"
+Expected <1em 1em 1em 1em> (String) but was <1em> (String)
+
+Stack trace follows:
+> anonymous
+
+
+42. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1ex'>"
+Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
+
+Stack trace follows:
+> anonymous
+
+
+43. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1ex solid'>"
+Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
+
+Stack trace follows:
+> anonymous
+
+
+44. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1in'>"
+Expected <1in 1in 1in 1in> (String) but was <1in> (String)
+
+Stack trace follows:
+> anonymous
+
+
+45. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1in solid'>"
+Expected <1in 1in 1in 1in> (String) but was <1in> (String)
+
+Stack trace follows:
+> anonymous
+
+
+46. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1mm'>"
+Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
+
+Stack trace follows:
+> anonymous
+
+
+47. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1mm solid'>"
+Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
+
+Stack trace follows:
+> anonymous
+
+
+48. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1pc'>"
+Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
+
+Stack trace follows:
+> anonymous
+
+
+49. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1pc solid'>"
+Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
+
+Stack trace follows:
+> anonymous
+
+
+50. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1pt'>"
+Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
+
+Stack trace follows:
+> anonymous
+
+
+51. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1pt solid'>"
+Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
+
+Stack trace follows:
+> anonymous
+
+
+52. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1px'>"
+Expected <1px 1px 1px 1px> (String) but was <1px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+53. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1px solid'>"
+Expected <1px 1px 1px 1px> (String) but was <1px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+54. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderColor reflects <div style='border: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+55. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bogus-equals--reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderStyle reflects <div style='border: bogus'>"
+Expected <> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+56. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderBottomCSSProperty] style.borderBottomColor reflects <div style='border-bottom: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+57. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderBottomCSSProperty] style.borderBottomWidth reflects <div style='border-bottom: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+58. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderBottomCSSProperty] style.borderBottomColor reflects <div style='border-bottom: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+59. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderBottomColorCSSProperty] style.borderBottomColor reflects <div style='border-bottom-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+60. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderBottomColorCSSProperty] style.borderBottomColor reflects <div style='border-bottom-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+61. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderBottomColorCSSProperty] style.borderBottomColor reflects <div style='border-bottom-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+62. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderBottomCSSProperty] style.borderBottomStyle reflects <div style='border-bottom: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+63. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderBottomCSSProperty] style.borderBottomColor reflects <div style='border-bottom: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+64. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-style-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderBottomStyleCSSProperty] style.borderBottomStyle reflects <div style='border-bottom-style: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+65. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderBottomCSSProperty] style.borderBottomWidth reflects <div style='border-bottom: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+66. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderBottomCSSProperty] style.borderBottomWidth reflects <div style='border-bottom: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+67. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-width-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderBottomWidthCSSProperty] style.borderBottomWidth reflects <div style='border-bottom-width: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+68. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-width-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderBottomWidthCSSProperty] style.borderBottomWidth reflects <div style='border-bottom-width: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+69. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-bottom-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderBottomWidthCSSProperty] style.borderBottomWidth reflects <div style='border-bottom-width: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+70. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderColorCSSProperty] style.borderColor reflects <div style='border-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+71. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderColorCSSProperty] style.borderColor reflects <div style='border-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+72. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderColorCSSProperty] style.borderColor reflects <div style='border-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+73. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderStyle reflects <div style='border: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+74. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderLeftCSSProperty] style.borderLeftColor reflects <div style='border-left: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+75. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderLeftCSSProperty] style.borderLeftWidth reflects <div style='border-left: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+76. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderLeftCSSProperty] style.borderLeftColor reflects <div style='border-left: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+77. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderLeftColorCSSProperty] style.borderLeftColor reflects <div style='border-left-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+78. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderLeftColorCSSProperty] style.borderLeftColor reflects <div style='border-left-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+79. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderLeftColorCSSProperty] style.borderLeftColor reflects <div style='border-left-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+80. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderLeftCSSProperty] style.borderLeftStyle reflects <div style='border-left: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+81. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderLeftCSSProperty] style.borderLeftColor reflects <div style='border-left: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+82. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-style-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderLeftStyleCSSProperty] style.borderLeftStyle reflects <div style='border-left-style: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+83. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderLeftCSSProperty] style.borderLeftWidth reflects <div style='border-left: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+84. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderLeftCSSProperty] style.borderLeftWidth reflects <div style='border-left: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+85. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-width-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderLeftWidthCSSProperty] style.borderLeftWidth reflects <div style='border-left-width: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+86. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-width-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderLeftWidthCSSProperty] style.borderLeftWidth reflects <div style='border-left-width: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+87. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-left-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderLeftWidthCSSProperty] style.borderLeftWidth reflects <div style='border-left-width: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+88. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderColor reflects <div style='border: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+89. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderRightCSSProperty] style.borderRightColor reflects <div style='border-right: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+90. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderRightCSSProperty] style.borderRightWidth reflects <div style='border-right: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+91. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderRightCSSProperty] style.borderRightColor reflects <div style='border-right: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+92. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderRightColorCSSProperty] style.borderRightColor reflects <div style='border-right-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+93. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderRightColorCSSProperty] style.borderRightColor reflects <div style='border-right-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+94. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderRightColorCSSProperty] style.borderRightColor reflects <div style='border-right-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+95. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderRightCSSProperty] style.borderRightStyle reflects <div style='border-right: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+96. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderRightCSSProperty] style.borderRightColor reflects <div style='border-right: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+97. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-style-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderRightStyleCSSProperty] style.borderRightStyle reflects <div style='border-right-style: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+98. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderRightCSSProperty] style.borderRightWidth reflects <div style='border-right: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+99. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderRightCSSProperty] style.borderRightWidth reflects <div style='border-right: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+100. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-width-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderRightWidthCSSProperty] style.borderRightWidth reflects <div style='border-right-width: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+101. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-width-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderRightWidthCSSProperty] style.borderRightWidth reflects <div style='border-right-width: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+102. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-right-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderRightWidthCSSProperty] style.borderRightWidth reflects <div style='border-right-width: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+103. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-spacing-1px-1px-equals-1px-1px-reflection-test.html:testReflection failed
+
+
+"[BorderSpacingCSSProperty] style.borderSpacing reflects <div style='border-spacing: 1px 1px'>"
+Expected <1px 1px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+104. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-spacing-1px-equals-1px-1px-reflection-test.html:testReflection failed
+
+
+"[BorderSpacingCSSProperty] style.borderSpacing reflects <div style='border-spacing: 1px'>"
+Expected <1px 1px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+105. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-style-bogus-equals--reflection-test.html:testReflection failed
+
+
+"[BorderStyleCSSProperty] style.borderStyle reflects <div style='border-style: bogus'>"
+Expected <> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+106. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-style-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderStyleCSSProperty] style.borderStyle reflects <div style='border-style: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+107. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+108. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-thick-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: thick'>"
+Expected <thick thick thick thick> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+109. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+110. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-thick-solid-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: thick solid'>"
+Expected <thick thick thick thick> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+111. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-thin-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: thin'>"
+Expected <thin thin thin thin> (String) but was <thin> (String)
+
+Stack trace follows:
+> anonymous
+
+
+112. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-thin-solid-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
+
+
+"[BorderCSSProperty] style.borderWidth reflects <div style='border: thin solid'>"
+Expected <thin thin thin thin> (String) but was <thin> (String)
+
+Stack trace follows:
+> anonymous
+
+
+113. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderTopCSSProperty] style.borderTopColor reflects <div style='border-top: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+114. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderTopCSSProperty] style.borderTopWidth reflects <div style='border-top: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+115. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderTopCSSProperty] style.borderTopColor reflects <div style='border-top: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+116. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[BorderTopColorCSSProperty] style.borderTopColor reflects <div style='border-top-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+117. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderTopColorCSSProperty] style.borderTopColor reflects <div style='border-top-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+118. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderTopColorCSSProperty] style.borderTopColor reflects <div style='border-top-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+119. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderTopCSSProperty] style.borderTopStyle reflects <div style='border-top: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+120. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[BorderTopCSSProperty] style.borderTopColor reflects <div style='border-top: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+121. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-style-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[BorderTopStyleCSSProperty] style.borderTopStyle reflects <div style='border-top-style: hidden'>"
+Expected <hidden> (String) but was <none> (String)
+
+Stack trace follows:
+> anonymous
+
+
+122. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderTopCSSProperty] style.borderTopWidth reflects <div style='border-top: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+123. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderTopCSSProperty] style.borderTopWidth reflects <div style='border-top: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+124. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-width-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderTopWidthCSSProperty] style.borderTopWidth reflects <div style='border-top-width: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+125. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-width-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderTopWidthCSSProperty] style.borderTopWidth reflects <div style='border-top-width: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+126. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-top-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderTopWidthCSSProperty] style.borderTopWidth reflects <div style='border-top-width: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+127. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-width-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[BorderWidthCSSProperty] style.borderWidth reflects <div style='border-width: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+128. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-width-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderWidthCSSProperty] style.borderWidth reflects <div style='border-width: thick'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+129. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/border-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[BorderWidthCSSProperty] style.borderWidth reflects <div style='border-width: thick; border-style: solid'>"
+Expected <5px> (String) but was <thick> (String)
+
+Stack trace follows:
+> anonymous
+
+
+130. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/caption-side-bottom-equals-bottom-reflection-test.html:testReflection failed
+
+
+"[CaptionSideCSSProperty] style.captionSide reflects <div style='caption-side: bottom'>"
+Expected <bottom> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+131. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/caption-side-top-equals-top-reflection-test.html:testReflection failed
+
+
+"[CaptionSideCSSProperty] style.captionSide reflects <div style='caption-side: top'>"
+Expected <top> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+132. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[ColorCSSProperty] style.color reflects <div style='color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+133. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ColorCSSProperty] style.color reflects <div style='color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+134. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ColorCSSProperty] style.color reflects <div style='color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+135. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/cursor-alias-equals-alias-reflection-test.html:testReflection failed
+
+
+"[CursorCSSProperty] style.cursor reflects <div style='cursor: alias'>"
+Expected <alias> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+136. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/cursor-cell-equals-cell-reflection-test.html:testReflection failed
+
+
+"[CursorCSSProperty] style.cursor reflects <div style='cursor: cell'>"
+Expected <cell> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+137. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/cursor-context-menu-equals-context-menu-reflection-test.html:testReflection failed
+
+
+"[CursorCSSProperty] style.cursor reflects <div style='cursor: context-menu'>"
+Expected <context-menu> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+138. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/cursor-copy-equals-copy-reflection-test.html:testReflection failed
+
+
+"[CursorCSSProperty] style.cursor reflects <div style='cursor: copy'>"
+Expected <copy> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+139. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/cursor-ew-resize-equals-ew-resize-reflection-test.html:testReflection failed
+
+
+"[CursorCSSProperty] style.cursor reflects <div style='cursor: ew-resize'>"
+Expected <ew-resize> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+140. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/cursor-nesw-resize-equals-nesw-resize-reflection-test.html:testReflection failed
+
+
+"[CursorCSSProperty] style.cursor reflects <div style='cursor: nesw-resize'>"
+Expected <nesw-resize> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+141. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/cursor-ns-resize-equals-ns-resize-reflection-test.html:testReflection failed
+
+
+"[CursorCSSProperty] style.cursor reflects <div style='cursor: ns-resize'>"
+Expected <ns-resize> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+142. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/cursor-nwse-resize-equals-nwse-resize-reflection-test.html:testReflection failed
+
+
+"[CursorCSSProperty] style.cursor reflects <div style='cursor: nwse-resize'>"
+Expected <nwse-resize> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+143. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-compact-equals-compact-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: compact'>"
+Expected <compact> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+144. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-inline-table-equals-inline-table-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: inline-table'>"
+Expected <inline-table> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+145. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-run-in-equals-run-in-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: run-in'>"
+Expected <run-in> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+146. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-table-caption-equals-table-caption-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: table-caption'>"
+Expected <table-caption> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+147. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-table-cell-equals-table-cell-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: table-cell'>"
+Expected <table-cell> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+148. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-table-column-equals-table-column-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: table-column'>"
+Expected <table-column> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+149. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-table-column-group-equals-table-column-group-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: table-column-group'>"
+Expected <table-column-group> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+150. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-table-equals-table-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: table'>"
+Expected <table> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+151. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-table-row-equals-table-row-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: table-row'>"
+Expected <table-row> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+152. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/display-table-row-group-equals-table-row-group-reflection-test.html:testReflection failed
+
+
+"[DisplayCSSProperty] style.display reflects <div style='display: table-row-group'>"
+Expected <table-row-group> (String) but was <block> (String)
+
+Stack trace follows:
+> anonymous
+
+
+153. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/float-bogus-equals-none-reflection-test.html:testReflection failed
+
+
+"[FloatCSSProperty] style.cssFloat reflects <div style='float: bogus'>"
+Expected <none> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+154. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/float-left-equals-left-reflection-test.html:testReflection failed
+
+
+"[FloatCSSProperty] style.cssFloat reflects <div style='float: left'>"
+Expected <left> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+155. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/float-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[FloatCSSProperty] style.cssFloat reflects <div style='float: none'>"
+Expected <none> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+156. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/float-right-equals-right-reflection-test.html:testReflection failed
+
+
+"[FloatCSSProperty] style.cssFloat reflects <div style='float: right'>"
+Expected <right> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+157. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/font-italic-equals-italic-reflection-test.html:testReflection failed
+
+
+"[FontCSSProperty] style.fontStyle reflects <div style='font: italic'>"
+Expected <italic> (String) but was <normal> (String)
+
+Stack trace follows:
+> anonymous
+
+
+158. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/font-normal-small-caps-equals-small-caps-reflection-test.html:testReflection failed
+
+
+"[FontCSSProperty] style.fontVariant reflects <div style='font: normal small-caps'>"
+Expected <small-caps> (String) but was <normal> (String)
+
+Stack trace follows:
+> anonymous
+
+
+159. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/font-oblique-equals-oblique-reflection-test.html:testReflection failed
+
+
+"[FontCSSProperty] style.fontStyle reflects <div style='font: oblique'>"
+Expected <oblique> (String) but was <normal> (String)
+
+Stack trace follows:
+> anonymous
+
+
+160. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/layer-background-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+161. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/layer-background-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+162. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/layer-background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+163. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/layer-background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm-0-cm-0-rp--reflection-test.html:testReflection failed
+
+
+"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: rgb(0, 0, 0)'>"
+Expected <rgb(0,0,0)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+164. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/layer-background-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: transparent'>"
+Expected <transparent> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+165. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/layout-grid-char-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[LayoutGridCharCSSProperty] style.layoutGridChar reflects <div style='layout-grid-char: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+166. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/layout-grid-line-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[LayoutGridLineCSSProperty] style.layoutGridLine reflects <div style='layout-grid-line: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+167. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/letter-spacing-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[LetterSpacingCSSProperty] style.letterSpacing reflects <div style='letter-spacing: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+168. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/margin-bottom-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[MarginBottomCSSProperty] style.marginBottom reflects <div style='margin-bottom: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+169. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/margin-bottom-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[MarginBottomCSSProperty] style.marginBottom reflects <div style='margin-bottom: none'>"
+Expected <none> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+170. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/margin-left-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[MarginLeftCSSProperty] style.marginLeft reflects <div style='margin-left: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+171. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/margin-left-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[MarginLeftCSSProperty] style.marginLeft reflects <div style='margin-left: none'>"
+Expected <none> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+172. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/margin-right-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[MarginRightCSSProperty] style.marginRight reflects <div style='margin-right: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+173. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/margin-right-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[MarginRightCSSProperty] style.marginRight reflects <div style='margin-right: none'>"
+Expected <none> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+174. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/margin-top-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[MarginTopCSSProperty] style.marginTop reflects <div style='margin-top: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+175. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/margin-top-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[MarginTopCSSProperty] style.marginTop reflects <div style='margin-top: none'>"
+Expected <none> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+176. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/max-height-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[MaxHeightCSSProperty] style.maxHeight reflects <div style='max-height: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+177. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/max-width-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[MaxWidthCSSProperty] style.maxWidth reflects <div style='max-width: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+178. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/min-height-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[MinHeightCSSProperty] style.minHeight reflects <div style='min-height: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+179. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/min-height-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[MinHeightCSSProperty] style.minHeight reflects <div style='min-height: none'>"
+Expected <none> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+180. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/min-width-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[MinWidthCSSProperty] style.minWidth reflects <div style='min-width: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+181. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/min-width-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[MinWidthCSSProperty] style.minWidth reflects <div style='min-width: none'>"
+Expected <none> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+182. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/orphans-bogus-equals--reflection-test.html:testReflection failed
+
+
+"[OrphansCSSProperty] style.orphans reflects <div style='orphans: bogus'>"
+Expected <> (String) but was <bogus> (String)
+
+Stack trace follows:
+> anonymous
+
+
+183. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineColor reflects <div style='outline: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+184. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 0'>"
+Expected <0pt 0pt 0pt 0pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+185. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 0'>"
+Expected <0pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+186. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-0-equals-0px-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 0'>"
+Expected <0px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+187. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1cm'>"
+Expected <1cm 1cm 1cm 1cm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+188. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1cm-equals-1cm-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1cm'>"
+Expected <1cm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+189. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1cm-sc--outline-style-cl--solid-equals-1cm-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1cm; outline-style: solid'>"
+Expected <1cm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+190. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1cm solid'>"
+Expected <1cm 1cm 1cm 1cm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+191. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1em'>"
+Expected <1em 1em 1em 1em> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+192. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1em-equals-1em-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1em'>"
+Expected <1em> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+193. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1em-sc--outline-style-cl--solid-equals-1em-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1em; outline-style: solid'>"
+Expected <1em> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+194. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1em solid'>"
+Expected <1em 1em 1em 1em> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+195. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1ex'>"
+Expected <1ex 1ex 1ex 1ex> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+196. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1ex-equals-1ex-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1ex'>"
+Expected <1ex> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+197. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1ex-sc--outline-style-cl--solid-equals-1ex-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1ex; outline-style: solid'>"
+Expected <1ex> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+198. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1ex solid'>"
+Expected <1ex 1ex 1ex 1ex> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+199. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1in'>"
+Expected <1in 1in 1in 1in> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+200. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1in-equals-1in-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1in'>"
+Expected <1in> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+201. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1in-sc--outline-style-cl--solid-equals-1in-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1in; outline-style: solid'>"
+Expected <1in> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+202. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1in solid'>"
+Expected <1in 1in 1in 1in> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+203. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1mm'>"
+Expected <1mm 1mm 1mm 1mm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+204. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1mm-equals-1mm-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1mm'>"
+Expected <1mm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+205. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1mm-sc--outline-style-cl--solid-equals-1mm-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1mm; outline-style: solid'>"
+Expected <1mm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+206. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1mm solid'>"
+Expected <1mm 1mm 1mm 1mm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+207. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pc'>"
+Expected <1pc 1pc 1pc 1pc> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+208. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1pc-equals-1pc-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pc'>"
+Expected <1pc> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+209. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1pc-sc--outline-style-cl--solid-equals-1pc-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pc; outline-style: solid'>"
+Expected <1pc> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+210. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pc solid'>"
+Expected <1pc 1pc 1pc 1pc> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+211. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pt'>"
+Expected <1pt 1pt 1pt 1pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+212. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1pt-equals-1pt-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pt'>"
+Expected <1pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+213. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1pt-sc--outline-style-cl--solid-equals-1pt-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pt; outline-style: solid'>"
+Expected <1pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+214. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pt solid'>"
+Expected <1pt 1pt 1pt 1pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+215. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1px'>"
+Expected <1px 1px 1px 1px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+216. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1px-equals-1px-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1px'>"
+Expected <1px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+217. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1px-sc--outline-style-cl--solid-equals-1px-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1px; outline-style: solid'>"
+Expected <1px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+218. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1px solid'>"
+Expected <1px 1px 1px 1px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+219. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineColor reflects <div style='outline: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+220. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-bogus-equals-none-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: bogus'>"
+Expected <none> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+221. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[OutlineColorCSSProperty] style.outlineColor reflects <div style='outline-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+222. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[OutlineColorCSSProperty] style.outlineColor reflects <div style='outline-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+223. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[OutlineColorCSSProperty] style.outlineColor reflects <div style='outline-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+224. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm-0-cm-0-rp--reflection-test.html:testReflection failed
+
+
+"[OutlineColorCSSProperty] style.outlineColor reflects <div style='outline-color: rgb(0, 0, 0)'>"
+Expected <rgb(0,0,0)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+225. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[OutlineColorCSSProperty] style.outlineColor reflects <div style='outline-color: transparent'>"
+Expected <transparent> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+226. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-dashed-equals-dashed-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: dashed'>"
+Expected <dashed> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+227. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-dotted-equals-dotted-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: dotted'>"
+Expected <dotted> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+228. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-double-equals-double-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: double'>"
+Expected <double> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+229. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-groove-equals-groove-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: groove'>"
+Expected <groove> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+230. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: hidden'>"
+Expected <hidden> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+231. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-inset-equals-inset-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: inset'>"
+Expected <inset> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+232. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: none'>"
+Expected <none> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+233. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-outset-equals-outset-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: outset'>"
+Expected <outset> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+234. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineColor reflects <div style='outline: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+235. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm-0-cm-0-rp--reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineColor reflects <div style='outline: rgb(0, 0, 0)'>"
+Expected <rgb(0,0,0)> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+236. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-ridge-equals-ridge-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: ridge'>"
+Expected <ridge> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+237. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-solid-equals-solid-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: solid'>"
+Expected <solid> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+238. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-bogus-equals-none-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: bogus'>"
+Expected <none> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+239. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-dashed-equals-dashed-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: dashed'>"
+Expected <dashed> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+240. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-dotted-equals-dotted-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: dotted'>"
+Expected <dotted> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+241. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-double-equals-double-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: double'>"
+Expected <double> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+242. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-groove-equals-groove-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: groove'>"
+Expected <groove> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+243. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-hidden-equals-hidden-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: hidden'>"
+Expected <hidden> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+244. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-inset-equals-inset-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: inset'>"
+Expected <inset> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+245. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: none'>"
+Expected <none> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+246. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-outset-equals-outset-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: outset'>"
+Expected <outset> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+247. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-ridge-equals-ridge-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: ridge'>"
+Expected <ridge> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+248. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-solid-equals-solid-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: solid'>"
+Expected <solid> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+249. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-style-window-inset-equals-window-inset-reflection-test.html:testReflection failed
+
+
+"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: window-inset'>"
+Expected <window-inset> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+250. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thick-equals-5px-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thick'>"
+Expected <5px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+251. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thick-equals-thick-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thick'>"
+Expected <thick> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+252. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thick-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thick'>"
+Expected <thick thick thick thick> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+253. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thick-sc--outline-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thick; outline-style: solid'>"
+Expected <5px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+254. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thick-sc--outline-style-cl--solid-equals-thick-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thick; outline-style: solid'>"
+Expected <thick> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+255. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thick-solid-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thick solid'>"
+Expected <thick thick thick thick> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+256. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thin-equals-thin-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thin'>"
+Expected <thin> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+257. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thin-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thin'>"
+Expected <thin thin thin thin> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+258. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thin-sc--outline-style-cl--solid-equals-thin-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thin; outline-style: solid'>"
+Expected <thin> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+259. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-thin-solid-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: thin solid'>"
+Expected <thin thin thin thin> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+260. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineColor reflects <div style='outline: transparent'>"
+Expected <transparent> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+261. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 0'>"
+Expected <0pt 0pt 0pt 0pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+262. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-0-equals-0px-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 0'>"
+Expected <0px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+263. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1cm'>"
+Expected <1cm 1cm 1cm 1cm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+264. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1cm-equals-1cm-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1cm'>"
+Expected <1cm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+265. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1cm solid'>"
+Expected <1cm 1cm 1cm 1cm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+266. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1em'>"
+Expected <1em 1em 1em 1em> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+267. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1em-equals-1em-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1em'>"
+Expected <1em> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+268. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1em solid'>"
+Expected <1em 1em 1em 1em> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+269. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1ex'>"
+Expected <1ex 1ex 1ex 1ex> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+270. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1ex-equals-1ex-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1ex'>"
+Expected <1ex> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+271. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1ex solid'>"
+Expected <1ex 1ex 1ex 1ex> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+272. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1in'>"
+Expected <1in 1in 1in 1in> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+273. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1in-equals-1in-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1in'>"
+Expected <1in> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+274. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1in solid'>"
+Expected <1in 1in 1in 1in> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+275. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1mm'>"
+Expected <1mm 1mm 1mm 1mm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+276. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1mm-equals-1mm-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1mm'>"
+Expected <1mm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+277. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1mm solid'>"
+Expected <1mm 1mm 1mm 1mm> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+278. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pc'>"
+Expected <1pc 1pc 1pc 1pc> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+279. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1pc-equals-1pc-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pc'>"
+Expected <1pc> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+280. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pc solid'>"
+Expected <1pc 1pc 1pc 1pc> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+281. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pt'>"
+Expected <1pt 1pt 1pt 1pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+282. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1pt-equals-1pt-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pt'>"
+Expected <1pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+283. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pt solid'>"
+Expected <1pt 1pt 1pt 1pt> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+284. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1px'>"
+Expected <1px 1px 1px 1px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+285. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1px-equals-1px-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1px'>"
+Expected <1px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+286. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1px solid'>"
+Expected <1px 1px 1px 1px> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+287. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-thick-equals-thick-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: thick'>"
+Expected <thick> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+288. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-thick-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: thick'>"
+Expected <thick thick thick thick> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+289. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-thick-solid-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: thick solid'>"
+Expected <thick thick thick thick> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+290. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-thin-equals-thin-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: thin'>"
+Expected <thin> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+291. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-thin-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: thin'>"
+Expected <thin thin thin thin> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+292. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-width-thin-solid-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
+
+
+"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: thin solid'>"
+Expected <thin thin thin thin> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+293. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/outline-window-inset-equals-window-inset-reflection-test.html:testReflection failed
+
+
+"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: window-inset'>"
+Expected <window-inset> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+294. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/overflow--moz-scrollbars-horizontal-equals--moz-scrollbars-horizontal-reflection-test.html:testReflection failed
+
+
+"[OverflowCSSProperty] style.overflow reflects <div style='overflow: -moz-scrollbars-horizontal'>"
+Expected <-moz-scrollbars-horizontal> (String) but was <visible> (String)
+
+Stack trace follows:
+> anonymous
+
+
+295. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/overflow--moz-scrollbars-none-equals--moz-scrollbars-none-reflection-test.html:testReflection failed
+
+
+"[OverflowCSSProperty] style.overflow reflects <div style='overflow: -moz-scrollbars-none'>"
+Expected <-moz-scrollbars-none> (String) but was <visible> (String)
+
+Stack trace follows:
+> anonymous
+
+
+296. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/overflow--moz-scrollbars-vertical-equals--moz-scrollbars-vertical-reflection-test.html:testReflection failed
+
+
+"[OverflowCSSProperty] style.overflow reflects <div style='overflow: -moz-scrollbars-vertical'>"
+Expected <-moz-scrollbars-vertical> (String) but was <visible> (String)
+
+Stack trace follows:
+> anonymous
+
+
+297. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-bottom-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[PaddingBottomCSSProperty] style.paddingBottom reflects <div style='padding-bottom: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+298. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-bottom-auto-equals-auto-reflection-test.html:testReflection failed
+
+
+"[PaddingBottomCSSProperty] style.paddingBottom reflects <div style='padding-bottom: auto'>"
+Expected <auto> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+299. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-bottom-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[PaddingBottomCSSProperty] style.paddingBottom reflects <div style='padding-bottom: none'>"
+Expected <none> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+300. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-left-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[PaddingLeftCSSProperty] style.paddingLeft reflects <div style='padding-left: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+301. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-left-auto-equals-auto-reflection-test.html:testReflection failed
+
+
+"[PaddingLeftCSSProperty] style.paddingLeft reflects <div style='padding-left: auto'>"
+Expected <auto> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+302. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-left-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[PaddingLeftCSSProperty] style.paddingLeft reflects <div style='padding-left: none'>"
+Expected <none> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+303. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-right-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[PaddingRightCSSProperty] style.paddingRight reflects <div style='padding-right: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+304. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-right-auto-equals-auto-reflection-test.html:testReflection failed
+
+
+"[PaddingRightCSSProperty] style.paddingRight reflects <div style='padding-right: auto'>"
+Expected <auto> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+305. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-right-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[PaddingRightCSSProperty] style.paddingRight reflects <div style='padding-right: none'>"
+Expected <none> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+306. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-top-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[PaddingTopCSSProperty] style.paddingTop reflects <div style='padding-top: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+307. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-top-auto-equals-auto-reflection-test.html:testReflection failed
+
+
+"[PaddingTopCSSProperty] style.paddingTop reflects <div style='padding-top: auto'>"
+Expected <auto> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+308. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/padding-top-none-equals-none-reflection-test.html:testReflection failed
+
+
+"[PaddingTopCSSProperty] style.paddingTop reflects <div style='padding-top: none'>"
+Expected <none> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+309. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/page-break-after-avoid-equals-avoid-reflection-test.html:testReflection failed
+
+
+"[PageBreakAfterCSSProperty] style.pageBreakAfter reflects <div style='page-break-after: avoid'>"
+Expected <avoid> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+310. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/page-break-after-bogus-equals--reflection-test.html:testReflection failed
+
+
+"[PageBreakAfterCSSProperty] style.pageBreakAfter reflects <div style='page-break-after: bogus'>"
+Expected <> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+311. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/page-break-before-avoid-equals-avoid-reflection-test.html:testReflection failed
+
+
+"[PageBreakBeforeCSSProperty] style.pageBreakBefore reflects <div style='page-break-before: avoid'>"
+Expected <avoid> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+312. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/page-break-before-bogus-equals--reflection-test.html:testReflection failed
+
+
+"[PageBreakBeforeCSSProperty] style.pageBreakBefore reflects <div style='page-break-before: bogus'>"
+Expected <> (String) but was <auto> (String)
+
+Stack trace follows:
+> anonymous
+
+
+313. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-3dlight-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[Scrollbar3dlightColorCSSProperty] style.scrollbar3dLightColor reflects <div style='scrollbar-3dlight-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+314. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-3dlight-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[Scrollbar3dlightColorCSSProperty] style.scrollbar3dLightColor reflects <div style='scrollbar-3dlight-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+315. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-3dlight-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[Scrollbar3dlightColorCSSProperty] style.scrollbar3dLightColor reflects <div style='scrollbar-3dlight-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+316. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-3dlight-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[Scrollbar3dlightColorCSSProperty] style.scrollbar3dLightColor reflects <div style='scrollbar-3dlight-color: transparent'>"
+Expected <transparent> (String) but was <#f1efe2> (String)
+
+Stack trace follows:
+> anonymous
+
+
+317. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-arrow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarArrowColorCSSProperty] style.scrollbarArrowColor reflects <div style='scrollbar-arrow-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+318. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-arrow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarArrowColorCSSProperty] style.scrollbarArrowColor reflects <div style='scrollbar-arrow-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+319. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-arrow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarArrowColorCSSProperty] style.scrollbarArrowColor reflects <div style='scrollbar-arrow-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+320. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-arrow-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[ScrollbarArrowColorCSSProperty] style.scrollbarArrowColor reflects <div style='scrollbar-arrow-color: transparent'>"
+Expected <transparent> (String) but was <#000000> (String)
+
+Stack trace follows:
+> anonymous
+
+
+321. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-base-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarBaseColorCSSProperty] style.scrollbarBaseColor reflects <div style='scrollbar-base-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+322. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-base-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarBaseColorCSSProperty] style.scrollbarBaseColor reflects <div style='scrollbar-base-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+323. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-base-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarBaseColorCSSProperty] style.scrollbarBaseColor reflects <div style='scrollbar-base-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+324. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-base-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[ScrollbarBaseColorCSSProperty] style.scrollbarBaseColor reflects <div style='scrollbar-base-color: transparent'>"
+Expected <transparent> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+325. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-darkshadow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarDarkshadowColorCSSProperty] style.scrollbarDarkShadowColor reflects <div style='scrollbar-darkshadow-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+326. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-darkshadow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarDarkshadowColorCSSProperty] style.scrollbarDarkShadowColor reflects <div style='scrollbar-darkshadow-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+327. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-darkshadow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarDarkshadowColorCSSProperty] style.scrollbarDarkShadowColor reflects <div style='scrollbar-darkshadow-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+328. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-darkshadow-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[ScrollbarDarkshadowColorCSSProperty] style.scrollbarDarkShadowColor reflects <div style='scrollbar-darkshadow-color: transparent'>"
+Expected <transparent> (String) but was <#716f64> (String)
+
+Stack trace follows:
+> anonymous
+
+
+329. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-face-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarFaceColorCSSProperty] style.scrollbarFaceColor reflects <div style='scrollbar-face-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+330. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-face-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarFaceColorCSSProperty] style.scrollbarFaceColor reflects <div style='scrollbar-face-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+331. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-face-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarFaceColorCSSProperty] style.scrollbarFaceColor reflects <div style='scrollbar-face-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+332. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-face-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[ScrollbarFaceColorCSSProperty] style.scrollbarFaceColor reflects <div style='scrollbar-face-color: transparent'>"
+Expected <transparent> (String) but was <#ece9d8> (String)
+
+Stack trace follows:
+> anonymous
+
+
+333. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-highlight-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarHighlightColorCSSProperty] style.scrollbarHighlightColor reflects <div style='scrollbar-highlight-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+334. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-highlight-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarHighlightColorCSSProperty] style.scrollbarHighlightColor reflects <div style='scrollbar-highlight-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+335. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-highlight-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarHighlightColorCSSProperty] style.scrollbarHighlightColor reflects <div style='scrollbar-highlight-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+336. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-highlight-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[ScrollbarHighlightColorCSSProperty] style.scrollbarHighlightColor reflects <div style='scrollbar-highlight-color: transparent'>"
+Expected <transparent> (String) but was <#ffffff> (String)
+
+Stack trace follows:
+> anonymous
+
+
+337. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-shadow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarShadowColorCSSProperty] style.scrollbarShadowColor reflects <div style='scrollbar-shadow-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+338. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-shadow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarShadowColorCSSProperty] style.scrollbarShadowColor reflects <div style='scrollbar-shadow-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+339. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-shadow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarShadowColorCSSProperty] style.scrollbarShadowColor reflects <div style='scrollbar-shadow-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+340. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-shadow-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+
+
+"[ScrollbarShadowColorCSSProperty] style.scrollbarShadowColor reflects <div style='scrollbar-shadow-color: transparent'>"
+Expected <transparent> (String) but was <#aca899> (String)
+
+Stack trace follows:
+> anonymous
+
+
+341. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-track-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarTrackColorCSSProperty] style.scrollbarTrackColor reflects <div style='scrollbar-track-color: #808080'>"
+Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+
+Stack trace follows:
+> anonymous
+
+
+342. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-track-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarTrackColorCSSProperty] style.scrollbarTrackColor reflects <div style='scrollbar-track-color: black'>"
+Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+
+Stack trace follows:
+> anonymous
+
+
+343. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/scrollbar-track-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+
+
+"[ScrollbarTrackColorCSSProperty] style.scrollbarTrackColor reflects <div style='scrollbar-track-color: rgb(0, 0, 0)'>"
+Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+
+Stack trace follows:
+> anonymous
+
+
+344. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/vertical-align-0-equals-0pt-reflection-test.html:testReflection failed
+
+
+"[VerticalAlignCSSProperty] style.verticalAlign reflects <div style='vertical-align: 0'>"
+Expected <0pt> (String) but was <0px> (String)
+
+Stack trace follows:
+> anonymous
+
+
+345. file:///C:/cygwin/home/Mark/doctype/trunk/tests/css/properties/widows-bogus-equals--reflection-test.html:testReflection failed
+
+
+"[WidowsCSSProperty] style.widows reflects <div style='widows: bogus'>"
+Expected <> (String) but was <bogus> (String)
+
+Stack trace follows:
+> anonymous
+

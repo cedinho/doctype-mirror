@@ -1,29 +1,32 @@
 import glob, re, sys, os
 
 # these will change regularly
-#TEST_FILES   = 'css/*/*-test.html'
-#ERROR_FILES  = [r'~/doctype/trunk/tests/css/css-ie8.txt',
-#                r'~/doctype/trunk/tests/css/css-ie7.txt',
-#                r'~/doctype/trunk/tests/css/css-ie6.txt',
-#                r'~/doctype/trunk/tests/css/css-ff3.txt',
-#                r'~/doctype/trunk/tests/css/css-ff2.txt',
-#                r'~/doctype/trunk/tests/css/css-saf3.txt']
+if 0:
+    TEST_FILES   = 'css/*/*-test.html'
+    ERROR_FILES  = [r'~/doctype/trunk/tests/css/css-ie8.txt',
+                    r'~/doctype/trunk/tests/css/css-ie7.txt',
+                    r'~/doctype/trunk/tests/css/css-ie6.txt',
+                    r'~/doctype/trunk/tests/css/css-ff3.txt',
+                    r'~/doctype/trunk/tests/css/css-ff2.txt',
+                    r'~/doctype/trunk/tests/css/css-saf3.txt']
 
-#TEST_FILES   = 'html/*/*-test.html'
-#ERROR_FILES  = [r'~/doctype/trunk/tests/html/html-ie8.txt',
-#                r'~/doctype/trunk/tests/html/html-ie7.txt',
-#                r'~/doctype/trunk/tests/html/html-ie6.txt',
-#                r'~/doctype/trunk/tests/html/html-ff3.txt',
-#                r'~/doctype/trunk/tests/html/html-ff2.txt',
-#                r'~/doctype/trunk/tests/html/html-saf3.txt']
+if 1:
+    TEST_FILES   = 'html/*/*-test.html'
+    ERROR_FILES  = [r'~/doctype/trunk/tests/html/html-ie8.txt',
+                    r'~/doctype/trunk/tests/html/html-ie7.txt',
+                    r'~/doctype/trunk/tests/html/html-ie6.txt',
+                    r'~/doctype/trunk/tests/html/html-ff3.txt',
+                    r'~/doctype/trunk/tests/html/html-ff2.txt',
+                    r'~/doctype/trunk/tests/html/html-saf3.txt']
 
-TEST_FILES   = 'js/*/*-test.html'
-ERROR_FILES  = [r'~/doctype/trunk/tests/js/js-ie8.txt',
-                r'~/doctype/trunk/tests/js/js-ie7.txt',
-                r'~/doctype/trunk/tests/js/js-ie6.txt',
-                r'~/doctype/trunk/tests/js/js-ff3.txt',
-                r'~/doctype/trunk/tests/js/js-ff2.txt',
-                r'~/doctype/trunk/tests/js/js-saf3.txt']
+if 0:
+    TEST_FILES   = 'js/*/*-test.html'
+    ERROR_FILES  = [r'~/doctype/trunk/tests/js/js-ie8.txt',
+                    r'~/doctype/trunk/tests/js/js-ie7.txt',
+                    r'~/doctype/trunk/tests/js/js-ie6.txt',
+                    r'~/doctype/trunk/tests/js/js-ff3.txt',
+                    r'~/doctype/trunk/tests/js/js-ff2.txt',
+                    r'~/doctype/trunk/tests/js/js-saf3.txt']
 
 ERROR_FILES = map(os.path.expanduser, ERROR_FILES)
 
