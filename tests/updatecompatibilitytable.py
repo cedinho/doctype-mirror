@@ -1,20 +1,31 @@
 import glob, re, sys, os
 
 # these will change regularly
-TEST_FILES   = 'css/*/*-test.html'
-ERROR_FILES  = [r'c:\work\doctype\trunk\tests\css\css-ie8.txt',
-                r'c:\work\doctype\trunk\tests\css\css-ie7.txt',
-                r'c:\work\doctype\trunk\tests\css\css-ie6.txt',
-                r'c:\work\doctype\trunk\tests\css\css-ff3.txt',
-                r'c:\work\doctype\trunk\tests\css\css-ff2.txt',
-                r'c:\work\doctype\trunk\tests\css\css-saf3.txt']
-#TEST_FILES   = 'html/attributes/*-reflection-test.html'
-#ERROR_FILES  = [r'c:\work\doctype\trunk\tests\html\attributes\attr-reflection-ie8.txt',
-#                r'c:\work\doctype\trunk\tests\html\attributes\attr-reflection-ie7.txt',
-#                r'c:\work\doctype\trunk\tests\html\attributes\attr-reflection-ie6.txt',
-#                r'c:\work\doctype\trunk\tests\html\attributes\attr-reflection-ff3.txt',
-#                r'c:\work\doctype\trunk\tests\html\attributes\attr-reflection-ff2.txt',
-#                r'c:\work\doctype\trunk\tests\html\attributes\attr-reflection-saf3.txt']
+#TEST_FILES   = 'css/*/*-test.html'
+#ERROR_FILES  = [r'~/doctype/trunk/tests/css/css-ie8.txt',
+#                r'~/doctype/trunk/tests/css/css-ie7.txt',
+#                r'~/doctype/trunk/tests/css/css-ie6.txt',
+#                r'~/doctype/trunk/tests/css/css-ff3.txt',
+#                r'~/doctype/trunk/tests/css/css-ff2.txt',
+#                r'~/doctype/trunk/tests/css/css-saf3.txt']
+
+#TEST_FILES   = 'html/*/*-test.html'
+#ERROR_FILES  = [r'~/doctype/trunk/tests/html/html-ie8.txt',
+#                r'~/doctype/trunk/tests/html/html-ie7.txt',
+#                r'~/doctype/trunk/tests/html/html-ie6.txt',
+#                r'~/doctype/trunk/tests/html/html-ff3.txt',
+#                r'~/doctype/trunk/tests/html/html-ff2.txt',
+#                r'~/doctype/trunk/tests/html/html-saf3.txt']
+
+TEST_FILES   = 'js/*/*-test.html'
+ERROR_FILES  = [r'~/doctype/trunk/tests/js/js-ie8.txt',
+                r'~/doctype/trunk/tests/js/js-ie7.txt',
+                r'~/doctype/trunk/tests/js/js-ie6.txt',
+                r'~/doctype/trunk/tests/js/js-ff3.txt',
+                r'~/doctype/trunk/tests/js/js-ff2.txt',
+                r'~/doctype/trunk/tests/js/js-saf3.txt']
+
+ERROR_FILES = map(os.path.expanduser, ERROR_FILES)
 
 # these will change rarely
 TABLE_START    = '|| *Test*'
@@ -126,7 +137,9 @@ def loadErrors(testFilesGlob, errorFile):
 columnIndex = -1
 for errorFile in ERROR_FILES:
     columnIndex += 1
-    if (not errorFile) or (not os.path.exists(errorFile)): continue
+    if (not errorFile) or (not os.path.exists(errorFile)):
+        print '*** could not find', errorFile
+        continue
     errors = loadErrors(TEST_FILES, errorFile)
     #print "\n".join(errors)
     testFiles = glob.glob(TEST_FILES)

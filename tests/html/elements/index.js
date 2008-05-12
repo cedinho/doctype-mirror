@@ -55,7 +55,12 @@ function htmlelementappliesstylesuite() {
   testSuite.addTestPage("../tests/html/elements/form-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/frame-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/frameset-element-applies-style-test.html");
-  testSuite.addTestPage("../tests/html/elements/h1-h6-element-applies-style-test.html");
+  testSuite.addTestPage("../tests/html/elements/h1-element-applies-style-test.html");
+  testSuite.addTestPage("../tests/html/elements/h2-element-applies-style-test.html");
+  testSuite.addTestPage("../tests/html/elements/h3-element-applies-style-test.html");
+  testSuite.addTestPage("../tests/html/elements/h4-element-applies-style-test.html");
+  testSuite.addTestPage("../tests/html/elements/h5-element-applies-style-test.html");
+  testSuite.addTestPage("../tests/html/elements/h6-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/head-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/header-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/hr-element-applies-style-test.html");
@@ -106,7 +111,7 @@ function htmlelementappliesstylesuite() {
   testSuite.addTestPage("../tests/html/elements/option-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/p-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/param-element-applies-style-test.html");
-  testSuite.addTestPage("../tests/html/elements/plaintext-element-applies-style-test.html");
+//  testSuite.addTestPage("../tests/html/elements/plaintext-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/pre-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/progress-element-applies-style-test.html");
   testSuite.addTestPage("../tests/html/elements/q-element-applies-style-test.html");
@@ -199,7 +204,12 @@ function htmlelementappearsindomsuite() {
   testSuite.addTestPage("../tests/html/elements/form-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/frame-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/frameset-element-appears-in-dom-test.html");
-  testSuite.addTestPage("../tests/html/elements/h1-h6-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/h1-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/h2-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/h3-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/h4-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/h5-element-appears-in-dom-test.html");
+  testSuite.addTestPage("../tests/html/elements/h6-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/head-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/header-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/hr-element-appears-in-dom-test.html");
@@ -254,7 +264,7 @@ function htmlelementappearsindomsuite() {
   testSuite.addTestPage("../tests/html/elements/p-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/param-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/param-element-as-child-of-object-appears-in-dom-test.html");
-  testSuite.addTestPage("../tests/html/elements/plaintext-element-appears-in-dom-test.html");
+//  testSuite.addTestPage("../tests/html/elements/plaintext-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/pre-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/progress-element-appears-in-dom-test.html");
   testSuite.addTestPage("../tests/html/elements/q-element-appears-in-dom-test.html");

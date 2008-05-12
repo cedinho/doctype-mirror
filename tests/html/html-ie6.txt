@@ -1,0 +1,2747 @@
+Tests with problems (276 total) - JsUnit
+
+Running on Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)
+
+1. attributes/a-suppress-reflection-test.html:testReflection failed
+
+
+"[ASuppressAttribute] a.suppress reflects <a suppress="true">"
+Expected <true> (Boolean) but was <true> (String)
+
+Stack trace follows:
+> anonymous
+
+
+2. attributes/applet-mayscript-reflection-test.html:testReflection failed
+
+
+"[AppletMayscriptAttribute] applet.mayScript reflects <applet mayscript="foo">"
+Expected <foo> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+3. attributes/applet-object-reflection-test.html:testReflection failed
+
+
+"[AppletObjectAttribute] applet.object reflects <applet object="foo">"
+Expected <foo> (String) but was <null>
+
+Stack trace follows:
+> anonymous
+
+
+4. attributes/area-nohref-reflection-test.html:testReflection failed
+
+
+"[AreaNohrefAttribute] area.noHref reflects <area nohref>"
+Expected <true> (Boolean) but was <false> (Boolean)
+
+Stack trace follows:
+> anonymous
+
+
+5. attributes/area-suppress-reflection-test.html:testReflection failed
+
+
+"[AreaSuppressAttribute] area.suppress reflects <area suppress="true">"
+Expected <true> (Boolean) but was <true> (String)
+
+Stack trace follows:
+> anonymous
+
+
+6. attributes/audio-autoplay-absent-reflection-test.html:testReflection failed
+
+
+"[AudioAutoplayAttribute] audio.autoplay reflects <audio>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+7. attributes/audio-autoplay-reflection-test.html:testReflection failed
+
+
+"[AudioAutoplayAttribute] audio.autoplay reflects <audio autoplay>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+8. attributes/audio-controls-absent-reflection-test.html:testReflection failed
+
+
+"[AudioControlsAttribute] audio.controls reflects <audio>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+9. attributes/audio-controls-reflection-test.html:testReflection failed
+
+
+"[AudioControlsAttribute] audio.controls reflects <audio controls>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+10. attributes/audio-loopcount-reflection-test.html:testReflection failed
+
+
+"[AudioLoopcountAttribute] audio.loopCount reflects <audio loopcount="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+11. attributes/audio-loopend-reflection-test.html:testReflection failed
+
+
+"[AudioLoopendAttribute] audio.loopEnd reflects <audio loopend="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+12. attributes/audio-loopstart-reflection-test.html:testReflection failed
+
+
+"[AudioLoopstartAttribute] audio.loopStart reflects <audio loopstart="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+13. attributes/body-align-center-reflection-test.html:testReflection failed
+
+
+"[BodyAlignAttribute] body.align reflects <body align="center">"
+Expected <center> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+14. attributes/body-align-justify-reflection-test.html:testReflection failed
+
+
+"[BodyAlignAttribute] body.align reflects <body align="justify">"
+Expected <justify> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+15. attributes/body-align-left-reflection-test.html:testReflection failed
+
+
+"[BodyAlignAttribute] body.align reflects <body align="left">"
+Expected <left> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+16. attributes/body-align-right-reflection-test.html:testReflection failed
+
+
+"[BodyAlignAttribute] body.align reflects <body align="right">"
+Expected <right> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+17. attributes/body-marginheight-reflection-test.html:testReflection failed
+
+
+"[BodyMarginheightAttribute] body.marginHeight reflects <body marginheight="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+18. attributes/body-marginwidth-reflection-test.html:testReflection failed
+
+
+"[BodyMarginwidthAttribute] body.marginWidth reflects <body marginwidth="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+19. attributes/canvas-height-reflection-test.html:testReflection failed
+
+
+"[CanvasHeightAttribute] canvas.height reflects <canvas height="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+20. attributes/canvas-width-reflection-test.html:testReflection failed
+
+
+"[CanvasWidthAttribute] canvas.width reflects <canvas width="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+21. attributes/caption-valign-reflection-test.html:testReflection failed
+
+
+"[CaptionValignAttribute] caption.vAlign reflects <caption valign="foo">"
+Expected <foo> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+22. attributes/col-bgcolor-reflection-test.html:testReflection failed
+
+
+"[ColBgcolorAttribute] col.bgColor reflects <col bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+23. attributes/col-valign-baseline-reflection-test.html:testReflection failed
+
+
+"[ColValignAttribute] col.vAlign reflects <col valign="baseline">"
+Expected <baseline> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+24. attributes/col-valign-bottom-reflection-test.html:testReflection failed
+
+
+"[ColValignAttribute] col.vAlign reflects <col valign="bottom">"
+Expected <bottom> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+25. attributes/col-valign-middle-reflection-test.html:testReflection failed
+
+
+"[ColValignAttribute] col.vAlign reflects <col valign="middle">"
+Expected <middle> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+26. attributes/col-valign-top-reflection-test.html:testReflection failed
+
+
+"[ColValignAttribute] col.vAlign reflects <col valign="top">"
+Expected <top> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+27. attributes/colgroup-bgcolor-reflection-test.html:testReflection failed
+
+
+"[ColgroupBgcolorAttribute] colgroup.bgColor reflects <colgroup bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+28. attributes/colgroup-valign-baseline-reflection-test.html:testReflection failed
+
+
+"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="baseline">"
+Expected <baseline> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+29. attributes/colgroup-valign-bottom-reflection-test.html:testReflection failed
+
+
+"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="bottom">"
+Expected <bottom> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+30. attributes/colgroup-valign-middle-reflection-test.html:testReflection failed
+
+
+"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="middle">"
+Expected <middle> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+31. attributes/colgroup-valign-top-reflection-test.html:testReflection failed
+
+
+"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="top">"
+Expected <top> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+32. attributes/command-checked-absent-reflection-test.html:testReflection failed
+
+
+"[CommandCheckedAttribute] command.checked reflects <command>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+33. attributes/command-checked-reflection-test.html:testReflection failed
+
+
+"[CommandCheckedAttribute] command.checked reflects <command checked>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+34. attributes/command-default-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+35. attributes/command-default-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+36. attributes/command-hidden-absent-reflection-test.html:testReflection failed
+
+
+"[CommandHiddenAttribute] command.hidden reflects <command>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+37. attributes/command-hidden-reflection-test.html:testReflection failed
+
+
+"[CommandHiddenAttribute] command.hidden reflects <command hidden>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+38. attributes/datagrid-multiple-absent-reflection-test.html:testReflection failed
+
+
+"[DatagridMultipleAttribute] datagrid.multiple reflects <datagrid>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+39. attributes/datagrid-multiple-reflection-test.html:testReflection failed
+
+
+"[DatagridMultipleAttribute] datagrid.multiple reflects <datagrid multiple>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+40. attributes/details-open-absent-reflection-test.html:testReflection failed
+
+
+"[DetailsOpenAttribute] details.open reflects <details>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+41. attributes/details-open-reflection-test.html:testReflection failed
+
+
+"[DetailsOpenAttribute] details.open reflects <details open>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+42. attributes/div-draggable-absent-reflection-test.html:testReflection failed
+
+
+"[DraggableAttribute] div.draggable reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+43. attributes/div-draggable-reflection-test.html:testReflection failed
+
+
+"[DraggableAttribute] div.draggable reflects <div draggable>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+44. attributes/div-irrelevant-absent-reflection-test.html:testReflection failed
+
+
+"[IrrelevantAttribute] div.irrelevant reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+45. attributes/div-irrelevant-reflection-test.html:testReflection failed
+
+
+"[IrrelevantAttribute] div.irrelevant reflects <div irrelevant>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+46. attributes/div-unselectable-absent-reflection-test.html:testReflection failed
+
+
+"[UnselectableAttribute] div.unselectable reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+47. attributes/div-unselectable-reflection-test.html:testReflection failed
+
+
+"[UnselectableAttribute] div.unselectable reflects <div unselectable>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+48. attributes/embed-align-absbottom-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="absbottom">"
+Expected <absBottom> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+49. attributes/embed-align-absmiddle-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="absmiddle">"
+Expected <absMiddle> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+50. attributes/embed-align-baseline-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="baseline">"
+Expected <baseline> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+51. attributes/embed-align-bottom-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="bottom">"
+Expected <bottom> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+52. attributes/embed-align-left-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="left">"
+Expected <left> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+53. attributes/embed-align-middle-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="middle">"
+Expected <middle> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+54. attributes/embed-align-right-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="right">"
+Expected <right> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+55. attributes/embed-align-texttop-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="texttop">"
+Expected <textTop> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+56. attributes/embed-align-top-reflection-test.html:testReflection failed
+
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="top">"
+Expected <top> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+57. attributes/embed-type-reflection-test.html:testReflection failed
+
+
+"[EmbedTypeAttribute] embed.type reflects <embed type="text/html">"
+Expected <text/html> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+58. attributes/font-font-weight-reflection-test.html:testReflection failed
+
+
+"[FontFontWeightAttribute] font.fontWeight reflects <font font-weight="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+59. attributes/font-point-size-reflection-test.html:testReflection failed
+
+
+"[FontPointSizeAttribute] font.pointSize reflects <font point-size="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+60. attributes/frame-allowtransparency-absent-reflection-test.html:testReflection failed
+
+
+"[FrameAllowtransparencyAttribute] frame.allowTransparency reflects <frame>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+61. attributes/frame-allowtransparency-reflection-test.html:testReflection failed
+
+
+"[FrameAllowtransparencyAttribute] frame.allowTransparency reflects <frame allowtransparency>"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+62. attributes/frame-bordercolor-reflection-test.html:testReflection failed
+
+
+"[FrameBordercolorAttribute] frame.borderColor reflects <frame bordercolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+63. attributes/frame-frameborder-reflection-test.html:testReflection failed
+
+
+"[FrameFrameborderAttribute] frame.frameBorder reflects <frame frameborder="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+64. attributes/frame-longdesc-reflection-test.html:testReflection failed
+
+
+"[FrameLongdescAttribute] frame.longDesc reflects <frame longdesc="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+65. attributes/frame-marginheight-reflection-test.html:testReflection failed
+
+
+"[FrameMarginheightAttribute] frame.marginHeight reflects <frame marginheight="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+66. attributes/frame-marginwidth-reflection-test.html:testReflection failed
+
+
+"[FrameMarginwidthAttribute] frame.marginWidth reflects <frame marginwidth="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+67. attributes/frame-noresize-absent-reflection-test.html:testReflection failed
+
+
+"[FrameNoresizeAttribute] frame.noResize reflects <frame>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+68. attributes/frame-noresize-reflection-test.html:testReflection failed
+
+
+"[FrameNoresizeAttribute] frame.noResize reflects <frame noresize>"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+69. attributes/frameset-bordercolor-reflection-test.html:testReflection failed
+
+
+"[FramesetBordercolorAttribute] frameset.borderColor reflects <frameset bordercolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+70. attributes/frameset-frameborder-reflection-test.html:testReflection failed
+
+
+"[FramesetFrameborderAttribute] frameset.frameBorder reflects <frameset frameborder="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+71. attributes/frameset-framespacing-reflection-test.html:testReflection failed
+
+
+"[FramesetFramespacingAttribute] frameset.frameSpacing reflects <frameset framespacing="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+72. attributes/hr-size-reflection-test.html:testReflection failed
+
+
+"[HrSizeAttribute] hr.size reflects <hr size="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+73. attributes/iframe-align-justify-reflection-test.html:testReflection failed
+
+
+"[IframeAlignAttribute] iframe.align reflects <iframe align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+74. attributes/iframe-frameborder-reflection-test.html:testReflection failed
+
+
+"[IframeFrameborderAttribute] iframe.frameBorder reflects <iframe frameborder="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+75. attributes/iframe-marginheight-reflection-test.html:testReflection failed
+
+
+"[IframeMarginheightAttribute] iframe.marginHeight reflects <iframe marginheight="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+76. attributes/iframe-marginwidth-reflection-test.html:testReflection failed
+
+
+"[IframeMarginwidthAttribute] iframe.marginWidth reflects <iframe marginwidth="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+77. attributes/ilayer-bgcolor-reflection-test.html:testReflection failed
+
+
+"[IlayerBgcolorAttribute] ilayer.bgColor reflects <ilayer bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+78. attributes/ilayer-left-reflection-test.html:testReflection failed
+
+
+"[IlayerLeftAttribute] ilayer.left reflects <ilayer left="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+79. attributes/ilayer-pagex-reflection-test.html:testReflection failed
+
+
+"[IlayerPagexAttribute] ilayer.pagex reflects <ilayer pagex="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+80. attributes/ilayer-pagey-reflection-test.html:testReflection failed
+
+
+"[IlayerPageyAttribute] ilayer.pagey reflects <ilayer pagey="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+81. attributes/ilayer-top-reflection-test.html:testReflection failed
+
+
+"[IlayerTopAttribute] ilayer.top reflects <ilayer top="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+82. attributes/ilayer-z-index-reflection-test.html:testReflection failed
+
+
+"[IlayerZIndexAttribute] ilayer.zIndex reflects <ilayer z-index="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+83. attributes/img-galleryimg-no-reflection-test.html:testReflection failed
+
+
+"[ImgGalleryimgAttribute] img.galleryImg reflects <img galleryimg="no">"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+84. attributes/img-galleryimg-yes-reflection-test.html:testReflection failed
+
+
+"[ImgGalleryimgAttribute] img.galleryImg reflects <img galleryimg="yes">"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+85. attributes/img-suppress-reflection-test.html:testReflection failed
+
+
+"[ImgSuppressAttribute] img.suppress reflects <img suppress="true">"
+Expected <true> (Boolean) but was <true> (String)
+
+Stack trace follows:
+> anonymous
+
+
+86. attributes/input-align-absbottom-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="absbottom">"
+Expected <absBottom> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+87. attributes/input-align-absmiddle-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="absmiddle">"
+Expected <absMiddle> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+88. attributes/input-align-baseline-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="baseline">"
+Expected <baseline> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+89. attributes/input-align-bottom-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="bottom">"
+Expected <bottom> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+90. attributes/input-align-left-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="left">"
+Expected <left> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+91. attributes/input-align-middle-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="middle">"
+Expected <middle> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+92. attributes/input-align-right-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="right">"
+Expected <right> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+93. attributes/input-align-texttop-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="texttop">"
+Expected <textTop> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+94. attributes/input-align-top-reflection-test.html:testReflection failed
+
+
+"[InputAlignAttribute] input.align reflects <input align="top">"
+Expected <top> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+95. attributes/input-checked-reflection-test.html:testReflection failed
+
+
+"[InputCheckedAttribute] input.checked reflects <input checked>"
+Expected <true> (Boolean) but was <false> (Boolean)
+
+Stack trace follows:
+> anonymous
+
+
+96. attributes/input-height-reflection-test.html:testReflection failed
+
+
+"[InputHeightAttribute] input.height reflects <input height="7">"
+Expected <7> (String) but was <138319320> (Number)
+
+Stack trace follows:
+> anonymous
+
+
+97. attributes/input-hspace-reflection-test.html:testReflection failed
+
+
+"[InputHspaceAttribute] input.hspace reflects <input hspace="42">"
+Expected <42> (Number) but was <0> (Number)
+
+Stack trace follows:
+> anonymous
+
+
+98. attributes/input-ismap-absent-reflection-test.html:testReflection failed
+
+
+"[InputIsmapAttribute] input.isMap reflects <input>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+99. attributes/input-ismap-reflection-test.html:testReflection failed
+
+
+"[InputIsmapAttribute] input.isMap reflects <input ismap>"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+100. attributes/input-maxlength-reflection-test.html:testReflection failed
+
+
+"[InputMaxlengthAttribute] input.maxLength reflects <input maxlength="foo">"
+Expected <foo> (String) but was <2147483647> (Number)
+
+Stack trace follows:
+> anonymous
+
+
+101. attributes/input-width-reflection-test.html:testReflection failed
+
+
+"[InputWidthAttribute] input.width reflects <input width="7">"
+Expected <7> (String) but was <0> (Number)
+
+Stack trace follows:
+> anonymous
+
+
+102. attributes/isindex-action-reflection-test.html:testReflection failed
+
+
+"[IsindexActionAttribute] isindex.action reflects <isindex action="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+103. attributes/isindex-align-center-reflection-test.html:testReflection failed
+
+
+"[IsindexAlignAttribute] isindex.align reflects <isindex align="center">"
+Expected <center> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+104. attributes/isindex-align-justify-reflection-test.html:testReflection failed
+
+
+"[IsindexAlignAttribute] isindex.align reflects <isindex align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+105. attributes/isindex-align-left-reflection-test.html:testReflection failed
+
+
+"[IsindexAlignAttribute] isindex.align reflects <isindex align="left">"
+Expected <left> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+106. attributes/isindex-align-right-reflection-test.html:testReflection failed
+
+
+"[IsindexAlignAttribute] isindex.align reflects <isindex align="right">"
+Expected <right> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+107. attributes/isindex-height-reflection-test.html:testReflection failed
+
+
+"[IsindexHeightAttribute] isindex.height reflects <isindex height="7">"
+Expected <7> (String) but was <54190280> (Number)
+
+Stack trace follows:
+> anonymous
+
+
+108. attributes/isindex-method-reflection-test.html:testReflection failed
+
+
+"[IsindexMethodAttribute] isindex.method reflects <isindex method="GET">"
+Expected <get> (String) but was <GET> (String)
+
+Stack trace follows:
+> anonymous
+
+
+109. attributes/isindex-prompt-reflection-test.html:testReflection failed
+
+
+"[IsindexPromptAttribute] isindex.prompt reflects <isindex prompt="foo">"
+Expected <foo> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+110. attributes/isindex-width-reflection-test.html:testReflection failed
+
+
+"[IsindexWidthAttribute] isindex.width reflects <isindex width="7">"
+Expected <7> (String) but was <0> (Number)
+
+Stack trace follows:
+> anonymous
+
+
+111. attributes/layer-bgcolor-reflection-test.html:testReflection failed
+
+
+"[LayerBgcolorAttribute] layer.bgColor reflects <layer bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+112. attributes/layer-left-reflection-test.html:testReflection failed
+
+
+"[LayerLeftAttribute] layer.left reflects <layer left="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+113. attributes/layer-pagex-reflection-test.html:testReflection failed
+
+
+"[LayerPagexAttribute] layer.pagex reflects <layer pagex="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+114. attributes/layer-pagey-reflection-test.html:testReflection failed
+
+
+"[LayerPageyAttribute] layer.pagey reflects <layer pagey="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+115. attributes/layer-top-reflection-test.html:testReflection failed
+
+
+"[LayerTopAttribute] layer.top reflects <layer top="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+116. attributes/layer-z-index-reflection-test.html:testReflection failed
+
+
+"[LayerZIndexAttribute] layer.zIndex reflects <layer z-index="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+117. attributes/link-methods-reflection-test.html:testReflection failed
+
+
+"[LinkMethodsAttribute] link.Methods reflects <link methods="GET">"
+Expected <GET> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+118. attributes/menu-autosubmit-absent-reflection-test.html:testReflection failed
+
+
+"[MenuAutosubmitAttribute] menu.autosubmit reflects <menu>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+119. attributes/menu-autosubmit-reflection-test.html:testReflection failed
+
+
+"[MenuAutosubmitAttribute] menu.autosubmit reflects <menu autosubmit>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+120. attributes/menu-start-reflection-test.html:testReflection failed
+
+
+"[MenuStartAttribute] menu.start reflects <menu start="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+121. attributes/meter-high-reflection-test.html:testReflection failed
+
+
+"[MeterHighAttribute] meter.high reflects <meter high="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+122. attributes/meter-low-reflection-test.html:testReflection failed
+
+
+"[MeterLowAttribute] meter.low reflects <meter low="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+123. attributes/meter-max-reflection-test.html:testReflection failed
+
+
+"[MeterMaxAttribute] meter.max reflects <meter max="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+124. attributes/meter-min-reflection-test.html:testReflection failed
+
+
+"[MeterMinAttribute] meter.min reflects <meter min="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+125. attributes/meter-optimum-reflection-test.html:testReflection failed
+
+
+"[MeterOptimumAttribute] meter.optimum reflects <meter optimum="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+126. attributes/meter-value-reflection-test.html:testReflection failed
+
+
+"[MeterValueAttribute] meter.value reflects <meter value="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+127. attributes/multicol-cols-reflection-test.html:testReflection failed
+
+
+"[MulticolColsAttribute] multicol.cols reflects <multicol cols="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+128. attributes/object-codebase-reflection-test.html:testReflection failed
+
+
+"[ObjectCodebaseAttribute] object.codebase reflects <object codebase="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+129. attributes/object-codetype-reflection-test.html:testReflection failed
+
+
+"[ObjectCodetypeAttribute] object.codetype reflects <object codetype="text/html">"
+Expected <text/html> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+130. attributes/object-declare-reflection-test.html:testReflection failed
+
+
+"[ObjectDeclareAttribute] object.declare reflects <object declare="foo">"
+Expected <foo> (String) but was <true> (Boolean)
+
+Stack trace follows:
+> anonymous
+
+
+131. attributes/ol-value-reflection-test.html:testReflection failed
+
+
+"[OlValueAttribute] ol.value reflects <ol value="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+132. attributes/option-selected-absent-reflection-test.html:testReflection failed
+
+
+"[OptionSelectedAttribute] option.selected reflects <select><option>"
+Expected <false> (Boolean) but was <true> (Boolean)
+
+Stack trace follows:
+> anonymous
+
+
+133. attributes/p-width-reflection-test.html:testReflection failed
+
+
+"[PWidthAttribute] p.width reflects <p width="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+134. attributes/param-valuetype-reflection-test.html:testReflection failed
+
+
+"[ParamValuetypeAttribute] param.valueType reflects <param valuetype="foo">"
+Expected <foo> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+135. attributes/pre-variable-absent-reflection-test.html:testReflection failed
+
+
+"[PreVariableAttribute] pre.variable reflects <pre>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+136. attributes/pre-variable-reflection-test.html:testReflection failed
+
+
+"[PreVariableAttribute] pre.variable reflects <pre variable>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+137. attributes/progress-max-reflection-test.html:testReflection failed
+
+
+"[ProgressMaxAttribute] progress.max reflects <progress max="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+138. attributes/progress-value-reflection-test.html:testReflection failed
+
+
+"[ProgressValueAttribute] progress.value reflects <progress value="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+139. attributes/script-async-absent-reflection-test.html:testReflection failed
+
+
+"[ScriptAsyncAttribute] script.async reflects <script>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+140. attributes/script-async-reflection-test.html:testReflection failed
+
+
+"[ScriptAsyncAttribute] script.async reflects <script async>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+141. attributes/select-align-absbottom-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="absbottom">"
+Expected <absBottom> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+142. attributes/select-align-absmiddle-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="absmiddle">"
+Expected <absMiddle> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+143. attributes/select-align-baseline-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="baseline">"
+Expected <baseline> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+144. attributes/select-align-bottom-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="bottom">"
+Expected <bottom> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+145. attributes/select-align-left-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="left">"
+Expected <left> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+146. attributes/select-align-middle-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="middle">"
+Expected <middle> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+147. attributes/select-align-right-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="right">"
+Expected <right> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+148. attributes/select-align-texttop-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="texttop">"
+Expected <textTop> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+149. attributes/select-align-top-reflection-test.html:testReflection failed
+
+
+"[SelectAlignAttribute] select.align reflects <select align="top">"
+Expected <top> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+150. attributes/select-value-reflection-test.html:testReflection failed
+
+
+"[SelectValueAttribute] select.value reflects <select value="foo">"
+Expected <foo> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+151. attributes/sound-delay-reflection-test.html:testReflection failed
+
+
+"[SoundDelayAttribute] sound.delay reflects <sound delay="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+152. attributes/sound-loop-reflection-test.html:testReflection failed
+
+
+"[SoundLoopAttribute] sound.loop reflects <sound loop="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+153. attributes/spacer-size-reflection-test.html:testReflection failed
+
+
+"[SpacerSizeAttribute] spacer.size reflects <spacer size="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+154. attributes/style-scoped-absent-reflection-test.html:testReflection failed
+
+
+"[StyleScopedAttribute] style.scoped reflects <style>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+155. attributes/style-scoped-reflection-test.html:testReflection failed
+
+
+"[StyleScopedAttribute] style.scoped reflects <style scoped>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+156. attributes/table-align-justify-reflection-test.html:testReflection failed
+
+
+"[TableAlignAttribute] table.align reflects <table align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+157. attributes/table-bottompadding-reflection-test.html:testReflection failed
+
+
+"[TableBottompaddingAttribute] table.bottomPadding reflects <table bottompadding="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+158. attributes/table-hspace-reflection-test.html:testReflection failed
+
+
+"[TableHspaceAttribute] table.hspace reflects <table hspace="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+159. attributes/table-leftpadding-reflection-test.html:testReflection failed
+
+
+"[TableLeftpaddingAttribute] table.leftPadding reflects <table leftpadding="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+160. attributes/table-rightpadding-reflection-test.html:testReflection failed
+
+
+"[TableRightpaddingAttribute] table.rightPadding reflects <table rightpadding="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+161. attributes/table-toppadding-reflection-test.html:testReflection failed
+
+
+"[TableToppaddingAttribute] table.topPadding reflects <table toppadding="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+162. attributes/table-vspace-reflection-test.html:testReflection failed
+
+
+"[TableVspaceAttribute] table.vspace reflects <table vspace="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+163. attributes/tbody-align-justify-reflection-test.html:testReflection failed
+
+
+"[TbodyAlignAttribute] tbody.align reflects <tbody align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+164. attributes/tbody-choff-reflection-test.html:testReflection failed
+
+
+"[TbodyChoffAttribute] tbody.choff reflects <tbody choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+165. attributes/td-align-justify-reflection-test.html:testReflection failed
+
+
+"[TdAlignAttribute] td.align reflects <td align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+166. attributes/td-choff-reflection-test.html:testReflection failed
+
+
+"[TdChoffAttribute] td.choff reflects <td choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+167. attributes/td-rowspan-reflection-test.html:testReflection failed
+
+
+"[TdRowspanAttribute] td.rowSpan reflects <td rowspan="42">"
+Expected <42> (Number) but was <1> (Number)
+
+Stack trace follows:
+> anonymous
+
+
+168. attributes/tfoot-align-justify-reflection-test.html:testReflection failed
+
+
+"[TfootAlignAttribute] tfoot.align reflects <tfoot align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+169. attributes/tfoot-choff-reflection-test.html:testReflection failed
+
+
+"[TfootChoffAttribute] tfoot.choff reflects <tfoot choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+170. attributes/th-align-justify-reflection-test.html:testReflection failed
+
+
+"[ThAlignAttribute] th.align reflects <th align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+171. attributes/th-choff-reflection-test.html:testReflection failed
+
+
+"[ThChoffAttribute] th.choff reflects <th choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+172. attributes/th-rowspan-reflection-test.html:testReflection failed
+
+
+"[ThRowspanAttribute] th.rowSpan reflects <th rowspan="42">"
+Expected <42> (Number) but was <1> (Number)
+
+Stack trace follows:
+> anonymous
+
+
+173. attributes/thead-align-justify-reflection-test.html:testReflection failed
+
+
+"[TheadAlignAttribute] thead.align reflects <thead align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+174. attributes/thead-choff-reflection-test.html:testReflection failed
+
+
+"[TheadChoffAttribute] thead.choff reflects <thead choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+175. attributes/time-datetime-reflection-test.html:testReflection failed
+
+
+"[TimeDatetimeAttribute] time.dateTime reflects <time datetime="2008-01-01T00:00:00Z">"
+Expected <2008-01-01T00:00:00Z> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+176. attributes/tr-align-justify-reflection-test.html:testReflection failed
+
+
+"[TrAlignAttribute] tr.align reflects <tr align="justify">"
+Expected <justify> (String) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+177. attributes/tr-choff-reflection-test.html:testReflection failed
+
+
+"[TrChoffAttribute] tr.choff reflects <tr choff="7">"
+Expected <7> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+178. attributes/tr-nowrap-absent-reflection-test.html:testReflection failed
+
+
+"[TrNowrapAttribute] tr.noWrap reflects <tr>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+179. attributes/tr-nowrap-reflection-test.html:testReflection failed
+
+
+"[TrNowrapAttribute] tr.noWrap reflects <tr nowrap>"
+Expected <true> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+180. attributes/ul-start-reflection-test.html:testReflection failed
+
+
+"[UlStartAttribute] ul.start reflects <ul start="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+181. attributes/ul-value-reflection-test.html:testReflection failed
+
+
+"[UlValueAttribute] ul.value reflects <ul value="42">"
+Expected <42> (Number) but was <42> (String)
+
+Stack trace follows:
+> anonymous
+
+
+182. attributes/video-autoplay-absent-reflection-test.html:testReflection failed
+
+
+"[VideoAutoplayAttribute] video.autoplay reflects <video>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+183. attributes/video-autoplay-reflection-test.html:testReflection failed
+
+
+"[VideoAutoplayAttribute] video.autoplay reflects <video autoplay>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+184. attributes/video-controls-absent-reflection-test.html:testReflection failed
+
+
+"[VideoControlsAttribute] video.controls reflects <video>"
+Expected <false> (Boolean) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+185. attributes/video-controls-reflection-test.html:testReflection failed
+
+
+"[VideoControlsAttribute] video.controls reflects <video controls>"
+Expected <true> (Boolean) but was <> (String)
+
+Stack trace follows:
+> anonymous
+
+
+186. attributes/video-loopcount-reflection-test.html:testReflection failed
+
+
+"[VideoLoopcountAttribute] video.loopCount reflects <video loopcount="42">"
+Expected <42> (Number) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+187. attributes/video-loopend-reflection-test.html:testReflection failed
+
+
+"[VideoLoopendAttribute] video.loopEnd reflects <video loopend="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+188. attributes/video-loopstart-reflection-test.html:testReflection failed
+
+
+"[VideoLoopstartAttribute] video.loopStart reflects <video loopstart="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+
+Stack trace follows:
+> anonymous
+
+
+189. elements/a-element-applies-style-test.html:testDOM failed
+
+
+"[AElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+190. elements/acronym-element-applies-style-test.html:testDOM failed
+
+
+"[AcronymElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+191. elements/address-element-applies-style-test.html:testDOM failed
+
+
+"[AddressElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+192. elements/applet-element-applies-style-test.html:testDOM failed
+
+
+"[AppletElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+193. elements/area-element-applies-style-test.html:testDOM failed
+
+
+"[AreaElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+194. elements/b-element-applies-style-test.html:testDOM failed
+
+
+"[BElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+195. elements/base-element-applies-style-test.html:testDOM failed
+
+
+"[BaseElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+196. elements/basefont-element-applies-style-test.html:testDOM failed
+
+
+"[BasefontElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+197. elements/bdo-element-applies-style-test.html:testDOM failed
+
+
+"[BdoElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+198. elements/bgsound-element-applies-style-test.html:testDOM failed
+
+
+"[BgsoundElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+199. elements/big-element-applies-style-test.html:testDOM failed
+
+
+"[BigElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+200. elements/blink-element-applies-style-test.html:testDOM failed
+
+
+"[BlinkElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+201. elements/blockquote-element-applies-style-test.html:testDOM failed
+
+
+"[BlockquoteElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+202. elements/body-element-applies-style-test.html:testDOM failed
+
+
+"[BodyElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+203. elements/br-element-applies-style-test.html:testDOM failed
+
+
+"[BrElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+204. elements/button-element-applies-style-test.html:testDOM failed
+
+
+"[ButtonElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+205. elements/center-element-applies-style-test.html:testDOM failed
+
+
+"[CenterElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+206. elements/cite-element-applies-style-test.html:testDOM failed
+
+
+"[CiteElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+207. elements/code-element-applies-style-test.html:testDOM failed
+
+
+"[CodeElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+208. elements/comment-element-applies-style-test.html:testDOM failed
+
+
+"[CommentElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+209. elements/dd-element-applies-style-test.html:testDOM failed
+
+
+"[DdElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+210. elements/del-element-applies-style-test.html:testDOM failed
+
+
+"[DelElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+211. elements/dfn-element-applies-style-test.html:testDOM failed
+
+
+"[DfnElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+212. elements/dir-element-applies-style-test.html:testDOM failed
+
+
+"[DirElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+213. elements/div-element-applies-style-test.html:testDOM failed
+
+
+"[DivElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+214. elements/dl-element-applies-style-test.html:testDOM failed
+
+
+"[DlElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+215. elements/dt-element-applies-style-test.html:testDOM failed
+
+
+"[DtElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+216. elements/em-element-applies-style-test.html:testDOM failed
+
+
+"[EmElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+217. elements/embed-element-applies-style-test.html:testDOM failed
+
+
+"[EmbedElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+218. elements/fieldset-element-applies-style-test.html:testDOM failed
+
+
+"[FieldsetElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+219. elements/font-element-applies-style-test.html:testDOM failed
+
+
+"[FontElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+220. elements/form-element-applies-style-test.html:testDOM failed
+
+
+"[FormElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+221. elements/h1-element-applies-style-test.html:testDOM failed
+
+
+"[H1H2H3H4H5H6Element] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+222. elements/h2-element-applies-style-test.html:testDOM failed
+
+
+"[H1H2H3H4H5H6Element] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+223. elements/h3-element-applies-style-test.html:testDOM failed
+
+
+"[H1H2H3H4H5H6Element] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+224. elements/h4-element-applies-style-test.html:testDOM failed
+
+
+"[H1H2H3H4H5H6Element] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+225. elements/h5-element-applies-style-test.html:testDOM failed
+
+
+"[H1H2H3H4H5H6Element] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+226. elements/h6-element-applies-style-test.html:testDOM failed
+
+
+"[H1H2H3H4H5H6Element] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+227. elements/head-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object required"
+
+228. elements/hr-element-applies-style-test.html:testDOM failed
+
+
+"[HrElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+229. elements/html-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object required"
+
+230. elements/i-element-applies-style-test.html:testDOM failed
+
+
+"[IElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+231. elements/iframe-element-applies-style-test.html:testDOM failed
+
+
+"[IframeElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+232. elements/image-element-applies-style-test.html:testDOM failed
+
+
+"[ImageElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+233. elements/img-element-applies-style-test.html:testDOM failed
+
+
+"[ImgElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+234. elements/input-element-applies-style-test.html:testDOM failed
+
+
+"[InputElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+235. elements/ins-element-applies-style-test.html:testDOM failed
+
+
+"[InsElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+236. elements/kbd-element-applies-style-test.html:testDOM failed
+
+
+"[KbdElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+237. elements/label-element-applies-style-test.html:testDOM failed
+
+
+"[LabelElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+238. elements/li-element-applies-style-test.html:testDOM failed
+
+
+"[LiElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+239. elements/link-element-applies-style-test.html:testDOM failed
+
+
+"[LinkElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+240. elements/listing-element-applies-style-test.html:testDOM failed
+
+
+"[ListingElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+241. elements/map-element-applies-style-test.html:testDOM failed
+
+
+"[MapElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+242. elements/marquee-element-applies-style-test.html:testDOM failed
+
+
+"[MarqueeElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+243. elements/menu-element-applies-style-test.html:testDOM failed
+
+
+"[MenuElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+244. elements/meta-element-applies-style-test.html:testDOM failed
+
+
+"[MetaElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+245. elements/nextid-element-applies-style-test.html:testDOM failed
+
+
+"[NextidElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+246. elements/nobr-element-applies-style-test.html:testDOM failed
+
+
+"[NobrElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+247. elements/noembed-element-applies-style-test.html:testDOM failed
+
+
+"[NoembedElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+248. elements/noframes-element-applies-style-test.html:testDOM failed
+
+
+"[NoframesElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+249. elements/noscript-element-applies-style-test.html:testDOM failed
+
+
+"[NoscriptElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+250. elements/object-element-applies-style-test.html:testDOM failed
+
+
+"[ObjectElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+251. elements/ol-element-applies-style-test.html:testDOM failed
+
+
+"[OlElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+252. elements/p-element-applies-style-test.html:testDOM failed
+
+
+"[PElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+253. elements/pre-element-applies-style-test.html:testDOM failed
+
+
+"[PreElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+254. elements/q-element-applies-style-test.html:testDOM failed
+
+
+"[QElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+255. elements/s-element-applies-style-test.html:testDOM failed
+
+
+"[SElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+256. elements/samp-element-applies-style-test.html:testDOM failed
+
+
+"[SampElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+257. elements/script-element-applies-style-test.html:testDOM failed
+
+
+"[ScriptElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+258. elements/select-element-applies-style-test.html:testDOM failed
+
+
+"[SelectElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+259. elements/small-element-applies-style-test.html:testDOM failed
+
+
+"[SmallElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+260. elements/span-element-applies-style-test.html:testDOM failed
+
+
+"[SpanElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+261. elements/strike-element-applies-style-test.html:testDOM failed
+
+
+"[StrikeElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+262. elements/strong-element-applies-style-test.html:testDOM failed
+
+
+"[StrongElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+263. elements/style-element-applies-style-test.html:testDOM failed
+
+
+"[StyleElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+264. elements/sub-element-applies-style-test.html:testDOM failed
+
+
+"[SubElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+265. elements/sup-element-applies-style-test.html:testDOM failed
+
+
+"[SupElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+266. elements/table-element-applies-style-test.html:testDOM failed
+
+
+"[TableElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+267. elements/textarea-element-applies-style-test.html:testDOM failed
+
+
+"[TextareaElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+268. elements/tt-element-applies-style-test.html:testDOM failed
+
+
+"[TtElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+269. elements/u-element-applies-style-test.html:testDOM failed
+
+
+"[UElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+270. elements/ul-element-applies-style-test.html:testDOM failed
+
+
+"[UlElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+271. elements/var-element-applies-style-test.html:testDOM failed
+
+
+"[VarElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+272. elements/wbr-element-applies-style-test.html:testDOM failed
+
+
+"[WbrElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+273. elements/xmp-element-applies-style-test.html:testDOM failed
+
+
+"[XmpElement] applies style"
+Expected not to be <#abcdef> (String)
+
+Stack trace follows:
+> anonymous
+
+
+274. elements/head-element-appears-in-dom-test.html:testDOM failed
+
+
+"[HeadElement] appears in DOM"
+Expected not to be <null>
+
+Stack trace follows:
+> anonymous
+
+
+275. elements/html-element-appears-in-dom-test.html:testDOM failed
+
+
+"[HtmlElement] appears in DOM"
+Expected not to be <null>
+
+Stack trace follows:
+> anonymous
+
+
+276. elements/param-element-as-child-of-object-appears-in-dom-test.html:testDOM failed
+
+
+"[ParamElement] appears in DOM as child of object"
+Expected not to be <null>
+
+Stack trace follows:
+> anonymous
+

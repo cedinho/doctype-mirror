@@ -709,10 +709,10 @@ function htmlattributessuite() {
   testSuite.addTestPage("../tests/html/attributes/param-type-reflection-test.html");
   testSuite.addTestPage("../tests/html/attributes/param-value-reflection-test.html");
   testSuite.addTestPage("../tests/html/attributes/param-valuetype-reflection-test.html");
-  testSuite.addTestPage("../tests/html/attributes/plaintext-align-center-reflection-test.html");
-  testSuite.addTestPage("../tests/html/attributes/plaintext-align-justify-reflection-test.html");
-  testSuite.addTestPage("../tests/html/attributes/plaintext-align-left-reflection-test.html");
-  testSuite.addTestPage("../tests/html/attributes/plaintext-align-right-reflection-test.html");
+//  testSuite.addTestPage("../tests/html/attributes/plaintext-align-center-reflection-test.html");
+//  testSuite.addTestPage("../tests/html/attributes/plaintext-align-justify-reflection-test.html");
+//  testSuite.addTestPage("../tests/html/attributes/plaintext-align-left-reflection-test.html");
+//  testSuite.addTestPage("../tests/html/attributes/plaintext-align-right-reflection-test.html");
   testSuite.addTestPage("../tests/html/attributes/pre-clear-all-reflection-test.html");
   testSuite.addTestPage("../tests/html/attributes/pre-clear-both-reflection-test.html");
   testSuite.addTestPage("../tests/html/attributes/pre-clear-left-reflection-test.html");
