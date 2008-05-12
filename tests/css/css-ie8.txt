@@ -1,6 +1,6 @@
 Tests with problems (274 total) - JsUnit
 
-Running on Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022)
+Running on Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1)
 
 1. properties/background--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
 
@@ -9,7 +9,7 @@ Running on Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; .NET CLR 1.1.4322;
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 2. properties/background-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -19,7 +19,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 3. properties/background-bottom-equals-bottom-reflection-test.html:testReflection failed
@@ -29,7 +29,7 @@ Stack trace follows:
 Expected <bottom> (String) but was <50% bottom> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 4. properties/background-bottom-equals-center-bottom-reflection-test.html:testReflection failed
@@ -39,7 +39,7 @@ Stack trace follows:
 Expected <center bottom> (String) but was <50% bottom> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 5. properties/background-center-equals-center-center-reflection-test.html:testReflection failed
@@ -49,7 +49,7 @@ Stack trace follows:
 Expected <center center> (String) but was <center 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 6. properties/background-center-equals-center-reflection-test.html:testReflection failed
@@ -59,7 +59,7 @@ Stack trace follows:
 Expected <center> (String) but was <center 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 7. properties/background-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -69,7 +69,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 8. properties/background-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -79,7 +79,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 9. properties/background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -89,7 +89,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 10. properties/background-image-url-lp--qu-http-cl--sl--sl-www-dt-example-dt-com-sl--qu--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
@@ -99,7 +99,7 @@ Stack trace follows:
 Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 11. properties/background-image-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
@@ -109,7 +109,7 @@ Stack trace follows:
 Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 12. properties/background-left-equals-left-center-reflection-test.html:testReflection failed
@@ -119,7 +119,7 @@ Stack trace follows:
 Expected <left center> (String) but was <left 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 13. properties/background-left-equals-left-reflection-test.html:testReflection failed
@@ -129,7 +129,7 @@ Stack trace follows:
 Expected <left> (String) but was <left 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 14. properties/background-position-bottom-equals-bottom-reflection-test.html:testReflection failed
@@ -139,7 +139,7 @@ Stack trace follows:
 Expected <bottom> (String) but was <50% bottom> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 15. properties/background-position-bottom-equals-center-bottom-reflection-test.html:testReflection failed
@@ -149,7 +149,7 @@ Stack trace follows:
 Expected <center bottom> (String) but was <50% bottom> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 16. properties/background-position-center-equals-center-center-reflection-test.html:testReflection failed
@@ -159,7 +159,7 @@ Stack trace follows:
 Expected <center center> (String) but was <center 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 17. properties/background-position-center-equals-center-reflection-test.html:testReflection failed
@@ -169,7 +169,7 @@ Stack trace follows:
 Expected <center> (String) but was <center 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 18. properties/background-position-left-equals-left-center-reflection-test.html:testReflection failed
@@ -179,7 +179,7 @@ Stack trace follows:
 Expected <left center> (String) but was <left 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 19. properties/background-position-left-equals-left-reflection-test.html:testReflection failed
@@ -189,7 +189,7 @@ Stack trace follows:
 Expected <left> (String) but was <left 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 20. properties/background-position-right-equals-right-center-reflection-test.html:testReflection failed
@@ -199,7 +199,7 @@ Stack trace follows:
 Expected <right center> (String) but was <right 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 21. properties/background-position-right-equals-right-reflection-test.html:testReflection failed
@@ -209,7 +209,7 @@ Stack trace follows:
 Expected <right> (String) but was <right 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 22. properties/background-position-top-equals-center-top-reflection-test.html:testReflection failed
@@ -219,7 +219,7 @@ Stack trace follows:
 Expected <center top> (String) but was <50% top> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 23. properties/background-position-top-equals-top-reflection-test.html:testReflection failed
@@ -229,7 +229,7 @@ Stack trace follows:
 Expected <top> (String) but was <50% top> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 24. properties/background-position-x-bottom-equals-bottom-reflection-test.html:testReflection failed
@@ -239,7 +239,7 @@ Stack trace follows:
 Expected <bottom> (String) but was <0%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 25. properties/background-position-x-top-equals-top-reflection-test.html:testReflection failed
@@ -249,7 +249,7 @@ Stack trace follows:
 Expected <top> (String) but was <0%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 26. properties/background-position-y-left-equals-left-reflection-test.html:testReflection failed
@@ -259,7 +259,7 @@ Stack trace follows:
 Expected <left> (String) but was <0%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 27. properties/background-position-y-right-equals-right-reflection-test.html:testReflection failed
@@ -269,7 +269,7 @@ Stack trace follows:
 Expected <right> (String) but was <0%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 28. properties/background-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -279,7 +279,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 29. properties/background-right-equals-right-center-reflection-test.html:testReflection failed
@@ -289,7 +289,7 @@ Stack trace follows:
 Expected <right center> (String) but was <right 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 30. properties/background-right-equals-right-reflection-test.html:testReflection failed
@@ -299,7 +299,7 @@ Stack trace follows:
 Expected <right> (String) but was <right 50%> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 31. properties/background-top-equals-center-top-reflection-test.html:testReflection failed
@@ -309,7 +309,7 @@ Stack trace follows:
 Expected <center top> (String) but was <50% top> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 32. properties/background-top-equals-top-reflection-test.html:testReflection failed
@@ -319,7 +319,7 @@ Stack trace follows:
 Expected <top> (String) but was <50% top> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 33. properties/background-url-lp--qu-http-cl--sl--sl-www-dt-example-dt-com-sl--qu--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
@@ -329,7 +329,7 @@ Stack trace follows:
 Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 34. properties/background-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
@@ -339,7 +339,7 @@ Stack trace follows:
 Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 35. properties/border--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -349,7 +349,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 36. properties/border-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection failed
@@ -359,7 +359,7 @@ Stack trace follows:
 Expected <0pt 0pt 0pt 0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 37. properties/border-0-equals-0pt-reflection-test.html:testReflection failed
@@ -369,7 +369,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 38. properties/border-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
@@ -379,7 +379,7 @@ Stack trace follows:
 Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 39. properties/border-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
@@ -389,7 +389,7 @@ Stack trace follows:
 Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 40. properties/border-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
@@ -399,7 +399,7 @@ Stack trace follows:
 Expected <1em 1em 1em 1em> (String) but was <1em> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 41. properties/border-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
@@ -409,7 +409,7 @@ Stack trace follows:
 Expected <1em 1em 1em 1em> (String) but was <1em> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 42. properties/border-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
@@ -419,7 +419,7 @@ Stack trace follows:
 Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 43. properties/border-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
@@ -429,7 +429,7 @@ Stack trace follows:
 Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 44. properties/border-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
@@ -439,7 +439,7 @@ Stack trace follows:
 Expected <1in 1in 1in 1in> (String) but was <1in> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 45. properties/border-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
@@ -449,7 +449,7 @@ Stack trace follows:
 Expected <1in 1in 1in 1in> (String) but was <1in> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 46. properties/border-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
@@ -459,7 +459,7 @@ Stack trace follows:
 Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 47. properties/border-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
@@ -469,7 +469,7 @@ Stack trace follows:
 Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 48. properties/border-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
@@ -479,7 +479,7 @@ Stack trace follows:
 Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 49. properties/border-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
@@ -489,7 +489,7 @@ Stack trace follows:
 Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 50. properties/border-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
@@ -499,7 +499,7 @@ Stack trace follows:
 Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 51. properties/border-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
@@ -509,7 +509,7 @@ Stack trace follows:
 Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 52. properties/border-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
@@ -519,7 +519,7 @@ Stack trace follows:
 Expected <1px 1px 1px 1px> (String) but was <1px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 53. properties/border-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
@@ -529,7 +529,7 @@ Stack trace follows:
 Expected <1px 1px 1px 1px> (String) but was <1px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 54. properties/border-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -539,7 +539,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 55. properties/border-bogus-equals--reflection-test.html:testReflection failed
@@ -549,7 +549,7 @@ Stack trace follows:
 Expected <> (String) but was <none> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 56. properties/border-bottom--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -559,7 +559,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 57. properties/border-bottom-0-equals-0pt-reflection-test.html:testReflection failed
@@ -569,7 +569,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 58. properties/border-bottom-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -579,7 +579,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 59. properties/border-bottom-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -589,7 +589,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 60. properties/border-bottom-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -599,7 +599,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 61. properties/border-bottom-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -609,7 +609,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 62. properties/border-bottom-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -619,7 +619,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 63. properties/border-bottom-thick-equals-5px-reflection-test.html:testReflection failed
@@ -629,7 +629,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 64. properties/border-bottom-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -639,7 +639,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 65. properties/border-bottom-width-0-equals-0pt-reflection-test.html:testReflection failed
@@ -649,7 +649,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 66. properties/border-bottom-width-thick-equals-5px-reflection-test.html:testReflection failed
@@ -659,7 +659,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 67. properties/border-bottom-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -669,7 +669,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 68. properties/border-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -679,7 +679,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 69. properties/border-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -689,7 +689,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 70. properties/border-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -699,7 +699,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 71. properties/border-left--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -709,7 +709,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 72. properties/border-left-0-equals-0pt-reflection-test.html:testReflection failed
@@ -719,7 +719,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 73. properties/border-left-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -729,7 +729,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 74. properties/border-left-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -739,7 +739,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 75. properties/border-left-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -749,7 +749,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 76. properties/border-left-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -759,7 +759,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 77. properties/border-left-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -769,7 +769,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 78. properties/border-left-thick-equals-5px-reflection-test.html:testReflection failed
@@ -779,7 +779,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 79. properties/border-left-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -789,7 +789,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 80. properties/border-left-width-0-equals-0pt-reflection-test.html:testReflection failed
@@ -799,7 +799,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 81. properties/border-left-width-thick-equals-5px-reflection-test.html:testReflection failed
@@ -809,7 +809,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 82. properties/border-left-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -819,7 +819,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 83. properties/border-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -829,7 +829,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 84. properties/border-right--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -839,7 +839,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 85. properties/border-right-0-equals-0pt-reflection-test.html:testReflection failed
@@ -849,7 +849,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 86. properties/border-right-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -859,7 +859,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 87. properties/border-right-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -869,7 +869,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 88. properties/border-right-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -879,7 +879,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 89. properties/border-right-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -889,7 +889,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 90. properties/border-right-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -899,7 +899,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 91. properties/border-right-thick-equals-5px-reflection-test.html:testReflection failed
@@ -909,7 +909,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 92. properties/border-right-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -919,7 +919,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 93. properties/border-right-width-0-equals-0pt-reflection-test.html:testReflection failed
@@ -929,7 +929,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 94. properties/border-right-width-thick-equals-5px-reflection-test.html:testReflection failed
@@ -939,7 +939,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 95. properties/border-right-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -949,7 +949,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 96. properties/border-style-bogus-equals--reflection-test.html:testReflection failed
@@ -959,7 +959,7 @@ Stack trace follows:
 Expected <> (String) but was <none> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 97. properties/border-thick-equals-5px-reflection-test.html:testReflection failed
@@ -969,7 +969,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 98. properties/border-thick-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
@@ -979,7 +979,7 @@ Stack trace follows:
 Expected <thick thick thick thick> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 99. properties/border-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -989,7 +989,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 100. properties/border-thick-solid-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
@@ -999,7 +999,7 @@ Stack trace follows:
 Expected <thick thick thick thick> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 101. properties/border-thin-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
@@ -1009,7 +1009,7 @@ Stack trace follows:
 Expected <thin thin thin thin> (String) but was <thin> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 102. properties/border-thin-solid-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
@@ -1019,7 +1019,7 @@ Stack trace follows:
 Expected <thin thin thin thin> (String) but was <thin> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 103. properties/border-top--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -1029,7 +1029,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 104. properties/border-top-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1039,7 +1039,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 105. properties/border-top-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1049,7 +1049,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 106. properties/border-top-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -1059,7 +1059,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 107. properties/border-top-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1069,7 +1069,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 108. properties/border-top-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1079,7 +1079,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 109. properties/border-top-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1089,7 +1089,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 110. properties/border-top-thick-equals-5px-reflection-test.html:testReflection failed
@@ -1099,7 +1099,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 111. properties/border-top-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -1109,7 +1109,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 112. properties/border-top-width-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1119,7 +1119,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 113. properties/border-top-width-thick-equals-5px-reflection-test.html:testReflection failed
@@ -1129,7 +1129,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 114. properties/border-top-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -1139,7 +1139,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 115. properties/border-width-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1149,7 +1149,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 116. properties/border-width-thick-equals-5px-reflection-test.html:testReflection failed
@@ -1159,7 +1159,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 117. properties/border-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
@@ -1169,7 +1169,7 @@ Stack trace follows:
 Expected <5px> (String) but was <thick> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 118. properties/color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -1179,7 +1179,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 119. properties/color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1189,7 +1189,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 120. properties/color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1199,7 +1199,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 121. properties/cursor-alias-equals-alias-reflection-test.html:testReflection failed
@@ -1209,7 +1209,7 @@ Stack trace follows:
 Expected <alias> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 122. properties/cursor-cell-equals-cell-reflection-test.html:testReflection failed
@@ -1219,7 +1219,7 @@ Stack trace follows:
 Expected <cell> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 123. properties/cursor-context-menu-equals-context-menu-reflection-test.html:testReflection failed
@@ -1229,7 +1229,7 @@ Stack trace follows:
 Expected <context-menu> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 124. properties/cursor-copy-equals-copy-reflection-test.html:testReflection failed
@@ -1239,7 +1239,7 @@ Stack trace follows:
 Expected <copy> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 125. properties/cursor-ew-resize-equals-ew-resize-reflection-test.html:testReflection failed
@@ -1249,7 +1249,7 @@ Stack trace follows:
 Expected <ew-resize> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 126. properties/cursor-nesw-resize-equals-nesw-resize-reflection-test.html:testReflection failed
@@ -1259,7 +1259,7 @@ Stack trace follows:
 Expected <nesw-resize> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 127. properties/cursor-ns-resize-equals-ns-resize-reflection-test.html:testReflection failed
@@ -1269,7 +1269,7 @@ Stack trace follows:
 Expected <ns-resize> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 128. properties/cursor-nwse-resize-equals-nwse-resize-reflection-test.html:testReflection failed
@@ -1279,7 +1279,7 @@ Stack trace follows:
 Expected <nwse-resize> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 129. properties/display-compact-equals-compact-reflection-test.html:testReflection failed
@@ -1289,7 +1289,7 @@ Stack trace follows:
 Expected <compact> (String) but was <block> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 130. properties/float-bogus-equals-none-reflection-test.html:testReflection failed
@@ -1299,7 +1299,7 @@ Stack trace follows:
 Expected <none> (String) but was <undefined>
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 131. properties/float-left-equals-left-reflection-test.html:testReflection failed
@@ -1309,7 +1309,7 @@ Stack trace follows:
 Expected <left> (String) but was <undefined>
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 132. properties/float-none-equals-none-reflection-test.html:testReflection failed
@@ -1319,7 +1319,7 @@ Stack trace follows:
 Expected <none> (String) but was <undefined>
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 133. properties/float-right-equals-right-reflection-test.html:testReflection failed
@@ -1329,7 +1329,7 @@ Stack trace follows:
 Expected <right> (String) but was <undefined>
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 134. properties/font-italic-equals-italic-reflection-test.html:testReflection failed
@@ -1339,7 +1339,7 @@ Stack trace follows:
 Expected <italic> (String) but was <normal> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 135. properties/font-normal-small-caps-equals-small-caps-reflection-test.html:testReflection failed
@@ -1349,7 +1349,7 @@ Stack trace follows:
 Expected <small-caps> (String) but was <normal> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 136. properties/font-oblique-equals-oblique-reflection-test.html:testReflection failed
@@ -1359,7 +1359,7 @@ Stack trace follows:
 Expected <oblique> (String) but was <normal> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 137. properties/layer-background-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -1369,7 +1369,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <undefined>
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 138. properties/layer-background-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1379,7 +1379,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <undefined>
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 139. properties/layer-background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1389,7 +1389,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <undefined>
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 140. properties/layer-background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm-0-cm-0-rp--reflection-test.html:testReflection failed
@@ -1399,7 +1399,7 @@ Stack trace follows:
 Expected <rgb(0,0,0)> (String) but was <undefined>
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 141. properties/layer-background-color-transparent-equals-transparent-reflection-test.html:testReflection failed
@@ -1409,7 +1409,7 @@ Stack trace follows:
 Expected <transparent> (String) but was <undefined>
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 142. properties/layout-grid-char-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1419,7 +1419,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 143. properties/layout-grid-line-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1429,7 +1429,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 144. properties/letter-spacing-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1439,7 +1439,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 145. properties/margin-bottom-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1449,7 +1449,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 146. properties/margin-bottom-none-equals-none-reflection-test.html:testReflection failed
@@ -1459,7 +1459,7 @@ Stack trace follows:
 Expected <none> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 147. properties/margin-left-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1469,7 +1469,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 148. properties/margin-left-none-equals-none-reflection-test.html:testReflection failed
@@ -1479,7 +1479,7 @@ Stack trace follows:
 Expected <none> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 149. properties/margin-right-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1489,7 +1489,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 150. properties/margin-right-none-equals-none-reflection-test.html:testReflection failed
@@ -1499,7 +1499,7 @@ Stack trace follows:
 Expected <none> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 151. properties/margin-top-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1509,7 +1509,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 152. properties/margin-top-none-equals-none-reflection-test.html:testReflection failed
@@ -1519,7 +1519,7 @@ Stack trace follows:
 Expected <none> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 153. properties/max-height-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1529,7 +1529,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 154. properties/max-width-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1539,7 +1539,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 155. properties/min-height-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1549,7 +1549,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 156. properties/min-height-none-equals-none-reflection-test.html:testReflection failed
@@ -1559,7 +1559,7 @@ Stack trace follows:
 Expected <none> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 157. properties/min-width-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1569,7 +1569,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 158. properties/min-width-none-equals-none-reflection-test.html:testReflection failed
@@ -1579,7 +1579,7 @@ Stack trace follows:
 Expected <none> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 159. properties/orphans-0-equals-0-reflection-test.html:testReflection failed
@@ -1589,7 +1589,7 @@ Stack trace follows:
 Expected <0> (String) but was <2> (Number)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 160. properties/orphans-1-equals-1-reflection-test.html:testReflection failed
@@ -1599,7 +1599,7 @@ Stack trace follows:
 Expected <1> (String) but was <1> (Number)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 161. properties/orphans-2-equals-2-reflection-test.html:testReflection failed
@@ -1609,7 +1609,7 @@ Stack trace follows:
 Expected <2> (String) but was <2> (Number)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 162. properties/orphans-bogus-equals--reflection-test.html:testReflection failed
@@ -1619,7 +1619,7 @@ Stack trace follows:
 Expected <> (String) but was <2> (Number)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 163. properties/outline--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -1629,7 +1629,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 164. properties/outline-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection failed
@@ -1639,7 +1639,7 @@ Stack trace follows:
 Expected <0pt 0pt 0pt 0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 165. properties/outline-0-equals-0pt-reflection-test.html:testReflection failed
@@ -1649,7 +1649,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 166. properties/outline-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
@@ -1659,7 +1659,7 @@ Stack trace follows:
 Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 167. properties/outline-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
@@ -1669,7 +1669,7 @@ Stack trace follows:
 Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 168. properties/outline-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
@@ -1679,7 +1679,7 @@ Stack trace follows:
 Expected <1em 1em 1em 1em> (String) but was <1em> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 169. properties/outline-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
@@ -1689,7 +1689,7 @@ Stack trace follows:
 Expected <1em 1em 1em 1em> (String) but was <1em> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 170. properties/outline-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
@@ -1699,7 +1699,7 @@ Stack trace follows:
 Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 171. properties/outline-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
@@ -1709,7 +1709,7 @@ Stack trace follows:
 Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 172. properties/outline-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
@@ -1719,7 +1719,7 @@ Stack trace follows:
 Expected <1in 1in 1in 1in> (String) but was <1in> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 173. properties/outline-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
@@ -1729,7 +1729,7 @@ Stack trace follows:
 Expected <1in 1in 1in 1in> (String) but was <1in> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 174. properties/outline-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
@@ -1739,7 +1739,7 @@ Stack trace follows:
 Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 175. properties/outline-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
@@ -1749,7 +1749,7 @@ Stack trace follows:
 Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 176. properties/outline-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
@@ -1759,7 +1759,7 @@ Stack trace follows:
 Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 177. properties/outline-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
@@ -1769,7 +1769,7 @@ Stack trace follows:
 Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 178. properties/outline-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
@@ -1779,7 +1779,7 @@ Stack trace follows:
 Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 179. properties/outline-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
@@ -1789,7 +1789,7 @@ Stack trace follows:
 Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 180. properties/outline-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
@@ -1799,7 +1799,7 @@ Stack trace follows:
 Expected <1px 1px 1px 1px> (String) but was <1px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 181. properties/outline-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
@@ -1809,7 +1809,7 @@ Stack trace follows:
 Expected <1px 1px 1px 1px> (String) but was <1px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 182. properties/outline-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1819,7 +1819,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 183. properties/outline-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -1829,7 +1829,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 184. properties/outline-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1839,7 +1839,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 185. properties/outline-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1849,7 +1849,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 186. properties/outline-hidden-equals-hidden-reflection-test.html:testReflection failed
@@ -1859,7 +1859,7 @@ Stack trace follows:
 Expected <hidden> (String) but was <none> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 187. properties/outline-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -1869,7 +1869,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 188. properties/outline-style-hidden-equals-hidden-reflection-test.html:testReflection failed
@@ -1879,7 +1879,7 @@ Stack trace follows:
 Expected <hidden> (String) but was <none> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 189. properties/outline-thick-equals-5px-reflection-test.html:testReflection had an error
@@ -1949,7 +1949,7 @@ Error message is:
 Expected <0pt 0pt 0pt 0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 200. properties/outline-width-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
@@ -1959,7 +1959,7 @@ Stack trace follows:
 Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 201. properties/outline-width-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
@@ -1969,7 +1969,7 @@ Stack trace follows:
 Expected <1cm 1cm 1cm 1cm> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 202. properties/outline-width-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
@@ -1979,7 +1979,7 @@ Stack trace follows:
 Expected <1em 1em 1em 1em> (String) but was <1em> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 203. properties/outline-width-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
@@ -1989,7 +1989,7 @@ Stack trace follows:
 Expected <1em 1em 1em 1em> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 204. properties/outline-width-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
@@ -1999,7 +1999,7 @@ Stack trace follows:
 Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 205. properties/outline-width-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
@@ -2009,7 +2009,7 @@ Stack trace follows:
 Expected <1ex 1ex 1ex 1ex> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 206. properties/outline-width-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
@@ -2019,7 +2019,7 @@ Stack trace follows:
 Expected <1in 1in 1in 1in> (String) but was <1in> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 207. properties/outline-width-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
@@ -2029,7 +2029,7 @@ Stack trace follows:
 Expected <1in 1in 1in 1in> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 208. properties/outline-width-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
@@ -2039,7 +2039,7 @@ Stack trace follows:
 Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 209. properties/outline-width-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
@@ -2049,7 +2049,7 @@ Stack trace follows:
 Expected <1mm 1mm 1mm 1mm> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 210. properties/outline-width-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
@@ -2059,7 +2059,7 @@ Stack trace follows:
 Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 211. properties/outline-width-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
@@ -2069,7 +2069,7 @@ Stack trace follows:
 Expected <1pc 1pc 1pc 1pc> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 212. properties/outline-width-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
@@ -2079,7 +2079,7 @@ Stack trace follows:
 Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 213. properties/outline-width-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
@@ -2089,7 +2089,7 @@ Stack trace follows:
 Expected <1pt 1pt 1pt 1pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 214. properties/outline-width-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
@@ -2099,7 +2099,7 @@ Stack trace follows:
 Expected <1px 1px 1px 1px> (String) but was <1px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 215. properties/outline-width-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
@@ -2109,7 +2109,7 @@ Stack trace follows:
 Expected <1px 1px 1px 1px> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 216. properties/outline-width-thick-equals-thick-reflection-test.html:testReflection had an error
@@ -2131,7 +2131,7 @@ Error message is:
 Expected <thick thick thick thick> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 219. properties/outline-width-thin-equals-thin-reflection-test.html:testReflection had an error
@@ -2153,7 +2153,7 @@ Error message is:
 Expected <thin thin thin thin> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 222. properties/overflow--moz-scrollbars-horizontal-equals--moz-scrollbars-horizontal-reflection-test.html:testReflection failed
@@ -2163,7 +2163,7 @@ Stack trace follows:
 Expected <-moz-scrollbars-horizontal> (String) but was <visible> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 223. properties/overflow--moz-scrollbars-none-equals--moz-scrollbars-none-reflection-test.html:testReflection failed
@@ -2173,7 +2173,7 @@ Stack trace follows:
 Expected <-moz-scrollbars-none> (String) but was <visible> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 224. properties/overflow--moz-scrollbars-vertical-equals--moz-scrollbars-vertical-reflection-test.html:testReflection failed
@@ -2183,7 +2183,7 @@ Stack trace follows:
 Expected <-moz-scrollbars-vertical> (String) but was <visible> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 225. properties/padding-bottom-0-equals-0pt-reflection-test.html:testReflection failed
@@ -2193,7 +2193,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 226. properties/padding-bottom-auto-equals-auto-reflection-test.html:testReflection failed
@@ -2203,7 +2203,7 @@ Stack trace follows:
 Expected <auto> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 227. properties/padding-bottom-none-equals-none-reflection-test.html:testReflection failed
@@ -2213,7 +2213,7 @@ Stack trace follows:
 Expected <none> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 228. properties/padding-left-0-equals-0pt-reflection-test.html:testReflection failed
@@ -2223,7 +2223,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 229. properties/padding-left-auto-equals-auto-reflection-test.html:testReflection failed
@@ -2233,7 +2233,7 @@ Stack trace follows:
 Expected <auto> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 230. properties/padding-left-none-equals-none-reflection-test.html:testReflection failed
@@ -2243,7 +2243,7 @@ Stack trace follows:
 Expected <none> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 231. properties/padding-right-0-equals-0pt-reflection-test.html:testReflection failed
@@ -2253,7 +2253,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 232. properties/padding-right-auto-equals-auto-reflection-test.html:testReflection failed
@@ -2263,7 +2263,7 @@ Stack trace follows:
 Expected <auto> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 233. properties/padding-right-none-equals-none-reflection-test.html:testReflection failed
@@ -2273,7 +2273,7 @@ Stack trace follows:
 Expected <none> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 234. properties/padding-top-0-equals-0pt-reflection-test.html:testReflection failed
@@ -2283,7 +2283,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 235. properties/padding-top-auto-equals-auto-reflection-test.html:testReflection failed
@@ -2293,7 +2293,7 @@ Stack trace follows:
 Expected <auto> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 236. properties/padding-top-none-equals-none-reflection-test.html:testReflection failed
@@ -2303,7 +2303,7 @@ Stack trace follows:
 Expected <none> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 237. properties/page-break-after-bogus-equals--reflection-test.html:testReflection failed
@@ -2313,7 +2313,7 @@ Stack trace follows:
 Expected <> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 238. properties/page-break-before-bogus-equals--reflection-test.html:testReflection failed
@@ -2323,7 +2323,7 @@ Stack trace follows:
 Expected <> (String) but was <auto> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 239. properties/scrollbar-3dlight-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -2333,7 +2333,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 240. properties/scrollbar-3dlight-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2343,7 +2343,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 241. properties/scrollbar-3dlight-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2353,7 +2353,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 242. properties/scrollbar-3dlight-color-transparent-equals-transparent-reflection-test.html:testReflection failed
@@ -2363,7 +2363,7 @@ Stack trace follows:
 Expected <transparent> (String) but was <#f1efe2> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 243. properties/scrollbar-arrow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -2373,7 +2373,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 244. properties/scrollbar-arrow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2383,7 +2383,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 245. properties/scrollbar-arrow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2393,7 +2393,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 246. properties/scrollbar-arrow-color-transparent-equals-transparent-reflection-test.html:testReflection failed
@@ -2403,7 +2403,7 @@ Stack trace follows:
 Expected <transparent> (String) but was <#000000> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 247. properties/scrollbar-base-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -2413,7 +2413,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 248. properties/scrollbar-base-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2423,7 +2423,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 249. properties/scrollbar-base-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2433,7 +2433,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 250. properties/scrollbar-base-color-transparent-equals-transparent-reflection-test.html:testReflection failed
@@ -2443,7 +2443,7 @@ Stack trace follows:
 Expected <transparent> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 251. properties/scrollbar-darkshadow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -2453,7 +2453,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 252. properties/scrollbar-darkshadow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2463,7 +2463,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 253. properties/scrollbar-darkshadow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2473,7 +2473,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 254. properties/scrollbar-darkshadow-color-transparent-equals-transparent-reflection-test.html:testReflection failed
@@ -2483,7 +2483,7 @@ Stack trace follows:
 Expected <transparent> (String) but was <#716f64> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 255. properties/scrollbar-face-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -2493,7 +2493,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 256. properties/scrollbar-face-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2503,7 +2503,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 257. properties/scrollbar-face-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2513,7 +2513,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 258. properties/scrollbar-face-color-transparent-equals-transparent-reflection-test.html:testReflection failed
@@ -2523,7 +2523,7 @@ Stack trace follows:
 Expected <transparent> (String) but was <#ece9d8> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 259. properties/scrollbar-highlight-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -2533,7 +2533,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 260. properties/scrollbar-highlight-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2543,7 +2543,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 261. properties/scrollbar-highlight-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2553,7 +2553,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 262. properties/scrollbar-highlight-color-transparent-equals-transparent-reflection-test.html:testReflection failed
@@ -2563,7 +2563,7 @@ Stack trace follows:
 Expected <transparent> (String) but was <#ffffff> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 263. properties/scrollbar-shadow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -2573,7 +2573,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 264. properties/scrollbar-shadow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2583,7 +2583,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 265. properties/scrollbar-shadow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2593,7 +2593,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 266. properties/scrollbar-shadow-color-transparent-equals-transparent-reflection-test.html:testReflection failed
@@ -2603,7 +2603,7 @@ Stack trace follows:
 Expected <transparent> (String) but was <#aca899> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 267. properties/scrollbar-track-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
@@ -2613,7 +2613,7 @@ Stack trace follows:
 Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 268. properties/scrollbar-track-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2623,7 +2623,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 269. properties/scrollbar-track-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
@@ -2633,7 +2633,7 @@ Stack trace follows:
 Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 270. properties/vertical-align-0-equals-0pt-reflection-test.html:testReflection failed
@@ -2643,7 +2643,7 @@ Stack trace follows:
 Expected <0pt> (String) but was <0px> (String)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 271. properties/widows-0-equals-0-reflection-test.html:testReflection failed
@@ -2653,7 +2653,7 @@ Stack trace follows:
 Expected <0> (String) but was <2> (Number)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 272. properties/widows-1-equals-1-reflection-test.html:testReflection failed
@@ -2663,7 +2663,7 @@ Stack trace follows:
 Expected <1> (String) but was <1> (Number)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 273. properties/widows-2-equals-2-reflection-test.html:testReflection failed
@@ -2673,7 +2673,7 @@ Stack trace follows:
 Expected <2> (String) but was <2> (Number)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 
 
 274. properties/widows-bogus-equals--reflection-test.html:testReflection failed
@@ -2683,5 +2683,5 @@ Stack trace follows:
 Expected <> (String) but was <2> (Number)
 
 Stack trace follows:
-> JsUnitException
+> anonymous
 

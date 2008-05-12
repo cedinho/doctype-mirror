@@ -10,7 +10,7 @@ if 0:
                     r'~/doctype/trunk/tests/css/css-ff2.txt',
                     r'~/doctype/trunk/tests/css/css-saf3.txt']
 
-if 1:
+if 0:
     TEST_FILES   = 'html/*/*-test.html'
     ERROR_FILES  = [r'~/doctype/trunk/tests/html/html-ie8.txt',
                     r'~/doctype/trunk/tests/html/html-ie7.txt',
@@ -19,7 +19,7 @@ if 1:
                     r'~/doctype/trunk/tests/html/html-ff2.txt',
                     r'~/doctype/trunk/tests/html/html-saf3.txt']
 
-if 0:
+if 1:
     TEST_FILES   = 'js/*/*-test.html'
     ERROR_FILES  = [r'~/doctype/trunk/tests/js/js-ie8.txt',
                     r'~/doctype/trunk/tests/js/js-ie7.txt',
