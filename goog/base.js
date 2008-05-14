@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -208,11 +208,6 @@ goog.addDependency = function(relPath, provides, requires) {
 goog.require = function(rule) {
 
   // if the object already exists we do not need do do anything
-  // TODO(arv): If we start to support require based on file name this has
-  //            to change
-  // TODO(arv): If we allow goog.foo.* this has to change
-  // TODO(arv): If we implement dynamic load after page load we should probably
-  //            not remove this code for the compiled output
   if (!COMPILED) {
     if (goog.getObjectByName(rule)) {
       return;
@@ -628,10 +623,6 @@ goog.isObject = function(val) {
 goog.getHashCode = function(obj) {
   // In IE, DOM nodes do not extend Object so they do not have this method.
   // we need to check hasOwnProperty because the proto might have this set.
-
-  // TODO(arv): There is a proposal to add hashcode as a global function to JS2
-  //            we should keep track of this process so we can use that whenever
-  //            it starts to show up in the real world.
 
   if (obj.hasOwnProperty && obj.hasOwnProperty(goog.HASH_CODE_PROPERTY_)) {
     return obj[goog.HASH_CODE_PROPERTY_];

@@ -1,4 +1,4 @@
-// Copyright 2008-8 Google Inc.
+// Copyright 2008 Google Inc.
 // All Rights Reserved
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -36,10 +36,6 @@
  * Note that this class only reflects what the browser tells us and this usually
  * only reflects changes to the File -> Work Offline menu item.
  */
-
-// TODO(arv): We should probably implement some kind of polling service and/or
-// a poll for changes event handler that can be used to fire events when a state
-// changes.
 
 goog.provide('goog.events.OnlineHandler');
 goog.provide('goog.events.OnlineHandler.EventType');

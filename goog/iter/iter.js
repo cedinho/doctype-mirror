@@ -1,4 +1,4 @@
-// Copyright 2007-8 Google Inc.
+// Copyright 2007 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -127,7 +127,6 @@ goog.iter.toIterator = function(iterable) {
   }
 
 
-  // TODO(arv): Should we fall back on goog.structs.getValues()?
   throw Error('Not implemented');
 };
 

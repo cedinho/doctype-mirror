@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -219,8 +219,6 @@ goog.structs.Set.prototype.isSubsetOf = function(col) {
   if (this.getCount() > colCount) {
     return false;
   }
-  // TODO(pallosp) Find the minimal collection size where the conversion makes
-  // the contains() method faster.
   if (!(col instanceof goog.structs.Set) && colCount > 5) {
     // Make the goog.structs.contains(col, value) faster if necessary.
     col = new goog.structs.Set(col);

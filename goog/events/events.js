@@ -1,4 +1,4 @@
-// Copyright 2005-8 Google Inc.
+// Copyright 2005 Google Inc.
 // All Rights Reserved
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -526,9 +526,6 @@ goog.events.unlistenByKey = function(key) {
   if (src.removeEventListener) {
     // EventTarget calls unlisten so we need to ensure that the source is not
     // an event target to prevent re-entry.
-    // TODO(arv): What is this goog.global for? Why would anyone listen to
-    // events on the [[Global]] object? Is it supposed to be window? Why would
-    // we not want to allow removing event listeners on the window?
     if (src == goog.global || !src.customEvent_) {
       src.removeEventListener(type, proxy, capture);
     }
@@ -811,8 +808,6 @@ goog.events.EventType = {
   BLUR: 'blur',
   FOCUS: 'focus',
   DEACTIVATE: 'deactivate', // IE only
-  // TODO(pupius): Test these. I experienced problems with DOMFocusIn, the event
-  // just wasn't firing.
   FOCUSIN: goog.userAgent.IE ? 'focusin' : 'DOMFocusIn',
   FOCUSOUT: goog.userAgent.IE ? 'focusout' : 'DOMFocusOut',
 

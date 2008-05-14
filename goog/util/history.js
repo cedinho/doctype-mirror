@@ -1,4 +1,4 @@
-// Copyright 2007-8 Google Inc.
+// Copyright 2007 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -97,9 +97,6 @@
  * "esp&eacute;re" would show "esp%E8re".  (IE allows unicode characters in the
  * fragment)
  *
- * TODO(pupius): Should we encapsualte this escaping into the API for visible
- * history and encode all characters that aren't supported by Firefox?  It also
- * needs to be optional so apps can elect to handle the escaping themselves.
  *
  *
  * Internet Explorer (through version 7.0):
@@ -152,8 +149,6 @@
  *
  *
  * Safari (version 3 and later)
- * TODO(brenneman): Investigate Safari 3. It almost works, but the forward
- * button seems to fail.
  */
 
 goog.provide('goog.History');

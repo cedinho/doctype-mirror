@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -639,9 +639,6 @@ goog.array.toArray = function(object) {
 goog.array.extend = function(arr1, var_args) {
   for (var i = 1; i < arguments.length; i++) {
     var arr2 = arguments[i];
-    // TODO(arv): What about array like objects? push.apply does not work with
-    // non arrays. We could just do toArray on both arr1 and arr2 but I feel
-    // like we are loosing a battle here.
     if (!goog.isArray(arr2)) {
       arr1.push(arr2);
     } else {

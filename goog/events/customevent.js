@@ -1,4 +1,4 @@
-// Copyright 2005-8 Google Inc.
+// Copyright 2005 Google Inc.
 // All Rights Reserved
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -36,8 +36,6 @@ goog.require('goog.events.Event');
 /**
  * A super-class for custom event objects, so that they can support
  * preventDefault and stopPropagation.
- *
- * TODO(pupius): Does this need removing?  Instead just have Event.
  *
  * @param {string} type Event Type.
  * @param {Object} opt_target Reference to the object that is the target

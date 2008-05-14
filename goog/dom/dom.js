@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -39,11 +39,6 @@
  * to a different document object.  This is useful if you are working with
  * frames or multiple windows.
  */
-
-
-// TODO(arv): Rename/refactor getTextContent and getRawTextContent. The problem
-// is that getTextContent should mimic the DOM3 textContent. We should add a
-// getInnerText (or getText) which tries to return the visible text, innerText.
 
 
 goog.provide('goog.dom');
@@ -263,10 +258,6 @@ goog.dom.getViewportSize = function(opt_window) {
 
   if (goog.userAgent.WEBKIT && !goog.userAgent.isVersion('500') &&
       !goog.userAgent.MOBILE) {
-    // TODO(doughtie): Sometimes we get something that isn't a valid window
-    // object. In this case we just revert to the current window. We need to
-    // figure out when this happens and find a real fix for it.
-    // See the comments on goog.dom.getWindow.
     if (typeof win.innerHeight == 'undefined') {
       win = window;
     }
@@ -326,8 +317,6 @@ goog.dom.getPageScroll = function(opt_window) {
  * @return {Window} The window associated with the given document.
  */
 goog.dom.getWindow = function(opt_doc) {
-  // TODO(arv): This should not take an argument, it should use the default
-  // DomHelper
   return goog.dom.getDomHelper(opt_doc).getWindow();
 };
 
@@ -969,8 +958,6 @@ goog.dom.getNodeAtOffset = function(parent, offset, opt_result) {
  * @return {boolean} Whether the object is a NodeList.
  */
 goog.dom.isNodeList = function(val) {
-  // TODO(attila): Now the isNodeList is part of goog.dom we can use
-  // goog.userAgent to make this simpler.
   // A NodeList must have a length property of type 'number' on all platforms.
   if (val && typeof val.length == 'number') {
     // A NodeList is an object everywhere except Safari, where it's a function.
@@ -1149,7 +1136,6 @@ goog.dom.DomHelper.prototype.createDom = function(tagName,
 
   if (arguments.length > 2) {
     function childHandler(child) {
-      // TODO(pupius): More coercion, ala MochiKit?
       if (child) {
         this.appendChild(element, goog.isString(child) ?
             this.createTextNode(child) : child);
@@ -1158,7 +1144,6 @@ goog.dom.DomHelper.prototype.createDom = function(tagName,
 
     for (var i = 2; i < arguments.length; i++) {
       var arg = arguments[i];
-      // TODO(attila): Fix isArrayLike to return false for a text node.
       if (goog.isArrayLike(arg) && !goog.dom.isNodeLike(arg)) {
         // If the argument is a node list, not a real array, use a clone,
         // because forEach can't be used to mutate a NodeList.

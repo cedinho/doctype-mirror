@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -229,8 +229,6 @@ goog.style.getClientViewportElement = function(opt_node) {
  * use goog.style.getPageOffsetLeft() and goog.style.getPageOffsetTop(), but
  * note if you call both those methods the tree will be analysed twice.
  *
- * TODO(arv): Remove dependency on Yahoo code.
- *
  * Note: this is based on Yahoo's getXY method.
  * @see http://developer.yahoo.net/yui/license.txt
  *
@@ -266,9 +264,6 @@ goog.style.getPageOffset = function(el) {
   // NOTE(arv): If element is hidden (display none or disconnected or any the
   // ancestors are hidden) we get (0,0) by default but we still do the
   // accumulation of scroll position.
-
-  // TODO(arv): Should we check if the node is disconnected and in that case
-  //            return (0,0)?
 
   var pos = new goog.math.Coordinate(0, 0);
   var viewportElement = goog.style.getClientViewportElement(doc);
@@ -528,7 +523,6 @@ goog.style.setOpacity = function(el, alpha) {
   } else if ('MozOpacity' in style) {
     style.MozOpacity = alpha;
   } else if ('filter' in style) {
-    // TODO(arv): Overwriting the filter might have undesired side effects.
     style.filter = 'alpha(opacity=' + (alpha * 100) + ')';
   }
 };
@@ -551,7 +545,6 @@ goog.style.setTransparentBackgroundImage = function(el, src) {
   // It is safe to use the style.filter in IE only. In Safari 'filter' is in
   // style object but access to style.filter causes it to throw an exception.
   if (goog.userAgent.IE) {
-    // See TODO in setOpacity.
     style.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader(' +
         'src="' + src + '", sizingMethod="crop")';
   } else {
@@ -571,7 +564,6 @@ goog.style.setTransparentBackgroundImage = function(el, src) {
 goog.style.clearTransparentBackgroundImage = function(el) {
   var style = el.style;
   if ('filter' in style) {
-    // See TODO in setOpacity.
     style.filter = '';
   } else {
     // Set style properties individually instead of using background shorthand
@@ -765,7 +757,6 @@ goog.style.isUnselectable = function(el) {
  *     selectable state, and leave its descendants alone; defaults to false.
  */
 goog.style.setUnselectable = function(el, unselectable, opt_noRecurse) {
-  // TODO(attila): Do we need all of TR_DomUtil.makeUnselectable() in GoogJSL?
   var descendants = !opt_noRecurse ? el.getElementsByTagName('*') : null;
   var name = goog.style.unselectableStyle_;
   if (name) {
@@ -808,12 +799,6 @@ goog.style.getBorderBoxSize = function(element) {
  * @param {goog.math.Size} size  The new size.
  */
 goog.style.setBorderBoxSize = function(element, size) {
-  // TODO(arv): Safari 3.0.3 beta (Win32 and Mac) fails on this. It does not
-  // take the changed box-sizing property into account. Android and nightly
-  // builds of WebKit, however works fine (WebKit version 522.11.3) so we are
-  // hoping that Safari 3 final will also work. If the final version of Safari
-  // does not work we can change to use the border and padding sizes for Safari.
-
   if (goog.userAgent.IE) {
     var doc = goog.dom.getOwnerDocument(element);
     var style = element.style;
@@ -871,12 +856,6 @@ goog.style.getContentBoxSize = function(element) {
  * @param {goog.math.Size} size  The new size.
  */
 goog.style.setContentBoxSize = function(element, size) {
-  // TODO(arv): Safari 3.0.3 beta (Win32 and Mac) fails on this. It does not
-  // take the changed box-sizing property into account. Android and nightly
-  // builds of WebKit, however works fine (WebKit version 522.11.3) so we are
-  // hoping that Safari 3 final will also work. If the final version of Safari
-  // does not work we can change to use the border and padding sizes for Safari.
-
   if (goog.userAgent.IE) {
     var doc = goog.dom.getOwnerDocument(element);
     var style = element.style;

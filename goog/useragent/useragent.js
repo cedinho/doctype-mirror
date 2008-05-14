@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -49,8 +49,6 @@ goog.require('goog.string');
   // Some user agents (I'm thinking of you, Gears WorkerPool) do not expose a
   // navigator object off the global scope.
   //
-  // TODO(aa): It would be cool to introduce a compile-time constant that we
-  // could use to avoid including all this code in the case of workers.
   if (goog.global['navigator']) {
     var ua = navigator.userAgent;
 

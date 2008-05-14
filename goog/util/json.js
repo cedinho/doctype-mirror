@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -29,7 +29,6 @@
  * @fileoverview JSON utility functions
  */
 
-// TODO(arv): Move to /json/ and update all dependent BUILD files
 
 
 goog.provide('goog.json');

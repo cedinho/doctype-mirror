@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -33,8 +33,6 @@
 goog.provide('goog.math');
 
 
-// TODO(brenneman): Remove this require once all dependant files require the
-// correct subclasses instead of just goog.math.
 goog.require('goog.math.Box');
 goog.require('goog.math.Coordinate');
 goog.require('goog.math.Range');

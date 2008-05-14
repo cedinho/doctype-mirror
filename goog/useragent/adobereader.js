@@ -52,7 +52,6 @@ goog.require('goog.userAgent');
     } else if (detectOnIe('PDF.PdfCtrl.6')) {
       version = '6';
     }
-    // TODO(chrisn): Add detection for previous versions if anyone needs them.
   } else {
     if (navigator.mimeTypes && navigator.mimeTypes.length > 0) {
       var mimeType = navigator.mimeTypes['application/pdf'];

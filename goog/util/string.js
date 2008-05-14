@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -812,8 +812,6 @@ goog.string.escapeChar = function(c) {
  * @param {string} s The string to build the map from.
  * @return {Object} The map of characters used.
  */
-// TODO(arv): It seems like we should have a generic goog.array.toMap. But do
-//            we want a dependency on goog.array in goog.string?
 goog.string.toMap = function(s) {
   var rv = {};
   for (var i = 0; i < s.length; i++) {

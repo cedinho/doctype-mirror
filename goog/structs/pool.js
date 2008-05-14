@@ -1,4 +1,4 @@
-// Copyright 2006-8 Google Inc.
+// Copyright 2006 Google Inc.
 // All Rights Reserved.
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -89,8 +89,6 @@ goog.structs.Pool = function(opt_minCount, opt_maxCount) {
   this.adjustForMinMax();
 
 
-  // TODO(pupius): Remove once JSCompiler's undefined properties warnings
-  // don't error for guarded properties.
   var magicProps = {canBeReused: 0};
 };
 goog.inherits(goog.structs.Pool, goog.Disposable);

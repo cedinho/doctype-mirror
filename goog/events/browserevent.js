@@ -1,4 +1,4 @@
-// Copyright 2005-8 Google Inc.
+// Copyright 2005 Google Inc.
 // All Rights Reserved
 // 
 // Redistribution and use in source and binary forms, with or without
@@ -42,7 +42,7 @@
  * - screenX        {Number}    X-coordinate relative to the edge of the screen
  * - screenY        {Number}    Y-coordinate relative to the edge of the screen
  * - button         {Number}    Mouse button. Use isButton() to test.
- * - keyCode        {Number}    Key-code (TODO: Test on various locals)
+ * - keyCode        {Number}    Key-code
  * - ctrlKey        {Boolean}   Was ctrl key depressed
  * - altKey         {Boolean}   Was alt key depressed
  * - shiftKey       {Boolean}   Was shift key depressed
@@ -250,8 +250,6 @@ goog.events.BrowserEvent.prototype.init = function(e, opt_currentTarget) {
 
   this.button = e.button;
 
-  // TODO: Ensure this keycode stuff makes sense, especially on different
-  // keyboard layouts
   this.keyCode = e.keyCode || 0;
   this.charCode = e.charCode ||
                  (this.type == goog.events.EventType.KEYPRESS ? e.keyCode : 0);
