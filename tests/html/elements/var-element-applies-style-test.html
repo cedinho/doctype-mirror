@@ -31,7 +31,7 @@ var#test { color: #abcdef }
 <var id="test"></var>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[VarElement] applies style",
+  assertEquals("[VarElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

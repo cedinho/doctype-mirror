@@ -31,7 +31,7 @@ kbd#test { color: #abcdef }
 <kbd id="test"></kbd>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[KbdElement] applies style",
+  assertEquals("[KbdElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

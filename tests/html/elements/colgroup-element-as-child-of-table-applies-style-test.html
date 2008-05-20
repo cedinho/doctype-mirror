@@ -31,7 +31,7 @@ colgroup#test { color: #abcdef }
 <table><colgroup id="test"></colgroup></table>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[ColgroupElement] applies style as child of table",
+  assertEquals("[ColgroupElement] applies style as child of table",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

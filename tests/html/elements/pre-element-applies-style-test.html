@@ -31,7 +31,7 @@ pre#test { color: #abcdef }
 <pre id="test"></pre>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[PreElement] applies style",
+  assertEquals("[PreElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

@@ -31,7 +31,7 @@ meta#test { color: #abcdef }
 <meta id="test"></meta>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[MetaElement] applies style",
+  assertEquals("[MetaElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

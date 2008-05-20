@@ -31,7 +31,7 @@ multicol#test { color: #abcdef }
 <multicol id="test"></multicol>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[MulticolElement] applies style",
+  assertEquals("[MulticolElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

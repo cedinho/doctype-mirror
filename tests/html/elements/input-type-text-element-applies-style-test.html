@@ -31,7 +31,7 @@ input type=text#test { color: #abcdef }
 <input type=text id="test"></input type=text>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[InputTypeTextElement] applies style",
+  assertEquals("[InputTypeTextElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

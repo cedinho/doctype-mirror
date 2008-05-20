@@ -31,7 +31,7 @@ font#test { color: #abcdef }
 <font id="test"></font>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[FontElement] applies style",
+  assertEquals("[FontElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

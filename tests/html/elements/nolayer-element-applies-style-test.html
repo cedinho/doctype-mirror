@@ -31,7 +31,7 @@ nolayer#test { color: #abcdef }
 <nolayer id="test"></nolayer>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[NolayerElement] applies style",
+  assertEquals("[NolayerElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

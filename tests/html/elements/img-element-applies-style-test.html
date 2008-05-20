@@ -31,7 +31,7 @@ img#test { color: #abcdef }
 <img id="test"></img>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[ImgElement] applies style",
+  assertEquals("[ImgElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

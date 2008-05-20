@@ -31,7 +31,7 @@ td#test { color: #abcdef }
 <td id="test"></td>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[TdElement] applies style",
+  assertEquals("[TdElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

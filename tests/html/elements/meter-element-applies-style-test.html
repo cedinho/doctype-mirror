@@ -31,7 +31,7 @@ meter#test { color: #abcdef }
 <meter id="test"></meter>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[MeterElement] applies style",
+  assertEquals("[MeterElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

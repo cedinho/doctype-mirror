@@ -31,7 +31,7 @@ ilayer#test { color: #abcdef }
 <ilayer id="test"></ilayer>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[IlayerElement] applies style",
+  assertEquals("[IlayerElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

@@ -31,7 +31,7 @@ h1#test { color: #abcdef }
 <h1 id="test"></h1>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[H1H2H3H4H5H6Element] applies style",
+  assertEquals("[H1H2H3H4H5H6Element] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

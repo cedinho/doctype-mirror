@@ -31,7 +31,7 @@ ol#test { color: #abcdef }
 <ol id="test"></ol>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[OlElement] applies style",
+  assertEquals("[OlElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

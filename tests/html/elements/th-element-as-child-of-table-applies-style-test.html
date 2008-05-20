@@ -31,7 +31,7 @@ th#test { color: #abcdef }
 <table><th id="test"></th></table>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[ThElement] applies style as child of table",
+  assertEquals("[ThElement] applies style as child of table",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

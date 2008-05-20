@@ -31,7 +31,7 @@ embed#test { color: #abcdef }
 <embed id="test"></embed>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[EmbedElement] applies style",
+  assertEquals("[EmbedElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

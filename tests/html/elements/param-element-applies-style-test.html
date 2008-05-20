@@ -31,7 +31,7 @@ param#test { color: #abcdef }
 <param id="test"></param>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[ParamElement] applies style",
+  assertEquals("[ParamElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

@@ -31,7 +31,7 @@ span#test { color: #abcdef }
 <span id="test"></span>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[SpanElement] applies style",
+  assertEquals("[SpanElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

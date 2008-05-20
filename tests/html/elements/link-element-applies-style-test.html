@@ -31,7 +31,7 @@ link#test { color: #abcdef }
 <link id="test"></link>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[LinkElement] applies style",
+  assertEquals("[LinkElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

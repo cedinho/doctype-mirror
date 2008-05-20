@@ -31,7 +31,7 @@ menu#test { color: #abcdef }
 <menu id="test"></menu>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[MenuElement] applies style",
+  assertEquals("[MenuElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

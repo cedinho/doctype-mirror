@@ -31,7 +31,7 @@ del#test { color: #abcdef }
 <del id="test"></del>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[DelElement] applies style",
+  assertEquals("[DelElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

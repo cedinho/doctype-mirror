@@ -31,7 +31,7 @@ tfoot#test { color: #abcdef }
 <tfoot id="test"></tfoot>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[TfootElement] applies style",
+  assertEquals("[TfootElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

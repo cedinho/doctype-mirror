@@ -31,7 +31,7 @@ bdo#test { color: #abcdef }
 <bdo id="test"></bdo>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[BdoElement] applies style",
+  assertEquals("[BdoElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

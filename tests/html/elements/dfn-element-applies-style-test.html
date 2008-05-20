@@ -31,7 +31,7 @@ dfn#test { color: #abcdef }
 <dfn id="test"></dfn>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[DfnElement] applies style",
+  assertEquals("[DfnElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

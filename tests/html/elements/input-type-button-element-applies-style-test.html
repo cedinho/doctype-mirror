@@ -31,7 +31,7 @@ input type=button#test { color: #abcdef }
 <input type=button id="test"></input type=button>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[InputTypeButtonElement] applies style",
+  assertEquals("[InputTypeButtonElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

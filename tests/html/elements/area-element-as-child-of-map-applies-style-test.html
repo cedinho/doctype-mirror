@@ -31,7 +31,7 @@ area#test { color: #abcdef }
 <map><area id="test"></area></map>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[AreaElement] applies style as child of map",
+  assertEquals("[AreaElement] applies style as child of map",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

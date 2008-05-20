@@ -31,7 +31,7 @@ base#test { color: #abcdef }
 <base id="test"></base>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[BaseElement] applies style",
+  assertEquals("[BaseElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

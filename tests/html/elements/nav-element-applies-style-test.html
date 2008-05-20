@@ -31,7 +31,7 @@ nav#test { color: #abcdef }
 <nav id="test"></nav>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[NavElement] applies style",
+  assertEquals("[NavElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

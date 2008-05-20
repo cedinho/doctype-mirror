@@ -31,7 +31,7 @@ isindex#test { color: #abcdef }
 <isindex id="test"></isindex>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[IsindexElement] applies style",
+  assertEquals("[IsindexElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

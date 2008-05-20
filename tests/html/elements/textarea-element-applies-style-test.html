@@ -31,7 +31,7 @@ textarea#test { color: #abcdef }
 <textarea id="test"></textarea>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[TextareaElement] applies style",
+  assertEquals("[TextareaElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

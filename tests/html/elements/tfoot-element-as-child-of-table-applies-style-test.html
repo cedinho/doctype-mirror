@@ -31,7 +31,7 @@ tfoot#test { color: #abcdef }
 <table><tfoot id="test"></tfoot></table>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[TfootElement] applies style as child of table",
+  assertEquals("[TfootElement] applies style as child of table",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

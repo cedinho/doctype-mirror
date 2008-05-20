@@ -31,7 +31,7 @@ layer#test { color: #abcdef }
 <layer id="test"></layer>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[LayerElement] applies style",
+  assertEquals("[LayerElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

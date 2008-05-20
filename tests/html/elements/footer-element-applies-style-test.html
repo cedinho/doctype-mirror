@@ -31,7 +31,7 @@ footer#test { color: #abcdef }
 <footer id="test"></footer>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[FooterElement] applies style",
+  assertEquals("[FooterElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

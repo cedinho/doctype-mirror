@@ -31,7 +31,7 @@ input type=reset#test { color: #abcdef }
 <input type=reset id="test"></input type=reset>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[InputTypeResetElement] applies style",
+  assertEquals("[InputTypeResetElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

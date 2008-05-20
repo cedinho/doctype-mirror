@@ -31,7 +31,7 @@ caption#test { color: #abcdef }
 <table><caption id="test"></caption></table>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[CaptionElement] applies style as child of table",
+  assertEquals("[CaptionElement] applies style as child of table",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

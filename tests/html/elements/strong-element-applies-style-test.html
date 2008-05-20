@@ -31,7 +31,7 @@ strong#test { color: #abcdef }
 <strong id="test"></strong>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[StrongElement] applies style",
+  assertEquals("[StrongElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

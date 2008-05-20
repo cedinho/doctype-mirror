@@ -31,7 +31,7 @@ legend#test { color: #abcdef }
 <fieldset><legend id="test"></legend></fieldset>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[LegendElement] applies style as child of fieldset",
+  assertEquals("[LegendElement] applies style as child of fieldset",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

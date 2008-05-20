@@ -31,7 +31,7 @@ frameset#test { color: #abcdef }
 <frameset id="test"></frameset>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[FramesetElement] applies style",
+  assertEquals("[FramesetElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

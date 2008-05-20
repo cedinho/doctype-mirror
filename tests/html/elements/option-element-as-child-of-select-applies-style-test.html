@@ -31,7 +31,7 @@ option#test { color: #abcdef }
 <select><option id="test"></option></select>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[OptionElement] applies style as child of select",
+  assertEquals("[OptionElement] applies style as child of select",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

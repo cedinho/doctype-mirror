@@ -31,7 +31,7 @@ keygen#test { color: #abcdef }
 <keygen id="test"></keygen>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[KeygenElement] applies style",
+  assertEquals("[KeygenElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

@@ -31,7 +31,7 @@ section#test { color: #abcdef }
 <section id="test"></section>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[SectionElement] applies style",
+  assertEquals("[SectionElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

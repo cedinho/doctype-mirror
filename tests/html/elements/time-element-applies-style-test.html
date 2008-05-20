@@ -31,7 +31,7 @@ time#test { color: #abcdef }
 <time id="test"></time>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[TimeElement] applies style",
+  assertEquals("[TimeElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

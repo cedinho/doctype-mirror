@@ -33,7 +33,7 @@ div#control { color: #abcdef }
 <%(parentelementname)s><%(elementname)s id="test"></%(elementname)s></%(parentelementname)s>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[%(wikiname)s] applies style%(aschildof)s",
+  assertEquals("[%(wikiname)s] applies style%(aschildof)s",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

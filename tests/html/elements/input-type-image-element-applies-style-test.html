@@ -31,7 +31,7 @@ input type=image#test { color: #abcdef }
 <input type=image id="test"></input type=image>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[InputTypeImageElement] applies style",
+  assertEquals("[InputTypeImageElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

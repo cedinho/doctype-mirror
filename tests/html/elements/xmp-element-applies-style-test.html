@@ -31,7 +31,7 @@ xmp#test { color: #abcdef }
 <xmp id="test"></xmp>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[XmpElement] applies style",
+  assertEquals("[XmpElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

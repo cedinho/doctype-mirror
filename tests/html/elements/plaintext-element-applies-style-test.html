@@ -31,7 +31,7 @@ plaintext#test { color: #abcdef }
 <plaintext id="test"></plaintext>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[PlaintextElement] applies style",
+  assertEquals("[PlaintextElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

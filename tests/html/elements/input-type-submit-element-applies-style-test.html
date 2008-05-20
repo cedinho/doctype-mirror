@@ -31,7 +31,7 @@ input type=submit#test { color: #abcdef }
 <input type=submit id="test"></input type=submit>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[InputTypeSubmitElement] applies style",
+  assertEquals("[InputTypeSubmitElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

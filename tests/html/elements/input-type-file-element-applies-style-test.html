@@ -31,7 +31,7 @@ input type=file#test { color: #abcdef }
 <input type=file id="test"></input type=file>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[InputTypeFileElement] applies style",
+  assertEquals("[InputTypeFileElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

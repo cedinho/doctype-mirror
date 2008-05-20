@@ -31,7 +31,7 @@ aside#test { color: #abcdef }
 <aside id="test"></aside>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[AsideElement] applies style",
+  assertEquals("[AsideElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

@@ -31,7 +31,7 @@ input type=radio#test { color: #abcdef }
 <input type=radio id="test"></input type=radio>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[InputTypeRadioElement] applies style",
+  assertEquals("[InputTypeRadioElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

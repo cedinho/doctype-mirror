@@ -31,7 +31,7 @@ noscript#test { color: #abcdef }
 <noscript id="test"></noscript>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[NoscriptElement] applies style",
+  assertEquals("[NoscriptElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

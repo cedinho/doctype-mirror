@@ -31,7 +31,7 @@ listing#test { color: #abcdef }
 <listing id="test"></listing>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[ListingElement] applies style",
+  assertEquals("[ListingElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

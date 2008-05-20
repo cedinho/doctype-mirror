@@ -31,7 +31,7 @@ samp#test { color: #abcdef }
 <samp id="test"></samp>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[SampElement] applies style",
+  assertEquals("[SampElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

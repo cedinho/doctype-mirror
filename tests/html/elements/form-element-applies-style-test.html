@@ -31,7 +31,7 @@ form#test { color: #abcdef }
 <form id="test"></form>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[FormElement] applies style",
+  assertEquals("[FormElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

@@ -31,7 +31,7 @@ fieldset#test { color: #abcdef }
 <fieldset id="test"></fieldset>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[FieldsetElement] applies style",
+  assertEquals("[FieldsetElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

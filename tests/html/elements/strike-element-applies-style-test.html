@@ -31,7 +31,7 @@ strike#test { color: #abcdef }
 <strike id="test"></strike>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[StrikeElement] applies style",
+  assertEquals("[StrikeElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

@@ -31,7 +31,7 @@ iframe#test { color: #abcdef }
 <iframe id="test"></iframe>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[IframeElement] applies style",
+  assertEquals("[IframeElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

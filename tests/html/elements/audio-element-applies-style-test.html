@@ -31,7 +31,7 @@ audio#test { color: #abcdef }
 <audio id="test"></audio>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[AudioElement] applies style",
+  assertEquals("[AudioElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

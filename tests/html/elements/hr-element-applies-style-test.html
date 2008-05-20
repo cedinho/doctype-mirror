@@ -31,7 +31,7 @@ hr#test { color: #abcdef }
 <hr id="test"></hr>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[HrElement] applies style",
+  assertEquals("[HrElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

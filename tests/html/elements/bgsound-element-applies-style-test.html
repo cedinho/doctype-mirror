@@ -31,7 +31,7 @@ bgsound#test { color: #abcdef }
 <bgsound id="test"></bgsound>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[BgsoundElement] applies style",
+  assertEquals("[BgsoundElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

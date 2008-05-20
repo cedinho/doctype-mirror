@@ -31,7 +31,7 @@ legend#test { color: #abcdef }
 <legend id="test"></legend>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[LegendElement] applies style",
+  assertEquals("[LegendElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

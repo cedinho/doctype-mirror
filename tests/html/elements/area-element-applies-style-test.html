@@ -31,7 +31,7 @@ area#test { color: #abcdef }
 <area id="test"></area>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[AreaElement] applies style",
+  assertEquals("[AreaElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

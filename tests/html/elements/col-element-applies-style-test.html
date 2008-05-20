@@ -31,7 +31,7 @@ col#test { color: #abcdef }
 <col id="test"></col>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[ColElement] applies style",
+  assertEquals("[ColElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

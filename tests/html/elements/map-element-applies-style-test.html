@@ -31,7 +31,7 @@ map#test { color: #abcdef }
 <map id="test"></map>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[MapElement] applies style",
+  assertEquals("[MapElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

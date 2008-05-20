@@ -31,7 +31,7 @@ datagrid#test { color: #abcdef }
 <datagrid id="test"></datagrid>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[DatagridElement] applies style",
+  assertEquals("[DatagridElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

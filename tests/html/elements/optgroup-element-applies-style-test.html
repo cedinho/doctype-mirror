@@ -31,7 +31,7 @@ optgroup#test { color: #abcdef }
 <optgroup id="test"></optgroup>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[OptgroupElement] applies style",
+  assertEquals("[OptgroupElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

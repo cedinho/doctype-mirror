@@ -31,7 +31,7 @@ input type=checkbox#test { color: #abcdef }
 <input type=checkbox id="test"></input type=checkbox>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[InputTypeCheckboxElement] applies style",
+  assertEquals("[InputTypeCheckboxElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }

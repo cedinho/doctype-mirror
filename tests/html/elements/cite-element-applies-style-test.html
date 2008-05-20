@@ -31,7 +31,7 @@ cite#test { color: #abcdef }
 <cite id="test"></cite>
 <script type="text/javascript">
 function testDOM() {
-  assertNotEquals("[CiteElement] applies style",
+  assertEquals("[CiteElement] applies style",
     encyclopedia.getComputedStyleById('control', 'color'),
     encyclopedia.getComputedStyleById('test', 'color'));
 }
