@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x00029;</div>
 <div id="test">&rpar;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[RparCharacterEntity] rpar; character entity treated as U+00029",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

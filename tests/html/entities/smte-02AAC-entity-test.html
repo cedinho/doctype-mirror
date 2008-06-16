@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02AAC;</div>
 <div id="test">&smte;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[SmteCharacterEntity] smte; character entity treated as U+02AAC",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

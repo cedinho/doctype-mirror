@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02262;</div>
 <div id="test">&NotCongruent;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NotcongruentCharacterEntity] NotCongruent; character entity treated as U+02262",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

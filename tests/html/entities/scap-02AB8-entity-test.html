@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02AB8;</div>
 <div id="test">&scap;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[ScapCharacterEntity] scap; character entity treated as U+02AB8",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

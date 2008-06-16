@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02245;</div>
 <div id="test">&cong;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[CongCharacterEntity] cong; character entity treated as U+02245",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

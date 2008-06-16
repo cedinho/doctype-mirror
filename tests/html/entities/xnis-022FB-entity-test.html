@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022FB;</div>
 <div id="test">&xnis;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[XnisCharacterEntity] xnis; character entity treated as U+022FB",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

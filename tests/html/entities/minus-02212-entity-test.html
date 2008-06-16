@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02212;</div>
 <div id="test">&minus;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[MinusCharacterEntity] minus; character entity treated as U+02212",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

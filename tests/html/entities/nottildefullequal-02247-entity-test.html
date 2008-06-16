@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02247;</div>
 <div id="test">&NotTildeFullEqual;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NottildefullequalCharacterEntity] NotTildeFullEqual; character entity treated as U+02247",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

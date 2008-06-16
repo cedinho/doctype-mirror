@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022F5;</div>
 <div id="test">&isindot;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[IsindotCharacterEntity] isindot; character entity treated as U+022F5",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

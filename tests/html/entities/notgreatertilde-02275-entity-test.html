@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02275;</div>
 <div id="test">&NotGreaterTilde;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NotgreatertildeCharacterEntity] NotGreaterTilde; character entity treated as U+02275",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

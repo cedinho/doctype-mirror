@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022C0;</div>
 <div id="test">&xwedge;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[XwedgeCharacterEntity] xwedge; character entity treated as U+022C0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

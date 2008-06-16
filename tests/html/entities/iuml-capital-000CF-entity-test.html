@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x000CF;</div>
 <div id="test">&Iuml;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[IumlCharacterEntity] Iuml; character entity treated as U+000CF",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

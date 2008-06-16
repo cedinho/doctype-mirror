@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022BA;</div>
 <div id="test">&intcal;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[IntcalCharacterEntity] intcal; character entity treated as U+022BA",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

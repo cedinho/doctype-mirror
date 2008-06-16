@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x000AC;</div>
 <div id="test">&not;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NotCharacterEntity] not; character entity treated as U+000AC",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

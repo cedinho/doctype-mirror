@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x003F1;</div>
 <div id="test">&rhov;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[RhovCharacterEntity] rhov; character entity treated as U+003F1",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

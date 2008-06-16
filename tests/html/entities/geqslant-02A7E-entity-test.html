@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02A7E;</div>
 <div id="test">&geqslant;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[GeqslantCharacterEntity] geqslant; character entity treated as U+02A7E",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

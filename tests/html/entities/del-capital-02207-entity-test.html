@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02207;</div>
 <div id="test">&Del;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[DelCharacterEntity] Del; character entity treated as U+02207",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

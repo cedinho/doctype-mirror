@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x003DD;</div>
 <div id="test">&gammad;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[GammadCharacterEntity] gammad; character entity treated as U+003DD",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

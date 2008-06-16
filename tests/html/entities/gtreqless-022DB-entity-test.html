@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022DB;</div>
 <div id="test">&gtreqless;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[GtreqlessCharacterEntity] gtreqless; character entity treated as U+022DB",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x003F0;</div>
 <div id="test">&kappav;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[KappavCharacterEntity] kappav; character entity treated as U+003F0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

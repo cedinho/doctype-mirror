@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02A89;</div>
 <div id="test">&lnap;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[LnapCharacterEntity] lnap; character entity treated as U+02A89",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

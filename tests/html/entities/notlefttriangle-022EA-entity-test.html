@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022EA;</div>
 <div id="test">&NotLeftTriangle;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NotlefttriangleCharacterEntity] NotLeftTriangle; character entity treated as U+022EA",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

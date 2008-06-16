@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x0229A;</div>
 <div id="test">&circledcirc;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[CircledcircCharacterEntity] circledcirc; character entity treated as U+0229A",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

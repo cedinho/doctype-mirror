@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02AA0;</div>
 <div id="test">&simgE;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[SimgeCharacterEntity] simgE; character entity treated as U+02AA0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

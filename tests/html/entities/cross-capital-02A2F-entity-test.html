@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02A2F;</div>
 <div id="test">&Cross;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[CrossCharacterEntity] Cross; character entity treated as U+02A2F",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

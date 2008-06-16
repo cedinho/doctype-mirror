@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x000A0;</div>
 <div id="test">&NonBreakingSpace;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NonbreakingspaceCharacterEntity] NonBreakingSpace; character entity treated as U+000A0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

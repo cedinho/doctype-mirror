@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x000F7;</div>
 <div id="test">&divide;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[DivideCharacterEntity] divide; character entity treated as U+000F7",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

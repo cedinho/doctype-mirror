@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022DA;</div>
 <div id="test">&lesseqgtr;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[LesseqgtrCharacterEntity] lesseqgtr; character entity treated as U+022DA",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

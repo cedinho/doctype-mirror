@@ -70,10 +70,41 @@ function suite() {
 </html>
 '''
 
-WIKIFILE = '''#summary %(wikidescription)"
+WIKIFILE = '''#summary %(entityname)s character entity
 #labels about-html,from-w3c
 
+== Value ==
 
+%(wikivalue)s
+
+[HTMLCharacterEntities List of HTML character entities]
+
+== Browser compatibility ==
+
+(coming soon)
+
+== Further reading ==
+
+  * [http://www.whatwg.org/specs/web-apps/current-work/multipage/named.html Named character references in HTML 5]
+  * [http://www.w3.org/TR/html4/sgml/entities.html Character entity references in HTML 4]
+  * [http://blooberry.com/indexdot/html/tagpages/text.htm Text in HTML (blooberry.com)]
+'''
+
+FULLLIST = '''#summary List of HTML character entities
+#labels about-html,from-w3c
+
+Web authors can use [http://www.w3.org/TR/html4/sgml/entities.html character entities] to display certain pre-defined non-ASCII characters.  Evolt.org has a nice chart of [http://www.evolt.org/article/ala/17/21234/ the most common character entities].
+
+Here is the complete list of [http://www.whatwg.org/specs/web-apps/current-work/multipage/named.html character entities defined in HTML 5]:
+
+|| *Name* || *Value* || *Test* ||
+%(entitytable)s
+
+== Further reading ==
+
+  * [http://www.whatwg.org/specs/web-apps/current-work/multipage/named.html Named character references in HTML 5]
+  * [http://www.w3.org/TR/html4/sgml/entities.html Character entity references in HTML 4]
+  * [http://www.evolt.org/article/ala/17/21234/ Chart of common character entities]
 '''
 
 INDEXJS = '''function htmlentitiessuite() {
@@ -86,12 +117,27 @@ INDEXJS = '''function htmlentitiessuite() {
 INDEXJSFILE = '''  testSuite.addTestPage("../tests/%(testfilename)s");
 '''
 
+def buildEntityHexLink(entityhex):
+    entityhexupper = entityhex.upper()
+    entityhexlower = entityhex.lower()
+    last4 = entityhexlower[-4:]
+    if entityhex[0] == '0':
+        return '[http://www.fileformat.info/info/unicode/char/%(last4)s/index.htm U+%(entityhexupper)s]' % locals()
+    else:
+        return 'U+' + entityhexupper
+
 indexjsfiles = ''
 duplicates = {}
+wikivalues = {}
+entitytable = ''
 commands.getoutput('rm html/entities/*.html')
 for entityname, entityhex in [l.split() for l in file('html/entities/character-entities.txt').readlines()]:
     entityhex = entityhex.replace('U+', '')
     wikiname = entityname.replace(';', '').capitalize() + 'CharacterEntity'
+    if wikivalues.has_key(wikiname):
+        wikivalues[wikiname].append((entityname, entityhex))
+    else:
+        wikivalues[wikiname] = [(entityname, entityhex)]
     testfilename = entityname
     if testfilename == testfilename.upper():
         testfilename = testfilename.lower() + '-allcaps'
@@ -119,7 +165,23 @@ for entityname, entityhex in [l.split() for l in file('html/entities/character-e
     print testfilename
     file(testfilename, 'w').write(output)
     indexjsfiles += INDEXJSFILE % globals()
+    entitytable += '|| `&%s` || %s || [http://doctype.googlecode.com/svn/trunk/tests/%s test]\n' % (entityname, buildEntityHexLink(entityhex), testfilename)
 
+for wikiname, valuelist in wikivalues.items():
+    if len(valuelist) == 1:
+        entityname, entityhex = valuelist[0]
+        if entityhex[0] == '0':
+            wikivalue = '`&%s` maps to the Unicode character %s.' % (entityname, buildEntityHexLink(entityhex))
+    else:
+        wikivalue = 'There are %s variations of this entity:\n' % (len(valuelist),)
+        for entityname, entityhex in valuelist:
+            wikivalue += '\n  * `&%s` maps to the Unicode character %s.' % (entityname, buildEntityHexLink(entityhex))
+    wikifilename = '../../wiki/%s.wiki' % wikiname
+    print wikifilename
+    file(wikifilename, 'w').write(WIKIFILE % globals())
+
+print '../../wiki/HTMLCharacterEntities.wiki'
+file('../../wiki/HTMLCharacterEntities.wiki', 'w').write(FULLLIST % globals())
 print 'html/entities/index.js'
 file('html/entities/index.js', 'w').write(INDEXJS % globals())
 print 'html/entities/index.html'

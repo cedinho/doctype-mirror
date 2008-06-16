@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022DF;</div>
 <div id="test">&curlyeqsucc;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[CurlyeqsuccCharacterEntity] curlyeqsucc; character entity treated as U+022DF",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

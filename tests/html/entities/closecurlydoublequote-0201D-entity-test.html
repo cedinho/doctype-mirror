@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x0201D;</div>
 <div id="test">&CloseCurlyDoubleQuote;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[ClosecurlydoublequoteCharacterEntity] CloseCurlyDoubleQuote; character entity treated as U+0201D",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

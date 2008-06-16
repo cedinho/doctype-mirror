@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02312;</div>
 <div id="test">&profline;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[ProflineCharacterEntity] profline; character entity treated as U+02312",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02271;</div>
 <div id="test">&NotGreaterEqual;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NotgreaterequalCharacterEntity] NotGreaterEqual; character entity treated as U+02271",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x027F7;</div>
 <div id="test">&longleftrightarrow;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[LongleftrightarrowCharacterEntity] longleftrightarrow; character entity treated as U+027F7",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

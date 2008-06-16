@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x029F4;</div>
 <div id="test">&RuleDelayed;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[RuledelayedCharacterEntity] RuleDelayed; character entity treated as U+029F4",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

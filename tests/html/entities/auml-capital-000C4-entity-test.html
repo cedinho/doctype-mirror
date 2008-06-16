@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x000C4;</div>
 <div id="test">&Auml;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[AumlCharacterEntity] Auml; character entity treated as U+000C4",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

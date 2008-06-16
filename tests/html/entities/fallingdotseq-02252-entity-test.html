@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02252;</div>
 <div id="test">&fallingdotseq;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[FallingdotseqCharacterEntity] fallingdotseq; character entity treated as U+02252",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

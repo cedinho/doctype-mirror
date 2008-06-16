@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x000F6;</div>
 <div id="test">&ouml</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[OumlCharacterEntity] ouml character entity treated as U+000F6",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

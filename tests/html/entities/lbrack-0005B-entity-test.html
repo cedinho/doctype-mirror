@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x0005B;</div>
 <div id="test">&lbrack;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[LbrackCharacterEntity] lbrack; character entity treated as U+0005B",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x000D4;</div>
 <div id="test">&Ocirc</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[OcircCharacterEntity] Ocirc character entity treated as U+000D4",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

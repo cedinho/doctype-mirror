@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x0223D;</div>
 <div id="test">&backsim;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[BacksimCharacterEntity] backsim; character entity treated as U+0223D",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

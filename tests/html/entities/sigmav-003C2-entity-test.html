@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x003C2;</div>
 <div id="test">&sigmav;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[SigmavCharacterEntity] sigmav; character entity treated as U+003C2",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

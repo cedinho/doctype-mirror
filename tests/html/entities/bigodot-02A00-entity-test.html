@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02A00;</div>
 <div id="test">&bigodot;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[BigodotCharacterEntity] bigodot; character entity treated as U+02A00",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

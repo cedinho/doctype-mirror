@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x0230F;</div>
 <div id="test">&ulcrop;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[UlcropCharacterEntity] ulcrop; character entity treated as U+0230F",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02030;</div>
 <div id="test">&permil;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[PermilCharacterEntity] permil; character entity treated as U+02030",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

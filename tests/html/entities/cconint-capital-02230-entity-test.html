@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02230;</div>
 <div id="test">&Cconint;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[CconintCharacterEntity] Cconint; character entity treated as U+02230",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

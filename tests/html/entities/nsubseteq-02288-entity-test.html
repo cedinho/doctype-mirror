@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02288;</div>
 <div id="test">&nsubseteq;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NsubseteqCharacterEntity] nsubseteq; character entity treated as U+02288",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

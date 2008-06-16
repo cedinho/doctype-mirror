@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x021DD;</div>
 <div id="test">&zigrarr;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[ZigrarrCharacterEntity] zigrarr; character entity treated as U+021DD",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

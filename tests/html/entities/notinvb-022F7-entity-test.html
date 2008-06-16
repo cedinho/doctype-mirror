@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022F7;</div>
 <div id="test">&notinvb;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NotinvbCharacterEntity] notinvb; character entity treated as U+022F7",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

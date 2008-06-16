@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02191;</div>
 <div id="test">&ShortUpArrow;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[ShortuparrowCharacterEntity] ShortUpArrow; character entity treated as U+02191",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

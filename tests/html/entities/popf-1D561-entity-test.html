@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x1D561;</div>
 <div id="test">&popf;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[PopfCharacterEntity] popf; character entity treated as U+1D561",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

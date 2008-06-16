@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02A3B;</div>
 <div id="test">&tritime;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[TritimeCharacterEntity] tritime; character entity treated as U+02A3B",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x027FC;</div>
 <div id="test">&longmapsto;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[LongmapstoCharacterEntity] longmapsto; character entity treated as U+027FC",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

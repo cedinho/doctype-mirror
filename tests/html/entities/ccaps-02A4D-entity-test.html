@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02A4D;</div>
 <div id="test">&ccaps;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[CcapsCharacterEntity] ccaps; character entity treated as U+02A4D",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

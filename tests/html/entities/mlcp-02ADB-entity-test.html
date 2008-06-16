@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02ADB;</div>
 <div id="test">&mlcp;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[MlcpCharacterEntity] mlcp; character entity treated as U+02ADB",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

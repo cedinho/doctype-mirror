@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x000A8;</div>
 <div id="test">&uml</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[UmlCharacterEntity] uml character entity treated as U+000A8",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

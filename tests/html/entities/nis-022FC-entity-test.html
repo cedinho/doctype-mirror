@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x022FC;</div>
 <div id="test">&nis;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NisCharacterEntity] nis; character entity treated as U+022FC",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

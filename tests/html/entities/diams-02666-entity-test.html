@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02666;</div>
 <div id="test">&diams;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[DiamsCharacterEntity] diams; character entity treated as U+02666",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

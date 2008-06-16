@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x029DE;</div>
 <div id="test">&nvinfin;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NvinfinCharacterEntity] nvinfin; character entity treated as U+029DE",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

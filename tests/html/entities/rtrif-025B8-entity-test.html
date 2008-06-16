@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x025B8;</div>
 <div id="test">&rtrif;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[RtrifCharacterEntity] rtrif; character entity treated as U+025B8",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

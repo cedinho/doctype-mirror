@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x003F5;</div>
 <div id="test">&straightepsilon;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[StraightepsilonCharacterEntity] straightepsilon; character entity treated as U+003F5",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

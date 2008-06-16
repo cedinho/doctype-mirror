@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02195;</div>
 <div id="test">&updownarrow;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[UpdownarrowCharacterEntity] updownarrow; character entity treated as U+02195",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

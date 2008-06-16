@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x0215E;</div>
 <div id="test">&frac78;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[Frac78CharacterEntity] frac78; character entity treated as U+0215E",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

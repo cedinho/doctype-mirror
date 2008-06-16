@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02289;</div>
 <div id="test">&NotSupersetEqual;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[NotsupersetequalCharacterEntity] NotSupersetEqual; character entity treated as U+02289",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02AA2;</div>
 <div id="test">&GreaterGreater;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[GreatergreaterCharacterEntity] GreaterGreater; character entity treated as U+02AA2",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

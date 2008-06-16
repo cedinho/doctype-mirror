@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x0211A;</div>
 <div id="test">&Qopf;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[QopfCharacterEntity] Qopf; character entity treated as U+0211A",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

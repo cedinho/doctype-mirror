@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02A34;</div>
 <div id="test">&lotimes;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[LotimesCharacterEntity] lotimes; character entity treated as U+02A34",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

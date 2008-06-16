@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x025B4;</div>
 <div id="test">&utrif;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[UtrifCharacterEntity] utrif; character entity treated as U+025B4",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

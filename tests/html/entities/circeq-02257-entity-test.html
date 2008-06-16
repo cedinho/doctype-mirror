@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02257;</div>
 <div id="test">&circeq;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[CirceqCharacterEntity] circeq; character entity treated as U+02257",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);

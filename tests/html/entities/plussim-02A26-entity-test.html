@@ -28,7 +28,7 @@ p.fail { background: transparent; color: red }
 <div id="control">&#x02A26;</div>
 <div id="test">&plussim;</div>
 <script type="text/javascript">
-function testDOM() {
+function testEntity() {
   assertEquals("[PlussimCharacterEntity] plussim; character entity treated as U+02A26",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
