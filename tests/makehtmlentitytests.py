@@ -77,7 +77,7 @@ WIKIFILE = '''#summary %(entityname)s character entity
 
 %(wikivalue)s
 
-[HTMLCharacterEntities List of HTML character entities]
+[CharacterEntities List of HTML character entities]
 
 == Browser compatibility ==
 
@@ -165,7 +165,7 @@ for entityname, entityhex in [l.split() for l in file('html/entities/character-e
     print testfilename
     file(testfilename, 'w').write(output)
     indexjsfiles += INDEXJSFILE % globals()
-    entitytable += '|| `&%s` || %s || [http://doctype.googlecode.com/svn/trunk/tests/%s test]\n' % (entityname, buildEntityHexLink(entityhex), testfilename)
+    entitytable += '|| [%s &%s] || %s || [http://doctype.googlecode.com/svn/trunk/tests/%s test]\n' % (wikiname, entityname, buildEntityHexLink(entityhex), testfilename)
 
 for wikiname, valuelist in wikivalues.items():
     if len(valuelist) == 1:
@@ -180,8 +180,8 @@ for wikiname, valuelist in wikivalues.items():
     print wikifilename
     file(wikifilename, 'w').write(WIKIFILE % globals())
 
-print '../../wiki/HTMLCharacterEntities.wiki'
-file('../../wiki/HTMLCharacterEntities.wiki', 'w').write(FULLLIST % globals())
+print '../../wiki/CharacterEntities.wiki'
+file('../../wiki/CharacterEntities.wiki', 'w').write(FULLLIST % globals())
 print 'html/entities/index.js'
 file('html/entities/index.js', 'w').write(INDEXJS % globals())
 print 'html/entities/index.html'
