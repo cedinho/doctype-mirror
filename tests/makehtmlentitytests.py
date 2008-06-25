@@ -183,9 +183,10 @@ for entityname, entityhex in [l.split() for l in file('html/entities/character-e
     indexjsfiles += INDEXJSFILE % globals()
     if not entitytable.has_key(wikiletter):
         entitytable[wikiletter] = ''
-    entitytable[wikiletter] += '|| [%s &%s] || %s || [http://doctype.googlecode.com/svn/trunk/tests/%s test]\n' % (wikiname, entityname, buildEntityHexLink(entityhex), testfilename)
+    entitytable[wikiletter] += '|| [%s &%s] || %s || [http://doctype.googlecode.com/svn/trunk/tests/%s test] ||\n' % (wikiname, entityname, buildEntityHexLink(entityhex), testfilename)
 
 for wikiname, valuelist in wikivalues.items():
+    wikiletter = wikiname[0].upper()
     if len(valuelist) == 1:
         entityname, entityhex = valuelist[0]
         if entityhex[0] == '0':
