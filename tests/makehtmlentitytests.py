@@ -73,11 +73,11 @@ function suite() {
 WIKIFILE = '''#summary %(entityname)s character entity
 #labels about-html,from-w3c
 
+You are here: [Welcome Home] > [HtmlReference HTML Reference] > [CharacterEntities Character entities] > [CharacterEntities%(wikiletter)s %(wikiletter)s] > &%(entityname)s
+
 == Value ==
 
 %(wikivalue)s
-
-[CharacterEntities List of HTML character entities]
 
 == Browser compatibility ==
 
@@ -93,13 +93,28 @@ WIKIFILE = '''#summary %(entityname)s character entity
 FULLLIST = '''#summary List of HTML character entities
 #labels about-html,from-w3c
 
+You are here: [Welcome Home] > [HtmlReference HTML Reference] > Character entities
+
 Web authors can use [http://www.w3.org/TR/html4/sgml/entities.html character entities] to display certain pre-defined non-ASCII characters.  Evolt.org has a nice chart of [http://www.evolt.org/article/ala/17/21234/ the most common character entities].
 
 Here is the complete list of [http://www.whatwg.org/specs/web-apps/current-work/multipage/named.html character entities defined in HTML 5]:
 
-|| *Name* || *Value* || *Test* ||
-%(entitytable)s
+[CharacterEntitiesA A] [CharacterEntitiesB B] [CharacterEntitiesC C] [CharacterEntitiesD D] [CharacterEntitiesE E] [CharacterEntitiesF F] [CharacterEntitiesG G] [CharacterEntitiesH H] [CharacterEntitiesI I] [CharacterEntitiesJ J] [CharacterEntitiesK K] [CharacterEntitiesL L] [CharacterEntitiesM M] [CharacterEntitiesN N] [CharacterEntitiesO O] [CharacterEntitiesP P] [CharacterEntitiesQ Q] [CharacterEntitiesR R] [CharacterEntitiesS S] [CharacterEntitiesT T] [CharacterEntitiesU U] [CharacterEntitiesV V] [CharacterEntitiesW W] [CharacterEntitiesX X] [CharacterEntitiesY Y] [CharacterEntitiesZ Z] 
 
+== Further reading ==
+
+  * [http://www.whatwg.org/specs/web-apps/current-work/multipage/named.html Named character references in HTML 5]
+  * [http://www.w3.org/TR/html4/sgml/entities.html Character entity references in HTML 4]
+  * [http://www.evolt.org/article/ala/17/21234/ Chart of common character entities]
+'''
+
+LETTERLIST = '''#summary List of HTML character entities
+#labels about-html,from-w3c
+
+You are here: [Welcome Home] > [HtmlReference HTML Reference] > [CharacterEntities Character entities] > *beginning with %(letter)s*
+
+|| *Name* || *Value* || *Test* ||
+%(lettertable)s
 == Further reading ==
 
   * [http://www.whatwg.org/specs/web-apps/current-work/multipage/named.html Named character references in HTML 5]
@@ -129,11 +144,12 @@ def buildEntityHexLink(entityhex):
 indexjsfiles = ''
 duplicates = {}
 wikivalues = {}
-entitytable = ''
+entitytable = {}
 commands.getoutput('rm html/entities/*.html')
 for entityname, entityhex in [l.split() for l in file('html/entities/character-entities.txt').readlines()]:
     entityhex = entityhex.replace('U+', '')
     wikiname = entityname.replace(';', '').capitalize() + 'CharacterEntity'
+    wikiletter = wikiname[0].upper()
     if wikivalues.has_key(wikiname):
         wikivalues[wikiname].append((entityname, entityhex))
     else:
@@ -165,7 +181,9 @@ for entityname, entityhex in [l.split() for l in file('html/entities/character-e
     print testfilename
     file(testfilename, 'w').write(output)
     indexjsfiles += INDEXJSFILE % globals()
-    entitytable += '|| [%s &%s] || %s || [http://doctype.googlecode.com/svn/trunk/tests/%s test]\n' % (wikiname, entityname, buildEntityHexLink(entityhex), testfilename)
+    if not entitytable.has_key(wikiletter):
+        entitytable[wikiletter] = ''
+    entitytable[wikiletter] += '|| [%s &%s] || %s || [http://doctype.googlecode.com/svn/trunk/tests/%s test]\n' % (wikiname, entityname, buildEntityHexLink(entityhex), testfilename)
 
 for wikiname, valuelist in wikivalues.items():
     if len(valuelist) == 1:
@@ -182,6 +200,10 @@ for wikiname, valuelist in wikivalues.items():
 
 print '../../wiki/CharacterEntities.wiki'
 file('../../wiki/CharacterEntities.wiki', 'w').write(FULLLIST % globals())
+for letter in [chr(c+65) for c in range(0,26)]:
+    lettertable = entitytable[letter]
+    print '../../wiki/CharacterEntities%s.wiki' % letter
+    file('../../wiki/CharacterEntities%s.wiki' % letter, 'w').write(LETTERLIST % globals())
 print 'html/entities/index.js'
 file('html/entities/index.js', 'w').write(INDEXJS % globals())
 print 'html/entities/index.html'
