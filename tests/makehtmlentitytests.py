@@ -167,7 +167,7 @@ for entityname, entityhex in [l.split() for l in file('html/entities/character-e
     else:
         testfilename = testfilename + '-no-semicolon'
 
-    testfilename += '-' + entityhex + '-entity-test.html'
+    testfilename += '-' + entityhex.lower() + '-entity-test.html'
     testfilename = 'html/entities/' + testfilename
 
     try:
