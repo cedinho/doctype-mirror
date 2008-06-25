@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&agrave</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[AgraveCharacterEntity] agrave character entity treated as U+000E0",
+  assertEquals("[AgraveCharacterEntity] &agrave character entity treated as U+000E0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&PrecedesTilde;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PrecedestildeCharacterEntity] PrecedesTilde; character entity treated as U+0227E",
+  assertEquals("[PrecedestildeCharacterEntity] &PrecedesTilde; character entity treated as U+0227E",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

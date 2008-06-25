@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&prap;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PrapCharacterEntity] prap; character entity treated as U+02AB7",
+  assertEquals("[PrapCharacterEntity] &prap; character entity treated as U+02AB7",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

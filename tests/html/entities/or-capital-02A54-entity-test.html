@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&Or;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[OrCharacterEntity] Or; character entity treated as U+02A54",
+  assertEquals("[OrCharacterEntity] &Or; character entity treated as U+02A54",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

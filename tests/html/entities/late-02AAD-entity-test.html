@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&late;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[LateCharacterEntity] late; character entity treated as U+02AAD",
+  assertEquals("[LateCharacterEntity] &late; character entity treated as U+02AAD",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

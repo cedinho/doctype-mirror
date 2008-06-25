@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&EmptyVerySmallSquare;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[EmptyverysmallsquareCharacterEntity] EmptyVerySmallSquare; character entity treated as U+025AB",
+  assertEquals("[EmptyverysmallsquareCharacterEntity] &EmptyVerySmallSquare; character entity treated as U+025AB",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

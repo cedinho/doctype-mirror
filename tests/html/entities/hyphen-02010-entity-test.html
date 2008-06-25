@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&hyphen;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[HyphenCharacterEntity] hyphen; character entity treated as U+02010",
+  assertEquals("[HyphenCharacterEntity] &hyphen; character entity treated as U+02010",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

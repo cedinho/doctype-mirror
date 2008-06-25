@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&thicksim;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ThicksimCharacterEntity] thicksim; character entity treated as U+0223C",
+  assertEquals("[ThicksimCharacterEntity] &thicksim; character entity treated as U+0223C",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

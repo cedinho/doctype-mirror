@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&napos;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NaposCharacterEntity] napos; character entity treated as U+00149",
+  assertEquals("[NaposCharacterEntity] &napos; character entity treated as U+00149",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&fork;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ForkCharacterEntity] fork; character entity treated as U+022D4",
+  assertEquals("[ForkCharacterEntity] &fork; character entity treated as U+022D4",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

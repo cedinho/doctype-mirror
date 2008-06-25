@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&infin;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[InfinCharacterEntity] infin; character entity treated as U+0221E",
+  assertEquals("[InfinCharacterEntity] &infin; character entity treated as U+0221E",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

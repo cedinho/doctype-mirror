@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&xmap;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[XmapCharacterEntity] xmap; character entity treated as U+027FC",
+  assertEquals("[XmapCharacterEntity] &xmap; character entity treated as U+027FC",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

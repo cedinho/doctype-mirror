@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&twoheadrightarrow;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[TwoheadrightarrowCharacterEntity] twoheadrightarrow; character entity treated as U+021A0",
+  assertEquals("[TwoheadrightarrowCharacterEntity] &twoheadrightarrow; character entity treated as U+021A0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

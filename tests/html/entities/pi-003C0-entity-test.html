@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&pi;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PiCharacterEntity] pi; character entity treated as U+003C0",
+  assertEquals("[PiCharacterEntity] &pi; character entity treated as U+003C0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

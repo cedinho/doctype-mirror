@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&complement;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ComplementCharacterEntity] complement; character entity treated as U+02201",
+  assertEquals("[ComplementCharacterEntity] &complement; character entity treated as U+02201",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

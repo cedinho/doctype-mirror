@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&scnap;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ScnapCharacterEntity] scnap; character entity treated as U+02ABA",
+  assertEquals("[ScnapCharacterEntity] &scnap; character entity treated as U+02ABA",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

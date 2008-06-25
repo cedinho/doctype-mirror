@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&DownBreve;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[DownbreveCharacterEntity] DownBreve; character entity treated as U+00311",
+  assertEquals("[DownbreveCharacterEntity] &DownBreve; character entity treated as U+00311",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

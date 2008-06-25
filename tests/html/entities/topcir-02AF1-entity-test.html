@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&topcir;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[TopcirCharacterEntity] topcir; character entity treated as U+02AF1",
+  assertEquals("[TopcirCharacterEntity] &topcir; character entity treated as U+02AF1",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

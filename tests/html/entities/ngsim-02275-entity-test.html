@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&ngsim;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NgsimCharacterEntity] ngsim; character entity treated as U+02275",
+  assertEquals("[NgsimCharacterEntity] &ngsim; character entity treated as U+02275",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

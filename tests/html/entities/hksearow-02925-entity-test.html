@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&hksearow;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[HksearowCharacterEntity] hksearow; character entity treated as U+02925",
+  assertEquals("[HksearowCharacterEntity] &hksearow; character entity treated as U+02925",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

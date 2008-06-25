@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&Proportional;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ProportionalCharacterEntity] Proportional; character entity treated as U+0221D",
+  assertEquals("[ProportionalCharacterEntity] &Proportional; character entity treated as U+0221D",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

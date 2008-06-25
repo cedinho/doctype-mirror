@@ -33,7 +33,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&%(entityname)s</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[%(wikiname)s] %(entityname)s character entity treated as U+%(entityhex)s",
+  assertEquals("[%(wikiname)s] &%(entityname)s character entity treated as U+%(entityhex)s",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }
@@ -70,7 +70,7 @@ function suite() {
 </html>
 '''
 
-WIKIFILE = '''#summary %(entityname)s character entity
+WIKIFILE = '''#summary &%(entityname)s character entity
 #labels about-html,from-w3c
 
 You are here: [Welcome Home] > [HtmlReference HTML Reference] > [CharacterEntities Character entities] > [CharacterEntities%(wikiletter)s %(wikiletter)s] > &%(entityname)s

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&veebar;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[VeebarCharacterEntity] veebar; character entity treated as U+022BB",
+  assertEquals("[VeebarCharacterEntity] &veebar; character entity treated as U+022BB",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

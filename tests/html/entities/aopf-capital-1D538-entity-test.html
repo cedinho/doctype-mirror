@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&Aopf;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[AopfCharacterEntity] Aopf; character entity treated as U+1D538",
+  assertEquals("[AopfCharacterEntity] &Aopf; character entity treated as U+1D538",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

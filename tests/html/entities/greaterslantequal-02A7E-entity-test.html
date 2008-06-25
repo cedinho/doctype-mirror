@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&GreaterSlantEqual;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[GreaterslantequalCharacterEntity] GreaterSlantEqual; character entity treated as U+02A7E",
+  assertEquals("[GreaterslantequalCharacterEntity] &GreaterSlantEqual; character entity treated as U+02A7E",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

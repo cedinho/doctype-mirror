@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&OverBar;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[OverbarCharacterEntity] OverBar; character entity treated as U+000AF",
+  assertEquals("[OverbarCharacterEntity] &OverBar; character entity treated as U+000AF",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

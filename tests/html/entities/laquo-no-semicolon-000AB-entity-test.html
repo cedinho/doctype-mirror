@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&laquo</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[LaquoCharacterEntity] laquo character entity treated as U+000AB",
+  assertEquals("[LaquoCharacterEntity] &laquo character entity treated as U+000AB",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

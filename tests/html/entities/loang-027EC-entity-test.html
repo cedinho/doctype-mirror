@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&loang;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[LoangCharacterEntity] loang; character entity treated as U+027EC",
+  assertEquals("[LoangCharacterEntity] &loang; character entity treated as U+027EC",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

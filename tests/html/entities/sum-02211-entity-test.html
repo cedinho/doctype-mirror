@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&sum;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SumCharacterEntity] sum; character entity treated as U+02211",
+  assertEquals("[SumCharacterEntity] &sum; character entity treated as U+02211",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

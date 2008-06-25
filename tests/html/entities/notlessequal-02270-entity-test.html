@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&NotLessEqual;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NotlessequalCharacterEntity] NotLessEqual; character entity treated as U+02270",
+  assertEquals("[NotlessequalCharacterEntity] &NotLessEqual; character entity treated as U+02270",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

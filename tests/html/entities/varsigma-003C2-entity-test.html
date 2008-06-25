@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&varsigma;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[VarsigmaCharacterEntity] varsigma; character entity treated as U+003C2",
+  assertEquals("[VarsigmaCharacterEntity] &varsigma; character entity treated as U+003C2",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

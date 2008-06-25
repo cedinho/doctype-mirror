@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&CounterClockwiseContourIntegral;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[CounterclockwisecontourintegralCharacterEntity] CounterClockwiseContourIntegral; character entity treated as U+02233",
+  assertEquals("[CounterclockwisecontourintegralCharacterEntity] &CounterClockwiseContourIntegral; character entity treated as U+02233",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

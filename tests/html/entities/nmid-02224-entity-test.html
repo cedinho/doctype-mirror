@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&nmid;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NmidCharacterEntity] nmid; character entity treated as U+02224",
+  assertEquals("[NmidCharacterEntity] &nmid; character entity treated as U+02224",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

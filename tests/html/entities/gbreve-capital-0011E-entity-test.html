@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&Gbreve;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[GbreveCharacterEntity] Gbreve; character entity treated as U+0011E",
+  assertEquals("[GbreveCharacterEntity] &Gbreve; character entity treated as U+0011E",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

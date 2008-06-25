@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&ordf</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[OrdfCharacterEntity] ordf character entity treated as U+000AA",
+  assertEquals("[OrdfCharacterEntity] &ordf character entity treated as U+000AA",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

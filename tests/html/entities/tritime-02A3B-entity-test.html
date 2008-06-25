@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&tritime;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[TritimeCharacterEntity] tritime; character entity treated as U+02A3B",
+  assertEquals("[TritimeCharacterEntity] &tritime; character entity treated as U+02A3B",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

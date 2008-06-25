@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&period;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PeriodCharacterEntity] period; character entity treated as U+0002E",
+  assertEquals("[PeriodCharacterEntity] &period; character entity treated as U+0002E",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

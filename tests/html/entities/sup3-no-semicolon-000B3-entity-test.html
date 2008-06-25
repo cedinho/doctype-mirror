@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&sup3</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[Sup3CharacterEntity] sup3 character entity treated as U+000B3",
+  assertEquals("[Sup3CharacterEntity] &sup3 character entity treated as U+000B3",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

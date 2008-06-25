@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&telrec;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[TelrecCharacterEntity] telrec; character entity treated as U+02315",
+  assertEquals("[TelrecCharacterEntity] &telrec; character entity treated as U+02315",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

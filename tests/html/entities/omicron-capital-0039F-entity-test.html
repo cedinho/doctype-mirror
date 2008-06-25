@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&Omicron;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[OmicronCharacterEntity] Omicron; character entity treated as U+0039F",
+  assertEquals("[OmicronCharacterEntity] &Omicron; character entity treated as U+0039F",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

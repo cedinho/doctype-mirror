@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&gescc;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[GesccCharacterEntity] gescc; character entity treated as U+02AA9",
+  assertEquals("[GesccCharacterEntity] &gescc; character entity treated as U+02AA9",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

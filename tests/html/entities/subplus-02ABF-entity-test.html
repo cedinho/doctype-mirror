@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&subplus;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SubplusCharacterEntity] subplus; character entity treated as U+02ABF",
+  assertEquals("[SubplusCharacterEntity] &subplus; character entity treated as U+02ABF",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

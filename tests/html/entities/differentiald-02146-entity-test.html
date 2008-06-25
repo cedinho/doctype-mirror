@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&DifferentialD;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[DifferentialdCharacterEntity] DifferentialD; character entity treated as U+02146",
+  assertEquals("[DifferentialdCharacterEntity] &DifferentialD; character entity treated as U+02146",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&SquareSubsetEqual;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SquaresubsetequalCharacterEntity] SquareSubsetEqual; character entity treated as U+02291",
+  assertEquals("[SquaresubsetequalCharacterEntity] &SquareSubsetEqual; character entity treated as U+02291",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

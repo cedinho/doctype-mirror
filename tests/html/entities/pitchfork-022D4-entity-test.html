@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&pitchfork;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PitchforkCharacterEntity] pitchfork; character entity treated as U+022D4",
+  assertEquals("[PitchforkCharacterEntity] &pitchfork; character entity treated as U+022D4",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

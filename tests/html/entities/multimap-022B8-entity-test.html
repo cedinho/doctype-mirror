@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&multimap;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[MultimapCharacterEntity] multimap; character entity treated as U+022B8",
+  assertEquals("[MultimapCharacterEntity] &multimap; character entity treated as U+022B8",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

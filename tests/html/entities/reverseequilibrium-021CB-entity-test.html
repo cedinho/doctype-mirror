@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&ReverseEquilibrium;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ReverseequilibriumCharacterEntity] ReverseEquilibrium; character entity treated as U+021CB",
+  assertEquals("[ReverseequilibriumCharacterEntity] &ReverseEquilibrium; character entity treated as U+021CB",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

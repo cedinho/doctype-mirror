@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&deg</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[DegCharacterEntity] deg character entity treated as U+000B0",
+  assertEquals("[DegCharacterEntity] &deg character entity treated as U+000B0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

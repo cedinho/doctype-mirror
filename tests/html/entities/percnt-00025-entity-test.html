@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&percnt;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PercntCharacterEntity] percnt; character entity treated as U+00025",
+  assertEquals("[PercntCharacterEntity] &percnt; character entity treated as U+00025",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

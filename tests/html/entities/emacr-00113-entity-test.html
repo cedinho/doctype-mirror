@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&emacr;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[EmacrCharacterEntity] emacr; character entity treated as U+00113",
+  assertEquals("[EmacrCharacterEntity] &emacr; character entity treated as U+00113",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

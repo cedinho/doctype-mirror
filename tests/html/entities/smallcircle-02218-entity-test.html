@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&SmallCircle;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SmallcircleCharacterEntity] SmallCircle; character entity treated as U+02218",
+  assertEquals("[SmallcircleCharacterEntity] &SmallCircle; character entity treated as U+02218",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

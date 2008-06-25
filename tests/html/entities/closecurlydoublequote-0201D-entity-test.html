@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&CloseCurlyDoubleQuote;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ClosecurlydoublequoteCharacterEntity] CloseCurlyDoubleQuote; character entity treated as U+0201D",
+  assertEquals("[ClosecurlydoublequoteCharacterEntity] &CloseCurlyDoubleQuote; character entity treated as U+0201D",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&dsol;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[DsolCharacterEntity] dsol; character entity treated as U+029F6",
+  assertEquals("[DsolCharacterEntity] &dsol; character entity treated as U+029F6",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

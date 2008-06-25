@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&rfisht;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[RfishtCharacterEntity] rfisht; character entity treated as U+0297D",
+  assertEquals("[RfishtCharacterEntity] &rfisht; character entity treated as U+0297D",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

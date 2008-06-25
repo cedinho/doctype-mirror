@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&UnderBracket;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[UnderbracketCharacterEntity] UnderBracket; character entity treated as U+023B5",
+  assertEquals("[UnderbracketCharacterEntity] &UnderBracket; character entity treated as U+023B5",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

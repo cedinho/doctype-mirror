@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&DiacriticalTilde;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[DiacriticaltildeCharacterEntity] DiacriticalTilde; character entity treated as U+002DC",
+  assertEquals("[DiacriticaltildeCharacterEntity] &DiacriticalTilde; character entity treated as U+002DC",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

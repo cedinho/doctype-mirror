@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&supset;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SupsetCharacterEntity] supset; character entity treated as U+02283",
+  assertEquals("[SupsetCharacterEntity] &supset; character entity treated as U+02283",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

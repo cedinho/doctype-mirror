@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&nparallel;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NparallelCharacterEntity] nparallel; character entity treated as U+02226",
+  assertEquals("[NparallelCharacterEntity] &nparallel; character entity treated as U+02226",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

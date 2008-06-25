@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&parallel;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ParallelCharacterEntity] parallel; character entity treated as U+02225",
+  assertEquals("[ParallelCharacterEntity] &parallel; character entity treated as U+02225",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

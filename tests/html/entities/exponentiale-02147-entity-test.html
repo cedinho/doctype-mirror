@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&ExponentialE;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ExponentialeCharacterEntity] ExponentialE; character entity treated as U+02147",
+  assertEquals("[ExponentialeCharacterEntity] &ExponentialE; character entity treated as U+02147",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

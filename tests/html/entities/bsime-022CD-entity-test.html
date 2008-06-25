@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&bsime;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[BsimeCharacterEntity] bsime; character entity treated as U+022CD",
+  assertEquals("[BsimeCharacterEntity] &bsime; character entity treated as U+022CD",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

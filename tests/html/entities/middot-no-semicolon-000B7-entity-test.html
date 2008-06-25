@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&middot</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[MiddotCharacterEntity] middot character entity treated as U+000B7",
+  assertEquals("[MiddotCharacterEntity] &middot character entity treated as U+000B7",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&wp;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[WpCharacterEntity] wp; character entity treated as U+02118",
+  assertEquals("[WpCharacterEntity] &wp; character entity treated as U+02118",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

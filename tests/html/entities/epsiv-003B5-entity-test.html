@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&epsiv;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[EpsivCharacterEntity] epsiv; character entity treated as U+003B5",
+  assertEquals("[EpsivCharacterEntity] &epsiv; character entity treated as U+003B5",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

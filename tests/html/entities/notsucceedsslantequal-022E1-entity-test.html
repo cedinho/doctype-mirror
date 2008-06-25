@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&NotSucceedsSlantEqual;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NotsucceedsslantequalCharacterEntity] NotSucceedsSlantEqual; character entity treated as U+022E1",
+  assertEquals("[NotsucceedsslantequalCharacterEntity] &NotSucceedsSlantEqual; character entity treated as U+022E1",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&popf;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PopfCharacterEntity] popf; character entity treated as U+1D561",
+  assertEquals("[PopfCharacterEntity] &popf; character entity treated as U+1D561",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

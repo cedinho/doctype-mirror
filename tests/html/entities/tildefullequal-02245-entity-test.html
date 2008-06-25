@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&TildeFullEqual;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[TildefullequalCharacterEntity] TildeFullEqual; character entity treated as U+02245",
+  assertEquals("[TildefullequalCharacterEntity] &TildeFullEqual; character entity treated as U+02245",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

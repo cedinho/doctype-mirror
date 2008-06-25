@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&OverBrace;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[OverbraceCharacterEntity] OverBrace; character entity treated as U+023DE",
+  assertEquals("[OverbraceCharacterEntity] &OverBrace; character entity treated as U+023DE",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

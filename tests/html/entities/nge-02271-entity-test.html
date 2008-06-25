@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&nge;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NgeCharacterEntity] nge; character entity treated as U+02271",
+  assertEquals("[NgeCharacterEntity] &nge; character entity treated as U+02271",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

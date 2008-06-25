@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&RightDownVectorBar;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[RightdownvectorbarCharacterEntity] RightDownVectorBar; character entity treated as U+02955",
+  assertEquals("[RightdownvectorbarCharacterEntity] &RightDownVectorBar; character entity treated as U+02955",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

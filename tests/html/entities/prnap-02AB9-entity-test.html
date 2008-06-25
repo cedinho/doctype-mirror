@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&prnap;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PrnapCharacterEntity] prnap; character entity treated as U+02AB9",
+  assertEquals("[PrnapCharacterEntity] &prnap; character entity treated as U+02AB9",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

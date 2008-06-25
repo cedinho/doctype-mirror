@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&ZeroWidthSpace;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ZerowidthspaceCharacterEntity] ZeroWidthSpace; character entity treated as U+0200B",
+  assertEquals("[ZerowidthspaceCharacterEntity] &ZeroWidthSpace; character entity treated as U+0200B",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

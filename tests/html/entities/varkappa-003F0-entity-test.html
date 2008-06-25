@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&varkappa;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[VarkappaCharacterEntity] varkappa; character entity treated as U+003F0",
+  assertEquals("[VarkappaCharacterEntity] &varkappa; character entity treated as U+003F0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

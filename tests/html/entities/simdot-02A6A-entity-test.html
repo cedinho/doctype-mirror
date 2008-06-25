@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&simdot;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SimdotCharacterEntity] simdot; character entity treated as U+02A6A",
+  assertEquals("[SimdotCharacterEntity] &simdot; character entity treated as U+02A6A",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

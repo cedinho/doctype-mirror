@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&Laplacetrf;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[LaplacetrfCharacterEntity] Laplacetrf; character entity treated as U+02112",
+  assertEquals("[LaplacetrfCharacterEntity] &Laplacetrf; character entity treated as U+02112",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

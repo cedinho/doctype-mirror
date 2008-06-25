@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&phmmat;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PhmmatCharacterEntity] phmmat; character entity treated as U+02133",
+  assertEquals("[PhmmatCharacterEntity] &phmmat; character entity treated as U+02133",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&NotSquareSupersetEqual;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NotsquaresupersetequalCharacterEntity] NotSquareSupersetEqual; character entity treated as U+022E3",
+  assertEquals("[NotsquaresupersetequalCharacterEntity] &NotSquareSupersetEqual; character entity treated as U+022E3",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

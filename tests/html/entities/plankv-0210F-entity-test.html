@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&plankv;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PlankvCharacterEntity] plankv; character entity treated as U+0210F",
+  assertEquals("[PlankvCharacterEntity] &plankv; character entity treated as U+0210F",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

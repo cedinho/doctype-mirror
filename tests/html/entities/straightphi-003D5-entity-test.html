@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&straightphi;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[StraightphiCharacterEntity] straightphi; character entity treated as U+003D5",
+  assertEquals("[StraightphiCharacterEntity] &straightphi; character entity treated as U+003D5",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

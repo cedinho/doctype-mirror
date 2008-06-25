@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&notnivb;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NotnivbCharacterEntity] notnivb; character entity treated as U+022FE",
+  assertEquals("[NotnivbCharacterEntity] &notnivb; character entity treated as U+022FE",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

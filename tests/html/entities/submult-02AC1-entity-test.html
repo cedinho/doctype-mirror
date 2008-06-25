@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&submult;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SubmultCharacterEntity] submult; character entity treated as U+02AC1",
+  assertEquals("[SubmultCharacterEntity] &submult; character entity treated as U+02AC1",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

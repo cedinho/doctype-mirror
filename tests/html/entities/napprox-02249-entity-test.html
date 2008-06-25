@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&napprox;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NapproxCharacterEntity] napprox; character entity treated as U+02249",
+  assertEquals("[NapproxCharacterEntity] &napprox; character entity treated as U+02249",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

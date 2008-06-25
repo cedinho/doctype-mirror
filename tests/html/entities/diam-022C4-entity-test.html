@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&diam;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[DiamCharacterEntity] diam; character entity treated as U+022C4",
+  assertEquals("[DiamCharacterEntity] &diam; character entity treated as U+022C4",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&RightVector;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[RightvectorCharacterEntity] RightVector; character entity treated as U+021C0",
+  assertEquals("[RightvectorCharacterEntity] &RightVector; character entity treated as U+021C0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

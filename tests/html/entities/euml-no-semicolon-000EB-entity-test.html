@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&euml</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[EumlCharacterEntity] euml character entity treated as U+000EB",
+  assertEquals("[EumlCharacterEntity] &euml character entity treated as U+000EB",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

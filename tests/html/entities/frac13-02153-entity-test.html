@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&frac13;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[Frac13CharacterEntity] frac13; character entity treated as U+02153",
+  assertEquals("[Frac13CharacterEntity] &frac13; character entity treated as U+02153",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

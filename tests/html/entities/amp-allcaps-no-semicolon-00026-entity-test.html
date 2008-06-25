@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&AMP</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[AmpCharacterEntity] AMP character entity treated as U+00026",
+  assertEquals("[AmpCharacterEntity] &AMP character entity treated as U+00026",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

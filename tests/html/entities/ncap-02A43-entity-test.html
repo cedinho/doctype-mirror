@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&ncap;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NcapCharacterEntity] ncap; character entity treated as U+02A43",
+  assertEquals("[NcapCharacterEntity] &ncap; character entity treated as U+02A43",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

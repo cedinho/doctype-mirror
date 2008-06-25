@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&numsp;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NumspCharacterEntity] numsp; character entity treated as U+02007",
+  assertEquals("[NumspCharacterEntity] &numsp; character entity treated as U+02007",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

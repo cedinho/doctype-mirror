@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&prsim;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[PrsimCharacterEntity] prsim; character entity treated as U+0227E",
+  assertEquals("[PrsimCharacterEntity] &prsim; character entity treated as U+0227E",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

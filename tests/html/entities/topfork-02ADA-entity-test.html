@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&topfork;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[TopforkCharacterEntity] topfork; character entity treated as U+02ADA",
+  assertEquals("[TopforkCharacterEntity] &topfork; character entity treated as U+02ADA",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

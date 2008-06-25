@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&qint;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[QintCharacterEntity] qint; character entity treated as U+02A0C",
+  assertEquals("[QintCharacterEntity] &qint; character entity treated as U+02A0C",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

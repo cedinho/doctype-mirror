@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&twixt;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[TwixtCharacterEntity] twixt; character entity treated as U+0226C",
+  assertEquals("[TwixtCharacterEntity] &twixt; character entity treated as U+0226C",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

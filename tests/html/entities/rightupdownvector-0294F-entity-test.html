@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&RightUpDownVector;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[RightupdownvectorCharacterEntity] RightUpDownVector; character entity treated as U+0294F",
+  assertEquals("[RightupdownvectorCharacterEntity] &RightUpDownVector; character entity treated as U+0294F",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

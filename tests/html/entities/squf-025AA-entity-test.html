@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&squf;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SqufCharacterEntity] squf; character entity treated as U+025AA",
+  assertEquals("[SqufCharacterEntity] &squf; character entity treated as U+025AA",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

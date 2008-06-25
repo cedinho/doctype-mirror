@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&Bernoullis;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[BernoullisCharacterEntity] Bernoullis; character entity treated as U+0212C",
+  assertEquals("[BernoullisCharacterEntity] &Bernoullis; character entity treated as U+0212C",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&LessGreater;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[LessgreaterCharacterEntity] LessGreater; character entity treated as U+02276",
+  assertEquals("[LessgreaterCharacterEntity] &LessGreater; character entity treated as U+02276",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

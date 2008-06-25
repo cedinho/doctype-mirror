@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&nprec;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NprecCharacterEntity] nprec; character entity treated as U+02280",
+  assertEquals("[NprecCharacterEntity] &nprec; character entity treated as U+02280",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

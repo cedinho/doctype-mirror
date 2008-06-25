@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&sqsubseteq;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SqsubseteqCharacterEntity] sqsubseteq; character entity treated as U+02291",
+  assertEquals("[SqsubseteqCharacterEntity] &sqsubseteq; character entity treated as U+02291",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

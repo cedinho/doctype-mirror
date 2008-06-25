@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&nsimeq;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NsimeqCharacterEntity] nsimeq; character entity treated as U+02244",
+  assertEquals("[NsimeqCharacterEntity] &nsimeq; character entity treated as U+02244",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

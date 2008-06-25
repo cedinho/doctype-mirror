@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&commat;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[CommatCharacterEntity] commat; character entity treated as U+00040",
+  assertEquals("[CommatCharacterEntity] &commat; character entity treated as U+00040",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

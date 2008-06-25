@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&bigotimes;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[BigotimesCharacterEntity] bigotimes; character entity treated as U+02A02",
+  assertEquals("[BigotimesCharacterEntity] &bigotimes; character entity treated as U+02A02",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

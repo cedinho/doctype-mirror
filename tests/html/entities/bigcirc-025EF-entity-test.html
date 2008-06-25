@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&bigcirc;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[BigcircCharacterEntity] bigcirc; character entity treated as U+025EF",
+  assertEquals("[BigcircCharacterEntity] &bigcirc; character entity treated as U+025EF",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

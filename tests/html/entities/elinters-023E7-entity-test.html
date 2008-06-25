@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&elinters;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ElintersCharacterEntity] elinters; character entity treated as U+023E7",
+  assertEquals("[ElintersCharacterEntity] &elinters; character entity treated as U+023E7",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

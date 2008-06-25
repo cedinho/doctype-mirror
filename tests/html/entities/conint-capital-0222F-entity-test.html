@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&Conint;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[ConintCharacterEntity] Conint; character entity treated as U+0222F",
+  assertEquals("[ConintCharacterEntity] &Conint; character entity treated as U+0222F",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&trpezium;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[TrpeziumCharacterEntity] trpezium; character entity treated as U+023E2",
+  assertEquals("[TrpeziumCharacterEntity] &trpezium; character entity treated as U+023E2",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

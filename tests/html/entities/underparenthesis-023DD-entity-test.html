@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&UnderParenthesis;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[UnderparenthesisCharacterEntity] UnderParenthesis; character entity treated as U+023DD",
+  assertEquals("[UnderparenthesisCharacterEntity] &UnderParenthesis; character entity treated as U+023DD",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

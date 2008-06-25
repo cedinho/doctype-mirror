@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&MediumSpace;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[MediumspaceCharacterEntity] MediumSpace; character entity treated as U+0205F",
+  assertEquals("[MediumspaceCharacterEntity] &MediumSpace; character entity treated as U+0205F",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

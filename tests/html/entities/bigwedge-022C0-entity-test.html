@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&bigwedge;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[BigwedgeCharacterEntity] bigwedge; character entity treated as U+022C0",
+  assertEquals("[BigwedgeCharacterEntity] &bigwedge; character entity treated as U+022C0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

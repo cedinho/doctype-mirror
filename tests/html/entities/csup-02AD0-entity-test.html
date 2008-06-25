@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&csup;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[CsupCharacterEntity] csup; character entity treated as U+02AD0",
+  assertEquals("[CsupCharacterEntity] &csup; character entity treated as U+02AD0",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

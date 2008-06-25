@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&NotLeftTriangleEqual;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NotlefttriangleequalCharacterEntity] NotLeftTriangleEqual; character entity treated as U+022EC",
+  assertEquals("[NotlefttriangleequalCharacterEntity] &NotLeftTriangleEqual; character entity treated as U+022EC",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

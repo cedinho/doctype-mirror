@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&bigvee;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[BigveeCharacterEntity] bigvee; character entity treated as U+022C1",
+  assertEquals("[BigveeCharacterEntity] &bigvee; character entity treated as U+022C1",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

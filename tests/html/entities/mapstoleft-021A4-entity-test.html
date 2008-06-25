@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&mapstoleft;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[MapstoleftCharacterEntity] mapstoleft; character entity treated as U+021A4",
+  assertEquals("[MapstoleftCharacterEntity] &mapstoleft; character entity treated as U+021A4",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

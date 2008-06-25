@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&ltcc;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[LtccCharacterEntity] ltcc; character entity treated as U+02AA6",
+  assertEquals("[LtccCharacterEntity] &ltcc; character entity treated as U+02AA6",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

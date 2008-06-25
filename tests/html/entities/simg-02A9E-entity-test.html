@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&simg;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[SimgCharacterEntity] simg; character entity treated as U+02A9E",
+  assertEquals("[SimgCharacterEntity] &simg; character entity treated as U+02A9E",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

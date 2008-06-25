@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&GreaterLess;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[GreaterlessCharacterEntity] GreaterLess; character entity treated as U+02277",
+  assertEquals("[GreaterlessCharacterEntity] &GreaterLess; character entity treated as U+02277",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

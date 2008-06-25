@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&inodot;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[InodotCharacterEntity] inodot; character entity treated as U+00131",
+  assertEquals("[InodotCharacterEntity] &inodot; character entity treated as U+00131",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

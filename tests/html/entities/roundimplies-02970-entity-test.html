@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&RoundImplies;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[RoundimpliesCharacterEntity] RoundImplies; character entity treated as U+02970",
+  assertEquals("[RoundimpliesCharacterEntity] &RoundImplies; character entity treated as U+02970",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }

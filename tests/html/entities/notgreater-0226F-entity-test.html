@@ -29,7 +29,7 @@ p.fail { background: transparent; color: red }
 <div id="test">&NotGreater;</div>
 <script type="text/javascript">
 function testEntity() {
-  assertEquals("[NotgreaterCharacterEntity] NotGreater; character entity treated as U+0226F",
+  assertEquals("[NotgreaterCharacterEntity] &NotGreater; character entity treated as U+0226F",
     document.getElementById('control').firstChild.nodeValue,
     document.getElementById('test').firstChild.nodeValue);
 }
