@@ -1,14 +1,15 @@
 import glob, re, sys, os
 
 # these will change regularly
-if 0:
+if 1:
     TEST_FILES   = 'css/*/*-test.html'
     ERROR_FILES  = [r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie8.txt',
                     r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie7.txt',
                     r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie6.txt',
                     r'/cygdrive/c/work/doctype/trunk/tests/css/css-ff3.txt',
                     r'/cygdrive/c/work/doctype/trunk/tests/css/css-ff2.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/css/css-saf3.txt']
+                    r'/cygdrive/c/work/doctype/trunk/tests/css/css-saf3.txt',
+                    r'/cygdrive/c/work/doctype/trunk/tests/css/css-op9.txt']
 
 if 0:
     TEST_FILES   = 'html/*/*-test.html'
@@ -18,15 +19,6 @@ if 0:
                     r'/cygdrive/c/work/doctype/trunk/tests/html/html-ff3.txt',
                     r'/cygdrive/c/work/doctype/trunk/tests/html/html-ff2.txt',
                     r'/cygdrive/c/work/doctype/trunk/tests/html/html-saf3.txt']
-
-if 1:
-    TEST_FILES   = 'html/entities/*-test.html'
-    ERROR_FILES  = [r'/cygdrive/c/work/doctype/trunk/tests/html/entities/entities-ie8.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/entities/entities-ie7.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/entities/entities-ie6.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/entities/entities-ff3.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/entities/entities-ff2.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/entities/entities-saf3.txt']
 
 if 0:
     TEST_FILES   = 'js/*/*-test.html'
@@ -41,8 +33,8 @@ ERROR_FILES = map(os.path.expanduser, ERROR_FILES)
 
 # these will change rarely
 TABLE_START    = '|| *Test*'
-TABLE_HEADERS  = '|| *Test* || *IE8* || *IE7* || *IE6* || *FF3* || *FF2* || *Saf3* ||'
-NUM_COLUMNS    = 6
+TABLE_HEADERS  = '|| *Test* || *IE8* || *IE7* || *IE6* || *FF3* || *FF2* || *Saf3* || *Op9* ||'
+NUM_COLUMNS    = 7
 SECTION_START  = '== Browser compatibility =='
 SECTION_END    = '== Further reading =='
 TESTURL_PREFIX = 'http://doctype.googlecode.com/svn/trunk/tests/'
@@ -89,8 +81,8 @@ def loadTable(wikiFile):
     lines = [l for l in lines if l.startswith('||') and l.endswith('||')]
     for l in lines:
         if l.startswith(TABLE_START): continue
-        if l.count('||') != NUM_COLUMNS + 2:
-            raise MalformedRow, wikiFile
+#        if l.count('||') != NUM_COLUMNS + 2:
+#            raise MalformedRow, wikiFile
         col0 = l.split('||')[1].strip()
         if col0.count('[') != 1:
             raise NoLink, wikiFile
@@ -104,6 +96,8 @@ def loadTable(wikiFile):
             raise MalformedLink, wikiFile
         testURL, testName = col0.split(' ', 1)
         values = [col.strip() for col in l.split('||')[2:-1]]
+        while len(values) < NUM_COLUMNS:
+            values.append('?')
         tests.append({'testURL': testURL, 'testName': testName, 'values': values})
     return tests
     
