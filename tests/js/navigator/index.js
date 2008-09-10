@@ -1,5 +1,7 @@
 function jsnavigatorsuite() {
   var testSuite = new top.jsUnitTestSuite();
+  testSuite.addTestPage("../tests/js/navigator/navigator-appCodeName-typeof-test.html");
+  testSuite.addTestPage("../tests/js/navigator/navigator-appCodeName-eq-Mozilla-test.html");
   testSuite.addTestPage("../tests/js/navigator/navigator-appMinorVersion-typeof-test.html");
   testSuite.addTestPage("../tests/js/navigator/navigator-appName-typeof-test.html");
   testSuite.addTestPage("../tests/js/navigator/navigator-appVersion-typeof-test.html");

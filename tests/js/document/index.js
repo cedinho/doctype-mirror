@@ -4,7 +4,7 @@ function jsdocumentsuite() {
   testSuite.addTestPage("../tests/js/document/document-URLUnencoded-typeof-test.html");
   testSuite.addTestPage("../tests/js/document/document-activeElement-typeof-test.html");
   testSuite.addTestPage("../tests/js/document/document-addEventListener-typeof-test.html");
-  testSuite.addTestPage("../tests/js/document/document-adoptNode-typeof-test.html");
+  //testSuite.addTestPage("../tests/js/document/document-adoptNode-typeof-test.html");
   testSuite.addTestPage("../tests/js/document/document-alinkColor-typeof-test.html");
   testSuite.addTestPage("../tests/js/document/document-all-typeof-test.html");
   testSuite.addTestPage("../tests/js/document/document-anchors-typeof-test.html");

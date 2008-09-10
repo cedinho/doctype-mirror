@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>navigator.appCodeName typeof test</title>
+<script type="text/javascript" src="../../../goog/base.js"></script>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[NavigatorAppCodeNameProperty] typeOf(navigator.appCodeName) != 'undefined'",
+    encyclopedia.typeOf(navigator.appCodeName),
+    "undefined");
+}
+</script>
+<pre>typeOf(navigator.appCodeName) <script type="text/javascript">
+document.write((encyclopedia.typeOf(navigator.appCodeName) != 'undefined') ? '!=' : '==');
+</script> 'undefined'</pre>
+</body>
+</html>

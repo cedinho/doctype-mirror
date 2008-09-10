@@ -1,45 +1,46 @@
 import glob, re, sys, os
 
-# these will change regularly
-if 1:
-    TEST_FILES   = 'css/*/*-test.html'
-    ERROR_FILES  = [r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie8.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie7.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie6.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/css/css-ff3.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/css/css-ff2.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/css/css-saf3.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/css/css-op9.txt']
+TEST_GLOBS = {'css/*/*-test.html':
+                  [r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie8.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie7.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie6.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-ff3.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-ff2.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-saf3.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-op9.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-chrome.txt'
+                   ],
 
-if 0:
-    TEST_FILES   = 'html/*/*-test.html'
-    ERROR_FILES  = [r'/cygdrive/c/work/doctype/trunk/tests/html/html-ie8.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/html-ie7.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/html-ie6.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/html-ff3.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/html-ff2.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/html/html-saf3.txt']
+              'html/*/*-test.html':
+                  [r'/cygdrive/c/work/doctype/trunk/tests/html/html-ie8.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-ie7.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-ie6.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-ff3.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-ff2.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-saf3.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-op9.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-chrome.txt'
+                   ],
 
-if 0:
-    TEST_FILES   = 'js/*/*-test.html'
-    ERROR_FILES  = [r'/cygdrive/c/work/doctype/trunk/tests/js/js-ie8.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/js/js-ie7.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/js/js-ie6.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/js/js-ff3.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/js/js-ff2.txt',
-                    r'/cygdrive/c/work/doctype/trunk/tests/js/js-saf3.txt']
+              'js/*/*-test.html':
+                  [r'/cygdrive/c/work/doctype/trunk/tests/js/js-ie8.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-ie7.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-ie6.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-ff3.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-ff2.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-saf3.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-op9.txt',
+                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-chrome.txt'
+                   ]
+              }
 
-ERROR_FILES = map(os.path.expanduser, ERROR_FILES)
-
-# these will change rarely
 TABLE_START    = '|| *Test*'
-TABLE_HEADERS  = '|| *Test* || *IE8* || *IE7* || *IE6* || *FF3* || *FF2* || *Saf3* || *Op9* ||'
-NUM_COLUMNS    = 7
+TABLE_HEADERS  = '|| *Test* || *IE8* || *IE7* || *IE6* || *FF3* || *FF2* || *Saf3* || *Op9* || *Chrome* ||'
+NUM_COLUMNS    = 8
 SECTION_START  = '== Browser compatibility =='
 SECTION_END    = '== Further reading =='
 TESTURL_PREFIX = 'http://doctype.googlecode.com/svn/trunk/tests/'
 
-# these will never change
 class DoctypeException(Exception): pass
 class CantFindStartOfBrowserCompatibilitySection(DoctypeException): pass
 class CantFindEndOfBrowserCompatibilitySection(DoctypeException): pass
@@ -140,34 +141,38 @@ def loadErrors(testFilesGlob, errorFile):
 #testSaveTable()
 #sys.exit(0)
 
-columnIndex = -1
-for errorFile in ERROR_FILES:
-    columnIndex += 1
-    if (not errorFile) or (not os.path.exists(errorFile)):
-        print '*** could not find', errorFile
-        continue
-    errors = loadErrors(TEST_FILES, errorFile)
-    #print "\n".join(errors)
-    testFiles = glob.glob(TEST_FILES)
-    for testFile in testFiles:
-        testFile = testFile.replace('\\', '/').replace('//', '/').lower()
-        print testFile
-        testData = file(testFile).read().replace('\r\n', '\n')
-        rawTestData = testData.split('<script type="text/javascript">\n', 1)[1].split('</script>', 1)[0]
-        wikiName, testName = rawTestData.split('[', 1)[1].split(']', 1)
-        testName = testName.split(',\n', 1)[0]
-        testName = testName[:-1].strip()
-        wikiFile = '../../wiki/' + wikiName + '.wiki'
-        wikiTests = loadTable(wikiFile)
-        testAlreadyExists = (testName in [t['testName'] for t in wikiTests])
-        if not testAlreadyExists:
-            print 'adding', testName, 'to', wikiName
-            wikiTests.append({'testURL': TESTURL_PREFIX + testFile,
-                              'testName': testName,
-                              'values': ['?'] * NUM_COLUMNS})
-        for wikiTest in wikiTests:
-            if wikiTest['testName'] != testName: continue
-            wikiTest['values'][columnIndex] = (testFile in errors) and 'N' or 'Y'
-        output = saveTable(wikiFile, wikiTests)
-        file(wikiFile, 'w').write(output)
-    print 'matched against', len(errors), 'errors'
+for TEST_FILES in TEST_GLOBS.keys():
+    ERROR_FILES = TEST_GLOBS[TEST_FILES]
+    ERROR_FILES = map(os.path.expanduser, ERROR_FILES)
+    columnIndex = -1
+    for errorFile in ERROR_FILES:
+        columnIndex += 1
+        if (not errorFile) or (not os.path.exists(errorFile)):
+            print '*** could not find', errorFile
+            continue
+        errors = loadErrors(TEST_FILES, errorFile)
+        testFiles = glob.glob(TEST_FILES)
+        for testFile in testFiles:
+            testFile = testFile.replace('\\', '/').replace('//', '/').lower()
+            #print testFile
+            sys.stdout.write('.')
+            sys.stdout.flush()
+            testData = file(testFile).read().replace('\r\n', '\n')
+            rawTestData = testData.split('<script type="text/javascript">\n', 1)[1].split('</script>', 1)[0]
+            wikiName, testName = rawTestData.split('[', 1)[1].split(']', 1)
+            testName = testName.split(',\n', 1)[0]
+            testName = testName[:-1].strip()
+            wikiFile = '../../wiki/' + wikiName + '.wiki'
+            wikiTests = loadTable(wikiFile)
+            testAlreadyExists = (testName in [t['testName'] for t in wikiTests])
+            if not testAlreadyExists:
+                print '\nadding', testName, 'to', wikiName
+                wikiTests.append({'testURL': TESTURL_PREFIX + testFile,
+                                  'testName': testName,
+                                  'values': ['?'] * NUM_COLUMNS})
+            for wikiTest in wikiTests:
+                if wikiTest['testName'] != testName: continue
+                wikiTest['values'][columnIndex] = (testFile in errors) and 'N' or 'Y'
+            output = saveTable(wikiFile, wikiTests)
+            file(wikiFile, 'w').write(output)
+        print '\nmatched against', len(errors), 'errors'
