@@ -1,37 +1,38 @@
 import glob, re, sys, os
 
-TEST_GLOBS = {'css/*/*-test.html':
-                  [r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie8.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie7.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-ie6.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-ff3.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-ff2.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-saf3.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-op9.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/css/css-chrome.txt'
-                   ],
-
-              'html/*/*-test.html':
-                  [r'/cygdrive/c/work/doctype/trunk/tests/html/html-ie8.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-ie7.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-ie6.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-ff3.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-ff2.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-saf3.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-op9.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/html/html-chrome.txt'
-                   ],
+TEST_GLOBS = {
+#              'css/*/*-test.html':
+#                  [r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ie8.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ie7.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ie6.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ff3.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ff2.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-saf3.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-op9.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-chrome.txt'
+#                   ],
+#
+#              'html/*/*-test.html':
+#                  [r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ie8.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ie7.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ie6.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ff3.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ff2.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-saf3.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-op9.txt',
+#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-chrome.txt'
+#                   ],
 
               'js/*/*-test.html':
-                  [r'/cygdrive/c/work/doctype/trunk/tests/js/js-ie8.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-ie7.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-ie6.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-ff3.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-ff2.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-saf3.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-op9.txt',
-                   r'/cygdrive/c/work/doctype/trunk/tests/js/js-chrome.txt'
-                   ]
+                  [r'/home/pilgrim/secure/doctype/trunk/tests/js/js-ie8.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/js/js-ie7.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/js/js-ie6.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/js/js-ff3.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/js/js-ff2.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/js/js-saf3.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/js/js-op9.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/js/js-chrome.txt'
+                   ],
               }
 
 TABLE_START    = '|| *Test*'
@@ -39,6 +40,7 @@ TABLE_HEADERS  = '|| *Test* || *IE8* || *IE7* || *IE6* || *FF3* || *FF2* || *Saf
 NUM_COLUMNS    = 8
 SECTION_START  = '== Browser compatibility =='
 SECTION_END    = '== Further reading =='
+LEGEND         = '[ArticleBrowserCompatibilityLegend Compatibility table legend]'
 TESTURL_PREFIX = 'http://doctype.googlecode.com/svn/trunk/tests/'
 
 class DoctypeException(Exception): pass
@@ -119,7 +121,7 @@ def saveTable(wikiFile, tests):
     raw = '\n'.join(rawlist)
     before, after = wikiData.split(SECTION_START, 1)
     after = after.split(SECTION_END, 1)[1]
-    wikiData = before + SECTION_START + '\n\n' + raw + '\n\n' + SECTION_END + after
+    wikiData = before + SECTION_START + '\n\n' + LEGEND + '\n\n' + raw + '\n\n' + SECTION_END + after
     return wikiData
 
 def testSaveTable():
@@ -146,6 +148,7 @@ for TEST_FILES in TEST_GLOBS.keys():
     ERROR_FILES = map(os.path.expanduser, ERROR_FILES)
     columnIndex = -1
     for errorFile in ERROR_FILES:
+        print errorFile
         columnIndex += 1
         if (not errorFile) or (not os.path.exists(errorFile)):
             print '*** could not find', errorFile
@@ -153,7 +156,7 @@ for TEST_FILES in TEST_GLOBS.keys():
         errors = loadErrors(TEST_FILES, errorFile)
         testFiles = glob.glob(TEST_FILES)
         for testFile in testFiles:
-            testFile = testFile.replace('\\', '/').replace('//', '/').lower()
+            testFile = testFile.replace('\\', '/').replace('//', '/')#.lower()
             #print testFile
             sys.stdout.write('.')
             sys.stdout.flush()
