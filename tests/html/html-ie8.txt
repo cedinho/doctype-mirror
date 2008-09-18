@@ -1,436 +1,264 @@
-Tests with problems (286 total) - JsUnit
+Tests with problems (253 total) - JsUnit
 
-Running on Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1)
+Running on Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022)
 
-1. attributes/a-shape-circ-reflection-test.html:testReflection failed
+1. attributes/a-shape-circ-reflection-test.html:testReflection had an error
 
 
-"[AShapeAttribute] a.shape reflects <a shape="circ">"
-Expected <circ> (String) but was <circle> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+2. attributes/a-shape-polygon-reflection-test.html:testReflection had an error
 
 
-2. attributes/a-shape-polygon-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+3. attributes/a-shape-rectangle-reflection-test.html:testReflection had an error
 
-"[AShapeAttribute] a.shape reflects <a shape="polygon">"
-Expected <polygon> (String) but was <poly> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+4. attributes/a-suppress-reflection-test.html:testReflection had an error
 
-3. attributes/a-shape-rectangle-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[AShapeAttribute] a.shape reflects <a shape="rectangle">"
-Expected <rectangle> (String) but was <rect> (String)
+5. attributes/applet-codebase-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-4. attributes/a-suppress-reflection-test.html:testReflection failed
+6. attributes/applet-mayscript-reflection-test.html:testReflection had an error
 
 
-"[ASuppressAttribute] a.suppress reflects <a suppress="true">"
-Expected <true> (Boolean) but was <true> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+7. attributes/applet-object-reflection-test.html:testReflection had an error
 
 
-5. attributes/applet-codebase-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+8. attributes/area-nohref-reflection-test.html:testReflection had an error
 
-"[AppletCodebaseAttribute] applet.codeBase reflects <applet codebase="foo">"
-Expected <foo> (String) but was <file:///C:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/foo> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+9. attributes/area-shape-circ-reflection-test.html:testReflection had an error
 
-6. attributes/applet-mayscript-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[AppletMayscriptAttribute] applet.mayScript reflects <applet mayscript="foo">"
-Expected <foo> (String) but was <undefined>
+10. attributes/area-shape-circle-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-7. attributes/applet-object-reflection-test.html:testReflection failed
+11. attributes/area-shape-poly-reflection-test.html:testReflection had an error
 
 
-"[AppletObjectAttribute] applet.object reflects <applet object="foo">"
-Expected <foo> (String) but was <null>
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+12. attributes/area-shape-polygon-reflection-test.html:testReflection had an error
 
 
-8. attributes/area-nohref-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+13. attributes/area-shape-rect-reflection-test.html:testReflection had an error
 
-"[AreaNohrefAttribute] area.noHref reflects <area nohref>"
-Expected <true> (Boolean) but was <false> (Boolean)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+14. attributes/area-shape-rectangle-reflection-test.html:testReflection had an error
 
-9. attributes/area-shape-circ-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[AreaShapeAttribute] area.shape reflects <area shape="circ">"
-Expected <CIRCLE> (String) but was <circle> (String)
+15. attributes/area-suppress-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-10. attributes/area-shape-circle-reflection-test.html:testReflection failed
+16. attributes/audio-autoplay-absent-reflection-test.html:testReflection had an error
 
 
-"[AreaShapeAttribute] area.shape reflects <area shape="circle">"
-Expected <CIRCLE> (String) but was <circle> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+17. attributes/audio-autoplay-reflection-test.html:testReflection had an error
 
 
-11. attributes/area-shape-poly-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+18. attributes/audio-controls-absent-reflection-test.html:testReflection had an error
 
-"[AreaShapeAttribute] area.shape reflects <area shape="poly">"
-Expected <POLY> (String) but was <poly> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+19. attributes/audio-controls-reflection-test.html:testReflection had an error
 
-12. attributes/area-shape-polygon-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[AreaShapeAttribute] area.shape reflects <area shape="polygon">"
-Expected <POLY> (String) but was <poly> (String)
+20. attributes/audio-loopcount-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-13. attributes/area-shape-rect-reflection-test.html:testReflection failed
+21. attributes/audio-loopend-reflection-test.html:testReflection had an error
 
 
-"[AreaShapeAttribute] area.shape reflects <area shape="rect">"
-Expected <RECT> (String) but was <rect> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+22. attributes/audio-loopstart-reflection-test.html:testReflection had an error
 
 
-14. attributes/area-shape-rectangle-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+23. attributes/body-align-center-reflection-test.html:testReflection had an error
 
-"[AreaShapeAttribute] area.shape reflects <area shape="rectangle">"
-Expected <RECT> (String) but was <rect> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+24. attributes/body-align-justify-reflection-test.html:testReflection had an error
 
-15. attributes/area-suppress-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[AreaSuppressAttribute] area.suppress reflects <area suppress="true">"
-Expected <true> (Boolean) but was <true> (String)
+25. attributes/body-align-left-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-16. attributes/audio-autoplay-absent-reflection-test.html:testReflection failed
+26. attributes/body-align-right-reflection-test.html:testReflection had an error
 
 
-"[AudioAutoplayAttribute] audio.autoplay reflects <audio>"
-Expected <false> (Boolean) but was <undefined>
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+27. attributes/body-marginheight-reflection-test.html:testReflection had an error
 
 
-17. attributes/audio-autoplay-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+28. attributes/body-marginwidth-reflection-test.html:testReflection had an error
 
-"[AudioAutoplayAttribute] audio.autoplay reflects <audio autoplay>"
-Expected <true> (Boolean) but was <> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+29. attributes/canvas-height-reflection-test.html:testReflection had an error
 
-18. attributes/audio-controls-absent-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[AudioControlsAttribute] audio.controls reflects <audio>"
-Expected <false> (Boolean) but was <undefined>
+30. attributes/canvas-width-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-19. attributes/audio-controls-reflection-test.html:testReflection failed
+31. attributes/caption-valign-reflection-test.html:testReflection had an error
 
 
-"[AudioControlsAttribute] audio.controls reflects <audio controls>"
-Expected <true> (Boolean) but was <> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+32. attributes/col-bgcolor-reflection-test.html:testReflection had an error
 
 
-20. attributes/audio-loopcount-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+33. attributes/col-valign-baseline-reflection-test.html:testReflection had an error
 
-"[AudioLoopcountAttribute] audio.loopCount reflects <audio loopcount="42">"
-Expected <42> (Number) but was <undefined>
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+34. attributes/col-valign-bottom-reflection-test.html:testReflection had an error
 
-21. attributes/audio-loopend-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[AudioLoopendAttribute] audio.loopEnd reflects <audio loopend="00:00:00.00">"
-Expected <00:00:00.00> (String) but was <undefined>
+35. attributes/col-valign-middle-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-22. attributes/audio-loopstart-reflection-test.html:testReflection failed
+36. attributes/col-valign-top-reflection-test.html:testReflection had an error
 
 
-"[AudioLoopstartAttribute] audio.loopStart reflects <audio loopstart="00:00:00.00">"
-Expected <00:00:00.00> (String) but was <undefined>
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+37. attributes/colgroup-bgcolor-reflection-test.html:testReflection had an error
 
 
-23. attributes/body-align-center-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+38. attributes/colgroup-valign-baseline-reflection-test.html:testReflection had an error
 
-"[BodyAlignAttribute] body.align reflects <body align="center">"
-Expected <center> (String) but was <undefined>
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+39. attributes/colgroup-valign-bottom-reflection-test.html:testReflection had an error
 
-24. attributes/body-align-justify-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BodyAlignAttribute] body.align reflects <body align="justify">"
-Expected <justify> (String) but was <undefined>
+40. attributes/colgroup-valign-middle-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-25. attributes/body-align-left-reflection-test.html:testReflection failed
+41. attributes/colgroup-valign-top-reflection-test.html:testReflection had an error
 
 
-"[BodyAlignAttribute] body.align reflects <body align="left">"
-Expected <left> (String) but was <undefined>
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+42. attributes/command-checked-absent-reflection-test.html:testReflection had an error
 
 
-26. attributes/body-align-right-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+43. attributes/command-checked-reflection-test.html:testReflection had an error
 
-"[BodyAlignAttribute] body.align reflects <body align="right">"
-Expected <right> (String) but was <undefined>
 
-Stack trace follows:
-> anonymous
-
-
-27. attributes/body-marginheight-reflection-test.html:testReflection failed
-
-
-"[BodyMarginheightAttribute] body.marginHeight reflects <body marginheight="7">"
-Expected <7> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-28. attributes/body-marginwidth-reflection-test.html:testReflection failed
-
-
-"[BodyMarginwidthAttribute] body.marginWidth reflects <body marginwidth="7">"
-Expected <7> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-29. attributes/canvas-height-reflection-test.html:testReflection failed
-
-
-"[CanvasHeightAttribute] canvas.height reflects <canvas height="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-30. attributes/canvas-width-reflection-test.html:testReflection failed
-
-
-"[CanvasWidthAttribute] canvas.width reflects <canvas width="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-31. attributes/caption-valign-reflection-test.html:testReflection failed
-
-
-"[CaptionValignAttribute] caption.vAlign reflects <caption valign="foo">"
-Expected <foo> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-32. attributes/col-bgcolor-reflection-test.html:testReflection failed
-
-
-"[ColBgcolorAttribute] col.bgColor reflects <col bgcolor="#ffffff">"
-Expected <#ffffff> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-33. attributes/col-valign-baseline-reflection-test.html:testReflection failed
-
-
-"[ColValignAttribute] col.vAlign reflects <col valign="baseline">"
-Expected <baseline> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-34. attributes/col-valign-bottom-reflection-test.html:testReflection failed
-
-
-"[ColValignAttribute] col.vAlign reflects <col valign="bottom">"
-Expected <bottom> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-35. attributes/col-valign-middle-reflection-test.html:testReflection failed
-
-
-"[ColValignAttribute] col.vAlign reflects <col valign="middle">"
-Expected <middle> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-36. attributes/col-valign-top-reflection-test.html:testReflection failed
-
-
-"[ColValignAttribute] col.vAlign reflects <col valign="top">"
-Expected <top> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-37. attributes/colgroup-bgcolor-reflection-test.html:testReflection failed
-
-
-"[ColgroupBgcolorAttribute] colgroup.bgColor reflects <colgroup bgcolor="#ffffff">"
-Expected <#ffffff> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-38. attributes/colgroup-valign-baseline-reflection-test.html:testReflection failed
-
-
-"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="baseline">"
-Expected <baseline> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-39. attributes/colgroup-valign-bottom-reflection-test.html:testReflection failed
-
-
-"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="bottom">"
-Expected <bottom> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-40. attributes/colgroup-valign-middle-reflection-test.html:testReflection failed
-
-
-"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="middle">"
-Expected <middle> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-41. attributes/colgroup-valign-top-reflection-test.html:testReflection failed
-
-
-"[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="top">"
-Expected <top> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-42. attributes/command-checked-absent-reflection-test.html:testReflection failed
-
-
-"[CommandCheckedAttribute] command.checked reflects <command>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-43. attributes/command-checked-reflection-test.html:testReflection failed
-
-
-"[CommandCheckedAttribute] command.checked reflects <command checked>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
+Error message is:
+"Object doesn't support this property or method"
 
 44. attributes/command-default-absent-reflection-test.html:testReflection had an error
 
@@ -444,2404 +272,1250 @@ Error message is:
 Error message is:
 "Object doesn't support this property or method"
 
-46. attributes/command-hidden-absent-reflection-test.html:testReflection failed
-
-
-"[CommandHiddenAttribute] command.hidden reflects <command>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-47. attributes/command-hidden-reflection-test.html:testReflection failed
-
-
-"[CommandHiddenAttribute] command.hidden reflects <command hidden>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-48. attributes/datagrid-multiple-absent-reflection-test.html:testReflection failed
-
-
-"[DatagridMultipleAttribute] datagrid.multiple reflects <datagrid>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-49. attributes/datagrid-multiple-reflection-test.html:testReflection failed
-
-
-"[DatagridMultipleAttribute] datagrid.multiple reflects <datagrid multiple>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-50. attributes/details-open-absent-reflection-test.html:testReflection failed
-
-
-"[DetailsOpenAttribute] details.open reflects <details>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-51. attributes/details-open-reflection-test.html:testReflection failed
-
-
-"[DetailsOpenAttribute] details.open reflects <details open>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-52. attributes/div-draggable-absent-reflection-test.html:testReflection failed
-
-
-"[DraggableAttribute] div.draggable reflects <div>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-53. attributes/div-draggable-reflection-test.html:testReflection failed
-
-
-"[DraggableAttribute] div.draggable reflects <div draggable>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-54. attributes/div-irrelevant-absent-reflection-test.html:testReflection failed
-
-
-"[IrrelevantAttribute] div.irrelevant reflects <div>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-55. attributes/div-irrelevant-reflection-test.html:testReflection failed
-
-
-"[IrrelevantAttribute] div.irrelevant reflects <div irrelevant>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-56. attributes/div-unselectable-absent-reflection-test.html:testReflection failed
-
-
-"[UnselectableAttribute] div.unselectable reflects <div>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-57. attributes/div-unselectable-reflection-test.html:testReflection failed
-
-
-"[UnselectableAttribute] div.unselectable reflects <div unselectable>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-58. attributes/embed-align-absbottom-reflection-test.html:testReflection failed
-
-
-"[EmbedAlignAttribute] embed.align reflects <embed align="absbottom">"
-Expected <absBottom> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-59. attributes/embed-align-absmiddle-reflection-test.html:testReflection failed
-
-
-"[EmbedAlignAttribute] embed.align reflects <embed align="absmiddle">"
-Expected <absMiddle> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-60. attributes/embed-align-baseline-reflection-test.html:testReflection failed
-
-
-"[EmbedAlignAttribute] embed.align reflects <embed align="baseline">"
-Expected <baseline> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-61. attributes/embed-align-bottom-reflection-test.html:testReflection failed
-
-
-"[EmbedAlignAttribute] embed.align reflects <embed align="bottom">"
-Expected <bottom> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-62. attributes/embed-align-left-reflection-test.html:testReflection failed
-
-
-"[EmbedAlignAttribute] embed.align reflects <embed align="left">"
-Expected <left> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-63. attributes/embed-align-middle-reflection-test.html:testReflection failed
-
-
-"[EmbedAlignAttribute] embed.align reflects <embed align="middle">"
-Expected <middle> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-64. attributes/embed-align-right-reflection-test.html:testReflection failed
-
-
-"[EmbedAlignAttribute] embed.align reflects <embed align="right">"
-Expected <right> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-65. attributes/embed-align-texttop-reflection-test.html:testReflection failed
-
-
-"[EmbedAlignAttribute] embed.align reflects <embed align="texttop">"
-Expected <textTop> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-66. attributes/embed-align-top-reflection-test.html:testReflection failed
-
-
-"[EmbedAlignAttribute] embed.align reflects <embed align="top">"
-Expected <top> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-67. attributes/embed-type-reflection-test.html:testReflection failed
-
-
-"[EmbedTypeAttribute] embed.type reflects <embed type="text/html">"
-Expected <text/html> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-68. attributes/font-font-weight-reflection-test.html:testReflection failed
-
-
-"[FontFontWeightAttribute] font.fontWeight reflects <font font-weight="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-69. attributes/font-point-size-reflection-test.html:testReflection failed
-
-
-"[FontPointSizeAttribute] font.pointSize reflects <font point-size="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-70. attributes/frame-allowtransparency-absent-reflection-test.html:testReflection failed
-
-
-"[FrameAllowtransparencyAttribute] frame.allowTransparency reflects <frame>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-71. attributes/frame-allowtransparency-reflection-test.html:testReflection failed
-
-
-"[FrameAllowtransparencyAttribute] frame.allowTransparency reflects <frame allowtransparency>"
-Expected <true> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-72. attributes/frame-bordercolor-reflection-test.html:testReflection failed
-
-
-"[FrameBordercolorAttribute] frame.borderColor reflects <frame bordercolor="#ffffff">"
-Expected <#ffffff> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-73. attributes/frame-frameborder-reflection-test.html:testReflection failed
-
-
-"[FrameFrameborderAttribute] frame.frameBorder reflects <frame frameborder="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-74. attributes/frame-longdesc-reflection-test.html:testReflection failed
-
-
-"[FrameLongdescAttribute] frame.longDesc reflects <frame longdesc="http://www.example.com/">"
-Expected <http://www.example.com/> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-75. attributes/frame-marginheight-reflection-test.html:testReflection failed
-
-
-"[FrameMarginheightAttribute] frame.marginHeight reflects <frame marginheight="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-76. attributes/frame-marginwidth-reflection-test.html:testReflection failed
-
-
-"[FrameMarginwidthAttribute] frame.marginWidth reflects <frame marginwidth="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-77. attributes/frame-noresize-absent-reflection-test.html:testReflection failed
-
-
-"[FrameNoresizeAttribute] frame.noResize reflects <frame>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-78. attributes/frame-noresize-reflection-test.html:testReflection failed
-
-
-"[FrameNoresizeAttribute] frame.noResize reflects <frame noresize>"
-Expected <true> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-79. attributes/frameset-bordercolor-reflection-test.html:testReflection failed
-
-
-"[FramesetBordercolorAttribute] frameset.borderColor reflects <frameset bordercolor="#ffffff">"
-Expected <#ffffff> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-80. attributes/frameset-frameborder-reflection-test.html:testReflection failed
-
-
-"[FramesetFrameborderAttribute] frameset.frameBorder reflects <frameset frameborder="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-81. attributes/frameset-framespacing-reflection-test.html:testReflection failed
-
-
-"[FramesetFramespacingAttribute] frameset.frameSpacing reflects <frameset framespacing="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-82. attributes/hr-size-reflection-test.html:testReflection failed
-
-
-"[HrSizeAttribute] hr.size reflects <hr size="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-83. attributes/iframe-align-justify-reflection-test.html:testReflection failed
-
-
-"[IframeAlignAttribute] iframe.align reflects <iframe align="justify">"
-Expected <justify> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-84. attributes/iframe-frameborder-reflection-test.html:testReflection failed
-
-
-"[IframeFrameborderAttribute] iframe.frameBorder reflects <iframe frameborder="42">"
-Expected <42> (Number) but was <0> (String)
-
-Stack trace follows:
-> anonymous
-
-
-85. attributes/iframe-marginheight-reflection-test.html:testReflection failed
-
-
-"[IframeMarginheightAttribute] iframe.marginHeight reflects <iframe marginheight="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-86. attributes/iframe-marginwidth-reflection-test.html:testReflection failed
-
-
-"[IframeMarginwidthAttribute] iframe.marginWidth reflects <iframe marginwidth="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-87. attributes/ilayer-bgcolor-reflection-test.html:testReflection failed
-
-
-"[IlayerBgcolorAttribute] ilayer.bgColor reflects <ilayer bgcolor="#ffffff">"
-Expected <#ffffff> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-88. attributes/ilayer-left-reflection-test.html:testReflection failed
-
-
-"[IlayerLeftAttribute] ilayer.left reflects <ilayer left="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-89. attributes/ilayer-pagex-reflection-test.html:testReflection failed
-
-
-"[IlayerPagexAttribute] ilayer.pagex reflects <ilayer pagex="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-90. attributes/ilayer-pagey-reflection-test.html:testReflection failed
-
-
-"[IlayerPageyAttribute] ilayer.pagey reflects <ilayer pagey="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-91. attributes/ilayer-top-reflection-test.html:testReflection failed
-
-
-"[IlayerTopAttribute] ilayer.top reflects <ilayer top="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-92. attributes/ilayer-z-index-reflection-test.html:testReflection failed
-
-
-"[IlayerZIndexAttribute] ilayer.zIndex reflects <ilayer z-index="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-93. attributes/img-galleryimg-no-reflection-test.html:testReflection failed
-
-
-"[ImgGalleryimgAttribute] img.galleryImg reflects <img galleryimg="no">"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-94. attributes/img-galleryimg-yes-reflection-test.html:testReflection failed
-
-
-"[ImgGalleryimgAttribute] img.galleryImg reflects <img galleryimg="yes">"
-Expected <true> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-95. attributes/img-suppress-reflection-test.html:testReflection failed
-
-
-"[ImgSuppressAttribute] img.suppress reflects <img suppress="true">"
-Expected <true> (Boolean) but was <true> (String)
-
-Stack trace follows:
-> anonymous
-
-
-96. attributes/input-align-absbottom-reflection-test.html:testReflection failed
-
-
-"[InputAlignAttribute] input.align reflects <input align="absbottom">"
-Expected <absBottom> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-97. attributes/input-align-absmiddle-reflection-test.html:testReflection failed
-
-
-"[InputAlignAttribute] input.align reflects <input align="absmiddle">"
-Expected <absMiddle> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-98. attributes/input-align-baseline-reflection-test.html:testReflection failed
-
-
-"[InputAlignAttribute] input.align reflects <input align="baseline">"
-Expected <baseline> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-99. attributes/input-align-bottom-reflection-test.html:testReflection failed
-
-
-"[InputAlignAttribute] input.align reflects <input align="bottom">"
-Expected <bottom> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-100. attributes/input-align-left-reflection-test.html:testReflection failed
-
-
-"[InputAlignAttribute] input.align reflects <input align="left">"
-Expected <left> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-101. attributes/input-align-middle-reflection-test.html:testReflection failed
-
-
-"[InputAlignAttribute] input.align reflects <input align="middle">"
-Expected <middle> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-102. attributes/input-align-right-reflection-test.html:testReflection failed
-
-
-"[InputAlignAttribute] input.align reflects <input align="right">"
-Expected <right> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-103. attributes/input-align-texttop-reflection-test.html:testReflection failed
-
-
-"[InputAlignAttribute] input.align reflects <input align="texttop">"
-Expected <textTop> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-104. attributes/input-align-top-reflection-test.html:testReflection failed
-
-
-"[InputAlignAttribute] input.align reflects <input align="top">"
-Expected <top> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-105. attributes/input-checked-reflection-test.html:testReflection failed
-
-
-"[InputCheckedAttribute] input.checked reflects <input checked>"
-Expected <true> (Boolean) but was <false> (Boolean)
-
-Stack trace follows:
-> anonymous
-
-
-106. attributes/input-height-reflection-test.html:testReflection failed
-
-
-"[InputHeightAttribute] input.height reflects <input height="7">"
-Expected <7> (String) but was <0> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-107. attributes/input-hspace-reflection-test.html:testReflection failed
-
-
-"[InputHspaceAttribute] input.hspace reflects <input hspace="42">"
-Expected <42> (Number) but was <0> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-108. attributes/input-ismap-absent-reflection-test.html:testReflection failed
-
-
-"[InputIsmapAttribute] input.isMap reflects <input>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-109. attributes/input-ismap-reflection-test.html:testReflection failed
-
-
-"[InputIsmapAttribute] input.isMap reflects <input ismap>"
-Expected <true> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-110. attributes/input-maxlength-reflection-test.html:testReflection failed
-
-
-"[InputMaxlengthAttribute] input.maxLength reflects <input maxlength="foo">"
-Expected <foo> (String) but was <2147483647> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-111. attributes/input-width-reflection-test.html:testReflection failed
-
-
-"[InputWidthAttribute] input.width reflects <input width="7">"
-Expected <7> (String) but was <0> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-112. attributes/isindex-action-reflection-test.html:testReflection failed
-
-
-"[IsindexActionAttribute] isindex.action reflects <isindex action="http://www.example.com/">"
-Expected <http://www.example.com/> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-113. attributes/isindex-align-center-reflection-test.html:testReflection failed
-
-
-"[IsindexAlignAttribute] isindex.align reflects <isindex align="center">"
-Expected <center> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-114. attributes/isindex-align-justify-reflection-test.html:testReflection failed
-
-
-"[IsindexAlignAttribute] isindex.align reflects <isindex align="justify">"
-Expected <justify> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-115. attributes/isindex-align-left-reflection-test.html:testReflection failed
-
-
-"[IsindexAlignAttribute] isindex.align reflects <isindex align="left">"
-Expected <left> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-116. attributes/isindex-align-right-reflection-test.html:testReflection failed
-
-
-"[IsindexAlignAttribute] isindex.align reflects <isindex align="right">"
-Expected <right> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-117. attributes/isindex-height-reflection-test.html:testReflection failed
-
-
-"[IsindexHeightAttribute] isindex.height reflects <isindex height="7">"
-Expected <7> (String) but was <0> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-118. attributes/isindex-method-reflection-test.html:testReflection failed
-
-
-"[IsindexMethodAttribute] isindex.method reflects <isindex method="GET">"
-Expected <get> (String) but was <GET> (String)
-
-Stack trace follows:
-> anonymous
-
-
-119. attributes/isindex-prompt-reflection-test.html:testReflection failed
-
-
-"[IsindexPromptAttribute] isindex.prompt reflects <isindex prompt="foo">"
-Expected <foo> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-120. attributes/isindex-width-reflection-test.html:testReflection failed
-
-
-"[IsindexWidthAttribute] isindex.width reflects <isindex width="7">"
-Expected <7> (String) but was <0> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-121. attributes/layer-bgcolor-reflection-test.html:testReflection failed
-
-
-"[LayerBgcolorAttribute] layer.bgColor reflects <layer bgcolor="#ffffff">"
-Expected <#ffffff> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-122. attributes/layer-left-reflection-test.html:testReflection failed
-
-
-"[LayerLeftAttribute] layer.left reflects <layer left="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-123. attributes/layer-pagex-reflection-test.html:testReflection failed
-
-
-"[LayerPagexAttribute] layer.pagex reflects <layer pagex="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-124. attributes/layer-pagey-reflection-test.html:testReflection failed
-
-
-"[LayerPageyAttribute] layer.pagey reflects <layer pagey="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-125. attributes/layer-top-reflection-test.html:testReflection failed
-
-
-"[LayerTopAttribute] layer.top reflects <layer top="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-126. attributes/layer-z-index-reflection-test.html:testReflection failed
-
-
-"[LayerZIndexAttribute] layer.zIndex reflects <layer z-index="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-127. attributes/link-methods-reflection-test.html:testReflection failed
-
-
-"[LinkMethodsAttribute] link.Methods reflects <link methods="GET">"
-Expected <GET> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-128. attributes/menu-autosubmit-absent-reflection-test.html:testReflection failed
-
-
-"[MenuAutosubmitAttribute] menu.autosubmit reflects <menu>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-129. attributes/menu-autosubmit-reflection-test.html:testReflection failed
-
-
-"[MenuAutosubmitAttribute] menu.autosubmit reflects <menu autosubmit>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-130. attributes/menu-start-reflection-test.html:testReflection failed
-
-
-"[MenuStartAttribute] menu.start reflects <menu start="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-131. attributes/meter-high-reflection-test.html:testReflection failed
-
-
-"[MeterHighAttribute] meter.high reflects <meter high="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-132. attributes/meter-low-reflection-test.html:testReflection failed
-
-
-"[MeterLowAttribute] meter.low reflects <meter low="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-133. attributes/meter-max-reflection-test.html:testReflection failed
-
-
-"[MeterMaxAttribute] meter.max reflects <meter max="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-134. attributes/meter-min-reflection-test.html:testReflection failed
-
-
-"[MeterMinAttribute] meter.min reflects <meter min="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-135. attributes/meter-optimum-reflection-test.html:testReflection failed
-
-
-"[MeterOptimumAttribute] meter.optimum reflects <meter optimum="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-136. attributes/meter-value-reflection-test.html:testReflection failed
-
-
-"[MeterValueAttribute] meter.value reflects <meter value="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-137. attributes/multicol-cols-reflection-test.html:testReflection failed
-
-
-"[MulticolColsAttribute] multicol.cols reflects <multicol cols="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-138. attributes/object-codebase-reflection-test.html:testReflection failed
-
-
-"[ObjectCodebaseAttribute] object.codebase reflects <object codebase="http://www.example.com/">"
-Expected <http://www.example.com/> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-139. attributes/object-codetype-reflection-test.html:testReflection failed
-
-
-"[ObjectCodetypeAttribute] object.codetype reflects <object codetype="text/html">"
-Expected <text/html> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-140. attributes/object-declare-reflection-test.html:testReflection failed
-
-
-"[ObjectDeclareAttribute] object.declare reflects <object declare="foo">"
-Expected <foo> (String) but was <true> (Boolean)
-
-Stack trace follows:
-> anonymous
-
-
-141. attributes/ol-value-reflection-test.html:testReflection failed
-
-
-"[OlValueAttribute] ol.value reflects <ol value="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-142. attributes/option-selected-absent-reflection-test.html:testReflection failed
-
-
-"[OptionSelectedAttribute] option.selected reflects <select><option>"
-Expected <false> (Boolean) but was <true> (Boolean)
-
-Stack trace follows:
-> anonymous
-
-
-143. attributes/p-width-reflection-test.html:testReflection failed
-
-
-"[PWidthAttribute] p.width reflects <p width="7">"
-Expected <7> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-144. attributes/param-valuetype-reflection-test.html:testReflection failed
-
-
-"[ParamValuetypeAttribute] param.valueType reflects <param valuetype="foo">"
-Expected <foo> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-145. attributes/pre-variable-absent-reflection-test.html:testReflection failed
-
-
-"[PreVariableAttribute] pre.variable reflects <pre>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-146. attributes/pre-variable-reflection-test.html:testReflection failed
-
-
-"[PreVariableAttribute] pre.variable reflects <pre variable>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-147. attributes/progress-max-reflection-test.html:testReflection failed
-
-
-"[ProgressMaxAttribute] progress.max reflects <progress max="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-148. attributes/progress-value-reflection-test.html:testReflection failed
-
-
-"[ProgressValueAttribute] progress.value reflects <progress value="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-149. attributes/script-async-absent-reflection-test.html:testReflection failed
-
-
-"[ScriptAsyncAttribute] script.async reflects <script>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-150. attributes/script-async-reflection-test.html:testReflection failed
-
-
-"[ScriptAsyncAttribute] script.async reflects <script async>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-151. attributes/select-align-absbottom-reflection-test.html:testReflection failed
-
-
-"[SelectAlignAttribute] select.align reflects <select align="absbottom">"
-Expected <absBottom> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-152. attributes/select-align-absmiddle-reflection-test.html:testReflection failed
-
-
-"[SelectAlignAttribute] select.align reflects <select align="absmiddle">"
-Expected <absMiddle> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-153. attributes/select-align-baseline-reflection-test.html:testReflection failed
-
-
-"[SelectAlignAttribute] select.align reflects <select align="baseline">"
-Expected <baseline> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-154. attributes/select-align-bottom-reflection-test.html:testReflection failed
-
-
-"[SelectAlignAttribute] select.align reflects <select align="bottom">"
-Expected <bottom> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-155. attributes/select-align-left-reflection-test.html:testReflection failed
-
-
-"[SelectAlignAttribute] select.align reflects <select align="left">"
-Expected <left> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-156. attributes/select-align-middle-reflection-test.html:testReflection failed
-
-
-"[SelectAlignAttribute] select.align reflects <select align="middle">"
-Expected <middle> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-157. attributes/select-align-right-reflection-test.html:testReflection failed
-
-
-"[SelectAlignAttribute] select.align reflects <select align="right">"
-Expected <right> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-158. attributes/select-align-texttop-reflection-test.html:testReflection failed
-
-
-"[SelectAlignAttribute] select.align reflects <select align="texttop">"
-Expected <textTop> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-159. attributes/select-align-top-reflection-test.html:testReflection failed
-
-
-"[SelectAlignAttribute] select.align reflects <select align="top">"
-Expected <top> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-160. attributes/select-value-reflection-test.html:testReflection failed
-
-
-"[SelectValueAttribute] select.value reflects <select value="foo">"
-Expected <foo> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-161. attributes/sound-delay-reflection-test.html:testReflection failed
-
-
-"[SoundDelayAttribute] sound.delay reflects <sound delay="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-162. attributes/sound-loop-reflection-test.html:testReflection failed
-
-
-"[SoundLoopAttribute] sound.loop reflects <sound loop="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-163. attributes/spacer-size-reflection-test.html:testReflection failed
-
-
-"[SpacerSizeAttribute] spacer.size reflects <spacer size="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-164. attributes/style-scoped-absent-reflection-test.html:testReflection failed
-
-
-"[StyleScopedAttribute] style.scoped reflects <style>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-165. attributes/style-scoped-reflection-test.html:testReflection failed
-
-
-"[StyleScopedAttribute] style.scoped reflects <style scoped>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-166. attributes/table-align-justify-reflection-test.html:testReflection failed
-
-
-"[TableAlignAttribute] table.align reflects <table align="justify">"
-Expected <justify> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-167. attributes/table-bottompadding-reflection-test.html:testReflection failed
-
-
-"[TableBottompaddingAttribute] table.bottomPadding reflects <table bottompadding="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-168. attributes/table-hspace-reflection-test.html:testReflection failed
-
-
-"[TableHspaceAttribute] table.hspace reflects <table hspace="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-169. attributes/table-leftpadding-reflection-test.html:testReflection failed
-
-
-"[TableLeftpaddingAttribute] table.leftPadding reflects <table leftpadding="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-170. attributes/table-rightpadding-reflection-test.html:testReflection failed
-
-
-"[TableRightpaddingAttribute] table.rightPadding reflects <table rightpadding="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-171. attributes/table-toppadding-reflection-test.html:testReflection failed
-
-
-"[TableToppaddingAttribute] table.topPadding reflects <table toppadding="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-172. attributes/table-vspace-reflection-test.html:testReflection failed
-
-
-"[TableVspaceAttribute] table.vspace reflects <table vspace="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-173. attributes/tbody-align-justify-reflection-test.html:testReflection failed
-
-
-"[TbodyAlignAttribute] tbody.align reflects <tbody align="justify">"
-Expected <justify> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-174. attributes/tbody-choff-reflection-test.html:testReflection failed
-
-
-"[TbodyChoffAttribute] tbody.choff reflects <tbody choff="7">"
-Expected <7> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-175. attributes/td-align-justify-reflection-test.html:testReflection failed
-
-
-"[TdAlignAttribute] td.align reflects <td align="justify">"
-Expected <justify> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-176. attributes/td-choff-reflection-test.html:testReflection failed
-
-
-"[TdChoffAttribute] td.choff reflects <td choff="7">"
-Expected <7> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-177. attributes/tfoot-align-justify-reflection-test.html:testReflection failed
-
-
-"[TfootAlignAttribute] tfoot.align reflects <tfoot align="justify">"
-Expected <justify> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-178. attributes/tfoot-choff-reflection-test.html:testReflection failed
-
-
-"[TfootChoffAttribute] tfoot.choff reflects <tfoot choff="7">"
-Expected <7> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-179. attributes/th-align-justify-reflection-test.html:testReflection failed
-
-
-"[ThAlignAttribute] th.align reflects <th align="justify">"
-Expected <justify> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-180. attributes/th-choff-reflection-test.html:testReflection failed
-
-
-"[ThChoffAttribute] th.choff reflects <th choff="7">"
-Expected <7> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-181. attributes/thead-align-justify-reflection-test.html:testReflection failed
-
-
-"[TheadAlignAttribute] thead.align reflects <thead align="justify">"
-Expected <justify> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-182. attributes/thead-choff-reflection-test.html:testReflection failed
-
-
-"[TheadChoffAttribute] thead.choff reflects <thead choff="7">"
-Expected <7> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-183. attributes/time-datetime-reflection-test.html:testReflection failed
-
-
-"[TimeDatetimeAttribute] time.dateTime reflects <time datetime="2008-01-01T00:00:00Z">"
-Expected <2008-01-01T00:00:00Z> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-184. attributes/tr-align-justify-reflection-test.html:testReflection failed
-
-
-"[TrAlignAttribute] tr.align reflects <tr align="justify">"
-Expected <justify> (String) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-185. attributes/tr-choff-reflection-test.html:testReflection failed
-
-
-"[TrChoffAttribute] tr.choff reflects <tr choff="7">"
-Expected <7> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-186. attributes/tr-nowrap-absent-reflection-test.html:testReflection failed
-
-
-"[TrNowrapAttribute] tr.noWrap reflects <tr>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-187. attributes/tr-nowrap-reflection-test.html:testReflection failed
-
-
-"[TrNowrapAttribute] tr.noWrap reflects <tr nowrap>"
-Expected <true> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-188. attributes/ul-start-reflection-test.html:testReflection failed
-
-
-"[UlStartAttribute] ul.start reflects <ul start="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-189. attributes/ul-value-reflection-test.html:testReflection failed
-
-
-"[UlValueAttribute] ul.value reflects <ul value="42">"
-Expected <42> (Number) but was <42> (String)
-
-Stack trace follows:
-> anonymous
-
-
-190. attributes/video-autoplay-absent-reflection-test.html:testReflection failed
-
-
-"[VideoAutoplayAttribute] video.autoplay reflects <video>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-191. attributes/video-autoplay-reflection-test.html:testReflection failed
-
-
-"[VideoAutoplayAttribute] video.autoplay reflects <video autoplay>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-192. attributes/video-controls-absent-reflection-test.html:testReflection failed
-
-
-"[VideoControlsAttribute] video.controls reflects <video>"
-Expected <false> (Boolean) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-193. attributes/video-controls-reflection-test.html:testReflection failed
-
-
-"[VideoControlsAttribute] video.controls reflects <video controls>"
-Expected <true> (Boolean) but was <> (String)
-
-Stack trace follows:
-> anonymous
-
-
-194. attributes/video-loopcount-reflection-test.html:testReflection failed
-
-
-"[VideoLoopcountAttribute] video.loopCount reflects <video loopcount="42">"
-Expected <42> (Number) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-195. attributes/video-loopend-reflection-test.html:testReflection failed
-
-
-"[VideoLoopendAttribute] video.loopEnd reflects <video loopend="00:00:00.00">"
-Expected <00:00:00.00> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-196. attributes/video-loopstart-reflection-test.html:testReflection failed
-
-
-"[VideoLoopstartAttribute] video.loopStart reflects <video loopstart="00:00:00.00">"
-Expected <00:00:00.00> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-197. elements/a-element-applies-style-test.html:testDOM failed
-
-
-"[AElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-198. elements/abbr-element-applies-style-test.html:testDOM failed
-
-
-"[AbbrElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-199. elements/acronym-element-applies-style-test.html:testDOM failed
-
-
-"[AcronymElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-200. elements/address-element-applies-style-test.html:testDOM failed
-
-
-"[AddressElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-201. elements/applet-element-applies-style-test.html:testDOM failed
-
-
-"[AppletElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-202. elements/area-element-applies-style-test.html:testDOM failed
-
-
-"[AreaElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-203. elements/b-element-applies-style-test.html:testDOM failed
-
-
-"[BElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-204. elements/base-element-applies-style-test.html:testDOM failed
-
-
-"[BaseElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-205. elements/basefont-element-applies-style-test.html:testDOM failed
-
-
-"[BasefontElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-206. elements/bdo-element-applies-style-test.html:testDOM failed
-
-
-"[BdoElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-207. elements/bgsound-element-applies-style-test.html:testDOM failed
-
-
-"[BgsoundElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-208. elements/big-element-applies-style-test.html:testDOM failed
-
-
-"[BigElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-209. elements/blink-element-applies-style-test.html:testDOM failed
-
-
-"[BlinkElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-210. elements/blockquote-element-applies-style-test.html:testDOM failed
-
-
-"[BlockquoteElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-211. elements/body-element-applies-style-test.html:testDOM failed
-
-
-"[BodyElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-212. elements/br-element-applies-style-test.html:testDOM failed
-
-
-"[BrElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-213. elements/button-element-applies-style-test.html:testDOM failed
-
-
-"[ButtonElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-214. elements/center-element-applies-style-test.html:testDOM failed
-
-
-"[CenterElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-215. elements/cite-element-applies-style-test.html:testDOM failed
-
-
-"[CiteElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-216. elements/code-element-applies-style-test.html:testDOM failed
-
-
-"[CodeElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-217. elements/comment-element-applies-style-test.html:testDOM failed
-
-
-"[CommentElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-218. elements/dd-element-applies-style-test.html:testDOM failed
-
-
-"[DdElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-219. elements/del-element-applies-style-test.html:testDOM failed
-
-
-"[DelElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-220. elements/dfn-element-applies-style-test.html:testDOM failed
-
-
-"[DfnElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-221. elements/dir-element-applies-style-test.html:testDOM failed
-
-
-"[DirElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-222. elements/div-element-applies-style-test.html:testDOM failed
-
-
-"[DivElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-223. elements/dl-element-applies-style-test.html:testDOM failed
-
-
-"[DlElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-224. elements/dt-element-applies-style-test.html:testDOM failed
-
-
-"[DtElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-225. elements/em-element-applies-style-test.html:testDOM failed
-
-
-"[EmElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-226. elements/embed-element-applies-style-test.html:testDOM failed
-
-
-"[EmbedElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-227. elements/fieldset-element-applies-style-test.html:testDOM failed
-
-
-"[FieldsetElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-228. elements/font-element-applies-style-test.html:testDOM failed
-
-
-"[FontElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-229. elements/form-element-applies-style-test.html:testDOM failed
-
-
-"[FormElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-230. elements/h1-element-applies-style-test.html:testDOM failed
-
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-231. elements/h2-element-applies-style-test.html:testDOM failed
-
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-232. elements/h3-element-applies-style-test.html:testDOM failed
-
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-233. elements/h4-element-applies-style-test.html:testDOM failed
-
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-234. elements/h5-element-applies-style-test.html:testDOM failed
-
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-235. elements/h6-element-applies-style-test.html:testDOM failed
-
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-236. elements/head-element-applies-style-test.html:testDOM had an error
+46. attributes/command-hidden-absent-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Object required"
+"Object doesn't support this property or method"
 
-237. elements/hr-element-applies-style-test.html:testDOM failed
-
-
-"[HrElement] applies style"
-Expected not to be <#abcdef> (String)
-
-Stack trace follows:
-> anonymous
-
-
-238. elements/html-element-applies-style-test.html:testDOM had an error
+47. attributes/command-hidden-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Object required"
+"Object doesn't support this property or method"
 
-239. elements/i-element-applies-style-test.html:testDOM failed
+48. attributes/datagrid-multiple-absent-reflection-test.html:testReflection had an error
 
 
-"[IElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+49. attributes/datagrid-multiple-reflection-test.html:testReflection had an error
 
 
-240. elements/iframe-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+50. attributes/details-open-absent-reflection-test.html:testReflection had an error
 
-"[IframeElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+51. attributes/details-open-reflection-test.html:testReflection had an error
 
-241. elements/image-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[ImageElement] applies style"
-Expected not to be <#abcdef> (String)
+52. attributes/div-draggable-absent-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-242. elements/img-element-applies-style-test.html:testDOM failed
+53. attributes/div-draggable-reflection-test.html:testReflection had an error
 
 
-"[ImgElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+54. attributes/div-irrelevant-absent-reflection-test.html:testReflection had an error
 
 
-243. elements/input-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+55. attributes/div-irrelevant-reflection-test.html:testReflection had an error
 
-"[InputElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+56. attributes/div-unselectable-absent-reflection-test.html:testReflection had an error
 
-244. elements/ins-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[InsElement] applies style"
-Expected not to be <#abcdef> (String)
+57. attributes/div-unselectable-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-245. elements/kbd-element-applies-style-test.html:testDOM failed
+58. attributes/embed-align-absbottom-reflection-test.html:testReflection had an error
 
 
-"[KbdElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+59. attributes/embed-align-absmiddle-reflection-test.html:testReflection had an error
 
 
-246. elements/label-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+60. attributes/embed-align-baseline-reflection-test.html:testReflection had an error
 
-"[LabelElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+61. attributes/embed-align-bottom-reflection-test.html:testReflection had an error
 
-247. elements/li-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[LiElement] applies style"
-Expected not to be <#abcdef> (String)
+62. attributes/embed-align-left-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-248. elements/link-element-applies-style-test.html:testDOM failed
+63. attributes/embed-align-middle-reflection-test.html:testReflection had an error
 
 
-"[LinkElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+64. attributes/embed-align-right-reflection-test.html:testReflection had an error
 
 
-249. elements/listing-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+65. attributes/embed-align-texttop-reflection-test.html:testReflection had an error
 
-"[ListingElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+66. attributes/embed-align-top-reflection-test.html:testReflection had an error
 
-250. elements/map-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[MapElement] applies style"
-Expected not to be <#abcdef> (String)
+67. attributes/embed-type-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-251. elements/marquee-element-applies-style-test.html:testDOM failed
+68. attributes/font-font-weight-reflection-test.html:testReflection had an error
 
 
-"[MarqueeElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+69. attributes/font-point-size-reflection-test.html:testReflection had an error
 
 
-252. elements/menu-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+70. attributes/frame-allowtransparency-absent-reflection-test.html:testReflection had an error
 
-"[MenuElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+71. attributes/frame-allowtransparency-reflection-test.html:testReflection had an error
 
-253. elements/meta-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[MetaElement] applies style"
-Expected not to be <#abcdef> (String)
+72. attributes/frame-bordercolor-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-254. elements/nextid-element-applies-style-test.html:testDOM failed
+73. attributes/frame-frameborder-reflection-test.html:testReflection had an error
 
 
-"[NextidElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+74. attributes/frame-longdesc-reflection-test.html:testReflection had an error
 
 
-255. elements/nobr-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+75. attributes/frame-marginheight-reflection-test.html:testReflection had an error
 
-"[NobrElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+76. attributes/frame-marginwidth-reflection-test.html:testReflection had an error
 
-256. elements/noembed-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[NoembedElement] applies style"
-Expected not to be <#abcdef> (String)
+77. attributes/frame-noresize-absent-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-257. elements/noframes-element-applies-style-test.html:testDOM failed
+78. attributes/frame-noresize-reflection-test.html:testReflection had an error
 
 
-"[NoframesElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+79. attributes/frameset-bordercolor-reflection-test.html:testReflection had an error
 
 
-258. elements/noscript-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+80. attributes/frameset-frameborder-reflection-test.html:testReflection had an error
 
-"[NoscriptElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+81. attributes/frameset-framespacing-reflection-test.html:testReflection had an error
 
-259. elements/object-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[ObjectElement] applies style"
-Expected not to be <#abcdef> (String)
+82. attributes/hr-size-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-260. elements/ol-element-applies-style-test.html:testDOM failed
+83. attributes/iframe-align-justify-reflection-test.html:testReflection had an error
 
 
-"[OlElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+84. attributes/iframe-frameborder-reflection-test.html:testReflection had an error
 
 
-261. elements/p-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+85. attributes/iframe-marginheight-reflection-test.html:testReflection had an error
 
-"[PElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+86. attributes/iframe-marginwidth-reflection-test.html:testReflection had an error
 
-262. elements/pre-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[PreElement] applies style"
-Expected not to be <#abcdef> (String)
+87. attributes/ilayer-bgcolor-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-263. elements/q-element-applies-style-test.html:testDOM failed
+88. attributes/ilayer-left-reflection-test.html:testReflection had an error
 
 
-"[QElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+89. attributes/ilayer-pagex-reflection-test.html:testReflection had an error
 
 
-264. elements/s-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+90. attributes/ilayer-pagey-reflection-test.html:testReflection had an error
 
-"[SElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+91. attributes/ilayer-top-reflection-test.html:testReflection had an error
 
-265. elements/samp-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[SampElement] applies style"
-Expected not to be <#abcdef> (String)
+92. attributes/ilayer-z-index-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-266. elements/script-element-applies-style-test.html:testDOM failed
+93. attributes/img-galleryimg-no-reflection-test.html:testReflection had an error
 
 
-"[ScriptElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+94. attributes/img-galleryimg-yes-reflection-test.html:testReflection had an error
 
 
-267. elements/select-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+95. attributes/img-suppress-reflection-test.html:testReflection had an error
 
-"[SelectElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+96. attributes/input-align-absbottom-reflection-test.html:testReflection had an error
 
-268. elements/small-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[SmallElement] applies style"
-Expected not to be <#abcdef> (String)
+97. attributes/input-align-absmiddle-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-269. elements/span-element-applies-style-test.html:testDOM failed
+98. attributes/input-align-baseline-reflection-test.html:testReflection had an error
 
 
-"[SpanElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+99. attributes/input-align-bottom-reflection-test.html:testReflection had an error
 
 
-270. elements/strike-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+100. attributes/input-align-left-reflection-test.html:testReflection had an error
 
-"[StrikeElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+101. attributes/input-align-middle-reflection-test.html:testReflection had an error
 
-271. elements/strong-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[StrongElement] applies style"
-Expected not to be <#abcdef> (String)
+102. attributes/input-align-right-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-272. elements/style-element-applies-style-test.html:testDOM failed
+103. attributes/input-align-texttop-reflection-test.html:testReflection had an error
 
 
-"[StyleElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+104. attributes/input-align-top-reflection-test.html:testReflection had an error
 
 
-273. elements/sub-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+105. attributes/input-checked-reflection-test.html:testReflection had an error
 
-"[SubElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+106. attributes/input-height-reflection-test.html:testReflection had an error
 
-274. elements/sup-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[SupElement] applies style"
-Expected not to be <#abcdef> (String)
+107. attributes/input-hspace-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-275. elements/table-element-applies-style-test.html:testDOM failed
+108. attributes/input-ismap-absent-reflection-test.html:testReflection had an error
 
 
-"[TableElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+109. attributes/input-ismap-reflection-test.html:testReflection had an error
 
 
-276. elements/textarea-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+110. attributes/input-maxlength-reflection-test.html:testReflection had an error
 
-"[TextareaElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+111. attributes/input-width-reflection-test.html:testReflection had an error
 
-277. elements/title-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[TitleElement] applies style"
-Expected not to be <#abcdef> (String)
+112. attributes/isindex-action-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-278. elements/tt-element-applies-style-test.html:testDOM failed
+113. attributes/isindex-align-center-reflection-test.html:testReflection had an error
 
 
-"[TtElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+114. attributes/isindex-align-justify-reflection-test.html:testReflection had an error
 
 
-279. elements/u-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+115. attributes/isindex-align-left-reflection-test.html:testReflection had an error
 
-"[UElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+116. attributes/isindex-align-right-reflection-test.html:testReflection had an error
 
-280. elements/ul-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[UlElement] applies style"
-Expected not to be <#abcdef> (String)
+117. attributes/isindex-height-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-281. elements/var-element-applies-style-test.html:testDOM failed
+118. attributes/isindex-method-reflection-test.html:testReflection had an error
 
 
-"[VarElement] applies style"
-Expected not to be <#abcdef> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+119. attributes/isindex-prompt-reflection-test.html:testReflection had an error
 
 
-282. elements/wbr-element-applies-style-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+120. attributes/isindex-width-reflection-test.html:testReflection had an error
 
-"[WbrElement] applies style"
-Expected not to be <#abcdef> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+121. attributes/layer-bgcolor-reflection-test.html:testReflection had an error
 
-283. elements/xmp-element-applies-style-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[XmpElement] applies style"
-Expected not to be <#abcdef> (String)
+122. attributes/layer-left-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-284. elements/head-element-appears-in-dom-test.html:testDOM failed
+123. attributes/layer-pagex-reflection-test.html:testReflection had an error
 
 
-"[HeadElement] appears in DOM"
-Expected not to be <null>
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+124. attributes/layer-pagey-reflection-test.html:testReflection had an error
 
 
-285. elements/html-element-appears-in-dom-test.html:testDOM failed
+Error message is:
+"Object doesn't support this property or method"
 
+125. attributes/layer-top-reflection-test.html:testReflection had an error
 
-"[HtmlElement] appears in DOM"
-Expected not to be <null>
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+126. attributes/layer-z-index-reflection-test.html:testReflection had an error
 
-286. elements/param-element-as-child-of-object-appears-in-dom-test.html:testDOM failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[ParamElement] appears in DOM as child of object"
-Expected not to be <null>
+127. attributes/link-methods-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
+
+128. attributes/menu-autosubmit-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+129. attributes/menu-autosubmit-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+130. attributes/menu-start-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+131. attributes/meter-high-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+132. attributes/meter-low-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+133. attributes/meter-max-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+134. attributes/meter-min-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+135. attributes/meter-optimum-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+136. attributes/meter-value-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+137. attributes/multicol-cols-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+138. attributes/object-codebase-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+139. attributes/object-codetype-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+140. attributes/object-declare-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+141. attributes/ol-value-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+142. attributes/option-selected-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+143. attributes/p-width-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+144. attributes/param-valuetype-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+145. attributes/pre-variable-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+146. attributes/pre-variable-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+147. attributes/progress-max-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+148. attributes/progress-value-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+149. attributes/script-async-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+150. attributes/script-async-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+151. attributes/select-align-absbottom-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+152. attributes/select-align-absmiddle-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+153. attributes/select-align-baseline-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+154. attributes/select-align-bottom-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+155. attributes/select-align-left-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+156. attributes/select-align-middle-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+157. attributes/select-align-right-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+158. attributes/select-align-texttop-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+159. attributes/select-align-top-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+160. attributes/select-value-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+161. attributes/sound-delay-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+162. attributes/sound-loop-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+163. attributes/spacer-size-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+164. attributes/style-scoped-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+165. attributes/style-scoped-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+166. attributes/table-align-justify-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+167. attributes/table-bottompadding-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+168. attributes/table-hspace-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+169. attributes/table-leftpadding-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+170. attributes/table-rightpadding-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+171. attributes/table-toppadding-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+172. attributes/table-vspace-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+173. attributes/tbody-align-justify-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+174. attributes/tbody-choff-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+175. attributes/td-align-justify-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+176. attributes/td-choff-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+177. attributes/tfoot-align-justify-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+178. attributes/tfoot-choff-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+179. attributes/th-align-justify-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+180. attributes/th-choff-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+181. attributes/thead-align-justify-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+182. attributes/thead-choff-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+183. attributes/time-datetime-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+184. attributes/tr-align-justify-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+185. attributes/tr-choff-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+186. attributes/tr-nowrap-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+187. attributes/tr-nowrap-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+188. attributes/ul-start-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+189. attributes/ul-value-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+190. attributes/video-autoplay-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+191. attributes/video-autoplay-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+192. attributes/video-controls-absent-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+193. attributes/video-controls-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+194. attributes/video-loopcount-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+195. attributes/video-loopend-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+196. attributes/video-loopstart-reflection-test.html:testReflection had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+197. elements/article-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+198. elements/aside-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+199. elements/audio-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+200. elements/canvas-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+201. elements/caption-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+202. elements/col-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+203. elements/colgroup-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+204. elements/command-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+205. elements/datagrid-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+206. elements/details-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+207. elements/dialog-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+208. elements/event-source-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+209. elements/figure-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+210. elements/footer-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+211. elements/frame-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+212. elements/frameset-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+213. elements/head-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+214. elements/header-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+215. elements/html-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+216. elements/ilayer-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+217. elements/input-type-button-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+218. elements/input-type-checkbox-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+219. elements/input-type-file-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+220. elements/input-type-hidden-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+221. elements/input-type-image-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+222. elements/input-type-password-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+223. elements/input-type-radio-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+224. elements/input-type-reset-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+225. elements/input-type-submit-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+226. elements/input-type-text-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+227. elements/isindex-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+228. elements/keygen-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+229. elements/layer-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+230. elements/legend-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+231. elements/m-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+232. elements/meter-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+233. elements/multicol-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+234. elements/nav-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+235. elements/nolayer-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+236. elements/optgroup-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+237. elements/option-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+238. elements/param-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+239. elements/progress-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+240. elements/section-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+241. elements/sound-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+242. elements/spacer-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+243. elements/tbody-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+244. elements/td-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+245. elements/tfoot-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+246. elements/th-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+247. elements/thead-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+248. elements/time-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+249. elements/tr-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+250. elements/video-element-applies-style-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+251. elements/head-element-appears-in-dom-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+252. elements/html-element-appears-in-dom-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+253. elements/param-element-as-child-of-object-appears-in-dom-test.html:testDOM had an error
+
+
+Error message is:
+"Object doesn't support this property or method"

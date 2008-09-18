@@ -1,6 +1,6 @@
 Tests with problems (616 total) - JsUnit
 
-Running on Opera/9.51 (Windows NT 5.1; U; en)
+Running on Opera/9.60 (Windows NT 5.1; U; en) Presto/2.1.1
 
 1. file://localhost/c:/work/doctype/trunk/tests/html/attributes/a-disabled-absent-reflection-test.html:testReflection failed
 
@@ -400,7 +400,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-align-center-reflection-test.html?cacheBuster=1218469713890: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-align-center-reflection-test.html?cacheBuster=1221764250762: In function testReflection
       assertEquals('[BodyAlignAttribute] body.align reflects <body align="center">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -422,7 +422,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-align-justify-reflection-test.html?cacheBuster=1218469714000: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-align-justify-reflection-test.html?cacheBuster=1221764250824: In function testReflection
       assertEquals('[BodyAlignAttribute] body.align reflects <body align="justify">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -445,7 +445,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-align-left-reflection-test.html?cacheBuster=1218469714125: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-align-left-reflection-test.html?cacheBuster=1221764250887: In function testReflection
       assertEquals('[BodyAlignAttribute] body.align reflects <body align="left">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -467,7 +467,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-align-right-reflection-test.html?cacheBuster=1218469714234: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-align-right-reflection-test.html?cacheBuster=1221764250949: In function testReflection
       assertEquals('[BodyAlignAttribute] body.align reflects <body align="right">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -490,7 +490,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-alink-reflection-test.html?cacheBuster=1218469714343: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-alink-reflection-test.html?cacheBuster=1221764251012: In function testReflection
       assertEquals('[BodyAlinkAttribute] body.aLink reflects <body alink="#ffffff">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -512,7 +512,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-background-reflection-test.html?cacheBuster=1218469714453: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-background-reflection-test.html?cacheBuster=1221764251074: In function testReflection
       assertEquals('[BodyBackgroundAttribute] body.background reflects <body background="http://www.example.com/">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -535,7 +535,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-bgcolor-reflection-test.html?cacheBuster=1218469714578: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-bgcolor-reflection-test.html?cacheBuster=1221764251137: In function testReflection
       assertEquals('[BodyBgcolorAttribute] body.bgColor reflects <body bgcolor="#ffffff">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -557,7 +557,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-bgproperties-reflection-test.html?cacheBuster=1218469714687: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-bgproperties-reflection-test.html?cacheBuster=1221764251199: In function testReflection
       assertEquals('[BodyBgpropertiesAttribute] body.bgProperties reflects <body bgproperties="fixed">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -580,7 +580,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-bottommargin-reflection-test.html?cacheBuster=1218469714812: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-bottommargin-reflection-test.html?cacheBuster=1221764251262: In function testReflection
       assertEquals('[BodyBottommarginAttribute] body.bottomMargin reflects <body bottommargin="7">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -603,7 +603,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-leftmargin-reflection-test.html?cacheBuster=1218469714937: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-leftmargin-reflection-test.html?cacheBuster=1221764251340: In function testReflection
       assertEquals('[BodyLeftmarginAttribute] body.leftMargin reflects <body leftmargin="7">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -625,7 +625,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-link-reflection-test.html?cacheBuster=1218469715046: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-link-reflection-test.html?cacheBuster=1221764251402: In function testReflection
       assertEquals('[BodyLinkAttribute] body.link reflects <body link="#ffffff">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -648,7 +648,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-marginheight-reflection-test.html?cacheBuster=1218469715156: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-marginheight-reflection-test.html?cacheBuster=1221764251480: In function testReflection
       assertEquals('[BodyMarginheightAttribute] body.marginHeight reflects <body marginheight="7">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -670,7 +670,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-marginwidth-reflection-test.html?cacheBuster=1218469715281: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-marginwidth-reflection-test.html?cacheBuster=1221764251558: In function testReflection
       assertEquals('[BodyMarginwidthAttribute] body.marginWidth reflects <body marginwidth="7">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -693,7 +693,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-nowrap-absent-reflection-test.html?cacheBuster=1218469715406: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-nowrap-absent-reflection-test.html?cacheBuster=1221764251637: In function testReflection
       assertEquals('[BodyNowrapAttribute] body.noWrap reflects <body>',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -715,7 +715,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-nowrap-reflection-test.html?cacheBuster=1218469715515: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-nowrap-reflection-test.html?cacheBuster=1221764251715: In function testReflection
       assertEquals('[BodyNowrapAttribute] body.noWrap reflects <body nowrap>',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -738,7 +738,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-rightmargin-reflection-test.html?cacheBuster=1218469715640: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-rightmargin-reflection-test.html?cacheBuster=1221764251793: In function testReflection
       assertEquals('[BodyRightmarginAttribute] body.rightMargin reflects <body rightmargin="7">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -760,7 +760,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-scroll-auto-reflection-test.html?cacheBuster=1218469715765: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-scroll-auto-reflection-test.html?cacheBuster=1221764251871: In function testReflection
       assertEquals('[BodyScrollAttribute] body.scroll reflects <body scroll="auto">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -783,7 +783,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-scroll-no-reflection-test.html?cacheBuster=1218469715890: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-scroll-no-reflection-test.html?cacheBuster=1221764251949: In function testReflection
       assertEquals('[BodyScrollAttribute] body.scroll reflects <body scroll="no">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -805,7 +805,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-scroll-yes-reflection-test.html?cacheBuster=1218469716015: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-scroll-yes-reflection-test.html?cacheBuster=1221764252027: In function testReflection
       assertEquals('[BodyScrollAttribute] body.scroll reflects <body scroll="yes">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -828,7 +828,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-text-reflection-test.html?cacheBuster=1218469716140: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-text-reflection-test.html?cacheBuster=1221764252105: In function testReflection
       assertEquals('[BodyTextAttribute] body.text reflects <body text="#ffffff">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -850,7 +850,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-topmargin-reflection-test.html?cacheBuster=1218469716328: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/body-topmargin-reflection-test.html?cacheBuster=1221764252184: In function testReflection
       assertEquals('[BodyTopmarginAttribute] body.topMargin reflects <body topmargin="7">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -955,7 +955,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-align-center-reflection-test.html?cacheBuster=1218469721718: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-align-center-reflection-test.html?cacheBuster=1221764255965: In function testReflection
       assertEquals('[ColgroupAlignAttribute] colgroup.align reflects <colgroup align="center">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -978,7 +978,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-align-justify-reflection-test.html?cacheBuster=1218469721890: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-align-justify-reflection-test.html?cacheBuster=1221764256074: In function testReflection
       assertEquals('[ColgroupAlignAttribute] colgroup.align reflects <colgroup align="justify">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1000,7 +1000,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-align-left-reflection-test.html?cacheBuster=1218469722062: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-align-left-reflection-test.html?cacheBuster=1221764256168: In function testReflection
       assertEquals('[ColgroupAlignAttribute] colgroup.align reflects <colgroup align="left">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1023,7 +1023,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-align-right-reflection-test.html?cacheBuster=1218469722265: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-align-right-reflection-test.html?cacheBuster=1221764256262: In function testReflection
       assertEquals('[ColgroupAlignAttribute] colgroup.align reflects <colgroup align="right">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1045,7 +1045,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-bgcolor-reflection-test.html?cacheBuster=1218469722453: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-bgcolor-reflection-test.html?cacheBuster=1221764256371: In function testReflection
       assertEquals('[ColgroupBgcolorAttribute] colgroup.bgColor reflects <colgroup bgcolor="#ffffff">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1068,7 +1068,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-char-reflection-test.html?cacheBuster=1218469722609: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-char-reflection-test.html?cacheBuster=1221764256465: In function testReflection
       assertEquals('[ColgroupCharAttribute] colgroup.char reflects <colgroup char="C">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1090,7 +1090,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-charoff-reflection-test.html?cacheBuster=1218469722750: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-charoff-reflection-test.html?cacheBuster=1221764256559: In function testReflection
       assertEquals('[ColgroupCharoffAttribute] colgroup.charoff reflects <colgroup charoff="7">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1113,7 +1113,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-span-reflection-test.html?cacheBuster=1218469722906: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-span-reflection-test.html?cacheBuster=1221764256652: In function testReflection
       assertEquals('[ColgroupSpanAttribute] colgroup.span reflects <colgroup span="foo">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1135,7 +1135,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-baseline-reflection-test.html?cacheBuster=1218469723062: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-baseline-reflection-test.html?cacheBuster=1221764256762: In function testReflection
       assertEquals('[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="baseline">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1158,7 +1158,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-bottom-reflection-test.html?cacheBuster=1218469723265: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-bottom-reflection-test.html?cacheBuster=1221764256871: In function testReflection
       assertEquals('[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="bottom">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1181,7 +1181,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-middle-reflection-test.html?cacheBuster=1218469723453: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-middle-reflection-test.html?cacheBuster=1221764256980: In function testReflection
       assertEquals('[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="middle">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1203,7 +1203,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-top-reflection-test.html?cacheBuster=1218469723609: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-top-reflection-test.html?cacheBuster=1221764257074: In function testReflection
       assertEquals('[ColgroupValignAttribute] colgroup.vAlign reflects <colgroup valign="top">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -1226,7 +1226,7 @@ Error message is:
 name: TypeError
 message: Statement on line 3: Cannot convert undefined or null to Object
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-width-reflection-test.html?cacheBuster=1218469723765: In function testReflection
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/attributes/colgroup-width-reflection-test.html?cacheBuster=1221764257184: In function testReflection
       assertEquals('[ColgroupWidthAttribute] colgroup.width reflects <colgroup width="7">',
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -3841,7 +3841,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/body-element-applies-style-test.html?cacheBuster=1218469917250: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/body-element-applies-style-test.html?cacheBuster=1221764999093: In function testDOM
       assertEquals("[BodyElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -3873,7 +3873,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/caption-element-applies-style-test.html?cacheBuster=1218469918578: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/caption-element-applies-style-test.html?cacheBuster=1221765000265: In function testDOM
       assertEquals("[CaptionElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -3906,7 +3906,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/colgroup-element-applies-style-test.html?cacheBuster=1218469920421: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/colgroup-element-applies-style-test.html?cacheBuster=1221765001906: In function testDOM
       assertEquals("[ColgroupElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -3938,7 +3938,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/head-element-applies-style-test.html?cacheBuster=1218469931968: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/head-element-applies-style-test.html?cacheBuster=1221765010594: In function testDOM
       assertEquals("[HeadElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -3971,7 +3971,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/html-element-applies-style-test.html?cacheBuster=1218469933250: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/html-element-applies-style-test.html?cacheBuster=1221765011719: In function testDOM
       assertEquals("[HtmlElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -4058,7 +4058,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/tbody-element-applies-style-test.html?cacheBuster=1218469965515: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/tbody-element-applies-style-test.html?cacheBuster=1221765032782: In function testDOM
       assertEquals("[TbodyElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -4091,7 +4091,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/td-element-applies-style-test.html?cacheBuster=1218469965921: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/td-element-applies-style-test.html?cacheBuster=1221765033360: In function testDOM
       assertEquals("[TdElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -4124,7 +4124,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/tfoot-element-applies-style-test.html?cacheBuster=1218469966640: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/tfoot-element-applies-style-test.html?cacheBuster=1221765034047: In function testDOM
       assertEquals("[TfootElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -4156,7 +4156,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/th-element-applies-style-test.html?cacheBuster=1218469967234: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/th-element-applies-style-test.html?cacheBuster=1221765034422: In function testDOM
       assertEquals("[ThElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -4189,7 +4189,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/thead-element-applies-style-test.html?cacheBuster=1218469967671: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/thead-element-applies-style-test.html?cacheBuster=1221765034813: In function testDOM
       assertEquals("[TheadElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
@@ -4221,7 +4221,7 @@ Backtrace:
     	return goog.style.getStyle_(elem, style);
   Line 9 of linked script file://localhost/c:/work/doctype/trunk/tests/lib/test-common.js
     	return this.getComputedStyle(document.getElementById(id), style);
-  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/tr-element-applies-style-test.html?cacheBuster=1218469968781: In function testDOM
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/html/elements/tr-element-applies-style-test.html?cacheBuster=1221765035813: In function testDOM
       assertEquals("[TrElement] applies style",
   Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();

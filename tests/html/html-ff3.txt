@@ -1,6 +1,6 @@
-Tests with problems (731 total) - JsUnit
+Tests with problems (630 total) - JsUnit
 
-Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9b5) Gecko/2008032620 Firefox/3.0b5
+Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1
 
 1. attributes/a-disabled-absent-reflection-test.html:testReflection failed
 
@@ -258,7 +258,7 @@ Stack trace follows:
 24. attributes/applet-codebase-reflection-test.html:testReflection failed
 
 "[AppletCodebaseAttribute] applet.codeBase reflects <applet codebase="foo">"
-Expected <foo> (String) but was <file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/foo> (String)
+Expected <foo> (String) but was <file:///c:/work/doctype/trunk/tests/html/attributes/foo> (String)
 
 Stack trace follows:
 > anonymous
@@ -280,7 +280,7 @@ Stack trace follows:
 26. attributes/applet-object-reflection-test.html:testReflection failed
 
 "[AppletObjectAttribute] applet.object reflects <applet object="foo">"
-Expected <foo> (String) but was <file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/foo> (String)
+Expected <foo> (String) but was <file:///c:/work/doctype/trunk/tests/html/attributes/foo> (String)
 
 Stack trace follows:
 > anonymous
@@ -1042,12 +1042,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-align-center-reflection-test.html?cacheBuster=1210632113156:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-align-center-reflection-test.html?cacheBuster=1221763098339:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 96. attributes/col-align-justify-reflection-test.html:testReflection had an error
 
@@ -1055,12 +1055,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-align-justify-reflection-test.html?cacheBuster=1210632113203:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-align-justify-reflection-test.html?cacheBuster=1221763098383:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 97. attributes/col-align-left-reflection-test.html:testReflection had an error
 
@@ -1068,12 +1068,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-align-left-reflection-test.html?cacheBuster=1210632113268:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-align-left-reflection-test.html?cacheBuster=1221763098437:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 98. attributes/col-align-right-reflection-test.html:testReflection had an error
 
@@ -1081,12 +1081,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-align-right-reflection-test.html?cacheBuster=1210632113304:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-align-right-reflection-test.html?cacheBuster=1221763098481:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 99. attributes/col-bgcolor-reflection-test.html:testReflection had an error
 
@@ -1094,12 +1094,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-bgcolor-reflection-test.html?cacheBuster=1210632113344:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-bgcolor-reflection-test.html?cacheBuster=1221763098554:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 100. attributes/col-ch-reflection-test.html:testReflection had an error
 
@@ -1107,12 +1107,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-ch-reflection-test.html?cacheBuster=1210632113391:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-ch-reflection-test.html?cacheBuster=1221763098599:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 101. attributes/col-char-reflection-test.html:testReflection had an error
 
@@ -1120,12 +1120,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-char-reflection-test.html?cacheBuster=1210632113456:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-char-reflection-test.html?cacheBuster=1221763098647:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 102. attributes/col-charoff-reflection-test.html:testReflection had an error
 
@@ -1133,12 +1133,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-charoff-reflection-test.html?cacheBuster=1210632113514:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-charoff-reflection-test.html?cacheBuster=1221763098690:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 103. attributes/col-choff-reflection-test.html:testReflection had an error
 
@@ -1146,12 +1146,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-choff-reflection-test.html?cacheBuster=1210632113549:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-choff-reflection-test.html?cacheBuster=1221763098760:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 104. attributes/col-span-reflection-test.html:testReflection had an error
 
@@ -1159,12 +1159,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-span-reflection-test.html?cacheBuster=1210632113586:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-span-reflection-test.html?cacheBuster=1221763098803:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 105. attributes/col-valign-baseline-reflection-test.html:testReflection had an error
 
@@ -1172,12 +1172,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-valign-baseline-reflection-test.html?cacheBuster=1210632113655:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-valign-baseline-reflection-test.html?cacheBuster=1221763098858:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 106. attributes/col-valign-bottom-reflection-test.html:testReflection had an error
 
@@ -1185,12 +1185,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-valign-bottom-reflection-test.html?cacheBuster=1210632113720:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-valign-bottom-reflection-test.html?cacheBuster=1221763098908:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 107. attributes/col-valign-middle-reflection-test.html:testReflection had an error
 
@@ -1198,12 +1198,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-valign-middle-reflection-test.html?cacheBuster=1210632113781:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-valign-middle-reflection-test.html?cacheBuster=1221763098951:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 108. attributes/col-valign-top-reflection-test.html:testReflection had an error
 
@@ -1211,12 +1211,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-valign-top-reflection-test.html?cacheBuster=1210632113818:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-valign-top-reflection-test.html?cacheBuster=1221763098998:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 109. attributes/col-width-reflection-test.html:testReflection had an error
 
@@ -1224,12 +1224,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/col-width-reflection-test.html?cacheBuster=1210632113848:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/col-width-reflection-test.html?cacheBuster=1221763099045:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 110. attributes/colgroup-align-center-reflection-test.html:testReflection had an error
 
@@ -1237,12 +1237,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-align-center-reflection-test.html?cacheBuster=1210632113881:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-align-center-reflection-test.html?cacheBuster=1221763099088:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 111. attributes/colgroup-align-justify-reflection-test.html:testReflection had an error
 
@@ -1250,12 +1250,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-align-justify-reflection-test.html?cacheBuster=1210632113933:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-align-justify-reflection-test.html?cacheBuster=1221763099154:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 112. attributes/colgroup-align-left-reflection-test.html:testReflection had an error
 
@@ -1263,12 +1263,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-align-left-reflection-test.html?cacheBuster=1210632113973:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-align-left-reflection-test.html?cacheBuster=1221763099197:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 113. attributes/colgroup-align-right-reflection-test.html:testReflection had an error
 
@@ -1276,12 +1276,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-align-right-reflection-test.html?cacheBuster=1210632114024:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-align-right-reflection-test.html?cacheBuster=1221763099244:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 114. attributes/colgroup-bgcolor-reflection-test.html:testReflection had an error
 
@@ -1289,12 +1289,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-bgcolor-reflection-test.html?cacheBuster=1210632114078:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-bgcolor-reflection-test.html?cacheBuster=1221763099290:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 115. attributes/colgroup-char-reflection-test.html:testReflection had an error
 
@@ -1302,12 +1302,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-char-reflection-test.html?cacheBuster=1210632114132:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-char-reflection-test.html?cacheBuster=1221763099346:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 116. attributes/colgroup-charoff-reflection-test.html:testReflection had an error
 
@@ -1315,12 +1315,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-charoff-reflection-test.html?cacheBuster=1210632114164:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-charoff-reflection-test.html?cacheBuster=1221763099397:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 117. attributes/colgroup-span-reflection-test.html:testReflection had an error
 
@@ -1328,12 +1328,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-span-reflection-test.html?cacheBuster=1210632114219:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-span-reflection-test.html?cacheBuster=1221763099444:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 118. attributes/colgroup-valign-baseline-reflection-test.html:testReflection had an error
 
@@ -1341,12 +1341,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-valign-baseline-reflection-test.html?cacheBuster=1210632114270:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-baseline-reflection-test.html?cacheBuster=1221763099488:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 119. attributes/colgroup-valign-bottom-reflection-test.html:testReflection had an error
 
@@ -1354,12 +1354,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-valign-bottom-reflection-test.html?cacheBuster=1210632114350:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-bottom-reflection-test.html?cacheBuster=1221763099538:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 120. attributes/colgroup-valign-middle-reflection-test.html:testReflection had an error
 
@@ -1367,12 +1367,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-valign-middle-reflection-test.html?cacheBuster=1210632114381:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-middle-reflection-test.html?cacheBuster=1221763099583:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 121. attributes/colgroup-valign-top-reflection-test.html:testReflection had an error
 
@@ -1380,12 +1380,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-valign-top-reflection-test.html?cacheBuster=1210632114415:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-valign-top-reflection-test.html?cacheBuster=1221763099646:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 122. attributes/colgroup-width-reflection-test.html:testReflection had an error
 
@@ -1393,12 +1393,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/colgroup-width-reflection-test.html?cacheBuster=1210632114447:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/colgroup-width-reflection-test.html?cacheBuster=1221763099691:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 123. attributes/command-checked-absent-reflection-test.html:testReflection failed
 
@@ -2792,12 +2792,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-allowtransparency-absent-reflection-test.html?cacheBuster=1210632123251:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-allowtransparency-absent-reflection-test.html?cacheBuster=1221763109224:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 250. attributes/frame-allowtransparency-reflection-test.html:testReflection had an error
 
@@ -2805,12 +2805,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-allowtransparency-reflection-test.html?cacheBuster=1210632123297:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-allowtransparency-reflection-test.html?cacheBuster=1221763109273:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 251. attributes/frame-application-reflection-test.html:testReflection had an error
 
@@ -2818,12 +2818,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-application-reflection-test.html?cacheBuster=1210632123334:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-application-reflection-test.html?cacheBuster=1221763109319:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 252. attributes/frame-border-reflection-test.html:testReflection had an error
 
@@ -2831,12 +2831,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-border-reflection-test.html?cacheBuster=1210632123366:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-border-reflection-test.html?cacheBuster=1221763109374:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 253. attributes/frame-bordercolor-reflection-test.html:testReflection had an error
 
@@ -2844,12 +2844,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-bordercolor-reflection-test.html?cacheBuster=1210632123422:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-bordercolor-reflection-test.html?cacheBuster=1221763109417:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 254. attributes/frame-frameborder-reflection-test.html:testReflection had an error
 
@@ -2857,12 +2857,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-frameborder-reflection-test.html?cacheBuster=1210632123476:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-frameborder-reflection-test.html?cacheBuster=1221763109460:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 255. attributes/frame-height-reflection-test.html:testReflection had an error
 
@@ -2870,12 +2870,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-height-reflection-test.html?cacheBuster=1210632123533:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-height-reflection-test.html?cacheBuster=1221763109503:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 256. attributes/frame-longdesc-reflection-test.html:testReflection had an error
 
@@ -2883,12 +2883,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-longdesc-reflection-test.html?cacheBuster=1210632123598:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-longdesc-reflection-test.html?cacheBuster=1221763109552:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 257. attributes/frame-marginheight-reflection-test.html:testReflection had an error
 
@@ -2896,12 +2896,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-marginheight-reflection-test.html?cacheBuster=1210632123641:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-marginheight-reflection-test.html?cacheBuster=1221763109595:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 258. attributes/frame-marginwidth-reflection-test.html:testReflection had an error
 
@@ -2909,12 +2909,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-marginwidth-reflection-test.html?cacheBuster=1210632123694:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-marginwidth-reflection-test.html?cacheBuster=1221763109639:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 259. attributes/frame-name-reflection-test.html:testReflection had an error
 
@@ -2922,12 +2922,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-name-reflection-test.html?cacheBuster=1210632123754:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-name-reflection-test.html?cacheBuster=1221763109682:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 260. attributes/frame-noresize-absent-reflection-test.html:testReflection had an error
 
@@ -2935,12 +2935,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-noresize-absent-reflection-test.html?cacheBuster=1210632123789:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-noresize-absent-reflection-test.html?cacheBuster=1221763109727:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 261. attributes/frame-noresize-reflection-test.html:testReflection had an error
 
@@ -2948,12 +2948,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-noresize-reflection-test.html?cacheBuster=1210632123823:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-noresize-reflection-test.html?cacheBuster=1221763109768:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 262. attributes/frame-scrolling-auto-reflection-test.html:testReflection had an error
 
@@ -2961,12 +2961,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-scrolling-auto-reflection-test.html?cacheBuster=1210632123859:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-scrolling-auto-reflection-test.html?cacheBuster=1221763109810:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 263. attributes/frame-scrolling-no-reflection-test.html:testReflection had an error
 
@@ -2974,12 +2974,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-scrolling-no-reflection-test.html?cacheBuster=1210632123937:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-scrolling-no-reflection-test.html?cacheBuster=1221763109860:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 264. attributes/frame-scrolling-yes-reflection-test.html:testReflection had an error
 
@@ -2987,12 +2987,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-scrolling-yes-reflection-test.html?cacheBuster=1210632124000:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-scrolling-yes-reflection-test.html?cacheBuster=1221763109904:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 265. attributes/frame-security-reflection-test.html:testReflection had an error
 
@@ -3000,12 +3000,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-security-reflection-test.html?cacheBuster=1210632124031:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-security-reflection-test.html?cacheBuster=1221763109948:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 266. attributes/frame-src-reflection-test.html:testReflection had an error
 
@@ -3013,12 +3013,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-src-reflection-test.html?cacheBuster=1210632124083:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-src-reflection-test.html?cacheBuster=1221763109991:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 267. attributes/frame-title-reflection-test.html:testReflection had an error
 
@@ -3026,12 +3026,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-title-reflection-test.html?cacheBuster=1210632124125:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-title-reflection-test.html?cacheBuster=1221763110033:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 268. attributes/frame-width-reflection-test.html:testReflection had an error
 
@@ -3039,12 +3039,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frame-width-reflection-test.html?cacheBuster=1210632124175:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frame-width-reflection-test.html?cacheBuster=1221763110079:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 269. attributes/frameset-border-reflection-test.html:testReflection had an error
 
@@ -3052,12 +3052,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frameset-border-reflection-test.html?cacheBuster=1210632124218:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frameset-border-reflection-test.html?cacheBuster=1221763110122:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 270. attributes/frameset-bordercolor-reflection-test.html:testReflection had an error
 
@@ -3065,12 +3065,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frameset-bordercolor-reflection-test.html?cacheBuster=1210632124271:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frameset-bordercolor-reflection-test.html?cacheBuster=1221763110166:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 271. attributes/frameset-cols-reflection-test.html:testReflection had an error
 
@@ -3078,12 +3078,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frameset-cols-reflection-test.html?cacheBuster=1210632124332:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frameset-cols-reflection-test.html?cacheBuster=1221763110210:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 272. attributes/frameset-frameborder-reflection-test.html:testReflection had an error
 
@@ -3091,12 +3091,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frameset-frameborder-reflection-test.html?cacheBuster=1210632124381:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frameset-frameborder-reflection-test.html?cacheBuster=1221763110254:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 273. attributes/frameset-framespacing-reflection-test.html:testReflection had an error
 
@@ -3104,12 +3104,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frameset-framespacing-reflection-test.html?cacheBuster=1210632124422:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frameset-framespacing-reflection-test.html?cacheBuster=1221763110296:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 274. attributes/frameset-name-reflection-test.html:testReflection had an error
 
@@ -3117,12 +3117,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frameset-name-reflection-test.html?cacheBuster=1210632124516:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frameset-name-reflection-test.html?cacheBuster=1221763110339:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 275. attributes/frameset-rows-reflection-test.html:testReflection had an error
 
@@ -3130,12 +3130,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frameset-rows-reflection-test.html?cacheBuster=1210632124565:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frameset-rows-reflection-test.html?cacheBuster=1221763110381:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 276. attributes/frameset-width-reflection-test.html:testReflection had an error
 
@@ -3143,12 +3143,12 @@ Error message is:
 "TypeError: document.getElementById("test") is null"
 
 Stack trace follows:
-testReflection()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/attributes/frameset-width-reflection-test.html?cacheBuster=1210632124617:31
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+testReflection()@file:///c:/work/doctype/trunk/tests/html/attributes/frameset-width-reflection-test.html?cacheBuster=1221763110424:31
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
 277. attributes/hr-clear-all-reflection-test.html:testReflection failed
 
@@ -6604,1502 +6604,391 @@ Stack trace follows:
 > assertEquals
 > testReflection
 
-591. elements/a-element-applies-style-test.html:testDOM failed
-
-"[AElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-592. elements/abbr-element-applies-style-test.html:testDOM failed
-
-"[AbbrElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-593. elements/acronym-element-applies-style-test.html:testDOM failed
-
-"[AcronymElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-594. elements/address-element-applies-style-test.html:testDOM failed
-
-"[AddressElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-595. elements/applet-element-applies-style-test.html:testDOM failed
-
-"[AppletElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-596. elements/area-element-applies-style-test.html:testDOM had an error
+591. elements/area-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/area-element-applies-style-test.html?cacheBuster=1210632154609:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/area-element-applies-style-test.html?cacheBuster=1221763144562:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-597. elements/article-element-applies-style-test.html:testDOM failed
-
-"[ArticleElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-598. elements/aside-element-applies-style-test.html:testDOM failed
-
-"[AsideElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-599. elements/audio-element-applies-style-test.html:testDOM failed
-
-"[AudioElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-600. elements/b-element-applies-style-test.html:testDOM failed
-
-"[BElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-601. elements/base-element-applies-style-test.html:testDOM failed
-
-"[BaseElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-602. elements/basefont-element-applies-style-test.html:testDOM failed
-
-"[BasefontElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-603. elements/bdo-element-applies-style-test.html:testDOM failed
-
-"[BdoElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-604. elements/bgsound-element-applies-style-test.html:testDOM failed
-
-"[BgsoundElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-605. elements/big-element-applies-style-test.html:testDOM failed
-
-"[BigElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-606. elements/blink-element-applies-style-test.html:testDOM failed
-
-"[BlinkElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-607. elements/blockquote-element-applies-style-test.html:testDOM failed
-
-"[BlockquoteElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-608. elements/body-element-applies-style-test.html:testDOM failed
-
-"[BodyElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-609. elements/br-element-applies-style-test.html:testDOM failed
-
-"[BrElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-610. elements/button-element-applies-style-test.html:testDOM failed
-
-"[ButtonElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-611. elements/canvas-element-applies-style-test.html:testDOM failed
-
-"[CanvasElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-612. elements/caption-element-applies-style-test.html:testDOM had an error
+592. elements/caption-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/caption-element-applies-style-test.html?cacheBuster=1210632155922:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/caption-element-applies-style-test.html?cacheBuster=1221763146041:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-613. elements/center-element-applies-style-test.html:testDOM failed
-
-"[CenterElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-614. elements/cite-element-applies-style-test.html:testDOM failed
-
-"[CiteElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-615. elements/code-element-applies-style-test.html:testDOM failed
-
-"[CodeElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-616. elements/col-element-applies-style-test.html:testDOM had an error
+593. elements/col-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/col-element-applies-style-test.html?cacheBuster=1210632156251:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/col-element-applies-style-test.html?cacheBuster=1221763146387:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-617. elements/colgroup-element-applies-style-test.html:testDOM had an error
+594. elements/colgroup-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/colgroup-element-applies-style-test.html?cacheBuster=1210632156391:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/colgroup-element-applies-style-test.html?cacheBuster=1221763146485:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-618. elements/command-element-applies-style-test.html:testDOM failed
-
-"[CommandElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-619. elements/comment-element-applies-style-test.html:testDOM failed
-
-"[CommentElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-620. elements/datagrid-element-applies-style-test.html:testDOM failed
-
-"[DatagridElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-621. elements/dd-element-applies-style-test.html:testDOM failed
-
-"[DdElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-622. elements/del-element-applies-style-test.html:testDOM failed
-
-"[DelElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-623. elements/details-element-applies-style-test.html:testDOM failed
-
-"[DetailsElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-624. elements/dfn-element-applies-style-test.html:testDOM failed
-
-"[DfnElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-625. elements/dialog-element-applies-style-test.html:testDOM failed
-
-"[DialogElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-626. elements/dir-element-applies-style-test.html:testDOM failed
-
-"[DirElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-627. elements/div-element-applies-style-test.html:testDOM failed
-
-"[DivElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-628. elements/dl-element-applies-style-test.html:testDOM failed
-
-"[DlElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-629. elements/dt-element-applies-style-test.html:testDOM failed
-
-"[DtElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-630. elements/em-element-applies-style-test.html:testDOM failed
-
-"[EmElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-631. elements/embed-element-applies-style-test.html:testDOM failed
-
-"[EmbedElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-632. elements/event-source-element-applies-style-test.html:testDOM failed
-
-"[EventSourceElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-633. elements/fieldset-element-applies-style-test.html:testDOM failed
-
-"[FieldsetElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-634. elements/figure-element-applies-style-test.html:testDOM failed
-
-"[FigureElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-635. elements/font-element-applies-style-test.html:testDOM failed
-
-"[FontElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-636. elements/footer-element-applies-style-test.html:testDOM failed
-
-"[FooterElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-637. elements/form-element-applies-style-test.html:testDOM failed
-
-"[FormElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-638. elements/frame-element-applies-style-test.html:testDOM had an error
+595. elements/frame-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/frame-element-applies-style-test.html?cacheBuster=1210632158125:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/frame-element-applies-style-test.html?cacheBuster=1221763148750:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-639. elements/frameset-element-applies-style-test.html:testDOM had an error
-
-Error message is:
-"TypeError: node is null"
-
-Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/frameset-element-applies-style-test.html?cacheBuster=1210632158178:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
-
-640. elements/h1-element-applies-style-test.html:testDOM failed
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-641. elements/h2-element-applies-style-test.html:testDOM failed
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-642. elements/h3-element-applies-style-test.html:testDOM failed
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-643. elements/h4-element-applies-style-test.html:testDOM failed
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-644. elements/h5-element-applies-style-test.html:testDOM failed
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-645. elements/h6-element-applies-style-test.html:testDOM failed
-
-"[H1H2H3H4H5H6Element] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-646. elements/head-element-applies-style-test.html:testDOM had an error
+596. elements/frameset-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/head-element-applies-style-test.html?cacheBuster=1210632158694:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
-
-647. elements/header-element-applies-style-test.html:testDOM failed
-
-"[HeaderElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-648. elements/hr-element-applies-style-test.html:testDOM failed
-
-"[HrElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-649. elements/html-element-applies-style-test.html:testDOM failed
-
-"[HtmlElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-650. elements/i-element-applies-style-test.html:testDOM failed
-
-"[IElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-651. elements/iframe-element-applies-style-test.html:testDOM failed
-
-"[IframeElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-652. elements/ilayer-element-applies-style-test.html:testDOM failed
-
-"[IlayerElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-653. elements/img-element-applies-style-test.html:testDOM failed
-
-"[ImgElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-654. elements/input-element-applies-style-test.html:testDOM failed
-
-"[InputElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-655. elements/ins-element-applies-style-test.html:testDOM failed
-
-"[InsElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-656. elements/isindex-element-applies-style-test.html:testDOM failed
-
-"[IsindexElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-657. elements/kbd-element-applies-style-test.html:testDOM failed
-
-"[KbdElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-658. elements/label-element-applies-style-test.html:testDOM failed
-
-"[LabelElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-659. elements/layer-element-applies-style-test.html:testDOM failed
-
-"[LayerElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-660. elements/legend-element-applies-style-test.html:testDOM failed
-
-"[LegendElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-661. elements/li-element-applies-style-test.html:testDOM failed
-
-"[LiElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-662. elements/link-element-applies-style-test.html:testDOM failed
-
-"[LinkElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-663. elements/listing-element-applies-style-test.html:testDOM failed
-
-"[ListingElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-664. elements/m-element-applies-style-test.html:testDOM failed
-
-"[MElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-665. elements/map-element-applies-style-test.html:testDOM failed
-
-"[MapElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-666. elements/marquee-element-applies-style-test.html:testDOM failed
-
-"[MarqueeElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-667. elements/menu-element-applies-style-test.html:testDOM failed
-
-"[MenuElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-668. elements/meta-element-applies-style-test.html:testDOM failed
-
-"[MetaElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-669. elements/meter-element-applies-style-test.html:testDOM failed
-
-"[MeterElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-670. elements/multicol-element-applies-style-test.html:testDOM failed
-
-"[MulticolElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-671. elements/nav-element-applies-style-test.html:testDOM failed
-
-"[NavElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-672. elements/nextid-element-applies-style-test.html:testDOM failed
-
-"[NextidElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-673. elements/nobr-element-applies-style-test.html:testDOM failed
-
-"[NobrElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-674. elements/noembed-element-applies-style-test.html:testDOM failed
-
-"[NoembedElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-675. elements/noframes-element-applies-style-test.html:testDOM failed
-
-"[NoframesElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-676. elements/nolayer-element-applies-style-test.html:testDOM failed
-
-"[NolayerElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-677. elements/noscript-element-applies-style-test.html:testDOM failed
-
-"[NoscriptElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-678. elements/object-element-applies-style-test.html:testDOM failed
-
-"[ObjectElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-679. elements/ol-element-applies-style-test.html:testDOM failed
-
-"[OlElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-680. elements/optgroup-element-applies-style-test.html:testDOM failed
-
-"[OptgroupElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-681. elements/option-element-applies-style-test.html:testDOM had an error
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/frameset-element-applies-style-test.html?cacheBuster=1221763148834:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+
+597. elements/head-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/option-element-applies-style-test.html?cacheBuster=1210632162453:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/head-element-applies-style-test.html?cacheBuster=1221763149764:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-682. elements/p-element-applies-style-test.html:testDOM failed
+598. elements/image-element-applies-style-test.html:testDOM failed
 
-"[PElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-683. elements/param-element-applies-style-test.html:testDOM failed
-
-"[ParamElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[ImageElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-684. elements/pre-element-applies-style-test.html:testDOM failed
+599. elements/input-type-button-element-applies-style-test.html:testDOM failed
 
-"[PreElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypeButtonElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-685. elements/progress-element-applies-style-test.html:testDOM failed
+600. elements/input-type-checkbox-element-applies-style-test.html:testDOM failed
 
-"[ProgressElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypeCheckboxElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-686. elements/q-element-applies-style-test.html:testDOM failed
+601. elements/input-type-file-element-applies-style-test.html:testDOM failed
 
-"[QElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypeFileElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-687. elements/s-element-applies-style-test.html:testDOM failed
+602. elements/input-type-hidden-element-applies-style-test.html:testDOM failed
 
-"[SElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypeHiddenElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-688. elements/samp-element-applies-style-test.html:testDOM failed
+603. elements/input-type-image-element-applies-style-test.html:testDOM failed
 
-"[SampElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypeImageElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-689. elements/script-element-applies-style-test.html:testDOM failed
+604. elements/input-type-password-element-applies-style-test.html:testDOM failed
 
-"[ScriptElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypePasswordElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-690. elements/section-element-applies-style-test.html:testDOM failed
+605. elements/input-type-radio-element-applies-style-test.html:testDOM failed
 
-"[SectionElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypeRadioElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-691. elements/select-element-applies-style-test.html:testDOM failed
+606. elements/input-type-reset-element-applies-style-test.html:testDOM failed
 
-"[SelectElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypeResetElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-692. elements/small-element-applies-style-test.html:testDOM failed
+607. elements/input-type-submit-element-applies-style-test.html:testDOM failed
 
-"[SmallElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypeSubmitElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-693. elements/sound-element-applies-style-test.html:testDOM failed
+608. elements/input-type-text-element-applies-style-test.html:testDOM failed
 
-"[SoundElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[InputTypeTextElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-694. elements/spacer-element-applies-style-test.html:testDOM failed
+609. elements/keygen-element-applies-style-test.html:testDOM failed
 
-"[SpacerElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+"[KeygenElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
 
 Stack trace follows:
 > anonymous
 > anonymous
-> assertNotEquals
+> assertEquals
 > testDOM
 
-695. elements/span-element-applies-style-test.html:testDOM failed
-
-"[SpanElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-696. elements/strike-element-applies-style-test.html:testDOM failed
-
-"[StrikeElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-697. elements/strong-element-applies-style-test.html:testDOM failed
-
-"[StrongElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-698. elements/style-element-applies-style-test.html:testDOM failed
-
-"[StyleElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-699. elements/sub-element-applies-style-test.html:testDOM failed
-
-"[SubElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-700. elements/sup-element-applies-style-test.html:testDOM failed
-
-"[SupElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-701. elements/table-element-applies-style-test.html:testDOM failed
-
-"[TableElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-702. elements/tbody-element-applies-style-test.html:testDOM had an error
+610. elements/option-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/tbody-element-applies-style-test.html?cacheBuster=1210632164375:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/option-element-applies-style-test.html?cacheBuster=1221763154660:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-703. elements/td-element-applies-style-test.html:testDOM had an error
-
-Error message is:
-"TypeError: node is null"
-
-Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/td-element-applies-style-test.html?cacheBuster=1210632164429:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
-
-704. elements/textarea-element-applies-style-test.html:testDOM failed
-
-"[TextareaElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-705. elements/tfoot-element-applies-style-test.html:testDOM had an error
+611. elements/tbody-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/tfoot-element-applies-style-test.html?cacheBuster=1210632164547:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/tbody-element-applies-style-test.html?cacheBuster=1221763156611:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-706. elements/th-element-applies-style-test.html:testDOM had an error
-
-Error message is:
-"TypeError: node is null"
-
-Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/th-element-applies-style-test.html?cacheBuster=1210632164628:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
-
-707. elements/thead-element-applies-style-test.html:testDOM had an error
+612. elements/td-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/thead-element-applies-style-test.html?cacheBuster=1210632164688:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/td-element-applies-style-test.html?cacheBuster=1221763156707:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-708. elements/time-element-applies-style-test.html:testDOM failed
-
-"[TimeElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-709. elements/title-element-applies-style-test.html:testDOM failed
-
-"[TitleElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-710. elements/tr-element-applies-style-test.html:testDOM had an error
+613. elements/tfoot-element-applies-style-test.html:testDOM had an error
 
 Error message is:
 "TypeError: node is null"
 
 Stack trace follows:
-(null)@file:///c:/cygwin/home/Mark/doctype/trunk/goog/dom/dom.js:659
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:99
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/goog/style/style.js:137
-(null,"color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:5
-("test","color")@file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js:9
-testDOM()@file:///c:/cygwin/home/Mark/doctype/trunk/tests/html/elements/tr-element-applies-style-test.html?cacheBuster=1210632165047:36
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
-([object Object])@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
-()@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
-@file:///c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/tfoot-element-applies-style-test.html?cacheBuster=1221763156904:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-711. elements/tt-element-applies-style-test.html:testDOM failed
+614. elements/th-element-applies-style-test.html:testDOM had an error
 
-"[TtElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-712. elements/u-element-applies-style-test.html:testDOM failed
-
-"[UElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+Error message is:
+"TypeError: node is null"
 
 Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/th-element-applies-style-test.html?cacheBuster=1221763157168:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-713. elements/ul-element-applies-style-test.html:testDOM failed
+615. elements/thead-element-applies-style-test.html:testDOM had an error
 
-"[UlElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-714. elements/var-element-applies-style-test.html:testDOM failed
-
-"[VarElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+Error message is:
+"TypeError: node is null"
 
 Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/thead-element-applies-style-test.html?cacheBuster=1221763157254:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-715. elements/video-element-applies-style-test.html:testDOM failed
+616. elements/tr-element-applies-style-test.html:testDOM had an error
 
-"[VideoElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-716. elements/wbr-element-applies-style-test.html:testDOM failed
-
-"[WbrElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
+Error message is:
+"TypeError: node is null"
 
 Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
+(null)@file:///c:/work/doctype/trunk/goog/dom/dom.js:648
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:99
+(null,"color")@file:///c:/work/doctype/trunk/goog/style/style.js:137
+(null,"color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:5
+("test","color")@file:///c:/work/doctype/trunk/tests/lib/test-common.js:9
+testDOM()@file:///c:/work/doctype/trunk/tests/html/elements/tr-element-applies-style-test.html?cacheBuster=1221763157527:36
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:601
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:335
+([object Object])@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:251
+()@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:578
+@file:///c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js:575
 
-717. elements/xmp-element-applies-style-test.html:testDOM failed
-
-"[XmpElement] applies style"
-Expected not to be <rgb(171, 205, 239)> (String)
-
-Stack trace follows:
-> anonymous
-> anonymous
-> assertNotEquals
-> testDOM
-
-718. elements/area-element-appears-in-dom-test.html:testDOM failed
+617. elements/area-element-appears-in-dom-test.html:testDOM failed
 
 "[AreaElement] appears in DOM"
 Expected not to be <null>
@@ -8110,7 +6999,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-719. elements/caption-element-appears-in-dom-test.html:testDOM failed
+618. elements/caption-element-appears-in-dom-test.html:testDOM failed
 
 "[CaptionElement] appears in DOM"
 Expected not to be <null>
@@ -8121,7 +7010,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-720. elements/col-element-appears-in-dom-test.html:testDOM failed
+619. elements/col-element-appears-in-dom-test.html:testDOM failed
 
 "[ColElement] appears in DOM"
 Expected not to be <null>
@@ -8132,7 +7021,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-721. elements/colgroup-element-appears-in-dom-test.html:testDOM failed
+620. elements/colgroup-element-appears-in-dom-test.html:testDOM failed
 
 "[ColgroupElement] appears in DOM"
 Expected not to be <null>
@@ -8143,7 +7032,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-722. elements/frame-element-appears-in-dom-test.html:testDOM failed
+621. elements/frame-element-appears-in-dom-test.html:testDOM failed
 
 "[FrameElement] appears in DOM"
 Expected not to be <null>
@@ -8154,7 +7043,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-723. elements/frameset-element-appears-in-dom-test.html:testDOM failed
+622. elements/frameset-element-appears-in-dom-test.html:testDOM failed
 
 "[FramesetElement] appears in DOM"
 Expected not to be <null>
@@ -8165,7 +7054,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-724. elements/head-element-appears-in-dom-test.html:testDOM failed
+623. elements/head-element-appears-in-dom-test.html:testDOM failed
 
 "[HeadElement] appears in DOM"
 Expected not to be <null>
@@ -8176,7 +7065,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-725. elements/option-element-appears-in-dom-test.html:testDOM failed
+624. elements/option-element-appears-in-dom-test.html:testDOM failed
 
 "[OptionElement] appears in DOM"
 Expected not to be <null>
@@ -8187,7 +7076,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-726. elements/tbody-element-appears-in-dom-test.html:testDOM failed
+625. elements/tbody-element-appears-in-dom-test.html:testDOM failed
 
 "[TbodyElement] appears in DOM"
 Expected not to be <null>
@@ -8198,7 +7087,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-727. elements/td-element-appears-in-dom-test.html:testDOM failed
+626. elements/td-element-appears-in-dom-test.html:testDOM failed
 
 "[TdElement] appears in DOM"
 Expected not to be <null>
@@ -8209,7 +7098,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-728. elements/tfoot-element-appears-in-dom-test.html:testDOM failed
+627. elements/tfoot-element-appears-in-dom-test.html:testDOM failed
 
 "[TfootElement] appears in DOM"
 Expected not to be <null>
@@ -8220,7 +7109,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-729. elements/th-element-appears-in-dom-test.html:testDOM failed
+628. elements/th-element-appears-in-dom-test.html:testDOM failed
 
 "[ThElement] appears in DOM"
 Expected not to be <null>
@@ -8231,7 +7120,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-730. elements/thead-element-appears-in-dom-test.html:testDOM failed
+629. elements/thead-element-appears-in-dom-test.html:testDOM failed
 
 "[TheadElement] appears in DOM"
 Expected not to be <null>
@@ -8242,7 +7131,7 @@ Stack trace follows:
 > assertNotEquals
 > testDOM
 
-731. elements/tr-element-appears-in-dom-test.html:testDOM failed
+630. elements/tr-element-appears-in-dom-test.html:testDOM failed
 
 "[TrElement] appears in DOM"
 Expected not to be <null>

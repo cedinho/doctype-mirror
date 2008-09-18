@@ -1,10 +1,10 @@
-Tests with problems (68 total) - JsUnit
+Tests with problems (69 total) - JsUnit
 
-Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9b5) Gecko/2008032620 Firefox/3.0b5
+Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1
 
 1. document/document-URLUnencoded-typeof-test.html:testTypeOf failed
 
-"[DocumentUrlunencodedProperty] typeOf(document.URLUnencoded) != 'undefined'"
+"[DocumentURLUnencodedProperty] typeOf(document.URLUnencoded) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
@@ -26,7 +26,7 @@ Stack trace follows:
 
 3. document/document-attachEvent-typeof-test.html:testTypeOf failed
 
-"[DocumentAttacheventMethod] typeOf(document.attachEvent) != 'undefined'"
+"[DocumentAttachEventMethod] typeOf(document.attachEvent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
@@ -48,7 +48,7 @@ Stack trace follows:
 
 5. document/document-createEventObject-typeof-test.html:testTypeOf failed
 
-"[DocumentCreateeventobjectMethod] typeOf(document.createEventObject) != 'undefined'"
+"[DocumentCreateEventObjectMethod] typeOf(document.createEventObject) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
@@ -59,7 +59,7 @@ Stack trace follows:
 
 6. document/document-createStyleSheet-typeof-test.html:testTypeOf failed
 
-"[DocumentCreatestylesheetMethod] typeOf(document.createStyleSheet) != 'undefined'"
+"[DocumentCreateStyleSheetMethod] typeOf(document.createStyleSheet) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
@@ -70,7 +70,7 @@ Stack trace follows:
 
 7. document/document-defaultCharset-typeof-test.html:testTypeOf failed
 
-"[DocumentDefaultcharsetProperty] typeOf(document.defaultCharset) != 'undefined'"
+"[DocumentDefaultCharsetProperty] typeOf(document.defaultCharset) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
@@ -81,7 +81,7 @@ Stack trace follows:
 
 8. document/document-detachEvent-typeof-test.html:testTypeOf failed
 
-"[DocumentDetacheventMethod] typeOf(document.detachEvent) != 'undefined'"
+"[DocumentDetachEventMethod] typeOf(document.detachEvent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
@@ -103,7 +103,7 @@ Stack trace follows:
 
 10. document/document-fileCreatedDate-typeof-test.html:testTypeOf failed
 
-"[DocumentFilecreateddateProperty] typeOf(document.fileCreatedDate) != 'undefined'"
+"[DocumentFileCreatedDateProperty] typeOf(document.fileCreatedDate) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
@@ -114,7 +114,7 @@ Stack trace follows:
 
 11. document/document-fileModifiedDate-typeof-test.html:testTypeOf failed
 
-"[DocumentFilemodifieddateProperty] typeOf(document.fileModifiedDate) != 'undefined'"
+"[DocumentFileModifiedDateProperty] typeOf(document.fileModifiedDate) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
@@ -125,7 +125,7 @@ Stack trace follows:
 
 12. document/document-fileSize-typeof-test.html:testTypeOf failed
 
-"[DocumentFilesizeProperty] typeOf(document.fileSize) != 'undefined'"
+"[DocumentFileSizeProperty] typeOf(document.fileSize) != 'undefined'"
 Expected not to be <undefined> (String)
 
 Stack trace follows:
@@ -376,7 +376,18 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-35. navigator/navigator-appMinorVersion-typeof-test.html:testTypeOf failed
+35. navigator/navigator-appCodeName-eq-Mozilla-test.html:testTypeOf failed
+
+"[NavigatorAppCodeNameProperty] navigator.appCodeName == 'Mozilla'"
+Expected not to be <Mozilla> (String)
+
+Stack trace follows:
+> anonymous
+> anonymous
+> assertNotEquals
+> testTypeOf
+
+36. navigator/navigator-appMinorVersion-typeof-test.html:testTypeOf failed
 
 "[NavigatorAppminorversionProperty] typeOf(navigator.appMinorVersion) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -387,7 +398,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-36. navigator/navigator-browserLanguage-typeof-test.html:testTypeOf failed
+37. navigator/navigator-browserLanguage-typeof-test.html:testTypeOf failed
 
 "[NavigatorBrowserlanguageProperty] typeOf(navigator.browserLanguage) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -398,7 +409,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-37. navigator/navigator-cpuClass-typeof-test.html:testTypeOf failed
+38. navigator/navigator-cpuClass-typeof-test.html:testTypeOf failed
 
 "[NavigatorCpuclassProperty] typeOf(navigator.cpuClass) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -409,7 +420,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-38. navigator/navigator-systemLanguage-typeof-test.html:testTypeOf failed
+39. navigator/navigator-systemLanguage-typeof-test.html:testTypeOf failed
 
 "[NavigatorSystemlanguageProperty] typeOf(navigator.systemLanguage) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -420,7 +431,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-39. navigator/navigator-userLanguage-typeof-test.html:testTypeOf failed
+40. navigator/navigator-userLanguage-typeof-test.html:testTypeOf failed
 
 "[NavigatorUserlanguageProperty] typeOf(navigator.userLanguage) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -431,7 +442,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-40. navigator/navigator-userProfile-typeof-test.html:testTypeOf failed
+41. navigator/navigator-userProfile-typeof-test.html:testTypeOf failed
 
 "[NavigatorUserprofileProperty] typeOf(navigator.userProfile) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -442,7 +453,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-41. screen/screen-bufferDepth-typeof-test.html:testTypeOf failed
+42. screen/screen-bufferDepth-typeof-test.html:testTypeOf failed
 
 "[ScreenBufferdepthProperty] typeOf(screen.bufferDepth) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -453,7 +464,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-42. screen/screen-deviceXDPI-typeof-test.html:testTypeOf failed
+43. screen/screen-deviceXDPI-typeof-test.html:testTypeOf failed
 
 "[ScreenDevicexdpiProperty] typeOf(screen.deviceXDPI) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -464,7 +475,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-43. screen/screen-deviceYDPI-typeof-test.html:testTypeOf failed
+44. screen/screen-deviceYDPI-typeof-test.html:testTypeOf failed
 
 "[ScreenDeviceydpiProperty] typeOf(screen.deviceYDPI) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -475,7 +486,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-44. screen/screen-fontSmoothingEnabled-typeof-test.html:testTypeOf failed
+45. screen/screen-fontSmoothingEnabled-typeof-test.html:testTypeOf failed
 
 "[ScreenFontsmoothingenabledProperty] typeOf(screen.fontSmoothingEnabled) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -486,7 +497,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-45. screen/screen-logicalXDPI-typeof-test.html:testTypeOf failed
+46. screen/screen-logicalXDPI-typeof-test.html:testTypeOf failed
 
 "[ScreenLogicalxdpiProperty] typeOf(screen.logicalXDPI) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -497,7 +508,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-46. screen/screen-logicalYDPI-typeof-test.html:testTypeOf failed
+47. screen/screen-logicalYDPI-typeof-test.html:testTypeOf failed
 
 "[ScreenLogicalydpiProperty] typeOf(screen.logicalYDPI) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -508,7 +519,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-47. screen/screen-updateInterval-typeof-test.html:testTypeOf failed
+48. screen/screen-updateInterval-typeof-test.html:testTypeOf failed
 
 "[ScreenUpdateintervalProperty] typeOf(screen.updateInterval) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -519,7 +530,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-48. window/window-attachEvent-typeof-test.html:testTypeOf failed
+49. window/window-attachEvent-typeof-test.html:testTypeOf failed
 
 "[WindowAttacheventMethod] typeOf(window.attachEvent) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -530,7 +541,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-49. window/window-clientInformation-typeof-test.html:testTypeOf failed
+50. window/window-clientInformation-typeof-test.html:testTypeOf failed
 
 "[WindowClientinformationProperty] typeOf(window.clientInformation) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -541,7 +552,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-50. window/window-clipboardData-typeof-test.html:testTypeOf failed
+51. window/window-clipboardData-typeof-test.html:testTypeOf failed
 
 "[WindowClipboarddataProperty] typeOf(window.clipboardData) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -552,7 +563,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-51. window/window-createPopup-typeof-test.html:testTypeOf failed
+52. window/window-createPopup-typeof-test.html:testTypeOf failed
 
 "[WindowCreatepopupMethod] typeOf(window.createPopup) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -563,7 +574,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-52. window/window-detachEvent-typeof-test.html:testTypeOf failed
+53. window/window-detachEvent-typeof-test.html:testTypeOf failed
 
 "[WindowDetacheventMethod] typeOf(window.detachEvent) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -574,7 +585,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-53. window/window-dialogArguments-typeof-test.html:testTypeOf failed
+54. window/window-dialogArguments-typeof-test.html:testTypeOf failed
 
 "[WindowDialogargumentsProperty] typeOf(window.dialogArguments) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -585,7 +596,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-54. window/window-dialogHeight-typeof-test.html:testTypeOf failed
+55. window/window-dialogHeight-typeof-test.html:testTypeOf failed
 
 "[WindowDialogheightProperty] typeOf(window.dialogHeight) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -596,7 +607,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-55. window/window-dialogLeft-typeof-test.html:testTypeOf failed
+56. window/window-dialogLeft-typeof-test.html:testTypeOf failed
 
 "[WindowDialogleftProperty] typeOf(window.dialogLeft) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -607,7 +618,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-56. window/window-dialogTop-typeof-test.html:testTypeOf failed
+57. window/window-dialogTop-typeof-test.html:testTypeOf failed
 
 "[WindowDialogtopProperty] typeOf(window.dialogTop) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -618,7 +629,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-57. window/window-dialogWidth-typeof-test.html:testTypeOf failed
+58. window/window-dialogWidth-typeof-test.html:testTypeOf failed
 
 "[WindowDialogwidthProperty] typeOf(window.dialogWidth) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -629,7 +640,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-58. window/window-event-typeof-test.html:testTypeOf failed
+59. window/window-event-typeof-test.html:testTypeOf failed
 
 "[WindowEventProperty] typeOf(window.event) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -640,7 +651,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-59. window/window-execScript-typeof-test.html:testTypeOf failed
+60. window/window-execScript-typeof-test.html:testTypeOf failed
 
 "[WindowExecscriptMethod] typeOf(window.execScript) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -651,12 +662,12 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-60. window/window-globalStorage-typeof-test.html:testTypeOf had an error
+61. window/window-globalStorage-typeof-test.html:testTypeOf had an error
 
 Error message is:
-"[Exception... "Security error"  code: "1000" nsresult: "0x805303e8 (NS_ERROR_DOM_SECURITY_ERR)"  location: "file:///c:/cygwin/home/Mark/doctype/trunk/tests/lib/test-common.js Line: 17"]"
+"[Exception... "Security error"  code: "1000" nsresult: "0x805303e8 (NS_ERROR_DOM_SECURITY_ERR)"  location: "file:///c:/work/doctype/trunk/tests/lib/test-common.js Line: 17"]"
 
-61. window/window-navigate-typeof-test.html:testTypeOf failed
+62. window/window-navigate-typeof-test.html:testTypeOf failed
 
 "[WindowNavigateMethod] typeOf(window.navigate) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -667,7 +678,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-62. window/window-offscreenBuffering-typeof-test.html:testTypeOf failed
+63. window/window-offscreenBuffering-typeof-test.html:testTypeOf failed
 
 "[WindowOffscreenbufferingProperty] typeOf(window.offscreenBuffering) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -678,7 +689,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-63. window/window-returnValue-typeof-test.html:testTypeOf failed
+64. window/window-returnValue-typeof-test.html:testTypeOf failed
 
 "[WindowReturnvalueProperty] typeOf(window.returnValue) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -689,7 +700,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-64. window/window-screenLeft-typeof-test.html:testTypeOf failed
+65. window/window-screenLeft-typeof-test.html:testTypeOf failed
 
 "[WindowScreenleftProperty] typeOf(window.screenLeft) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -700,7 +711,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-65. window/window-screenTop-typeof-test.html:testTypeOf failed
+66. window/window-screenTop-typeof-test.html:testTypeOf failed
 
 "[WindowScreentopProperty] typeOf(window.screenTop) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -711,7 +722,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-66. window/window-setActive-typeof-test.html:testTypeOf failed
+67. window/window-setActive-typeof-test.html:testTypeOf failed
 
 "[WindowSetactiveMethod] typeOf(window.setActive) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -722,7 +733,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-67. window/window-showHelp-typeof-test.html:testTypeOf failed
+68. window/window-showHelp-typeof-test.html:testTypeOf failed
 
 "[WindowShowhelpMethod] typeOf(window.showHelp) != 'undefined'"
 Expected not to be <undefined> (String)
@@ -733,7 +744,7 @@ Stack trace follows:
 > assertNotEquals
 > testTypeOf
 
-68. window/window-showModelessDialog-typeof-test.html:testTypeOf failed
+69. window/window-showModelessDialog-typeof-test.html:testTypeOf failed
 
 "[WindowShowmodelessdialogMethod] typeOf(window.showModelessDialog) != 'undefined'"
 Expected not to be <undefined> (String)

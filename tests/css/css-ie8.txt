@@ -1,2687 +1,1647 @@
 Tests with problems (274 total) - JsUnit
 
-Running on Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1)
+Running on Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022)
 
-1. properties/background--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+1. properties/background--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-"[BackgroundCSSProperty] style.backgroundColor reflects <div style='background: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+2. properties/background-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-2. properties/background-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+3. properties/background-bottom-equals-bottom-reflection-test.html:testReflection had an error
 
-"[BackgroundCSSProperty] style.backgroundColor reflects <div style='background: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+4. properties/background-bottom-equals-center-bottom-reflection-test.html:testReflection had an error
 
-3. properties/background-bottom-equals-bottom-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: bottom'>"
-Expected <bottom> (String) but was <50% bottom> (String)
+5. properties/background-center-equals-center-center-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-4. properties/background-bottom-equals-center-bottom-reflection-test.html:testReflection failed
+6. properties/background-center-equals-center-reflection-test.html:testReflection had an error
 
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: bottom'>"
-Expected <center bottom> (String) but was <50% bottom> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+7. properties/background-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-5. properties/background-center-equals-center-center-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+8. properties/background-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: center'>"
-Expected <center center> (String) but was <center 50%> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+9. properties/background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-6. properties/background-center-equals-center-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: center'>"
-Expected <center> (String) but was <center 50%> (String)
+10. properties/background-image-url-lp--qu-http-cl--sl--sl-www-dt-example-dt-com-sl--qu--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-7. properties/background-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+11. properties/background-image-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection had an error
 
 
-"[BackgroundColorCSSProperty] style.backgroundColor reflects <div style='background-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+12. properties/background-left-equals-left-center-reflection-test.html:testReflection had an error
 
 
-8. properties/background-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+13. properties/background-left-equals-left-reflection-test.html:testReflection had an error
 
-"[BackgroundColorCSSProperty] style.backgroundColor reflects <div style='background-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+14. properties/background-position-bottom-equals-bottom-reflection-test.html:testReflection had an error
 
-9. properties/background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundColorCSSProperty] style.backgroundColor reflects <div style='background-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+15. properties/background-position-bottom-equals-center-bottom-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-10. properties/background-image-url-lp--qu-http-cl--sl--sl-www-dt-example-dt-com-sl--qu--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
+16. properties/background-position-center-equals-center-center-reflection-test.html:testReflection had an error
 
 
-"[BackgroundImageCSSProperty] style.backgroundImage reflects <div style='background-image: url("http://www.example.com/")'>"
-Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+17. properties/background-position-center-equals-center-reflection-test.html:testReflection had an error
 
 
-11. properties/background-image-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+18. properties/background-position-left-equals-left-center-reflection-test.html:testReflection had an error
 
-"[BackgroundImageCSSProperty] style.backgroundImage reflects <div style='background-image: url(http://www.example.com/)'>"
-Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+19. properties/background-position-left-equals-left-reflection-test.html:testReflection had an error
 
-12. properties/background-left-equals-left-center-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: left'>"
-Expected <left center> (String) but was <left 50%> (String)
+20. properties/background-position-right-equals-right-center-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-13. properties/background-left-equals-left-reflection-test.html:testReflection failed
+21. properties/background-position-right-equals-right-reflection-test.html:testReflection had an error
 
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: left'>"
-Expected <left> (String) but was <left 50%> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+22. properties/background-position-top-equals-center-top-reflection-test.html:testReflection had an error
 
 
-14. properties/background-position-bottom-equals-bottom-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+23. properties/background-position-top-equals-top-reflection-test.html:testReflection had an error
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: bottom'>"
-Expected <bottom> (String) but was <50% bottom> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+24. properties/background-position-x-bottom-equals-bottom-reflection-test.html:testReflection had an error
 
-15. properties/background-position-bottom-equals-center-bottom-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: bottom'>"
-Expected <center bottom> (String) but was <50% bottom> (String)
+25. properties/background-position-x-top-equals-top-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-16. properties/background-position-center-equals-center-center-reflection-test.html:testReflection failed
+26. properties/background-position-y-left-equals-left-reflection-test.html:testReflection had an error
 
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: center'>"
-Expected <center center> (String) but was <center 50%> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+27. properties/background-position-y-right-equals-right-reflection-test.html:testReflection had an error
 
 
-17. properties/background-position-center-equals-center-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+28. properties/background-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: center'>"
-Expected <center> (String) but was <center 50%> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+29. properties/background-right-equals-right-center-reflection-test.html:testReflection had an error
 
-18. properties/background-position-left-equals-left-center-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: left'>"
-Expected <left center> (String) but was <left 50%> (String)
+30. properties/background-right-equals-right-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-19. properties/background-position-left-equals-left-reflection-test.html:testReflection failed
+31. properties/background-top-equals-center-top-reflection-test.html:testReflection had an error
 
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: left'>"
-Expected <left> (String) but was <left 50%> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+32. properties/background-top-equals-top-reflection-test.html:testReflection had an error
 
 
-20. properties/background-position-right-equals-right-center-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+33. properties/background-url-lp--qu-http-cl--sl--sl-www-dt-example-dt-com-sl--qu--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection had an error
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: right'>"
-Expected <right center> (String) but was <right 50%> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+34. properties/background-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection had an error
 
-21. properties/background-position-right-equals-right-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: right'>"
-Expected <right> (String) but was <right 50%> (String)
+35. properties/border--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-22. properties/background-position-top-equals-center-top-reflection-test.html:testReflection failed
+36. properties/border-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection had an error
 
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: top'>"
-Expected <center top> (String) but was <50% top> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+37. properties/border-0-equals-0pt-reflection-test.html:testReflection had an error
 
 
-23. properties/background-position-top-equals-top-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+38. properties/border-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection had an error
 
-"[BackgroundPositionCSSProperty] style.backgroundPosition reflects <div style='background-position: top'>"
-Expected <top> (String) but was <50% top> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+39. properties/border-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection had an error
 
-24. properties/background-position-x-bottom-equals-bottom-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundPositionXCSSProperty] style.backgroundPositionX reflects <div style='background-position-x: bottom'>"
-Expected <bottom> (String) but was <0%> (String)
+40. properties/border-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-25. properties/background-position-x-top-equals-top-reflection-test.html:testReflection failed
+41. properties/border-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection had an error
 
 
-"[BackgroundPositionXCSSProperty] style.backgroundPositionX reflects <div style='background-position-x: top'>"
-Expected <top> (String) but was <0%> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+42. properties/border-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection had an error
 
 
-26. properties/background-position-y-left-equals-left-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+43. properties/border-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection had an error
 
-"[BackgroundPositionYCSSProperty] style.backgroundPositionY reflects <div style='background-position-y: left'>"
-Expected <left> (String) but was <0%> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+44. properties/border-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection had an error
 
-27. properties/background-position-y-right-equals-right-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundPositionYCSSProperty] style.backgroundPositionY reflects <div style='background-position-y: right'>"
-Expected <right> (String) but was <0%> (String)
+45. properties/border-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-28. properties/background-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+46. properties/border-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection had an error
 
 
-"[BackgroundCSSProperty] style.backgroundColor reflects <div style='background: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+47. properties/border-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection had an error
 
 
-29. properties/background-right-equals-right-center-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+48. properties/border-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection had an error
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: right'>"
-Expected <right center> (String) but was <right 50%> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+49. properties/border-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection had an error
 
-30. properties/background-right-equals-right-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: right'>"
-Expected <right> (String) but was <right 50%> (String)
+50. properties/border-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-31. properties/background-top-equals-center-top-reflection-test.html:testReflection failed
+51. properties/border-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection had an error
 
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: top'>"
-Expected <center top> (String) but was <50% top> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+52. properties/border-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection had an error
 
 
-32. properties/background-top-equals-top-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+53. properties/border-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection had an error
 
-"[BackgroundCSSProperty] style.backgroundPosition reflects <div style='background: top'>"
-Expected <top> (String) but was <50% top> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+54. properties/border-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-33. properties/background-url-lp--qu-http-cl--sl--sl-www-dt-example-dt-com-sl--qu--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BackgroundCSSProperty] style.backgroundImage reflects <div style='background: url("http://www.example.com/")'>"
-Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
+55. properties/border-bogus-equals--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-34. properties/background-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--equals-url-lp-http-cl--sl--sl-www-dt-example-dt-com-sl--rp--reflection-test.html:testReflection failed
+56. properties/border-bottom--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-"[BackgroundCSSProperty] style.backgroundImage reflects <div style='background: url(http://www.example.com/)'>"
-Expected <url(http://www.example.com/)> (String) but was <url("http://www.example.com/")> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+57. properties/border-bottom-0-equals-0pt-reflection-test.html:testReflection had an error
 
 
-35. properties/border--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+58. properties/border-bottom-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderColor reflects <div style='border: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+59. properties/border-bottom-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-36. properties/border-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 0'>"
-Expected <0pt 0pt 0pt 0pt> (String) but was <0px> (String)
+60. properties/border-bottom-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-37. properties/border-0-equals-0pt-reflection-test.html:testReflection failed
+61. properties/border-bottom-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 0'>"
-Expected <0pt> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+62. properties/border-bottom-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-38. properties/border-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+63. properties/border-bottom-thick-equals-5px-reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1cm'>"
-Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+64. properties/border-bottom-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
-39. properties/border-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1cm solid'>"
-Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
+65. properties/border-bottom-width-0-equals-0pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-40. properties/border-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+66. properties/border-bottom-width-thick-equals-5px-reflection-test.html:testReflection had an error
 
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1em'>"
-Expected <1em 1em 1em 1em> (String) but was <1em> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+67. properties/border-bottom-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
 
-41. properties/border-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+68. properties/border-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1em solid'>"
-Expected <1em 1em 1em 1em> (String) but was <1em> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+69. properties/border-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-42. properties/border-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1ex'>"
-Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
+70. properties/border-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-43. properties/border-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
+71. properties/border-left--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1ex solid'>"
-Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+72. properties/border-left-0-equals-0pt-reflection-test.html:testReflection had an error
 
 
-44. properties/border-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+73. properties/border-left-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1in'>"
-Expected <1in 1in 1in 1in> (String) but was <1in> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+74. properties/border-left-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-45. properties/border-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1in solid'>"
-Expected <1in 1in 1in 1in> (String) but was <1in> (String)
+75. properties/border-left-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-46. properties/border-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
+76. properties/border-left-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1mm'>"
-Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+77. properties/border-left-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-47. properties/border-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+78. properties/border-left-thick-equals-5px-reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1mm solid'>"
-Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+79. properties/border-left-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
-48. properties/border-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1pc'>"
-Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
+80. properties/border-left-width-0-equals-0pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-49. properties/border-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
+81. properties/border-left-width-thick-equals-5px-reflection-test.html:testReflection had an error
 
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1pc solid'>"
-Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+82. properties/border-left-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
 
-50. properties/border-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+83. properties/border-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1pt'>"
-Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+84. properties/border-right--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-51. properties/border-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1pt solid'>"
-Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
+85. properties/border-right-0-equals-0pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-52. properties/border-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
+86. properties/border-right-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1px'>"
-Expected <1px 1px 1px 1px> (String) but was <1px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+87. properties/border-right-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-53. properties/border-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+88. properties/border-right-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: 1px solid'>"
-Expected <1px 1px 1px 1px> (String) but was <1px> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+89. properties/border-right-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-54. properties/border-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderCSSProperty] style.borderColor reflects <div style='border: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+90. properties/border-right-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-55. properties/border-bogus-equals--reflection-test.html:testReflection failed
+91. properties/border-right-thick-equals-5px-reflection-test.html:testReflection had an error
 
 
-"[BorderCSSProperty] style.borderStyle reflects <div style='border: bogus'>"
-Expected <> (String) but was <none> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+92. properties/border-right-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
 
-56. properties/border-bottom--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+93. properties/border-right-width-0-equals-0pt-reflection-test.html:testReflection had an error
 
-"[BorderBottomCSSProperty] style.borderBottomColor reflects <div style='border-bottom: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+94. properties/border-right-width-thick-equals-5px-reflection-test.html:testReflection had an error
 
-57. properties/border-bottom-0-equals-0pt-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderBottomCSSProperty] style.borderBottomWidth reflects <div style='border-bottom: 0'>"
-Expected <0pt> (String) but was <0px> (String)
+95. properties/border-right-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-58. properties/border-bottom-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+96. properties/border-style-bogus-equals--reflection-test.html:testReflection had an error
 
 
-"[BorderBottomCSSProperty] style.borderBottomColor reflects <div style='border-bottom: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+97. properties/border-thick-equals-5px-reflection-test.html:testReflection had an error
 
 
-59. properties/border-bottom-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+98. properties/border-thick-equals-thick-thick-thick-thick-reflection-test.html:testReflection had an error
 
-"[BorderBottomColorCSSProperty] style.borderBottomColor reflects <div style='border-bottom-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+99. properties/border-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
-60. properties/border-bottom-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderBottomColorCSSProperty] style.borderBottomColor reflects <div style='border-bottom-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+100. properties/border-thick-solid-equals-thick-thick-thick-thick-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-61. properties/border-bottom-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+101. properties/border-thin-equals-thin-thin-thin-thin-reflection-test.html:testReflection had an error
 
 
-"[BorderBottomColorCSSProperty] style.borderBottomColor reflects <div style='border-bottom-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+102. properties/border-thin-solid-equals-thin-thin-thin-thin-reflection-test.html:testReflection had an error
 
 
-62. properties/border-bottom-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+103. properties/border-top--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-"[BorderBottomCSSProperty] style.borderBottomColor reflects <div style='border-bottom: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+104. properties/border-top-0-equals-0pt-reflection-test.html:testReflection had an error
 
-63. properties/border-bottom-thick-equals-5px-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderBottomCSSProperty] style.borderBottomWidth reflects <div style='border-bottom: thick'>"
-Expected <5px> (String) but was <thick> (String)
+105. properties/border-top-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-64. properties/border-bottom-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+106. properties/border-top-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-"[BorderBottomCSSProperty] style.borderBottomWidth reflects <div style='border-bottom: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+107. properties/border-top-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-65. properties/border-bottom-width-0-equals-0pt-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+108. properties/border-top-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[BorderBottomWidthCSSProperty] style.borderBottomWidth reflects <div style='border-bottom-width: 0'>"
-Expected <0pt> (String) but was <0px> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+109. properties/border-top-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-66. properties/border-bottom-width-thick-equals-5px-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderBottomWidthCSSProperty] style.borderBottomWidth reflects <div style='border-bottom-width: thick'>"
-Expected <5px> (String) but was <thick> (String)
+110. properties/border-top-thick-equals-5px-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-67. properties/border-bottom-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+111. properties/border-top-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
 
-"[BorderBottomWidthCSSProperty] style.borderBottomWidth reflects <div style='border-bottom-width: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+112. properties/border-top-width-0-equals-0pt-reflection-test.html:testReflection had an error
 
 
-68. properties/border-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+113. properties/border-top-width-thick-equals-5px-reflection-test.html:testReflection had an error
 
-"[BorderColorCSSProperty] style.borderColor reflects <div style='border-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+114. properties/border-top-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
-69. properties/border-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderColorCSSProperty] style.borderColor reflects <div style='border-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+115. properties/border-width-0-equals-0pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-70. properties/border-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+116. properties/border-width-thick-equals-5px-reflection-test.html:testReflection had an error
 
 
-"[BorderColorCSSProperty] style.borderColor reflects <div style='border-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+117. properties/border-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
 
-71. properties/border-left--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+118. properties/color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-"[BorderLeftCSSProperty] style.borderLeftColor reflects <div style='border-left: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+119. properties/color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-72. properties/border-left-0-equals-0pt-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderLeftCSSProperty] style.borderLeftWidth reflects <div style='border-left: 0'>"
-Expected <0pt> (String) but was <0px> (String)
+120. properties/color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-73. properties/border-left-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+121. properties/cursor-alias-equals-alias-reflection-test.html:testReflection had an error
 
 
-"[BorderLeftCSSProperty] style.borderLeftColor reflects <div style='border-left: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+122. properties/cursor-cell-equals-cell-reflection-test.html:testReflection had an error
 
 
-74. properties/border-left-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+123. properties/cursor-context-menu-equals-context-menu-reflection-test.html:testReflection had an error
 
-"[BorderLeftColorCSSProperty] style.borderLeftColor reflects <div style='border-left-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+124. properties/cursor-copy-equals-copy-reflection-test.html:testReflection had an error
 
-75. properties/border-left-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderLeftColorCSSProperty] style.borderLeftColor reflects <div style='border-left-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+125. properties/cursor-ew-resize-equals-ew-resize-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-76. properties/border-left-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+126. properties/cursor-nesw-resize-equals-nesw-resize-reflection-test.html:testReflection had an error
 
 
-"[BorderLeftColorCSSProperty] style.borderLeftColor reflects <div style='border-left-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+127. properties/cursor-ns-resize-equals-ns-resize-reflection-test.html:testReflection had an error
 
 
-77. properties/border-left-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+128. properties/cursor-nwse-resize-equals-nwse-resize-reflection-test.html:testReflection had an error
 
-"[BorderLeftCSSProperty] style.borderLeftColor reflects <div style='border-left: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+129. properties/display-compact-equals-compact-reflection-test.html:testReflection had an error
 
-78. properties/border-left-thick-equals-5px-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderLeftCSSProperty] style.borderLeftWidth reflects <div style='border-left: thick'>"
-Expected <5px> (String) but was <thick> (String)
+130. properties/float-bogus-equals-none-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-79. properties/border-left-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+131. properties/float-left-equals-left-reflection-test.html:testReflection had an error
 
 
-"[BorderLeftCSSProperty] style.borderLeftWidth reflects <div style='border-left: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+132. properties/float-none-equals-none-reflection-test.html:testReflection had an error
 
 
-80. properties/border-left-width-0-equals-0pt-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+133. properties/float-right-equals-right-reflection-test.html:testReflection had an error
 
-"[BorderLeftWidthCSSProperty] style.borderLeftWidth reflects <div style='border-left-width: 0'>"
-Expected <0pt> (String) but was <0px> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+134. properties/font-italic-equals-italic-reflection-test.html:testReflection had an error
 
-81. properties/border-left-width-thick-equals-5px-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderLeftWidthCSSProperty] style.borderLeftWidth reflects <div style='border-left-width: thick'>"
-Expected <5px> (String) but was <thick> (String)
+135. properties/font-normal-small-caps-equals-small-caps-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-82. properties/border-left-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+136. properties/font-oblique-equals-oblique-reflection-test.html:testReflection had an error
 
 
-"[BorderLeftWidthCSSProperty] style.borderLeftWidth reflects <div style='border-left-width: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+137. properties/layer-background-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-83. properties/border-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+138. properties/layer-background-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderColor reflects <div style='border: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+139. properties/layer-background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-84. properties/border-right--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderRightCSSProperty] style.borderRightColor reflects <div style='border-right: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+140. properties/layer-background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm-0-cm-0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-85. properties/border-right-0-equals-0pt-reflection-test.html:testReflection failed
+141. properties/layer-background-color-transparent-equals-transparent-reflection-test.html:testReflection had an error
 
 
-"[BorderRightCSSProperty] style.borderRightWidth reflects <div style='border-right: 0'>"
-Expected <0pt> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+142. properties/layout-grid-char-0-equals-0pt-reflection-test.html:testReflection had an error
 
 
-86. properties/border-right-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+143. properties/layout-grid-line-0-equals-0pt-reflection-test.html:testReflection had an error
 
-"[BorderRightCSSProperty] style.borderRightColor reflects <div style='border-right: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+144. properties/letter-spacing-0-equals-0pt-reflection-test.html:testReflection had an error
 
-87. properties/border-right-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderRightColorCSSProperty] style.borderRightColor reflects <div style='border-right-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+145. properties/margin-bottom-0-equals-0pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-88. properties/border-right-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+146. properties/margin-bottom-none-equals-none-reflection-test.html:testReflection had an error
 
 
-"[BorderRightColorCSSProperty] style.borderRightColor reflects <div style='border-right-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+147. properties/margin-left-0-equals-0pt-reflection-test.html:testReflection had an error
 
 
-89. properties/border-right-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+148. properties/margin-left-none-equals-none-reflection-test.html:testReflection had an error
 
-"[BorderRightColorCSSProperty] style.borderRightColor reflects <div style='border-right-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+149. properties/margin-right-0-equals-0pt-reflection-test.html:testReflection had an error
 
-90. properties/border-right-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderRightCSSProperty] style.borderRightColor reflects <div style='border-right: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+150. properties/margin-right-none-equals-none-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-91. properties/border-right-thick-equals-5px-reflection-test.html:testReflection failed
+151. properties/margin-top-0-equals-0pt-reflection-test.html:testReflection had an error
 
 
-"[BorderRightCSSProperty] style.borderRightWidth reflects <div style='border-right: thick'>"
-Expected <5px> (String) but was <thick> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+152. properties/margin-top-none-equals-none-reflection-test.html:testReflection had an error
 
 
-92. properties/border-right-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+153. properties/max-height-0-equals-0pt-reflection-test.html:testReflection had an error
 
-"[BorderRightCSSProperty] style.borderRightWidth reflects <div style='border-right: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+154. properties/max-width-0-equals-0pt-reflection-test.html:testReflection had an error
 
-93. properties/border-right-width-0-equals-0pt-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderRightWidthCSSProperty] style.borderRightWidth reflects <div style='border-right-width: 0'>"
-Expected <0pt> (String) but was <0px> (String)
+155. properties/min-height-0-equals-0pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-94. properties/border-right-width-thick-equals-5px-reflection-test.html:testReflection failed
+156. properties/min-height-none-equals-none-reflection-test.html:testReflection had an error
 
 
-"[BorderRightWidthCSSProperty] style.borderRightWidth reflects <div style='border-right-width: thick'>"
-Expected <5px> (String) but was <thick> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+157. properties/min-width-0-equals-0pt-reflection-test.html:testReflection had an error
 
 
-95. properties/border-right-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+158. properties/min-width-none-equals-none-reflection-test.html:testReflection had an error
 
-"[BorderRightWidthCSSProperty] style.borderRightWidth reflects <div style='border-right-width: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+159. properties/orphans-0-equals-0-reflection-test.html:testReflection had an error
 
-96. properties/border-style-bogus-equals--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderStyleCSSProperty] style.borderStyle reflects <div style='border-style: bogus'>"
-Expected <> (String) but was <none> (String)
+160. properties/orphans-1-equals-1-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-97. properties/border-thick-equals-5px-reflection-test.html:testReflection failed
+161. properties/orphans-2-equals-2-reflection-test.html:testReflection had an error
 
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: thick'>"
-Expected <5px> (String) but was <thick> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+162. properties/orphans-bogus-equals--reflection-test.html:testReflection had an error
 
 
-98. properties/border-thick-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+163. properties/outline--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: thick'>"
-Expected <thick thick thick thick> (String) but was <thick> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+164. properties/outline-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection had an error
 
-99. properties/border-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
+165. properties/outline-0-equals-0pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-100. properties/border-thick-solid-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
+166. properties/outline-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection had an error
 
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: thick solid'>"
-Expected <thick thick thick thick> (String) but was <thick> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+167. properties/outline-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection had an error
 
 
-101. properties/border-thin-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+168. properties/outline-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection had an error
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: thin'>"
-Expected <thin thin thin thin> (String) but was <thin> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+169. properties/outline-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection had an error
 
-102. properties/border-thin-solid-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderCSSProperty] style.borderWidth reflects <div style='border: thin solid'>"
-Expected <thin thin thin thin> (String) but was <thin> (String)
+170. properties/outline-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-103. properties/border-top--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+171. properties/outline-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection had an error
 
 
-"[BorderTopCSSProperty] style.borderTopColor reflects <div style='border-top: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+172. properties/outline-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection had an error
 
 
-104. properties/border-top-0-equals-0pt-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+173. properties/outline-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection had an error
 
-"[BorderTopCSSProperty] style.borderTopWidth reflects <div style='border-top: 0'>"
-Expected <0pt> (String) but was <0px> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+174. properties/outline-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection had an error
 
-105. properties/border-top-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderTopCSSProperty] style.borderTopColor reflects <div style='border-top: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+175. properties/outline-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-106. properties/border-top-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+176. properties/outline-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection had an error
 
 
-"[BorderTopColorCSSProperty] style.borderTopColor reflects <div style='border-top-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+177. properties/outline-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection had an error
 
 
-107. properties/border-top-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+178. properties/outline-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection had an error
 
-"[BorderTopColorCSSProperty] style.borderTopColor reflects <div style='border-top-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+179. properties/outline-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection had an error
 
-108. properties/border-top-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderTopColorCSSProperty] style.borderTopColor reflects <div style='border-top-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+180. properties/outline-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-109. properties/border-top-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+181. properties/outline-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection had an error
 
 
-"[BorderTopCSSProperty] style.borderTopColor reflects <div style='border-top: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+182. properties/outline-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-110. properties/border-top-thick-equals-5px-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+183. properties/outline-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-"[BorderTopCSSProperty] style.borderTopWidth reflects <div style='border-top: thick'>"
-Expected <5px> (String) but was <thick> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+184. properties/outline-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-111. properties/border-top-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[BorderTopCSSProperty] style.borderTopWidth reflects <div style='border-top: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
+185. properties/outline-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-112. properties/border-top-width-0-equals-0pt-reflection-test.html:testReflection failed
+186. properties/outline-hidden-equals-hidden-reflection-test.html:testReflection had an error
 
 
-"[BorderTopWidthCSSProperty] style.borderTopWidth reflects <div style='border-top-width: 0'>"
-Expected <0pt> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+187. properties/outline-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-113. properties/border-top-width-thick-equals-5px-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+188. properties/outline-style-hidden-equals-hidden-reflection-test.html:testReflection had an error
 
-"[BorderTopWidthCSSProperty] style.borderTopWidth reflects <div style='border-top-width: thick'>"
-Expected <5px> (String) but was <thick> (String)
 
-Stack trace follows:
-> anonymous
-
-
-114. properties/border-top-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
-
-
-"[BorderTopWidthCSSProperty] style.borderTopWidth reflects <div style='border-top-width: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
-
-Stack trace follows:
-> anonymous
-
-
-115. properties/border-width-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[BorderWidthCSSProperty] style.borderWidth reflects <div style='border-width: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-116. properties/border-width-thick-equals-5px-reflection-test.html:testReflection failed
-
-
-"[BorderWidthCSSProperty] style.borderWidth reflects <div style='border-width: thick'>"
-Expected <5px> (String) but was <thick> (String)
-
-Stack trace follows:
-> anonymous
-
-
-117. properties/border-width-thick-sc--border-style-cl--solid-equals-5px-reflection-test.html:testReflection failed
-
-
-"[BorderWidthCSSProperty] style.borderWidth reflects <div style='border-width: thick; border-style: solid'>"
-Expected <5px> (String) but was <thick> (String)
-
-Stack trace follows:
-> anonymous
-
-
-118. properties/color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
-
-
-"[ColorCSSProperty] style.color reflects <div style='color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
-
-Stack trace follows:
-> anonymous
-
-
-119. properties/color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ColorCSSProperty] style.color reflects <div style='color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
-
-Stack trace follows:
-> anonymous
-
-
-120. properties/color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ColorCSSProperty] style.color reflects <div style='color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
-
-Stack trace follows:
-> anonymous
-
-
-121. properties/cursor-alias-equals-alias-reflection-test.html:testReflection failed
-
-
-"[CursorCSSProperty] style.cursor reflects <div style='cursor: alias'>"
-Expected <alias> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-122. properties/cursor-cell-equals-cell-reflection-test.html:testReflection failed
-
-
-"[CursorCSSProperty] style.cursor reflects <div style='cursor: cell'>"
-Expected <cell> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-123. properties/cursor-context-menu-equals-context-menu-reflection-test.html:testReflection failed
-
-
-"[CursorCSSProperty] style.cursor reflects <div style='cursor: context-menu'>"
-Expected <context-menu> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-124. properties/cursor-copy-equals-copy-reflection-test.html:testReflection failed
-
-
-"[CursorCSSProperty] style.cursor reflects <div style='cursor: copy'>"
-Expected <copy> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-125. properties/cursor-ew-resize-equals-ew-resize-reflection-test.html:testReflection failed
-
-
-"[CursorCSSProperty] style.cursor reflects <div style='cursor: ew-resize'>"
-Expected <ew-resize> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-126. properties/cursor-nesw-resize-equals-nesw-resize-reflection-test.html:testReflection failed
-
-
-"[CursorCSSProperty] style.cursor reflects <div style='cursor: nesw-resize'>"
-Expected <nesw-resize> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-127. properties/cursor-ns-resize-equals-ns-resize-reflection-test.html:testReflection failed
-
-
-"[CursorCSSProperty] style.cursor reflects <div style='cursor: ns-resize'>"
-Expected <ns-resize> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-128. properties/cursor-nwse-resize-equals-nwse-resize-reflection-test.html:testReflection failed
-
-
-"[CursorCSSProperty] style.cursor reflects <div style='cursor: nwse-resize'>"
-Expected <nwse-resize> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-129. properties/display-compact-equals-compact-reflection-test.html:testReflection failed
-
-
-"[DisplayCSSProperty] style.display reflects <div style='display: compact'>"
-Expected <compact> (String) but was <block> (String)
-
-Stack trace follows:
-> anonymous
-
-
-130. properties/float-bogus-equals-none-reflection-test.html:testReflection failed
-
-
-"[FloatCSSProperty] style.cssFloat reflects <div style='float: bogus'>"
-Expected <none> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-131. properties/float-left-equals-left-reflection-test.html:testReflection failed
-
-
-"[FloatCSSProperty] style.cssFloat reflects <div style='float: left'>"
-Expected <left> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-132. properties/float-none-equals-none-reflection-test.html:testReflection failed
-
-
-"[FloatCSSProperty] style.cssFloat reflects <div style='float: none'>"
-Expected <none> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-133. properties/float-right-equals-right-reflection-test.html:testReflection failed
-
-
-"[FloatCSSProperty] style.cssFloat reflects <div style='float: right'>"
-Expected <right> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-134. properties/font-italic-equals-italic-reflection-test.html:testReflection failed
-
-
-"[FontCSSProperty] style.fontStyle reflects <div style='font: italic'>"
-Expected <italic> (String) but was <normal> (String)
-
-Stack trace follows:
-> anonymous
-
-
-135. properties/font-normal-small-caps-equals-small-caps-reflection-test.html:testReflection failed
-
-
-"[FontCSSProperty] style.fontVariant reflects <div style='font: normal small-caps'>"
-Expected <small-caps> (String) but was <normal> (String)
-
-Stack trace follows:
-> anonymous
-
-
-136. properties/font-oblique-equals-oblique-reflection-test.html:testReflection failed
-
-
-"[FontCSSProperty] style.fontStyle reflects <div style='font: oblique'>"
-Expected <oblique> (String) but was <normal> (String)
-
-Stack trace follows:
-> anonymous
-
-
-137. properties/layer-background-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
-
-
-"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-138. properties/layer-background-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-139. properties/layer-background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-140. properties/layer-background-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm-0-cm-0-rp--reflection-test.html:testReflection failed
-
-
-"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: rgb(0, 0, 0)'>"
-Expected <rgb(0,0,0)> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-141. properties/layer-background-color-transparent-equals-transparent-reflection-test.html:testReflection failed
-
-
-"[LayerBackgroundColorCSSProperty] style.layerBackgroundColor reflects <div style='layer-background-color: transparent'>"
-Expected <transparent> (String) but was <undefined>
-
-Stack trace follows:
-> anonymous
-
-
-142. properties/layout-grid-char-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[LayoutGridCharCSSProperty] style.layoutGridChar reflects <div style='layout-grid-char: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-143. properties/layout-grid-line-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[LayoutGridLineCSSProperty] style.layoutGridLine reflects <div style='layout-grid-line: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-144. properties/letter-spacing-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[LetterSpacingCSSProperty] style.letterSpacing reflects <div style='letter-spacing: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-145. properties/margin-bottom-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[MarginBottomCSSProperty] style.marginBottom reflects <div style='margin-bottom: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-146. properties/margin-bottom-none-equals-none-reflection-test.html:testReflection failed
-
-
-"[MarginBottomCSSProperty] style.marginBottom reflects <div style='margin-bottom: none'>"
-Expected <none> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-147. properties/margin-left-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[MarginLeftCSSProperty] style.marginLeft reflects <div style='margin-left: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-148. properties/margin-left-none-equals-none-reflection-test.html:testReflection failed
-
-
-"[MarginLeftCSSProperty] style.marginLeft reflects <div style='margin-left: none'>"
-Expected <none> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-149. properties/margin-right-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[MarginRightCSSProperty] style.marginRight reflects <div style='margin-right: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-150. properties/margin-right-none-equals-none-reflection-test.html:testReflection failed
-
-
-"[MarginRightCSSProperty] style.marginRight reflects <div style='margin-right: none'>"
-Expected <none> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-151. properties/margin-top-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[MarginTopCSSProperty] style.marginTop reflects <div style='margin-top: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-152. properties/margin-top-none-equals-none-reflection-test.html:testReflection failed
-
-
-"[MarginTopCSSProperty] style.marginTop reflects <div style='margin-top: none'>"
-Expected <none> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-153. properties/max-height-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[MaxHeightCSSProperty] style.maxHeight reflects <div style='max-height: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-154. properties/max-width-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[MaxWidthCSSProperty] style.maxWidth reflects <div style='max-width: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-155. properties/min-height-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[MinHeightCSSProperty] style.minHeight reflects <div style='min-height: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-156. properties/min-height-none-equals-none-reflection-test.html:testReflection failed
-
-
-"[MinHeightCSSProperty] style.minHeight reflects <div style='min-height: none'>"
-Expected <none> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-157. properties/min-width-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[MinWidthCSSProperty] style.minWidth reflects <div style='min-width: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-158. properties/min-width-none-equals-none-reflection-test.html:testReflection failed
-
-
-"[MinWidthCSSProperty] style.minWidth reflects <div style='min-width: none'>"
-Expected <none> (String) but was <auto> (String)
-
-Stack trace follows:
-> anonymous
-
-
-159. properties/orphans-0-equals-0-reflection-test.html:testReflection failed
-
-
-"[OrphansCSSProperty] style.orphans reflects <div style='orphans: 0'>"
-Expected <0> (String) but was <2> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-160. properties/orphans-1-equals-1-reflection-test.html:testReflection failed
-
-
-"[OrphansCSSProperty] style.orphans reflects <div style='orphans: 1'>"
-Expected <1> (String) but was <1> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-161. properties/orphans-2-equals-2-reflection-test.html:testReflection failed
-
-
-"[OrphansCSSProperty] style.orphans reflects <div style='orphans: 2'>"
-Expected <2> (String) but was <2> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-162. properties/orphans-bogus-equals--reflection-test.html:testReflection failed
-
-
-"[OrphansCSSProperty] style.orphans reflects <div style='orphans: bogus'>"
-Expected <> (String) but was <2> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-163. properties/outline--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineColor reflects <div style='outline: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
-
-Stack trace follows:
-> anonymous
-
-
-164. properties/outline-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 0'>"
-Expected <0pt 0pt 0pt 0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-165. properties/outline-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-166. properties/outline-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1cm'>"
-Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
-
-Stack trace follows:
-> anonymous
-
-
-167. properties/outline-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1cm solid'>"
-Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
-
-Stack trace follows:
-> anonymous
-
-
-168. properties/outline-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1em'>"
-Expected <1em 1em 1em 1em> (String) but was <1em> (String)
-
-Stack trace follows:
-> anonymous
-
-
-169. properties/outline-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1em solid'>"
-Expected <1em 1em 1em 1em> (String) but was <1em> (String)
-
-Stack trace follows:
-> anonymous
-
-
-170. properties/outline-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1ex'>"
-Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
-
-Stack trace follows:
-> anonymous
-
-
-171. properties/outline-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1ex solid'>"
-Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
-
-Stack trace follows:
-> anonymous
-
-
-172. properties/outline-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1in'>"
-Expected <1in 1in 1in 1in> (String) but was <1in> (String)
-
-Stack trace follows:
-> anonymous
-
-
-173. properties/outline-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1in solid'>"
-Expected <1in 1in 1in 1in> (String) but was <1in> (String)
-
-Stack trace follows:
-> anonymous
-
-
-174. properties/outline-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1mm'>"
-Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
-
-Stack trace follows:
-> anonymous
-
-
-175. properties/outline-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1mm solid'>"
-Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
-
-Stack trace follows:
-> anonymous
-
-
-176. properties/outline-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pc'>"
-Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
-
-Stack trace follows:
-> anonymous
-
-
-177. properties/outline-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pc solid'>"
-Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
-
-Stack trace follows:
-> anonymous
-
-
-178. properties/outline-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pt'>"
-Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
-
-Stack trace follows:
-> anonymous
-
-
-179. properties/outline-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1pt solid'>"
-Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
-
-Stack trace follows:
-> anonymous
-
-
-180. properties/outline-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1px'>"
-Expected <1px 1px 1px 1px> (String) but was <1px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-181. properties/outline-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineWidth reflects <div style='outline: 1px solid'>"
-Expected <1px 1px 1px 1px> (String) but was <1px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-182. properties/outline-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineColor reflects <div style='outline: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
-
-Stack trace follows:
-> anonymous
-
-
-183. properties/outline-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
-
-
-"[OutlineColorCSSProperty] style.outlineColor reflects <div style='outline-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
-
-Stack trace follows:
-> anonymous
-
-
-184. properties/outline-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[OutlineColorCSSProperty] style.outlineColor reflects <div style='outline-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
-
-Stack trace follows:
-> anonymous
-
-
-185. properties/outline-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[OutlineColorCSSProperty] style.outlineColor reflects <div style='outline-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
-
-Stack trace follows:
-> anonymous
-
-
-186. properties/outline-hidden-equals-hidden-reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineStyle reflects <div style='outline: hidden'>"
-Expected <hidden> (String) but was <none> (String)
-
-Stack trace follows:
-> anonymous
-
-
-187. properties/outline-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[OutlineCSSProperty] style.outlineColor reflects <div style='outline: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
-
-Stack trace follows:
-> anonymous
-
-
-188. properties/outline-style-hidden-equals-hidden-reflection-test.html:testReflection failed
-
-
-"[OutlineStyleCSSProperty] style.outlineStyle reflects <div style='outline-style: hidden'>"
-Expected <hidden> (String) but was <none> (String)
-
-Stack trace follows:
-> anonymous
-
+Error message is:
+"Object doesn't support this property or method"
 
 189. properties/outline-thick-equals-5px-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 190. properties/outline-thick-equals-thick-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 191. properties/outline-thick-equals-thick-thick-thick-thick-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 192. properties/outline-thick-sc--outline-style-cl--solid-equals-5px-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 193. properties/outline-thick-sc--outline-style-cl--solid-equals-thick-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 194. properties/outline-thick-solid-equals-thick-thick-thick-thick-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 195. properties/outline-thin-equals-thin-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 196. properties/outline-thin-equals-thin-thin-thin-thin-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 197. properties/outline-thin-sc--outline-style-cl--solid-equals-thin-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 198. properties/outline-thin-solid-equals-thin-thin-thin-thin-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
-199. properties/outline-width-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection failed
+199. properties/outline-width-0-equals-0pt-0pt-0pt-0pt-reflection-test.html:testReflection had an error
 
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 0'>"
-Expected <0pt 0pt 0pt 0pt> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+200. properties/outline-width-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection had an error
 
 
-200. properties/outline-width-1cm-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+201. properties/outline-width-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection had an error
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1cm'>"
-Expected <1cm 1cm 1cm 1cm> (String) but was <1cm> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+202. properties/outline-width-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection had an error
 
-201. properties/outline-width-1cm-solid-equals-1cm-1cm-1cm-1cm-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1cm solid'>"
-Expected <1cm 1cm 1cm 1cm> (String) but was <0px> (String)
+203. properties/outline-width-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-202. properties/outline-width-1em-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+204. properties/outline-width-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection had an error
 
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1em'>"
-Expected <1em 1em 1em 1em> (String) but was <1em> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+205. properties/outline-width-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection had an error
 
 
-203. properties/outline-width-1em-solid-equals-1em-1em-1em-1em-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+206. properties/outline-width-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection had an error
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1em solid'>"
-Expected <1em 1em 1em 1em> (String) but was <0px> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+207. properties/outline-width-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection had an error
 
-204. properties/outline-width-1ex-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1ex'>"
-Expected <1ex 1ex 1ex 1ex> (String) but was <1ex> (String)
+208. properties/outline-width-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-205. properties/outline-width-1ex-solid-equals-1ex-1ex-1ex-1ex-reflection-test.html:testReflection failed
+209. properties/outline-width-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection had an error
 
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1ex solid'>"
-Expected <1ex 1ex 1ex 1ex> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+210. properties/outline-width-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection had an error
 
 
-206. properties/outline-width-1in-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+211. properties/outline-width-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection had an error
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1in'>"
-Expected <1in 1in 1in 1in> (String) but was <1in> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+212. properties/outline-width-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection had an error
 
-207. properties/outline-width-1in-solid-equals-1in-1in-1in-1in-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1in solid'>"
-Expected <1in 1in 1in 1in> (String) but was <0px> (String)
+213. properties/outline-width-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-208. properties/outline-width-1mm-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
+214. properties/outline-width-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection had an error
 
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1mm'>"
-Expected <1mm 1mm 1mm 1mm> (String) but was <1mm> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+215. properties/outline-width-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection had an error
 
 
-209. properties/outline-width-1mm-solid-equals-1mm-1mm-1mm-1mm-reflection-test.html:testReflection failed
-
-
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1mm solid'>"
-Expected <1mm 1mm 1mm 1mm> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-210. properties/outline-width-1pc-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
-
-
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pc'>"
-Expected <1pc 1pc 1pc 1pc> (String) but was <1pc> (String)
-
-Stack trace follows:
-> anonymous
-
-
-211. properties/outline-width-1pc-solid-equals-1pc-1pc-1pc-1pc-reflection-test.html:testReflection failed
-
-
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pc solid'>"
-Expected <1pc 1pc 1pc 1pc> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-212. properties/outline-width-1pt-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
-
-
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pt'>"
-Expected <1pt 1pt 1pt 1pt> (String) but was <1pt> (String)
-
-Stack trace follows:
-> anonymous
-
-
-213. properties/outline-width-1pt-solid-equals-1pt-1pt-1pt-1pt-reflection-test.html:testReflection failed
-
-
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1pt solid'>"
-Expected <1pt 1pt 1pt 1pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-214. properties/outline-width-1px-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
-
-
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1px'>"
-Expected <1px 1px 1px 1px> (String) but was <1px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-215. properties/outline-width-1px-solid-equals-1px-1px-1px-1px-reflection-test.html:testReflection failed
-
-
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: 1px solid'>"
-Expected <1px 1px 1px 1px> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
+Error message is:
+"Object doesn't support this property or method"
 
 216. properties/outline-width-thick-equals-thick-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 217. properties/outline-width-thick-equals-thick-thick-thick-thick-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
-218. properties/outline-width-thick-solid-equals-thick-thick-thick-thick-reflection-test.html:testReflection failed
+218. properties/outline-width-thick-solid-equals-thick-thick-thick-thick-reflection-test.html:testReflection had an error
 
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: thick solid'>"
-Expected <thick thick thick thick> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
+Error message is:
+"Object doesn't support this property or method"
 
 219. properties/outline-width-thin-equals-thin-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
 220. properties/outline-width-thin-equals-thin-thin-thin-thin-reflection-test.html:testReflection had an error
 
 
 Error message is:
-"Unspecified error."
+"Object doesn't support this property or method"
 
-221. properties/outline-width-thin-solid-equals-thin-thin-thin-thin-reflection-test.html:testReflection failed
+221. properties/outline-width-thin-solid-equals-thin-thin-thin-thin-reflection-test.html:testReflection had an error
 
 
-"[OutlineWidthCSSProperty] style.outlineWidth reflects <div style='outline-width: thin solid'>"
-Expected <thin thin thin thin> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+222. properties/overflow--moz-scrollbars-horizontal-equals--moz-scrollbars-horizontal-reflection-test.html:testReflection had an error
 
 
-222. properties/overflow--moz-scrollbars-horizontal-equals--moz-scrollbars-horizontal-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+223. properties/overflow--moz-scrollbars-none-equals--moz-scrollbars-none-reflection-test.html:testReflection had an error
 
-"[OverflowCSSProperty] style.overflow reflects <div style='overflow: -moz-scrollbars-horizontal'>"
-Expected <-moz-scrollbars-horizontal> (String) but was <visible> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+224. properties/overflow--moz-scrollbars-vertical-equals--moz-scrollbars-vertical-reflection-test.html:testReflection had an error
 
-223. properties/overflow--moz-scrollbars-none-equals--moz-scrollbars-none-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[OverflowCSSProperty] style.overflow reflects <div style='overflow: -moz-scrollbars-none'>"
-Expected <-moz-scrollbars-none> (String) but was <visible> (String)
+225. properties/padding-bottom-0-equals-0pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-224. properties/overflow--moz-scrollbars-vertical-equals--moz-scrollbars-vertical-reflection-test.html:testReflection failed
+226. properties/padding-bottom-auto-equals-auto-reflection-test.html:testReflection had an error
 
 
-"[OverflowCSSProperty] style.overflow reflects <div style='overflow: -moz-scrollbars-vertical'>"
-Expected <-moz-scrollbars-vertical> (String) but was <visible> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+227. properties/padding-bottom-none-equals-none-reflection-test.html:testReflection had an error
 
 
-225. properties/padding-bottom-0-equals-0pt-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+228. properties/padding-left-0-equals-0pt-reflection-test.html:testReflection had an error
 
-"[PaddingBottomCSSProperty] style.paddingBottom reflects <div style='padding-bottom: 0'>"
-Expected <0pt> (String) but was <0px> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+229. properties/padding-left-auto-equals-auto-reflection-test.html:testReflection had an error
 
-226. properties/padding-bottom-auto-equals-auto-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[PaddingBottomCSSProperty] style.paddingBottom reflects <div style='padding-bottom: auto'>"
-Expected <auto> (String) but was <0px> (String)
+230. properties/padding-left-none-equals-none-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-227. properties/padding-bottom-none-equals-none-reflection-test.html:testReflection failed
+231. properties/padding-right-0-equals-0pt-reflection-test.html:testReflection had an error
 
 
-"[PaddingBottomCSSProperty] style.paddingBottom reflects <div style='padding-bottom: none'>"
-Expected <none> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+232. properties/padding-right-auto-equals-auto-reflection-test.html:testReflection had an error
 
 
-228. properties/padding-left-0-equals-0pt-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+233. properties/padding-right-none-equals-none-reflection-test.html:testReflection had an error
 
-"[PaddingLeftCSSProperty] style.paddingLeft reflects <div style='padding-left: 0'>"
-Expected <0pt> (String) but was <0px> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+234. properties/padding-top-0-equals-0pt-reflection-test.html:testReflection had an error
 
-229. properties/padding-left-auto-equals-auto-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[PaddingLeftCSSProperty] style.paddingLeft reflects <div style='padding-left: auto'>"
-Expected <auto> (String) but was <0px> (String)
+235. properties/padding-top-auto-equals-auto-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-230. properties/padding-left-none-equals-none-reflection-test.html:testReflection failed
+236. properties/padding-top-none-equals-none-reflection-test.html:testReflection had an error
 
 
-"[PaddingLeftCSSProperty] style.paddingLeft reflects <div style='padding-left: none'>"
-Expected <none> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+237. properties/page-break-after-bogus-equals--reflection-test.html:testReflection had an error
 
 
-231. properties/padding-right-0-equals-0pt-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+238. properties/page-break-before-bogus-equals--reflection-test.html:testReflection had an error
 
-"[PaddingRightCSSProperty] style.paddingRight reflects <div style='padding-right: 0'>"
-Expected <0pt> (String) but was <0px> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+239. properties/scrollbar-3dlight-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-232. properties/padding-right-auto-equals-auto-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[PaddingRightCSSProperty] style.paddingRight reflects <div style='padding-right: auto'>"
-Expected <auto> (String) but was <0px> (String)
+240. properties/scrollbar-3dlight-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-233. properties/padding-right-none-equals-none-reflection-test.html:testReflection failed
+241. properties/scrollbar-3dlight-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-"[PaddingRightCSSProperty] style.paddingRight reflects <div style='padding-right: none'>"
-Expected <none> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+242. properties/scrollbar-3dlight-color-transparent-equals-transparent-reflection-test.html:testReflection had an error
 
 
-234. properties/padding-top-0-equals-0pt-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+243. properties/scrollbar-arrow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-"[PaddingTopCSSProperty] style.paddingTop reflects <div style='padding-top: 0'>"
-Expected <0pt> (String) but was <0px> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+244. properties/scrollbar-arrow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-235. properties/padding-top-auto-equals-auto-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[PaddingTopCSSProperty] style.paddingTop reflects <div style='padding-top: auto'>"
-Expected <auto> (String) but was <0px> (String)
+245. properties/scrollbar-arrow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-236. properties/padding-top-none-equals-none-reflection-test.html:testReflection failed
+246. properties/scrollbar-arrow-color-transparent-equals-transparent-reflection-test.html:testReflection had an error
 
 
-"[PaddingTopCSSProperty] style.paddingTop reflects <div style='padding-top: none'>"
-Expected <none> (String) but was <0px> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+247. properties/scrollbar-base-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-237. properties/page-break-after-bogus-equals--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+248. properties/scrollbar-base-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[PageBreakAfterCSSProperty] style.pageBreakAfter reflects <div style='page-break-after: bogus'>"
-Expected <> (String) but was <auto> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+249. properties/scrollbar-base-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-238. properties/page-break-before-bogus-equals--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[PageBreakBeforeCSSProperty] style.pageBreakBefore reflects <div style='page-break-before: bogus'>"
-Expected <> (String) but was <auto> (String)
+250. properties/scrollbar-base-color-transparent-equals-transparent-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-239. properties/scrollbar-3dlight-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+251. properties/scrollbar-darkshadow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-"[Scrollbar3dlightColorCSSProperty] style.scrollbar3dLightColor reflects <div style='scrollbar-3dlight-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+252. properties/scrollbar-darkshadow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-240. properties/scrollbar-3dlight-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+253. properties/scrollbar-darkshadow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[Scrollbar3dlightColorCSSProperty] style.scrollbar3dLightColor reflects <div style='scrollbar-3dlight-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+254. properties/scrollbar-darkshadow-color-transparent-equals-transparent-reflection-test.html:testReflection had an error
 
-241. properties/scrollbar-3dlight-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[Scrollbar3dlightColorCSSProperty] style.scrollbar3dLightColor reflects <div style='scrollbar-3dlight-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+255. properties/scrollbar-face-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-242. properties/scrollbar-3dlight-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+256. properties/scrollbar-face-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-"[Scrollbar3dlightColorCSSProperty] style.scrollbar3dLightColor reflects <div style='scrollbar-3dlight-color: transparent'>"
-Expected <transparent> (String) but was <#f1efe2> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+257. properties/scrollbar-face-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-243. properties/scrollbar-arrow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+258. properties/scrollbar-face-color-transparent-equals-transparent-reflection-test.html:testReflection had an error
 
-"[ScrollbarArrowColorCSSProperty] style.scrollbarArrowColor reflects <div style='scrollbar-arrow-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+259. properties/scrollbar-highlight-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-244. properties/scrollbar-arrow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[ScrollbarArrowColorCSSProperty] style.scrollbarArrowColor reflects <div style='scrollbar-arrow-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+260. properties/scrollbar-highlight-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-245. properties/scrollbar-arrow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+261. properties/scrollbar-highlight-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
 
-"[ScrollbarArrowColorCSSProperty] style.scrollbarArrowColor reflects <div style='scrollbar-arrow-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+262. properties/scrollbar-highlight-color-transparent-equals-transparent-reflection-test.html:testReflection had an error
 
 
-246. properties/scrollbar-arrow-color-transparent-equals-transparent-reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+263. properties/scrollbar-shadow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
-"[ScrollbarArrowColorCSSProperty] style.scrollbarArrowColor reflects <div style='scrollbar-arrow-color: transparent'>"
-Expected <transparent> (String) but was <#000000> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+264. properties/scrollbar-shadow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-247. properties/scrollbar-base-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[ScrollbarBaseColorCSSProperty] style.scrollbarBaseColor reflects <div style='scrollbar-base-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+265. properties/scrollbar-shadow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-248. properties/scrollbar-base-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+266. properties/scrollbar-shadow-color-transparent-equals-transparent-reflection-test.html:testReflection had an error
 
 
-"[ScrollbarBaseColorCSSProperty] style.scrollbarBaseColor reflects <div style='scrollbar-base-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+267. properties/scrollbar-track-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection had an error
 
 
-249. properties/scrollbar-base-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+268. properties/scrollbar-track-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-"[ScrollbarBaseColorCSSProperty] style.scrollbarBaseColor reflects <div style='scrollbar-base-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+269. properties/scrollbar-track-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection had an error
 
-250. properties/scrollbar-base-color-transparent-equals-transparent-reflection-test.html:testReflection failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[ScrollbarBaseColorCSSProperty] style.scrollbarBaseColor reflects <div style='scrollbar-base-color: transparent'>"
-Expected <transparent> (String) but was <black> (String)
+270. properties/vertical-align-0-equals-0pt-reflection-test.html:testReflection had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-251. properties/scrollbar-darkshadow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
+271. properties/widows-0-equals-0-reflection-test.html:testReflection had an error
 
 
-"[ScrollbarDarkshadowColorCSSProperty] style.scrollbarDarkShadowColor reflects <div style='scrollbar-darkshadow-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+272. properties/widows-1-equals-1-reflection-test.html:testReflection had an error
 
 
-252. properties/scrollbar-darkshadow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
+Error message is:
+"Object doesn't support this property or method"
 
+273. properties/widows-2-equals-2-reflection-test.html:testReflection had an error
 
-"[ScrollbarDarkshadowColorCSSProperty] style.scrollbarDarkShadowColor reflects <div style='scrollbar-darkshadow-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+274. properties/widows-bogus-equals--reflection-test.html:testReflection had an error
 
-253. properties/scrollbar-darkshadow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
 
-
-"[ScrollbarDarkshadowColorCSSProperty] style.scrollbarDarkShadowColor reflects <div style='scrollbar-darkshadow-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
-
-Stack trace follows:
-> anonymous
-
-
-254. properties/scrollbar-darkshadow-color-transparent-equals-transparent-reflection-test.html:testReflection failed
-
-
-"[ScrollbarDarkshadowColorCSSProperty] style.scrollbarDarkShadowColor reflects <div style='scrollbar-darkshadow-color: transparent'>"
-Expected <transparent> (String) but was <#716f64> (String)
-
-Stack trace follows:
-> anonymous
-
-
-255. properties/scrollbar-face-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarFaceColorCSSProperty] style.scrollbarFaceColor reflects <div style='scrollbar-face-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
-
-Stack trace follows:
-> anonymous
-
-
-256. properties/scrollbar-face-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarFaceColorCSSProperty] style.scrollbarFaceColor reflects <div style='scrollbar-face-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
-
-Stack trace follows:
-> anonymous
-
-
-257. properties/scrollbar-face-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarFaceColorCSSProperty] style.scrollbarFaceColor reflects <div style='scrollbar-face-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
-
-Stack trace follows:
-> anonymous
-
-
-258. properties/scrollbar-face-color-transparent-equals-transparent-reflection-test.html:testReflection failed
-
-
-"[ScrollbarFaceColorCSSProperty] style.scrollbarFaceColor reflects <div style='scrollbar-face-color: transparent'>"
-Expected <transparent> (String) but was <#ece9d8> (String)
-
-Stack trace follows:
-> anonymous
-
-
-259. properties/scrollbar-highlight-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarHighlightColorCSSProperty] style.scrollbarHighlightColor reflects <div style='scrollbar-highlight-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
-
-Stack trace follows:
-> anonymous
-
-
-260. properties/scrollbar-highlight-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarHighlightColorCSSProperty] style.scrollbarHighlightColor reflects <div style='scrollbar-highlight-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
-
-Stack trace follows:
-> anonymous
-
-
-261. properties/scrollbar-highlight-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarHighlightColorCSSProperty] style.scrollbarHighlightColor reflects <div style='scrollbar-highlight-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
-
-Stack trace follows:
-> anonymous
-
-
-262. properties/scrollbar-highlight-color-transparent-equals-transparent-reflection-test.html:testReflection failed
-
-
-"[ScrollbarHighlightColorCSSProperty] style.scrollbarHighlightColor reflects <div style='scrollbar-highlight-color: transparent'>"
-Expected <transparent> (String) but was <#ffffff> (String)
-
-Stack trace follows:
-> anonymous
-
-
-263. properties/scrollbar-shadow-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarShadowColorCSSProperty] style.scrollbarShadowColor reflects <div style='scrollbar-shadow-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
-
-Stack trace follows:
-> anonymous
-
-
-264. properties/scrollbar-shadow-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarShadowColorCSSProperty] style.scrollbarShadowColor reflects <div style='scrollbar-shadow-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
-
-Stack trace follows:
-> anonymous
-
-
-265. properties/scrollbar-shadow-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarShadowColorCSSProperty] style.scrollbarShadowColor reflects <div style='scrollbar-shadow-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
-
-Stack trace follows:
-> anonymous
-
-
-266. properties/scrollbar-shadow-color-transparent-equals-transparent-reflection-test.html:testReflection failed
-
-
-"[ScrollbarShadowColorCSSProperty] style.scrollbarShadowColor reflects <div style='scrollbar-shadow-color: transparent'>"
-Expected <transparent> (String) but was <#aca899> (String)
-
-Stack trace follows:
-> anonymous
-
-
-267. properties/scrollbar-track-color--hs-808080-equals-rgb-lp-128-cm--128-cm--128-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarTrackColorCSSProperty] style.scrollbarTrackColor reflects <div style='scrollbar-track-color: #808080'>"
-Expected <rgb(128, 128, 128)> (String) but was <#808080> (String)
-
-Stack trace follows:
-> anonymous
-
-
-268. properties/scrollbar-track-color-black-equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarTrackColorCSSProperty] style.scrollbarTrackColor reflects <div style='scrollbar-track-color: black'>"
-Expected <rgb(0, 0, 0)> (String) but was <black> (String)
-
-Stack trace follows:
-> anonymous
-
-
-269. properties/scrollbar-track-color-rgb-lp-0-cm--0-cm--0-rp--equals-rgb-lp-0-cm--0-cm--0-rp--reflection-test.html:testReflection failed
-
-
-"[ScrollbarTrackColorCSSProperty] style.scrollbarTrackColor reflects <div style='scrollbar-track-color: rgb(0, 0, 0)'>"
-Expected <rgb(0, 0, 0)> (String) but was <rgb(0,0,0)> (String)
-
-Stack trace follows:
-> anonymous
-
-
-270. properties/vertical-align-0-equals-0pt-reflection-test.html:testReflection failed
-
-
-"[VerticalAlignCSSProperty] style.verticalAlign reflects <div style='vertical-align: 0'>"
-Expected <0pt> (String) but was <0px> (String)
-
-Stack trace follows:
-> anonymous
-
-
-271. properties/widows-0-equals-0-reflection-test.html:testReflection failed
-
-
-"[WidowsCSSProperty] style.widows reflects <div style='widows: 0'>"
-Expected <0> (String) but was <2> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-272. properties/widows-1-equals-1-reflection-test.html:testReflection failed
-
-
-"[WidowsCSSProperty] style.widows reflects <div style='widows: 1'>"
-Expected <1> (String) but was <1> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-273. properties/widows-2-equals-2-reflection-test.html:testReflection failed
-
-
-"[WidowsCSSProperty] style.widows reflects <div style='widows: 2'>"
-Expected <2> (String) but was <2> (Number)
-
-Stack trace follows:
-> anonymous
-
-
-274. properties/widows-bogus-equals--reflection-test.html:testReflection failed
-
-
-"[WidowsCSSProperty] style.widows reflects <div style='widows: bogus'>"
-Expected <> (String) but was <2> (Number)
-
-Stack trace follows:
-> anonymous
-
+Error message is:
+"Object doesn't support this property or method"

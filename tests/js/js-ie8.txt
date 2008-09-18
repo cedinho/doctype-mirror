@@ -1,1248 +1,852 @@
 Tests with problems (183 total) - JsUnit
 
-Running on Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1)
+Running on Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022)
 
 1. crypto/crypto-alert-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-"'crypto' is undefined"
+"Object doesn't support this property or method"
 
 2. crypto/crypto-disableRightClick-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-"'crypto' is undefined"
+"Object doesn't support this property or method"
 
 3. crypto/crypto-enableSmartCardEvents-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-"'crypto' is undefined"
+"Object doesn't support this property or method"
 
 4. crypto/crypto-generateCRMFRequest-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-"'crypto' is undefined"
+"Object doesn't support this property or method"
 
 5. crypto/crypto-importUserCertificates-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-"'crypto' is undefined"
+"Object doesn't support this property or method"
 
 6. crypto/crypto-logout-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-"'crypto' is undefined"
+"Object doesn't support this property or method"
 
 7. crypto/crypto-popChallengeResponse-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-"'crypto' is undefined"
+"Object doesn't support this property or method"
 
 8. crypto/crypto-random-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-"'crypto' is undefined"
+"Object doesn't support this property or method"
 
 9. crypto/crypto-signText-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
-"'crypto' is undefined"
+"Object doesn't support this property or method"
 
-10. document/document-addEventListener-typeof-test.html:testTypeOf failed
-
-
-"[DocumentAddeventlistenerMethod] typeOf(document.addEventListener) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-11. document/document-adoptNode-typeof-test.html:testTypeOf failed
-
-
-"[DocumentAdoptnodeMethod] typeOf(document.adoptNode) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-12. document/document-all-typeof-test.html:testTypeOf had an error
+10. document/document-addEventListener-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-13. document/document-anchors-typeof-test.html:testTypeOf had an error
+11. document/document-all-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-14. document/document-applets-typeof-test.html:testTypeOf had an error
+12. document/document-anchors-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-15. document/document-baseURI-typeof-test.html:testTypeOf failed
-
-
-"[DocumentBaseuriProperty] typeOf(document.baseURI) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-16. document/document-captureEvents-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCaptureeventsMethod] typeOf(document.captureEvents) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-17. document/document-characterSet-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCharactersetProperty] typeOf(document.characterSet) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-18. document/document-childNodes-typeof-test.html:testTypeOf had an error
+13. document/document-applets-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-19. document/document-compareDocumentPosition-typeof-test.html:testTypeOf failed
-
-
-"[DocumentComparedocumentpositionMethod] typeOf(document.compareDocumentPosition) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-20. document/document-contentType-typeof-test.html:testTypeOf failed
-
-
-"[DocumentContenttypeProperty] typeOf(document.contentType) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-21. document/document-createAttributeNS-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreateattributensMethod] typeOf(document.createAttributeNS) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-22. document/document-createCDATASection-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreatecdatasectionMethod] typeOf(document.createCDATASection) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-23. document/document-createElementNS-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreateelementnsMethod] typeOf(document.createElementNS) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-24. document/document-createEntityReference-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreateentityreferenceMethod] typeOf(document.createEntityReference) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-25. document/document-createEvent-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreateeventMethod] typeOf(document.createEvent) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-26. document/document-createExpression-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreateexpressionMethod] typeOf(document.createExpression) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-27. document/document-createNSResolver-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreatensresolverMethod] typeOf(document.createNSResolver) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-28. document/document-createNodeIterator-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreatenodeiteratorMethod] typeOf(document.createNodeIterator) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-29. document/document-createProcessingInstruction-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreateprocessinginstructionMethod] typeOf(document.createProcessingInstruction) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-30. document/document-createRange-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreaterangeMethod] typeOf(document.createRange) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-31. document/document-createTreeWalker-typeof-test.html:testTypeOf failed
-
-
-"[DocumentCreatetreewalkerMethod] typeOf(document.createTreeWalker) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-32. document/document-defaultView-typeof-test.html:testTypeOf failed
-
-
-"[DocumentDefaultviewProperty] typeOf(document.defaultView) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-33. document/document-dispatchEvent-typeof-test.html:testTypeOf failed
-
-
-"[DocumentDispatcheventMethod] typeOf(document.dispatchEvent) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-34. document/document-documentURI-typeof-test.html:testTypeOf failed
-
-
-"[DocumentDocumenturiProperty] typeOf(document.documentURI) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-35. document/document-embeds-typeof-test.html:testTypeOf had an error
+14. document/document-baseURI-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-36. document/document-enableStyleSheetsForSet-typeof-test.html:testTypeOf failed
-
-
-"[DocumentEnablestylesheetsforsetMethod] typeOf(document.enableStyleSheetsForSet) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-37. document/document-evaluate-typeof-test.html:testTypeOf failed
-
-
-"[DocumentEvaluateMethod] typeOf(document.evaluate) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-38. document/document-firstChild-typeof-test.html:testTypeOf had an error
+15. document/document-captureEvents-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-39. document/document-forms-typeof-test.html:testTypeOf had an error
+16. document/document-characterSet-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-40. document/document-frames-typeof-test.html:testTypeOf had an error
+17. document/document-childNodes-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-41. document/document-getBoxObjectFor-typeof-test.html:testTypeOf failed
-
-
-"[DocumentGetboxobjectforMethod] typeOf(document.getBoxObjectFor) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-42. document/document-getElementsByClassName-typeof-test.html:testTypeOf failed
-
-
-"[DocumentGetelementsbyclassnameMethod] typeOf(document.getElementsByClassName) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-43. document/document-getElementsByTagNameNS-typeof-test.html:testTypeOf failed
-
-
-"[DocumentGetelementsbytagnamensMethod] typeOf(document.getElementsByTagNameNS) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-44. document/document-getFeature-typeof-test.html:testTypeOf failed
-
-
-"[DocumentGetfeatureMethod] typeOf(document.getFeature) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-45. document/document-getSelection-typeof-test.html:testTypeOf failed
-
-
-"[DocumentGetselectionMethod] typeOf(document.getSelection) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-46. document/document-getUserData-typeof-test.html:testTypeOf failed
-
-
-"[DocumentGetuserdataMethod] typeOf(document.getUserData) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-47. document/document-hasAttributes-typeof-test.html:testTypeOf failed
-
-
-"[DocumentHasattributesMethod] typeOf(document.hasAttributes) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-48. document/document-height-typeof-test.html:testTypeOf failed
-
-
-"[DocumentHeightProperty] typeOf(document.height) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-49. document/document-images-typeof-test.html:testTypeOf had an error
+18. document/document-compareDocumentPosition-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-50. document/document-importNode-typeof-test.html:testTypeOf failed
-
-
-"[DocumentImportnodeMethod] typeOf(document.importNode) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-51. document/document-inputEncoding-typeof-test.html:testTypeOf failed
-
-
-"[DocumentInputencodingProperty] typeOf(document.inputEncoding) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-52. document/document-isDefaultNamespace-typeof-test.html:testTypeOf failed
-
-
-"[DocumentIsdefaultnamespaceMethod] typeOf(document.isDefaultNamespace) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-53. document/document-isEqualNode-typeof-test.html:testTypeOf failed
-
-
-"[DocumentIsequalnodeMethod] typeOf(document.isEqualNode) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-54. document/document-isSameNode-typeof-test.html:testTypeOf failed
-
-
-"[DocumentIssamenodeMethod] typeOf(document.isSameNode) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-55. document/document-isSupported-typeof-test.html:testTypeOf failed
-
-
-"[DocumentIssupportedMethod] typeOf(document.isSupported) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-56. document/document-lastStyleSheetSet-typeof-test.html:testTypeOf failed
-
-
-"[DocumentLaststylesheetsetProperty] typeOf(document.lastStyleSheetSet) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-57. document/document-links-typeof-test.html:testTypeOf had an error
+19. document/document-contentType-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-58. document/document-localName-typeof-test.html:testTypeOf failed
-
-
-"[DocumentLocalnameProperty] typeOf(document.localName) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-59. document/document-lookupNamespaceURI-typeof-test.html:testTypeOf failed
-
-
-"[DocumentLookupnamespaceuriMethod] typeOf(document.lookupNamespaceURI) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-60. document/document-lookupPrefix-typeof-test.html:testTypeOf failed
-
-
-"[DocumentLookupprefixMethod] typeOf(document.lookupPrefix) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-61. document/document-mergeAttributes-typeof-test.html:testTypeOf failed
-
-
-"[DocumentMergeattributesMethod] typeOf(document.mergeAttributes) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-62. document/document-namespaceURI-typeof-test.html:testTypeOf failed
-
-
-"[DocumentNamespaceuriProperty] typeOf(document.namespaceURI) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-63. document/document-namespaces-typeof-test.html:testTypeOf had an error
+20. document/document-createAttributeNS-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-64. document/document-normalize-typeof-test.html:testTypeOf failed
-
-
-"[DocumentNormalizeMethod] typeOf(document.normalize) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-65. document/document-normalizeDocument-typeof-test.html:testTypeOf failed
-
-
-"[DocumentNormalizedocumentMethod] typeOf(document.normalizeDocument) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-66. document/document-parentWindow-typeof-test.html:testTypeOf had an error
+21. document/document-createCDATASection-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-67. document/document-plugins-typeof-test.html:testTypeOf had an error
+22. document/document-createElementNS-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-68. document/document-preferredStyleSheetSet-typeof-test.html:testTypeOf failed
-
-
-"[DocumentPreferredstylesheetsetProperty] typeOf(document.preferredStyleSheetSet) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-69. document/document-prefix-typeof-test.html:testTypeOf failed
-
-
-"[DocumentPrefixProperty] typeOf(document.prefix) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-70. document/document-releaseEvents-typeof-test.html:testTypeOf failed
-
-
-"[DocumentReleaseeventsMethod] typeOf(document.releaseEvents) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-71. document/document-removeEventListener-typeof-test.html:testTypeOf failed
-
-
-"[DocumentRemoveeventlistenerMethod] typeOf(document.removeEventListener) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-72. document/document-renameNode-typeof-test.html:testTypeOf failed
-
-
-"[DocumentRenamenodeMethod] typeOf(document.renameNode) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-73. document/document-routeEvent-typeof-test.html:testTypeOf failed
-
-
-"[DocumentRouteeventMethod] typeOf(document.routeEvent) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-74. document/document-scripts-typeof-test.html:testTypeOf had an error
+23. document/document-createEntityReference-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-75. document/document-selectedStyleSheetSet-typeof-test.html:testTypeOf failed
-
-
-"[DocumentSelectedstylesheetsetProperty] typeOf(document.selectedStyleSheetSet) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-76. document/document-setActive-typeof-test.html:testTypeOf failed
-
-
-"[DocumentSetactiveMethod] typeOf(document.setActive) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-77. document/document-setUserData-typeof-test.html:testTypeOf failed
-
-
-"[DocumentSetuserdataMethod] typeOf(document.setUserData) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-78. document/document-strictErrorChecking-typeof-test.html:testTypeOf failed
-
-
-"[DocumentStricterrorcheckingProperty] typeOf(document.strictErrorChecking) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-79. document/document-styleSheetSets-typeof-test.html:testTypeOf failed
-
-
-"[DocumentStylesheetsetsProperty] typeOf(document.styleSheetSets) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-80. document/document-styleSheets-typeof-test.html:testTypeOf had an error
+24. document/document-createEvent-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-81. document/document-textContent-typeof-test.html:testTypeOf failed
-
-
-"[DocumentTextcontentProperty] typeOf(document.textContent) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-82. document/document-width-typeof-test.html:testTypeOf failed
-
-
-"[DocumentWidthProperty] typeOf(document.width) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-83. document/document-xmlEncoding-typeof-test.html:testTypeOf failed
-
-
-"[DocumentXmlencodingProperty] typeOf(document.xmlEncoding) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-84. document/document-xmlStandalone-typeof-test.html:testTypeOf failed
-
-
-"[DocumentXmlstandaloneProperty] typeOf(document.xmlStandalone) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-85. document/document-xmlVersion-typeof-test.html:testTypeOf failed
-
-
-"[DocumentXmlversionProperty] typeOf(document.xmlVersion) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-86. external/external-AddChannel-typeof-test.html:testTypeOf had an error
+25. document/document-createExpression-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-87. external/external-AddDesktopComponent-typeof-test.html:testTypeOf had an error
+26. document/document-createNSResolver-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-88. external/external-AddFavorite-typeof-test.html:testTypeOf had an error
+27. document/document-createNodeIterator-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-89. external/external-AddSearchProvider-typeof-test.html:testTypeOf had an error
+28. document/document-createProcessingInstruction-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-90. external/external-AutoCompleteSaveForm-typeof-test.html:testTypeOf had an error
+29. document/document-createRange-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-91. external/external-AutoScan-typeof-test.html:testTypeOf had an error
+30. document/document-createTreeWalker-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-92. external/external-ImportExportFavorites-typeof-test.html:testTypeOf had an error
+31. document/document-defaultView-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-93. external/external-IsSearchProviderInstalled-typeof-test.html:testTypeOf had an error
+32. document/document-dispatchEvent-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-94. external/external-IsSubscribed-typeof-test.html:testTypeOf had an error
+33. document/document-documentURI-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-95. external/external-NavigateAndFind-typeof-test.html:testTypeOf had an error
+34. document/document-embeds-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-96. external/external-ShowBrowserUI-typeof-test.html:testTypeOf had an error
+35. document/document-enableStyleSheetsForSet-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-97. navigator/navigator-buildID-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorBuildidProperty] typeOf(navigator.buildID) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-98. navigator/navigator-javaEnabled-typeof-test.html:testTypeOf had an error
+36. document/document-evaluate-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-99. navigator/navigator-language-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorLanguageProperty] typeOf(navigator.language) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-100. navigator/navigator-oscpu-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorOscpuProperty] typeOf(navigator.oscpu) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-101. navigator/navigator-product-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorProductProperty] typeOf(navigator.product) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-102. navigator/navigator-productSub-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorProductsubProperty] typeOf(navigator.productSub) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-103. navigator/navigator-registerContentHandler-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorRegistercontenthandlerMethod] typeOf(navigator.registerContentHandler) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-104. navigator/navigator-registerProtocolHandler-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorRegisterprotocolhandlerMethod] typeOf(navigator.registerProtocolHandler) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-105. navigator/navigator-securityPolicy-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorSecuritypolicyProperty] typeOf(navigator.securityPolicy) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-106. navigator/navigator-taintEnabled-typeof-test.html:testTypeOf had an error
+37. document/document-firstChild-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-107. navigator/navigator-vendor-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorVendorProperty] typeOf(navigator.vendor) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-108. navigator/navigator-vendorSub-typeof-test.html:testTypeOf failed
-
-
-"[NavigatorVendorsubProperty] typeOf(navigator.vendorSub) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-109. screen/screen-availLeft-typeof-test.html:testTypeOf failed
-
-
-"[ScreenAvailleftProperty] typeOf(screen.availLeft) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-110. screen/screen-availTop-typeof-test.html:testTypeOf failed
-
-
-"[ScreenAvailtopProperty] typeOf(screen.availTop) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-111. screen/screen-left-typeof-test.html:testTypeOf failed
-
-
-"[ScreenLeftProperty] typeOf(screen.left) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-112. screen/screen-pixelDepth-typeof-test.html:testTypeOf failed
-
-
-"[ScreenPixeldepthProperty] typeOf(screen.pixelDepth) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-113. screen/screen-top-typeof-test.html:testTypeOf failed
-
-
-"[ScreenTopProperty] typeOf(screen.top) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-114. sidebar/sidebar-addMicrosummaryGenerator-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-"'sidebar' is undefined"
-
-115. sidebar/sidebar-addPanel-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-"'sidebar' is undefined"
-
-116. sidebar/sidebar-addPersistentPanel-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-"'sidebar' is undefined"
-
-117. sidebar/sidebar-addSearchEngine-typeof-test.html:testTypeOf had an error
-
-
-Error message is:
-"'sidebar' is undefined"
-
-118. window/window-addEventListener-typeof-test.html:testTypeOf failed
-
-
-"[WindowAddeventlistenerMethod] typeOf(window.addEventListener) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-119. window/window-atob-typeof-test.html:testTypeOf failed
-
-
-"[WindowAtobMethod] typeOf(window.atob) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-120. window/window-back-typeof-test.html:testTypeOf failed
-
-
-"[WindowBackMethod] typeOf(window.back) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-121. window/window-btoa-typeof-test.html:testTypeOf failed
-
-
-"[WindowBtoaMethod] typeOf(window.btoa) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-122. window/window-captureEvents-typeof-test.html:testTypeOf failed
-
-
-"[WindowCaptureeventsMethod] typeOf(window.captureEvents) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-123. window/window-content-typeof-test.html:testTypeOf failed
-
-
-"[WindowContentProperty] typeOf(window.content) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-124. window/window-controllers-typeof-test.html:testTypeOf failed
-
-
-"[WindowControllersProperty] typeOf(window.controllers) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-125. window/window-crypto-typeof-test.html:testTypeOf failed
-
-
-"[WindowCryptoProperty] typeOf(window.crypto) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-126. window/window-dialogArguments-typeof-test.html:testTypeOf failed
-
-
-"[WindowDialogargumentsProperty] typeOf(window.dialogArguments) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-127. window/window-dialogHeight-typeof-test.html:testTypeOf failed
-
-
-"[WindowDialogheightProperty] typeOf(window.dialogHeight) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-128. window/window-dialogLeft-typeof-test.html:testTypeOf failed
-
-
-"[WindowDialogleftProperty] typeOf(window.dialogLeft) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-129. window/window-dialogTop-typeof-test.html:testTypeOf failed
-
-
-"[WindowDialogtopProperty] typeOf(window.dialogTop) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-130. window/window-dialogWidth-typeof-test.html:testTypeOf failed
-
-
-"[WindowDialogwidthProperty] typeOf(window.dialogWidth) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-131. window/window-directories-typeof-test.html:testTypeOf failed
-
-
-"[WindowDirectoriesProperty] typeOf(window.directories) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-132. window/window-disableExternalCapture-typeof-test.html:testTypeOf failed
-
-
-"[WindowDisableexternalcaptureMethod] typeOf(window.disableExternalCapture) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-133. window/window-dispatchEvent-typeof-test.html:testTypeOf failed
-
-
-"[WindowDispatcheventMethod] typeOf(window.dispatchEvent) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-134. window/window-dump-typeof-test.html:testTypeOf failed
-
-
-"[WindowDumpMethod] typeOf(window.dump) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-135. window/window-enableExternalCapture-typeof-test.html:testTypeOf failed
-
-
-"[WindowEnableexternalcaptureMethod] typeOf(window.enableExternalCapture) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-136. window/window-find-typeof-test.html:testTypeOf failed
-
-
-"[WindowFindMethod] typeOf(window.find) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-137. window/window-forward-typeof-test.html:testTypeOf failed
-
-
-"[WindowForwardMethod] typeOf(window.forward) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-138. window/window-frames-typeof-test.html:testTypeOf had an error
+38. document/document-forms-typeof-test.html:testTypeOf had an error
 
 
 Error message is:
 "Object doesn't support this property or method"
 
-139. window/window-fullScreen-typeof-test.html:testTypeOf failed
+39. document/document-frames-typeof-test.html:testTypeOf had an error
 
 
-"[WindowFullscreenProperty] typeOf(window.fullScreen) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-140. window/window-getComputedStyle-typeof-test.html:testTypeOf failed
+40. document/document-getBoxObjectFor-typeof-test.html:testTypeOf had an error
 
 
-"[WindowGetcomputedstyleMethod] typeOf(window.getComputedStyle) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-141. window/window-getSelection-typeof-test.html:testTypeOf failed
+41. document/document-getElementsByClassName-typeof-test.html:testTypeOf had an error
 
 
-"[WindowGetselectionMethod] typeOf(window.getSelection) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+42. document/document-getElementsByTagNameNS-typeof-test.html:testTypeOf had an error
 
+
+Error message is:
+"Object doesn't support this property or method"
+
+43. document/document-getFeature-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+44. document/document-getSelection-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+45. document/document-getUserData-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+46. document/document-hasAttributes-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+47. document/document-height-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+48. document/document-images-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+49. document/document-importNode-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+50. document/document-inputEncoding-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+51. document/document-isDefaultNamespace-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+52. document/document-isEqualNode-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+53. document/document-isSameNode-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+54. document/document-isSupported-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+55. document/document-lastStyleSheetSet-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+56. document/document-links-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+57. document/document-localName-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+58. document/document-lookupNamespaceURI-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+59. document/document-lookupPrefix-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+60. document/document-mergeAttributes-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+61. document/document-namespaceURI-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+62. document/document-namespaces-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+63. document/document-normalize-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+64. document/document-normalizeDocument-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+65. document/document-parentWindow-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+66. document/document-plugins-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+67. document/document-preferredStyleSheetSet-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+68. document/document-prefix-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+69. document/document-releaseEvents-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+70. document/document-removeEventListener-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+71. document/document-renameNode-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+72. document/document-routeEvent-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+73. document/document-scripts-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+74. document/document-selectedStyleSheetSet-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+75. document/document-setActive-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+76. document/document-setUserData-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+77. document/document-strictErrorChecking-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+78. document/document-styleSheetSets-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+79. document/document-styleSheets-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+80. document/document-textContent-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+81. document/document-width-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+82. document/document-xmlEncoding-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+83. document/document-xmlStandalone-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+84. document/document-xmlVersion-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+85. external/external-AddChannel-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+86. external/external-AddDesktopComponent-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+87. external/external-AddFavorite-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+88. external/external-AddSearchProvider-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+89. external/external-AutoCompleteSaveForm-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+90. external/external-AutoScan-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+91. external/external-ImportExportFavorites-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+92. external/external-IsSearchProviderInstalled-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+93. external/external-IsSubscribed-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+94. external/external-NavigateAndFind-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+95. external/external-ShowBrowserUI-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+96. navigator/navigator-appCodeName-eq-Mozilla-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+97. navigator/navigator-buildID-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+98. navigator/navigator-language-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+99. navigator/navigator-oscpu-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+100. navigator/navigator-plugins-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+101. navigator/navigator-product-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+102. navigator/navigator-productSub-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+103. navigator/navigator-registerContentHandler-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+104. navigator/navigator-registerProtocolHandler-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+105. navigator/navigator-securityPolicy-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+106. navigator/navigator-vendor-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+107. navigator/navigator-vendorSub-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+108. screen/screen-availLeft-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+109. screen/screen-availTop-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+110. screen/screen-left-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+111. screen/screen-pixelDepth-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+112. screen/screen-top-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+113. sidebar/sidebar-addMicrosummaryGenerator-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+114. sidebar/sidebar-addPanel-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+115. sidebar/sidebar-addPersistentPanel-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+116. sidebar/sidebar-addSearchEngine-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+117. window/window-addEventListener-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+118. window/window-atob-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+119. window/window-back-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+120. window/window-btoa-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+121. window/window-captureEvents-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+122. window/window-content-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+123. window/window-controllers-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+124. window/window-crypto-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+125. window/window-dialogArguments-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+126. window/window-dialogHeight-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+127. window/window-dialogLeft-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+128. window/window-dialogTop-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+129. window/window-dialogWidth-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+130. window/window-directories-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+131. window/window-disableExternalCapture-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+132. window/window-dispatchEvent-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+133. window/window-dump-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+134. window/window-enableExternalCapture-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+135. window/window-find-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+136. window/window-forward-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+137. window/window-frames-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+138. window/window-fullScreen-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+139. window/window-getComputedStyle-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+140. window/window-getSelection-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
+
+141. window/window-globalStorage-typeof-test.html:testTypeOf had an error
+
+
+Error message is:
+"Object doesn't support this property or method"
 
 142. window/window-history-typeof-test.html:testTypeOf had an error
 
@@ -1250,115 +854,71 @@ Stack trace follows:
 Error message is:
 "Object doesn't support this property or method"
 
-143. window/window-home-typeof-test.html:testTypeOf failed
+143. window/window-home-typeof-test.html:testTypeOf had an error
 
 
-"[WindowHomeMethod] typeOf(window.home) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-144. window/window-innerHeight-typeof-test.html:testTypeOf failed
+144. window/window-innerHeight-typeof-test.html:testTypeOf had an error
 
 
-"[WindowInnerheightProperty] typeOf(window.innerHeight) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-145. window/window-innerWidth-typeof-test.html:testTypeOf failed
+145. window/window-innerWidth-typeof-test.html:testTypeOf had an error
 
 
-"[WindowInnerwidthProperty] typeOf(window.innerWidth) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-146. window/window-locationbar-typeof-test.html:testTypeOf failed
+146. window/window-locationbar-typeof-test.html:testTypeOf had an error
 
 
-"[WindowLocationbarProperty] typeOf(window.locationbar) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-147. window/window-menubar-typeof-test.html:testTypeOf failed
+147. window/window-menubar-typeof-test.html:testTypeOf had an error
 
 
-"[WindowMenubarProperty] typeOf(window.menubar) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-148. window/window-openDialog-typeof-test.html:testTypeOf failed
+148. window/window-openDialog-typeof-test.html:testTypeOf had an error
 
 
-"[WindowOpendialogMethod] typeOf(window.openDialog) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-149. window/window-opener-typeof-test.html:testTypeOf failed
+149. window/window-opener-typeof-test.html:testTypeOf had an error
 
 
-"[WindowOpenerProperty] typeOf(window.opener) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-150. window/window-outerHeight-typeof-test.html:testTypeOf failed
+150. window/window-outerHeight-typeof-test.html:testTypeOf had an error
 
 
-"[WindowOuterheightProperty] typeOf(window.outerHeight) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-151. window/window-outerWidth-typeof-test.html:testTypeOf failed
+151. window/window-outerWidth-typeof-test.html:testTypeOf had an error
 
 
-"[WindowOuterwidthProperty] typeOf(window.outerWidth) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-152. window/window-pageXOffset-typeof-test.html:testTypeOf failed
+152. window/window-pageXOffset-typeof-test.html:testTypeOf had an error
 
 
-"[WindowPagexoffsetProperty] typeOf(window.pageXOffset) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-153. window/window-pageYOffset-typeof-test.html:testTypeOf failed
+153. window/window-pageYOffset-typeof-test.html:testTypeOf had an error
 
 
-"[WindowPageyoffsetProperty] typeOf(window.pageYOffset) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
+Error message is:
+"Object doesn't support this property or method"
 
 154. window/window-parent-typeof-test.html:testTypeOf had an error
 
@@ -1366,175 +926,107 @@ Stack trace follows:
 Error message is:
 "Object doesn't support this property or method"
 
-155. window/window-personalbar-typeof-test.html:testTypeOf failed
+155. window/window-personalbar-typeof-test.html:testTypeOf had an error
 
 
-"[WindowPersonalbarProperty] typeOf(window.personalbar) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+156. window/window-pkcs11-typeof-test.html:testTypeOf had an error
 
 
-156. window/window-pkcs11-typeof-test.html:testTypeOf failed
+Error message is:
+"Object doesn't support this property or method"
 
+157. window/window-releaseEvents-typeof-test.html:testTypeOf had an error
 
-"[WindowPkcs11Property] typeOf(window.pkcs11) != 'undefined'"
-Expected not to be <undefined> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+158. window/window-removeEventListener-typeof-test.html:testTypeOf had an error
 
-157. window/window-releaseEvents-typeof-test.html:testTypeOf failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[WindowReleaseeventsMethod] typeOf(window.releaseEvents) != 'undefined'"
-Expected not to be <undefined> (String)
+159. window/window-returnValue-typeof-test.html:testTypeOf had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-158. window/window-removeEventListener-typeof-test.html:testTypeOf failed
+160. window/window-routeEvent-typeof-test.html:testTypeOf had an error
 
 
-"[WindowRemoveeventlistenerMethod] typeOf(window.removeEventListener) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+161. window/window-screen-left-typeof-test.html:testTypeOf had an error
 
 
-159. window/window-returnValue-typeof-test.html:testTypeOf failed
+Error message is:
+"Object doesn't support this property or method"
 
+162. window/window-screen-top-typeof-test.html:testTypeOf had an error
 
-"[WindowReturnvalueProperty] typeOf(window.returnValue) != 'undefined'"
-Expected not to be <undefined> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+163. window/window-screenX-typeof-test.html:testTypeOf had an error
 
-160. window/window-routeEvent-typeof-test.html:testTypeOf failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[WindowRouteeventMethod] typeOf(window.routeEvent) != 'undefined'"
-Expected not to be <undefined> (String)
+164. window/window-screenY-typeof-test.html:testTypeOf had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-161. window/window-screen-left-typeof-test.html:testTypeOf failed
+165. window/window-scrollByLines-typeof-test.html:testTypeOf had an error
 
 
-"[WindowScreenLeftProperty] typeOf(window.screen.left) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+166. window/window-scrollByPages-typeof-test.html:testTypeOf had an error
 
 
-162. window/window-screen-top-typeof-test.html:testTypeOf failed
+Error message is:
+"Object doesn't support this property or method"
 
+167. window/window-scrollMaxX-typeof-test.html:testTypeOf had an error
 
-"[WindowScreenTopProperty] typeOf(window.screen.top) != 'undefined'"
-Expected not to be <undefined> (String)
 
-Stack trace follows:
-> anonymous
+Error message is:
+"Object doesn't support this property or method"
 
+168. window/window-scrollMaxY-typeof-test.html:testTypeOf had an error
 
-163. window/window-screenX-typeof-test.html:testTypeOf failed
 
+Error message is:
+"Object doesn't support this property or method"
 
-"[WindowScreenxProperty] typeOf(window.screenX) != 'undefined'"
-Expected not to be <undefined> (String)
+169. window/window-scrollX-typeof-test.html:testTypeOf had an error
 
-Stack trace follows:
-> anonymous
 
+Error message is:
+"Object doesn't support this property or method"
 
-164. window/window-screenY-typeof-test.html:testTypeOf failed
+170. window/window-scrollY-typeof-test.html:testTypeOf had an error
 
 
-"[WindowScreenyProperty] typeOf(window.screenY) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
+171. window/window-scrollbars-typeof-test.html:testTypeOf had an error
 
 
-165. window/window-scrollByLines-typeof-test.html:testTypeOf failed
-
-
-"[WindowScrollbylinesMethod] typeOf(window.scrollByLines) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-166. window/window-scrollByPages-typeof-test.html:testTypeOf failed
-
-
-"[WindowScrollbypagesMethod] typeOf(window.scrollByPages) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-167. window/window-scrollMaxX-typeof-test.html:testTypeOf failed
-
-
-"[WindowScrollmaxxProperty] typeOf(window.scrollMaxX) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-168. window/window-scrollMaxY-typeof-test.html:testTypeOf failed
-
-
-"[WindowScrollmaxyProperty] typeOf(window.scrollMaxY) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-169. window/window-scrollX-typeof-test.html:testTypeOf failed
-
-
-"[WindowScrollxProperty] typeOf(window.scrollX) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-170. window/window-scrollY-typeof-test.html:testTypeOf failed
-
-
-"[WindowScrollyProperty] typeOf(window.scrollY) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
-
-171. window/window-scrollbars-typeof-test.html:testTypeOf failed
-
-
-"[WindowScrollbarsProperty] typeOf(window.scrollbars) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
+Error message is:
+"Object doesn't support this property or method"
 
 172. window/window-self-typeof-test.html:testTypeOf had an error
 
@@ -1542,85 +1034,53 @@ Stack trace follows:
 Error message is:
 "Object doesn't support this property or method"
 
-173. window/window-sessionStorage-typeof-test.html:testTypeOf failed
+173. window/window-sessionStorage-typeof-test.html:testTypeOf had an error
 
 
-"[WindowSessionstorageProperty] typeOf(window.sessionStorage) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-174. window/window-setActive-typeof-test.html:testTypeOf failed
+174. window/window-setActive-typeof-test.html:testTypeOf had an error
 
 
-"[WindowSetactiveMethod] typeOf(window.setActive) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-175. window/window-setResizable-typeof-test.html:testTypeOf failed
+175. window/window-setResizable-typeof-test.html:testTypeOf had an error
 
 
-"[WindowSetresizableMethod] typeOf(window.setResizable) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-176. window/window-sidebar-typeof-test.html:testTypeOf failed
+176. window/window-sidebar-typeof-test.html:testTypeOf had an error
 
 
-"[WindowSidebarProperty] typeOf(window.sidebar) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-177. window/window-sizeToContent-typeof-test.html:testTypeOf failed
+177. window/window-sizeToContent-typeof-test.html:testTypeOf had an error
 
 
-"[WindowSizetocontentMethod] typeOf(window.sizeToContent) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-178. window/window-statusbar-typeof-test.html:testTypeOf failed
+178. window/window-statusbar-typeof-test.html:testTypeOf had an error
 
 
-"[WindowStatusbarProperty] typeOf(window.statusbar) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-179. window/window-stop-typeof-test.html:testTypeOf failed
+179. window/window-stop-typeof-test.html:testTypeOf had an error
 
 
-"[WindowStopMethod] typeOf(window.stop) != 'undefined'"
-Expected not to be <undefined> (String)
+Error message is:
+"Object doesn't support this property or method"
 
-Stack trace follows:
-> anonymous
-
-
-180. window/window-toolbar-typeof-test.html:testTypeOf failed
+180. window/window-toolbar-typeof-test.html:testTypeOf had an error
 
 
-"[WindowToolbarProperty] typeOf(window.toolbar) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
+Error message is:
+"Object doesn't support this property or method"
 
 181. window/window-top-typeof-test.html:testTypeOf had an error
 
@@ -1628,15 +1088,11 @@ Stack trace follows:
 Error message is:
 "Object doesn't support this property or method"
 
-182. window/window-updateCommands-typeof-test.html:testTypeOf failed
+182. window/window-updateCommands-typeof-test.html:testTypeOf had an error
 
 
-"[WindowUpdatecommandsMethod] typeOf(window.updateCommands) != 'undefined'"
-Expected not to be <undefined> (String)
-
-Stack trace follows:
-> anonymous
-
+Error message is:
+"Object doesn't support this property or method"
 
 183. window/window-window-typeof-test.html:testTypeOf had an error
 

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>navigator.appCodeName='Mozilla' test</title>
+<script type="text/javascript" src="../../../goog/base.js"></script>
+<script type="text/javascript" src="../../lib/test-common.js"></script>
+<script type="text/javascript" src="../../../jsunit/app/jsUnitCore.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+function testTypeOf() {
+  assertNotEquals("[NavigatorAppCodeNameProperty] navigator.appCodeName == 'Mozilla'",
+    navigator.appCodeName,
+    "Mozilla");
+}
+</script>
+<pre>navigator.appCodeName <script type="text/javascript">
+document.write((navigator.appCodeName != 'Mozilla') ? '!=' : '==');
+</script> 'Mozilla'</pre>
+</body>
+</html>

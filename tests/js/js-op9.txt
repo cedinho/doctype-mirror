@@ -1,23 +1,23 @@
-Tests with problems (139 total) - JsUnit
+Tests with problems (140 total) - JsUnit
 
-Running on Opera/9.51 (Windows NT 5.1; U; en)
+Running on Opera/9.60 (Windows NT 5.1; U; en) Presto/2.1.1
 
-1. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-alert-typeof-test.html:testTypeOf had an error
+1. file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-alert-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: crypto
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-alert-typeof-test.html?cacheBuster=1218227244054: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-alert-typeof-test.html?cacheBuster=1221765460644: In function testTypeOf
       assertNotEquals("[CryptoAlertMethod] typeOf(crypto.alert) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -25,44 +25,44 @@ Backtrace:
 ]"
 
 
-2. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-disableRightClick-typeof-test.html:testTypeOf had an error
+2. file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-disableRightClick-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: crypto
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-disableRightClick-typeof-test.html?cacheBuster=1218227244320: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-disableRightClick-typeof-test.html?cacheBuster=1221765460972: In function testTypeOf
       assertNotEquals("[CryptoDisablerightclickMethod] typeOf(crypto.disableRightClick) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-3. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-enableSmartCardEvents-typeof-test.html:testTypeOf had an error
+3. file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-enableSmartCardEvents-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: crypto
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-enableSmartCardEvents-typeof-test.html?cacheBuster=1218227244679: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-enableSmartCardEvents-typeof-test.html?cacheBuster=1221765461332: In function testTypeOf
       assertNotEquals("[CryptoEnablesmartcardeventsProperty] typeOf(crypto.enableSmartCardEvents) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -70,44 +70,44 @@ Backtrace:
 ]"
 
 
-4. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-generateCRMFRequest-typeof-test.html:testTypeOf had an error
+4. file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-generateCRMFRequest-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: crypto
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-generateCRMFRequest-typeof-test.html?cacheBuster=1218227245007: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-generateCRMFRequest-typeof-test.html?cacheBuster=1221765461707: In function testTypeOf
       assertNotEquals("[CryptoGeneratecrmfrequestMethod] typeOf(crypto.generateCRMFRequest) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-5. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-importUserCertificates-typeof-test.html:testTypeOf had an error
+5. file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-importUserCertificates-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: crypto
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-importUserCertificates-typeof-test.html?cacheBuster=1218227245398: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-importUserCertificates-typeof-test.html?cacheBuster=1221765462051: In function testTypeOf
       assertNotEquals("[CryptoImportusercertificatesMethod] typeOf(crypto.importUserCertificates) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -115,44 +115,44 @@ Backtrace:
 ]"
 
 
-6. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-logout-typeof-test.html:testTypeOf had an error
+6. file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-logout-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: crypto
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-logout-typeof-test.html?cacheBuster=1218227245820: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-logout-typeof-test.html?cacheBuster=1221765462394: In function testTypeOf
       assertNotEquals("[CryptoLogoutMethod] typeOf(crypto.logout) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-7. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-popChallengeResponse-typeof-test.html:testTypeOf had an error
+7. file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-popChallengeResponse-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: crypto
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-popChallengeResponse-typeof-test.html?cacheBuster=1218227246101: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-popChallengeResponse-typeof-test.html?cacheBuster=1221765462738: In function testTypeOf
       assertNotEquals("[CryptoPopchallengeresponseMethod] typeOf(crypto.popChallengeResponse) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -160,44 +160,44 @@ Backtrace:
 ]"
 
 
-8. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-random-typeof-test.html:testTypeOf had an error
+8. file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-random-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: crypto
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-random-typeof-test.html?cacheBuster=1218227246304: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-random-typeof-test.html?cacheBuster=1221765463113: In function testTypeOf
       assertNotEquals("[CryptoRandomMethod] typeOf(crypto.random) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-9. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-signText-typeof-test.html:testTypeOf had an error
+9. file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-signText-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: crypto
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/crypto/crypto-signText-typeof-test.html?cacheBuster=1218227246710: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/crypto/crypto-signText-typeof-test.html?cacheBuster=1221765463472: In function testTypeOf
       assertNotEquals("[CryptoSigntextMethod] typeOf(crypto.signText) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -205,258 +205,258 @@ Backtrace:
 ]"
 
 
-10. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-URLUnencoded-typeof-test.html:testTypeOf failed
+10. file://localhost/c:/work/doctype/trunk/tests/js/document/document-URLUnencoded-typeof-test.html:testTypeOf failed
 
 "[DocumentURLUnencodedProperty] typeOf(document.URLUnencoded) != 'undefined'"
 Expected not to be <undefined> (String)
 
-11. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-all-typeof-test.html:testTypeOf failed
+11. file://localhost/c:/work/doctype/trunk/tests/js/document/document-all-typeof-test.html:testTypeOf failed
 
 "[DocumentAllProperty] typeOf(document.all) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-12. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-baseURI-typeof-test.html:testTypeOf failed
+12. file://localhost/c:/work/doctype/trunk/tests/js/document/document-baseURI-typeof-test.html:testTypeOf failed
 
 "[DocumentBaseURIProperty] typeOf(document.baseURI) != 'undefined'"
 Expected not to be <undefined> (String)
 
-13. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-contentType-typeof-test.html:testTypeOf failed
+13. file://localhost/c:/work/doctype/trunk/tests/js/document/document-contentType-typeof-test.html:testTypeOf failed
 
 "[DocumentContentTypeProperty] typeOf(document.contentType) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-14. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createEntityReference-typeof-test.html:testTypeOf failed
+14. file://localhost/c:/work/doctype/trunk/tests/js/document/document-createEntityReference-typeof-test.html:testTypeOf failed
 
 "[DocumentCreateEntityReferenceMethod] typeOf(document.createEntityReference) != 'undefined'"
 Expected not to be <undefined> (String)
 
-15. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createEventObject-typeof-test.html:testTypeOf failed
+15. file://localhost/c:/work/doctype/trunk/tests/js/document/document-createEventObject-typeof-test.html:testTypeOf failed
 
 "[DocumentCreateEventObjectMethod] typeOf(document.createEventObject) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-16. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-createStyleSheet-typeof-test.html:testTypeOf failed
+16. file://localhost/c:/work/doctype/trunk/tests/js/document/document-createStyleSheet-typeof-test.html:testTypeOf failed
 
 "[DocumentCreateStyleSheetMethod] typeOf(document.createStyleSheet) != 'undefined'"
 Expected not to be <undefined> (String)
 
-17. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-defaultCharset-typeof-test.html:testTypeOf failed
+17. file://localhost/c:/work/doctype/trunk/tests/js/document/document-defaultCharset-typeof-test.html:testTypeOf failed
 
 "[DocumentDefaultCharsetProperty] typeOf(document.defaultCharset) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-18. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-enableStyleSheetsForSet-typeof-test.html:testTypeOf failed
+18. file://localhost/c:/work/doctype/trunk/tests/js/document/document-enableStyleSheetsForSet-typeof-test.html:testTypeOf failed
 
 "[DocumentEnableStylesheetsForSetMethod] typeOf(document.enableStyleSheetsForSet) != 'undefined'"
 Expected not to be <undefined> (String)
 
-19. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-execCommandShowHelp-typeof-test.html:testTypeOf failed
+19. file://localhost/c:/work/doctype/trunk/tests/js/document/document-execCommandShowHelp-typeof-test.html:testTypeOf failed
 
 "[DocumentExecCommandShowHelpMethod] typeOf(document.execCommandShowHelp) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-20. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-expando-typeof-test.html:testTypeOf failed
+20. file://localhost/c:/work/doctype/trunk/tests/js/document/document-expando-typeof-test.html:testTypeOf failed
 
 "[DocumentExpandoProperty] typeOf(document.expando) != 'undefined'"
 Expected not to be <undefined> (String)
 
-21. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-fileCreatedDate-typeof-test.html:testTypeOf failed
+21. file://localhost/c:/work/doctype/trunk/tests/js/document/document-fileCreatedDate-typeof-test.html:testTypeOf failed
 
 "[DocumentFileCreatedDateProperty] typeOf(document.fileCreatedDate) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-22. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-fileModifiedDate-typeof-test.html:testTypeOf failed
+22. file://localhost/c:/work/doctype/trunk/tests/js/document/document-fileModifiedDate-typeof-test.html:testTypeOf failed
 
 "[DocumentFileModifiedDateProperty] typeOf(document.fileModifiedDate) != 'undefined'"
 Expected not to be <undefined> (String)
 
-23. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-fileSize-typeof-test.html:testTypeOf failed
+23. file://localhost/c:/work/doctype/trunk/tests/js/document/document-fileSize-typeof-test.html:testTypeOf failed
 
 "[DocumentFileSizeProperty] typeOf(document.fileSize) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-24. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-focus-typeof-test.html:testTypeOf failed
+24. file://localhost/c:/work/doctype/trunk/tests/js/document/document-focus-typeof-test.html:testTypeOf failed
 
 "[DocumentFocusMethod] typeOf(document.focus) != 'undefined'"
 Expected not to be <undefined> (String)
 
-25. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-getBoxObjectFor-typeof-test.html:testTypeOf failed
+25. file://localhost/c:/work/doctype/trunk/tests/js/document/document-getBoxObjectFor-typeof-test.html:testTypeOf failed
 
 "[DocumentGetBoxObjectForMethod] typeOf(document.getBoxObjectFor) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-26. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-getUserData-typeof-test.html:testTypeOf failed
+26. file://localhost/c:/work/doctype/trunk/tests/js/document/document-getUserData-typeof-test.html:testTypeOf failed
 
 "[DocumentGetuserdataMethod] typeOf(document.getUserData) != 'undefined'"
 Expected not to be <undefined> (String)
 
-27. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-hasFocus-typeof-test.html:testTypeOf failed
+27. file://localhost/c:/work/doctype/trunk/tests/js/document/document-hasFocus-typeof-test.html:testTypeOf failed
 
 "[DocumentHasfocusMethod] typeOf(document.hasFocus) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-28. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-height-typeof-test.html:testTypeOf failed
+28. file://localhost/c:/work/doctype/trunk/tests/js/document/document-height-typeof-test.html:testTypeOf failed
 
 "[DocumentHeightProperty] typeOf(document.height) != 'undefined'"
 Expected not to be <undefined> (String)
 
-29. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-inputEncoding-typeof-test.html:testTypeOf failed
+29. file://localhost/c:/work/doctype/trunk/tests/js/document/document-inputEncoding-typeof-test.html:testTypeOf failed
 
 "[DocumentInputencodingProperty] typeOf(document.inputEncoding) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-30. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-isEqualNode-typeof-test.html:testTypeOf failed
+30. file://localhost/c:/work/doctype/trunk/tests/js/document/document-isEqualNode-typeof-test.html:testTypeOf failed
 
 "[DocumentIsequalnodeMethod] typeOf(document.isEqualNode) != 'undefined'"
 Expected not to be <undefined> (String)
 
-31. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-lastStyleSheetSet-typeof-test.html:testTypeOf failed
+31. file://localhost/c:/work/doctype/trunk/tests/js/document/document-lastStyleSheetSet-typeof-test.html:testTypeOf failed
 
 "[DocumentLaststylesheetsetProperty] typeOf(document.lastStyleSheetSet) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-32. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-mergeAttributes-typeof-test.html:testTypeOf failed
+32. file://localhost/c:/work/doctype/trunk/tests/js/document/document-mergeAttributes-typeof-test.html:testTypeOf failed
 
 "[DocumentMergeattributesMethod] typeOf(document.mergeAttributes) != 'undefined'"
 Expected not to be <undefined> (String)
 
-33. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-namespaces-typeof-test.html:testTypeOf failed
+33. file://localhost/c:/work/doctype/trunk/tests/js/document/document-namespaces-typeof-test.html:testTypeOf failed
 
 "[DocumentNamespacesProperty] typeOf(document.namespaces) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-34. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-normalizeDocument-typeof-test.html:testTypeOf failed
+34. file://localhost/c:/work/doctype/trunk/tests/js/document/document-normalizeDocument-typeof-test.html:testTypeOf failed
 
 "[DocumentNormalizedocumentMethod] typeOf(document.normalizeDocument) != 'undefined'"
 Expected not to be <undefined> (String)
 
-35. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-preferredStyleSheetSet-typeof-test.html:testTypeOf failed
+35. file://localhost/c:/work/doctype/trunk/tests/js/document/document-preferredStyleSheetSet-typeof-test.html:testTypeOf failed
 
 "[DocumentPreferredstylesheetsetProperty] typeOf(document.preferredStyleSheetSet) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-36. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-protocol-typeof-test.html:testTypeOf failed
+36. file://localhost/c:/work/doctype/trunk/tests/js/document/document-protocol-typeof-test.html:testTypeOf failed
 
 "[DocumentProtocolProperty] typeOf(document.protocol) != 'undefined'"
 Expected not to be <undefined> (String)
 
-37. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-queryCommandIndeterm-typeof-test.html:testTypeOf failed
+37. file://localhost/c:/work/doctype/trunk/tests/js/document/document-queryCommandIndeterm-typeof-test.html:testTypeOf failed
 
 "[DocumentQuerycommandindetermMethod] typeOf(document.queryCommandIndeterm) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-38. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-queryCommandText-typeof-test.html:testTypeOf failed
+38. file://localhost/c:/work/doctype/trunk/tests/js/document/document-queryCommandText-typeof-test.html:testTypeOf failed
 
 "[DocumentQuerycommandtextMethod] typeOf(document.queryCommandText) != 'undefined'"
 Expected not to be <undefined> (String)
 
-39. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-recalc-typeof-test.html:testTypeOf failed
+39. file://localhost/c:/work/doctype/trunk/tests/js/document/document-recalc-typeof-test.html:testTypeOf failed
 
 "[DocumentRecalcMethod] typeOf(document.recalc) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-40. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-releaseCapture-typeof-test.html:testTypeOf failed
+40. file://localhost/c:/work/doctype/trunk/tests/js/document/document-releaseCapture-typeof-test.html:testTypeOf failed
 
 "[DocumentReleasecaptureMethod] typeOf(document.releaseCapture) != 'undefined'"
 Expected not to be <undefined> (String)
 
-41. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-renameNode-typeof-test.html:testTypeOf failed
+41. file://localhost/c:/work/doctype/trunk/tests/js/document/document-renameNode-typeof-test.html:testTypeOf failed
 
 "[DocumentRenamenodeMethod] typeOf(document.renameNode) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-42. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-routeEvent-typeof-test.html:testTypeOf failed
+42. file://localhost/c:/work/doctype/trunk/tests/js/document/document-routeEvent-typeof-test.html:testTypeOf failed
 
 "[DocumentRouteeventMethod] typeOf(document.routeEvent) != 'undefined'"
 Expected not to be <undefined> (String)
 
-43. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-selectedStyleSheetSet-typeof-test.html:testTypeOf failed
+43. file://localhost/c:/work/doctype/trunk/tests/js/document/document-selectedStyleSheetSet-typeof-test.html:testTypeOf failed
 
 "[DocumentSelectedstylesheetsetProperty] typeOf(document.selectedStyleSheetSet) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-44. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-setActive-typeof-test.html:testTypeOf failed
+44. file://localhost/c:/work/doctype/trunk/tests/js/document/document-setActive-typeof-test.html:testTypeOf failed
 
 "[DocumentSetactiveMethod] typeOf(document.setActive) != 'undefined'"
 Expected not to be <undefined> (String)
 
-45. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-setUserData-typeof-test.html:testTypeOf failed
+45. file://localhost/c:/work/doctype/trunk/tests/js/document/document-setUserData-typeof-test.html:testTypeOf failed
 
 "[DocumentSetuserdataMethod] typeOf(document.setUserData) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-46. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-strictErrorChecking-typeof-test.html:testTypeOf failed
+46. file://localhost/c:/work/doctype/trunk/tests/js/document/document-strictErrorChecking-typeof-test.html:testTypeOf failed
 
 "[DocumentStricterrorcheckingProperty] typeOf(document.strictErrorChecking) != 'undefined'"
 Expected not to be <undefined> (String)
 
-47. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-styleSheetSets-typeof-test.html:testTypeOf failed
+47. file://localhost/c:/work/doctype/trunk/tests/js/document/document-styleSheetSets-typeof-test.html:testTypeOf failed
 
 "[DocumentStylesheetsetsProperty] typeOf(document.styleSheetSets) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-48. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-uniqueID-typeof-test.html:testTypeOf failed
+48. file://localhost/c:/work/doctype/trunk/tests/js/document/document-uniqueID-typeof-test.html:testTypeOf failed
 
 "[DocumentUniqueidProperty] typeOf(document.uniqueID) != 'undefined'"
 Expected not to be <undefined> (String)
 
-49. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-width-typeof-test.html:testTypeOf failed
+49. file://localhost/c:/work/doctype/trunk/tests/js/document/document-width-typeof-test.html:testTypeOf failed
 
 "[DocumentWidthProperty] typeOf(document.width) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-50. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-xmlEncoding-typeof-test.html:testTypeOf failed
+50. file://localhost/c:/work/doctype/trunk/tests/js/document/document-xmlEncoding-typeof-test.html:testTypeOf failed
 
 "[DocumentXmlencodingProperty] typeOf(document.xmlEncoding) != 'undefined'"
 Expected not to be <undefined> (String)
 
-51. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-xmlStandalone-typeof-test.html:testTypeOf failed
+51. file://localhost/c:/work/doctype/trunk/tests/js/document/document-xmlStandalone-typeof-test.html:testTypeOf failed
 
 "[DocumentXmlstandaloneProperty] typeOf(document.xmlStandalone) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-52. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/document/document-xmlVersion-typeof-test.html:testTypeOf failed
+52. file://localhost/c:/work/doctype/trunk/tests/js/document/document-xmlVersion-typeof-test.html:testTypeOf failed
 
 "[DocumentXmlversionProperty] typeOf(document.xmlVersion) != 'undefined'"
 Expected not to be <undefined> (String)
 
-53. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddChannel-typeof-test.html:testTypeOf had an error
+53. file://localhost/c:/work/doctype/trunk/tests/js/external/external-AddChannel-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddChannel-typeof-test.html?cacheBuster=1218227301273: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-AddChannel-typeof-test.html?cacheBuster=1221765517206: In function testTypeOf
       assertNotEquals("[ExternalAddchannelMethod] typeOf(external.AddChannel) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -464,44 +464,44 @@ Backtrace:
 ]"
 
 
-54. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddDesktopComponent-typeof-test.html:testTypeOf had an error
+54. file://localhost/c:/work/doctype/trunk/tests/js/external/external-AddDesktopComponent-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddDesktopComponent-typeof-test.html?cacheBuster=1218227301788: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-AddDesktopComponent-typeof-test.html?cacheBuster=1221765517565: In function testTypeOf
       assertNotEquals("[ExternalAdddesktopcomponentMethod] typeOf(external.AddDesktopComponent) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-55. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddFavorite-typeof-test.html:testTypeOf had an error
+55. file://localhost/c:/work/doctype/trunk/tests/js/external/external-AddFavorite-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddFavorite-typeof-test.html?cacheBuster=1218227302242: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-AddFavorite-typeof-test.html?cacheBuster=1221765517940: In function testTypeOf
       assertNotEquals("[ExternalAddfavoriteMethod] typeOf(external.AddFavorite) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -509,44 +509,44 @@ Backtrace:
 ]"
 
 
-56. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddSearchProvider-typeof-test.html:testTypeOf had an error
+56. file://localhost/c:/work/doctype/trunk/tests/js/external/external-AddSearchProvider-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AddSearchProvider-typeof-test.html?cacheBuster=1218227302757: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-AddSearchProvider-typeof-test.html?cacheBuster=1221765518346: In function testTypeOf
       assertNotEquals("[ExternalAddsearchproviderMethod] typeOf(external.AddSearchProvider) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-57. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AutoCompleteSaveForm-typeof-test.html:testTypeOf had an error
+57. file://localhost/c:/work/doctype/trunk/tests/js/external/external-AutoCompleteSaveForm-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AutoCompleteSaveForm-typeof-test.html?cacheBuster=1218227303163: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-AutoCompleteSaveForm-typeof-test.html?cacheBuster=1221765518721: In function testTypeOf
       assertNotEquals("[ExternalAutocompletesaveformMethod] typeOf(external.AutoCompleteSaveForm) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -554,306 +554,311 @@ Backtrace:
 ]"
 
 
-58. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AutoScan-typeof-test.html:testTypeOf had an error
+58. file://localhost/c:/work/doctype/trunk/tests/js/external/external-AutoScan-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-AutoScan-typeof-test.html?cacheBuster=1218227303523: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-AutoScan-typeof-test.html?cacheBuster=1221765519096: In function testTypeOf
       assertNotEquals("[ExternalAutoscanMethod] typeOf(external.AutoScan) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-
-59. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-ImportExportFavorites-typeof-test.html:testTypeOf had an error
+59. file://localhost/c:/work/doctype/trunk/tests/js/external/external-ImportExportFavorites-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-ImportExportFavorites-typeof-test.html?cacheBuster=1218227304070: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-ImportExportFavorites-typeof-test.html?cacheBuster=1221765519471: In function testTypeOf
       assertNotEquals("[ExternalImportexportfavoritesMethod] typeOf(external.ImportExportFavorites) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-60. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-IsSearchProviderInstalled-typeof-test.html:testTypeOf had an error
+
+60. file://localhost/c:/work/doctype/trunk/tests/js/external/external-IsSearchProviderInstalled-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-IsSearchProviderInstalled-typeof-test.html?cacheBuster=1218227304617: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-IsSearchProviderInstalled-typeof-test.html?cacheBuster=1221765519846: In function testTypeOf
       assertNotEquals("[ExternalIssearchproviderinstalledMethod] typeOf(external.IsSearchProviderInstalled) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-
-61. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-IsSubscribed-typeof-test.html:testTypeOf had an error
+61. file://localhost/c:/work/doctype/trunk/tests/js/external/external-IsSubscribed-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-IsSubscribed-typeof-test.html?cacheBuster=1218227305054: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-IsSubscribed-typeof-test.html?cacheBuster=1221765520221: In function testTypeOf
       assertNotEquals("[ExternalIssubscribedMethod] typeOf(external.IsSubscribed) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-62. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-NavigateAndFind-typeof-test.html:testTypeOf had an error
+
+62. file://localhost/c:/work/doctype/trunk/tests/js/external/external-NavigateAndFind-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-NavigateAndFind-typeof-test.html?cacheBuster=1218227305507: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-NavigateAndFind-typeof-test.html?cacheBuster=1221765520596: In function testTypeOf
       assertNotEquals("[ExternalNavigateandfindMethod] typeOf(external.NavigateAndFind) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-
-63. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-ShowBrowserUI-typeof-test.html:testTypeOf had an error
+63. file://localhost/c:/work/doctype/trunk/tests/js/external/external-ShowBrowserUI-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: external
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/external/external-ShowBrowserUI-typeof-test.html?cacheBuster=1218227305929: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/external/external-ShowBrowserUI-typeof-test.html?cacheBuster=1221765520971: In function testTypeOf
       assertNotEquals("[ExternalShowbrowseruiMethod] typeOf(external.ShowBrowserUI) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-64. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-buildID-typeof-test.html:testTypeOf failed
+
+64. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-appCodeName-eq-Mozilla-test.html:testTypeOf failed
+
+"[NavigatorAppCodeNameProperty] navigator.appCodeName == 'Mozilla'"
+Expected not to be <Mozilla> (String)
+
+65. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-buildID-typeof-test.html:testTypeOf failed
 
 "[NavigatorBuildidProperty] typeOf(navigator.buildID) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-65. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-cpuClass-typeof-test.html:testTypeOf failed
+66. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-cpuClass-typeof-test.html:testTypeOf failed
 
 "[NavigatorCpuclassProperty] typeOf(navigator.cpuClass) != 'undefined'"
 Expected not to be <undefined> (String)
 
-66. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-oscpu-typeof-test.html:testTypeOf failed
+67. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-oscpu-typeof-test.html:testTypeOf failed
 
 "[NavigatorOscpuProperty] typeOf(navigator.oscpu) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-67. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-product-typeof-test.html:testTypeOf failed
+68. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-product-typeof-test.html:testTypeOf failed
 
 "[NavigatorProductProperty] typeOf(navigator.product) != 'undefined'"
 Expected not to be <undefined> (String)
 
-68. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-productSub-typeof-test.html:testTypeOf failed
+69. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-productSub-typeof-test.html:testTypeOf failed
 
 "[NavigatorProductsubProperty] typeOf(navigator.productSub) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-69. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-registerContentHandler-typeof-test.html:testTypeOf failed
+70. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-registerContentHandler-typeof-test.html:testTypeOf failed
 
 "[NavigatorRegistercontenthandlerMethod] typeOf(navigator.registerContentHandler) != 'undefined'"
 Expected not to be <undefined> (String)
 
-70. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-registerProtocolHandler-typeof-test.html:testTypeOf failed
+71. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-registerProtocolHandler-typeof-test.html:testTypeOf failed
 
 "[NavigatorRegisterprotocolhandlerMethod] typeOf(navigator.registerProtocolHandler) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-71. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-securityPolicy-typeof-test.html:testTypeOf failed
+72. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-securityPolicy-typeof-test.html:testTypeOf failed
 
 "[NavigatorSecuritypolicyProperty] typeOf(navigator.securityPolicy) != 'undefined'"
 Expected not to be <undefined> (String)
 
-72. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-systemLanguage-typeof-test.html:testTypeOf failed
+73. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-systemLanguage-typeof-test.html:testTypeOf failed
 
 "[NavigatorSystemlanguageProperty] typeOf(navigator.systemLanguage) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-73. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-userProfile-typeof-test.html:testTypeOf failed
+74. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-userProfile-typeof-test.html:testTypeOf failed
 
 "[NavigatorUserprofileProperty] typeOf(navigator.userProfile) != 'undefined'"
 Expected not to be <undefined> (String)
 
-74. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-vendor-typeof-test.html:testTypeOf failed
+75. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-vendor-typeof-test.html:testTypeOf failed
 
 "[NavigatorVendorProperty] typeOf(navigator.vendor) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-75. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/navigator/navigator-vendorSub-typeof-test.html:testTypeOf failed
+76. file://localhost/c:/work/doctype/trunk/tests/js/navigator/navigator-vendorSub-typeof-test.html:testTypeOf failed
 
 "[NavigatorVendorsubProperty] typeOf(navigator.vendorSub) != 'undefined'"
 Expected not to be <undefined> (String)
 
-76. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-availLeft-typeof-test.html:testTypeOf failed
+77. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-availLeft-typeof-test.html:testTypeOf failed
 
 "[ScreenAvailleftProperty] typeOf(screen.availLeft) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-77. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-availTop-typeof-test.html:testTypeOf failed
+78. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-availTop-typeof-test.html:testTypeOf failed
 
 "[ScreenAvailtopProperty] typeOf(screen.availTop) != 'undefined'"
 Expected not to be <undefined> (String)
 
-78. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-bufferDepth-typeof-test.html:testTypeOf failed
+79. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-bufferDepth-typeof-test.html:testTypeOf failed
 
 "[ScreenBufferdepthProperty] typeOf(screen.bufferDepth) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-79. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-deviceXDPI-typeof-test.html:testTypeOf failed
+80. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-deviceXDPI-typeof-test.html:testTypeOf failed
 
 "[ScreenDevicexdpiProperty] typeOf(screen.deviceXDPI) != 'undefined'"
 Expected not to be <undefined> (String)
 
-80. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-deviceYDPI-typeof-test.html:testTypeOf failed
+81. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-deviceYDPI-typeof-test.html:testTypeOf failed
 
 "[ScreenDeviceydpiProperty] typeOf(screen.deviceYDPI) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-81. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-fontSmoothingEnabled-typeof-test.html:testTypeOf failed
+82. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-fontSmoothingEnabled-typeof-test.html:testTypeOf failed
 
 "[ScreenFontsmoothingenabledProperty] typeOf(screen.fontSmoothingEnabled) != 'undefined'"
 Expected not to be <undefined> (String)
 
-82. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-left-typeof-test.html:testTypeOf failed
+83. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-left-typeof-test.html:testTypeOf failed
 
 "[ScreenLeftProperty] typeOf(screen.left) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-83. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-logicalXDPI-typeof-test.html:testTypeOf failed
+84. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-logicalXDPI-typeof-test.html:testTypeOf failed
 
 "[ScreenLogicalxdpiProperty] typeOf(screen.logicalXDPI) != 'undefined'"
 Expected not to be <undefined> (String)
 
-84. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-logicalYDPI-typeof-test.html:testTypeOf failed
+85. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-logicalYDPI-typeof-test.html:testTypeOf failed
 
 "[ScreenLogicalydpiProperty] typeOf(screen.logicalYDPI) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-85. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-top-typeof-test.html:testTypeOf failed
+86. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-top-typeof-test.html:testTypeOf failed
 
 "[ScreenTopProperty] typeOf(screen.top) != 'undefined'"
 Expected not to be <undefined> (String)
 
-86. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/screen/screen-updateInterval-typeof-test.html:testTypeOf failed
+87. file://localhost/c:/work/doctype/trunk/tests/js/screen/screen-updateInterval-typeof-test.html:testTypeOf failed
 
 "[ScreenUpdateintervalProperty] typeOf(screen.updateInterval) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-87. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addMicrosummaryGenerator-typeof-test.html:testTypeOf had an error
+88. file://localhost/c:/work/doctype/trunk/tests/js/sidebar/sidebar-addMicrosummaryGenerator-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: sidebar
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addMicrosummaryGenerator-typeof-test.html?cacheBuster=1218227323538: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/sidebar/sidebar-addMicrosummaryGenerator-typeof-test.html?cacheBuster=1221765544643: In function testTypeOf
       assertNotEquals("[SidebarAddmicrosummarygeneratorMethod] typeOf(sidebar.addMicrosummaryGenerator) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-88. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addPanel-typeof-test.html:testTypeOf had an error
+89. file://localhost/c:/work/doctype/trunk/tests/js/sidebar/sidebar-addPanel-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: sidebar
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addPanel-typeof-test.html?cacheBuster=1218227323679: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/sidebar/sidebar-addPanel-typeof-test.html?cacheBuster=1221765545018: In function testTypeOf
       assertNotEquals("[SidebarAddpanelMethod] typeOf(sidebar.addPanel) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -861,44 +866,44 @@ Backtrace:
 ]"
 
 
-89. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addPersistentPanel-typeof-test.html:testTypeOf had an error
+90. file://localhost/c:/work/doctype/trunk/tests/js/sidebar/sidebar-addPersistentPanel-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: sidebar
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addPersistentPanel-typeof-test.html?cacheBuster=1218227323820: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/sidebar/sidebar-addPersistentPanel-typeof-test.html?cacheBuster=1221765545393: In function testTypeOf
       assertNotEquals("[SidebarAddpersistentpanelMethod] typeOf(sidebar.addPersistentPanel) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
 
 ]"
 
-90. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addSearchEngine-typeof-test.html:testTypeOf had an error
+91. file://localhost/c:/work/doctype/trunk/tests/js/sidebar/sidebar-addSearchEngine-typeof-test.html:testTypeOf had an error
 
 Error message is:
 "[Error:
 name: ReferenceError
 message: Statement on line 3: Undefined variable: sidebar
 Backtrace:
-  Line 3 of inline#1 script in file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/sidebar/sidebar-addSearchEngine-typeof-test.html?cacheBuster=1218227324085: In function testTypeOf
+  Line 3 of inline#1 script in file://localhost/c:/work/doctype/trunk/tests/js/sidebar/sidebar-addSearchEngine-typeof-test.html?cacheBuster=1221765545783: In function testTypeOf
       assertNotEquals("[SidebarAddsearchengineMethod] typeOf(sidebar.addSearchEngine) != 'undefined'",
-  Line 601 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 601 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this.testFrame[this._testFunctionName]();
-  Line 335 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 335 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.executeTestFunction(theTest);
-  Line 251 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 251 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
             this._runTest();
-  Line 578 of linked script file://localhost/c:/cygwin/home/Mark/doctype/trunk/jsunit/app/jsUnitTestManager.js
+  Line 578 of linked script file://localhost/c:/work/doctype/trunk/jsunit/app/jsUnitTestManager.js
         this.doneLoadingPage(this._currentTestPage);
   Line 1 of unknown script 
     if (top.testManager) top.testManager._callBackWhenPageIsLoaded();
@@ -906,271 +911,271 @@ Backtrace:
 ]"
 
 
-91. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-atob-typeof-test.html:testTypeOf failed
+92. file://localhost/c:/work/doctype/trunk/tests/js/window/window-atob-typeof-test.html:testTypeOf failed
 
 "[WindowAtobMethod] typeOf(window.atob) != 'undefined'"
 Expected not to be <undefined> (String)
 
-92. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-btoa-typeof-test.html:testTypeOf failed
+93. file://localhost/c:/work/doctype/trunk/tests/js/window/window-btoa-typeof-test.html:testTypeOf failed
 
 "[WindowBtoaMethod] typeOf(window.btoa) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-93. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-clientInformation-typeof-test.html:testTypeOf failed
+94. file://localhost/c:/work/doctype/trunk/tests/js/window/window-clientInformation-typeof-test.html:testTypeOf failed
 
 "[WindowClientinformationProperty] typeOf(window.clientInformation) != 'undefined'"
 Expected not to be <undefined> (String)
 
-94. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-clipboardData-typeof-test.html:testTypeOf failed
+95. file://localhost/c:/work/doctype/trunk/tests/js/window/window-clipboardData-typeof-test.html:testTypeOf failed
 
 "[WindowClipboarddataProperty] typeOf(window.clipboardData) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-95. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-content-typeof-test.html:testTypeOf failed
+96. file://localhost/c:/work/doctype/trunk/tests/js/window/window-content-typeof-test.html:testTypeOf failed
 
 "[WindowContentProperty] typeOf(window.content) != 'undefined'"
 Expected not to be <undefined> (String)
 
-96. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-controllers-typeof-test.html:testTypeOf failed
+97. file://localhost/c:/work/doctype/trunk/tests/js/window/window-controllers-typeof-test.html:testTypeOf failed
 
 "[WindowControllersProperty] typeOf(window.controllers) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-97. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-createPopup-typeof-test.html:testTypeOf failed
+98. file://localhost/c:/work/doctype/trunk/tests/js/window/window-createPopup-typeof-test.html:testTypeOf failed
 
 "[WindowCreatepopupMethod] typeOf(window.createPopup) != 'undefined'"
 Expected not to be <undefined> (String)
 
-98. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-crypto-typeof-test.html:testTypeOf failed
+99. file://localhost/c:/work/doctype/trunk/tests/js/window/window-crypto-typeof-test.html:testTypeOf failed
 
 "[WindowCryptoProperty] typeOf(window.crypto) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-99. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogArguments-typeof-test.html:testTypeOf failed
+100. file://localhost/c:/work/doctype/trunk/tests/js/window/window-dialogArguments-typeof-test.html:testTypeOf failed
 
 "[WindowDialogargumentsProperty] typeOf(window.dialogArguments) != 'undefined'"
 Expected not to be <undefined> (String)
 
-100. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogHeight-typeof-test.html:testTypeOf failed
+101. file://localhost/c:/work/doctype/trunk/tests/js/window/window-dialogHeight-typeof-test.html:testTypeOf failed
 
 "[WindowDialogheightProperty] typeOf(window.dialogHeight) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-101. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogLeft-typeof-test.html:testTypeOf failed
+102. file://localhost/c:/work/doctype/trunk/tests/js/window/window-dialogLeft-typeof-test.html:testTypeOf failed
 
 "[WindowDialogleftProperty] typeOf(window.dialogLeft) != 'undefined'"
 Expected not to be <undefined> (String)
 
-102. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogTop-typeof-test.html:testTypeOf failed
+103. file://localhost/c:/work/doctype/trunk/tests/js/window/window-dialogTop-typeof-test.html:testTypeOf failed
 
 "[WindowDialogtopProperty] typeOf(window.dialogTop) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-103. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dialogWidth-typeof-test.html:testTypeOf failed
+104. file://localhost/c:/work/doctype/trunk/tests/js/window/window-dialogWidth-typeof-test.html:testTypeOf failed
 
 "[WindowDialogwidthProperty] typeOf(window.dialogWidth) != 'undefined'"
 Expected not to be <undefined> (String)
 
-104. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-directories-typeof-test.html:testTypeOf failed
+105. file://localhost/c:/work/doctype/trunk/tests/js/window/window-directories-typeof-test.html:testTypeOf failed
 
 "[WindowDirectoriesProperty] typeOf(window.directories) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-105. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-disableExternalCapture-typeof-test.html:testTypeOf failed
+106. file://localhost/c:/work/doctype/trunk/tests/js/window/window-disableExternalCapture-typeof-test.html:testTypeOf failed
 
 "[WindowDisableexternalcaptureMethod] typeOf(window.disableExternalCapture) != 'undefined'"
 Expected not to be <undefined> (String)
 
-106. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-dump-typeof-test.html:testTypeOf failed
+107. file://localhost/c:/work/doctype/trunk/tests/js/window/window-dump-typeof-test.html:testTypeOf failed
 
 "[WindowDumpMethod] typeOf(window.dump) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-107. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-enableExternalCapture-typeof-test.html:testTypeOf failed
+108. file://localhost/c:/work/doctype/trunk/tests/js/window/window-enableExternalCapture-typeof-test.html:testTypeOf failed
 
 "[WindowEnableexternalcaptureMethod] typeOf(window.enableExternalCapture) != 'undefined'"
 Expected not to be <undefined> (String)
 
-108. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-execScript-typeof-test.html:testTypeOf failed
+109. file://localhost/c:/work/doctype/trunk/tests/js/window/window-execScript-typeof-test.html:testTypeOf failed
 
 "[WindowExecscriptMethod] typeOf(window.execScript) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-109. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-find-typeof-test.html:testTypeOf failed
+110. file://localhost/c:/work/doctype/trunk/tests/js/window/window-find-typeof-test.html:testTypeOf failed
 
 "[WindowFindMethod] typeOf(window.find) != 'undefined'"
 Expected not to be <undefined> (String)
 
-110. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-fullScreen-typeof-test.html:testTypeOf failed
+111. file://localhost/c:/work/doctype/trunk/tests/js/window/window-fullScreen-typeof-test.html:testTypeOf failed
 
 "[WindowFullscreenProperty] typeOf(window.fullScreen) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-111. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-globalStorage-typeof-test.html:testTypeOf failed
+112. file://localhost/c:/work/doctype/trunk/tests/js/window/window-globalStorage-typeof-test.html:testTypeOf failed
 
 "[WindowGlobalstorageProperty] typeOf(window.globalStorage) != 'undefined'"
 Expected not to be <undefined> (String)
 
-112. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-locationbar-typeof-test.html:testTypeOf failed
+113. file://localhost/c:/work/doctype/trunk/tests/js/window/window-locationbar-typeof-test.html:testTypeOf failed
 
 "[WindowLocationbarProperty] typeOf(window.locationbar) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-113. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-menubar-typeof-test.html:testTypeOf failed
+114. file://localhost/c:/work/doctype/trunk/tests/js/window/window-menubar-typeof-test.html:testTypeOf failed
 
 "[WindowMenubarProperty] typeOf(window.menubar) != 'undefined'"
 Expected not to be <undefined> (String)
 
-114. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-offscreenBuffering-typeof-test.html:testTypeOf failed
+115. file://localhost/c:/work/doctype/trunk/tests/js/window/window-offscreenBuffering-typeof-test.html:testTypeOf failed
 
 "[WindowOffscreenbufferingProperty] typeOf(window.offscreenBuffering) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-115. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-openDialog-typeof-test.html:testTypeOf failed
+116. file://localhost/c:/work/doctype/trunk/tests/js/window/window-openDialog-typeof-test.html:testTypeOf failed
 
 "[WindowOpendialogMethod] typeOf(window.openDialog) != 'undefined'"
 Expected not to be <undefined> (String)
 
-116. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-personalbar-typeof-test.html:testTypeOf failed
+117. file://localhost/c:/work/doctype/trunk/tests/js/window/window-personalbar-typeof-test.html:testTypeOf failed
 
 "[WindowPersonalbarProperty] typeOf(window.personalbar) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-117. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-pkcs11-typeof-test.html:testTypeOf failed
+118. file://localhost/c:/work/doctype/trunk/tests/js/window/window-pkcs11-typeof-test.html:testTypeOf failed
 
 "[WindowPkcs11Property] typeOf(window.pkcs11) != 'undefined'"
 Expected not to be <undefined> (String)
 
-118. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-returnValue-typeof-test.html:testTypeOf failed
+119. file://localhost/c:/work/doctype/trunk/tests/js/window/window-returnValue-typeof-test.html:testTypeOf failed
 
 "[WindowReturnvalueProperty] typeOf(window.returnValue) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-119. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-routeEvent-typeof-test.html:testTypeOf failed
+120. file://localhost/c:/work/doctype/trunk/tests/js/window/window-routeEvent-typeof-test.html:testTypeOf failed
 
 "[WindowRouteeventMethod] typeOf(window.routeEvent) != 'undefined'"
 Expected not to be <undefined> (String)
 
-120. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-screen-left-typeof-test.html:testTypeOf failed
+121. file://localhost/c:/work/doctype/trunk/tests/js/window/window-screen-left-typeof-test.html:testTypeOf failed
 
 "[WindowScreenLeftProperty] typeOf(window.screen.left) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-121. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-screen-top-typeof-test.html:testTypeOf failed
+122. file://localhost/c:/work/doctype/trunk/tests/js/window/window-screen-top-typeof-test.html:testTypeOf failed
 
 "[WindowScreenTopProperty] typeOf(window.screen.top) != 'undefined'"
 Expected not to be <undefined> (String)
 
-122. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollByLines-typeof-test.html:testTypeOf failed
+123. file://localhost/c:/work/doctype/trunk/tests/js/window/window-scrollByLines-typeof-test.html:testTypeOf failed
 
 "[WindowScrollbylinesMethod] typeOf(window.scrollByLines) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-123. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollByPages-typeof-test.html:testTypeOf failed
+124. file://localhost/c:/work/doctype/trunk/tests/js/window/window-scrollByPages-typeof-test.html:testTypeOf failed
 
 "[WindowScrollbypagesMethod] typeOf(window.scrollByPages) != 'undefined'"
 Expected not to be <undefined> (String)
 
-124. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollMaxX-typeof-test.html:testTypeOf failed
+125. file://localhost/c:/work/doctype/trunk/tests/js/window/window-scrollMaxX-typeof-test.html:testTypeOf failed
 
 "[WindowScrollmaxxProperty] typeOf(window.scrollMaxX) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-125. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollMaxY-typeof-test.html:testTypeOf failed
+126. file://localhost/c:/work/doctype/trunk/tests/js/window/window-scrollMaxY-typeof-test.html:testTypeOf failed
 
 "[WindowScrollmaxyProperty] typeOf(window.scrollMaxY) != 'undefined'"
 Expected not to be <undefined> (String)
 
-126. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollX-typeof-test.html:testTypeOf failed
+127. file://localhost/c:/work/doctype/trunk/tests/js/window/window-scrollX-typeof-test.html:testTypeOf failed
 
 "[WindowScrollxProperty] typeOf(window.scrollX) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-127. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollY-typeof-test.html:testTypeOf failed
+128. file://localhost/c:/work/doctype/trunk/tests/js/window/window-scrollY-typeof-test.html:testTypeOf failed
 
 "[WindowScrollyProperty] typeOf(window.scrollY) != 'undefined'"
 Expected not to be <undefined> (String)
 
-128. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-scrollbars-typeof-test.html:testTypeOf failed
+129. file://localhost/c:/work/doctype/trunk/tests/js/window/window-scrollbars-typeof-test.html:testTypeOf failed
 
 "[WindowScrollbarsProperty] typeOf(window.scrollbars) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-129. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-sessionStorage-typeof-test.html:testTypeOf failed
+130. file://localhost/c:/work/doctype/trunk/tests/js/window/window-sessionStorage-typeof-test.html:testTypeOf failed
 
 "[WindowSessionstorageProperty] typeOf(window.sessionStorage) != 'undefined'"
 Expected not to be <undefined> (String)
 
-130. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-setActive-typeof-test.html:testTypeOf failed
+131. file://localhost/c:/work/doctype/trunk/tests/js/window/window-setActive-typeof-test.html:testTypeOf failed
 
 "[WindowSetactiveMethod] typeOf(window.setActive) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-131. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-setResizable-typeof-test.html:testTypeOf failed
+132. file://localhost/c:/work/doctype/trunk/tests/js/window/window-setResizable-typeof-test.html:testTypeOf failed
 
 "[WindowSetresizableMethod] typeOf(window.setResizable) != 'undefined'"
 Expected not to be <undefined> (String)
 
-132. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-showHelp-typeof-test.html:testTypeOf failed
+133. file://localhost/c:/work/doctype/trunk/tests/js/window/window-showHelp-typeof-test.html:testTypeOf failed
 
 "[WindowShowhelpMethod] typeOf(window.showHelp) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-133. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-showModalDialog-typeof-test.html:testTypeOf failed
+134. file://localhost/c:/work/doctype/trunk/tests/js/window/window-showModalDialog-typeof-test.html:testTypeOf failed
 
 "[WindowShowmodaldialogMethod] typeOf(window.showModalDialog) != 'undefined'"
 Expected not to be <undefined> (String)
 
-134. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-showModelessDialog-typeof-test.html:testTypeOf failed
+135. file://localhost/c:/work/doctype/trunk/tests/js/window/window-showModelessDialog-typeof-test.html:testTypeOf failed
 
 "[WindowShowmodelessdialogMethod] typeOf(window.showModelessDialog) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-135. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-sidebar-typeof-test.html:testTypeOf failed
+136. file://localhost/c:/work/doctype/trunk/tests/js/window/window-sidebar-typeof-test.html:testTypeOf failed
 
 "[WindowSidebarProperty] typeOf(window.sidebar) != 'undefined'"
 Expected not to be <undefined> (String)
 
-136. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-sizeToContent-typeof-test.html:testTypeOf failed
+137. file://localhost/c:/work/doctype/trunk/tests/js/window/window-sizeToContent-typeof-test.html:testTypeOf failed
 
 "[WindowSizetocontentMethod] typeOf(window.sizeToContent) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-137. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-statusbar-typeof-test.html:testTypeOf failed
+138. file://localhost/c:/work/doctype/trunk/tests/js/window/window-statusbar-typeof-test.html:testTypeOf failed
 
 "[WindowStatusbarProperty] typeOf(window.statusbar) != 'undefined'"
 Expected not to be <undefined> (String)
 
-138. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-toolbar-typeof-test.html:testTypeOf failed
+139. file://localhost/c:/work/doctype/trunk/tests/js/window/window-toolbar-typeof-test.html:testTypeOf failed
 
 "[WindowToolbarProperty] typeOf(window.toolbar) != 'undefined'"
 Expected not to be <undefined> (String)
 
 
-139. file://localhost/c:/cygwin/home/Mark/doctype/trunk/tests/js/window/window-updateCommands-typeof-test.html:testTypeOf failed
+140. file://localhost/c:/work/doctype/trunk/tests/js/window/window-updateCommands-typeof-test.html:testTypeOf failed
 
 "[WindowUpdatecommandsMethod] typeOf(window.updateCommands) != 'undefined'"
 Expected not to be <undefined> (String)

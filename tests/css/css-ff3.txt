@@ -1,6 +1,6 @@
 Tests with problems (637 total) - JsUnit
 
-Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9b5) Gecko/2008032620 Firefox/3.0b5
+Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.1) Gecko/2008070208 Firefox/3.0.1
 
 1. properties/accelerator-bogus-equals-false-reflection-test.html:testReflection failed
 
@@ -4196,7 +4196,7 @@ Stack trace follows:
 382. properties/margin-bottom-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[MarginBottomCSSProperty] style.marginBottom reflects <div style='margin-bottom: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous
@@ -4317,7 +4317,7 @@ Stack trace follows:
 393. properties/margin-left-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[MarginLeftCSSProperty] style.marginLeft reflects <div style='margin-left: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous
@@ -4438,7 +4438,7 @@ Stack trace follows:
 404. properties/margin-right-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[MarginRightCSSProperty] style.marginRight reflects <div style='margin-right: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous
@@ -4559,7 +4559,7 @@ Stack trace follows:
 415. properties/margin-top-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[MarginTopCSSProperty] style.marginTop reflects <div style='margin-top: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous
@@ -4779,7 +4779,7 @@ Stack trace follows:
 435. properties/max-width-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[MaxWidthCSSProperty] style.maxWidth reflects <div style='max-width: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous
@@ -4988,7 +4988,7 @@ Stack trace follows:
 454. properties/min-width-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[MinWidthCSSProperty] style.minWidth reflects <div style='min-width: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous
@@ -5989,7 +5989,7 @@ Stack trace follows:
 545. properties/padding-bottom-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[PaddingBottomCSSProperty] style.paddingBottom reflects <div style='padding-bottom: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous
@@ -6110,7 +6110,7 @@ Stack trace follows:
 556. properties/padding-left-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[PaddingLeftCSSProperty] style.paddingLeft reflects <div style='padding-left: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous
@@ -6231,7 +6231,7 @@ Stack trace follows:
 567. properties/padding-right-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[PaddingRightCSSProperty] style.paddingRight reflects <div style='padding-right: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous
@@ -6352,7 +6352,7 @@ Stack trace follows:
 578. properties/padding-top-42-pt--equals-42-pt--reflection-test.html:testReflection failed
 
 "[PaddingTopCSSProperty] style.paddingTop reflects <div style='padding-top: 42%'>"
-Expected <42%> (String) but was <799.667px> (String)
+Expected <42%> (String) but was <581.267px> (String)
 
 Stack trace follows:
 > anonymous

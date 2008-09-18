@@ -1,0 +1,2608 @@
+Tests with problems (651 total) - JsUnit
+
+Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/0.2.152.1 Safari/525.19
+
+1. attributes/a-disabled-absent-reflection-test.html:testReflection failed
+
+"[ADisabledAttribute] a.disabled reflects <a>"
+Expected <false> (Boolean) but was <undefined>
+2. attributes/a-disabled-reflection-test.html:testReflection failed
+
+"[ADisabledAttribute] a.disabled reflects <a disabled>"
+Expected <true> (Boolean) but was <undefined>
+3. attributes/a-media-all-reflection-test.html:testReflection failed
+
+"[AMediaAttribute] a.media reflects <a media="all">"
+Expected <all> (String) but was <undefined>
+4. attributes/a-media-print-reflection-test.html:testReflection failed
+
+"[AMediaAttribute] a.media reflects <a media="print">"
+Expected <print> (String) but was <undefined>
+5. attributes/a-media-screen-reflection-test.html:testReflection failed
+
+"[AMediaAttribute] a.media reflects <a media="screen">"
+Expected <screen> (String) but was <undefined>
+6. attributes/a-methods-reflection-test.html:testReflection failed
+
+"[AMethodsAttribute] a.Methods reflects <a methods="GET">"
+Expected <GET> (String) but was <undefined>
+7. attributes/a-ping-reflection-test.html:testReflection failed
+
+"[APingAttribute] a.ping reflects <a ping="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+8. attributes/a-suppress-reflection-test.html:testReflection failed
+
+"[ASuppressAttribute] a.suppress reflects <a suppress="true">"
+Expected <true> (Boolean) but was <undefined>
+9. attributes/a-urn-reflection-test.html:testReflection failed
+
+"[AURNAttribute] a.urn reflects <a urn="foo">"
+Expected <foo> (String) but was <undefined>
+10. attributes/address-align-center-reflection-test.html:testReflection failed
+
+"[AddressAlignAttribute] address.align reflects <address align="center">"
+Expected <center> (String) but was <undefined>
+11. attributes/address-align-justify-reflection-test.html:testReflection failed
+
+"[AddressAlignAttribute] address.align reflects <address align="justify">"
+Expected <justify> (String) but was <undefined>
+12. attributes/address-align-left-reflection-test.html:testReflection failed
+
+"[AddressAlignAttribute] address.align reflects <address align="left">"
+Expected <left> (String) but was <undefined>
+13. attributes/address-align-right-reflection-test.html:testReflection failed
+
+"[AddressAlignAttribute] address.align reflects <address align="right">"
+Expected <right> (String) but was <undefined>
+14. attributes/address-clear-all-reflection-test.html:testReflection failed
+
+"[AddressClearAttribute] address.clear reflects <address clear="all">"
+Expected <all> (String) but was <undefined>
+15. attributes/address-clear-both-reflection-test.html:testReflection failed
+
+"[AddressClearAttribute] address.clear reflects <address clear="both">"
+Expected <both> (String) but was <undefined>
+16. attributes/address-clear-left-reflection-test.html:testReflection failed
+
+"[AddressClearAttribute] address.clear reflects <address clear="left">"
+Expected <left> (String) but was <undefined>
+17. attributes/address-clear-none-reflection-test.html:testReflection failed
+
+"[AddressClearAttribute] address.clear reflects <address clear="none">"
+Expected <none> (String) but was <undefined>
+18. attributes/address-clear-right-reflection-test.html:testReflection failed
+
+"[AddressClearAttribute] address.clear reflects <address clear="right">"
+Expected <right> (String) but was <undefined>
+19. attributes/address-height-reflection-test.html:testReflection failed
+
+"[AddressHeightAttribute] address.height reflects <address height="7">"
+Expected <7> (String) but was <undefined>
+20. attributes/address-width-reflection-test.html:testReflection failed
+
+"[AddressWidthAttribute] address.width reflects <address width="7">"
+Expected <7> (String) but was <undefined>
+21. attributes/applet-align-absbottom-reflection-test.html:testReflection failed
+
+"[AppletAlignAttribute] applet.align reflects <applet align="absbottom">"
+Expected <absBottom> (String) but was <absbottom> (String)
+22. attributes/applet-align-absmiddle-reflection-test.html:testReflection failed
+
+"[AppletAlignAttribute] applet.align reflects <applet align="absmiddle">"
+Expected <absMiddle> (String) but was <absmiddle> (String)
+23. attributes/applet-align-texttop-reflection-test.html:testReflection failed
+
+"[AppletAlignAttribute] applet.align reflects <applet align="texttop">"
+Expected <textTop> (String) but was <texttop> (String)
+24. attributes/applet-border-reflection-test.html:testReflection failed
+
+"[AppletBorderAttribute] applet.border reflects <applet border="7">"
+Expected <7> (String) but was <undefined>
+25. attributes/applet-hspace-reflection-test.html:testReflection failed
+
+"[AppletHspaceAttribute] applet.hspace reflects <applet hspace="42">"
+Expected <42> (Number) but was <42> (String)
+26. attributes/applet-mayscript-reflection-test.html:testReflection failed
+
+"[AppletMayscriptAttribute] applet.mayScript reflects <applet mayscript="foo">"
+Expected <foo> (String) but was <undefined>
+27. attributes/applet-src-reflection-test.html:testReflection failed
+
+"[AppletSrcAttribute] applet.src reflects <applet src="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+28. attributes/applet-vspace-reflection-test.html:testReflection failed
+
+"[AppletVspaceAttribute] applet.vspace reflects <applet vspace="42">"
+Expected <42> (Number) but was <42> (String)
+29. attributes/area-disabled-absent-reflection-test.html:testReflection failed
+
+"[AreaDisabledAttribute] area.disabled reflects <area>"
+Expected <false> (Boolean) but was <undefined>
+30. attributes/area-disabled-reflection-test.html:testReflection failed
+
+"[AreaDisabledAttribute] area.disabled reflects <area disabled>"
+Expected <true> (Boolean) but was <undefined>
+31. attributes/area-hreflang-reflection-test.html:testReflection failed
+
+"[AreaHreflangAttribute] area.hreflang reflects <area hreflang="en">"
+Expected <en> (String) but was <undefined>
+32. attributes/area-media-all-reflection-test.html:testReflection failed
+
+"[AreaMediaAttribute] area.media reflects <area media="all">"
+Expected <all> (String) but was <undefined>
+33. attributes/area-media-print-reflection-test.html:testReflection failed
+
+"[AreaMediaAttribute] area.media reflects <area media="print">"
+Expected <print> (String) but was <undefined>
+34. attributes/area-media-screen-reflection-test.html:testReflection failed
+
+"[AreaMediaAttribute] area.media reflects <area media="screen">"
+Expected <screen> (String) but was <undefined>
+35. attributes/area-ping-reflection-test.html:testReflection failed
+
+"[AreaPingAttribute] area.ping reflects <area ping="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+36. attributes/area-rel-reflection-test.html:testReflection failed
+
+"[AreaRelAttribute] area.rel reflects <area rel="foo">"
+Expected <foo> (String) but was <undefined>
+37. attributes/area-shape-circ-reflection-test.html:testReflection failed
+
+"[AreaShapeAttribute] area.shape reflects <area shape="circ">"
+Expected <CIRCLE> (String) but was <circ> (String)
+38. attributes/area-shape-circle-reflection-test.html:testReflection failed
+
+"[AreaShapeAttribute] area.shape reflects <area shape="circle">"
+Expected <CIRCLE> (String) but was <circle> (String)
+39. attributes/area-shape-poly-reflection-test.html:testReflection failed
+
+"[AreaShapeAttribute] area.shape reflects <area shape="poly">"
+Expected <POLY> (String) but was <poly> (String)
+40. attributes/area-shape-polygon-reflection-test.html:testReflection failed
+
+"[AreaShapeAttribute] area.shape reflects <area shape="polygon">"
+Expected <POLY> (String) but was <polygon> (String)
+41. attributes/area-shape-rect-reflection-test.html:testReflection failed
+
+"[AreaShapeAttribute] area.shape reflects <area shape="rect">"
+Expected <RECT> (String) but was <rect> (String)
+42. attributes/area-shape-rectangle-reflection-test.html:testReflection failed
+
+"[AreaShapeAttribute] area.shape reflects <area shape="rectangle">"
+Expected <RECT> (String) but was <rectangle> (String)
+43. attributes/area-suppress-reflection-test.html:testReflection failed
+
+"[AreaSuppressAttribute] area.suppress reflects <area suppress="true">"
+Expected <true> (Boolean) but was <undefined>
+44. attributes/area-type-reflection-test.html:testReflection failed
+
+"[AreaTypeAttribute] area.type reflects <area type="text/html">"
+Expected <text/html> (String) but was <undefined>
+45. attributes/audio-autoplay-absent-reflection-test.html:testReflection failed
+
+"[AudioAutoplayAttribute] audio.autoplay reflects <audio>"
+Expected <false> (Boolean) but was <undefined>
+46. attributes/audio-autoplay-reflection-test.html:testReflection failed
+
+"[AudioAutoplayAttribute] audio.autoplay reflects <audio autoplay>"
+Expected <true> (Boolean) but was <undefined>
+47. attributes/audio-controls-absent-reflection-test.html:testReflection failed
+
+"[AudioControlsAttribute] audio.controls reflects <audio>"
+Expected <false> (Boolean) but was <undefined>
+48. attributes/audio-controls-reflection-test.html:testReflection failed
+
+"[AudioControlsAttribute] audio.controls reflects <audio controls>"
+Expected <true> (Boolean) but was <undefined>
+49. attributes/audio-end-reflection-test.html:testReflection failed
+
+"[AudioEndAttribute] audio.end reflects <audio end="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+50. attributes/audio-loopcount-reflection-test.html:testReflection failed
+
+"[AudioLoopcountAttribute] audio.loopCount reflects <audio loopcount="42">"
+Expected <42> (Number) but was <undefined>
+51. attributes/audio-loopend-reflection-test.html:testReflection failed
+
+"[AudioLoopendAttribute] audio.loopEnd reflects <audio loopend="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+52. attributes/audio-loopstart-reflection-test.html:testReflection failed
+
+"[AudioLoopstartAttribute] audio.loopStart reflects <audio loopstart="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+53. attributes/audio-src-reflection-test.html:testReflection failed
+
+"[AudioSrcAttribute] audio.src reflects <audio src="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+54. attributes/audio-start-reflection-test.html:testReflection failed
+
+"[AudioStartAttribute] audio.start reflects <audio start="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+55. attributes/bgsound-balance-reflection-test.html:testReflection failed
+
+"[BgsoundBalanceAttribute] bgsound.balance reflects <bgsound balance="42">"
+Expected <42> (Number) but was <undefined>
+56. attributes/bgsound-delay-reflection-test.html:testReflection failed
+
+"[BgsoundDelayAttribute] bgsound.delay reflects <bgsound delay="7">"
+Expected <7> (String) but was <undefined>
+57. attributes/bgsound-loop-reflection-test.html:testReflection failed
+
+"[BgsoundLoopAttribute] bgsound.loop reflects <bgsound loop="42">"
+Expected <42> (Number) but was <undefined>
+58. attributes/bgsound-src-reflection-test.html:testReflection failed
+
+"[BgsoundSrcAttribute] bgsound.src reflects <bgsound src="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+59. attributes/bgsound-volume-reflection-test.html:testReflection failed
+
+"[BgsoundVolumeAttribute] bgsound.volume reflects <bgsound volume="-1">"
+Expected <-1> (Number) but was <undefined>
+60. attributes/blockquote-align-center-reflection-test.html:testReflection failed
+
+"[BlockquoteAlignAttribute] blockquote.align reflects <blockquote align="center">"
+Expected <center> (String) but was <undefined>
+61. attributes/blockquote-align-justify-reflection-test.html:testReflection failed
+
+"[BlockquoteAlignAttribute] blockquote.align reflects <blockquote align="justify">"
+Expected <justify> (String) but was <undefined>
+62. attributes/blockquote-align-left-reflection-test.html:testReflection failed
+
+"[BlockquoteAlignAttribute] blockquote.align reflects <blockquote align="left">"
+Expected <left> (String) but was <undefined>
+63. attributes/blockquote-align-right-reflection-test.html:testReflection failed
+
+"[BlockquoteAlignAttribute] blockquote.align reflects <blockquote align="right">"
+Expected <right> (String) but was <undefined>
+64. attributes/blockquote-clear-all-reflection-test.html:testReflection failed
+
+"[BlockquoteClearAttribute] blockquote.clear reflects <blockquote clear="all">"
+Expected <all> (String) but was <undefined>
+65. attributes/blockquote-clear-both-reflection-test.html:testReflection failed
+
+"[BlockquoteClearAttribute] blockquote.clear reflects <blockquote clear="both">"
+Expected <both> (String) but was <undefined>
+66. attributes/blockquote-clear-left-reflection-test.html:testReflection failed
+
+"[BlockquoteClearAttribute] blockquote.clear reflects <blockquote clear="left">"
+Expected <left> (String) but was <undefined>
+67. attributes/blockquote-clear-none-reflection-test.html:testReflection failed
+
+"[BlockquoteClearAttribute] blockquote.clear reflects <blockquote clear="none">"
+Expected <none> (String) but was <undefined>
+68. attributes/blockquote-clear-right-reflection-test.html:testReflection failed
+
+"[BlockquoteClearAttribute] blockquote.clear reflects <blockquote clear="right">"
+Expected <right> (String) but was <undefined>
+69. attributes/blockquote-height-reflection-test.html:testReflection failed
+
+"[BlockquoteHeightAttribute] blockquote.height reflects <blockquote height="7">"
+Expected <7> (String) but was <undefined>
+70. attributes/blockquote-type-reflection-test.html:testReflection failed
+
+"[BlockquoteTypeAttribute] blockquote.type reflects <blockquote type="jwz">"
+Expected <jwz> (String) but was <undefined>
+71. attributes/blockquote-width-reflection-test.html:testReflection failed
+
+"[BlockquoteWidthAttribute] blockquote.width reflects <blockquote width="7">"
+Expected <7> (String) but was <undefined>
+72. attributes/body-align-center-reflection-test.html:testReflection failed
+
+"[BodyAlignAttribute] body.align reflects <body align="center">"
+Expected <center> (String) but was <undefined>
+73. attributes/body-align-justify-reflection-test.html:testReflection failed
+
+"[BodyAlignAttribute] body.align reflects <body align="justify">"
+Expected <justify> (String) but was <undefined>
+74. attributes/body-align-left-reflection-test.html:testReflection failed
+
+"[BodyAlignAttribute] body.align reflects <body align="left">"
+Expected <left> (String) but was <undefined>
+75. attributes/body-align-right-reflection-test.html:testReflection failed
+
+"[BodyAlignAttribute] body.align reflects <body align="right">"
+Expected <right> (String) but was <undefined>
+76. attributes/body-bgproperties-reflection-test.html:testReflection failed
+
+"[BodyBgpropertiesAttribute] body.bgProperties reflects <body bgproperties="fixed">"
+Expected <fixed> (String) but was <undefined>
+77. attributes/body-bottommargin-reflection-test.html:testReflection failed
+
+"[BodyBottommarginAttribute] body.bottomMargin reflects <body bottommargin="7">"
+Expected <7> (String) but was <undefined>
+78. attributes/body-leftmargin-reflection-test.html:testReflection failed
+
+"[BodyLeftmarginAttribute] body.leftMargin reflects <body leftmargin="7">"
+Expected <7> (String) but was <undefined>
+79. attributes/body-marginheight-reflection-test.html:testReflection failed
+
+"[BodyMarginheightAttribute] body.marginHeight reflects <body marginheight="7">"
+Expected <7> (String) but was <undefined>
+80. attributes/body-marginwidth-reflection-test.html:testReflection failed
+
+"[BodyMarginwidthAttribute] body.marginWidth reflects <body marginwidth="7">"
+Expected <7> (String) but was <undefined>
+81. attributes/body-nowrap-absent-reflection-test.html:testReflection failed
+
+"[BodyNowrapAttribute] body.noWrap reflects <body>"
+Expected <false> (Boolean) but was <undefined>
+82. attributes/body-nowrap-reflection-test.html:testReflection failed
+
+"[BodyNowrapAttribute] body.noWrap reflects <body nowrap>"
+Expected <true> (Boolean) but was <undefined>
+83. attributes/body-rightmargin-reflection-test.html:testReflection failed
+
+"[BodyRightmarginAttribute] body.rightMargin reflects <body rightmargin="7">"
+Expected <7> (String) but was <undefined>
+84. attributes/body-scroll-auto-reflection-test.html:testReflection failed
+
+"[BodyScrollAttribute] body.scroll reflects <body scroll="auto">"
+Expected <auto> (String) but was <undefined>
+85. attributes/body-scroll-no-reflection-test.html:testReflection failed
+
+"[BodyScrollAttribute] body.scroll reflects <body scroll="no">"
+Expected <no> (String) but was <undefined>
+86. attributes/body-scroll-yes-reflection-test.html:testReflection failed
+
+"[BodyScrollAttribute] body.scroll reflects <body scroll="yes">"
+Expected <yes> (String) but was <undefined>
+87. attributes/body-topmargin-reflection-test.html:testReflection failed
+
+"[BodyTopmarginAttribute] body.topMargin reflects <body topmargin="7">"
+Expected <7> (String) but was <undefined>
+88. attributes/caption-height-reflection-test.html:testReflection failed
+
+"[CaptionHeightAttribute] caption.height reflects <caption height="7">"
+Expected <7> (String) but was <undefined>
+89. attributes/caption-valign-reflection-test.html:testReflection failed
+
+"[CaptionValignAttribute] caption.vAlign reflects <caption valign="foo">"
+Expected <foo> (String) but was <undefined>
+90. attributes/caption-width-reflection-test.html:testReflection failed
+
+"[CaptionWidthAttribute] caption.width reflects <caption width="7">"
+Expected <7> (String) but was <undefined>
+91. attributes/center-align-center-reflection-test.html:testReflection failed
+
+"[CenterAlignAttribute] center.align reflects <center align="center">"
+Expected <center> (String) but was <undefined>
+92. attributes/center-align-justify-reflection-test.html:testReflection failed
+
+"[CenterAlignAttribute] center.align reflects <center align="justify">"
+Expected <justify> (String) but was <undefined>
+93. attributes/center-align-left-reflection-test.html:testReflection failed
+
+"[CenterAlignAttribute] center.align reflects <center align="left">"
+Expected <left> (String) but was <undefined>
+94. attributes/center-align-right-reflection-test.html:testReflection failed
+
+"[CenterAlignAttribute] center.align reflects <center align="right">"
+Expected <right> (String) but was <undefined>
+95. attributes/center-height-reflection-test.html:testReflection failed
+
+"[CenterHeightAttribute] center.height reflects <center height="7">"
+Expected <7> (String) but was <undefined>
+96. attributes/center-width-reflection-test.html:testReflection failed
+
+"[CenterWidthAttribute] center.width reflects <center width="7">"
+Expected <7> (String) but was <undefined>
+97. attributes/col-align-center-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'align' of null"
+98. attributes/col-align-justify-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'align' of null"
+99. attributes/col-align-left-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'align' of null"
+100. attributes/col-align-right-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'align' of null"
+101. attributes/col-bgcolor-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'bgColor' of null"
+102. attributes/col-ch-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'ch' of null"
+103. attributes/col-char-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'char' of null"
+104. attributes/col-charoff-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'charoff' of null"
+105. attributes/col-choff-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'choff' of null"
+106. attributes/col-span-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'span' of null"
+107. attributes/col-valign-baseline-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'vAlign' of null"
+108. attributes/col-valign-bottom-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'vAlign' of null"
+109. attributes/col-valign-middle-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'vAlign' of null"
+110. attributes/col-valign-top-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'vAlign' of null"
+111. attributes/col-width-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'width' of null"
+112. attributes/colgroup-align-center-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'align' of null"
+113. attributes/colgroup-align-justify-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'align' of null"
+114. attributes/colgroup-align-left-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'align' of null"
+115. attributes/colgroup-align-right-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'align' of null"
+116. attributes/colgroup-bgcolor-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'bgColor' of null"
+117. attributes/colgroup-char-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'char' of null"
+118. attributes/colgroup-charoff-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'charoff' of null"
+119. attributes/colgroup-span-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'span' of null"
+120. attributes/colgroup-valign-baseline-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'vAlign' of null"
+121. attributes/colgroup-valign-bottom-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'vAlign' of null"
+122. attributes/colgroup-valign-middle-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'vAlign' of null"
+123. attributes/colgroup-valign-top-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'vAlign' of null"
+124. attributes/colgroup-width-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'width' of null"
+125. attributes/command-checked-absent-reflection-test.html:testReflection failed
+
+"[CommandCheckedAttribute] command.checked reflects <command>"
+Expected <false> (Boolean) but was <undefined>
+126. attributes/command-checked-reflection-test.html:testReflection failed
+
+"[CommandCheckedAttribute] command.checked reflects <command checked>"
+Expected <true> (Boolean) but was <undefined>
+127. attributes/command-default-absent-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: undefined is not a function"
+128. attributes/command-default-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: undefined is not a function"
+129. attributes/command-disabled-absent-reflection-test.html:testReflection failed
+
+"[CommandDisabledAttribute] command.disabled reflects <command>"
+Expected <false> (Boolean) but was <undefined>
+130. attributes/command-disabled-reflection-test.html:testReflection failed
+
+"[CommandDisabledAttribute] command.disabled reflects <command disabled>"
+Expected <true> (Boolean) but was <undefined>
+131. attributes/command-hidden-absent-reflection-test.html:testReflection failed
+
+"[CommandHiddenAttribute] command.hidden reflects <command>"
+Expected <false> (Boolean) but was <undefined>
+132. attributes/command-hidden-reflection-test.html:testReflection failed
+
+"[CommandHiddenAttribute] command.hidden reflects <command hidden>"
+Expected <true> (Boolean) but was <undefined>
+133. attributes/command-icon-reflection-test.html:testReflection failed
+
+"[CommandIconAttribute] command.icon reflects <command icon="foo">"
+Expected <foo> (String) but was <undefined>
+134. attributes/command-label-reflection-test.html:testReflection failed
+
+"[CommandLabelAttribute] command.label reflects <command label="foo">"
+Expected <foo> (String) but was <undefined>
+135. attributes/command-radiogroup-reflection-test.html:testReflection failed
+
+"[CommandRadiogroupAttribute] command.radiogroup reflects <command radiogroup="foo">"
+Expected <foo> (String) but was <undefined>
+136. attributes/command-type-reflection-test.html:testReflection failed
+
+"[CommandTypeAttribute] command.type reflects <command type="command">"
+Expected <command> (String) but was <undefined>
+137. attributes/datagrid-disabled-absent-reflection-test.html:testReflection failed
+
+"[DatagridDisabledAttribute] datagrid.disabled reflects <datagrid>"
+Expected <false> (Boolean) but was <undefined>
+138. attributes/datagrid-disabled-reflection-test.html:testReflection failed
+
+"[DatagridDisabledAttribute] datagrid.disabled reflects <datagrid disabled>"
+Expected <true> (Boolean) but was <undefined>
+139. attributes/datagrid-multiple-absent-reflection-test.html:testReflection failed
+
+"[DatagridMultipleAttribute] datagrid.multiple reflects <datagrid>"
+Expected <false> (Boolean) but was <undefined>
+140. attributes/datagrid-multiple-reflection-test.html:testReflection failed
+
+"[DatagridMultipleAttribute] datagrid.multiple reflects <datagrid multiple>"
+Expected <true> (Boolean) but was <undefined>
+141. attributes/dd-align-center-reflection-test.html:testReflection failed
+
+"[DdAlignAttribute] dd.align reflects <dd align="center">"
+Expected <center> (String) but was <undefined>
+142. attributes/dd-align-justify-reflection-test.html:testReflection failed
+
+"[DdAlignAttribute] dd.align reflects <dd align="justify">"
+Expected <justify> (String) but was <undefined>
+143. attributes/dd-align-left-reflection-test.html:testReflection failed
+
+"[DdAlignAttribute] dd.align reflects <dd align="left">"
+Expected <left> (String) but was <undefined>
+144. attributes/dd-align-right-reflection-test.html:testReflection failed
+
+"[DdAlignAttribute] dd.align reflects <dd align="right">"
+Expected <right> (String) but was <undefined>
+145. attributes/dd-clear-all-reflection-test.html:testReflection failed
+
+"[DdClearAttribute] dd.clear reflects <dd clear="all">"
+Expected <all> (String) but was <undefined>
+146. attributes/dd-clear-both-reflection-test.html:testReflection failed
+
+"[DdClearAttribute] dd.clear reflects <dd clear="both">"
+Expected <both> (String) but was <undefined>
+147. attributes/dd-clear-left-reflection-test.html:testReflection failed
+
+"[DdClearAttribute] dd.clear reflects <dd clear="left">"
+Expected <left> (String) but was <undefined>
+148. attributes/dd-clear-none-reflection-test.html:testReflection failed
+
+"[DdClearAttribute] dd.clear reflects <dd clear="none">"
+Expected <none> (String) but was <undefined>
+149. attributes/dd-clear-right-reflection-test.html:testReflection failed
+
+"[DdClearAttribute] dd.clear reflects <dd clear="right">"
+Expected <right> (String) but was <undefined>
+150. attributes/dd-height-reflection-test.html:testReflection failed
+
+"[DdHeightAttribute] dd.height reflects <dd height="7">"
+Expected <7> (String) but was <undefined>
+151. attributes/dd-nowrap-absent-reflection-test.html:testReflection failed
+
+"[DdNowrapAttribute] dd.noWrap reflects <dd>"
+Expected <false> (Boolean) but was <undefined>
+152. attributes/dd-nowrap-reflection-test.html:testReflection failed
+
+"[DdNowrapAttribute] dd.noWrap reflects <dd nowrap>"
+Expected <true> (Boolean) but was <undefined>
+153. attributes/dd-width-reflection-test.html:testReflection failed
+
+"[DdWidthAttribute] dd.width reflects <dd width="7">"
+Expected <7> (String) but was <undefined>
+154. attributes/details-open-absent-reflection-test.html:testReflection failed
+
+"[DetailsOpenAttribute] details.open reflects <details>"
+Expected <false> (Boolean) but was <undefined>
+155. attributes/details-open-reflection-test.html:testReflection failed
+
+"[DetailsOpenAttribute] details.open reflects <details open>"
+Expected <true> (Boolean) but was <undefined>
+156. attributes/dir-align-center-reflection-test.html:testReflection failed
+
+"[DirAlignAttribute] dir.align reflects <dir align="center">"
+Expected <center> (String) but was <undefined>
+157. attributes/dir-align-justify-reflection-test.html:testReflection failed
+
+"[DirAlignAttribute] dir.align reflects <dir align="justify">"
+Expected <justify> (String) but was <undefined>
+158. attributes/dir-align-left-reflection-test.html:testReflection failed
+
+"[DirAlignAttribute] dir.align reflects <dir align="left">"
+Expected <left> (String) but was <undefined>
+159. attributes/dir-align-right-reflection-test.html:testReflection failed
+
+"[DirAlignAttribute] dir.align reflects <dir align="right">"
+Expected <right> (String) but was <undefined>
+160. attributes/dir-clear-all-reflection-test.html:testReflection failed
+
+"[DirClearAttribute] dir.clear reflects <dir clear="all">"
+Expected <all> (String) but was <undefined>
+161. attributes/dir-clear-both-reflection-test.html:testReflection failed
+
+"[DirClearAttribute] dir.clear reflects <dir clear="both">"
+Expected <both> (String) but was <undefined>
+162. attributes/dir-clear-left-reflection-test.html:testReflection failed
+
+"[DirClearAttribute] dir.clear reflects <dir clear="left">"
+Expected <left> (String) but was <undefined>
+163. attributes/dir-clear-none-reflection-test.html:testReflection failed
+
+"[DirClearAttribute] dir.clear reflects <dir clear="none">"
+Expected <none> (String) but was <undefined>
+164. attributes/dir-clear-right-reflection-test.html:testReflection failed
+
+"[DirClearAttribute] dir.clear reflects <dir clear="right">"
+Expected <right> (String) but was <undefined>
+165. attributes/dir-height-reflection-test.html:testReflection failed
+
+"[DirHeightAttribute] dir.height reflects <dir height="7">"
+Expected <7> (String) but was <undefined>
+166. attributes/dir-start-reflection-test.html:testReflection failed
+
+"[DirStartAttribute] dir.start reflects <dir start="7">"
+Expected <7> (String) but was <undefined>
+167. attributes/dir-type-1-reflection-test.html:testReflection failed
+
+"[DirTypeAttribute] dir.type reflects <dir type="1">"
+Expected <1> (String) but was <undefined>
+168. attributes/dir-type-a-reflection-test.html:testReflection failed
+
+"[DirTypeAttribute] dir.type reflects <dir type="A">"
+Expected <A> (String) but was <undefined>
+169. attributes/dir-type-circle-reflection-test.html:testReflection failed
+
+"[DirTypeAttribute] dir.type reflects <dir type="circle">"
+Expected <circle> (String) but was <undefined>
+170. attributes/dir-type-disc-reflection-test.html:testReflection failed
+
+"[DirTypeAttribute] dir.type reflects <dir type="disc">"
+Expected <disc> (String) but was <undefined>
+171. attributes/dir-type-i-reflection-test.html:testReflection failed
+
+"[DirTypeAttribute] dir.type reflects <dir type="I">"
+Expected <I> (String) but was <undefined>
+172. attributes/dir-type-square-reflection-test.html:testReflection failed
+
+"[DirTypeAttribute] dir.type reflects <dir type="square">"
+Expected <square> (String) but was <undefined>
+173. attributes/dir-width-reflection-test.html:testReflection failed
+
+"[DirWidthAttribute] dir.width reflects <dir width="7">"
+Expected <7> (String) but was <undefined>
+174. attributes/div-clear-all-reflection-test.html:testReflection failed
+
+"[DivClearAttribute] div.clear reflects <div clear="all">"
+Expected <all> (String) but was <undefined>
+175. attributes/div-clear-both-reflection-test.html:testReflection failed
+
+"[DivClearAttribute] div.clear reflects <div clear="both">"
+Expected <both> (String) but was <undefined>
+176. attributes/div-clear-left-reflection-test.html:testReflection failed
+
+"[DivClearAttribute] div.clear reflects <div clear="left">"
+Expected <left> (String) but was <undefined>
+177. attributes/div-clear-none-reflection-test.html:testReflection failed
+
+"[DivClearAttribute] div.clear reflects <div clear="none">"
+Expected <none> (String) but was <undefined>
+178. attributes/div-clear-right-reflection-test.html:testReflection failed
+
+"[DivClearAttribute] div.clear reflects <div clear="right">"
+Expected <right> (String) but was <undefined>
+179. attributes/div-cols-reflection-test.html:testReflection failed
+
+"[DivColsAttribute] div.cols reflects <div cols="7">"
+Expected <7> (String) but was <undefined>
+180. attributes/div-contextmenu-reflection-test.html:testReflection failed
+
+"[ContextmenuAttribute] div.contextmenu reflects <div contextmenu="foo">"
+Expected <foo> (String) but was <undefined>
+181. attributes/div-draggable-absent-reflection-test.html:testReflection failed
+
+"[DraggableAttribute] div.draggable reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+182. attributes/div-draggable-reflection-test.html:testReflection failed
+
+"[DraggableAttribute] div.draggable reflects <div draggable>"
+Expected <true> (Boolean) but was <undefined>
+183. attributes/div-gutter-reflection-test.html:testReflection failed
+
+"[DivGutterAttribute] div.gutter reflects <div gutter="7">"
+Expected <7> (String) but was <undefined>
+184. attributes/div-height-reflection-test.html:testReflection failed
+
+"[DivHeightAttribute] div.height reflects <div height="7">"
+Expected <7> (String) but was <undefined>
+185. attributes/div-hidefocus-reflection-test.html:testReflection failed
+
+"[HidefocusAttribute] div.hideFocus reflects <div hidefocus="true">"
+Expected <true> (Boolean) but was <undefined>
+186. attributes/div-irrelevant-absent-reflection-test.html:testReflection failed
+
+"[IrrelevantAttribute] div.irrelevant reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+187. attributes/div-irrelevant-reflection-test.html:testReflection failed
+
+"[IrrelevantAttribute] div.irrelevant reflects <div irrelevant>"
+Expected <true> (Boolean) but was <undefined>
+188. attributes/div-nowrap-absent-reflection-test.html:testReflection failed
+
+"[DivNowrapAttribute] div.noWrap reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+189. attributes/div-nowrap-reflection-test.html:testReflection failed
+
+"[DivNowrapAttribute] div.noWrap reflects <div nowrap>"
+Expected <true> (Boolean) but was <undefined>
+190. attributes/div-unselectable-absent-reflection-test.html:testReflection failed
+
+"[UnselectableAttribute] div.unselectable reflects <div>"
+Expected <false> (Boolean) but was <undefined>
+191. attributes/div-unselectable-reflection-test.html:testReflection failed
+
+"[UnselectableAttribute] div.unselectable reflects <div unselectable>"
+Expected <true> (Boolean) but was <undefined>
+192. attributes/div-width-reflection-test.html:testReflection failed
+
+"[DivWidthAttribute] div.width reflects <div width="7">"
+Expected <7> (String) but was <undefined>
+193. attributes/dl-align-center-reflection-test.html:testReflection failed
+
+"[DlAlignAttribute] dl.align reflects <dl align="center">"
+Expected <center> (String) but was <undefined>
+194. attributes/dl-align-justify-reflection-test.html:testReflection failed
+
+"[DlAlignAttribute] dl.align reflects <dl align="justify">"
+Expected <justify> (String) but was <undefined>
+195. attributes/dl-align-left-reflection-test.html:testReflection failed
+
+"[DlAlignAttribute] dl.align reflects <dl align="left">"
+Expected <left> (String) but was <undefined>
+196. attributes/dl-align-right-reflection-test.html:testReflection failed
+
+"[DlAlignAttribute] dl.align reflects <dl align="right">"
+Expected <right> (String) but was <undefined>
+197. attributes/dl-clear-all-reflection-test.html:testReflection failed
+
+"[DlClearAttribute] dl.clear reflects <dl clear="all">"
+Expected <all> (String) but was <undefined>
+198. attributes/dl-clear-both-reflection-test.html:testReflection failed
+
+"[DlClearAttribute] dl.clear reflects <dl clear="both">"
+Expected <both> (String) but was <undefined>
+199. attributes/dl-clear-left-reflection-test.html:testReflection failed
+
+"[DlClearAttribute] dl.clear reflects <dl clear="left">"
+Expected <left> (String) but was <undefined>
+200. attributes/dl-clear-none-reflection-test.html:testReflection failed
+
+"[DlClearAttribute] dl.clear reflects <dl clear="none">"
+Expected <none> (String) but was <undefined>
+201. attributes/dl-clear-right-reflection-test.html:testReflection failed
+
+"[DlClearAttribute] dl.clear reflects <dl clear="right">"
+Expected <right> (String) but was <undefined>
+202. attributes/dl-height-reflection-test.html:testReflection failed
+
+"[DlHeightAttribute] dl.height reflects <dl height="7">"
+Expected <7> (String) but was <undefined>
+203. attributes/dl-width-reflection-test.html:testReflection failed
+
+"[DlWidthAttribute] dl.width reflects <dl width="7">"
+Expected <7> (String) but was <undefined>
+204. attributes/dt-align-center-reflection-test.html:testReflection failed
+
+"[DtAlignAttribute] dt.align reflects <dt align="center">"
+Expected <center> (String) but was <undefined>
+205. attributes/dt-align-justify-reflection-test.html:testReflection failed
+
+"[DtAlignAttribute] dt.align reflects <dt align="justify">"
+Expected <justify> (String) but was <undefined>
+206. attributes/dt-align-left-reflection-test.html:testReflection failed
+
+"[DtAlignAttribute] dt.align reflects <dt align="left">"
+Expected <left> (String) but was <undefined>
+207. attributes/dt-align-right-reflection-test.html:testReflection failed
+
+"[DtAlignAttribute] dt.align reflects <dt align="right">"
+Expected <right> (String) but was <undefined>
+208. attributes/dt-clear-all-reflection-test.html:testReflection failed
+
+"[DtClearAttribute] dt.clear reflects <dt clear="all">"
+Expected <all> (String) but was <undefined>
+209. attributes/dt-clear-both-reflection-test.html:testReflection failed
+
+"[DtClearAttribute] dt.clear reflects <dt clear="both">"
+Expected <both> (String) but was <undefined>
+210. attributes/dt-clear-left-reflection-test.html:testReflection failed
+
+"[DtClearAttribute] dt.clear reflects <dt clear="left">"
+Expected <left> (String) but was <undefined>
+211. attributes/dt-clear-none-reflection-test.html:testReflection failed
+
+"[DtClearAttribute] dt.clear reflects <dt clear="none">"
+Expected <none> (String) but was <undefined>
+212. attributes/dt-clear-right-reflection-test.html:testReflection failed
+
+"[DtClearAttribute] dt.clear reflects <dt clear="right">"
+Expected <right> (String) but was <undefined>
+213. attributes/dt-height-reflection-test.html:testReflection failed
+
+"[DtHeightAttribute] dt.height reflects <dt height="7">"
+Expected <7> (String) but was <undefined>
+214. attributes/dt-nowrap-absent-reflection-test.html:testReflection failed
+
+"[DtNowrapAttribute] dt.noWrap reflects <dt>"
+Expected <false> (Boolean) but was <undefined>
+215. attributes/dt-nowrap-reflection-test.html:testReflection failed
+
+"[DtNowrapAttribute] dt.noWrap reflects <dt nowrap>"
+Expected <true> (Boolean) but was <undefined>
+216. attributes/dt-width-reflection-test.html:testReflection failed
+
+"[DtWidthAttribute] dt.width reflects <dt width="7">"
+Expected <7> (String) but was <undefined>
+217. attributes/embed-align-absbottom-reflection-test.html:testReflection failed
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="absbottom">"
+Expected <absBottom> (String) but was <absbottom> (String)
+218. attributes/embed-align-absmiddle-reflection-test.html:testReflection failed
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="absmiddle">"
+Expected <absMiddle> (String) but was <absmiddle> (String)
+219. attributes/embed-align-texttop-reflection-test.html:testReflection failed
+
+"[EmbedAlignAttribute] embed.align reflects <embed align="texttop">"
+Expected <textTop> (String) but was <texttop> (String)
+220. attributes/embed-disabled-absent-reflection-test.html:testReflection failed
+
+"[EmbedDisabledAttribute] embed.disabled reflects <embed>"
+Expected <false> (Boolean) but was <undefined>
+221. attributes/embed-disabled-reflection-test.html:testReflection failed
+
+"[EmbedDisabledAttribute] embed.disabled reflects <embed disabled>"
+Expected <true> (Boolean) but was <undefined>
+222. attributes/embed-hidden-reflection-test.html:testReflection failed
+
+"[EmbedHiddenAttribute] embed.hidden reflects <embed hidden>"
+Expected <true> (String) but was <undefined>
+223. attributes/embed-hspace-reflection-test.html:testReflection failed
+
+"[EmbedHspaceAttribute] embed.hspace reflects <embed hspace="7">"
+Expected <7> (String) but was <undefined>
+224. attributes/embed-palette-reflection-test.html:testReflection failed
+
+"[EmbedPaletteAttribute] embed.palette reflects <embed palette="foo">"
+Expected <foo> (String) but was <undefined>
+225. attributes/embed-pluginspage-reflection-test.html:testReflection failed
+
+"[EmbedPluginspageAttribute] embed.pluginspage reflects <embed pluginspage="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+226. attributes/embed-pluginurl-reflection-test.html:testReflection failed
+
+"[EmbedPluginurlAttribute] embed.pluginurl reflects <embed pluginurl="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+227. attributes/embed-units-reflection-test.html:testReflection failed
+
+"[EmbedUnitsAttribute] embed.units reflects <embed units="px">"
+Expected <px> (String) but was <undefined>
+228. attributes/embed-vspace-reflection-test.html:testReflection failed
+
+"[EmbedVspaceAttribute] embed.vspace reflects <embed vspace="7">"
+Expected <7> (String) but was <undefined>
+229. attributes/fieldset-align-absbottom-reflection-test.html:testReflection failed
+
+"[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="absbottom">"
+Expected <absBottom> (String) but was <undefined>
+230. attributes/fieldset-align-absmiddle-reflection-test.html:testReflection failed
+
+"[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="absmiddle">"
+Expected <absMiddle> (String) but was <undefined>
+231. attributes/fieldset-align-baseline-reflection-test.html:testReflection failed
+
+"[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="baseline">"
+Expected <baseline> (String) but was <undefined>
+232. attributes/fieldset-align-bottom-reflection-test.html:testReflection failed
+
+"[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="bottom">"
+Expected <bottom> (String) but was <undefined>
+233. attributes/fieldset-align-left-reflection-test.html:testReflection failed
+
+"[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="left">"
+Expected <left> (String) but was <undefined>
+234. attributes/fieldset-align-middle-reflection-test.html:testReflection failed
+
+"[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="middle">"
+Expected <middle> (String) but was <undefined>
+235. attributes/fieldset-align-right-reflection-test.html:testReflection failed
+
+"[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="right">"
+Expected <right> (String) but was <undefined>
+236. attributes/fieldset-align-texttop-reflection-test.html:testReflection failed
+
+"[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="texttop">"
+Expected <textTop> (String) but was <undefined>
+237. attributes/fieldset-align-top-reflection-test.html:testReflection failed
+
+"[FieldsetAlignAttribute] fieldset.align reflects <fieldset align="top">"
+Expected <top> (String) but was <undefined>
+238. attributes/fieldset-height-reflection-test.html:testReflection failed
+
+"[FieldsetHeightAttribute] fieldset.height reflects <fieldset height="7">"
+Expected <7> (String) but was <undefined>
+239. attributes/fieldset-width-reflection-test.html:testReflection failed
+
+"[FieldsetWidthAttribute] fieldset.width reflects <fieldset width="7">"
+Expected <7> (String) but was <undefined>
+240. attributes/font-font-weight-reflection-test.html:testReflection failed
+
+"[FontFontWeightAttribute] font.fontWeight reflects <font font-weight="42">"
+Expected <42> (Number) but was <undefined>
+241. attributes/font-point-size-reflection-test.html:testReflection failed
+
+"[FontPointSizeAttribute] font.pointSize reflects <font point-size="42">"
+Expected <42> (Number) but was <undefined>
+242. attributes/form-accept-reflection-test.html:testReflection failed
+
+"[FormAcceptAttribute] form.accept reflects <form accept="text/html">"
+Expected <text/html> (String) but was <undefined>
+243. attributes/form-align-center-reflection-test.html:testReflection failed
+
+"[FormAlignAttribute] form.align reflects <form align="center">"
+Expected <center> (String) but was <undefined>
+244. attributes/form-align-justify-reflection-test.html:testReflection failed
+
+"[FormAlignAttribute] form.align reflects <form align="justify">"
+Expected <justify> (String) but was <undefined>
+245. attributes/form-align-left-reflection-test.html:testReflection failed
+
+"[FormAlignAttribute] form.align reflects <form align="left">"
+Expected <left> (String) but was <undefined>
+246. attributes/form-align-right-reflection-test.html:testReflection failed
+
+"[FormAlignAttribute] form.align reflects <form align="right">"
+Expected <right> (String) but was <undefined>
+247. attributes/form-autocomplete-off-reflection-test.html:testReflection failed
+
+"[FormAutocompleteAttribute] form.autocomplete reflects <form autocomplete="off">"
+Expected <off> (String) but was <undefined>
+248. attributes/form-autocomplete-on-reflection-test.html:testReflection failed
+
+"[FormAutocompleteAttribute] form.autocomplete reflects <form autocomplete="on">"
+Expected <on> (String) but was <undefined>
+249. attributes/form-height-reflection-test.html:testReflection failed
+
+"[FormHeightAttribute] form.height reflects <form height="7">"
+Expected <7> (String) but was <undefined>
+250. attributes/form-method-reflection-test.html:testReflection failed
+
+"[FormMethodAttribute] form.method reflects <form method="GET">"
+Expected <get> (String) but was <GET> (String)
+251. attributes/form-width-reflection-test.html:testReflection failed
+
+"[FormWidthAttribute] form.width reflects <form width="7">"
+Expected <7> (String) but was <undefined>
+252. attributes/frame-allowtransparency-absent-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'allowTransparency' of null"
+253. attributes/frame-allowtransparency-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'allowTransparency' of null"
+254. attributes/frame-application-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'application' of null"
+255. attributes/frame-border-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'border' of null"
+256. attributes/frame-bordercolor-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'borderColor' of null"
+257. attributes/frame-frameborder-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'frameBorder' of null"
+258. attributes/frame-height-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'height' of null"
+259. attributes/frame-longdesc-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'longDesc' of null"
+260. attributes/frame-marginheight-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'marginHeight' of null"
+261. attributes/frame-marginwidth-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'marginWidth' of null"
+262. attributes/frame-name-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'name' of null"
+263. attributes/frame-noresize-absent-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'noResize' of null"
+264. attributes/frame-noresize-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'noResize' of null"
+265. attributes/frame-scrolling-auto-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'scrolling' of null"
+266. attributes/frame-scrolling-no-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'scrolling' of null"
+267. attributes/frame-scrolling-yes-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'scrolling' of null"
+268. attributes/frame-security-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'security' of null"
+269. attributes/frame-src-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'src' of null"
+270. attributes/frame-title-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'title' of null"
+271. attributes/frame-width-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'width' of null"
+272. attributes/frameset-border-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'border' of null"
+273. attributes/frameset-bordercolor-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'borderColor' of null"
+274. attributes/frameset-cols-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'cols' of null"
+275. attributes/frameset-frameborder-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'frameBorder' of null"
+276. attributes/frameset-framespacing-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'frameSpacing' of null"
+277. attributes/frameset-name-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'name' of null"
+278. attributes/frameset-rows-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'rows' of null"
+279. attributes/frameset-width-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'width' of null"
+280. attributes/hr-clear-all-reflection-test.html:testReflection failed
+
+"[HrClearAttribute] hr.clear reflects <hr clear="all">"
+Expected <all> (String) but was <undefined>
+281. attributes/hr-clear-both-reflection-test.html:testReflection failed
+
+"[HrClearAttribute] hr.clear reflects <hr clear="both">"
+Expected <both> (String) but was <undefined>
+282. attributes/hr-clear-left-reflection-test.html:testReflection failed
+
+"[HrClearAttribute] hr.clear reflects <hr clear="left">"
+Expected <left> (String) but was <undefined>
+283. attributes/hr-clear-none-reflection-test.html:testReflection failed
+
+"[HrClearAttribute] hr.clear reflects <hr clear="none">"
+Expected <none> (String) but was <undefined>
+284. attributes/hr-clear-right-reflection-test.html:testReflection failed
+
+"[HrClearAttribute] hr.clear reflects <hr clear="right">"
+Expected <right> (String) but was <undefined>
+285. attributes/hr-color-reflection-test.html:testReflection failed
+
+"[HrColorAttribute] hr.color reflects <hr color="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+286. attributes/hr-size-reflection-test.html:testReflection failed
+
+"[HrSizeAttribute] hr.size reflects <hr size="42">"
+Expected <42> (Number) but was <42> (String)
+287. attributes/iframe-allowtransparency-absent-reflection-test.html:testReflection failed
+
+"[IframeAllowtransparencyAttribute] iframe.allowTransparency reflects <iframe>"
+Expected <false> (Boolean) but was <undefined>
+288. attributes/iframe-allowtransparency-reflection-test.html:testReflection failed
+
+"[IframeAllowtransparencyAttribute] iframe.allowTransparency reflects <iframe allowtransparency>"
+Expected <true> (Boolean) but was <undefined>
+289. attributes/iframe-application-reflection-test.html:testReflection failed
+
+"[IframeApplicationAttribute] iframe.application reflects <iframe application="foo">"
+Expected <foo> (String) but was <undefined>
+290. attributes/iframe-border-reflection-test.html:testReflection failed
+
+"[IframeBorderAttribute] iframe.border reflects <iframe border="7">"
+Expected <7> (String) but was <undefined>
+291. attributes/iframe-frameborder-reflection-test.html:testReflection failed
+
+"[IframeFrameborderAttribute] iframe.frameBorder reflects <iframe frameborder="42">"
+Expected <42> (Number) but was <42> (String)
+292. attributes/iframe-hspace-reflection-test.html:testReflection failed
+
+"[IframeHspaceAttribute] iframe.hspace reflects <iframe hspace="42">"
+Expected <42> (Number) but was <undefined>
+293. attributes/iframe-marginheight-reflection-test.html:testReflection failed
+
+"[IframeMarginheightAttribute] iframe.marginHeight reflects <iframe marginheight="42">"
+Expected <42> (Number) but was <42> (String)
+294. attributes/iframe-marginwidth-reflection-test.html:testReflection failed
+
+"[IframeMarginwidthAttribute] iframe.marginWidth reflects <iframe marginwidth="42">"
+Expected <42> (Number) but was <42> (String)
+295. attributes/iframe-security-reflection-test.html:testReflection failed
+
+"[IframeSecurityAttribute] iframe.security reflects <iframe security="restricted">"
+Expected <restricted> (String) but was <undefined>
+296. attributes/iframe-vspace-reflection-test.html:testReflection failed
+
+"[IframeVspaceAttribute] iframe.vspace reflects <iframe vspace="42">"
+Expected <42> (Number) but was <undefined>
+297. attributes/ilayer-above-reflection-test.html:testReflection failed
+
+"[IlayerAboveAttribute] ilayer.above reflects <ilayer above="foo">"
+Expected <foo> (String) but was <undefined>
+298. attributes/ilayer-background-reflection-test.html:testReflection failed
+
+"[IlayerBackgroundAttribute] ilayer.background reflects <ilayer background="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+299. attributes/ilayer-below-reflection-test.html:testReflection failed
+
+"[IlayerBelowAttribute] ilayer.below reflects <ilayer below="foo">"
+Expected <foo> (String) but was <undefined>
+300. attributes/ilayer-bgcolor-reflection-test.html:testReflection failed
+
+"[IlayerBgcolorAttribute] ilayer.bgColor reflects <ilayer bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+301. attributes/ilayer-clip-reflection-test.html:testReflection failed
+
+"[IlayerClipAttribute] ilayer.clip reflects <ilayer clip="0,0,10,10">"
+Expected <0,0,10,10> (String) but was <undefined>
+302. attributes/ilayer-height-reflection-test.html:testReflection failed
+
+"[IlayerHeightAttribute] ilayer.height reflects <ilayer height="7">"
+Expected <7> (String) but was <undefined>
+303. attributes/ilayer-left-reflection-test.html:testReflection failed
+
+"[IlayerLeftAttribute] ilayer.left reflects <ilayer left="42">"
+Expected <42> (Number) but was <undefined>
+304. attributes/ilayer-name-reflection-test.html:testReflection failed
+
+"[IlayerNameAttribute] ilayer.name reflects <ilayer name="foo">"
+Expected <foo> (String) but was <undefined>
+305. attributes/ilayer-overflow-reflection-test.html:testReflection failed
+
+"[IlayerOverflowAttribute] ilayer.overflow reflects <ilayer overflow="clip">"
+Expected <clip> (String) but was <undefined>
+306. attributes/ilayer-pagex-reflection-test.html:testReflection failed
+
+"[IlayerPagexAttribute] ilayer.pagex reflects <ilayer pagex="42">"
+Expected <42> (Number) but was <undefined>
+307. attributes/ilayer-pagey-reflection-test.html:testReflection failed
+
+"[IlayerPageyAttribute] ilayer.pagey reflects <ilayer pagey="42">"
+Expected <42> (Number) but was <undefined>
+308. attributes/ilayer-src-reflection-test.html:testReflection failed
+
+"[IlayerSrcAttribute] ilayer.src reflects <ilayer src="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+309. attributes/ilayer-top-reflection-test.html:testReflection failed
+
+"[IlayerTopAttribute] ilayer.top reflects <ilayer top="42">"
+Expected <42> (Number) but was <undefined>
+310. attributes/ilayer-visibility-reflection-test.html:testReflection failed
+
+"[IlayerVisibilityAttribute] ilayer.visibility reflects <ilayer visibility="show">"
+Expected <show> (String) but was <undefined>
+311. attributes/ilayer-width-reflection-test.html:testReflection failed
+
+"[IlayerWidthAttribute] ilayer.width reflects <ilayer width="7">"
+Expected <7> (String) but was <undefined>
+312. attributes/ilayer-z-index-reflection-test.html:testReflection failed
+
+"[IlayerZIndexAttribute] ilayer.zIndex reflects <ilayer z-index="42">"
+Expected <42> (Number) but was <undefined>
+313. attributes/img-align-absbottom-reflection-test.html:testReflection failed
+
+"[ImgAlignAttribute] img.align reflects <img align="absbottom">"
+Expected <absBottom> (String) but was <absbottom> (String)
+314. attributes/img-align-absmiddle-reflection-test.html:testReflection failed
+
+"[ImgAlignAttribute] img.align reflects <img align="absmiddle">"
+Expected <absMiddle> (String) but was <absmiddle> (String)
+315. attributes/img-align-texttop-reflection-test.html:testReflection failed
+
+"[ImgAlignAttribute] img.align reflects <img align="texttop">"
+Expected <textTop> (String) but was <texttop> (String)
+316. attributes/img-controls-reflection-test.html:testReflection failed
+
+"[ImgControlsAttribute] img.controls reflects <img controls="foo">"
+Expected <foo> (String) but was <undefined>
+317. attributes/img-dynsrc-reflection-test.html:testReflection failed
+
+"[ImgDynsrcAttribute] img.dynsrc reflects <img dynsrc="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+318. attributes/img-galleryimg-no-reflection-test.html:testReflection failed
+
+"[ImgGalleryimgAttribute] img.galleryImg reflects <img galleryimg="no">"
+Expected <false> (Boolean) but was <undefined>
+319. attributes/img-galleryimg-yes-reflection-test.html:testReflection failed
+
+"[ImgGalleryimgAttribute] img.galleryImg reflects <img galleryimg="yes">"
+Expected <true> (Boolean) but was <undefined>
+320. attributes/img-loop-reflection-test.html:testReflection failed
+
+"[ImgLoopAttribute] img.loop reflects <img loop="42">"
+Expected <42> (Number) but was <undefined>
+321. attributes/img-start-fileopen-reflection-test.html:testReflection failed
+
+"[ImgStartAttribute] img.start reflects <img start="fileopen">"
+Expected <fileopen> (String) but was <undefined>
+322. attributes/img-start-mouseover-reflection-test.html:testReflection failed
+
+"[ImgStartAttribute] img.start reflects <img start="mouseover">"
+Expected <mouseover> (String) but was <undefined>
+323. attributes/img-suppress-reflection-test.html:testReflection failed
+
+"[ImgSuppressAttribute] img.suppress reflects <img suppress="true">"
+Expected <true> (Boolean) but was <undefined>
+324. attributes/img-vrml-reflection-test.html:testReflection failed
+
+"[ImgVrmlAttribute] img.vrml reflects <img vrml="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+325. attributes/input-align-absbottom-reflection-test.html:testReflection failed
+
+"[InputAlignAttribute] input.align reflects <input align="absbottom">"
+Expected <absBottom> (String) but was <absbottom> (String)
+326. attributes/input-align-absmiddle-reflection-test.html:testReflection failed
+
+"[InputAlignAttribute] input.align reflects <input align="absmiddle">"
+Expected <absMiddle> (String) but was <absmiddle> (String)
+327. attributes/input-align-texttop-reflection-test.html:testReflection failed
+
+"[InputAlignAttribute] input.align reflects <input align="texttop">"
+Expected <textTop> (String) but was <texttop> (String)
+328. attributes/input-autocomplete-off-reflection-test.html:testReflection failed
+
+"[InputAutocompleteAttribute] input.autocomplete reflects <input autocomplete="off">"
+Expected <off> (String) but was <undefined>
+329. attributes/input-autocomplete-on-reflection-test.html:testReflection failed
+
+"[InputAutocompleteAttribute] input.autocomplete reflects <input autocomplete="on">"
+Expected <on> (String) but was <undefined>
+330. attributes/input-border-reflection-test.html:testReflection failed
+
+"[InputBorderAttribute] input.border reflects <input border="7">"
+Expected <7> (String) but was <undefined>
+331. attributes/input-dynsrc-reflection-test.html:testReflection failed
+
+"[InputDynsrcAttribute] input.dynsrc reflects <input dynsrc="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+332. attributes/input-height-reflection-test.html:testReflection failed
+
+"[InputHeightAttribute] input.height reflects <input height="7">"
+Expected <7> (String) but was <undefined>
+333. attributes/input-hspace-reflection-test.html:testReflection failed
+
+"[InputHspaceAttribute] input.hspace reflects <input hspace="42">"
+Expected <42> (Number) but was <undefined>
+334. attributes/input-ismap-absent-reflection-test.html:testReflection failed
+
+"[InputIsmapAttribute] input.isMap reflects <input>"
+Expected <false> (Boolean) but was <undefined>
+335. attributes/input-ismap-reflection-test.html:testReflection failed
+
+"[InputIsmapAttribute] input.isMap reflects <input ismap>"
+Expected <true> (Boolean) but was <undefined>
+336. attributes/input-loop-reflection-test.html:testReflection failed
+
+"[InputLoopAttribute] input.loop reflects <input loop="42">"
+Expected <42> (Number) but was <undefined>
+337. attributes/input-lowsrc-reflection-test.html:testReflection failed
+
+"[InputLowsrcAttribute] input.lowsrc reflects <input lowsrc="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+338. attributes/input-maxlength-reflection-test.html:testReflection failed
+
+"[InputMaxlengthAttribute] input.maxLength reflects <input maxlength="foo">"
+Expected <foo> (String) but was <524288> (Number)
+339. attributes/input-start-fileopen-reflection-test.html:testReflection failed
+
+"[InputStartAttribute] input.start reflects <input start="fileopen">"
+Expected <fileopen> (String) but was <undefined>
+340. attributes/input-start-mouseover-reflection-test.html:testReflection failed
+
+"[InputStartAttribute] input.start reflects <input start="mouseover">"
+Expected <mouseover> (String) but was <undefined>
+341. attributes/input-vcard_name-reflection-test.html:testReflection failed
+
+"[InputVcardNameAttribute] input.vcard_name reflects <input vcard_name="foo">"
+Expected <foo> (String) but was <undefined>
+342. attributes/input-vspace-reflection-test.html:testReflection failed
+
+"[InputVspaceAttribute] input.vspace reflects <input vspace="42">"
+Expected <42> (Number) but was <undefined>
+343. attributes/input-width-reflection-test.html:testReflection failed
+
+"[InputWidthAttribute] input.width reflects <input width="7">"
+Expected <7> (String) but was <undefined>
+344. attributes/isindex-action-reflection-test.html:testReflection failed
+
+"[IsindexActionAttribute] isindex.action reflects <isindex action="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+345. attributes/isindex-enctype-reflection-test.html:testReflection failed
+
+"[IsindexEnctypeAttribute] isindex.enctype reflects <isindex enctype="text/html">"
+Expected <text/html> (String) but was <undefined>
+346. attributes/isindex-height-reflection-test.html:testReflection failed
+
+"[IsindexHeightAttribute] isindex.height reflects <isindex height="7">"
+Expected <7> (String) but was <undefined>
+347. attributes/isindex-method-reflection-test.html:testReflection failed
+
+"[IsindexMethodAttribute] isindex.method reflects <isindex method="GET">"
+Expected <get> (String) but was <undefined>
+348. attributes/isindex-target-reflection-test.html:testReflection failed
+
+"[IsindexTargetAttribute] isindex.target reflects <isindex target="foo">"
+Expected <foo> (String) but was <undefined>
+349. attributes/isindex-width-reflection-test.html:testReflection failed
+
+"[IsindexWidthAttribute] isindex.width reflects <isindex width="7">"
+Expected <7> (String) but was <undefined>
+350. attributes/keygen-challenge-reflection-test.html:testReflection failed
+
+"[KeygenChallengeAttribute] keygen.challenge reflects <keygen challenge="foo">"
+Expected <foo> (String) but was <undefined>
+351. attributes/keygen-keytype-reflection-test.html:testReflection failed
+
+"[KeygenKeytypeAttribute] keygen.keytype reflects <keygen keytype="foo">"
+Expected <foo> (String) but was <undefined>
+352. attributes/keygen-pqg-reflection-test.html:testReflection failed
+
+"[KeygenPqgAttribute] keygen.pqg reflects <keygen pqg="foo">"
+Expected <foo> (String) but was <undefined>
+353. attributes/layer-above-reflection-test.html:testReflection failed
+
+"[LayerAboveAttribute] layer.above reflects <layer above="foo">"
+Expected <foo> (String) but was <undefined>
+354. attributes/layer-below-reflection-test.html:testReflection failed
+
+"[LayerBelowAttribute] layer.below reflects <layer below="foo">"
+Expected <foo> (String) but was <undefined>
+355. attributes/layer-bgcolor-reflection-test.html:testReflection failed
+
+"[LayerBgcolorAttribute] layer.bgColor reflects <layer bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+356. attributes/layer-clip-reflection-test.html:testReflection failed
+
+"[LayerClipAttribute] layer.clip reflects <layer clip="0,0,10,10">"
+Expected <0,0,10,10> (String) but was <undefined>
+357. attributes/layer-height-reflection-test.html:testReflection failed
+
+"[LayerHeightAttribute] layer.height reflects <layer height="7">"
+Expected <7> (String) but was <undefined>
+358. attributes/layer-left-reflection-test.html:testReflection failed
+
+"[LayerLeftAttribute] layer.left reflects <layer left="42">"
+Expected <42> (Number) but was <undefined>
+359. attributes/layer-name-reflection-test.html:testReflection failed
+
+"[LayerNameAttribute] layer.name reflects <layer name="foo">"
+Expected <foo> (String) but was <undefined>
+360. attributes/layer-overflow-reflection-test.html:testReflection failed
+
+"[LayerOverflowAttribute] layer.overflow reflects <layer overflow="clip">"
+Expected <clip> (String) but was <undefined>
+361. attributes/layer-pagex-reflection-test.html:testReflection failed
+
+"[LayerPagexAttribute] layer.pagex reflects <layer pagex="42">"
+Expected <42> (Number) but was <undefined>
+362. attributes/layer-pagey-reflection-test.html:testReflection failed
+
+"[LayerPageyAttribute] layer.pagey reflects <layer pagey="42">"
+Expected <42> (Number) but was <undefined>
+363. attributes/layer-src-reflection-test.html:testReflection failed
+
+"[LayerSrcAttribute] layer.src reflects <layer src="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+364. attributes/layer-top-reflection-test.html:testReflection failed
+
+"[LayerTopAttribute] layer.top reflects <layer top="42">"
+Expected <42> (Number) but was <undefined>
+365. attributes/layer-visibility-reflection-test.html:testReflection failed
+
+"[LayerVisibilityAttribute] layer.visibility reflects <layer visibility="show">"
+Expected <show> (String) but was <undefined>
+366. attributes/layer-width-reflection-test.html:testReflection failed
+
+"[LayerWidthAttribute] layer.width reflects <layer width="7">"
+Expected <7> (String) but was <undefined>
+367. attributes/layer-z-index-reflection-test.html:testReflection failed
+
+"[LayerZIndexAttribute] layer.zIndex reflects <layer z-index="42">"
+Expected <42> (Number) but was <undefined>
+368. attributes/li-align-center-reflection-test.html:testReflection failed
+
+"[LiAlignAttribute] li.align reflects <li align="center">"
+Expected <center> (String) but was <undefined>
+369. attributes/li-align-justify-reflection-test.html:testReflection failed
+
+"[LiAlignAttribute] li.align reflects <li align="justify">"
+Expected <justify> (String) but was <undefined>
+370. attributes/li-align-left-reflection-test.html:testReflection failed
+
+"[LiAlignAttribute] li.align reflects <li align="left">"
+Expected <left> (String) but was <undefined>
+371. attributes/li-align-right-reflection-test.html:testReflection failed
+
+"[LiAlignAttribute] li.align reflects <li align="right">"
+Expected <right> (String) but was <undefined>
+372. attributes/li-clear-all-reflection-test.html:testReflection failed
+
+"[LiClearAttribute] li.clear reflects <li clear="all">"
+Expected <all> (String) but was <undefined>
+373. attributes/li-clear-both-reflection-test.html:testReflection failed
+
+"[LiClearAttribute] li.clear reflects <li clear="both">"
+Expected <both> (String) but was <undefined>
+374. attributes/li-clear-left-reflection-test.html:testReflection failed
+
+"[LiClearAttribute] li.clear reflects <li clear="left">"
+Expected <left> (String) but was <undefined>
+375. attributes/li-clear-none-reflection-test.html:testReflection failed
+
+"[LiClearAttribute] li.clear reflects <li clear="none">"
+Expected <none> (String) but was <undefined>
+376. attributes/li-clear-right-reflection-test.html:testReflection failed
+
+"[LiClearAttribute] li.clear reflects <li clear="right">"
+Expected <right> (String) but was <undefined>
+377. attributes/li-height-reflection-test.html:testReflection failed
+
+"[LiHeightAttribute] li.height reflects <li height="7">"
+Expected <7> (String) but was <undefined>
+378. attributes/li-width-reflection-test.html:testReflection failed
+
+"[LiWidthAttribute] li.width reflects <li width="7">"
+Expected <7> (String) but was <undefined>
+379. attributes/link-methods-reflection-test.html:testReflection failed
+
+"[LinkMethodsAttribute] link.Methods reflects <link methods="GET">"
+Expected <GET> (String) but was <undefined>
+380. attributes/link-name-reflection-test.html:testReflection failed
+
+"[LinkNameAttribute] link.name reflects <link name="foo">"
+Expected <foo> (String) but was <undefined>
+381. attributes/link-src-reflection-test.html:testReflection failed
+
+"[LinkSrcAttribute] link.src reflects <link src="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+382. attributes/listing-align-center-reflection-test.html:testReflection failed
+
+"[ListingAlignAttribute] listing.align reflects <listing align="center">"
+Expected <center> (String) but was <undefined>
+383. attributes/listing-align-justify-reflection-test.html:testReflection failed
+
+"[ListingAlignAttribute] listing.align reflects <listing align="justify">"
+Expected <justify> (String) but was <undefined>
+384. attributes/listing-align-left-reflection-test.html:testReflection failed
+
+"[ListingAlignAttribute] listing.align reflects <listing align="left">"
+Expected <left> (String) but was <undefined>
+385. attributes/listing-align-right-reflection-test.html:testReflection failed
+
+"[ListingAlignAttribute] listing.align reflects <listing align="right">"
+Expected <right> (String) but was <undefined>
+386. attributes/listing-height-reflection-test.html:testReflection failed
+
+"[ListingHeightAttribute] listing.height reflects <listing height="7">"
+Expected <7> (String) but was <undefined>
+387. attributes/listing-width-reflection-test.html:testReflection failed
+
+"[ListingWidthAttribute] listing.width reflects <listing width="7">"
+Expected <7> (String) but was <7> (Number)
+388. attributes/marquee-behavior-alternate-reflection-test.html:testReflection failed
+
+"[MarqueeBehaviorAttribute] marquee.behavior reflects <marquee behavior="alternate">"
+Expected <alternate> (String) but was <undefined>
+389. attributes/marquee-behavior-scroll-reflection-test.html:testReflection failed
+
+"[MarqueeBehaviorAttribute] marquee.behavior reflects <marquee behavior="scroll">"
+Expected <scroll> (String) but was <undefined>
+390. attributes/marquee-behavior-slide-reflection-test.html:testReflection failed
+
+"[MarqueeBehaviorAttribute] marquee.behavior reflects <marquee behavior="slide">"
+Expected <slide> (String) but was <undefined>
+391. attributes/marquee-bgcolor-reflection-test.html:testReflection failed
+
+"[MarqueeBgcolorAttribute] marquee.bgColor reflects <marquee bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+392. attributes/marquee-direction-down-reflection-test.html:testReflection failed
+
+"[MarqueeDirectionAttribute] marquee.direction reflects <marquee direction="down">"
+Expected <down> (String) but was <undefined>
+393. attributes/marquee-direction-left-reflection-test.html:testReflection failed
+
+"[MarqueeDirectionAttribute] marquee.direction reflects <marquee direction="left">"
+Expected <left> (String) but was <undefined>
+394. attributes/marquee-direction-right-reflection-test.html:testReflection failed
+
+"[MarqueeDirectionAttribute] marquee.direction reflects <marquee direction="right">"
+Expected <right> (String) but was <undefined>
+395. attributes/marquee-direction-up-reflection-test.html:testReflection failed
+
+"[MarqueeDirectionAttribute] marquee.direction reflects <marquee direction="up">"
+Expected <up> (String) but was <undefined>
+396. attributes/marquee-height-reflection-test.html:testReflection failed
+
+"[MarqueeHeightAttribute] marquee.height reflects <marquee height="7">"
+Expected <7> (String) but was <undefined>
+397. attributes/marquee-hspace-reflection-test.html:testReflection failed
+
+"[MarqueeHspaceAttribute] marquee.hspace reflects <marquee hspace="42">"
+Expected <42> (Number) but was <undefined>
+398. attributes/marquee-loop-reflection-test.html:testReflection failed
+
+"[MarqueeLoopAttribute] marquee.loop reflects <marquee loop="42">"
+Expected <42> (Number) but was <undefined>
+399. attributes/marquee-scrollamount-reflection-test.html:testReflection failed
+
+"[MarqueeScrollamountAttribute] marquee.scrollAmount reflects <marquee scrollamount="42">"
+Expected <42> (Number) but was <undefined>
+400. attributes/marquee-scrolldelay-reflection-test.html:testReflection failed
+
+"[MarqueeScrolldelayAttribute] marquee.scrollDelay reflects <marquee scrolldelay="42">"
+Expected <42> (Number) but was <undefined>
+401. attributes/marquee-truespeed-absent-reflection-test.html:testReflection failed
+
+"[MarqueeTruespeedAttribute] marquee.trueSpeed reflects <marquee>"
+Expected <false> (Boolean) but was <undefined>
+402. attributes/marquee-truespeed-reflection-test.html:testReflection failed
+
+"[MarqueeTruespeedAttribute] marquee.trueSpeed reflects <marquee truespeed>"
+Expected <true> (Boolean) but was <undefined>
+403. attributes/marquee-vspace-reflection-test.html:testReflection failed
+
+"[MarqueeVspaceAttribute] marquee.vspace reflects <marquee vspace="42">"
+Expected <42> (Number) but was <undefined>
+404. attributes/marquee-width-reflection-test.html:testReflection failed
+
+"[MarqueeWidthAttribute] marquee.width reflects <marquee width="7">"
+Expected <7> (String) but was <undefined>
+405. attributes/menu-align-center-reflection-test.html:testReflection failed
+
+"[MenuAlignAttribute] menu.align reflects <menu align="center">"
+Expected <center> (String) but was <undefined>
+406. attributes/menu-align-justify-reflection-test.html:testReflection failed
+
+"[MenuAlignAttribute] menu.align reflects <menu align="justify">"
+Expected <justify> (String) but was <undefined>
+407. attributes/menu-align-left-reflection-test.html:testReflection failed
+
+"[MenuAlignAttribute] menu.align reflects <menu align="left">"
+Expected <left> (String) but was <undefined>
+408. attributes/menu-align-right-reflection-test.html:testReflection failed
+
+"[MenuAlignAttribute] menu.align reflects <menu align="right">"
+Expected <right> (String) but was <undefined>
+409. attributes/menu-autosubmit-absent-reflection-test.html:testReflection failed
+
+"[MenuAutosubmitAttribute] menu.autosubmit reflects <menu>"
+Expected <false> (Boolean) but was <undefined>
+410. attributes/menu-autosubmit-reflection-test.html:testReflection failed
+
+"[MenuAutosubmitAttribute] menu.autosubmit reflects <menu autosubmit>"
+Expected <true> (Boolean) but was <undefined>
+411. attributes/menu-clear-all-reflection-test.html:testReflection failed
+
+"[MenuClearAttribute] menu.clear reflects <menu clear="all">"
+Expected <all> (String) but was <undefined>
+412. attributes/menu-clear-both-reflection-test.html:testReflection failed
+
+"[MenuClearAttribute] menu.clear reflects <menu clear="both">"
+Expected <both> (String) but was <undefined>
+413. attributes/menu-clear-left-reflection-test.html:testReflection failed
+
+"[MenuClearAttribute] menu.clear reflects <menu clear="left">"
+Expected <left> (String) but was <undefined>
+414. attributes/menu-clear-none-reflection-test.html:testReflection failed
+
+"[MenuClearAttribute] menu.clear reflects <menu clear="none">"
+Expected <none> (String) but was <undefined>
+415. attributes/menu-clear-right-reflection-test.html:testReflection failed
+
+"[MenuClearAttribute] menu.clear reflects <menu clear="right">"
+Expected <right> (String) but was <undefined>
+416. attributes/menu-height-reflection-test.html:testReflection failed
+
+"[MenuHeightAttribute] menu.height reflects <menu height="7">"
+Expected <7> (String) but was <undefined>
+417. attributes/menu-label-reflection-test.html:testReflection failed
+
+"[MenuLabelAttribute] menu.label reflects <menu label="foo">"
+Expected <foo> (String) but was <undefined>
+418. attributes/menu-start-reflection-test.html:testReflection failed
+
+"[MenuStartAttribute] menu.start reflects <menu start="42">"
+Expected <42> (Number) but was <undefined>
+419. attributes/menu-type-1-reflection-test.html:testReflection failed
+
+"[MenuTypeAttribute] menu.type reflects <menu type="1">"
+Expected <1> (String) but was <undefined>
+420. attributes/menu-type-a-reflection-test.html:testReflection failed
+
+"[MenuTypeAttribute] menu.type reflects <menu type="A">"
+Expected <A> (String) but was <undefined>
+421. attributes/menu-type-circle-reflection-test.html:testReflection failed
+
+"[MenuTypeAttribute] menu.type reflects <menu type="circle">"
+Expected <circle> (String) but was <undefined>
+422. attributes/menu-type-disc-reflection-test.html:testReflection failed
+
+"[MenuTypeAttribute] menu.type reflects <menu type="disc">"
+Expected <disc> (String) but was <undefined>
+423. attributes/menu-type-i-reflection-test.html:testReflection failed
+
+"[MenuTypeAttribute] menu.type reflects <menu type="I">"
+Expected <I> (String) but was <undefined>
+424. attributes/menu-type-square-reflection-test.html:testReflection failed
+
+"[MenuTypeAttribute] menu.type reflects <menu type="square">"
+Expected <square> (String) but was <undefined>
+425. attributes/menu-width-reflection-test.html:testReflection failed
+
+"[MenuWidthAttribute] menu.width reflects <menu width="7">"
+Expected <7> (String) but was <undefined>
+426. attributes/meta-charset-reflection-test.html:testReflection failed
+
+"[MetaCharsetAttribute] meta.charset reflects <meta charset="utf-8">"
+Expected <utf-8> (String) but was <undefined>
+427. attributes/meter-high-reflection-test.html:testReflection failed
+
+"[MeterHighAttribute] meter.high reflects <meter high="42">"
+Expected <42> (Number) but was <undefined>
+428. attributes/meter-low-reflection-test.html:testReflection failed
+
+"[MeterLowAttribute] meter.low reflects <meter low="42">"
+Expected <42> (Number) but was <undefined>
+429. attributes/meter-max-reflection-test.html:testReflection failed
+
+"[MeterMaxAttribute] meter.max reflects <meter max="42">"
+Expected <42> (Number) but was <undefined>
+430. attributes/meter-min-reflection-test.html:testReflection failed
+
+"[MeterMinAttribute] meter.min reflects <meter min="42">"
+Expected <42> (Number) but was <undefined>
+431. attributes/meter-optimum-reflection-test.html:testReflection failed
+
+"[MeterOptimumAttribute] meter.optimum reflects <meter optimum="42">"
+Expected <42> (Number) but was <undefined>
+432. attributes/meter-value-reflection-test.html:testReflection failed
+
+"[MeterValueAttribute] meter.value reflects <meter value="42">"
+Expected <42> (Number) but was <undefined>
+433. attributes/multicol-cols-reflection-test.html:testReflection failed
+
+"[MulticolColsAttribute] multicol.cols reflects <multicol cols="42">"
+Expected <42> (Number) but was <undefined>
+434. attributes/multicol-gutter-reflection-test.html:testReflection failed
+
+"[MulticolGutterAttribute] multicol.gutter reflects <multicol gutter="7">"
+Expected <7> (String) but was <undefined>
+435. attributes/multicol-width-reflection-test.html:testReflection failed
+
+"[MulticolWidthAttribute] multicol.width reflects <multicol width="7">"
+Expected <7> (String) but was <undefined>
+436. attributes/nextid-n-reflection-test.html:testReflection failed
+
+"[NextidNAttribute] nextid.n reflects <nextid n="foo">"
+Expected <foo> (String) but was <undefined>
+437. attributes/object-align-absbottom-reflection-test.html:testReflection failed
+
+"[ObjectAlignAttribute] object.align reflects <object align="absbottom">"
+Expected <absBottom> (String) but was <absbottom> (String)
+438. attributes/object-align-absmiddle-reflection-test.html:testReflection failed
+
+"[ObjectAlignAttribute] object.align reflects <object align="absmiddle">"
+Expected <absMiddle> (String) but was <absmiddle> (String)
+439. attributes/object-align-texttop-reflection-test.html:testReflection failed
+
+"[ObjectAlignAttribute] object.align reflects <object align="texttop">"
+Expected <textTop> (String) but was <texttop> (String)
+440. attributes/object-alt-reflection-test.html:testReflection failed
+
+"[ObjectAltAttribute] object.alt reflects <object alt="foo">"
+Expected <foo> (String) but was <undefined>
+441. attributes/object-classid-reflection-test.html:testReflection failed
+
+"[ObjectClassidAttribute] object.classid reflects <object classid="foo">"
+Expected <foo> (String) but was <undefined>
+442. attributes/object-codebase-reflection-test.html:testReflection failed
+
+"[ObjectCodebaseAttribute] object.codebase reflects <object codebase="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+443. attributes/object-codetype-reflection-test.html:testReflection failed
+
+"[ObjectCodetypeAttribute] object.codetype reflects <object codetype="text/html">"
+Expected <text/html> (String) but was <undefined>
+444. attributes/object-declare-reflection-test.html:testReflection failed
+
+"[ObjectDeclareAttribute] object.declare reflects <object declare="foo">"
+Expected <foo> (String) but was <true> (Boolean)
+445. attributes/ol-align-center-reflection-test.html:testReflection failed
+
+"[OlAlignAttribute] ol.align reflects <ol align="center">"
+Expected <center> (String) but was <undefined>
+446. attributes/ol-align-justify-reflection-test.html:testReflection failed
+
+"[OlAlignAttribute] ol.align reflects <ol align="justify">"
+Expected <justify> (String) but was <undefined>
+447. attributes/ol-align-left-reflection-test.html:testReflection failed
+
+"[OlAlignAttribute] ol.align reflects <ol align="left">"
+Expected <left> (String) but was <undefined>
+448. attributes/ol-align-right-reflection-test.html:testReflection failed
+
+"[OlAlignAttribute] ol.align reflects <ol align="right">"
+Expected <right> (String) but was <undefined>
+449. attributes/ol-clear-all-reflection-test.html:testReflection failed
+
+"[OlClearAttribute] ol.clear reflects <ol clear="all">"
+Expected <all> (String) but was <undefined>
+450. attributes/ol-clear-both-reflection-test.html:testReflection failed
+
+"[OlClearAttribute] ol.clear reflects <ol clear="both">"
+Expected <both> (String) but was <undefined>
+451. attributes/ol-clear-left-reflection-test.html:testReflection failed
+
+"[OlClearAttribute] ol.clear reflects <ol clear="left">"
+Expected <left> (String) but was <undefined>
+452. attributes/ol-clear-none-reflection-test.html:testReflection failed
+
+"[OlClearAttribute] ol.clear reflects <ol clear="none">"
+Expected <none> (String) but was <undefined>
+453. attributes/ol-clear-right-reflection-test.html:testReflection failed
+
+"[OlClearAttribute] ol.clear reflects <ol clear="right">"
+Expected <right> (String) but was <undefined>
+454. attributes/ol-height-reflection-test.html:testReflection failed
+
+"[OlHeightAttribute] ol.height reflects <ol height="7">"
+Expected <7> (String) but was <undefined>
+455. attributes/ol-value-reflection-test.html:testReflection failed
+
+"[OlValueAttribute] ol.value reflects <ol value="42">"
+Expected <42> (Number) but was <undefined>
+456. attributes/ol-width-reflection-test.html:testReflection failed
+
+"[OlWidthAttribute] ol.width reflects <ol width="7">"
+Expected <7> (String) but was <undefined>
+457. attributes/option-selected-absent-reflection-test.html:testReflection failed
+
+"[OptionSelectedAttribute] option.selected reflects <select><option>"
+Expected <false> (Boolean) but was <true> (Boolean)
+458. attributes/p-clear-all-reflection-test.html:testReflection failed
+
+"[PClearAttribute] p.clear reflects <p clear="all">"
+Expected <all> (String) but was <undefined>
+459. attributes/p-clear-both-reflection-test.html:testReflection failed
+
+"[PClearAttribute] p.clear reflects <p clear="both">"
+Expected <both> (String) but was <undefined>
+460. attributes/p-clear-left-reflection-test.html:testReflection failed
+
+"[PClearAttribute] p.clear reflects <p clear="left">"
+Expected <left> (String) but was <undefined>
+461. attributes/p-clear-none-reflection-test.html:testReflection failed
+
+"[PClearAttribute] p.clear reflects <p clear="none">"
+Expected <none> (String) but was <undefined>
+462. attributes/p-clear-right-reflection-test.html:testReflection failed
+
+"[PClearAttribute] p.clear reflects <p clear="right">"
+Expected <right> (String) but was <undefined>
+463. attributes/p-height-reflection-test.html:testReflection failed
+
+"[PHeightAttribute] p.height reflects <p height="7">"
+Expected <7> (String) but was <undefined>
+464. attributes/p-width-reflection-test.html:testReflection failed
+
+"[PWidthAttribute] p.width reflects <p width="7">"
+Expected <7> (String) but was <undefined>
+465. attributes/param-name-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'name' of null"
+466. attributes/param-type-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'type' of null"
+467. attributes/param-value-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'value' of null"
+468. attributes/param-valuetype-reflection-test.html:testReflection had an error
+
+Error message is:
+"TypeError: Cannot read property 'valueType' of null"
+469. attributes/pre-clear-all-reflection-test.html:testReflection failed
+
+"[PreClearAttribute] pre.clear reflects <pre clear="all">"
+Expected <all> (String) but was <undefined>
+470. attributes/pre-clear-both-reflection-test.html:testReflection failed
+
+"[PreClearAttribute] pre.clear reflects <pre clear="both">"
+Expected <both> (String) but was <undefined>
+471. attributes/pre-clear-left-reflection-test.html:testReflection failed
+
+"[PreClearAttribute] pre.clear reflects <pre clear="left">"
+Expected <left> (String) but was <undefined>
+472. attributes/pre-clear-none-reflection-test.html:testReflection failed
+
+"[PreClearAttribute] pre.clear reflects <pre clear="none">"
+Expected <none> (String) but was <undefined>
+473. attributes/pre-clear-right-reflection-test.html:testReflection failed
+
+"[PreClearAttribute] pre.clear reflects <pre clear="right">"
+Expected <right> (String) but was <undefined>
+474. attributes/pre-cols-reflection-test.html:testReflection failed
+
+"[PreColsAttribute] pre.cols reflects <pre cols="foo">"
+Expected <foo> (String) but was <undefined>
+475. attributes/pre-variable-absent-reflection-test.html:testReflection failed
+
+"[PreVariableAttribute] pre.variable reflects <pre>"
+Expected <false> (Boolean) but was <undefined>
+476. attributes/pre-variable-reflection-test.html:testReflection failed
+
+"[PreVariableAttribute] pre.variable reflects <pre variable>"
+Expected <true> (Boolean) but was <undefined>
+477. attributes/pre-width-reflection-test.html:testReflection failed
+
+"[PreWidthAttribute] pre.width reflects <pre width="7">"
+Expected <7> (String) but was <7> (Number)
+478. attributes/pre-wrap-hard-reflection-test.html:testReflection failed
+
+"[PreWrapAttribute] pre.wrap reflects <pre wrap="hard">"
+Expected <hard> (String) but was <true> (Boolean)
+479. attributes/pre-wrap-off-reflection-test.html:testReflection failed
+
+"[PreWrapAttribute] pre.wrap reflects <pre wrap="off">"
+Expected <off> (String) but was <true> (Boolean)
+480. attributes/pre-wrap-soft-reflection-test.html:testReflection failed
+
+"[PreWrapAttribute] pre.wrap reflects <pre wrap="soft">"
+Expected <soft> (String) but was <true> (Boolean)
+481. attributes/progress-max-reflection-test.html:testReflection failed
+
+"[ProgressMaxAttribute] progress.max reflects <progress max="42">"
+Expected <42> (Number) but was <undefined>
+482. attributes/progress-value-reflection-test.html:testReflection failed
+
+"[ProgressValueAttribute] progress.value reflects <progress value="42">"
+Expected <42> (Number) but was <undefined>
+483. attributes/script-archive-reflection-test.html:testReflection failed
+
+"[ScriptArchiveAttribute] script.archive reflects <script archive="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+484. attributes/script-async-absent-reflection-test.html:testReflection failed
+
+"[ScriptAsyncAttribute] script.async reflects <script>"
+Expected <false> (Boolean) but was <undefined>
+485. attributes/script-async-reflection-test.html:testReflection failed
+
+"[ScriptAsyncAttribute] script.async reflects <script async>"
+Expected <true> (Boolean) but was <undefined>
+486. attributes/script-event-reflection-test.html:testReflection failed
+
+"[ScriptEventAttribute] script.event reflects <script event="foo">"
+Expected <foo> (String) but was <> (String)
+487. attributes/script-for-reflection-test.html:testReflection failed
+
+"[ScriptForAttribute] script.htmlFor reflects <script for="foo">"
+Expected <foo> (String) but was <> (String)
+488. attributes/script-language-reflection-test.html:testReflection failed
+
+"[ScriptLanguageAttribute] script.language reflects <script language="foo">"
+Expected <foo> (String) but was <undefined>
+489. attributes/select-align-absbottom-reflection-test.html:testReflection failed
+
+"[SelectAlignAttribute] select.align reflects <select align="absbottom">"
+Expected <absBottom> (String) but was <undefined>
+490. attributes/select-align-absmiddle-reflection-test.html:testReflection failed
+
+"[SelectAlignAttribute] select.align reflects <select align="absmiddle">"
+Expected <absMiddle> (String) but was <undefined>
+491. attributes/select-align-baseline-reflection-test.html:testReflection failed
+
+"[SelectAlignAttribute] select.align reflects <select align="baseline">"
+Expected <baseline> (String) but was <undefined>
+492. attributes/select-align-bottom-reflection-test.html:testReflection failed
+
+"[SelectAlignAttribute] select.align reflects <select align="bottom">"
+Expected <bottom> (String) but was <undefined>
+493. attributes/select-align-left-reflection-test.html:testReflection failed
+
+"[SelectAlignAttribute] select.align reflects <select align="left">"
+Expected <left> (String) but was <undefined>
+494. attributes/select-align-middle-reflection-test.html:testReflection failed
+
+"[SelectAlignAttribute] select.align reflects <select align="middle">"
+Expected <middle> (String) but was <undefined>
+495. attributes/select-align-right-reflection-test.html:testReflection failed
+
+"[SelectAlignAttribute] select.align reflects <select align="right">"
+Expected <right> (String) but was <undefined>
+496. attributes/select-align-texttop-reflection-test.html:testReflection failed
+
+"[SelectAlignAttribute] select.align reflects <select align="texttop">"
+Expected <textTop> (String) but was <undefined>
+497. attributes/select-align-top-reflection-test.html:testReflection failed
+
+"[SelectAlignAttribute] select.align reflects <select align="top">"
+Expected <top> (String) but was <undefined>
+498. attributes/select-value-reflection-test.html:testReflection failed
+
+"[SelectValueAttribute] select.value reflects <select value="foo">"
+Expected <foo> (String) but was <> (String)
+499. attributes/select-width-reflection-test.html:testReflection failed
+
+"[SelectWidthAttribute] select.width reflects <select width="7">"
+Expected <7> (String) but was <undefined>
+500. attributes/sound-delay-reflection-test.html:testReflection failed
+
+"[SoundDelayAttribute] sound.delay reflects <sound delay="42">"
+Expected <42> (Number) but was <undefined>
+501. attributes/sound-loop-reflection-test.html:testReflection failed
+
+"[SoundLoopAttribute] sound.loop reflects <sound loop="42">"
+Expected <42> (Number) but was <undefined>
+502. attributes/sound-src-reflection-test.html:testReflection failed
+
+"[SoundSrcAttribute] sound.src reflects <sound src="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+503. attributes/spacer-align-center-reflection-test.html:testReflection failed
+
+"[SpacerAlignAttribute] spacer.align reflects <spacer align="center">"
+Expected <center> (String) but was <undefined>
+504. attributes/spacer-align-justify-reflection-test.html:testReflection failed
+
+"[SpacerAlignAttribute] spacer.align reflects <spacer align="justify">"
+Expected <justify> (String) but was <undefined>
+505. attributes/spacer-align-left-reflection-test.html:testReflection failed
+
+"[SpacerAlignAttribute] spacer.align reflects <spacer align="left">"
+Expected <left> (String) but was <undefined>
+506. attributes/spacer-align-right-reflection-test.html:testReflection failed
+
+"[SpacerAlignAttribute] spacer.align reflects <spacer align="right">"
+Expected <right> (String) but was <undefined>
+507. attributes/spacer-height-reflection-test.html:testReflection failed
+
+"[SpacerHeightAttribute] spacer.height reflects <spacer height="7">"
+Expected <7> (String) but was <undefined>
+508. attributes/spacer-size-reflection-test.html:testReflection failed
+
+"[SpacerSizeAttribute] spacer.size reflects <spacer size="42">"
+Expected <42> (Number) but was <undefined>
+509. attributes/spacer-type-reflection-test.html:testReflection failed
+
+"[SpacerTypeAttribute] spacer.type reflects <spacer type="vertical">"
+Expected <vertical> (String) but was <undefined>
+510. attributes/spacer-width-reflection-test.html:testReflection failed
+
+"[SpacerWidthAttribute] spacer.width reflects <spacer width="7">"
+Expected <7> (String) but was <undefined>
+511. attributes/style-language-reflection-test.html:testReflection failed
+
+"[StyleLanguageAttribute] style.language reflects <style language="foo">"
+Expected <foo> (String) but was <undefined>
+512. attributes/style-scoped-absent-reflection-test.html:testReflection failed
+
+"[StyleScopedAttribute] style.scoped reflects <style>"
+Expected <false> (Boolean) but was <undefined>
+513. attributes/style-scoped-reflection-test.html:testReflection failed
+
+"[StyleScopedAttribute] style.scoped reflects <style scoped>"
+Expected <true> (Boolean) but was <undefined>
+514. attributes/table-background-reflection-test.html:testReflection failed
+
+"[TableBackgroundAttribute] table.background reflects <table background="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+515. attributes/table-bordercolor-reflection-test.html:testReflection failed
+
+"[TableBordercolorAttribute] table.borderColor reflects <table bordercolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+516. attributes/table-bordercolordark-reflection-test.html:testReflection failed
+
+"[TableBordercolordarkAttribute] table.borderColorDark reflects <table bordercolordark="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+517. attributes/table-bordercolorlight-reflection-test.html:testReflection failed
+
+"[TableBordercolorlightAttribute] table.borderColorLight reflects <table bordercolorlight="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+518. attributes/table-bottompadding-reflection-test.html:testReflection failed
+
+"[TableBottompaddingAttribute] table.bottomPadding reflects <table bottompadding="42">"
+Expected <42> (Number) but was <undefined>
+519. attributes/table-clear-all-reflection-test.html:testReflection failed
+
+"[TableClearAttribute] table.clear reflects <table clear="all">"
+Expected <all> (String) but was <undefined>
+520. attributes/table-clear-both-reflection-test.html:testReflection failed
+
+"[TableClearAttribute] table.clear reflects <table clear="both">"
+Expected <both> (String) but was <undefined>
+521. attributes/table-clear-left-reflection-test.html:testReflection failed
+
+"[TableClearAttribute] table.clear reflects <table clear="left">"
+Expected <left> (String) but was <undefined>
+522. attributes/table-clear-none-reflection-test.html:testReflection failed
+
+"[TableClearAttribute] table.clear reflects <table clear="none">"
+Expected <none> (String) but was <undefined>
+523. attributes/table-clear-right-reflection-test.html:testReflection failed
+
+"[TableClearAttribute] table.clear reflects <table clear="right">"
+Expected <right> (String) but was <undefined>
+524. attributes/table-cols-reflection-test.html:testReflection failed
+
+"[TableColsAttribute] table.cols reflects <table cols="42">"
+Expected <42> (Number) but was <undefined>
+525. attributes/table-datapagesize-reflection-test.html:testReflection failed
+
+"[TableDatapagesizeAttribute] table.dataPageSize reflects <table datapagesize="42">"
+Expected <42> (Number) but was <undefined>
+526. attributes/table-height-reflection-test.html:testReflection failed
+
+"[TableHeightAttribute] table.height reflects <table height="7">"
+Expected <7> (String) but was <undefined>
+527. attributes/table-hspace-reflection-test.html:testReflection failed
+
+"[TableHspaceAttribute] table.hspace reflects <table hspace="42">"
+Expected <42> (Number) but was <undefined>
+528. attributes/table-leftpadding-reflection-test.html:testReflection failed
+
+"[TableLeftpaddingAttribute] table.leftPadding reflects <table leftpadding="42">"
+Expected <42> (Number) but was <undefined>
+529. attributes/table-rightpadding-reflection-test.html:testReflection failed
+
+"[TableRightpaddingAttribute] table.rightPadding reflects <table rightpadding="42">"
+Expected <42> (Number) but was <undefined>
+530. attributes/table-toppadding-reflection-test.html:testReflection failed
+
+"[TableToppaddingAttribute] table.topPadding reflects <table toppadding="42">"
+Expected <42> (Number) but was <undefined>
+531. attributes/table-vspace-reflection-test.html:testReflection failed
+
+"[TableVspaceAttribute] table.vspace reflects <table vspace="42">"
+Expected <42> (Number) but was <undefined>
+532. attributes/tbody-bgcolor-reflection-test.html:testReflection failed
+
+"[TbodyBgcolorAttribute] tbody.bgColor reflects <tbody bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+533. attributes/tbody-ch-reflection-test.html:testReflection failed
+
+"[TbodyChAttribute] tbody.ch reflects <tbody ch="C">"
+Expected <C> (String) but was <> (String)
+534. attributes/tbody-char-reflection-test.html:testReflection failed
+
+"[TbodyCharAttribute] tbody.char reflects <tbody char="C">"
+Expected <C> (String) but was <undefined>
+535. attributes/tbody-charoff-reflection-test.html:testReflection failed
+
+"[TbodyCharoffAttribute] tbody.charoff reflects <tbody charoff="7">"
+Expected <7> (String) but was <undefined>
+536. attributes/tbody-choff-reflection-test.html:testReflection failed
+
+"[TbodyChoffAttribute] tbody.choff reflects <tbody choff="7">"
+Expected <7> (String) but was <undefined>
+537. attributes/td-background-reflection-test.html:testReflection failed
+
+"[TdBackgroundAttribute] td.background reflects <td background="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+538. attributes/td-bordercolor-reflection-test.html:testReflection failed
+
+"[TdBordercolorAttribute] td.borderColor reflects <td bordercolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+539. attributes/td-bordercolordark-reflection-test.html:testReflection failed
+
+"[TdBordercolordarkAttribute] td.borderColorDark reflects <td bordercolordark="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+540. attributes/td-bordercolorlight-reflection-test.html:testReflection failed
+
+"[TdBordercolorlightAttribute] td.borderColorLight reflects <td bordercolorlight="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+541. attributes/td-ch-reflection-test.html:testReflection failed
+
+"[TdChAttribute] td.ch reflects <td ch="C">"
+Expected <C> (String) but was <> (String)
+542. attributes/td-char-reflection-test.html:testReflection failed
+
+"[TdCharAttribute] td.char reflects <td char="C">"
+Expected <C> (String) but was <undefined>
+543. attributes/td-charoff-reflection-test.html:testReflection failed
+
+"[TdCharoffAttribute] td.charoff reflects <td charoff="7">"
+Expected <7> (String) but was <undefined>
+544. attributes/td-choff-reflection-test.html:testReflection failed
+
+"[TdChoffAttribute] td.choff reflects <td choff="7">"
+Expected <7> (String) but was <undefined>
+545. attributes/textarea-height-reflection-test.html:testReflection failed
+
+"[TextareaHeightAttribute] textarea.height reflects <textarea height="7">"
+Expected <7> (String) but was <undefined>
+546. attributes/textarea-width-reflection-test.html:testReflection failed
+
+"[TextareaWidthAttribute] textarea.width reflects <textarea width="7">"
+Expected <7> (String) but was <undefined>
+547. attributes/textarea-wrap-hard-reflection-test.html:testReflection failed
+
+"[TextareaWrapAttribute] textarea.wrap reflects <textarea wrap="hard">"
+Expected <hard> (String) but was <undefined>
+548. attributes/textarea-wrap-off-reflection-test.html:testReflection failed
+
+"[TextareaWrapAttribute] textarea.wrap reflects <textarea wrap="off">"
+Expected <off> (String) but was <undefined>
+549. attributes/textarea-wrap-soft-reflection-test.html:testReflection failed
+
+"[TextareaWrapAttribute] textarea.wrap reflects <textarea wrap="soft">"
+Expected <soft> (String) but was <undefined>
+550. attributes/tfoot-bgcolor-reflection-test.html:testReflection failed
+
+"[TfootBgcolorAttribute] tfoot.bgColor reflects <tfoot bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+551. attributes/tfoot-ch-reflection-test.html:testReflection failed
+
+"[TfootChAttribute] tfoot.ch reflects <tfoot ch="C">"
+Expected <C> (String) but was <> (String)
+552. attributes/tfoot-char-reflection-test.html:testReflection failed
+
+"[TfootCharAttribute] tfoot.char reflects <tfoot char="C">"
+Expected <C> (String) but was <undefined>
+553. attributes/tfoot-charoff-reflection-test.html:testReflection failed
+
+"[TfootCharoffAttribute] tfoot.charoff reflects <tfoot charoff="7">"
+Expected <7> (String) but was <undefined>
+554. attributes/tfoot-choff-reflection-test.html:testReflection failed
+
+"[TfootChoffAttribute] tfoot.choff reflects <tfoot choff="7">"
+Expected <7> (String) but was <undefined>
+555. attributes/th-background-reflection-test.html:testReflection failed
+
+"[ThBackgroundAttribute] th.background reflects <th background="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+556. attributes/th-bordercolor-reflection-test.html:testReflection failed
+
+"[ThBordercolorAttribute] th.borderColor reflects <th bordercolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+557. attributes/th-bordercolordark-reflection-test.html:testReflection failed
+
+"[ThBordercolordarkAttribute] th.borderColorDark reflects <th bordercolordark="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+558. attributes/th-bordercolorlight-reflection-test.html:testReflection failed
+
+"[ThBordercolorlightAttribute] th.borderColorLight reflects <th bordercolorlight="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+559. attributes/th-ch-reflection-test.html:testReflection failed
+
+"[ThChAttribute] th.ch reflects <th ch="C">"
+Expected <C> (String) but was <> (String)
+560. attributes/th-char-reflection-test.html:testReflection failed
+
+"[ThCharAttribute] th.char reflects <th char="C">"
+Expected <C> (String) but was <undefined>
+561. attributes/th-charoff-reflection-test.html:testReflection failed
+
+"[ThCharoffAttribute] th.charoff reflects <th charoff="7">"
+Expected <7> (String) but was <undefined>
+562. attributes/th-choff-reflection-test.html:testReflection failed
+
+"[ThChoffAttribute] th.choff reflects <th choff="7">"
+Expected <7> (String) but was <undefined>
+563. attributes/thead-bgcolor-reflection-test.html:testReflection failed
+
+"[TheadBgcolorAttribute] thead.bgColor reflects <thead bgcolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+564. attributes/thead-ch-reflection-test.html:testReflection failed
+
+"[TheadChAttribute] thead.ch reflects <thead ch="C">"
+Expected <C> (String) but was <> (String)
+565. attributes/thead-char-reflection-test.html:testReflection failed
+
+"[TheadCharAttribute] thead.char reflects <thead char="C">"
+Expected <C> (String) but was <undefined>
+566. attributes/thead-charoff-reflection-test.html:testReflection failed
+
+"[TheadCharoffAttribute] thead.charoff reflects <thead charoff="7">"
+Expected <7> (String) but was <undefined>
+567. attributes/thead-choff-reflection-test.html:testReflection failed
+
+"[TheadChoffAttribute] thead.choff reflects <thead choff="7">"
+Expected <7> (String) but was <undefined>
+568. attributes/time-datetime-reflection-test.html:testReflection failed
+
+"[TimeDatetimeAttribute] time.dateTime reflects <time datetime="2008-01-01T00:00:00Z">"
+Expected <2008-01-01T00:00:00Z> (String) but was <undefined>
+569. attributes/tr-background-reflection-test.html:testReflection failed
+
+"[TrBackgroundAttribute] tr.background reflects <tr background="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+570. attributes/tr-bordercolor-reflection-test.html:testReflection failed
+
+"[TrBordercolorAttribute] tr.borderColor reflects <tr bordercolor="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+571. attributes/tr-bordercolordark-reflection-test.html:testReflection failed
+
+"[TrBordercolordarkAttribute] tr.borderColorDark reflects <tr bordercolordark="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+572. attributes/tr-bordercolorlight-reflection-test.html:testReflection failed
+
+"[TrBordercolorlightAttribute] tr.borderColorLight reflects <tr bordercolorlight="#ffffff">"
+Expected <#ffffff> (String) but was <undefined>
+573. attributes/tr-ch-reflection-test.html:testReflection failed
+
+"[TrChAttribute] tr.ch reflects <tr ch="C">"
+Expected <C> (String) but was <> (String)
+574. attributes/tr-char-reflection-test.html:testReflection failed
+
+"[TrCharAttribute] tr.char reflects <tr char="C">"
+Expected <C> (String) but was <undefined>
+575. attributes/tr-charoff-reflection-test.html:testReflection failed
+
+"[TrCharoffAttribute] tr.charoff reflects <tr charoff="7">"
+Expected <7> (String) but was <undefined>
+576. attributes/tr-choff-reflection-test.html:testReflection failed
+
+"[TrChoffAttribute] tr.choff reflects <tr choff="7">"
+Expected <7> (String) but was <undefined>
+577. attributes/tr-height-reflection-test.html:testReflection failed
+
+"[TrHeightAttribute] tr.height reflects <tr height="7">"
+Expected <7> (String) but was <undefined>
+578. attributes/tr-nowrap-absent-reflection-test.html:testReflection failed
+
+"[TrNowrapAttribute] tr.noWrap reflects <tr>"
+Expected <false> (Boolean) but was <undefined>
+579. attributes/tr-nowrap-reflection-test.html:testReflection failed
+
+"[TrNowrapAttribute] tr.noWrap reflects <tr nowrap>"
+Expected <true> (Boolean) but was <undefined>
+580. attributes/ul-align-center-reflection-test.html:testReflection failed
+
+"[UlAlignAttribute] ul.align reflects <ul align="center">"
+Expected <center> (String) but was <undefined>
+581. attributes/ul-align-justify-reflection-test.html:testReflection failed
+
+"[UlAlignAttribute] ul.align reflects <ul align="justify">"
+Expected <justify> (String) but was <undefined>
+582. attributes/ul-align-left-reflection-test.html:testReflection failed
+
+"[UlAlignAttribute] ul.align reflects <ul align="left">"
+Expected <left> (String) but was <undefined>
+583. attributes/ul-align-right-reflection-test.html:testReflection failed
+
+"[UlAlignAttribute] ul.align reflects <ul align="right">"
+Expected <right> (String) but was <undefined>
+584. attributes/ul-clear-all-reflection-test.html:testReflection failed
+
+"[UlClearAttribute] ul.clear reflects <ul clear="all">"
+Expected <all> (String) but was <undefined>
+585. attributes/ul-clear-both-reflection-test.html:testReflection failed
+
+"[UlClearAttribute] ul.clear reflects <ul clear="both">"
+Expected <both> (String) but was <undefined>
+586. attributes/ul-clear-left-reflection-test.html:testReflection failed
+
+"[UlClearAttribute] ul.clear reflects <ul clear="left">"
+Expected <left> (String) but was <undefined>
+587. attributes/ul-clear-none-reflection-test.html:testReflection failed
+
+"[UlClearAttribute] ul.clear reflects <ul clear="none">"
+Expected <none> (String) but was <undefined>
+588. attributes/ul-clear-right-reflection-test.html:testReflection failed
+
+"[UlClearAttribute] ul.clear reflects <ul clear="right">"
+Expected <right> (String) but was <undefined>
+589. attributes/ul-height-reflection-test.html:testReflection failed
+
+"[UlHeightAttribute] ul.height reflects <ul height="7">"
+Expected <7> (String) but was <undefined>
+590. attributes/ul-start-reflection-test.html:testReflection failed
+
+"[UlStartAttribute] ul.start reflects <ul start="42">"
+Expected <42> (Number) but was <undefined>
+591. attributes/ul-value-reflection-test.html:testReflection failed
+
+"[UlValueAttribute] ul.value reflects <ul value="42">"
+Expected <42> (Number) but was <undefined>
+592. attributes/ul-width-reflection-test.html:testReflection failed
+
+"[UlWidthAttribute] ul.width reflects <ul width="7">"
+Expected <7> (String) but was <undefined>
+593. attributes/video-autoplay-absent-reflection-test.html:testReflection failed
+
+"[VideoAutoplayAttribute] video.autoplay reflects <video>"
+Expected <false> (Boolean) but was <undefined>
+594. attributes/video-autoplay-reflection-test.html:testReflection failed
+
+"[VideoAutoplayAttribute] video.autoplay reflects <video autoplay>"
+Expected <true> (Boolean) but was <undefined>
+595. attributes/video-controls-absent-reflection-test.html:testReflection failed
+
+"[VideoControlsAttribute] video.controls reflects <video>"
+Expected <false> (Boolean) but was <undefined>
+596. attributes/video-controls-reflection-test.html:testReflection failed
+
+"[VideoControlsAttribute] video.controls reflects <video controls>"
+Expected <true> (Boolean) but was <undefined>
+597. attributes/video-end-reflection-test.html:testReflection failed
+
+"[VideoEndAttribute] video.end reflects <video end="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+598. attributes/video-loopcount-reflection-test.html:testReflection failed
+
+"[VideoLoopcountAttribute] video.loopCount reflects <video loopcount="42">"
+Expected <42> (Number) but was <undefined>
+599. attributes/video-loopend-reflection-test.html:testReflection failed
+
+"[VideoLoopendAttribute] video.loopEnd reflects <video loopend="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+600. attributes/video-loopstart-reflection-test.html:testReflection failed
+
+"[VideoLoopstartAttribute] video.loopStart reflects <video loopstart="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+601. attributes/video-src-reflection-test.html:testReflection failed
+
+"[VideoSrcAttribute] video.src reflects <video src="http://www.example.com/">"
+Expected <http://www.example.com/> (String) but was <undefined>
+602. attributes/video-start-reflection-test.html:testReflection failed
+
+"[VideoStartAttribute] video.start reflects <video start="00:00:00.00">"
+Expected <00:00:00.00> (String) but was <undefined>
+603. attributes/xmp-align-center-reflection-test.html:testReflection failed
+
+"[XmpAlignAttribute] xmp.align reflects <xmp align="center">"
+Expected <center> (String) but was <undefined>
+604. attributes/xmp-align-justify-reflection-test.html:testReflection failed
+
+"[XmpAlignAttribute] xmp.align reflects <xmp align="justify">"
+Expected <justify> (String) but was <undefined>
+605. attributes/xmp-align-left-reflection-test.html:testReflection failed
+
+"[XmpAlignAttribute] xmp.align reflects <xmp align="left">"
+Expected <left> (String) but was <undefined>
+606. attributes/xmp-align-right-reflection-test.html:testReflection failed
+
+"[XmpAlignAttribute] xmp.align reflects <xmp align="right">"
+Expected <right> (String) but was <undefined>
+607. elements/area-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+608. elements/caption-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+609. elements/col-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+610. elements/colgroup-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+611. elements/frame-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+612. elements/frameset-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+613. elements/head-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+614. elements/image-element-applies-style-test.html:testDOM failed
+
+"[ImageElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+615. elements/input-type-button-element-applies-style-test.html:testDOM failed
+
+"[InputTypeButtonElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+616. elements/input-type-checkbox-element-applies-style-test.html:testDOM failed
+
+"[InputTypeCheckboxElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+617. elements/input-type-file-element-applies-style-test.html:testDOM failed
+
+"[InputTypeFileElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+618. elements/input-type-hidden-element-applies-style-test.html:testDOM failed
+
+"[InputTypeHiddenElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+619. elements/input-type-image-element-applies-style-test.html:testDOM failed
+
+"[InputTypeImageElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+620. elements/input-type-password-element-applies-style-test.html:testDOM failed
+
+"[InputTypePasswordElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+621. elements/input-type-radio-element-applies-style-test.html:testDOM failed
+
+"[InputTypeRadioElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+622. elements/input-type-reset-element-applies-style-test.html:testDOM failed
+
+"[InputTypeResetElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+623. elements/input-type-submit-element-applies-style-test.html:testDOM failed
+
+"[InputTypeSubmitElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+624. elements/input-type-text-element-applies-style-test.html:testDOM failed
+
+"[InputTypeTextElement] applies style"
+Expected <rgb(171, 205, 239)> (String) but was <rgb(0, 0, 0)> (String)
+625. elements/legend-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+626. elements/optgroup-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+627. elements/option-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+628. elements/param-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+629. elements/tbody-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+630. elements/td-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+631. elements/tfoot-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+632. elements/th-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+633. elements/thead-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+634. elements/tr-element-applies-style-test.html:testDOM had an error
+
+Error message is:
+"TypeError: Cannot read property 'nodeType' of null"
+635. elements/area-element-appears-in-dom-test.html:testDOM failed
+
+"[AreaElement] appears in DOM"
+Expected not to be <null>
+636. elements/caption-element-appears-in-dom-test.html:testDOM failed
+
+"[CaptionElement] appears in DOM"
+Expected not to be <null>
+637. elements/col-element-appears-in-dom-test.html:testDOM failed
+
+"[ColElement] appears in DOM"
+Expected not to be <null>
+638. elements/colgroup-element-appears-in-dom-test.html:testDOM failed
+
+"[ColgroupElement] appears in DOM"
+Expected not to be <null>
+639. elements/frame-element-appears-in-dom-test.html:testDOM failed
+
+"[FrameElement] appears in DOM"
+Expected not to be <null>
+640. elements/frameset-element-appears-in-dom-test.html:testDOM failed
+
+"[FramesetElement] appears in DOM"
+Expected not to be <null>
+641. elements/head-element-appears-in-dom-test.html:testDOM failed
+
+"[HeadElement] appears in DOM"
+Expected not to be <null>
+642. elements/legend-element-appears-in-dom-test.html:testDOM failed
+
+"[LegendElement] appears in DOM"
+Expected not to be <null>
+643. elements/optgroup-element-appears-in-dom-test.html:testDOM failed
+
+"[OptgroupElement] appears in DOM"
+Expected not to be <null>
+644. elements/option-element-appears-in-dom-test.html:testDOM failed
+
+"[OptionElement] appears in DOM"
+Expected not to be <null>
+645. elements/param-element-appears-in-dom-test.html:testDOM failed
+
+"[ParamElement] appears in DOM"
+Expected not to be <null>
+646. elements/tbody-element-appears-in-dom-test.html:testDOM failed
+
+"[TbodyElement] appears in DOM"
+Expected not to be <null>
+647. elements/td-element-appears-in-dom-test.html:testDOM failed
+
+"[TdElement] appears in DOM"
+Expected not to be <null>
+648. elements/tfoot-element-appears-in-dom-test.html:testDOM failed
+
+"[TfootElement] appears in DOM"
+Expected not to be <null>
+649. elements/th-element-appears-in-dom-test.html:testDOM failed
+
+"[ThElement] appears in DOM"
+Expected not to be <null>
+650. elements/thead-element-appears-in-dom-test.html:testDOM failed
+
+"[TheadElement] appears in DOM"
+Expected not to be <null>
+651. elements/tr-element-appears-in-dom-test.html:testDOM failed
+
+"[TrElement] appears in DOM"
+Expected not to be <null>

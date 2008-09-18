@@ -1,0 +1,512 @@
+Tests with problems (127 total) - JsUnit
+
+Running on Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.19 (KHTML, like Gecko) Chrome/0.2.152.1 Safari/525.19
+
+1. crypto/crypto-alert-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: crypto is not defined"
+2. crypto/crypto-disableRightClick-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: crypto is not defined"
+3. crypto/crypto-enableSmartCardEvents-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: crypto is not defined"
+4. crypto/crypto-generateCRMFRequest-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: crypto is not defined"
+5. crypto/crypto-importUserCertificates-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: crypto is not defined"
+6. crypto/crypto-logout-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: crypto is not defined"
+7. crypto/crypto-popChallengeResponse-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: crypto is not defined"
+8. crypto/crypto-random-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: crypto is not defined"
+9. crypto/crypto-signText-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: crypto is not defined"
+10. document/document-URLUnencoded-typeof-test.html:testTypeOf failed
+
+"[DocumentURLUnencodedProperty] typeOf(document.URLUnencoded) != 'undefined'"
+Expected not to be <undefined> (String)
+11. document/document-activeElement-typeof-test.html:testTypeOf failed
+
+"[DocumentActiveElementProperty] typeOf(document.activeElement) != 'undefined'"
+Expected not to be <undefined> (String)
+12. document/document-all-typeof-test.html:testTypeOf failed
+
+"[DocumentAllProperty] typeOf(document.all) != 'undefined'"
+Expected not to be <undefined> (String)
+13. document/document-attachEvent-typeof-test.html:testTypeOf failed
+
+"[DocumentAttachEventMethod] typeOf(document.attachEvent) != 'undefined'"
+Expected not to be <undefined> (String)
+14. document/document-compareDocumentPosition-typeof-test.html:testTypeOf failed
+
+"[DocumentCompareDocumentPositionMethod] typeOf(document.compareDocumentPosition) != 'undefined'"
+Expected not to be <undefined> (String)
+15. document/document-contentType-typeof-test.html:testTypeOf failed
+
+"[DocumentContentTypeProperty] typeOf(document.contentType) != 'undefined'"
+Expected not to be <undefined> (String)
+16. document/document-createEventObject-typeof-test.html:testTypeOf failed
+
+"[DocumentCreateEventObjectMethod] typeOf(document.createEventObject) != 'undefined'"
+Expected not to be <undefined> (String)
+17. document/document-createStyleSheet-typeof-test.html:testTypeOf failed
+
+"[DocumentCreateStyleSheetMethod] typeOf(document.createStyleSheet) != 'undefined'"
+Expected not to be <undefined> (String)
+18. document/document-detachEvent-typeof-test.html:testTypeOf failed
+
+"[DocumentDetachEventMethod] typeOf(document.detachEvent) != 'undefined'"
+Expected not to be <undefined> (String)
+19. document/document-enableStyleSheetsForSet-typeof-test.html:testTypeOf failed
+
+"[DocumentEnableStylesheetsForSetMethod] typeOf(document.enableStyleSheetsForSet) != 'undefined'"
+Expected not to be <undefined> (String)
+20. document/document-execCommandShowHelp-typeof-test.html:testTypeOf failed
+
+"[DocumentExecCommandShowHelpMethod] typeOf(document.execCommandShowHelp) != 'undefined'"
+Expected not to be <undefined> (String)
+21. document/document-expando-typeof-test.html:testTypeOf failed
+
+"[DocumentExpandoProperty] typeOf(document.expando) != 'undefined'"
+Expected not to be <undefined> (String)
+22. document/document-fileCreatedDate-typeof-test.html:testTypeOf failed
+
+"[DocumentFileCreatedDateProperty] typeOf(document.fileCreatedDate) != 'undefined'"
+Expected not to be <undefined> (String)
+23. document/document-fileModifiedDate-typeof-test.html:testTypeOf failed
+
+"[DocumentFileModifiedDateProperty] typeOf(document.fileModifiedDate) != 'undefined'"
+Expected not to be <undefined> (String)
+24. document/document-fileSize-typeof-test.html:testTypeOf failed
+
+"[DocumentFileSizeProperty] typeOf(document.fileSize) != 'undefined'"
+Expected not to be <undefined> (String)
+25. document/document-focus-typeof-test.html:testTypeOf failed
+
+"[DocumentFocusMethod] typeOf(document.focus) != 'undefined'"
+Expected not to be <undefined> (String)
+26. document/document-frames-typeof-test.html:testTypeOf failed
+
+"[DocumentFramesProperty] typeOf(document.frames) != 'undefined'"
+Expected not to be <undefined> (String)
+27. document/document-getBoxObjectFor-typeof-test.html:testTypeOf failed
+
+"[DocumentGetBoxObjectForMethod] typeOf(document.getBoxObjectFor) != 'undefined'"
+Expected not to be <undefined> (String)
+28. document/document-getFeature-typeof-test.html:testTypeOf failed
+
+"[DocumentGetfeatureMethod] typeOf(document.getFeature) != 'undefined'"
+Expected not to be <undefined> (String)
+29. document/document-getSelection-typeof-test.html:testTypeOf failed
+
+"[DocumentGetselectionMethod] typeOf(document.getSelection) != 'undefined'"
+Expected not to be <undefined> (String)
+30. document/document-getUserData-typeof-test.html:testTypeOf failed
+
+"[DocumentGetuserdataMethod] typeOf(document.getUserData) != 'undefined'"
+Expected not to be <undefined> (String)
+31. document/document-hasFocus-typeof-test.html:testTypeOf failed
+
+"[DocumentHasfocusMethod] typeOf(document.hasFocus) != 'undefined'"
+Expected not to be <undefined> (String)
+32. document/document-lastStyleSheetSet-typeof-test.html:testTypeOf failed
+
+"[DocumentLaststylesheetsetProperty] typeOf(document.lastStyleSheetSet) != 'undefined'"
+Expected not to be <undefined> (String)
+33. document/document-mergeAttributes-typeof-test.html:testTypeOf failed
+
+"[DocumentMergeattributesMethod] typeOf(document.mergeAttributes) != 'undefined'"
+Expected not to be <undefined> (String)
+34. document/document-namespaces-typeof-test.html:testTypeOf failed
+
+"[DocumentNamespacesProperty] typeOf(document.namespaces) != 'undefined'"
+Expected not to be <undefined> (String)
+35. document/document-normalizeDocument-typeof-test.html:testTypeOf failed
+
+"[DocumentNormalizedocumentMethod] typeOf(document.normalizeDocument) != 'undefined'"
+Expected not to be <undefined> (String)
+36. document/document-parentWindow-typeof-test.html:testTypeOf failed
+
+"[DocumentParentwindowProperty] typeOf(document.parentWindow) != 'undefined'"
+Expected not to be <undefined> (String)
+37. document/document-preferredStyleSheetSet-typeof-test.html:testTypeOf failed
+
+"[DocumentPreferredstylesheetsetProperty] typeOf(document.preferredStyleSheetSet) != 'undefined'"
+Expected not to be <undefined> (String)
+38. document/document-protocol-typeof-test.html:testTypeOf failed
+
+"[DocumentProtocolProperty] typeOf(document.protocol) != 'undefined'"
+Expected not to be <undefined> (String)
+39. document/document-queryCommandText-typeof-test.html:testTypeOf failed
+
+"[DocumentQuerycommandtextMethod] typeOf(document.queryCommandText) != 'undefined'"
+Expected not to be <undefined> (String)
+40. document/document-recalc-typeof-test.html:testTypeOf failed
+
+"[DocumentRecalcMethod] typeOf(document.recalc) != 'undefined'"
+Expected not to be <undefined> (String)
+41. document/document-releaseCapture-typeof-test.html:testTypeOf failed
+
+"[DocumentReleasecaptureMethod] typeOf(document.releaseCapture) != 'undefined'"
+Expected not to be <undefined> (String)
+42. document/document-renameNode-typeof-test.html:testTypeOf failed
+
+"[DocumentRenamenodeMethod] typeOf(document.renameNode) != 'undefined'"
+Expected not to be <undefined> (String)
+43. document/document-routeEvent-typeof-test.html:testTypeOf failed
+
+"[DocumentRouteeventMethod] typeOf(document.routeEvent) != 'undefined'"
+Expected not to be <undefined> (String)
+44. document/document-selectedStyleSheetSet-typeof-test.html:testTypeOf failed
+
+"[DocumentSelectedstylesheetsetProperty] typeOf(document.selectedStyleSheetSet) != 'undefined'"
+Expected not to be <undefined> (String)
+45. document/document-selection-typeof-test.html:testTypeOf failed
+
+"[DocumentSelectionProperty] typeOf(document.selection) != 'undefined'"
+Expected not to be <undefined> (String)
+46. document/document-setActive-typeof-test.html:testTypeOf failed
+
+"[DocumentSetactiveMethod] typeOf(document.setActive) != 'undefined'"
+Expected not to be <undefined> (String)
+47. document/document-setUserData-typeof-test.html:testTypeOf failed
+
+"[DocumentSetuserdataMethod] typeOf(document.setUserData) != 'undefined'"
+Expected not to be <undefined> (String)
+48. document/document-strictErrorChecking-typeof-test.html:testTypeOf failed
+
+"[DocumentStricterrorcheckingProperty] typeOf(document.strictErrorChecking) != 'undefined'"
+Expected not to be <undefined> (String)
+49. document/document-styleSheetSets-typeof-test.html:testTypeOf failed
+
+"[DocumentStylesheetsetsProperty] typeOf(document.styleSheetSets) != 'undefined'"
+Expected not to be <undefined> (String)
+50. document/document-uniqueID-typeof-test.html:testTypeOf failed
+
+"[DocumentUniqueidProperty] typeOf(document.uniqueID) != 'undefined'"
+Expected not to be <undefined> (String)
+51. external/external-AddChannel-typeof-test.html:testTypeOf failed
+
+"[ExternalAddchannelMethod] typeOf(external.AddChannel) != 'undefined'"
+Expected not to be <undefined> (String)
+52. external/external-AddDesktopComponent-typeof-test.html:testTypeOf failed
+
+"[ExternalAdddesktopcomponentMethod] typeOf(external.AddDesktopComponent) != 'undefined'"
+Expected not to be <undefined> (String)
+53. external/external-AddFavorite-typeof-test.html:testTypeOf failed
+
+"[ExternalAddfavoriteMethod] typeOf(external.AddFavorite) != 'undefined'"
+Expected not to be <undefined> (String)
+54. external/external-AutoCompleteSaveForm-typeof-test.html:testTypeOf failed
+
+"[ExternalAutocompletesaveformMethod] typeOf(external.AutoCompleteSaveForm) != 'undefined'"
+Expected not to be <undefined> (String)
+55. external/external-AutoScan-typeof-test.html:testTypeOf failed
+
+"[ExternalAutoscanMethod] typeOf(external.AutoScan) != 'undefined'"
+Expected not to be <undefined> (String)
+56. external/external-ImportExportFavorites-typeof-test.html:testTypeOf failed
+
+"[ExternalImportexportfavoritesMethod] typeOf(external.ImportExportFavorites) != 'undefined'"
+Expected not to be <undefined> (String)
+57. external/external-IsSearchProviderInstalled-typeof-test.html:testTypeOf failed
+
+"[ExternalIssearchproviderinstalledMethod] typeOf(external.IsSearchProviderInstalled) != 'undefined'"
+Expected not to be <undefined> (String)
+58. external/external-IsSubscribed-typeof-test.html:testTypeOf failed
+
+"[ExternalIssubscribedMethod] typeOf(external.IsSubscribed) != 'undefined'"
+Expected not to be <undefined> (String)
+59. external/external-NavigateAndFind-typeof-test.html:testTypeOf failed
+
+"[ExternalNavigateandfindMethod] typeOf(external.NavigateAndFind) != 'undefined'"
+Expected not to be <undefined> (String)
+60. external/external-ShowBrowserUI-typeof-test.html:testTypeOf failed
+
+"[ExternalShowbrowseruiMethod] typeOf(external.ShowBrowserUI) != 'undefined'"
+Expected not to be <undefined> (String)
+61. navigator/navigator-appCodeName-eq-Mozilla-test.html:testTypeOf failed
+
+"[NavigatorAppCodeNameProperty] navigator.appCodeName == 'Mozilla'"
+Expected not to be <Mozilla> (String)
+62. navigator/navigator-appMinorVersion-typeof-test.html:testTypeOf failed
+
+"[NavigatorAppminorversionProperty] typeOf(navigator.appMinorVersion) != 'undefined'"
+Expected not to be <undefined> (String)
+63. navigator/navigator-browserLanguage-typeof-test.html:testTypeOf failed
+
+"[NavigatorBrowserlanguageProperty] typeOf(navigator.browserLanguage) != 'undefined'"
+Expected not to be <undefined> (String)
+64. navigator/navigator-buildID-typeof-test.html:testTypeOf failed
+
+"[NavigatorBuildidProperty] typeOf(navigator.buildID) != 'undefined'"
+Expected not to be <undefined> (String)
+65. navigator/navigator-cpuClass-typeof-test.html:testTypeOf failed
+
+"[NavigatorCpuclassProperty] typeOf(navigator.cpuClass) != 'undefined'"
+Expected not to be <undefined> (String)
+66. navigator/navigator-onLine-typeof-test.html:testTypeOf failed
+
+"[NavigatorOnlineProperty] typeOf(navigator.onLine) != 'undefined'"
+Expected not to be <undefined> (String)
+67. navigator/navigator-oscpu-typeof-test.html:testTypeOf failed
+
+"[NavigatorOscpuProperty] typeOf(navigator.oscpu) != 'undefined'"
+Expected not to be <undefined> (String)
+68. navigator/navigator-registerContentHandler-typeof-test.html:testTypeOf failed
+
+"[NavigatorRegistercontenthandlerMethod] typeOf(navigator.registerContentHandler) != 'undefined'"
+Expected not to be <undefined> (String)
+69. navigator/navigator-registerProtocolHandler-typeof-test.html:testTypeOf failed
+
+"[NavigatorRegisterprotocolhandlerMethod] typeOf(navigator.registerProtocolHandler) != 'undefined'"
+Expected not to be <undefined> (String)
+70. navigator/navigator-securityPolicy-typeof-test.html:testTypeOf failed
+
+"[NavigatorSecuritypolicyProperty] typeOf(navigator.securityPolicy) != 'undefined'"
+Expected not to be <undefined> (String)
+71. navigator/navigator-systemLanguage-typeof-test.html:testTypeOf failed
+
+"[NavigatorSystemlanguageProperty] typeOf(navigator.systemLanguage) != 'undefined'"
+Expected not to be <undefined> (String)
+72. navigator/navigator-taintEnabled-typeof-test.html:testTypeOf failed
+
+"[NavigatorTaintenabledMethod] typeOf(navigator.taintEnabled) != 'undefined'"
+Expected not to be <undefined> (String)
+73. navigator/navigator-userLanguage-typeof-test.html:testTypeOf failed
+
+"[NavigatorUserlanguageProperty] typeOf(navigator.userLanguage) != 'undefined'"
+Expected not to be <undefined> (String)
+74. navigator/navigator-userProfile-typeof-test.html:testTypeOf failed
+
+"[NavigatorUserprofileProperty] typeOf(navigator.userProfile) != 'undefined'"
+Expected not to be <undefined> (String)
+75. screen/screen-bufferDepth-typeof-test.html:testTypeOf failed
+
+"[ScreenBufferdepthProperty] typeOf(screen.bufferDepth) != 'undefined'"
+Expected not to be <undefined> (String)
+76. screen/screen-deviceXDPI-typeof-test.html:testTypeOf failed
+
+"[ScreenDevicexdpiProperty] typeOf(screen.deviceXDPI) != 'undefined'"
+Expected not to be <undefined> (String)
+77. screen/screen-deviceYDPI-typeof-test.html:testTypeOf failed
+
+"[ScreenDeviceydpiProperty] typeOf(screen.deviceYDPI) != 'undefined'"
+Expected not to be <undefined> (String)
+78. screen/screen-fontSmoothingEnabled-typeof-test.html:testTypeOf failed
+
+"[ScreenFontsmoothingenabledProperty] typeOf(screen.fontSmoothingEnabled) != 'undefined'"
+Expected not to be <undefined> (String)
+79. screen/screen-left-typeof-test.html:testTypeOf failed
+
+"[ScreenLeftProperty] typeOf(screen.left) != 'undefined'"
+Expected not to be <undefined> (String)
+80. screen/screen-logicalXDPI-typeof-test.html:testTypeOf failed
+
+"[ScreenLogicalxdpiProperty] typeOf(screen.logicalXDPI) != 'undefined'"
+Expected not to be <undefined> (String)
+81. screen/screen-logicalYDPI-typeof-test.html:testTypeOf failed
+
+"[ScreenLogicalydpiProperty] typeOf(screen.logicalYDPI) != 'undefined'"
+Expected not to be <undefined> (String)
+82. screen/screen-top-typeof-test.html:testTypeOf failed
+
+"[ScreenTopProperty] typeOf(screen.top) != 'undefined'"
+Expected not to be <undefined> (String)
+83. screen/screen-updateInterval-typeof-test.html:testTypeOf failed
+
+"[ScreenUpdateintervalProperty] typeOf(screen.updateInterval) != 'undefined'"
+Expected not to be <undefined> (String)
+84. sidebar/sidebar-addMicrosummaryGenerator-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: sidebar is not defined"
+85. sidebar/sidebar-addPanel-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: sidebar is not defined"
+86. sidebar/sidebar-addPersistentPanel-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: sidebar is not defined"
+87. sidebar/sidebar-addSearchEngine-typeof-test.html:testTypeOf had an error
+
+Error message is:
+"ReferenceError: sidebar is not defined"
+88. window/window-attachEvent-typeof-test.html:testTypeOf failed
+
+"[WindowAttacheventMethod] typeOf(window.attachEvent) != 'undefined'"
+Expected not to be <undefined> (String)
+89. window/window-clipboardData-typeof-test.html:testTypeOf failed
+
+"[WindowClipboarddataProperty] typeOf(window.clipboardData) != 'undefined'"
+Expected not to be <undefined> (String)
+90. window/window-content-typeof-test.html:testTypeOf failed
+
+"[WindowContentProperty] typeOf(window.content) != 'undefined'"
+Expected not to be <undefined> (String)
+91. window/window-controllers-typeof-test.html:testTypeOf failed
+
+"[WindowControllersProperty] typeOf(window.controllers) != 'undefined'"
+Expected not to be <undefined> (String)
+92. window/window-createPopup-typeof-test.html:testTypeOf failed
+
+"[WindowCreatepopupMethod] typeOf(window.createPopup) != 'undefined'"
+Expected not to be <undefined> (String)
+93. window/window-crypto-typeof-test.html:testTypeOf failed
+
+"[WindowCryptoProperty] typeOf(window.crypto) != 'undefined'"
+Expected not to be <undefined> (String)
+94. window/window-detachEvent-typeof-test.html:testTypeOf failed
+
+"[WindowDetacheventMethod] typeOf(window.detachEvent) != 'undefined'"
+Expected not to be <undefined> (String)
+95. window/window-dialogArguments-typeof-test.html:testTypeOf failed
+
+"[WindowDialogargumentsProperty] typeOf(window.dialogArguments) != 'undefined'"
+Expected not to be <undefined> (String)
+96. window/window-dialogHeight-typeof-test.html:testTypeOf failed
+
+"[WindowDialogheightProperty] typeOf(window.dialogHeight) != 'undefined'"
+Expected not to be <undefined> (String)
+97. window/window-dialogLeft-typeof-test.html:testTypeOf failed
+
+"[WindowDialogleftProperty] typeOf(window.dialogLeft) != 'undefined'"
+Expected not to be <undefined> (String)
+98. window/window-dialogTop-typeof-test.html:testTypeOf failed
+
+"[WindowDialogtopProperty] typeOf(window.dialogTop) != 'undefined'"
+Expected not to be <undefined> (String)
+99. window/window-dialogWidth-typeof-test.html:testTypeOf failed
+
+"[WindowDialogwidthProperty] typeOf(window.dialogWidth) != 'undefined'"
+Expected not to be <undefined> (String)
+100. window/window-directories-typeof-test.html:testTypeOf failed
+
+"[WindowDirectoriesProperty] typeOf(window.directories) != 'undefined'"
+Expected not to be <undefined> (String)
+101. window/window-disableExternalCapture-typeof-test.html:testTypeOf failed
+
+"[WindowDisableexternalcaptureMethod] typeOf(window.disableExternalCapture) != 'undefined'"
+Expected not to be <undefined> (String)
+102. window/window-dispatchEvent-typeof-test.html:testTypeOf failed
+
+"[WindowDispatcheventMethod] typeOf(window.dispatchEvent) != 'undefined'"
+Expected not to be <undefined> (String)
+103. window/window-dump-typeof-test.html:testTypeOf failed
+
+"[WindowDumpMethod] typeOf(window.dump) != 'undefined'"
+Expected not to be <undefined> (String)
+104. window/window-enableExternalCapture-typeof-test.html:testTypeOf failed
+
+"[WindowEnableexternalcaptureMethod] typeOf(window.enableExternalCapture) != 'undefined'"
+Expected not to be <undefined> (String)
+105. window/window-event-typeof-test.html:testTypeOf failed
+
+"[WindowEventProperty] typeOf(window.event) != 'undefined'"
+Expected not to be <undefined> (String)
+106. window/window-fullScreen-typeof-test.html:testTypeOf failed
+
+"[WindowFullscreenProperty] typeOf(window.fullScreen) != 'undefined'"
+Expected not to be <undefined> (String)
+107. window/window-globalStorage-typeof-test.html:testTypeOf failed
+
+"[WindowGlobalstorageProperty] typeOf(window.globalStorage) != 'undefined'"
+Expected not to be <undefined> (String)
+108. window/window-home-typeof-test.html:testTypeOf failed
+
+"[WindowHomeMethod] typeOf(window.home) != 'undefined'"
+Expected not to be <undefined> (String)
+109. window/window-navigate-typeof-test.html:testTypeOf failed
+
+"[WindowNavigateMethod] typeOf(window.navigate) != 'undefined'"
+Expected not to be <undefined> (String)
+110. window/window-openDialog-typeof-test.html:testTypeOf failed
+
+"[WindowOpendialogMethod] typeOf(window.openDialog) != 'undefined'"
+Expected not to be <undefined> (String)
+111. window/window-pkcs11-typeof-test.html:testTypeOf failed
+
+"[WindowPkcs11Property] typeOf(window.pkcs11) != 'undefined'"
+Expected not to be <undefined> (String)
+112. window/window-returnValue-typeof-test.html:testTypeOf failed
+
+"[WindowReturnvalueProperty] typeOf(window.returnValue) != 'undefined'"
+Expected not to be <undefined> (String)
+113. window/window-routeEvent-typeof-test.html:testTypeOf failed
+
+"[WindowRouteeventMethod] typeOf(window.routeEvent) != 'undefined'"
+Expected not to be <undefined> (String)
+114. window/window-screen-left-typeof-test.html:testTypeOf failed
+
+"[WindowScreenLeftProperty] typeOf(window.screen.left) != 'undefined'"
+Expected not to be <undefined> (String)
+115. window/window-screen-top-typeof-test.html:testTypeOf failed
+
+"[WindowScreenTopProperty] typeOf(window.screen.top) != 'undefined'"
+Expected not to be <undefined> (String)
+116. window/window-scrollByLines-typeof-test.html:testTypeOf failed
+
+"[WindowScrollbylinesMethod] typeOf(window.scrollByLines) != 'undefined'"
+Expected not to be <undefined> (String)
+117. window/window-scrollByPages-typeof-test.html:testTypeOf failed
+
+"[WindowScrollbypagesMethod] typeOf(window.scrollByPages) != 'undefined'"
+Expected not to be <undefined> (String)
+118. window/window-scrollMaxX-typeof-test.html:testTypeOf failed
+
+"[WindowScrollmaxxProperty] typeOf(window.scrollMaxX) != 'undefined'"
+Expected not to be <undefined> (String)
+119. window/window-scrollMaxY-typeof-test.html:testTypeOf failed
+
+"[WindowScrollmaxyProperty] typeOf(window.scrollMaxY) != 'undefined'"
+Expected not to be <undefined> (String)
+120. window/window-sessionStorage-typeof-test.html:testTypeOf failed
+
+"[WindowSessionstorageProperty] typeOf(window.sessionStorage) != 'undefined'"
+Expected not to be <undefined> (String)
+121. window/window-setActive-typeof-test.html:testTypeOf failed
+
+"[WindowSetactiveMethod] typeOf(window.setActive) != 'undefined'"
+Expected not to be <undefined> (String)
+122. window/window-setResizable-typeof-test.html:testTypeOf failed
+
+"[WindowSetresizableMethod] typeOf(window.setResizable) != 'undefined'"
+Expected not to be <undefined> (String)
+123. window/window-showHelp-typeof-test.html:testTypeOf failed
+
+"[WindowShowhelpMethod] typeOf(window.showHelp) != 'undefined'"
+Expected not to be <undefined> (String)
+124. window/window-showModelessDialog-typeof-test.html:testTypeOf failed
+
+"[WindowShowmodelessdialogMethod] typeOf(window.showModelessDialog) != 'undefined'"
+Expected not to be <undefined> (String)
+125. window/window-sidebar-typeof-test.html:testTypeOf failed
+
+"[WindowSidebarProperty] typeOf(window.sidebar) != 'undefined'"
+Expected not to be <undefined> (String)
+126. window/window-sizeToContent-typeof-test.html:testTypeOf failed
+
+"[WindowSizetocontentMethod] typeOf(window.sizeToContent) != 'undefined'"
+Expected not to be <undefined> (String)
+127. window/window-updateCommands-typeof-test.html:testTypeOf failed
+
+"[WindowUpdatecommandsMethod] typeOf(window.updateCommands) != 'undefined'"
+Expected not to be <undefined> (String)
