@@ -1,27 +1,27 @@
 import glob, re, sys, os
 
 TEST_GLOBS = {
-#              'css/*/*-test.html':
-#                  [r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ie8.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ie7.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ie6.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ff3.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ff2.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-saf3.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-op9.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-chrome.txt'
-#                   ],
-#
-#              'html/*/*-test.html':
-#                  [r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ie8.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ie7.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ie6.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ff3.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ff2.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-saf3.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-op9.txt',
-#                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-chrome.txt'
-#                   ],
+              'css/*/*-test.html':
+                  [r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ie8.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ie7.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ie6.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ff3.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-ff2.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-saf3.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-op9.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/css/css-chrome.txt'
+                   ],
+
+              'html/*/*-test.html':
+                  [r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ie8.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ie7.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ie6.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ff3.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-ff2.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-saf3.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-op9.txt',
+                   r'/home/pilgrim/secure/doctype/trunk/tests/html/html-chrome.txt'
+                   ],
 
               'js/*/*-test.html':
                   [r'/home/pilgrim/secure/doctype/trunk/tests/js/js-ie8.txt',
@@ -156,7 +156,8 @@ for TEST_FILES in TEST_GLOBS.keys():
         errors = loadErrors(TEST_FILES, errorFile)
         testFiles = glob.glob(TEST_FILES)
         for testFile in testFiles:
-            testFile = testFile.replace('\\', '/').replace('//', '/')#.lower()
+            testFile = testFile.replace('\\', '/').replace('//', '/')
+            lowerTestFile = testFile.lower()
             #print testFile
             sys.stdout.write('.')
             sys.stdout.flush()
@@ -175,7 +176,7 @@ for TEST_FILES in TEST_GLOBS.keys():
                                   'values': ['?'] * NUM_COLUMNS})
             for wikiTest in wikiTests:
                 if wikiTest['testName'] != testName: continue
-                wikiTest['values'][columnIndex] = (testFile in errors) and 'N' or 'Y'
+                wikiTest['values'][columnIndex] = (lowerTestFile in errors) and 'N' or 'Y'
             output = saveTable(wikiFile, wikiTests)
             file(wikiFile, 'w').write(output)
         print '\nmatched against', len(errors), 'errors'
