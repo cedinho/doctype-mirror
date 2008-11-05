@@ -9,10 +9,11 @@
 <body>
 <script type="text/javascript">
 function testTypeOf() {
-  assertNotEquals("[NavigatorAppCodeNameProperty] navigator.appCodeName == 'Mozilla'",
+  assertEquals("[NavigatorAppCodeNameProperty] navigator.appCodeName == 'Mozilla'",
     navigator.appCodeName,
     "Mozilla");
 }
+testTypeOf();
 </script>
 <pre>navigator.appCodeName <script type="text/javascript">
 document.write((navigator.appCodeName != 'Mozilla') ? '!=' : '==');
