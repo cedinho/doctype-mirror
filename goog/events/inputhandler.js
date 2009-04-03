@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -36,7 +35,9 @@
  */
 
 goog.provide('goog.events.InputHandler');
+goog.provide('goog.events.InputHandler.EventType');
 
+goog.require('goog.dom');
 goog.require('goog.events');
 goog.require('goog.events.BrowserEvent');
 goog.require('goog.events.EventTarget');
@@ -61,7 +62,11 @@ goog.events.InputHandler = function(element) {
    */
   this.element_ = element;
 
-  var type = goog.userAgent.IE ? 'propertychange' : 'input';
+  // WebKit (as of Safari3.1) does not support the input event. keypress isn't
+  // as good (doesn't support copy/paste), but it's better than nothing
+  var type = goog.userAgent.IE ? 'propertychange' :
+      (goog.userAgent.WEBKIT && element.tagName == 'TEXTAREA' ?
+          'keypress' : 'input');
   this.listenKey_ = goog.events.listen(this.element_, type, this);
 };
 goog.inherits(goog.events.InputHandler, goog.events.EventTarget);
@@ -83,7 +88,8 @@ goog.events.InputHandler.EventType = {
 goog.events.InputHandler.prototype.handleEvent = function(e) {
   var be = e.getBrowserEvent();
   if (be.type == 'propertychange' && be.propertyName == 'value' ||
-      be.type == 'input') {
+      be.type == 'input' ||
+      be.type == 'keypress') {
     if (goog.userAgent.IE) {
       var inputEl = be.srcElement;
       // only dispatch the event if the element currently has focus
@@ -103,12 +109,10 @@ goog.events.InputHandler.prototype.handleEvent = function(e) {
 
 
 /**
- * Disposes the keyhandler.
+ * Disposes of the input handler.
  */
-goog.events.InputHandler.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.events.InputHandler.superClass_.dispose.call(this);
-    goog.events.unlistenByKey(this.listenKey_);
-    this.element_ = null;
-  }
+goog.events.InputHandler.prototype.disposeInternal = function() {
+  goog.events.InputHandler.superClass_.disposeInternal.call(this);
+  goog.events.unlistenByKey(this.listenKey_);
+  delete this.element_;
 };

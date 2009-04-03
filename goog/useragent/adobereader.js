@@ -1,6 +1,5 @@
 // Copyright 2008 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -27,6 +26,7 @@
 
 /**
  * @fileoverview Detects the Adobe Reader PDF browser plugin.
+ *
  */
 
 
@@ -36,7 +36,7 @@ goog.require('goog.userAgent');
 
 
 (function() {
-  var version = null;
+  var version = '';
   if (goog.userAgent.IE) {
     function detectOnIe(classId) {
       /** @preserveTry */
@@ -60,7 +60,7 @@ goog.require('goog.userAgent');
         if (description && description.indexOf('Adobe') != -1) {
           // Newer plugins do not include the version in the description, so we
           // default to 7.
-          version = (description.indexOf('Version') != -1) ?
+          version = description.indexOf('Version') != -1 ?
               description.split('Version')[1] : '7';
         }
       }

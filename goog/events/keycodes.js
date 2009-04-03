@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -27,6 +26,7 @@
 
 /*
  * @fileoverview Constant declarations for common key codes.
+ *
  */
 
 goog.provide('goog.events.KeyCodes');
@@ -103,6 +103,7 @@ goog.events.KeyCodes = {
   X: 88,
   Y: 89,
   Z: 90,
+  META: 91,
   CONTEXT_MENU: 93,
   NUM_ZERO: 96,
   NUM_ONE: 97,
@@ -144,6 +145,7 @@ goog.events.KeyCodes = {
   BACKSLASH: 220,            // needs localization
   CLOSE_SQUARE_BRACKET: 221, // needs localization
   WIN_KEY: 224,
+  MAC_FF_META: 224, // Firefox (Gecko) fires this for the meta key instead of 91
   WIN_IME: 229
 };
 
@@ -193,26 +195,41 @@ goog.events.KeyCodes.isTextModifyingKeyEvent = function(e) {
 /**
  * Returns true if the key fires a keypress event in the current browser.
  *
- * Accoridng to MSDN [1] IE only firs keypress events for the following keys:
+ * Accoridng to MSDN [1] IE only fires keypress events for the following keys:
  * - Letters: A - Z (uppercase and lowercase)
  * - Numerals: 0 - 9
  * - Symbols: ! @ # $ % ^ & * ( ) _ - + = < [ ] { } , . / ? \ | ' ` " ~
- * - System: ESC, SPACEBAR, ENTER 
+ * - System: ESC, SPACEBAR, ENTER
  *
  * That's not entirely correct though, for instance there's no distinction
  * between upper and lower case letters.
- * 
+ *
  * [1] http://msdn2.microsoft.com/en-us/library/ms536939(VS.85).aspx)
  *
  * Safari is similar to IE, but does not fire keypress for ESC.
  *
+ * Additionally, IE6 does not fire keydown or keypress events for letters when
+ * the control or alt keys are held down and the shift key is not. IE7 does
+ * fire keydown in these cases, though, but not keypress.
+ *
  * @param {number} keyCode A key code.
+ * @param {number} opt_heldKeyCode Key code of a currently-held key.
+ * @param {boolean} opt_shiftKey Whether the shift key is held down.
  * @return {boolean} Whether it's a key that fires a keypress event.
  */
-goog.events.KeyCodes.firesKeyPressEvent = function(keyCode) {
+goog.events.KeyCodes.firesKeyPressEvent = function(keyCode, opt_heldKeyCode,
+    opt_shiftKey) {
   if (!goog.userAgent.IE &&
       !(goog.userAgent.WEBKIT && goog.userAgent.isVersion('525'))) {
     return true;
+  }
+
+  // Saves Ctrl or Alt + key for IE7, which won't fire keypress.
+  if (goog.userAgent.IE &&
+      !opt_shiftKey &&
+      (opt_heldKeyCode == goog.events.KeyCodes.CTRL ||
+       opt_heldKeyCode == goog.events.KeyCodes.ALT)) {
+    return false;
   }
 
   if (keyCode >= goog.events.KeyCodes.ZERO &&
@@ -258,7 +275,7 @@ goog.events.KeyCodes.firesKeyPressEvent = function(keyCode) {
       return true;
     default:
       return false;
-  };
+  }
 };
 
 
@@ -305,5 +322,5 @@ goog.events.KeyCodes.isCharacterKey = function(keyCode) {
       return true;
     default:
       return false;
-  };
+  }
 };

@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -37,38 +36,36 @@ goog.require('goog.math.Box');
 
 /**
  * Class for representing rectangular regions.
- * @param {number} opt_x Left.
- * @param {number} opt_y Top.
- * @param {number} opt_w Width.
- * @param {number} opt_h Height.
+ * @param {number} x Left.
+ * @param {number} y Top.
+ * @param {number} w Width.
+ * @param {number} h Height.
  * @constructor
  */
-goog.math.Rect = function(opt_x, opt_y, opt_w, opt_h) {
-
+goog.math.Rect = function(x, y, w, h) {
   /**
    * Left
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.left = goog.isDef(opt_x) ? Number(opt_x) : undefined;
+  this.left = x;
 
   /**
    * Top
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.top = goog.isDef(opt_y) ? Number(opt_y) : undefined;
+  this.top = y;
 
   /**
    * Width
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.width = goog.isDef(opt_w) ? Number(opt_w) : undefined;
+  this.width = w;
 
   /**
    * Height
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.height = goog.isDef(opt_h) ? Number(opt_h) : undefined;
-
+  this.height = h;
 };
 
 
@@ -87,28 +84,46 @@ goog.math.Rect.prototype.clone = function() {
  * @return {goog.math.Box} A new Box representation of this Rectangle.
  */
 goog.math.Rect.prototype.toBox = function() {
+  var right = this.left + this.width;
+  var bottom = this.top + this.height;
   return new goog.math.Box(this.top,
-                           this.left + this.width || undefined,
-                           this.top + this.height || undefined,
+                           right,
+                           bottom,
                            this.left);
 };
 
 
 /**
- * Returns a nice string representing size and dimensions of rectangle.
- * @return {string} In the form (50, 73 - 75w x 25h).
+ * Creates a new Rect object with the same position and dimensions as a given
+ * Box.  Note that this is only the inverse of toBox if left/top are defined.
+ * @param {goog.math.Box} box A box.
+ * @return {goog.math.Rect} A new Rect initialized with the box's position
+ *     and size.
  */
-goog.math.Rect.prototype.toString = function() {
-  return '(' + this.left + ', ' + this.top + ' - ' + this.width + 'w x ' +
-         this.height + 'h)';
+goog.math.Rect.createFromBox = function(box) {
+  return new goog.math.Rect(box.left, box.top,
+      box.right - box.left, box.bottom - box.top);
 };
+
+
+if (goog.DEBUG) {
+  /**
+   * Returns a nice string representing size and dimensions of rectangle.
+   * @return {string} In the form (50, 73 - 75w x 25h).
+   */
+  goog.math.Rect.prototype.toString = function() {
+    return '(' + this.left + ', ' + this.top + ' - ' + this.width + 'w x ' +
+           this.height + 'h)';
+  };
+}
 
 
 /**
  * Compares rectangles for equality.
  * @param {goog.math.Rect} a A Rectangle.
  * @param {goog.math.Rect} b A Rectangle.
- * @return {boolean} true iff the rectangles are equal, or if both are null.
+ * @return {boolean} True iff the rectangles have the same left, top, width,
+ *     and height, or if both are null.
  */
 goog.math.Rect.equals = function(a, b) {
   if (a == b) {
@@ -222,7 +237,8 @@ goog.math.Rect.prototype.intersects = function(rect) {
  *     together define the difference area of rectangle a minus rectangle b.
  */
 goog.math.Rect.difference = function(a, b) {
-  if (!goog.math.Rect.intersection(a, b)) {
+  var intersection = goog.math.Rect.intersection(a, b);
+  if (!intersection || !intersection.height || !intersection.width) {
     return [a.clone()];
   }
 
@@ -237,17 +253,23 @@ goog.math.Rect.difference = function(a, b) {
   var br = b.left + b.width;
   var bb = b.top + b.height;
 
+  // Subtract off any area on top where A extends past B
   if (b.top > a.top) {
     result.push(new goog.math.Rect(a.left, a.top, a.width, b.top - a.top));
     top = b.top;
+    // If we're moving the top down, we also need to subtract the height diff.
+    height -= b.top - a.top;
   }
+  // Subtract off any area on bottom where A extends past B
   if (bb < ab) {
     result.push(new goog.math.Rect(a.left, bb, a.width, ab - bb));
     height = bb - top;
   }
+  // Subtract any area on left where A extends past B
   if (b.left > a.left) {
     result.push(new goog.math.Rect(a.left, top, b.left - a.left, height));
   }
+  // Subtract any area on right where A extends past B
   if (br < ar) {
     result.push(new goog.math.Rect(br, top, ar - br, height));
   }
@@ -257,11 +279,11 @@ goog.math.Rect.difference = function(a, b) {
 
 
 /**
- * Computes the difference regions between this rectangle the rectangle
- * parameter. The return value is an array of 0 to 4 rectangles defining the
- * remaining regions of this rectangle after the other has been subtracted.
+ * Computes the difference regions between this rectangle and {@code rect}. The
+ * return value is an array of 0 to 4 rectangles defining the remaining regions
+ * of this rectangle after the other has been subtracted.
  * @param {goog.math.Rect} rect A Rectangle.
- * @return {Array.<goog.math.Rect>} an array with 0 to 4 rectangles which
+ * @return {Array.<goog.math.Rect>} An array with 0 to 4 rectangles which
  *     together define the difference area of rectangle a minus rectangle b.
  */
 goog.math.Rect.prototype.difference = function(rect) {
@@ -302,4 +324,16 @@ goog.math.Rect.boundingRect = function(a, b) {
   clone.boundingRect(b);
 
   return clone;
+};
+
+/**
+ * Tests whether this rectangle entirely contains another.
+ * @param {goog.math.Rect} rect The rectangle to test for containment.
+ * @return {boolean} Whether the test rectangle fits entirely within this one.
+ */
+goog.math.Rect.prototype.contains = function(rect) {
+  return this.left <= rect.left &&
+         this.left + this.width >= rect.left + rect.width &&
+         this.top <= rect.top &&
+         this.top + this.height >= rect.top + rect.height;
 };

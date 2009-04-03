@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -111,6 +110,7 @@
  * ...
  * p:     undefined      80 undefined
  * P:     undefined      80 undefined
+ *
  */
 
 
@@ -126,9 +126,11 @@ goog.require('goog.userAgent');
 
 /**
  * A wrapper around an element that you want to listen to keyboard events on.
+ * XXX(doughtie): {Document|Element} != {Element|Document}.
+ * see: http://b/1470354
  * @param {Element|Document} opt_element The element or document to listen on.
  * @constructor
- * @extends goog.events.EventTarget
+ * @extends {goog.events.EventTarget}
  */
 goog.events.KeyHandler = function(opt_element) {
   goog.events.EventTarget.call(this);
@@ -197,6 +199,14 @@ goog.events.KeyHandler.prototype.keyCode_ = -1;
  * @type {number}
  */
 goog.events.KeyHandler.prototype.lastTimeStamp_ = 0;
+
+
+/**
+ * If true, repeated key events fired within 50 ms of each other
+ * in Webkit browsers will be ignored.
+ * @type {boolean}
+ */
+goog.events.KeyHandler.prototype.ignoreWebkitSpuriousEvents = true;
 
 
 /**
@@ -279,6 +289,17 @@ goog.events.KeyHandler.keyIdentifier_ = {
 
 
 /**
+ * Map from Gecko specific key codes to cross browser key codes
+ * @type {Object}
+ * @private
+ */
+goog.events.KeyHandler.mozKeyCodeToKeyCodeMap_ = {
+  61: 187,  // =, equals
+  59: 186   // ;, semicolon
+};
+
+
+/**
  * If true, the KeyEvent fires on keydown. Otherwise, it fires on keypress.
  *
  * @type {boolean}
@@ -292,15 +313,21 @@ goog.events.KeyHandler.USES_KEYDOWN_ = goog.userAgent.IE ||
  * Records the keycode for browsers that only returns the keycode for key up/
  * down events. For browser/key combinations that doesn't trigger a key pressed
  * event it also fires the patched key event.
- * @param {goog.event.BrowserEvent} e The key down event.
+ * @param {goog.events.BrowserEvent} e The key down event.
  * @private
  */
 goog.events.KeyHandler.prototype.handleKeyDown_ = function(e) {
   if (goog.events.KeyHandler.USES_KEYDOWN_ &&
-       !goog.events.KeyCodes.firesKeyPressEvent(e.keyCode)) {
+      !goog.events.KeyCodes.firesKeyPressEvent(e.keyCode,
+          this.lastKey_, e.shiftKey)) {
     this.handleEvent(e);
   } else {
-    this.keyCode_ = e.keyCode;
+    if (goog.userAgent.GECKO &&
+        e.keyCode in goog.events.KeyHandler.mozKeyCodeToKeyCodeMap_) {
+      this.keyCode_ = goog.events.KeyHandler.mozKeyCodeToKeyCodeMap_[e.keyCode];
+    } else {
+      this.keyCode_ = e.keyCode;
+    }
   }
 };
 
@@ -309,17 +336,19 @@ goog.events.KeyHandler.prototype.handleKeyDown_ = function(e) {
  * Clears the stored previous key value, resetting the key repeat status. Uses
  * -1 because the Safari 3 Windows beta reports 0 for certain keys (like Home
  * and End.)
- * @param {goog.event.BrowserEvent} e The keyup event.
+ * @param {goog.events.BrowserEvent} e The keyup event.
  * @private
  */
 goog.events.KeyHandler.prototype.handleKeyup_ = function(e) {
   this.lastKey_ = -1;
+  this.keyCode_ = -1;
 };
 
 
 /**
  * Handles the events on the element.
- * @param {goog.event.BrowserEvent} e  The keyboard event sent from the browser.
+ * @param {goog.events.BrowserEvent} e  The keyboard event sent from the
+ *     browser.
  */
 goog.events.KeyHandler.prototype.handleEvent = function(e) {
   var be = e.getBrowserEvent();
@@ -352,6 +381,13 @@ goog.events.KeyHandler.prototype.handleEvent = function(e) {
   } else {
     keyCode = be.keyCode || this.keyCode_;
     charCode = be.charCode || 0;
+    // On the Mac, shift-/ triggers a question mark char code and no key code,
+    // so we synthesize the latter
+    if (goog.userAgent.MAC &&
+        charCode == goog.events.KeyCodes.QUESTION_MARK &&
+        !keyCode) {
+      keyCode = goog.events.KeyCodes.SLASH;
+    }
   }
 
   var key = keyCode;
@@ -384,7 +420,7 @@ goog.events.KeyHandler.prototype.handleEvent = function(e) {
 
   // Safari has a tendency to dispatch the same keypress event twice. If we get
   // the same key within 50ms, let's ignore it.
-  if (goog.userAgent.WEBKIT) {
+  if (goog.userAgent.WEBKIT && this.ignoreWebkitSpuriousEvents) {
     if (repeat && be.timeStamp - this.lastTimeStamp_ < 50) {
       return;
     }
@@ -402,7 +438,9 @@ goog.events.KeyHandler.prototype.handleEvent = function(e) {
 
 /**
  * Adds the proper key event listeners to the element.
- * @param {Element} element The element to listen on.
+ * XXX(doughtie): {Document|Element} != {Element|Document}.
+ * see: http://b/1470354
+ * @param {Element|Document} element The element to listen on.
  */
 goog.events.KeyHandler.prototype.attach = function(element) {
   if (this.keyUpKey_) {
@@ -452,25 +490,23 @@ goog.events.KeyHandler.prototype.detach = function() {
 
 
 /**
- * Disposes the keyhandler.
+ * Disposes of the key handler.
  */
-goog.events.KeyHandler.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.events.KeyHandler.superClass_.dispose.call(this);
-    this.detach();
-  }
+goog.events.KeyHandler.prototype.disposeInternal = function() {
+  goog.events.KeyHandler.superClass_.disposeInternal.call(this);
+  this.detach();
 };
 
 
 /**
- * This class is used for the goog.event.KeyHandler.EventType.KEY event and
+ * This class is used for the goog.events.KeyHandler.EventType.KEY event and
  * it overrides the key code with the fixed key code.
  * @param {number} keyCode The adjusted key code.
  * @param {number} charCode The unicode character code.
  * @param {boolean} repeat Whether this event was generated by keyboard repeat.
- * @param {Object} browserEvent Browser event object.
+ * @param {Event} browserEvent Browser event object.
  * @constructor
- * @extends goog.events.BrowserEvent
+ * @extends {goog.events.BrowserEvent}
  */
 goog.events.KeyEvent = function(keyCode, charCode, repeat, browserEvent) {
   goog.events.BrowserEvent.call(this, browserEvent);

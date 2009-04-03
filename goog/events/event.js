@@ -1,6 +1,5 @@
 // Copyright 2005 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,43 +25,44 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview An base class for  event objects
+ * @fileoverview A base class for event objects.
+ *
  */
 
-/**
- * Namespace for evevnts
- */
+
 goog.provide('goog.events.Event');
-
 
 goog.require('goog.Disposable');
 
 
 /**
- * An base class for event objects, so that they can support
- * preventDefault and stopPropagation.
+ * A base class for event objects, so that they can support preventDefault and
+ * stopPropagation.
  *
  * @param {string} type Event Type.
- * @param {Object} opt_target Reference to the object that is the target
- *                            of this event.
+ * @param {Object} opt_target Reference to the object that is the target of this
+ *     event.
  * @constructor
+ * @extends {goog.Disposable}
  */
 goog.events.Event = function(type, opt_target) {
+  // Although Event extends Disposable, goog.Disposable.call(this) is omitted
+  // for performance reasons.
 
   /**
-   * Event type
+   * Event type.
    * @type {string}
    */
   this.type = type;
 
   /**
-   * Target of the event
+   * Target of the event.
    * @type {Object|undefined}
    */
   this.target = opt_target;
 
   /**
-   * Node that had the listener attached
+   * Object that had the listener attached.
    * @type {Object|undefined}
    */
   this.currentTarget = this.target;
@@ -71,7 +71,17 @@ goog.inherits(goog.events.Event, goog.Disposable);
 
 
 /**
- * Whether to cancel event in internal capture/bubble processing for IE
+ * {@inheritDoc}
+ */
+goog.events.Event.prototype.disposeInternal = function() {
+  delete this.type;
+  delete this.target;
+  delete this.currentTarget;
+};
+
+
+/**
+ * Whether to cancel the event in internal capture/bubble processing for IE.
  * @type {boolean}
  * @private
  */
@@ -79,7 +89,7 @@ goog.events.Event.prototype.propagationStopped_ = false;
 
 
 /**
- * Return value for in internal capture/bubble processing for IE
+ * Return value for in internal capture/bubble processing for IE.
  * @type {boolean}
  * @private
  */
@@ -87,7 +97,7 @@ goog.events.Event.prototype.returnValue_ = true;
 
 
 /**
- * Stop event propagation
+ * Stops event propagation.
  */
 goog.events.Event.prototype.stopPropagation = function() {
   this.propagationStopped_ = true;
@@ -95,7 +105,7 @@ goog.events.Event.prototype.stopPropagation = function() {
 
 
 /**
- * Prevent the default action, for example a link redirecting to a url
+ * Prevents the default action, for example a link redirecting to a url.
  */
 goog.events.Event.prototype.preventDefault = function() {
   this.returnValue_ = false;

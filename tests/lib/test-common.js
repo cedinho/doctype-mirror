@@ -2,7 +2,7 @@ goog.require('goog.style');
 
 var encyclopedia = {
     getComputedStyle: function(elem, style) {
-	return goog.style.getStyle_(elem, style);
+	return goog.style.getStyle_(elem, goog.style.toCamelCase(style));
     },
 
     getComputedStyleById: function(id, style) {

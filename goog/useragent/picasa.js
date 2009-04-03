@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -36,6 +35,7 @@
  * To check for Picasa on Internet Explorer requires using document.write, so
  * this file must be included at page rendering time and cannot be imported
  * later as part of a dynamically loaded module.
+ *
  */
 
 

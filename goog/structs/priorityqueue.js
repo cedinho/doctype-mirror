@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,7 +25,8 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Datastructure: Priority Queue
+ * @fileoverview Datastructure: Priority Queue.
+ *
  *
  * This file provides the implementation of a Priority Queue. Smaller priorities
  * move to the front of the queue. If two values have the same priority,
@@ -45,7 +45,7 @@ goog.require('goog.structs.Heap');
  * Class for Priority Queue datastructure.
  *
  * @constructor
- * @extends goog.structs.Heap
+ * @extends {goog.structs.Heap}
  */
 goog.structs.PriorityQueue = function() {
   goog.structs.Heap.call(this);
@@ -65,8 +65,8 @@ goog.structs.PriorityQueue.prototype.enqueue = function(priority, value) {
 
 /**
  * Retrieves and removes the head of this queue.
- * @return {Object} The element at the head of this queue. Returns
- *                  undefined if the queue is empty.
+ * @return {Object|undefined} The element at the head of this queue. Returns
+ *     undefined if the queue is empty.
  */
 goog.structs.PriorityQueue.prototype.dequeue = function() {
   return this.remove();

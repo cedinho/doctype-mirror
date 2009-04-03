@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -29,9 +28,11 @@
  * @fileoverview This event wrapper will dispatch an event when the user uses
  * the mouse wheel to scroll an element. You can get the direction by checking
  * the details property of the event.
+ *
  */
 
 goog.provide('goog.events.MouseWheelEvent');
+goog.provide('goog.events.MouseWheelEvent.AxisType');
 goog.provide('goog.events.MouseWheelHandler');
 goog.provide('goog.events.MouseWheelHandler.EventType');
 
@@ -47,7 +48,7 @@ goog.require('goog.userAgent');
  * @param {Element|Document} element  The element to listen to the mouse wheel
  *     event on.
  * @constructor
- * @extends goog.events.EventTarget
+ * @extends {goog.events.EventTarget}
  */
 goog.events.MouseWheelHandler = function(element) {
   goog.events.EventTarget.call(this);
@@ -76,10 +77,10 @@ goog.events.MouseWheelHandler.EventType = {
 
 /**
  * The key returned from the goog.events.listen.
- * @type {string?}
+ * @type {string}
  * @private
  */
-goog.events.MouseWheelHandler.prototype.listenKey_ = null;
+goog.events.MouseWheelHandler.prototype.listenKey_;
 
 
 /**
@@ -89,6 +90,7 @@ goog.events.MouseWheelHandler.prototype.listenKey_ = null;
 goog.events.MouseWheelHandler.prototype.handleEvent = function(e) {
   var detail = 0;
   var be = e.getBrowserEvent();
+  var axis = goog.events.MouseWheelEvent.AxisType.VERTICAL;
   if (be.type == 'mousewheel') {
     // in IE we get a multiple of 120
     // Moz returns multiple of 3 (representing the number of lines scrolled)
@@ -96,12 +98,28 @@ goog.events.MouseWheelHandler.prototype.handleEvent = function(e) {
 
     // Browser vendors suck
     if (goog.userAgent.WEBKIT) {
-      detail /= 3; // 3 times larger, see bug 657118
-    } else if (goog.userAgent.OPERA) {
-      detail = - detail; // Opera negates
+      if (!goog.userAgent.isVersion('530.4')) {
+        // https://bugs.webkit.org/show_bug.cgi?id=24368
+        detail /= 3; // 3 times larger, see bug.
+      }
+
+      // Webkit uses wheelDeltaX and wheelDeltaY to indicate the direction
+      // of scroll.
+      if (be.wheelDeltaX) {
+        axis = goog.events.MouseWheelEvent.AxisType.HORIZONTAL;
+      }
     }
+    // Historical note: Opera (pre 9.5) used to negate the detail value.
   } else {
     detail = be.detail;
+  }
+
+  // Firefox 3.1 adds an axis field to the event to indicate direction of
+  // scroll.  See https://developer.mozilla.org/en/Gecko-Specific_DOM_Events
+  if (typeof be.axis != 'undefined' &&
+      typeof be.HORIZONTAL_AXIS != 'undefined' &&
+      be.axis == be.HORIZONTAL_AXIS) {
+    axis = goog.events.MouseWheelEvent.AxisType.HORIZONTAL;
   }
 
   // Gecko sometimes returns really big values if the user changes settings to
@@ -112,7 +130,7 @@ goog.events.MouseWheelHandler.prototype.handleEvent = function(e) {
     detail = -3;
   }
 
-  var newEvent = new goog.events.MouseWheelEvent(detail, be);
+  var newEvent = new goog.events.MouseWheelEvent(detail, be, axis);
   try {
     this.dispatchEvent(newEvent);
   } finally {
@@ -122,14 +140,12 @@ goog.events.MouseWheelHandler.prototype.handleEvent = function(e) {
 
 
 /**
- * Stop listening to the underlying mouse wheel event, and clean up state.
+ * Stops listening to the underlying mouse wheel event, and cleans up state.
  */
-goog.events.MouseWheelHandler.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.events.MouseWheelHandler.superClass_.dispose.call(this);
-    goog.events.unlistenByKey(this.listenKey_);
-    this.listenKey_ = null;
-  }
+goog.events.MouseWheelHandler.prototype.disposeInternal = function() {
+  goog.events.MouseWheelHandler.superClass_.disposeInternal.call(this);
+  goog.events.unlistenByKey(this.listenKey_);
+  delete this.listenKey_;
 };
 
 
@@ -138,14 +154,28 @@ goog.events.MouseWheelHandler.prototype.dispose = function() {
  * MouseWheelHandler.
  *
  * @param {number} detail The number of rows the user scrolled.
- * @param {Object} browserEvent Browser event object.
+ * @param {Event} browserEvent Browser event object.
+ * @param {goog.events.MouseWheelEvent.AxisType} opt_axis Axis of scroll.
+ *     Vertical by default.
  * @constructor
  * @extends {goog.events.BrowserEvent}
  */
-goog.events.MouseWheelEvent = function(detail, browserEvent) {
+goog.events.MouseWheelEvent = function(detail, browserEvent, opt_axis) {
   goog.events.BrowserEvent.call(this, browserEvent);
 
   this.type = goog.events.MouseWheelHandler.EventType.MOUSEWHEEL;
+
+  /**
+   * The axis that the user scrolled along. Vertical by default. Note that not
+   * all browsers provide enough information to distinguish horizontal and
+   * vertical scroll events, so for these unsupported browsers axis will be set
+   * to vertical even if the user scrolled their mouse wheel sideways.
+   *
+   * Currently supported browsers are Webkit and Firefox 3.1 or later.
+   *
+   * @type {goog.events.MouseWheelEvent.AxisType}
+   */
+  this.axis = opt_axis || goog.events.MouseWheelEvent.AxisType.VERTICAL;
 
   /**
    * The number of lines the user scrolled
@@ -154,3 +184,13 @@ goog.events.MouseWheelEvent = function(detail, browserEvent) {
   this.detail = detail;
 };
 goog.inherits(goog.events.MouseWheelEvent, goog.events.BrowserEvent);
+
+
+/**
+ * Enum type for the axis of the scroll.
+ * @enum {string}
+ */
+goog.events.MouseWheelEvent.AxisType = {
+  VERTICAL: 'vertical',
+  HORIZONTAL: 'horizontal'
+};

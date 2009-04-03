@@ -1,6 +1,5 @@
 // Copyright 2005 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -36,54 +35,82 @@ goog.provide('goog.dispose');
 
 
 /**
- * This implements a class that provides the basic for disposable objects. If
- * your class depends on a COM object or a DOM object it should extend this or
- * implement the same interface.
- *
+ * Class that provides the basic implementation for disposable objects. If your
+ * class holds one or more references to COM objects, DOM nodes, or other
+ * disposable objects, it should extend this class or implement the disposable
+ * interface.
  * @constructor
  */
 goog.Disposable = function() {};
 
 
 /**
- * Whether object has been disposed
- * @private
+ * Whether the object has been disposed of.
  * @type {boolean}
+ * @private
  */
 goog.Disposable.prototype.disposed_ = false;
 
 
 /**
- * @return {boolean} The disposed property of this object.
+ * @return {boolean} Whether the object has been disposed of.
  */
-goog.Disposable.prototype.getDisposed = function() {
+goog.Disposable.prototype.isDisposed = function() {
   return this.disposed_;
 };
 
 
 /**
- * Disposes the object. Classes that extend goog.Disposable may need to override
- * this method in order to remove references to DOM nodes and COM objects.
- * <pre>
- * MyClass.prototype.dispose = function() {
- *   if (this.getDisposed()) return;
- *   goog.Disposable.prototype.dispose.call(this);
- *
- *   // Dispose logic for MyClass
- * };
- * </pre>
+ * @return {boolean} Whether the object has been disposed of.
+ * @deprecated Use {@link #isDisposed} instead.
+ */
+goog.Disposable.prototype.getDisposed = goog.Disposable.prototype.isDisposed;
+
+
+/**
+ * Disposes of the object. If the object hasn't already been disposed of, calls
+ * {@link #disposeInternal}. Classes that extend {@code goog.Disposable} should
+ * override {@link #disposeInternal} in order to delete references to COM
+ * objects, DOM nodes, and other disposable objects.
  */
 goog.Disposable.prototype.dispose = function() {
   if (!this.disposed_) {
+    // Set disposed_ to true first, in case during the chain of disposal this
+    // gets disposed recursively.
     this.disposed_ = true;
+    this.disposeInternal();
   }
 };
 
 
 /**
- * This function takes an object and calls dispose on it if there is such a
- * method.
- * @param {Object} obj The object to dispose.
+ * Deletes or nulls out any references to COM objects, DOM nodes, or other
+ * disposable objects. Classes that extend {@code goog.Disposable} should
+ * override this method.  For example:
+ * <pre>
+ *   mypackage.MyClass = function() {
+ *     goog.Disposable.call(this);
+ *     // Constructor logic specific to MyClass.
+ *     ...
+ *   };
+ *   goog.inherits(mypackage.MyClass, goog.Disposable);
+ *
+ *   mypackage.MyClass.prototype.disposeInternal = function() {
+ *     mypackage.MyClass.superClass_.disposeInternal.call(this);
+ *     // Dispose logic specific to MyClass.
+ *     ...
+ *   };
+ * </pre>
+ * @protected
+ */
+goog.Disposable.prototype.disposeInternal = function() {
+  // No-op in the base class.
+};
+
+
+/**
+ * Calls {@code dispose} on the argument if it supports it.
+ * @param {Object} obj The object to dispose of.
  */
 goog.dispose = function(obj) {
   if (typeof obj.dispose == 'function') {

@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -33,24 +32,26 @@
 goog.provide('goog.math.Size');
 
 
+
 /**
- * Class for representing sizes consisting of a width and height.
- * @param {number} opt_w Width.
- * @param {number} opt_h Height.
+ * Class for representing sizes consisting of a width and height. Undefined
+ * width and height support is deprecated and results in compiler warning.
+ * @param {number} width Width.
+ * @param {number} height Height.
  * @constructor
  */
-goog.math.Size = function(opt_w, opt_h) {
+goog.math.Size = function(width, height) {
   /**
    * Width
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.width = goog.isDef(opt_w) ? Number(opt_w) : undefined;
+  this.width = width;
 
   /**
    * Height
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.height = goog.isDef(opt_h) ? Number(opt_h) : undefined;
+  this.height = height;
 };
 
 
@@ -58,7 +59,8 @@ goog.math.Size = function(opt_w, opt_h) {
  * Compares sizes for equality.
  * @param {goog.math.Size} a A Size.
  * @param {goog.math.Size} b A Size.
- * @return {boolean} True iff the sizes are equal, or if both are null.
+ * @return {boolean} True iff the sizes have equal widths and equal
+ *     heights, or if both are null.
  */
 goog.math.Size.equals = function(a, b) {
   if (a == b) {
@@ -79,13 +81,15 @@ goog.math.Size.prototype.clone = function() {
 };
 
 
-/**
- * Returns a nice string representing size.
- * @return {string} In the form (50 x 73).
- */
-goog.math.Size.prototype.toString = function() {
-  return '(' + this.width + ' x ' + this.height + ')';
-};
+if (goog.DEBUG) {
+  /**
+   * Returns a nice string representing size.
+   * @return {string} In the form (50 x 73).
+   */
+  goog.math.Size.prototype.toString = function() {
+    return '(' + this.width + ' x ' + this.height + ')';
+  };
+}
 
 
 /**
@@ -185,9 +189,8 @@ goog.math.Size.prototype.scale = function(s) {
 
 
 /**
- * Uniformly scales the size to fit inside the dimensions of a given size. If
- * the target size is already larger, no modification is made to the current
- * size. The original aspect ratio will be preserved.
+ * Uniformly scales the size to fit inside the dimensions of a given size. The
+ * original aspect ratio will be preserved.
  *
  * This function assumes that both Sizes contain strictly positive dimensions.
  * @param {goog.math.Size} target The target size.

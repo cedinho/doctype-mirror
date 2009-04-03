@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -32,46 +31,49 @@
 
 goog.provide('goog.math.Box');
 
+goog.require('goog.math.Coordinate');
+
+
 
 /**
  * Class for representing a box. A box is specified as a top, right, bottom,
  * and left. A box is useful for representing margins and padding.
  *
- * @param {number} opt_top Top.
- * @param {number} opt_right Right.
- * @param {number} opt_bottom Bottom.
- * @param {number} opt_left Left.
+ * @param {number} top Top.
+ * @param {number} right Right.
+ * @param {number} bottom Bottom.
+ * @param {number} left Left.
  * @constructor
  */
-goog.math.Box = function(opt_top, opt_right, opt_bottom, opt_left) {
+goog.math.Box = function(top, right, bottom, left) {
   /**
    * Top
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.top = goog.isDef(opt_top) ? Number(opt_top) : undefined;
+  this.top = top;
 
   /**
    * Right
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.right = goog.isDef(opt_right) ? Number(opt_right) : undefined;
+  this.right = right;
 
   /**
    * Bottom
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.bottom = goog.isDef(opt_bottom) ? Number(opt_bottom) : undefined;
+  this.bottom = bottom;
 
   /**
    * Left
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.left = goog.isDef(opt_left) ? Number(opt_left) : undefined;
+  this.left = left;
 };
 
 
 /**
- * Create a Box by bounding a collection of goog.math.Coordinate objects
+ * Creates a Box by bounding a collection of goog.math.Coordinate objects
  * @param {goog.math.Coordinate} var_args Coordinates to be included inside the
  *     box.
  * @return {goog.math.Box} A Box containing all the specified Coordinates.
@@ -99,14 +101,16 @@ goog.math.Box.prototype.clone = function() {
 };
 
 
-/**
- * Returns a nice string representing the box.
- * @return {string} In the form (50t, 73r, 24b, 13l).
- */
-goog.math.Box.prototype.toString = function() {
-  return '(' + this.top + 't, ' + this.right + 'r, ' + this.bottom + 'b, ' +
-         this.left + 'l)';
-};
+if (goog.DEBUG) {
+  /**
+   * Returns a nice string representing the box.
+   * @return {string} In the form (50t, 73r, 24b, 13l).
+   */
+  goog.math.Box.prototype.toString = function() {
+    return '(' + this.top + 't, ' + this.right + 'r, ' + this.bottom + 'b, ' +
+           this.left + 'l)';
+  };
+}
 
 
 /**
@@ -121,13 +125,13 @@ goog.math.Box.prototype.contains = function(coord) {
 
 
 /**
- * Expand box with the given margins.
+ * Expands box with the given margins.
  *
  * @param {number|goog.math.Box} top Top margin or box with all margins.
  * @param {number} opt_right Right margin.
  * @param {number} opt_bottom Bottom margin.
  * @param {number} opt_left Left margin.
- * @return {goog.math.Box} Returns reference to itself.
+ * @return {goog.math.Box} A reference to this Box.
  */
 goog.math.Box.prototype.expand = function(top, opt_right, opt_bottom,
     opt_left) {
@@ -184,12 +188,12 @@ goog.math.Box.contains = function(box, coord) {
 
 /**
  * Returns the distance between a coordinate and the nearest corner/side of a
- * box. Zero is returned if the coordinate is inside the box.
+ * box. Returns zero if the coordinate is inside the box.
  *
  * @param {goog.math.Box} box A Box.
  * @param {goog.math.Coordinate} coord A Coordinate.
- * @return {number} The distance between {@code coord} and the nearest 
- *     corner/side of {@code box}, or zero if {@code coord} is inside 
+ * @return {number} The distance between {@code coord} and the nearest
+ *     corner/side of {@code box}, or zero if {@code coord} is inside
  *     {@code box}.
  */
 goog.math.Box.distance = function(box, coord) {

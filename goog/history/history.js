@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -60,6 +59,7 @@
  * navigation events as other browsers while browsing forward, but creates dead
  * history states for going backward. Unfortunately, replacing the location
  * does not seem to help, the history states are created anyway.
+ *
  */
 
 
@@ -151,9 +151,11 @@
  * Safari (version 3 and later)
  */
 
+
 goog.provide('goog.History');
 goog.provide('goog.History.Event');
 
+goog.require('goog.Timer');
 goog.require('goog.array');
 goog.require('goog.dom');
 goog.require('goog.events');
@@ -162,7 +164,6 @@ goog.require('goog.events.Event');
 goog.require('goog.events.EventHandler');
 goog.require('goog.events.EventTarget');
 goog.require('goog.string');
-goog.require('goog.Timer');
 goog.require('goog.userAgent');
 
 
@@ -209,6 +210,7 @@ goog.require('goog.userAgent');
  *     is true. If not provided, a hidden iframe element will be created using
  *     document.write.
  * @constructor
+ * @extends {goog.events.EventTarget}
  */
 goog.History = function(opt_invisible, opt_blankPageUrl, opt_input,
                         opt_iframe) {
@@ -265,6 +267,11 @@ goog.History = function(opt_invisible, opt_blankPageUrl, opt_input,
    */
   this.iframeSrc_ = opt_blankPageUrl;
 
+  if (goog.userAgent.IE && !opt_blankPageUrl) {
+    this.iframeSrc_ = window.location.protocol == 'https' ? 'https:///' :
+                                                            'javascript:""';
+  }
+
   /**
    * A timer for polling the current history state for changes.
    * @type {goog.Timer}
@@ -294,9 +301,11 @@ goog.History = function(opt_invisible, opt_blankPageUrl, opt_input,
     } else {
       var iframeId = 'history_iframe' + goog.History.historyCount_;
       var srcAttribute = this.iframeSrc_ ?
-          'src="' + goog.string.htmlEscape(this.iframeSrc_) + '"' : '';
-      document.write(goog.string.subs(
-          goog.History.IFRAME_TEMPLATE_, iframeId, srcAttribute));
+          'src="' + goog.string.htmlEscape(this.iframeSrc_) + '"' :
+          '';
+      document.write(goog.string.subs(goog.History.IFRAME_TEMPLATE_,
+                                      iframeId,
+                                      srcAttribute));
       iframe = goog.dom.getElement(iframeId);
     }
 
@@ -307,13 +316,22 @@ goog.History = function(opt_invisible, opt_blankPageUrl, opt_input,
      * @private
      */
     this.iframe_ = iframe;
+
+    /**
+     * Whether the hidden iframe has had a document written to it yet in this
+     * session.
+     * @type {boolean}
+     * @private
+     */
+    this.unsetIframe_ = true;
   }
 
   if (goog.userAgent.IE) {
     // IE relies on the hidden input to restore the history state from previous
     // sessions, but input values are only restored after window.onload. Set up
     // a callback to poll the value after the onload event.
-    this.eventHandler_.listen(this.window_, goog.events.EventType.LOAD,
+    this.eventHandler_.listen(this.window_,
+                              goog.events.EventType.LOAD,
                               this.onDocumentLoaded);
 
     /**
@@ -334,7 +352,7 @@ goog.History = function(opt_invisible, opt_blankPageUrl, opt_input,
 
   // Set the initial history state.
   if (this.userVisible_) {
-    this.setHash_(this.getToken());
+    this.setHash_(this.getToken(), true);
   } else {
     this.setIframeToken_(this.hiddenInput_.value);
   }
@@ -386,14 +404,12 @@ goog.History.prototype.lockedToken_ = null;
 
 
 /**
- * Disposes the object.
+ * Disposes of the object.
  */
-goog.History.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.History.superClass_.dispose.call(this);
-    this.eventHandler_.dispose();
-    this.setEnabled(false);
-  }
+goog.History.prototype.disposeInternal = function() {
+  goog.History.superClass_.disposeInternal.call(this);
+  this.eventHandler_.dispose();
+  this.setEnabled(false);
 };
 
 
@@ -443,6 +459,12 @@ goog.History.prototype.setEnabled = function(enable) {
 
       this.enabled_ = true;
 
+      // Prevent the timer from dispatching an extraneous navigate event.
+      // However this causes the hash to get replaced with a null token in IE.
+      if (!goog.userAgent.IE) {
+        this.lastToken_ = this.getToken();
+      }
+
       this.timer_.start();
       this.dispatchEvent(new goog.History.Event(this.getToken()));
     }
@@ -466,12 +488,14 @@ goog.History.prototype.setEnabled = function(enable) {
  */
 goog.History.prototype.onDocumentLoaded = function() {
   this.documentLoaded = true;
+
   if (this.hiddenInput_.value) {
     // Any saved value in the hidden input can only be read after the document
     // has been loaded due to an IE limitation. Restore the previous state if
     // it has been set.
     this.setIframeToken_(this.hiddenInput_.value, true);
   }
+
   this.setEnabled(this.shouldEnable_);
 };
 
@@ -498,7 +522,8 @@ goog.History.prototype.onShow_ = function(e) {
  */
 goog.History.prototype.getToken = function() {
   if (this.lockedToken_ !== null) {
-    return this.lockedToken_;
+    // XXX(arv): type checker bug!
+    return /** @type {string} */ (this.lockedToken_);
   } else if (this.userVisible_) {
     return this.getLocationFragment_(this.window_);
   } else {
@@ -572,7 +597,7 @@ goog.History.prototype.setHistoryState_ = function(token, replace, opt_title) {
         // IE must save state using the iframe.
         this.setIframeToken_(token, replace, opt_title);
       }
-      if (this.enabled) {
+      if (this.enabled_) {
         this.poll_();
       }
     } else {
@@ -637,8 +662,10 @@ goog.History.prototype.setHash_ = function(hash, opt_replace) {
 goog.History.prototype.setIframeToken_ = function(token,
                                                   opt_replace,
                                                   opt_title) {
-  if (!goog.History.BAD_WEBKIT_ && token != this.getIframeToken_()) {
+  if (!goog.History.BAD_WEBKIT_ &&
+      (this.unsetIframe_ || token != this.getIframeToken_())) {
 
+    this.unsetIframe_ = false;
     token = goog.string.urlEncode(token);
 
     if (goog.userAgent.IE) {
@@ -648,7 +675,8 @@ goog.History.prototype.setIframeToken_ = function(token,
 
       doc.open('text/html', opt_replace ? 'replace' : undefined);
       doc.write(goog.string.subs(goog.History.IFRAME_SOURCE_TEMPLATE_,
-                                 opt_title || this.window_.document.title,
+                                 goog.string.htmlEscape(
+                                     opt_title || this.window_.document.title),
                                  token));
       doc.close();
     } else {
@@ -697,7 +725,7 @@ goog.History.prototype.getIframeToken_ = function() {
       try {
         // Iframe tokens are urlEncoded
         hash = goog.string.urlDecode(this.getLocationFragment_(contentWindow));
-      } catch(e) {
+      } catch (e) {
         // An exception will be thrown if the location of the iframe can not be
         // accessed (permission denied). This can occur in FF if the the server
         // that is hosting the blank html page goes down and then a new history
@@ -760,7 +788,7 @@ goog.History.prototype.poll_ = function() {
  * Updates the current history state with a given token. Called after a change
  * to the location or the iframe state is detected by poll_.
  *
- * @param {goog.History.State_} token The new history state.
+ * @param {string} token The new history state.
  * @private
  */
 goog.History.prototype.update_ = function(token) {
@@ -897,6 +925,7 @@ goog.History.EventType = {
  * Event object dispatched after navigation events.
  * @param {string} token The string identifying the new history state.
  * @constructor
+ * @extends {goog.events.Event}
  */
 goog.History.Event = function(token) {
   goog.events.Event.call(this, goog.History.EventType.NAVIGATE);

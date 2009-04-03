@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -111,13 +110,11 @@ goog.events.FocusHandler.prototype.handleEvent = function(e) {
 
 
 /**
- * Disposes the focus handler.
+ * Disposes of the focus handler.
  */
-goog.events.FocusHandler.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.events.FocusHandler.superClass_.dispose.call(this);
-    goog.events.unlistenByKey(this.listenKeyIn_);
-    goog.events.unlistenByKey(this.listenKeyOut_);
-    this.element_ = null;
-  }
+goog.events.FocusHandler.prototype.disposeInternal = function() {
+  goog.events.FocusHandler.superClass_.disposeInternal.call(this);
+  goog.events.unlistenByKey(this.listenKeyIn_);
+  goog.events.unlistenByKey(this.listenKeyOut_);
+  delete this.element_;
 };

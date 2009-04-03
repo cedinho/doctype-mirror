@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,11 +25,12 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Datastructure: AvlTree
+ * @fileoverview Datastructure: AvlTree.
+ *
  *
  * This file provides the implementation of an AVL-Tree datastructure. The tree
- * maintains a unique values in a sorted order. The values can be accessed
- * efficiently in their sorted order since the tree enforces a O(logn)
+ * maintains a set of unique values in a sorted order. The values can be
+ * accessed efficiently in their sorted order since the tree enforces an O(logn)
  * maximum height.
  *
  * The big-O notation for all operations are below:
@@ -54,6 +54,7 @@
 
 
 goog.provide('goog.structs.AvlTree');
+goog.provide('goog.structs.AvlTree.Node');
 
 goog.require('goog.structs');
 
@@ -78,6 +79,7 @@ goog.structs.AvlTree = function(opt_comparator) {
  *
  * @param {string} a The first string.
  * @param {string} b The second string.
+ * @return {number} -1 if a < b, 1 if a > b, 0 if a = b.
  * @private
  */
 goog.structs.AvlTree.DEFAULT_COMPARATOR_ = function(a, b) {
@@ -135,10 +137,10 @@ goog.structs.AvlTree.prototype.maxNode_ = null;
 /**
  * Keeps track of the number of nodes in the tree.
  *
- * @type {number?}
+ * @type {number}
  * @private
  */
-goog.structs.AvlTree.prototype.count_ = null;
+goog.structs.AvlTree.prototype.count_ = 0;
 
 
 /**
@@ -254,8 +256,7 @@ goog.structs.AvlTree.prototype.clear = function() {
  * otherwise.
  *
  * @param {*} value Value to find in the tree.
- * @return {boolean} true if the tree contains a node with the specified value,
- *    false otherwise.
+ * @return {boolean} Whether the tree contains a node with the specified value.
  */
 goog.structs.AvlTree.prototype.contains = function(value) {
   // Assume the value is not in the tree and set this value if it is found
@@ -293,10 +294,10 @@ goog.structs.AvlTree.prototype.getCount = function() {
  * Returns the value u, such that u is contained in the tree and u < v, for all
  * values v in the tree where v != u.
  *
- * @return {Object} The minimum value contained in the tree.
+ * @return {*} The minimum value contained in the tree.
  */
 goog.structs.AvlTree.prototype.getMinimum = function() {
-    return this.getMinNode_().value;
+  return this.getMinNode_().value;
 };
 
 
@@ -304,10 +305,10 @@ goog.structs.AvlTree.prototype.getMinimum = function() {
  * Returns the value u, such that u is contained in the tree and u > v, for all
  * values v in the tree where v != u.
  *
- * @return {number} The maximum value contained in the tree.
+ * @return {*} The maximum value contained in the tree.
  */
 goog.structs.AvlTree.prototype.getMaximum = function() {
-    return this.getMaxNode_().value;
+  return this.getMaxNode_().value;
 };
 
 
@@ -319,14 +320,14 @@ goog.structs.AvlTree.prototype.getMaximum = function() {
  * @return {number} The height of the tree.
  */
 goog.structs.AvlTree.prototype.getHeight = function() {
-    return this.root_ ? this.root_.height : 0;
+  return this.root_ ? this.root_.height : 0;
 };
 
 
 /**
- * Inserts the value stored in the tree into a new Array and returns the Array.
+ * Inserts the values stored in the tree into a new Array and returns the Array.
  *
- * @return {Array} an array containing all of the trees values in sorted order.
+ * @return {Array} An array containing all of the trees values in sorted order.
  */
 goog.structs.AvlTree.prototype.getValues = function() {
   var ret = [];
@@ -338,12 +339,12 @@ goog.structs.AvlTree.prototype.getValues = function() {
 
 
 /**
- * Performs an in-order traversal of the tree and calls func with each traversed
- * node, optionally starting from the smallest node with a value >= to the
- * specified start value. The traversal ends after traversing the tree maximum
- * node or when func returns a value that evaluates to true.
+ * Performs an in-order traversal of the tree and calls {@code func} with each
+ * traversed node, optionally starting from the smallest node with a value >= to
+ * the specified start value. The traversal ends after traversing the tree's
+ * maximum node or when {@code func} returns a value that evaluates to true.
  *
- * @param {Function} func         Function to call on each traversed node.
+ * @param {Function} func Function to call on each traversed node.
  * @param {Object} opt_startValue If specified, traversal will begin on the
  *    node with the smallest value >= opt_startValue.
  */
@@ -395,12 +396,12 @@ goog.structs.AvlTree.prototype.inOrderTraverse =
 
 
 /**
- * Performs an reverse-order traversal of the tree and calls func with each
- * traversed node, optionally starting from the largest node with a value <= to
- * the specified start value. The traversal ends after traversing the tree
- * minimum node or when func returns a value that evaluates to true.
+ * Performs a reverse-order traversal of the tree and calls {@code func} with
+ * each traversed node, optionally starting from the largest node with a value
+ * <= to the specified start value. The traversal ends after traversing the
+ * tree's minimum node or when func returns a value that evaluates to true.
  *
- * @param {Function} func         Function to call on each traversed node.
+ * @param {Function} func Function to call on each traversed node.
  * @param {Object} opt_startValue If specified, traversal will begin on the
  *    node with the largest value <= opt_startValue.
  */
@@ -452,15 +453,19 @@ goog.structs.AvlTree.prototype.reverseOrderTraverse =
 
 
 /**
- * Calls traversalFunc with each node it returns until traversalFunc returns
- * null or the optionally specified endNode. The first call to traversalFunc is
- * passed the root or the optionally specified startNode.
+ * Performs a traversal defined by the supplied {@code traversalFunc}. The first
+ * call to {@code traversalFunc} is passed the root or the optionally specified
+ * startNode. After that, calls {@code traversalFunc} with the node returned
+ * by the previous call to {@code traversalFunc} until {@code traversalFunc}
+ * returns null or the optionally specified endNode. The first call to
+ * traversalFunc is passed the root or the optionally specified startNode.
  *
- * @param {Function} traversalFunc Function used to traverse the tree, takes a
+ * @param {Function} traversalFunc Function used to traverse the tree. Takes a
  *     node as a parameter and returns a node.
- * @param {goog.structs.AvlTree.Node} opt_startNode Begin traversal on this
- *     node.
- * @param {goog.structs.AvlTree.Node} opt_endNode   End traversal on this node.
+ * @param {goog.structs.AvlTree.Node} opt_startNode The node at which the
+ *     traversal begins.
+ * @param {goog.structs.AvlTree.Node} opt_endNode The node at which the
+ *     traversal ends.
  * @private
  */
 goog.structs.AvlTree.prototype.traverse_ =
@@ -474,8 +479,8 @@ goog.structs.AvlTree.prototype.traverse_ =
 
 
 /**
- * Ensures that the specified node and all its ancestors are balanced. If not,
- * this method will perform left and right tree rotations to achieve a balanced
+ * Ensures that the specified node and all its ancestors are balanced. If they
+ * are not, performs left and right tree rotations to achieve a balanced
  * tree. This method assumes that at most 2 rotations are necessary to balance
  * the tree (which is true for AVL-trees that are balanced after each node is
  * added or removed).
@@ -576,7 +581,7 @@ goog.structs.AvlTree.prototype.rightRotate_ = function(node) {
 
 
 /**
- * Removes the specified node from the tree and ensure the tree still
+ * Removes the specified node from the tree and ensures the tree still
  * maintains the AVL-tree balance.
  *
  * @param {goog.structs.AvlTree.Node} node The node to be removed.
@@ -647,10 +652,10 @@ goog.structs.AvlTree.prototype.removeNode_ = function(node) {
 
 /**
  * Returns the node with the smallest value in tree, optionally rooted at
- * opt_rootNode.
+ * {@code opt_rootNode}.
  *
  * @param {goog.structs.AvlTree.Node} opt_rootNode Optional root node.
- * @return {goog.structs.AvlTree.Node} the node with the smallest value in
+ * @return {goog.structs.AvlTree.Node} The node with the smallest value in
  *     the tree.
  * @private
  */
@@ -678,7 +683,7 @@ goog.structs.AvlTree.prototype.getMinNode_ = function(opt_rootNode) {
  * opt_rootNode.
  *
  * @param {goog.structs.AvlTree.Node} opt_rootNode Optional root node.
- * @return {goog.structs.AvlTree.Node} the node with the largest value in
+ * @return {goog.structs.AvlTree.Node} The node with the largest value in
  *     the tree.
  * @private
  */
@@ -732,7 +737,7 @@ goog.structs.AvlTree.Node = function(value, opt_parent) {
 /**
  * The node's left child. Null if the node does not have a left child.
  *
- * @type {goog.structs.AvlTree.Node}
+ * @type {goog.structs.AvlTree.Node?}
  */
 goog.structs.AvlTree.Node.prototype.left = null;
 
@@ -740,7 +745,7 @@ goog.structs.AvlTree.Node.prototype.left = null;
 /**
  * The node's right child. Null if the node does not have a right child.
  *
- * @type {goog.structs.AvlTree.Node}
+ * @type {goog.structs.AvlTree.Node?}
  */
 goog.structs.AvlTree.Node.prototype.right = null;
 
@@ -754,25 +759,24 @@ goog.structs.AvlTree.Node.prototype.height = 1;
 
 
 /**
- * Returns true if the specified node has a parent and is the right child of
- * its parent, returns false otherwise.
+ * Returns true iff the specified node has a parent and is the right child of
+ * its parent.
  *
- * @return {boolean} true if the specified node has a parent and is the right
- *    child of its parent, returns false otherwise.
+ * @return {boolean} Whether the specified node has a parent and is the right
+ *    child of its parent.
  */
 goog.structs.AvlTree.Node.prototype.isRightChild = function() {
-  return this.parent && this.parent.right == this;
+  return !!this.parent && this.parent.right == this;
 };
 
 
 /**
- * Returns true if the specified node has a parent and is the left child of
- * its parent, returns false otherwise.
+ * Returns true iff the specified node has a parent and is the left child of
+ * its parent.
  *
- * @return {boolean} true if the specified node has a parent and is the left
- *    child of its parent, returns false otherwise.
+ * @return {boolean} Whether the specified node has a parent and is the left
+ *    child of its parent.
  */
 goog.structs.AvlTree.Node.prototype.isLeftChild = function() {
-  return this.parent && this.parent.left == this;
+  return !!this.parent && this.parent.left == this;
 };
-

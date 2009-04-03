@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -27,10 +26,27 @@
 
 /**
  * @fileoverview
- * XML utilities
+ * XML utilities.
+ *
  */
 
 goog.provide('goog.dom.xml');
+
+goog.require('goog.dom');
+
+
+/**
+ * Max XML size for MSXML2.  Used to prevent potential DoS attacks.
+ * @type {number}
+ */
+goog.dom.xml.MAX_XML_SIZE_KB = 2 * 1024;  // In kB
+
+
+/**
+ * Max XML size for MSXML2.  Used to prevent potential DoS attacks.
+ * @type {number}
+ */
+goog.dom.xml.MAX_ELEMENT_DEPTH = 256; // Same default as MSXML6.
 
 
 /**
@@ -48,7 +64,7 @@ goog.dom.xml.createDocument = function(opt_rootTagName, opt_namespaceUri) {
                                                   opt_rootTagName || '',
                                                   null)
   } else if (typeof ActiveXObject != 'undefined') {
-    var doc = new ActiveXObject('MSXML2.DOMDocument');
+    var doc = goog.dom.xml.createMsXmlDocument_();
     if (doc) {
       if (opt_rootTagName) {
         doc.appendChild(doc.createNode(goog.dom.NodeType.ELEMENT,
@@ -70,11 +86,31 @@ goog.dom.xml.createDocument = function(opt_rootTagName, opt_namespaceUri) {
 goog.dom.xml.loadXml = function(xml) {
   if (typeof DOMParser != 'undefined') {
     return new DOMParser().parseFromString(xml, 'application/xml');
-  } else {
-    var doc = new ActiveXObject('MSXML2.DOMDocument');
+  } else if (typeof ActiveXObject != 'undefined') {
+    var doc = goog.dom.xml.createMsXmlDocument_();
     doc.loadXML(xml);
     return doc;
   }
+  throw Error('Your browser does not support loading xml documents');
+};
+
+
+/**
+ * Serializes an XML document or subtree to string.
+ * @param {Document|Element} xml The document or the root node of the subtree.
+ * @return {string} The serialized XML.
+ */
+goog.dom.xml.serialize = function(xml) {
+  // Compatible with Firefox, Opera and WebKit.
+  if (typeof XMLSerializer != 'undefined') {
+    return new XMLSerializer().serializeToString(xml);
+  }
+  // Compatible with Internet Explorer.
+  var text = xml.xml;
+  if (text) {
+    return text;
+  }
+  throw Error('Your browser does not support serializing XML documents');
 };
 
 
@@ -130,4 +166,24 @@ goog.dom.xml.selectNodes = function(node, path) {
   } else {
    return [];
   }
+};
+
+
+/**
+ * Creates an instance of the MSXML2.DOMDocument.
+ * @return {Document} The new document.
+ * @private
+ */
+goog.dom.xml.createMsXmlDocument_ = function() {
+  var doc = new ActiveXObject('MSXML2.DOMDocument');
+  if (doc) {
+    // Prevent potential vulnerabilities exposed by MSXML2, see
+    // http://b/1707300 and http://wiki/Main/ISETeamXMLAttacks for details.
+    doc.resolveExternals = false;
+    doc.validateOnParse = false;
+    doc.setProperty('ProhibitDTD', true);
+    doc.setProperty('MaxXMLSize', goog.dom.xml.MAX_XML_SIZE_KB);
+    doc.setProperty('MaxElementDepth', goog.dom.xml.MAX_ELEMENT_DEPTH);
+  }
+  return doc;
 };

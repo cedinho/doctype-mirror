@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,7 +25,8 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Datastructure: Pool
+ * @fileoverview Datastructure: Pool.
+ *
  *
  * A generic class for handling pools of objects.
  * When an object is released, it is attempted to be reused.
@@ -46,7 +46,7 @@ goog.require('goog.structs.Set');
  * @param {number} opt_minCount Min. number of objects (Default: 1).
  * @param {number} opt_maxCount Max. number of objects (Default: 10).
  * @constructor
- * @extends goog.Disposable
+ * @extends {goog.Disposable}
  */
 goog.structs.Pool = function(opt_minCount, opt_maxCount) {
   goog.Disposable.call(this);
@@ -73,7 +73,7 @@ goog.structs.Pool = function(opt_minCount, opt_maxCount) {
   /**
    * Set used to store objects that are currently in the pool and available
    * to be used.
-   * @type {goog.structs.Set}
+   * @type {goog.structs.Queue}
    * @private
    */
   this.freeQueue_ = new goog.structs.Queue();
@@ -150,10 +150,8 @@ goog.structs.Pool.prototype.setMaximumCount = function(max) {
 
 
 /**
- * Get a new object from the the pool, if there is one available, otherwise
- * return null.
- * @return {Object} The new object from the pool if there is one available,
- *     otherwise undefined.
+ * @return {Object|undefined} A new object from the pool if there is one
+ *     available, otherwise undefined.
  */
 goog.structs.Pool.prototype.getObject = function() {
   var obj = this.removeFreeObject_();
@@ -166,10 +164,10 @@ goog.structs.Pool.prototype.getObject = function() {
 
 
 /**
- * Release the space in the pol heald by a given object in, i.e. remove it from
- * the pool and free up its space.
- * @param {Object} obj The object to release.
- * @return {boolean} TRUE iff the object was removed. Otherwise, FALSE.
+ * Returns an object to the pool of available objects so that it can be reused.
+ * @param {Object} obj The object to return to the pool of free objects.
+ * @return {boolean} Whether the object was found in the Pool's set of in-use
+ *     objects (in other words, whether any action was taken).
  */
 goog.structs.Pool.prototype.releaseObject = function(obj) {
   if (this.inUseSet_.remove(obj)) {
@@ -193,7 +191,7 @@ goog.structs.Pool.prototype.releaseObject = function(obj) {
 goog.structs.Pool.prototype.removeFreeObject_ = function() {
   var obj;
   while (this.getFreeCount() > 0) {
-    obj = this.freeQueue_.dequeue();
+    obj = /** @type {Object} */(this.freeQueue_.dequeue());
 
     if (!this.objectCanBeReused(obj)) {
       this.adjustForMinMax();
@@ -214,7 +212,7 @@ goog.structs.Pool.prototype.removeFreeObject_ = function() {
  * Adds an object to the collection of objects that are free. If the object can
  * not be added, then it is disposed.
  *
- * @param {Object} obj The object to add to colllection of free objects.
+ * @param {Object} obj The object to add to collection of free objects.
  */
 goog.structs.Pool.prototype.addFreeObject = function(obj) {
   this.inUseSet_.remove(obj)
@@ -244,7 +242,7 @@ goog.structs.Pool.prototype.adjustForMinMax = function() {
 
   // Make sure no more than the maximum number of objects are created.
   while (this.getCount() > this.maxCount_ && this.getFreeCount() > 0) {
-    this.disposeObject(freeQueue.dequeue());
+    this.disposeObject(/** @type {Object} */(freeQueue.dequeue()));
   }
 };
 
@@ -260,9 +258,9 @@ goog.structs.Pool.prototype.createObject = function() {
 
 
 /**
- * Should be overriden to dispose of an object, default implementation is to
- * remove all it's members which should render it useless. Calls the object's
- * dispose method, if available.
+ * Should be overriden to dispose of an object. Default implementation is to
+ * remove all its members, which should render it useless. Calls the object's
+ * {@code dispose()} method, if available.
  * @param {Object} obj The object to dispose.
  */
 goog.structs.Pool.prototype.disposeObject = function(obj) {
@@ -277,11 +275,11 @@ goog.structs.Pool.prototype.disposeObject = function(obj) {
 
 
 /**
- * Should be overriden to determine if an object has become unusable and should
- * not be returned by getObject(). Calls the object's can beReused method,
- * if available.
+ * Should be overriden to determine whether an object has become unusable and
+ * should not be returned by getObject(). Calls the object's
+ * {@code canBeReused()}  method, if available.
  * @param {Object} obj The object to test.
- * @return {boolean} TRUE iff the object can be reused. Otherwise, FALSE.
+ * @return {boolean} Whether the object can be reused.
  */
 goog.structs.Pool.prototype.objectCanBeReused = function(obj) {
   if (typeof obj.canBeReused == 'function') {
@@ -292,8 +290,8 @@ goog.structs.Pool.prototype.objectCanBeReused = function(obj) {
 
 
 /**
- * Returns true if the given object is in the pool
- * @param {Object} obj The object to test if the pool contains.
+ * Returns true if the given object is in the pool.
+ * @param {Object} obj The object to check the pool for.
  * @return {boolean} Whether the pool contains the object.
  */
 goog.structs.Pool.prototype.contains = function(obj) {
@@ -329,8 +327,8 @@ goog.structs.Pool.prototype.getFreeCount = function() {
 
 
 /**
- * Determins if the pool contains no objects.
- * @return {boolean} TRUE iff the pool contains no objects. Otherwise, FALSE.
+ * Determines if the pool contains no objects.
+ * @return {boolean} Whether the pool contains no objects.
  */
 goog.structs.Pool.prototype.isEmpty = function() {
   return this.freeQueue_.isEmpty() && this.inUseSet_.isEmpty();
@@ -338,24 +336,22 @@ goog.structs.Pool.prototype.isEmpty = function() {
 
 
 /**
- * Disposes the pool and all objects currently held in the pool.
+ * Disposes of the pool and all objects currently held in the pool.
  */
-goog.structs.Pool.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.structs.Pool.superClass_.dispose.call(this);
-    if (this.getInUseCount() > 0) {
-      throw Error(goog.structs.Pool.ERROR_DISPOSE_UNRELEASED_OBJS_);
-    }
-
-    // Call disposeObject on each object held by the pool.
-    goog.iter.forEach(this.inUseSet_, this.disposeObject, this);
-    this.inUseSet_.clear();
-    this.inUseSet_ = null;
-
-    var freeQueue = this.freeQueue_;
-    while (!freeQueue.isEmpty()) {
-      this.disposeObject(freeQueue.dequeue());
-    }
-    this.freeQueue_ = null;
+goog.structs.Pool.prototype.disposeInternal = function() {
+  goog.structs.Pool.superClass_.disposeInternal.call(this);
+  if (this.getInUseCount() > 0) {
+    throw Error(goog.structs.Pool.ERROR_DISPOSE_UNRELEASED_OBJS_);
   }
+
+  // Call disposeObject on each object held by the pool.
+  goog.iter.forEach(this.inUseSet_, this.disposeObject, this);
+  this.inUseSet_.clear();
+  delete this.inUseSet_;
+
+  var freeQueue = this.freeQueue_;
+  while (!freeQueue.isEmpty()) {
+    this.disposeObject(/** @type {Object} */ (freeQueue.dequeue()));
+  }
+  delete this.freeQueue_;
 };

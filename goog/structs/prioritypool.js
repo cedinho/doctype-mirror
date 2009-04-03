@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,7 +25,8 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Datastructure: Priority Pool
+ * @fileoverview Datastructure: Priority Pool.
+ *
  *
  * An extending of Pool that handles queueing and prioritization.
  */
@@ -43,7 +43,7 @@ goog.require('goog.structs.PriorityQueue');
  * @param {number} opt_minCount Min. number of objects (Default: 1).
  * @param {number} opt_maxCount Max. number of objects (Default: 10).
  * @constructor
- * @extends goog.structs.Pool
+ * @extends {goog.structs.Pool}
  */
 goog.structs.PriorityPool = function(opt_minCount, opt_maxCount) {
   /**
@@ -72,7 +72,7 @@ goog.structs.PriorityPool.DEFAULT_PRIORITY_ = 100;
 
 /**
  * Get a new object from the the pool, if there is one available, otherwise
- * return null.
+ * return undefined.
  * @param {Function} opt_callback The function to callback when an object is
  *     available. This could be immediately. If this is not present, then an
  *     object is immediately returned if available, or undefined if not.
@@ -122,7 +122,7 @@ goog.structs.PriorityPool.prototype.handleQueueRequests_ = function() {
  *
  * NOTE: This method does not remove the object from the in use collection.
  *
- * @param {Object} obj The object to add to colllection of free objects.
+ * @param {Object} obj The object to add to the collection of free objects.
  */
 goog.structs.PriorityPool.prototype.addFreeObject = function(obj) {
   goog.structs.PriorityPool.superClass_.addFreeObject.call(this, obj);
@@ -151,10 +151,8 @@ goog.structs.PriorityPool.prototype.adjustForMinMax = function() {
 /**
  * Disposes of the pool.
  */
-goog.structs.PriorityPool.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.structs.PriorityPool.superClass_.dispose.call(this);
-    this.requestQueue_.clear();
-    this.requestQueue_ = null;
-  }
+goog.structs.PriorityPool.prototype.disposeInternal = function() {
+  goog.structs.PriorityPool.superClass_.disposeInternal.call(this);
+  this.requestQueue_.clear();
+  this.requestQueue_ = null;
 };

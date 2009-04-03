@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,10 +25,11 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Datastructure: Trie
+ * @fileoverview Datastructure: Trie.
+ *
  *
  * This file provides the implementation of a trie data structure.  A trie is a
- * data structure that stores key / value pairs in a prefix tree.  See:
+ * data structure that stores key/value pairs in a prefix tree.  See:
  *     http://en.wikipedia.org/wiki/Trie
  *
  */
@@ -37,8 +37,9 @@
 
 goog.provide('goog.structs.Trie');
 
-goog.require('goog.structs');
 goog.require('goog.object');
+goog.require('goog.structs');
+
 
 
 /**
@@ -73,7 +74,7 @@ goog.structs.Trie.prototype.value_ = undefined;
 
 
 /**
- * Sets the given key / value pair in the trie.  O(L), where L is the length
+ * Sets the given key/value pair in the trie.  O(L), where L is the length
  * of the key.
  * @param {string} key The key.
  * @param {*} value The value.
@@ -84,7 +85,7 @@ goog.structs.Trie.prototype.set = function(key, value) {
 
 
 /**
- * Adds the given key / value pair in the trie.  Throw an exception if the key
+ * Adds the given key/value pair in the trie.  Throw an exception if the key
  * already exists in the trie.  O(L), where L is the length of the key.
  * @param {string} key The key.
  * @param {*} value The value.
@@ -95,9 +96,10 @@ goog.structs.Trie.prototype.add = function(key, value) {
 
 
 /**
- * Helper function for set and add.  Sets / adds the given key / value pair in
- * the trie.  If opt_add is true, then throws an exception if the key
- * already exists in the trie.  O(L), where L is the length of the key.
+ * Helper function for set and add.  Adds the given key/value pair to
+ * the trie, or, if the key already exists, sets the value of the key. If
+ * opt_add is true, then throws an exception if the key already has a value in
+ * the trie.  O(L), where L is the length of the key.
  * @param {string} key The key.
  * @param {*} value The value.
  * @param {boolean} opt_add Throw exception if key is already in the trie.
@@ -122,7 +124,7 @@ goog.structs.Trie.prototype.setOrAdd_ = function(key, value, opt_add) {
 
 
 /**
- * Adds multiple key value pairs from another goog.structs.Trie or Object.
+ * Adds multiple key/value pairs from another goog.structs.Trie or Object.
  * O(N) where N is the number of nodes in the trie.
  * @param {Object|goog.structs.Trie} trie Object containing the data to add.
  */
@@ -158,6 +160,42 @@ goog.structs.Trie.prototype.get = function(key) {
 
 
 /**
+ * Retrieves all values from the trie that correspond to prefixes of the given
+ * input key. O(L), where L is the length of the key.
+ *
+ * @param {string} key The key to use for lookup. The given key as well as all
+ *     prefixes of the key are retrieved.
+ * @param {number?} opt_keyStartIndex Optional position in key to start lookup
+ *     from. Defaults to 0 if not specified.
+ * @return {Object} Map of end index of matching prefixes and corresponding
+ *     values. Empty if no match found.
+ */
+goog.structs.Trie.prototype.getKeyAndPrefixes = function(key,
+                                                         opt_keyStartIndex) {
+  var node = this;
+  var matches = {};
+  var characterPosition = opt_keyStartIndex || 0;
+
+  if (node.value_ !== undefined) {
+    matches[characterPosition] = node.value_;
+  }
+
+  for (; characterPosition < key.length; characterPosition++) {
+    var currentCharacter = key.charAt(characterPosition);
+    if (!(currentCharacter in node.childNodes_)) {
+      break;
+    }
+    node = node.childNodes_[currentCharacter];
+    if (node.value_ !== undefined) {
+      matches[characterPosition] = node.value_;
+    }
+  }
+
+  return matches;
+};
+
+
+/**
  * Gets the values of the trie.  Not returned in any reliable order.  O(N) where
  * N is the number of nodes in the trie.  Calls getValuesInternal_.
  * @return {Array} The values in the trie.
@@ -172,7 +210,7 @@ goog.structs.Trie.prototype.getValues = function() {
 /**
  * Gets the values of the trie.  Not returned in any reliable order.  O(N) where
  * N is the number of nodes in the trie.  Builds the values as it goes.
- * @param {Array.<string>} allValues Array to place values in to.
+ * @param {Array.<string>} allValues Array to place values into.
  * @private
  */
 goog.structs.Trie.prototype.getValuesInternal_ = function(allValues) {
@@ -215,7 +253,7 @@ goog.structs.Trie.prototype.getKeys = function(opt_prefix) {
 
 /**
  * Private method to get keys from the trie.  Builds the keys as it goes.
- * @param {string} keySoFar The partual key (prefix) traversed so far.
+ * @param {string} keySoFar The partial key (prefix) traversed so far.
  * @param {Array} allKeys The partially built array of keys seen so far.
  * @private
  */
@@ -233,7 +271,7 @@ goog.structs.Trie.prototype.getKeysInternal_ = function(keySoFar, allKeys) {
  * Checks to see if a certain key is in the trie.  O(L), where L is the length
  * of the key.
  * @param {string} key A key that may be in the trie.
- * @return {boolean} Returns true iff the trie contains key.
+ * @return {boolean} Whether the trie contains key.
  */
 goog.structs.Trie.prototype.containsKey = function(key) {
   return this.get(key) !== undefined;
@@ -244,7 +282,7 @@ goog.structs.Trie.prototype.containsKey = function(key) {
  * Checks to see if a certain value is in the trie.  Worst case is O(N) where
  * N is the number of nodes in the trie.
  * @param {*} value A value that may be in the trie.
- * @return {boolean} Returns true iff the trie contains the value.
+ * @return {boolean} Whether the trie contains the value.
  */
 goog.structs.Trie.prototype.containsValue = function(value) {
   if (this.value_ === value) {
@@ -325,8 +363,7 @@ goog.structs.Trie.prototype.clone = function() {
 /**
  * Returns the number of key value pairs in the trie.  O(N), where N is the
  * number of nodes in the trie.
- * (This could be optimized by storing a weight (count below) in every node.)
- * @return {number} The nuber of pairs.
+ * @return {number} The number of pairs.
  */
 goog.structs.Trie.prototype.getCount = function() {
   return goog.structs.getCount(this.getValues());

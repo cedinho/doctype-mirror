@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,13 +25,14 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Additional mathematical functions
+ * @fileoverview Additional mathematical functions.
  */
 
 
 goog.provide('goog.math');
 
 
+goog.require('goog.array');
 goog.require('goog.math.Box');
 goog.require('goog.math.Coordinate');
 goog.require('goog.math.Range');
@@ -41,7 +41,7 @@ goog.require('goog.math.Size');
 
 
 /**
- * Returns a random integer greater than or equal to 0 and less than a.
+ * Returns a random integer greater than or equal to 0 and less than {@code a}.
  * @param {number} a  The upper bound for the random integer (exclusive).
  * @return {number} A random integer N such that 0 <= N < a.
  */
@@ -51,10 +51,11 @@ goog.math.randomInt = function(a) {
 
 
 /**
- * Returns a random number greater than or equal to a and less than b.
+ * Returns a random number greater than or equal to {@code a} and less than
+ * {@code b}.
  * @param {number} a  The lower bound for the random number (inclusive).
  * @param {number} b  The upper bound for the random number (exclusive).
- * @return {number} a random number N such that a <= N < b.
+ * @return {number} A random number N such that a <= N < b.
  */
 goog.math.uniformRandom = function(a, b) {
   return a + Math.random() * (b - a);
@@ -123,8 +124,8 @@ goog.math.nearlyEquals = function(a, b, opt_tolerance) {
 
 
 /**
- * Standardize angle to be in range [0-360). Negative angles become positive,
- * and values greater than 360 are returned modulo 360.
+ * Standardizes an angle to be in range [0-360). Negative angles become
+ * positive, and values greater than 360 are returned modulo 360.
  * @param {number} angle Angle in degrees.
  * @return {number} Standardized angle.
  */
@@ -134,7 +135,7 @@ goog.math.standardAngle = function(angle) {
 
 
 /**
- * Convert degrees to radians.
+ * Converts degrees to radians.
  * @param {number} angleDegrees Angle in degrees.
  * @return {number} Angle in radians.
  */
@@ -144,7 +145,7 @@ goog.math.toRadians = function(angleDegrees) {
 
 
 /**
- * Convert radians to degrees.
+ * Converts radians to degrees.
  * @param {number} angleRadians Angle in radians.
  * @return {number} Angle in degrees.
  */
@@ -154,7 +155,7 @@ goog.math.toDegrees = function(angleRadians) {
 
 
 /**
- * For a given angle and radius, find the X portion of the offset.
+ * For a given angle and radius, finds the X portion of the offset.
  * @param {number} degrees Angle in degrees (zero points in +X direction).
  * @param {number} radius Radius.
  * @return {number} The x-distance for the angle and radius.
@@ -165,7 +166,7 @@ goog.math.angleDx = function(degrees, radius) {
 
 
 /**
- * For a given angle and radius, find the Y portion of the offset.
+ * For a given angle and radius, finds the Y portion of the offset.
  * @param {number} degrees Angle in degrees (zero points in +X direction).
  * @param {number} radius Radius.
  * @return {number} The y-distance for the angle and radius.
@@ -176,7 +177,7 @@ goog.math.angleDy = function(degrees, radius) {
 
 
 /**
- * Compute the angle between two points (x1,y1) and (x2,y2).
+ * Computes the angle between two points (x1,y1) and (x2,y2).
  * Angle zero points in the +X direction, 90 degrees points in the +Y
  * direction (down) and from there we grow clockwise towards 360 degrees.
  * @param {number} x1 x of first point.
@@ -193,7 +194,7 @@ goog.math.angle = function(x1, y1, x2, y2) {
 
 
 /**
- * Compute the difference between startAngle and endAngle (angles in degrees).
+ * Computes the difference between startAngle and endAngle (angles in degrees).
  * @param {number} startAngle  Start angle in degrees.
  * @param {number} endAngle  End angle in degrees.
  * @return {number} The number of degrees that when added to
@@ -226,3 +227,148 @@ goog.math.angleDifference = function(startAngle, endAngle) {
 goog.math.sign = function(x) {
   return x < 0 ? -1 : 1;
 };
+
+
+/**
+ * JavaScript implementation of Longest Common Subsequence problem.
+ * http://en.wikipedia.org/wiki/Longest_common_subsequence
+ *
+ * Returns the longest possible array that is subarray of both of given arrays.
+ *
+ * @param {Array.<Object>} array1 First array of objects.
+ * @param {Array.<Object>} array2 Second array of objects.
+ * @param {Function} opt_compareFn Function that acts as a custom comparator
+ *     for the array ojects. Function should return true if objects are equal,
+ *     otherwise false.
+ * @param {Function} opt_collectorFn Function used to decide what to return
+ *     as a result subsequence. It accepts 2 arguments: index of common element
+ *     in the first array and index in the second. The default function returns
+ *     element from the first array.
+ * @return {Array.<Object>} A list of objects that are common to both arrays
+ *     such that there is no common subsequence with size greater than the
+ *     length of the list.
+ */
+goog.math.longestCommonSubsequence = function(
+    array1, array2, opt_compareFn, opt_collectorFn) {
+
+  var compare = opt_compareFn || function(a, b) {
+    return a == b;
+  };
+
+  var collect = opt_collectorFn || function(i1, i2) {
+    return array1[i1];
+  };
+
+  var length1 = array1.length;
+  var length2 = array2.length;
+
+  var arr = [];
+  for (var i = 0; i < length1 + 1; i++) {
+    arr[i] = [];
+    arr[i][0] = 0;
+  }
+
+  for (var j = 0; j < length2 + 1; j++) {
+    arr[0][j] = 0;
+  }
+
+  for (i = 1; i <= length1; i++) {
+    for (j = 1; j <= length1; j++) {
+      if (compare(array1[i - 1], array2[j - 1])) {
+        arr[i][j] = arr[i - 1][j - 1] + 1;
+      } else {
+        arr[i][j] = Math.max(arr[i - 1][j], arr[i][j - 1]);
+      }
+    }
+  }
+
+  // Backtracking
+  var result = [];
+  var i = length1, j = length2;
+  while (i > 0 && j > 0) {
+    if (compare(array1[i - 1], array2[j - 1])) {
+      result.unshift(collect(i - 1, j - 1));
+      i--;
+      j--;
+    } else {
+      if (arr[i - 1][j] > arr[i][j - 1]) {
+        i--;
+      } else {
+        j--;
+      }
+    }
+  }
+
+  return result;
+};
+
+
+/**
+ * Returns the sum of the arguments.
+ * @param {number} var_args Numbers to add.
+ * @return {number} The sum of the arguments (0 if no arguments were provided,
+ *     {@code NaN} if any of the arguments is not a valid number).
+ */
+goog.math.sum = function(var_args) {
+  return goog.array.reduce(arguments, function(sum, value) {
+    return sum + value;
+  }, 0);
+};
+
+
+/**
+ * Returns the arithmetic mean of the arguments.
+ * @param {number} var_args Numbers to average.
+ * @return {number} The average of the arguments ({@code NaN} if no arguments
+ *     were provided or any of the arguments is not a valid number).
+ */
+goog.math.average = function(var_args) {
+  return goog.math.sum.apply(null, arguments) / arguments.length;
+};
+
+
+/**
+ * Returns the sample standard deviation of the arguments.  For a definition of
+ * sample standard deviation, see e.g.
+ * http://en.wikipedia.org/wiki/Standard_deviation
+ * @param {number} var_args Number samples to analyze.
+ * @return {number} The sample standard deviation of the arguments (0 if fewer
+ *     than two samples were provided, or {@code NaN} if any of the samples is
+ *     not a valid number).
+ */
+goog.math.standardDeviation = function(var_args) {
+  var sampleSize = arguments.length;
+  if (sampleSize < 2) {
+    return 0;
+  }
+
+  var mean = goog.math.average.apply(null, arguments);
+  var variance = goog.math.sum.apply(null, goog.array.map(arguments,
+      function(val) {
+        return Math.pow(val - mean, 2);
+      })) / (sampleSize - 1);
+
+  return Math.sqrt(variance);
+};
+
+
+/**
+ * Returns whether the supplied number represents an integer, i.e. that is has
+ * no fractional component.  No range-checking is performed on the number.
+ * @param {number} num The number to test.
+ * @return {boolean} Whether {@code num} is an integer.
+ */
+goog.math.isInt = function(num) {
+  return isFinite(num) && num % 1 == 0;
+};
+
+
+/**
+ * Returns whether the supplied number is finite and not NaN.
+ * @param {number} num The number to test.
+ * @return {boolean} Whether {@code num} is a finite number.
+ */
+goog.math.isFiniteNumber = function(num) {
+  return isFinite(num) && !isNaN(num);
+};
+

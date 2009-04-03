@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -27,11 +26,14 @@
 
 /**
  * @fileoverview A timer class to which other classes and objects can
- * listen on.  This is only an abstraction above setInterval
+ * listen on.  This is only an abstraction above setInterval.
+ *
  */
 
 goog.provide('goog.Timer');
+
 goog.require('goog.events.EventTarget');
+
 
 
 /**
@@ -41,7 +43,7 @@ goog.require('goog.events.EventTarget');
  * @param {Object} opt_timerObject  An object that has setTimeout, setInterval,
  *     clearTimeout and clearInterval (eg Window).
  * @constructor
- * @extends goog.events.EventTarget
+ * @extends {goog.events.EventTarget}
  */
 goog.Timer = function(opt_interval, opt_timerObject) {
   goog.events.EventTarget.call(this);
@@ -81,6 +83,19 @@ goog.Timer = function(opt_interval, opt_timerObject) {
 goog.inherits(goog.Timer, goog.events.EventTarget);
 
 
+/**
+ * Maximum timeout value.
+ *
+ * Timeout values too big to fit into a signed 32-bit integer may cause
+ * overflow in FF, Safari, and Chrome, resulting in the timeout being
+ * scheduled immediately.  It makes more sense simply not to schedule these
+ * timeouts, since 24.8 days is beyond a reasonable expectation for the
+ * browser to stay open.
+ *
+ * @type {number}
+ * @private
+ */
+goog.Timer.MAX_TIMEOUT_ = 2147483647;
 
 
 /**
@@ -100,6 +115,7 @@ goog.Timer.prototype.enabled = false;
  */
 goog.Timer.defaultTimerObject = goog.global['window'];
 
+
 /**
  * A variable that controls the timer error correction. If the
  * timer is called before the requested interval times
@@ -109,12 +125,23 @@ goog.Timer.defaultTimerObject = goog.global['window'];
  */
 goog.Timer.intervalScale = 0.8;
 
+
 /**
  * Variable for storing the result of setInterval
  * @type {number?}
  * @private
  */
 goog.Timer.prototype.timer_ = null;
+
+
+/**
+ * Gets the interval of the timer.
+ * @return {number} interval Number of ms between ticks.
+ */
+goog.Timer.prototype.getInterval = function() {
+  return this.interval_;
+};
+
 
 /**
  * Sets the interval of the timer.
@@ -198,20 +225,20 @@ goog.Timer.prototype.start = function() {
  */
 goog.Timer.prototype.stop = function() {
   this.enabled = false;
-  this.timerObject_.clearTimeout(this.timer_);
-  this.timer_ = null;
+  if (this.timer_) {
+    this.timerObject_.clearTimeout(this.timer_);
+    this.timer_ = null;
+  }
 };
 
 
 /**
- * Disposes the timer.
+ * Disposes of the timer.
  */
-goog.Timer.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.events.EventTarget.prototype.dispose.call(this);
-    this.stop();
-    this.timerObject_ = null;
-  }
+goog.Timer.prototype.disposeInternal = function() {
+  goog.Timer.superClass_.disposeInternal.call(this);
+  this.stop();
+  delete this.timerObject_;
 };
 
 
@@ -241,8 +268,17 @@ goog.Timer.callOnce = function(listener, opt_interval, opt_handler) {
    throw Error('Invalid listener argument');
   }
 
-  return goog.Timer.defaultTimerObject.setTimeout(listener, opt_interval || 0);
+  if (opt_interval > goog.Timer.MAX_TIMEOUT_) {
+    // Timeouts greater than MAX_INT return immediately due to integer
+    // overflow in many browsers.  Since MAX_INT is 24.8 days, just don't
+    // schedule anything at all.
+    return -1;
+  } else {
+    return goog.Timer.defaultTimerObject.setTimeout(
+        listener, opt_interval || 0);
+  }
 };
+
 
 /**
  * Clears a timeout initiated by callOnce

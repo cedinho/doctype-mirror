@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,7 +25,8 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Datastructure: Heap
+ * @fileoverview Datastructure: Heap.
+ *
  *
  * This file provides the implementation of a Heap datastructure. Smaller keys
  * rise to the top.
@@ -45,7 +45,7 @@
 
 goog.provide('goog.structs.Heap');
 
-goog.require('goog.structs')
+goog.require('goog.array');
 goog.require('goog.structs.Node');
 
 
@@ -84,7 +84,7 @@ goog.structs.Heap.prototype.insert = function(key, value) {
 
 
 /**
- * Adds multiple key value pairs from another goog.structs.Heap or Object
+ * Adds multiple key-value pairs from another goog.structs.Heap or Object
  * @param {goog.structs.Heap|Object} heap Object containing the data to add.
  */
 goog.structs.Heap.prototype.insertAll = function(heap) {
@@ -126,7 +126,7 @@ goog.structs.Heap.prototype.remove = function() {
   if (count <= 0) {
     return undefined;
   } else if (count == 1) {
-    goog.structs.clear(nodes);
+    goog.array.clear(nodes);
   } else {
     nodes[0] = nodes.pop();
     this.moveDown_(0);
@@ -212,7 +212,7 @@ goog.structs.Heap.prototype.moveUp_ = function(index) {
  * Gets the index of the left child of the node at the given index.
  * @param {number} index The index of the node to get the left child for.
  * @return {number} The index of the left child.
- * @private 
+ * @private
  */
 goog.structs.Heap.prototype.getLeftChildIndex_ = function(index) {
   return index * 2 + 1;
@@ -274,10 +274,10 @@ goog.structs.Heap.prototype.getKeys = function() {
 /**
  * Whether the heap contains the given value.
  * @param {Object} val The value to check for.
- * @return {boolean} TRUE iff the heap contains the value. Otherwise, false.
+ * @return {boolean} Whether the heap contains the value.
  */
 goog.structs.Heap.prototype.containsValue = function(val) {
-  return goog.structs.some(this.nodes_, function(node) {
+  return goog.array.some(this.nodes_, function(node) {
     return node.getValue() == val;
   });
 };
@@ -286,10 +286,10 @@ goog.structs.Heap.prototype.containsValue = function(val) {
 /**
  * Whether the heap contains the given key.
  * @param {Object} key The key to check for.
- * @return {boolean} TRUE iff the heap contains the key. Otherwise, false.
+ * @return {boolean} Whether the heap contains the key.
  */
 goog.structs.Heap.prototype.containsKey = function(key) {
-  return goog.structs.some(this.nodes_, function(node) {
+  return goog.array.some(this.nodes_, function(node) {
     return node.getKey() == key;
   });
 };
@@ -297,7 +297,7 @@ goog.structs.Heap.prototype.containsKey = function(key) {
 
 /**
  * Clones a heap and returns a new heap
- * @return {goog.structs.Heap} A new goog.structs.Heap with the same key value
+ * @return {goog.structs.Heap} A new goog.structs.Heap with the same key-value
  *     pairs.
  */
 goog.structs.Heap.prototype.clone = function() {
@@ -306,20 +306,20 @@ goog.structs.Heap.prototype.clone = function() {
 
 
 /**
- * The number of key value pairs in the map
- * @return {number} The nuber of pairs.
+ * The number of key-value pairs in the map
+ * @return {number} The number of pairs.
  */
 goog.structs.Heap.prototype.getCount = function() {
-  return goog.structs.getCount(this.nodes_);
+  return this.nodes_.length;
 };
 
 
 /**
  * Returns true if this heap contains no elements.
- * @return {boolean} TRUE iff this heap contains no elements.
+ * @return {boolean} Whether this heap contains no elements.
  */
 goog.structs.Heap.prototype.isEmpty = function() {
-  return goog.structs.isEmpty(this.nodes_);
+  return goog.array.isEmpty(this.nodes_);
 };
 
 
@@ -327,5 +327,5 @@ goog.structs.Heap.prototype.isEmpty = function() {
  * Removes all elements from the heap.
  */
 goog.structs.Heap.prototype.clear = function() {
-  goog.structs.clear(this.nodes_);
+  goog.array.clear(this.nodes_);
 };

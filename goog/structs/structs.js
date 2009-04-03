@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,7 +25,8 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Generics method for collection-like classes and objects
+ * @fileoverview Generics method for collection-like classes and objects.
+ *
  *
  * This file contains functions to work with collections. It supports using
  * Map, Set, Array and Object and other classes that implement collection-like
@@ -41,11 +41,12 @@ goog.require('goog.array');
 goog.require('goog.object');
 
 
-// it is a dictionary if it has getKeys or it is an object that isn't arrayLike
+// We treat an object as a dictionary if it has getKeys or it is an object that
+// isn't arrayLike.
 
 
 /**
- * This returns the number of values in the collection-like object.
+ * Returns the number of values in the collection-like object.
  * @param {Object} col The collection-like object.
  * @return {number} The number of values in the collection-like object.
  */
@@ -61,7 +62,7 @@ goog.structs.getCount = function(col) {
 
 
 /**
- * This returns the values of the collection-like object.
+ * Returns the values of the collection-like object.
  * @param {Object} col The collection-like object.
  * @return {Array} The values in the collection-like object.
  */
@@ -85,8 +86,8 @@ goog.structs.getValues = function(col) {
 
 
 /**
- * This returns the keys of the collection. Some collections have no notion of
- * keys/indexes and this will return undefined in those cases.
+ * Returns the keys of the collection. Some collections have no notion of
+ * keys/indexes and this function will return undefined in those cases.
  * @param {Object} col The collection-like object.
  * @return {Array|undefined} The keys in the collection.
  */
@@ -113,7 +114,7 @@ goog.structs.getKeys = function(col) {
 
 /**
  * Whether the collection contains the given value. This is O(n) and uses
- * equals (==) to test the existance.
+ * equals (==) to test the existence.
  * @param {Object} col The collection-like object.
  * @param {*} val The value to check for.
  * @return {boolean} True if the map contains the value.
@@ -169,14 +170,15 @@ goog.structs.clear = function(col) {
 
 
 /**
- * For each value in the collection call a function on it. The function takes
+ * Calls a function for each value in a collection. The function takes
  * three arguments; the value, the key and the collection.
  *
  * @param {Object} col The collection-like object.
  * @param {Function} f The function to call for every value. This function takes
  *     3 arguments (the value, the key or undefined if the collection has no
  *     notion of keys, and the collection) and the return value is irrelevant.
- * @param {Object} opt_obj This is used as the 'this' object in f when called.
+ * @param {Object} opt_obj The object to be used as the value of 'this'
+ *     within {@code f}.
  */
 goog.structs.forEach = function(col, f, opt_obj) {
   if (typeof col.forEach == 'function') {
@@ -195,8 +197,8 @@ goog.structs.forEach = function(col, f, opt_obj) {
 
 
 /**
- * For every value in the collection call a function and if that returns true
- * add the value to a new collection (Array is returned by default).
+ * Calls a function for every value in the collection. When a call returns true,
+ * adds the value to a new collection (Array is returned by default).
  *
  * @param {Object} col The collection-like object.
  * @param {Function} f The function to call for every value. This function takes
@@ -204,12 +206,13 @@ goog.structs.forEach = function(col, f, opt_obj) {
  *     notion of keys, and the collection) and should return a Boolean. If the
  *     return value is true the value is added to the result collection. If it
  *     is false the value is not included.
- * @param {Object} opt_obj This is used as the 'this' object in f when called.
- * @param {Function} opt_constr If provided this function is used as the
- *     constructor for the returned collection.
- * @return {Object} A new collection where the passed values are present.
+ * @param {Object} opt_obj The object to be used as the value of 'this'
+ *     within {@code f}.
+ * @return {Object|Array} A new collection where the passed values are present.
+ *     If col is a key-less collection an array is returned.  If col has keys
+ *     and values a plain old JS object is returned.
  */
-goog.structs.filter = function(col, f, opt_obj, opt_constr) {
+goog.structs.filter = function(col, f, opt_obj) {
   if (typeof col.filter == 'function') {
     return col.filter(f, opt_obj);
   }
@@ -221,18 +224,21 @@ goog.structs.filter = function(col, f, opt_obj, opt_constr) {
   var keys = goog.structs.getKeys(col);
   var values = goog.structs.getValues(col);
   var l = values.length;
-  if (keys && goog.structs.Map) {
-    rv = new (opt_constr || Object);
+  if (keys) {
+    rv = {};
     for (var i = 0; i < l; i++) {
       if (f.call(opt_obj, values[i], keys[i], col)) {
-        goog.structs.Map.set(rv, keys[i], values[i]);
+        rv[keys[i]] = values[i];
       }
     }
-  } else if (goog.structs.Set) {
-    rv = new (opt_constr || Array);
+  } else {
+    // We should not use goog.array.filter here since we want to make sure that
+    // the index is undefined as well as make sure that col is passed to the
+    // function.
+    rv = [];
     for (var i = 0; i < l; i++) {
       if (f.call(opt_obj, values[i], undefined, col)) {
-        goog.structs.Set.add(rv, values[i]);
+        rv.push(values[i]);
       }
     }
   }
@@ -241,7 +247,7 @@ goog.structs.filter = function(col, f, opt_obj, opt_constr) {
 
 
 /**
- * For every value in the collection call a function and add the result into a
+ * Calls a function for every value in the collection and adds the result into a
  * new collection (defaults to creating a new Array).
  *
  * @param {Object} col The collection-like object.
@@ -249,34 +255,36 @@ goog.structs.filter = function(col, f, opt_obj, opt_constr) {
  *     takes 3 arguments (the value, the key or undefined if the collection has
  *     no notion of keys, and the collection) and should return something. The
  *     result will be used as the value in the new collection.
- * @param {Object} opt_obj This is used as the 'this' object in f when called.
- * @param {Function} opt_constr If provided this function is used as the
- *     constructor for the returned collection.
- * @return {Object} A new collection with the new values.
+ * @param {Object} opt_obj  The object to be used as the value of 'this'
+ *     within {@code f}.
+ * @return {Object|Array} A new collection with the new values.  If col is a
+ *     key-less collection an array is returned.  If col has keys and values a
+ *     plain old JS object is returned.
  */
-goog.structs.map = function(col, f, opt_obj, opt_constr) {
+goog.structs.map = function(col, f, opt_obj) {
   if (typeof col.map == 'function') {
     return col.map(f, opt_obj);
   }
   if (goog.isArrayLike(col) || goog.isString(col)) {
     return goog.array.map(/** @type {Array} */ (col), f, opt_obj);
   }
+
   var rv;
   var keys = goog.structs.getKeys(col);
   var values = goog.structs.getValues(col);
   var l = values.length;
-  if (keys && goog.structs.Map) {
-    rv = new (opt_constr || Object);
+  if (keys) {
+    rv = {};
     for (var i = 0; i < l; i++) {
-      goog.structs.Map.set(rv,
-                           keys[i],
-                           f.call(opt_obj, values[i], keys[i], col));
+      rv[keys[i]] = f.call(opt_obj, values[i], keys[i], col);
     }
-  } else if (goog.structs.Set){
-    rv = new (opt_constr || Array);
+  } else {
+    // We should not use goog.array.map here since we want to make sure that
+    // the index is undefined as well as make sure that col is passed to the
+    // function.
+    rv = [];
     for (var i = 0; i < l; i++) {
-      goog.structs.Set.add(rv,
-                           f.call(opt_obj, values[i], undefined, col));
+      rv[i] = f.call(opt_obj, values[i], undefined, col);
     }
   }
   return rv;
@@ -284,15 +292,15 @@ goog.structs.map = function(col, f, opt_obj, opt_constr) {
 
 
 /**
- * Go through all the values in the collection. Call f for all these and if any
- * of them returns true this returns true (without checking the rest). If all
- * returns false this will return false.
+ * Calls f for each value in a collection. If any call returns true this returns
+ * true (without checking the rest). If all returns false this returns false.
  *
  * @param {Object|Array|string} col The collection-like object.
  * @param {Function} f The function to call for every value. This function takes
  *     3 arguments (the value, the key or undefined if the collection has no
  *     notion of keys, and the collection) and should return a Boolean.
- * @param {Object} opt_obj This is used as the 'this' object in f when called.
+ * @param {Object} opt_obj  The object to be used as the value of 'this'
+ *     within {@code f}.
  * @return {boolean} True if any value passes the test.
  */
 goog.structs.some = function(col, f, opt_obj) {
@@ -315,16 +323,17 @@ goog.structs.some = function(col, f, opt_obj) {
 
 
 /**
- * Go through all the values in the collection. Call f for all these and if all
- * of them returns true this returns true. If any returns false it will return
- * false at this point and not continue to check the remaining values.
+ * Calls f for each value in a collection. If all calls return true this return
+ * true this returns true. If any returns false this returns false at this point
+ *  and does not continue to check the remaining values.
  *
  * @param {Object} col The collection-like object.
  * @param {Function} f The function to call for every value. This function takes
  *     3 arguments (the value, the key or undefined if the collection has no
  *     notion of keys, and the collection) and should return a Boolean.
- * @param {Object} opt_obj This is used as the 'this' object in f when called.
- * @return {boolean} True if all key value pair passes the test.
+ * @param {Object} opt_obj  The object to be used as the value of 'this'
+ *     within {@code f}.
+ * @return {boolean} True if all key-value pairs pass the test.
  */
 goog.structs.every = function(col, f, opt_obj) {
   if (typeof col.every == 'function') {

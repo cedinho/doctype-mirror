@@ -1,6 +1,5 @@
 // Copyright 2005 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -28,6 +27,7 @@
 /**
  * @fileoverview Class to help the creation of custom events that can support
  * preventDefault and stopPropagation.
+ *
  */
 
 goog.provide('goog.events.CustomEvent');
@@ -37,10 +37,13 @@ goog.require('goog.events.Event');
  * A super-class for custom event objects, so that they can support
  * preventDefault and stopPropagation.
  *
+ * TODO(pupius): Does this need removing?  Instead just have Event.
+ *
  * @param {string} type Event Type.
  * @param {Object} opt_target Reference to the object that is the target
  *                            of this event.
  * @constructor
+ * @extends {goog.events.Event}
  */
 goog.events.CustomEvent = function(type, opt_target) {
   goog.events.Event.call(this, type, opt_target);

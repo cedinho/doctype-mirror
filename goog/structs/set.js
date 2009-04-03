@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,7 +25,8 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Datastructure: Set
+ * @fileoverview Datastructure: Set.
+ *
  *
  * This class implements a set data structure. Adding and removing is O(1). It
  * supports both object and primitive values. Be careful because you can add
@@ -42,22 +42,22 @@ goog.require('goog.structs.Map');
 
 
 /**
- * Class for Set datastructure
+ * Class for Set datastructure.
  *
- * @param {goog.structs.Set} opt_set Initial values to start with.
+ * @param {Array|Object} opt_values Initial values to start with.
  * @constructor
  */
-goog.structs.Set = function(opt_set) {
+goog.structs.Set = function(opt_values) {
   this.map_ = new goog.structs.Map;
-  if (opt_set) {
-    this.addAll(opt_set)
+  if (opt_values) {
+    this.addAll(opt_values);
   }
 };
 
 
 /**
  * This is used to get the key or the hash. We are not using getHashCode
- * because it only works with objects
+ * because it only works with objects.
  * @param {*} val Object or primitive value to get a key for.
  * @return {string} A unique key for this value/object.
  * @private
@@ -65,7 +65,7 @@ goog.structs.Set = function(opt_set) {
 goog.structs.Set.getKey_ = function(val) {
   var type = typeof val;
   if (type == 'object') {
-    return 'o' + goog.getHashCode(val);
+    return 'o' + goog.getHashCode(/** @type {Object} */ (val));
   } else {
     return type.substr(0, 1) + val;
   }
@@ -95,7 +95,7 @@ goog.structs.Set.prototype.add = function(obj) {
  * @param {Array|Object} set The set or array to add objects from.
  */
 goog.structs.Set.prototype.addAll = function(set) {
-  var values = goog.structs.Set.getValues(set);
+  var values = goog.structs.getValues(set);
   var l = values.length;
   for (var i = 0; i < l; i++) {
     this.add(values[i]);
@@ -109,7 +109,7 @@ goog.structs.Set.prototype.addAll = function(set) {
  * @param {Array|Object} set The set or array to remove objects from.
  */
 goog.structs.Set.prototype.removeAll = function(set) {
-  var values = goog.structs.Set.getValues(set);
+  var values = goog.structs.getValues(set);
   var l = values.length;
   for (var i = 0; i < l; i++) {
     this.remove(values[i]);
@@ -155,6 +155,17 @@ goog.structs.Set.prototype.contains = function(obj) {
 
 
 /**
+ * Whether the goog.structs.Set contains all elements of the collection.
+ * Ignores identical elements, e.g. set([1, 2]) contains [1, 1].
+ * @param {Object} col A collection-like object.
+ * @return {boolean} True if the set contains all elements.
+ */
+goog.structs.Set.prototype.containsAll = function(col) {
+  return goog.structs.every(col, this.contains, this);
+};
+
+
+/**
  * Find all elements present in both of 2 sets.
  * @param {Array|Object} set The set or array to test against.
  * @return {goog.structs.Set} A new set containing all elements present in both
@@ -163,7 +174,7 @@ goog.structs.Set.prototype.contains = function(obj) {
 goog.structs.Set.prototype.intersection = function(set) {
   var result = new goog.structs.Set();
 
-  var values = goog.structs.Set.getValues(set);
+  var values = goog.structs.getValues(set);
   for (var i = 0; i < values.length; i++) {
     var value = values[i];
     if (this.contains(value)) {
@@ -180,7 +191,7 @@ goog.structs.Set.prototype.intersection = function(set) {
  * @return {Array} An array of all the values in the Set.
  */
 goog.structs.Set.prototype.getValues = function() {
-  return this.map_.getValues()
+  return this.map_.getValues();
 };
 
 
@@ -199,11 +210,10 @@ goog.structs.Set.prototype.clone = function() {
  * of the elements.
  * @param {Object} col A collection-like object.
  * @return {boolean} True if the collection consists of the same elements as
- *                   the set in arbitrary order.
+ *     the set in arbitrary order.
  */
 goog.structs.Set.prototype.equals = function(col) {
-  return this.getCount() != goog.structs.getCount(col) ?
-      false : this.isSubsetOf(col);
+  return this.getCount() == goog.structs.getCount(col) && this.isSubsetOf(col);
 };
 
 
@@ -212,7 +222,7 @@ goog.structs.Set.prototype.equals = function(col) {
  * Its time complexity is O(|col|) and uses equals (==) to test the existence
  * of the elements.
  * @param {Object} col A collection-like object.
- * @return {boolean} True if the set is the subset of the collection.
+ * @return {boolean} True if the set is a subset of the collection.
  */
 goog.structs.Set.prototype.isSubsetOf = function(col) {
   var colCount = goog.structs.getCount(col);
@@ -243,6 +253,8 @@ goog.structs.Set.prototype.__iterator__ = function(opt_keys) {
  * The number of keys in the set.
  * @param {Object} col The collection-like object.
  * @return {number} The number of keys in the set.
+ *
+ * @deprecated Use the instance {@code getCount} method on your object instead.
  */
 goog.structs.Set.getCount = function(col) {
   return goog.structs.getCount(col);
@@ -250,9 +262,11 @@ goog.structs.Set.getCount = function(col) {
 
 
 /**
- * This returns the values of the set
- * @param {Object} col The collection-like object.
- * @return {Array} The values in the set.
+ * Returns the values of the set.
+ * @param {Object} col A collection-like object.
+ * @return {Array} The values in the collection-like object.
+ *
+ * @deprecated Use the instance {@code getValues} method on your object instead.
  */
 goog.structs.Set.getValues = function(col) {
   return goog.structs.getValues(col);
@@ -261,10 +275,12 @@ goog.structs.Set.getValues = function(col) {
 
 /**
  * Whether the collection contains the given value. This is O(n) and uses
- * equals (==) to test the existence
- * @param {Object} col The collection-like object.
+ * equals (==) to test the existence.
+ * @param {Object} col A collection-like object.
  * @param {Object} val The value to check for.
- * @return {boolean} True if the set contains the value.
+ * @return {boolean} True if the collection-like object contains the value.
+ *
+ * @deprecated Use the instance {@code contains} method on your object instead.
  */
 goog.structs.Set.contains = function(col, val) {
   return goog.structs.contains(col, val);
@@ -275,6 +291,8 @@ goog.structs.Set.contains = function(col, val) {
  * Whether the collection is empty.
  * @param {Object} col The collection-like object.
  * @return {boolean} True if empty.
+ *
+ * @deprecated Use the instance {@code isEmpty} method on your object instead.
  */
 goog.structs.Set.isEmpty = function(col) {
   return goog.structs.isEmpty(col);
@@ -282,8 +300,10 @@ goog.structs.Set.isEmpty = function(col) {
 
 
 /**
- * Removes all the elements from the collection
+ * Removes all the elements from the collection.
  * @param {Object} col The collection-like object.
+ *
+ * @deprecated Use the instance {@code clear} method on your object instead.
  */
 goog.structs.Set.clear = function(col) {
   goog.structs.clear(col);
@@ -291,17 +311,19 @@ goog.structs.Set.clear = function(col) {
 
 
 /**
- * Removes a value from the collection. This is O(n) in some implementations
+ * Removes a value from a collection. This is O(n) in some implementations
  * and then uses equal (==) to find the element.
- * @param {Object} col The collection-like object.
+ * @param {Object} col A collection-like object.
  * @param {*} val The element to remove.
- * @return {boolean} True if an element was removed.
+ * @return {boolean} Whether an element was removed.
+ *
+ * @deprecated Use the instance {@code remove} method on your object instead.
  */
 goog.structs.Set.remove = function(col, val) {
   if (typeof col.remove == 'function') {
     return col.remove(val);
   } else if (goog.isArrayLike(col)) {
-    return goog.array.remove(col, val);
+    return goog.array.remove(/** @type {Array} */ (col), val);
   } else {
     // this removes based on value not on key.
     var l = col.length;
@@ -317,14 +339,15 @@ goog.structs.Set.remove = function(col, val) {
 
 
 /**
- * Adds a value to the collection
+ * Adds a value to the collection.
  *
  * @throws {Exception} If the collection does not have an add method or is not
- *                     array like.
+ *     array-like.
  *
- * @param {Object} col The collection like object.
+ * @param {Object} col The collection-like object.
  * @param {*} val The value to add.
  *
+ * @deprecated Use the instance {@code add} method on your object instead.
  */
 goog.structs.Set.add = function(col, val) {
   if (typeof col.add == 'function') {

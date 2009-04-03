@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,18 +25,19 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Bootstrap for the Google JS Library
+ * @fileoverview Bootstrap for the Google JS Library (Closure)  Also includes
+ * stuff taken from //depot/google3/javascript/lang.js.
  */
 
 /**
- * @define {boolean} Overridden to true by the compiler when
- *     --mark_as_compiled is specified.
+ * @define {boolean} Overridden to true by the compiler when --closure_pass
+ *     or --mark_as_compiled is specified.
  */
 var COMPILED = false;
 
 
 /**
- * Base namespace for the Google JS library.  Checks to see goog is
+ * Base namespace for the Closure library.  Checks to see goog is
  * already defined in the current scope before assigning to prevent
  * clobbering if base.js is loaded more than once.
  */
@@ -48,6 +48,39 @@ var goog = goog || {}; // Check to see if already defined in current scope
  * Reference to the global context.  In most cases this will be 'window'.
  */
 goog.global = this;
+
+
+/**
+ * @define {boolean} DEBUG is provided as a convenience so that debugging code
+ * that should not be included in a production js_binary can be easily stripped
+ * by specifying --define goog.DEBUG=false to the JSCompiler. For example, most
+ * toString() methods should be declared inside an "if (goog.DEBUG)" conditional
+ * because they are generally used for debugging purposes and it is difficult
+ * for the JSCompiler to statically determine whether they are used.
+ */
+goog.DEBUG = true;
+
+
+/**
+ * @define {string} LOCALE defines the locale being used for compilation. It is
+ * used to select locale specific data to be compiled in js binary. BUILD rule
+ * can specify this value by "--define goog.LOCALE=<locale_name>" as JSCompiler
+ * option.
+ *
+ * Take into account that the locale code format is important. You should use
+ * the canonical Unicode format with hyphen as a delimiter. Language must be
+ * lowercase, Language Script - Capitalized, Region - UPPERCASE.
+ * There are few examples: pt-BR, en, en-US, sr-Latin-BO, zh-Hans-CN.
+ *
+ * See more info about locale codes here:
+ * http://www.unicode.org/reports/tr35/#Unicode_Language_and_Locale_Identifiers
+ *
+ * For language codes you should use values defined by ISO 693-1. See it here
+ * http://www.w3.org/WAI/ER/IG/ert/iso639.htm. There is only one exception from
+ * this rule: the Hebrew language. For legacy reasons the old code (iw) should
+ * be used instead of the new code (he), see http://wiki/Main/IIISynonyms.
+ */
+goog.LOCALE = 'en';  // default to en
 
 
 /**
@@ -62,7 +95,8 @@ goog.evalWorksForGlobals_ = null;
 
 /**
  * Creates object stubs for a namespace. When present in a file, goog.provide
- * also indicates that the file defines the indicated object.
+ * also indicates that the file defines the indicated object. Calls to
+ * goog.provide are resolved by the compiler if --closure_pass is set.
  * @param {string} name name of the object that this file defines.
  */
 goog.provide = function(name) {
@@ -73,11 +107,11 @@ goog.provide = function(name) {
     // variable declaration, the compiled JS should work the same as the raw
     // JS--even when the raw JS uses goog.provide incorrectly.
     if (goog.getObjectByName(name) && !goog.implicitNamespaces_[name]) {
-      throw 'Namespace "' + name + '" already declared.';
+      throw Error('Namespace "' + name + '" already declared.');
     }
 
     var namespace = name;
-    while ((namespace = namespace.substr(0, namespace.lastIndexOf('.')))) {
+    while ((namespace = namespace.substring(0, namespace.lastIndexOf('.')))) {
       goog.implicitNamespaces_[namespace] = true;
     }
   }
@@ -107,22 +141,24 @@ if (!COMPILED) {
  * Used by goog.provide and goog.exportSymbol.
  * @param {string} name name of the object that this file defines.
  * @param {Object} opt_object the object to expose at the end of the path.
+ * @param {Object} opt_objectToExportTo The object to add the path to; default
+ *     is |goog.global|.
  * @private
  */
-goog.exportPath_ = function(name, opt_object) {
+goog.exportPath_ = function(name, opt_object, opt_objectToExportTo) {
   var parts = name.split('.');
-  var cur = goog.global;
+  var cur = opt_objectToExportTo || goog.global;
   var part;
 
   // Internet Explorer exhibits strange behavior when throwing errors from
   // methods externed in this manner.  See the testExportSymbolExceptions in
-  // base_test.html for an example. 
+  // base_test.html for an example.
   if (!(parts[0] in cur) && cur.execScript) {
     cur.execScript('var ' + parts[0]);
   }
 
   // Parentheses added to eliminate strict JS warning in Firefox.
-  while ((part = parts.shift())) {
+  while (parts.length && (part = parts.shift())) {
     if (!parts.length && goog.isDef(opt_object)) {
       // last part and we have an object; use it
       cur[part] = opt_object;
@@ -136,13 +172,18 @@ goog.exportPath_ = function(name, opt_object) {
 
 
 /**
- * Returns an object based on its fully qualified name
+ * Returns an object based on its fully qualified external name.  If you are
+ * using a compilation pass that renames property names beware that using this
+ * function will not find renamed properties.
+ *
  * @param {string} name The fully qualified name.
+ * @param {Object} opt_obj The object within which to look; default is
+ *     |goog.global|.
  * @return {Object?} The object or, if not found, null.
  */
-goog.getObjectByName = function(name) {
+goog.getObjectByName = function(name, opt_obj) {
   var parts = name.split('.');
-  var cur = goog.global;
+  var cur = opt_obj || goog.global;
   for (var part; part = parts.shift(); ) {
     if (cur[part]) {
       cur = cur[part];
@@ -202,7 +243,9 @@ goog.addDependency = function(relPath, provides, requires) {
 
 /**
  * Implements a system for the dynamic resolution of dependencies
- * that works in parallel with the BUILD system.
+ * that works in parallel with the BUILD system. Note that all calls
+ * to goog.require will be stripped by the JSCompiler when the
+ * --closure_pass option is used.
  * @param {string} rule Rule to include, in the form goog.package.part.
  */
 goog.require = function(rule) {
@@ -217,12 +260,23 @@ goog.require = function(rule) {
       goog.included_[path] = true;
       goog.writeScripts_();
     } else {
-      // NOTE(nicksantos): We could throw an error, but this would break
+      // NOTE(nicksantos): We could always throw an error, but this would break
       // legacy users that depended on this failing silently. Instead, the
       // compiler should warn us when there are invalid goog.require calls.
+      // For now, we simply give clients a way to turn strict mode on.
+      if (goog.useStrictRequires) {
+        throw new Error('goog.require could not find: ' + rule);
+      }
     }
   }
 };
+
+
+/**
+ * Whether goog.require should throw an exception if it fails.
+ * @type {boolean}
+ */
+goog.useStrictRequires = false;
 
 
 /**
@@ -234,9 +288,21 @@ goog.basePath = '';
 
 /**
  * Null function used for default values of callbacks, etc.
- * @type {Function}
+ * @type {!Function}
  */
 goog.nullFunction = function() {};
+
+
+/**
+ * The identity function. Returns its first argument.
+ *
+ * @param {*} var_args The arguments of the function.
+ * @return {*} The first argument.
+ * @deprecated Use goog.functions.identity instead.
+ */
+goog.identityFunction = function(var_args) {
+  return arguments[0];
+};
 
 
 /**
@@ -256,6 +322,19 @@ goog.nullFunction = function() {};
  */
 goog.abstractMethod = function() {
   throw Error('unimplemented abstract method');
+};
+
+
+/**
+ * Adds a {@code getInstance} static method that always return the same instance
+ * object.
+ * @param {!Function} ctor The constructor for the class to add the static
+ *     method to.
+ */
+goog.addSingletonGetter = function(ctor) {
+  ctor.getInstance = function() {
+    return ctor.instance_ || (ctor.instance_ = new ctor());
+  };
 };
 
 
@@ -286,8 +365,7 @@ if (!COMPILED) {
 
 
   /**
-   * Tries to detect the base path of the base.js script that bootstraps
-   * Google JS Library
+   * Tries to detect the base path of the base.js script that bootstraps Closure
    * @private
    */
   goog.findBasePath_ = function() {
@@ -295,11 +373,12 @@ if (!COMPILED) {
     if (typeof doc == 'undefined') {
       return;
     }
-    if (goog.global.GOOG_BASE_PATH) {
-      goog.basePath = goog.global.GOOG_BASE_PATH;
+    if (goog.global.CLOSURE_BASE_PATH) {
+      goog.basePath = goog.global.CLOSURE_BASE_PATH;
       return;
     } else {
-      goog.global.GOOG_BASE_PATH = null;
+      // HACKHACK to hide compiler warnings :(
+      goog.global.CLOSURE_BASE_PATH = null;
     }
     var scripts = doc.getElementsByTagName('script');
     for (var script, i = 0; script = scripts[i]; i++) {
@@ -360,7 +439,11 @@ if (!COMPILED) {
 
       if (path in deps.requires) {
         for (var requireName in deps.requires[path]) {
-          visitNode(deps.nameToPath[requireName]);
+          if (requireName in deps.nameToPath) {
+            visitNode(deps.nameToPath[requireName]);
+          } else {
+            throw Error('Undefined nameToPath for ' + requireName);
+          }
         }
       }
 
@@ -430,13 +513,40 @@ goog.typeOf = function(value) {
       // so that will work. In this case, this function will return false and
       // most array functions will still work because the array is still
       // array-like (supports length and []) even though it has lost its
-      // prototype. Custom object cannot have non enumerable length and
-      // NodeLists don't have a slice method.
-      if (typeof value.length == 'number' &&
-          typeof value.splice != 'undefined' &&
-          !goog.propertyIsEnumerable_(value, 'length')) {
+      // prototype.
+      // Mark Miller noticed that Object.prototype.toString
+      // allows access to the unforgeable [[Class]] property.
+      //  15.2.4.2 Object.prototype.toString ( )
+      //  When the toString method is called, the following steps are taken:
+      //      1. Get the [[Class]] property of this object.
+      //      2. Compute a string value by concatenating the three strings
+      //         "[object ", Result(1), and "]".
+      //      3. Return Result(2).
+      // and this behavior survives the destruction of the execution context.
+      if (value instanceof Array ||  // Works quickly in same execution context.
+          // If value is from a different execution context then
+          // !(value instanceof Object), which lets us early out in the common
+          // case when value is from the same context but not an array.
+          // The {if (value)} check above means we don't have to worry about
+          // undefined behavior of Object.prototype.toString on null/undefined.
+          //
+          // HACK: In order to use an Object prototype method on the arbitrary
+          //   value, the compiler requires the value be cast to type Object,
+          //   even though the ECMA spec explicitly allows it.
+          (!(value instanceof Object) &&
+             Object.prototype.toString.call(
+                 /** @type {Object} */(value)) == '[object Array]')) {
         return 'array';
       }
+      // HACK: There is still an array case that fails.
+      //     function ArrayImpostor() {}
+      //     ArrayImpostor.prototype = [];
+      //     var impostor = new ArrayImpostor;
+      // this can be fixed by getting rid of the fast path
+      // (value instanceof Array) and solely relying on
+      // (value && Object.prototype.toString.vall(value) === '[object Array]')
+      // but that would require many more function calls and is not warranted
+      // unless closure code is receiving objects from untrusted sources.
 
       // IE in cross-window calls does not correctly marshal the function type
       // (it appears just as an object) so we cannot use just typeof val ==
@@ -449,52 +559,63 @@ goog.typeOf = function(value) {
       return 'null';
     }
 
-  // In Safari typeof nodeList returns function.  We would like to return
-  // object for those and we can detect an invalid function by making sure that
-  // the function object has a call method
+  // In Safari typeof nodeList returns 'function', and on Firefox
+  // typeof behaves similarly for HTML{Applet,Embed,Object}Elements
+  // and RegExps.  We would like to return object for those and we can
+  // detect an invalid function by making sure that the function
+  // object has a call method.
   } else if (s == 'function' && typeof value.call == 'undefined') {
     return 'object';
   }
   return s;
 };
 
-if (Object.prototype.propertyIsEnumerable) {
-  /**
-   * Safe way to test whether a property is enumarable.  It allows testing
-   * for enumarable on objects where 'propertyIsEnumerable' is overridden or
-   * does not exist (like DOM nodes in IE).
-   * @param {Object} object The object to test if the property is enumerable.
-   * @param {string} propName The property name to check for.
-   * @return {boolean} True if the property is enumarable.
-   * @private
-   */
-  goog.propertyIsEnumerable_ = function(object, propName) {
-    return Object.prototype.propertyIsEnumerable.call(object, propName);
-  };
-} else {
-  /**
-   * Safe way to test whether a property is enumarable.  It allows testing
-   * for enumarable on objects where 'propertyIsEnumerable' is overridden or
-   * does not exist (like DOM nodes in IE).
-   * @param {Object} object The object to test if the property is enumerable.
-   * @param {string} propName The property name to check for.
-   * @return {boolean} True if the property is enumarable.
-   * @private
-   */
-  goog.propertyIsEnumerable_ = function(object, propName) {
-    // KJS in Safari 2 is not ECMAScript compatible and lacks crucial methods
-    // such as propertyIsEnumerable.  We therefore use a workaround.
-    // Does anyone know a more efficient work around?
-    if (propName in object) {
-      for (var key in object) {
-        if (key == propName) {
-          return true;
-        }
+
+/**
+ * Safe way to test whether a property is enumarable.  It allows testing
+ * for enumerable on objects where 'propertyIsEnumerable' is overridden or
+ * does not exist (like DOM nodes in IE). Does not use browser native
+ * Object.propertyIsEnumerable.
+ * @param {Object} object The object to test if the property is enumerable.
+ * @param {string} propName The property name to check for.
+ * @return {boolean} True if the property is enumarable.
+ * @private
+ */
+goog.propertyIsEnumerableCustom_ = function(object, propName) {
+  // KJS in Safari 2 is not ECMAScript compatible and lacks crucial methods
+  // such as propertyIsEnumerable.  We therefore use a workaround.
+  // Does anyone know a more efficient work around?
+  if (propName in object) {
+    for (var key in object) {
+      if (key == propName &&
+          Object.prototype.hasOwnProperty.call(object, propName)) {
+        return true;
       }
     }
-    return false;
-  };
-}
+  }
+  return false;
+};
+
+
+/**
+ * Safe way to test whether a property is enumarable.  It allows testing
+ * for enumerable on objects where 'propertyIsEnumerable' is overridden or
+ * does not exist (like DOM nodes in IE).
+ * @param {Object} object The object to test if the property is enumerable.
+ * @param {string} propName The property name to check for.
+ * @return {boolean} True if the property is enumarable.
+ * @private
+ */
+goog.propertyIsEnumerable_ = function(object, propName) {
+  // In IE if object is from another window, cannot use propertyIsEnumerable
+  // from this window's Object. Will raise a 'JScript object expected' error.
+  if (object instanceof Object) {
+    return Object.prototype.propertyIsEnumerable.call(object, propName);
+  } else {
+    return goog.propertyIsEnumerableCustom_(object, propName);
+  }
+};
+
 
 /**
  * Returns true if the specified value is not |undefined|.
@@ -656,7 +777,7 @@ goog.removeHashCode = function(obj) {
  * {String} Name for hash code property
  * @private
  */
-goog.HASH_CODE_PROPERTY_ = 'goog_hashCode_';
+goog.HASH_CODE_PROPERTY_ = 'closure_hashCode_';
 
 
 /**
@@ -675,7 +796,7 @@ goog.cloneObject = function(proto) {
   var type = goog.typeOf(proto);
   if (type == 'object' || type == 'array') {
     if (proto.clone) {
-      return proto.clone();
+      return proto.clone.call(proto);
     }
     var clone = type == 'array' ? [] : {};
     for (var key in proto) {
@@ -686,6 +807,16 @@ goog.cloneObject = function(proto) {
 
   return proto;
 };
+
+
+/**
+ * Forward declaration for the clone method. This is necessary until the
+ * compiler can better support duck-typing constructs as used in
+ * goog.cloneObject.
+ *
+ * @type {Function}
+ */
+Object.prototype.clone;
 
 
 /**
@@ -711,16 +842,16 @@ goog.cloneObject = function(proto) {
  * barMethBound('arg3', 'arg4');</pre>
  *
  * @param {Function} fn A function to partially apply.
- * @param {Object} self Specifies the object which |this| should point to
+ * @param {Object} selfObj Specifies the object which |this| should point to
  *     when the function is run. If the value is null or undefined, it will
  *     default to the global object.
  * @param {Object} var_args Additional arguments that are partially
  *     applied to the function.
  *
- * @return {Function} A partially-applied form of the function bind() was
+ * @return {!Function} A partially-applied form of the function bind() was
  *     invoked as a method of.
  */
-goog.bind = function(fn, self, var_args) {
+goog.bind = function(fn, selfObj, var_args) {
   var boundArgs = fn.boundArgs_;
 
   if (arguments.length > 2) {
@@ -731,11 +862,11 @@ goog.bind = function(fn, self, var_args) {
     boundArgs = args;
   }
 
-  self = fn.boundSelf_ || self;
+  selfObj = fn.boundSelf_ || selfObj;
   fn = fn.boundFn_ || fn;
 
   var newfn;
-  var context = self || goog.global;
+  var context = selfObj || goog.global;
 
   if (boundArgs) {
     newfn = function() {
@@ -743,15 +874,15 @@ goog.bind = function(fn, self, var_args) {
       var args = Array.prototype.slice.call(arguments);
       args.unshift.apply(args, boundArgs);
       return fn.apply(context, args);
-    }
+    };
   } else {
     newfn = function() {
       return fn.apply(context, arguments);
-    }
+    };
   }
 
   newfn.boundArgs_ = boundArgs;
-  newfn.boundSelf_ = self;
+  newfn.boundSelf_ = selfObj;
   newfn.boundFn_ = fn;
 
   return newfn;
@@ -769,7 +900,7 @@ goog.bind = function(fn, self, var_args) {
  * @param {Function} fn A function to partially apply.
  * @param {Object} var_args Additional arguments that are partially
  *     applied to fn.
- * @return {Function} A partially-applied form of the function bind() was
+ * @return {!Function} A partially-applied form of the function bind() was
  *     invoked as a method of.
  */
 goog.partial = function(fn, var_args) {
@@ -781,10 +912,9 @@ goog.partial = function(fn, var_args) {
 
 /**
  * Copies all the members of a source object to a target object.
- * This is deprecated. Use goog.object.extend instead.
  * @param {Object} target Target.
  * @param {Object} source Source.
- * @deprecated
+ * @deprecated Use goog.object.extend instead.
  */
 goog.mixin = function(target, source) {
   for (var x in source) {
@@ -839,7 +969,7 @@ goog.globalEval = function(script) {
       var scriptElt = doc.createElement('script');
       scriptElt.type = 'text/javascript';
       scriptElt.defer = false;
-      // Note(pupius): can't use .innerHTML since "t('<test>')" will fail and 
+      // Note(pupius): can't use .innerHTML since "t('<test>')" will fail and
       // .text doesn't work in Safari 2.  Therefore we append a text node.
       scriptElt.appendChild(doc.createTextNode(script));
       doc.body.appendChild(scriptElt);
@@ -852,9 +982,79 @@ goog.globalEval = function(script) {
 
 
 /**
- * Abstract implementation of goog.getMsg for use with localized messages
- * @param {string} str Translatable string, places holders in the form.{$foo}
+ * Forward declaration of a type name.
+ *
+ * A call of the form
+ * goog.declareType('goog.MyClass');
+ * tells JSCompiler "goog.MyClass is not a hard dependency of this file.
+ * But it may appear in the type annotations here. This is to assure
+ * you that the class does indeed exist, even if it's not declared in the
+ * final binary."
+ *
+ * In uncompiled code, does nothing.
+ * @param {string} typeName The name of the type.
+ */
+goog.declareType = function(typeName) {};
+
+
+/**
+ * A macro for defining composite types.
+ *
+ * By assigning goog.typedef to a name, this tells JSCompiler that this is not
+ * the name of a class, but rather it's the name of a composite type.
+ *
+ * For example,
+ * /** @type {Array|NodeList} / goog.ArrayLike = goog.typedef;
+ * will tell JSCompiler to replace all appearances of goog.ArrayLike in type
+ * definitions with the union of Array and NodeList.
+ *
+ * Does nothing in uncompiled code.
+ */
+goog.typedef = true;
+
+
+/**
+ * Handles strings that are intended to be used as CSS class names.
+ *
+ * Without JS Compiler the arguments are simple joined with a hyphen and passed
+ * through unaltered.
+ *
+ * With the JS Compiler the arguments are inlined, e.g:
+ *     var x = goog.getCssName('foo');
+ *     var y = goog.getCssName(this.baseClass, 'active');
+ *  becomes:
+ *     var x= 'foo';
+ *     var y = this.baseClass + '-active';
+ *
+ * If a CSS renaming map is passed to the compiler it will replace symbols in
+ * the classname.  If one argument is passed it will be processed, if two are
+ * passed only the modifier will be processed, as it is assumed the first
+ * argument was generated as a result of calling goog.getCssName.
+ *
+ * Names are split on 'hyphen' and processed in parts such that the following
+ * are equivalent:
+ *   var base = goog.getCssName('baseclass');
+ *   goog.getCssName(base, 'modifier');
+ *   goog.getCSsName('baseclass-modifier');
+ *
+ * If any part does not appear in the renaming map a warning is logged and the
+ * original, unobfuscated class name is inlined.
+ *
+ * @param {string} className The class name.
+ * @param {string} opt_modifier A modifier to be appended to the class name.
+ * @return {string} The class name or the concatenation of the class name and
+ *     the modifier.
+ */
+goog.getCssName = function(className, opt_modifier) {
+  return className + (opt_modifier ? '-' + opt_modifier : '');
+};
+
+
+/**
+ * Abstract implementation of goog.getMsg for use with localized messages.
+ * @param {string} str Translatable string, places holders in the form {$foo}.
  * @param {Object} opt_values Map of place holder name to value.
+ * @return {string} message with placeholders filled.
  */
 goog.getMsg = function(str, opt_values) {
   var values = opt_values || {};
@@ -886,9 +1086,11 @@ goog.getMsg = function(str, opt_values) {
  *
  * @param {string} publicPath Unobfuscated name to export.
  * @param {Object} object Object the name should point to.
+ * @param {Object} opt_objectToExportTo The object to add the path to; default
+ *     is |goog.global|.
  */
-goog.exportSymbol = function(publicPath, object) {
-  goog.exportPath_(publicPath, object);
+goog.exportSymbol = function(publicPath, object, opt_objectToExportTo) {
+  goog.exportPath_(publicPath, object, opt_objectToExportTo);
 };
 
 
@@ -905,94 +1107,6 @@ goog.exportProperty = function(object, publicName, symbol) {
 };
 
 
-
-//==============================================================================
-// Extending Function
-//==============================================================================
-
-
-/**
- * Some old browsers don't have Function.apply. So sad. We emulate it for them.
- * @param {Object} oScope The Object within the scope of which the Function is
- *     applied. In other words, |this| will be bound to oScope within the body
- *     of the Function called with apply.
- * @param {Array} args Arguments for the function.
- * @return {Object} Value returned from the function.
- */
-if (!Function.prototype.apply) {
-  Function.prototype.apply = function(oScope, args) {
-    var sarg = [];
-    var rtrn, call;
-
-    if (!oScope) oScope = goog.global;
-    if (!args) args = [];
-
-    for (var i = 0; i < args.length; i++) {
-      sarg[i] = 'args[' + i + ']';
-    }
-
-    call = 'oScope.__applyTemp__.peek().(' + sarg.join(',') + ');';
-
-    if (!oScope['__applyTemp__']) {
-      oScope['__applyTemp__'] = [];
-    }
-
-    oScope['__applyTemp__'].push(this);
-    rtrn = eval(call);
-    oScope['__applyTemp__'].pop();
-
-    return rtrn;
-  };
-}
-
-
-/**
- * An alias to the {@link goog.bind()} global function.
- *
- * Usage:
- * var g = f.bind(obj, arg1, arg2);
- * g(arg3, arg4);
- *
- * @param {Object} self Specifies the object to which |this| should point
- *     when the function is run. If the value is null or undefined, it will
- *     default to the global object.
- * @param {Object} var_args Additional arguments that are partially
- *     applied to fn.
- * @return {Function} A partially-applied form of the Function on which bind()
- *     was invoked as a method.
- * @deprecated
- */
-Function.prototype.bind = function(self, var_args) {
-  if (arguments.length > 1) {
-    var args = Array.prototype.slice.call(arguments, 1);
-    args.unshift(this, self);
-    return goog.bind.apply(null, args);
-  } else {
-    return goog.bind(this, self);
-  }
-};
-
-
-/**
- * An alias to the {@link goog.partial()} global function.
- *
- * Usage:
- * var g = f.partial(arg1, arg2);
- * g(arg3, arg4);
- *
- * @param {Object} var_args Additional arguments that are partially
- *     applied to fn.
- * @return {Function} A partially-applied form of the function partial() was
- *     invoked as a method of.
- * @deprecated
- */
-Function.prototype.partial = function(var_args) {
-  var args = Array.prototype.slice.call(arguments);
-  args.unshift(this, null);
-  return goog.bind.apply(null, args);
-};
-
-
 /**
  * Inherit the prototype methods from one constructor into another.
  *
@@ -1005,7 +1119,7 @@ Function.prototype.partial = function(var_args) {
  *   ParentClass.call(this, a, b);
  * }
  *
- * ChildClass.inherits(ParentClass);
+ * goog.inherits(ChildClass, ParentClass);
  *
  * var child = new ChildClass('a', 'b', 'see');
  * child.foo(); // works
@@ -1021,15 +1135,6 @@ Function.prototype.partial = function(var_args) {
  * };
  * </pre>
  *
- * @param {Function} parentCtor Parent class.
- */
-Function.prototype.inherits = function(parentCtor) {
-  goog.inherits(this, parentCtor);
-};
-
-
-/**
- * Static variant of Function.prototype.inherits.
  * @param {Function} childCtor Child class.
  * @param {Function} parentCtor Parent class.
  */
@@ -1043,41 +1148,114 @@ goog.inherits = function(childCtor, parentCtor) {
 };
 
 
+//==============================================================================
+// Extending Function
+//==============================================================================
+
+
 /**
- * Mixes in an object's properties and methods into the callee's prototype.
- * Basically mixin based inheritance, thus providing an alternative method for
- * adding properties and methods to a class' prototype.
- *
- * <pre>
- * function X() {}
- * X.mixin({
- *   one: 1,
- *   two: 2,
- *   three: 3,
- *   doit: function() { return this.one + this.two + this.three; }
- * });
- *
- * function Y() { }
- * Y.mixin(X.prototype);
- * Y.prototype.four = 15;
- * Y.prototype.doit2 = function() { return this.doit() + this.four; }
- * });
- *
- * // or
- *
- * function Y() { }
- * Y.inherits(X);
- * Y.mixin({
- *   one: 10,
- *   four: 15,
- *   doit2: function() { return this.doit() + this.four; }
- * });
- * </pre>
- *
- * @param {Object} source from which to copy properties.
- * @see goog.mixin
- * @deprecated
+ * @define {boolean} Whether to extend Function.prototype.
+ *     Use --define='goog.MODIFY_FUNCTION_PROTOTYPES=false' to change.
  */
-Function.prototype.mixin = function(source) {
-  goog.mixin(this.prototype, source);
-};
+goog.MODIFY_FUNCTION_PROTOTYPES = true;
+
+if (goog.MODIFY_FUNCTION_PROTOTYPES) {
+
+
+  /**
+   * An alias to the {@link goog.bind()} global function.
+   *
+   * Usage:
+   * var g = f.bind(obj, arg1, arg2);
+   * g(arg3, arg4);
+   *
+   * @param {Object} selfObj Specifies the object to which |this| should point
+   *     when the function is run. If the value is null or undefined, it will
+   *     default to the global object.
+   * @param {Object} var_args Additional arguments that are partially
+   *     applied to fn.
+   * @return {!Function} A partially-applied form of the Function on which
+   *     bind() was invoked as a method.
+   * @deprecated Use the static function goog.bind instead.
+   */
+  Function.prototype.bind = function(selfObj, var_args) {
+    if (arguments.length > 1) {
+      var args = Array.prototype.slice.call(arguments, 1);
+      args.unshift(this, selfObj);
+      return goog.bind.apply(null, args);
+    } else {
+      return goog.bind(this, selfObj);
+    }
+  };
+
+
+  /**
+   * An alias to the {@link goog.partial()} static function.
+   *
+   * Usage:
+   * var g = f.partial(arg1, arg2);
+   * g(arg3, arg4);
+   *
+   * @param {Object} var_args Additional arguments that are partially
+   *     applied to fn.
+   * @return {!Function} A partially-applied form of the function partial() was
+   *     invoked as a method of.
+   * @deprecated Use the static function goog.partial instead.
+   */
+  Function.prototype.partial = function(var_args) {
+    var args = Array.prototype.slice.call(arguments);
+    args.unshift(this, null);
+    return goog.bind.apply(null, args);
+  };
+
+
+  /**
+   * Inherit the prototype methods from one constructor into another.
+   * @param {Function} parentCtor Parent class.
+   * @see goog.inherits
+   * @deprecated Use the static function goog.inherits instead.
+   */
+  Function.prototype.inherits = function(parentCtor) {
+    goog.inherits(this, parentCtor);
+  };
+
+
+  /**
+   * Mixes in an object's properties and methods into the callee's prototype.
+   * Basically mixin based inheritance, thus providing an alternative method for
+   * adding properties and methods to a class' prototype.
+   *
+   * <pre>
+   * function X() {}
+   * X.mixin({
+   *   one: 1,
+   *   two: 2,
+   *   three: 3,
+   *   doit: function() { return this.one + this.two + this.three; }
+   * });
+   *
+   * function Y() { }
+   * Y.mixin(X.prototype);
+   * Y.prototype.four = 15;
+   * Y.prototype.doit2 = function() { return this.doit() + this.four; }
+   * });
+   *
+   * // or
+   *
+   * function Y() { }
+   * Y.inherits(X);
+   * Y.mixin({
+   *   one: 10,
+   *   four: 15,
+   *   doit2: function() { return this.doit() + this.four; }
+   * });
+   * </pre>
+   *
+   * @param {Object} source from which to copy properties.
+   * @see goog.mixin
+   * @deprecated Use the static function goog.object.extend instead.
+   */
+  Function.prototype.mixin = function(source) {
+    goog.mixin(this.prototype, source);
+  };
+}

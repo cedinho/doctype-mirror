@@ -1,6 +1,5 @@
 // Copyright 2005 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -27,7 +26,7 @@
 
 /**
  * @fileoverview Class to create objects which want to handle multiple events
- * and have their listeners easily cleaned up via a dispose method
+ * and have their listeners easily cleaned up via a dispose method.
  *
  * Example:
  * <pre>
@@ -45,11 +44,9 @@
  * }
  * goog.inherits(Something, goog.events.EventHandler);
  *
- * Something.prototype.dispose = function() {
- *   if (!this.getDisposed()) {
- *     goog.events.EventHandler.prototype.dispose.call(this);
- *     goog.dom.removeNode(this.container);
- *   }
+ * Something.prototype.disposeInternal = function() {
+ *   Something.superClass_.disposeInternal.call(this);
+ *   goog.dom.removeNode(this.container);
  * };
  *
  *
@@ -67,6 +64,7 @@
  *   }
  * }
  * </pre>
+ *
  */
 
 goog.provide('goog.events.EventHandler');
@@ -85,7 +83,7 @@ goog.require('goog.structs.SimplePool');
  * case, it may not be worth using the EventHandler anyway.
  * @param {Object} opt_handler Object in who's scope to call the listeners.
  * @constructor
- * @extends goog.Disposable
+ * @extends {goog.Disposable}
  */
 goog.events.EventHandler = function(opt_handler) {
   this.handler_ = opt_handler;
@@ -142,12 +140,15 @@ goog.events.EventHandler.key_ = null;
 /**
  * Listen to an event on a DOM node or EventTarget.  If the function is ommitted
  * then the EventHandler's handleEvent method will be used.
- * @param {goog.events.EventTarget|Element} src Event source.
+ * @param {goog.events.EventTarget|EventTarget} src Event source.
  * @param {string|Array.<string>} type Event type to listen for or array of
  *     event types.
- * @param {Function} opt_fn Optional function to be used as the listener.
+ * @param {Function|Object} opt_fn Optional callback function to be used as the
+ *    listener or an object with handleEvent function.
  * @param {boolean} opt_capture Optional whether to use capture phase.
  * @param {Object} opt_handler Object in who's scope to call the listener.
+ * @return {goog.events.EventHandler} This object, allowing for chaining of
+ *     calls.
  */
 goog.events.EventHandler.prototype.listen = function(src, type, opt_fn,
                                                      opt_capture,
@@ -156,13 +157,57 @@ goog.events.EventHandler.prototype.listen = function(src, type, opt_fn,
     for (var i = 0; i < type.length; i++) {
       this.listen(src, type[i], opt_fn, opt_capture, opt_handler);
     }
-    return;
+  } else {
+    var key = goog.events.listen(src, type, opt_fn || this,
+                                 opt_capture || false,
+                                 opt_handler || this.handler_ || this);
+    this.recordListenerKey_(key);
   }
 
-  var key = goog.events.listen(src, type, opt_fn || this,
-                               opt_capture || false,
-                               opt_handler || this.handler_ || this);
+  return this;
+};
 
+
+/**
+ * Listen to an event on a DOM node or EventTarget.  If the function is ommitted
+ * then the EventHandler's handleEvent method will be used. After the event has
+ * fired the event listener is removed from the target. If an array of event
+ * types is provided, each event type will be listened to once.
+ * @param {goog.events.EventTarget|EventTarget} src Event source.
+ * @param {string|Array.<string>} type Event type to listen for or array of
+ *     event types.
+ * @param {Function|Object} opt_fn Optional callback function to be used as the
+ *    listener or an object with handleEvent function.
+ * @param {boolean} opt_capture Optional whether to use capture phase.
+ * @param {Object} opt_handler Object in who's scope to call the listener.
+ * @return {goog.events.EventHandler} This object, allowing for chaining of
+ *     calls.
+ */
+goog.events.EventHandler.prototype.listenOnce = function(src, type, opt_fn,
+                                                         opt_capture,
+                                                         opt_handler) {
+  if (goog.isArray(type)) {
+    for (var i = 0; i < type.length; i++) {
+      this.listenOnce(src, type[i], opt_fn, opt_capture, opt_handler);
+    }
+  } else {
+    var key = goog.events.listenOnce(src, type, opt_fn || this,
+                                     opt_capture || false,
+                                     opt_handler || this.handler_ || this);
+    this.recordListenerKey_(key);
+  }
+
+  return this;
+};
+
+
+/**
+ * Record the key returned for the listener so that it can be user later
+ * to remove the listener.
+ * @param {number} key Unique key for the listener.
+ * @private
+ */
+goog.events.EventHandler.prototype.recordListenerKey_ = function(key) {
   if (this.keys_) {
     // already have multiple keys
     this.keys_[key] = true;
@@ -180,41 +225,42 @@ goog.events.EventHandler.prototype.listen = function(src, type, opt_fn,
 
 
 /**
- * Unlisten on an event
- * @param {goog.events.EventTarget|Element} src Event source.
+ * Unlistens on an event.
+ * @param {goog.events.EventTarget|EventTarget} src Event source.
  * @param {string|Array.<string>} type Event type to listen for.
- * @param {Function} opt_fn Optional function to be used as the listener.
+ * @param {Function|Object} opt_fn Optional callback function to be used as the
+ *    listener or an object with handleEvent function.
  * @param {boolean} opt_capture Optional whether to use capture phase.
  * @param {Object} opt_handler Object in who's scope to call the listener.
+ * @return {goog.events.EventHandler} This object, allowing for chaining of
+ *     calls.
  */
 goog.events.EventHandler.prototype.unlisten = function(src, type, opt_fn,
                                                        opt_capture,
                                                        opt_handler) {
-  if (!this.key_ && !this.keys_) {
-    return;
-  }
+  if (this.key_ || this.keys_) {
+    if (goog.isArray(type)) {
+      for (var i = 0; i < type.length; i++) {
+        this.unlisten(src, type[i], opt_fn, opt_capture, opt_handler);
+      }
+    } else {
+      var listener = goog.events.getListener(src, type, opt_fn || this,
+          opt_capture || false, opt_handler || this.handler_ || this);
 
-  if (goog.isArray(type)) {
-    for (var i = 0; i < type.length; i++) {
-      this.unlisten(src, type[i], opt_fn, opt_capture, opt_handler);
-    }
-    return;
-  }
+      if (listener) {
+        var key = listener.key;
+        goog.events.unlistenByKey(key);
 
-  var listener = goog.events.getListener(src, type, opt_fn || this,
-                                         opt_capture || false,
-                                         opt_handler || this.handler_ || this);
-
-  if (listener) {
-    var key = listener.key;
-    goog.events.unlistenByKey(key);
-
-    if (this.keys_) {
-      goog.object.remove(this.keys_, key);
-    } else if (this.key_ == key) {
-      this.key_ = null;
+        if (this.keys_) {
+          goog.object.remove(this.keys_, key);
+        } else if (this.key_ == key) {
+          this.key_ = null;
+        }
+      }
     }
   }
+
+  return this;
 };
 
 
@@ -238,13 +284,11 @@ goog.events.EventHandler.prototype.removeAll = function() {
 
 
 /**
- * Dispose of this EventHandler and remove all listeners that it registered.
+ * Disposes of this EventHandler and remove all listeners that it registered.
  */
-goog.events.EventHandler.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.Disposable.prototype.dispose.call(this);
-    this.removeAll();
-  }
+goog.events.EventHandler.prototype.disposeInternal = function() {
+  goog.events.EventHandler.superClass_.disposeInternal.call(this);
+  this.removeAll();
 };
 
 

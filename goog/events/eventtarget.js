@@ -1,6 +1,5 @@
 // Copyright 2005 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,7 +25,7 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Implementation of EventTarget as defined by W3C DOM 2/3
+ * @fileoverview Implementation of EventTarget as defined by W3C DOM 2/3.
  */
 
 /**
@@ -39,7 +38,6 @@ goog.provide('goog.events.EventTarget');
  */
 goog.require('goog.Disposable');
 goog.require('goog.events');
-goog.require('goog.events.Event');
 
 
 /**
@@ -85,7 +83,7 @@ goog.require('goog.events.Event');
  * </pre>
  *
  * @constructor
- * @extends goog.Disposable
+ * @extends {goog.Disposable}
  */
 goog.events.EventTarget = function() {
   // Although EventTarget extends Disposable,
@@ -162,7 +160,7 @@ goog.events.EventTarget.prototype.addEventListener = function(
  * @param {string} type The type of the event to listen for.
  * @param {Function} handler The function to handle the event. The handler can
  *                           can also be an object that implements the
- *                           handleEvent method which takes the event obejct as
+ *                           handleEvent method which takes the event object as
  *                           argument.
  * @param {boolean} opt_capture In DOM-compliant browsers, this determines
  *                              whether the listener is fired during the
@@ -198,18 +196,14 @@ goog.events.EventTarget.prototype.dispatchEvent = function(e) {
  * need to override this method in order to remove references to DOM Elements
  * and additional listeners, it should be something like this:
  * <pre>
- * MyClass.prototype.dispose = function() {
- *   if (!this.getDisposed()) {
- *     goog.events.EventTarget.prototype.dispose.call(this);
- *     // Dispose logic for MyClass
- *   }
+ * MyClass.prototype.disposeInternal = function() {
+ *   MyClass.superClass_.disposeInternal.call(this);
+ *   // Dispose logic for MyClass
  * };
  * </pre>
  */
-goog.events.EventTarget.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.Disposable.prototype.dispose.call(this);
-    goog.events.removeAll(this);
-    this.parentEventTarget_ = null;
-  }
+goog.events.EventTarget.prototype.disposeInternal = function() {
+  goog.events.EventTarget.superClass_.disposeInternal.call(this);
+  goog.events.removeAll(this);
+  this.parentEventTarget_ = null;
 };

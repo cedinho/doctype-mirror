@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,20 +25,21 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Datastructure: Queue
+ * @fileoverview Datastructure: Queue.
+ *
  *
  * This file provides the implementation of a FIFO Queue structure.
  * API is similar to that of com.google.common.collect.IntQueue
  */
 
-
 goog.provide('goog.structs.Queue');
 
-goog.require('goog.structs');
+goog.require('goog.array');
+
 
 
 /**
- * Class for FIFO Queue datastructure.
+ * Class for FIFO Queue data structure.
  *
  * @constructor
  */
@@ -124,7 +124,7 @@ goog.structs.Queue.prototype.isEmpty = function() {
  * Removes all elements from the queue.
  */
 goog.structs.Queue.prototype.clear = function() {
-  this.elements_ = [];
+  this.elements_.length = 0;
   this.head_ = 0;
   this.tail_ = 0;
 };
@@ -136,12 +136,12 @@ goog.structs.Queue.prototype.clear = function() {
  * @return {boolean} Whether the object is in the queue.
  */
 goog.structs.Queue.prototype.contains = function(obj) {
-  return goog.structs.contains(this.elements_);
+  return goog.array.contains(this.elements_, obj);
 };
 
 
 /**
- * Removes the first occurance of a particular value from the queue.
+ * Removes the first occurrence of a particular value from the queue.
  * @param {*} obj Object to remove.
  * @return {boolean} True if an element was removed.
  */
@@ -165,9 +165,5 @@ goog.structs.Queue.prototype.remove = function(obj) {
  * @return {Array} An array of the values in the queue.
  */
 goog.structs.Queue.prototype.getValues = function() {
-  var ret = [];
-  for (var i = this.head_; i < this.tail_; i++) {
-    ret.push(this.elements_[i]);
-  }
-  return ret;
+  return this.elements_.slice(this.head_, this.tail_);
 };

@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -35,23 +34,22 @@ goog.provide('goog.math.Coordinate');
 
 /**
  * Class for representing coordinates and positions.
- * @param {number} opt_x Left.
- * @param {number} opt_y Top.
+ * @param {number} opt_x Left, defaults to 0.
+ * @param {number} opt_y Top, defaults to 0.
  * @constructor
  */
 goog.math.Coordinate = function(opt_x, opt_y) {
   /**
    * X-value
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.x = goog.isDef(opt_x) ? Number(opt_x) : undefined;
+  this.x = goog.isDef(opt_x) ? opt_x : 0;
 
   /**
    * Y-value
-   * @type {number|undefined}
+   * @type {number}
    */
-  this.y = goog.isDef(opt_y) ? Number(opt_y) : undefined;
-
+  this.y = goog.isDef(opt_y) ? opt_y : 0;
 };
 
 
@@ -64,13 +62,15 @@ goog.math.Coordinate.prototype.clone = function() {
 };
 
 
-/**
- * Returns a nice string representing the coordinate.
- * @return {string} In the form (50, 73).
- */
-goog.math.Coordinate.prototype.toString = function() {
-  return '(' + this.x + ', ' + this.y + ')';
-};
+if (goog.DEBUG) {
+  /**
+   * Returns a nice string representing the coordinate.
+   * @return {string} In the form (50, 73).
+   */
+  goog.math.Coordinate.prototype.toString = function() {
+    return '(' + this.x + ', ' + this.y + ')';
+  };
+}
 
 
 /**
@@ -132,4 +132,16 @@ goog.math.Coordinate.squaredDistance = function(a, b) {
  */
 goog.math.Coordinate.difference = function(a, b) {
   return new goog.math.Coordinate(a.x - b.x, a.y - b.y);
+};
+
+
+/**
+ * Returns the sum of two coordinates as a new goog.math.Coordinate.
+ * @param {goog.math.Coordinate} a A Coordinate.
+ * @param {goog.math.Coordinate} b A Coordinate.
+ * @return {goog.math.Coordinate} A Coordinate representing the sum of the two
+ *     coordinates.
+ */
+goog.math.Coordinate.sum = function(a, b) {
+  return new goog.math.Coordinate(a.x + b.x, a.y + b.y);
 };

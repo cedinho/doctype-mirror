@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -27,6 +26,7 @@
 
 /**
  * @fileoverview Detection of JScript version.
+ *
  */
 
 
@@ -35,34 +35,64 @@ goog.provide('goog.userAgent.jscript');
 goog.require('goog.string');
 
 
-(function() {
-  var hasScriptEngine = 'ScriptEngine' in goog.global;
-  var hasJscript = false;
-  var version = '0';
+/**
+ * @define {boolean} True if it is known at compile time that the runtime
+ *     environment will not be using JScript.
+ */
+goog.userAgent.jscript.ASSUME_NO_JSCRIPT = false;
 
-  if (hasScriptEngine) {
-    hasJscript = goog.global['ScriptEngine']() == 'JScript';
-    if (hasJscript) {
-      version = goog.global['ScriptEngineMajorVersion']() + '.' +
+
+/**
+ * Initializer for goog.userAgent.jscript.  Detects if the user agent is using
+ * Microsoft JScript and which version of it.
+ *
+ * This is a named function so that it can be stripped via the jscompiler
+ * option for stripping types.
+ * @private
+ */
+goog.userAgent.jscript.init_ = function() {
+  /**
+   * @type {boolean}
+   * @private
+   */
+  goog.userAgent.jscript.DETECTED_HAS_JSCRIPT_ = false;
+
+  /**
+   * @type {string}
+   * @private
+   */
+  goog.userAgent.jscript.DETECTED_VERSION_ = '0';
+
+  if ('ScriptEngine' in goog.global) {
+    goog.userAgent.jscript.DETECTED_HAS_JSCRIPT_ =
+        goog.global['ScriptEngine']() == 'JScript';
+    if (goog.userAgent.jscript.DETECTED_HAS_JSCRIPT_) {
+      goog.userAgent.jscript.DETECTED_VERSION_ =
+          goog.global['ScriptEngineMajorVersion']() + '.' +
           goog.global['ScriptEngineMinorVersion']() + '.' +
           goog.global['ScriptEngineBuildVersion']();
     }
   }
+};
 
-  /**
-   * Whether we detect that the user agent is using Microsoft JScript.
-   * @type {boolean}
-   */
-  goog.userAgent.jscript.HAS_JSCRIPT = hasJscript;
+if (!goog.userAgent.jscript.ASSUME_NO_JSCRIPT) {
+  goog.userAgent.jscript.init_();
+}
+
+/**
+ * Whether we detect that the user agent is using Microsoft JScript.
+ * @type {boolean}
+ */
+goog.userAgent.jscript.HAS_JSCRIPT = goog.userAgent.jscript.ASSUME_NO_JSCRIPT ?
+    false : goog.userAgent.jscript.DETECTED_HAS_JSCRIPT_;
 
 
-  /**
-   * The installed version of JScript.
-   * @type {string}
-   */
-  goog.userAgent.jscript.VERSION = version;
-
-})();
+/**
+ * The installed version of JScript.
+ * @type {string}
+ */
+goog.userAgent.jscript.VERSION = goog.userAgent.jscript.ASSUME_NO_JSCRIPT ?
+    '0' : goog.userAgent.jscript.DETECTED_VERSION_;
 
 
 /**

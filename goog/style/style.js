@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,7 +25,8 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Utilities for elements styles
+ * @fileoverview Utilities for element styles.
+ *
  */
 
 goog.provide('goog.style');
@@ -40,6 +40,7 @@ goog.require('goog.math.Rect');
 goog.require('goog.math.Size');
 goog.require('goog.object');
 goog.require('goog.userAgent');
+goog.require('goog.userAgent.product');
 
 
 /**
@@ -141,6 +142,16 @@ goog.style.getStyle_ = function(element, style) {
 
 
 /**
+ * Retrieves the computed value of the position CSS attribute.
+ * @param {Element} element The element to get the position of.
+ * @return {string} Position value.
+ */
+goog.style.getComputedPosition = function(element) {
+  return goog.style.getStyle_(element, 'position');
+};
+
+
+/**
  * Retrieves the computed background color string for a given element. The
  * string returned is suitable for assigning to another element's
  * background-color, but is not guaranteed to be in any particular string
@@ -172,6 +183,9 @@ goog.style.getBackgroundColor = function(element) {
  */
 goog.style.setPosition = function(el, arg1, opt_arg2) {
   var x, y;
+  var buggyGeckoSubPixelPos = goog.userAgent.GECKO && goog.userAgent.MAC &&
+      goog.userAgent.isVersion('1.9');
+
   if (arg1 instanceof goog.math.Coordinate) {
     x = arg1.x;
     y = arg1.y;
@@ -180,8 +194,12 @@ goog.style.setPosition = function(el, arg1, opt_arg2) {
     y = opt_arg2;
   }
 
-  el.style.left = typeof x == 'number' ? Math.round(x) + 'px' : x;
-  el.style.top = typeof y == 'number' ? Math.round(y) + 'px' : y;
+  el.style.left = typeof x == 'number' ?
+      (buggyGeckoSubPixelPos ? Math.round(x) : x) + 'px' :
+      /** @type {string} */ (x);
+  el.style.top = typeof y == 'number' ?
+      (buggyGeckoSubPixelPos ? Math.round(y) : y) + 'px' :
+      /** @type {string} */ (y);
 };
 
 
@@ -215,10 +233,173 @@ goog.style.getClientViewportElement = function(opt_node) {
   }
 
   // In old IE versions the document.body represented the viewport
-  if (goog.userAgent.IE && doc.compatMode != 'CSS1Compat') {
+  if (goog.userAgent.IE && !goog.dom.getDomHelper(doc).isCss1CompatMode()) {
     return doc.body;
   }
   return doc.documentElement;
+};
+
+
+/**
+ * Gets the client rectangle of the DOM element.
+ *
+ * getBoundingClientRect is part of a new CSS object model draft (with a
+ * long-time presence in IE), replacing the error-prone parent offset
+ * computation and the now-deprecated Gecko getBoxObjectFor.
+ *
+ * This utility patches common browser bugs in getClientBoundingRect. It
+ * will fail if getClientBoundingRect is unsupported.
+ *
+ * @param {Element} el The element whose bounding rectangle is being queried.
+ * @return {Object} A native bounding rectangle with numerical left, top,
+ *     right, and bottom.  Reported by Firefox to be of object type ClientRect.
+ * @private
+ */
+goog.style.getBoundingClientRect_ = function(el) {
+  var rect = el.getBoundingClientRect();
+  // Patch the result in IE only, so that this function can be inlined if
+  // compiled for non-IE.
+  if (goog.userAgent.IE) {
+
+    // In IE, most of the time, 2 extra pixels are added to the top and left
+    // due to the implicit 2-pixel inset border.  In IE6/7 quirks mode and
+    // IE6 standards mode, this border can be overridden by setting the
+    // document element's border to zero -- thus, we cannot rely on the
+    // offset always being 2 pixels.
+
+    // In quirks mode, the offset can be determined by querying the body's
+    // clientLeft/clientTop, but in standards mode, it is found by querying
+    // the document element's clientLeft/clientTop.  Since we already called
+    // getClientBoundingRect we have already forced a reflow, so it is not
+    // too expensive just to query them all.
+
+    // See: http://msdn.microsoft.com/en-us/library/ms536433(VS.85).aspx
+    var doc = el.ownerDocument;
+    rect.left -= doc.documentElement.clientLeft + doc.body.clientLeft;
+    rect.top -= doc.documentElement.clientTop + doc.body.clientTop;
+  }
+  return /** @type {Object} */ (rect);
+};
+
+
+/**
+ * Returns the first parent that could affect the position of a given element.
+ * @param {Element} element The element to get the offset parent for.
+ * @return {Element?} The first offset parent or null if one cannot be found.
+ */
+goog.style.getOffsetParent = function(element) {
+  // element.offsetParent does the right thing in IE, in other browser it
+  // only includes elements with position absolute, relative or fixed, not
+  // elements with overflow set to auto or scroll.
+  if (goog.userAgent.IE) {
+    return element.offsetParent;
+  }
+
+  var doc = goog.dom.getOwnerDocument(element);
+  var positionStyle = goog.style.getStyle_(element, 'position');
+  var skipStatic = positionStyle == 'fixed' || positionStyle == 'absolute';
+  for (var parent = element.parentNode; parent && parent != doc;
+       parent = parent.parentNode) {
+    positionStyle = goog.style.getStyle_(parent, 'position');
+    skipStatic = skipStatic && positionStyle == 'static' &&
+                 parent != doc.documentElement && parent != doc.body;
+    if (!skipStatic && (parent.scrollWidth > parent.clientWidth ||
+                        parent.scrollHeight > parent.clientHeight ||
+                        positionStyle == 'fixed' ||
+                        positionStyle == 'absolute')) {
+      return parent;
+    }
+  }
+  return null;
+};
+
+
+/**
+ * Calculates and returns the visible rectangle for a given element. Returns a
+ * box describing the visible portion of the nearest scrollable ancestor.
+ * Coordinates are given relative to the document.
+ *
+ * @param {Element} element Element to get the visible rect for.
+ * @return {goog.math.Box} Bounding elementBox describing the visible rect or
+ *     null if scrollable ancestor isn't inside the visible viewport.
+ */
+goog.style.getVisibleRectForElement = function(element) {
+  var visibleRect = new goog.math.Box(0, Infinity, Infinity, 0);
+  var dom = goog.dom.getDomHelper(element);
+  var scrollEl = dom.getDocumentScrollElement();
+  var inContainer;
+
+  // Determine the size of the visible rect by climbing the dom accounting for
+  // all scrollable containers.
+  for (var el = element; el = goog.style.getOffsetParent(el); ) {
+    // clientWidth is zero for inline block elements in IE.
+    if ((!goog.userAgent.IE || el.clientWidth != 0) &&
+        (el.scrollWidth != el.clientWidth ||
+         el.scrollHeight != el.clientHeight) &&
+        goog.style.getStyle_(el, 'overflow') != 'visible') {
+      var pos = goog.style.getPageOffset(el);
+      var client = goog.style.getClientLeftTop(el);
+      pos.x += client.x;
+      pos.y += client.y;
+
+      visibleRect.top = Math.max(visibleRect.top, pos.y);
+      visibleRect.right = Math.min(visibleRect.right,
+                                   pos.x + el.clientWidth);
+      visibleRect.bottom = Math.min(visibleRect.bottom,
+                                    pos.y + el.clientHeight);
+      visibleRect.left = Math.max(visibleRect.left, pos.x);
+      inContainer = inContainer || el != scrollEl;
+    }
+  }
+
+  // Compensate for document scroll in non webkit browsers.
+  var scrollX = scrollEl.scrollLeft, scrollY = scrollEl.scrollTop;
+  if (goog.userAgent.WEBKIT) {
+    visibleRect.left += scrollX;
+    visibleRect.top += scrollY;
+  } else {
+    visibleRect.left = Math.max(visibleRect.left, scrollX);
+    visibleRect.top = Math.max(visibleRect.top, scrollY);
+  }
+  if (!inContainer || goog.userAgent.WEBKIT) {
+    visibleRect.right += scrollX;
+    visibleRect.bottom += scrollY;
+  }
+
+  // Clip by the window's viewport.
+  var winSize = dom.getViewportSize();
+  visibleRect.right = Math.min(visibleRect.right, scrollX + winSize.width);
+  visibleRect.bottom = Math.min(visibleRect.bottom, scrollY + winSize.height);
+
+  return visibleRect.top >= 0 && visibleRect.left >= 0 &&
+         visibleRect.bottom > visibleRect.top &&
+         visibleRect.right > visibleRect.left ?
+         visibleRect : null;
+};
+
+
+/**
+ * Returns clientLeft (width of the left border and, if the directionality is
+ * right to left, the vertical scrollbar) and clientTop as a coordinate object.
+ *
+ * @param {Element} el Element to get clientLeft for.
+ * @return {goog.math.Coordinate} Client left and top.
+ */
+goog.style.getClientLeftTop = function(el) {
+  // NOTE(eae): Gecko prior to 1.9 doesn't support clientTop/Left, see
+  // https://bugzilla.mozilla.org/show_bug.cgi?id=111207
+  if (goog.userAgent.GECKO && !goog.userAgent.isVersion('1.9')) {
+    var left = parseFloat(goog.style.getComputedStyle(el, 'borderLeftWidth'));
+    if (goog.style.isRightToLeft(el)) {
+      var scrollbarWidth = el.offsetWidth - el.clientWidth - left -
+          parseFloat(goog.style.getComputedStyle(el, 'borderRightWidth'));
+      left += scrollbarWidth;
+    }
+    return new goog.math.Coordinate(left,
+        parseFloat(goog.style.getComputedStyle(el, 'borderTopWidth')));
+  }
+
+  return new goog.math.Coordinate(el.clientLeft, el.clientTop);
 };
 
 
@@ -236,30 +417,16 @@ goog.style.getClientViewportElement = function(opt_node) {
  * @return {goog.math.Coordinate} The page offset.
  */
 goog.style.getPageOffset = function(el) {
-  var doc = goog.dom.getOwnerDocument(el);
+  var box, doc = goog.dom.getOwnerDocument(el);
+  var positionStyle = goog.style.getStyle_(el, 'position');
 
-  // Gecko browsers normally use getBoxObjectFor to calculate the position.
-  // When invoked for an element with an implicit absolute position though it
-  // can be off by one. Therefor the recursive implementation is used in those
-  // (relatively rare) cases.
+  // NOTE(eae): Gecko pre 1.9 normally use getBoxObjectFor to calculate the
+  // position. When invoked for an element with position absolute and a negative
+  // position though it can be off by one. Therefor the recursive implementation
+  // is used in those (relatively rare) cases.
   var BUGGY_GECKO_BOX_OBJECT = goog.userAgent.GECKO && doc.getBoxObjectFor &&
-      goog.style.getStyle_(el, 'position') == 'absolute' &&
-      (el.style.top == '' || el.style.left == '');
-
-  if (typeof goog.style.BUGGY_CAMINO_ == 'undefined') {
-    /**
-     * Camino versions up to 1.0.4 (which is navigator.version 1.8.0.10) return
-     * an invalid y-coordinate for the viewport element from calls to
-     * document.getBoxObjectFor. See:
-     * https://bugzilla.mozilla.org/show_bug.cgi?id=350018
-     *
-     * Constant defined out of global scope to eliminate runtime dependency.
-     * @type {boolean}
-     * @private
-     */
-    goog.style.BUGGY_CAMINO_ = goog.userAgent.CAMINO &&
-                               !goog.userAgent.isVersion('1.8.0.11');
-  }
+      !el.getBoundingClientRect && positionStyle == 'absolute' &&
+      (box = doc.getBoxObjectFor(el)) && (box.screenX < 0 || box.screenY < 0);
 
   // NOTE(arv): If element is hidden (display none or disconnected or any the
   // ancestors are hidden) we get (0,0) by default but we still do the
@@ -273,17 +440,18 @@ goog.style.getPageOffset = function(el) {
     return pos;
   }
 
-  var parent = null;
-  var box;
-
-  if (el.getBoundingClientRect) { // IE and Gecko 1.9+
-    box = el.getBoundingClientRect();
-    var scrollCoord = goog.dom.getPageScroll(goog.dom.getWindow(doc));
-
+  // IE and Gecko 1.9+.
+  if (el.getBoundingClientRect) {
+    box = goog.style.getBoundingClientRect_(el);
+    // Must add the scroll coordinates in to get the absolute page offset
+    // of element since getBoundingClientRect returns relative coordinates to
+    // the viewport.
+    var scrollCoord = goog.dom.getDomHelper(doc).getDocumentScroll();
     pos.x = box.left + scrollCoord.x;
     pos.y = box.top + scrollCoord.y;
-  } else if (doc.getBoxObjectFor && !BUGGY_GECKO_BOX_OBJECT &&
-      !goog.style.BUGGY_CAMINO_) { // gecko
+
+  // Gecko prior to 1.9.
+  } else if (doc.getBoxObjectFor && !BUGGY_GECKO_BOX_OBJECT) {
     // Gecko ignores the scroll values for ancestors, up to 1.9.  See:
     // https://bugzilla.mozilla.org/show_bug.cgi?id=328881 and
     // https://bugzilla.mozilla.org/show_bug.cgi?id=330619
@@ -293,15 +461,21 @@ goog.style.getPageOffset = function(el) {
     pos.x = box.screenX - vpBox.screenX;
     pos.y = box.screenY - vpBox.screenY;
 
-  } else { // safari/opera
-    parent = el;
+  // Safari, Opera and Camino up to 1.0.4.
+  } else {
+    var parent = el;
     do {
       pos.x += parent.offsetLeft;
       pos.y += parent.offsetTop;
+      // For safari/chrome, we need to add parent's clientLeft/Top as well.
+      if (parent != el) {
+        pos.x += parent.clientLeft || 0;
+        pos.y += parent.clientTop || 0;
+      }
       // In Safari when hit a position fixed element the rest of the offsets
       // are not correct.
       if (goog.userAgent.WEBKIT &&
-          goog.style.getStyle_(parent, 'position') == 'fixed') {
+          goog.style.getComputedPosition(parent) == 'fixed') {
         pos.x += doc.body.scrollLeft;
         pos.y += doc.body.scrollTop;
         break;
@@ -309,21 +483,22 @@ goog.style.getPageOffset = function(el) {
       parent = parent.offsetParent;
     } while (parent && parent != el)
 
-    // opera & (safari absolute) incorrectly account for body offsetTop
+    // Opera & (safari absolute) incorrectly account for body offsetTop.
     if (goog.userAgent.OPERA || (goog.userAgent.WEBKIT &&
-        goog.style.getStyle_(el, 'position') == 'absolute')) {
+        positionStyle == 'absolute')) {
       pos.y -= doc.body.offsetTop;
     }
 
-    // accumulate the scroll positions for everything but the body element
-    parent = el.offsetParent;
-    while (parent && parent != doc.body) {
+    for (parent = el; (parent = goog.style.getOffsetParent(parent)) &&
+        parent != doc.body; ) {
       pos.x -= parent.scrollLeft;
-      // see https://bugs.opera.com/show_bug.cgi?id=249965
+      // Workaround for a bug in Opera 9.2 (and earlier) where table rows may
+      // report an invalid scroll top value. The bug was fixed in Opera 9.5
+      // however as that version supports getBoundingClientRect it won't
+      // trigger this code path. https://bugs.opera.com/show_bug.cgi?id=249965
       if (!goog.userAgent.OPERA || parent.tagName != 'TR') {
         pos.y -= parent.scrollTop;
       }
-      parent = parent.offsetParent;
     }
   }
 
@@ -352,11 +527,78 @@ goog.style.getPageOffsetTop = function(el) {
 
 
 /**
+ * Returns a Coordinate object relative to the top-left of an HTML document
+ * in an ancestor frame of this element. Used for measuring the position of
+ * an element inside a frame relative to a containing frame.
+ *
+ * @param {Element} el Element to get the page offset for.
+ * @param {Window} relativeWin The window to measure relative to. If relativeWin
+ *     is not in the ancestor frame chain of the element, we measure relative to
+ *     the top-most window.
+ * @return {goog.math.Coordinate} The page offset.
+ */
+goog.style.getFramedPageOffset = function(el, relativeWin) {
+  var position = new goog.math.Coordinate(0, 0);
+
+  // Iterate up the ancestor frame chain, keeping track of the current window
+  // and the current element in that window.
+  var currentWin = goog.dom.getWindow(goog.dom.getOwnerDocument(el));
+  var currentEl = el;
+  do {
+    // if we're at the top window, we want to get the page offset.
+    // if we're at an inner frame, we only want to get the window position
+    // so that we can determine the actual page offset in the context of
+    // the outer window.
+    var offset = currentWin == relativeWin ?
+        goog.style.getPageOffset(currentEl) :
+        goog.style.getClientPosition(currentEl);
+
+    position.x += offset.x;
+    position.y += offset.y;
+  } while (currentWin && currentWin != relativeWin &&
+      (currentEl = currentWin.frameElement) &&
+      (currentWin = currentWin.parent));
+
+  return position;
+};
+
+
+/**
+ * Translates the specified rect relative to origBase page, for newBase page.
+ * If origBase and newBase are the same, this function does nothing.
+ *
+ * @param {goog.math.Rect} rect The source rectangle relative to origBase page,
+ *     and it will have the translated result.
+ * @param {!goog.dom.DomHelper} origBase The DomHelper for the input rectangle.
+ * @param {!goog.dom.DomHelper} newBase The DomHelper for the resultant
+ *     coordinate.  This must be a DOM for an ancestor frame of origBase
+ *     or the same as origBase.
+ */
+goog.style.translateRectForAnotherFrame = function(rect, origBase, newBase) {
+  if (origBase.getDocument() != newBase.getDocument()) {
+    var body = origBase.getDocument().body;
+    var pos = goog.style.getFramedPageOffset(body, newBase.getWindow());
+
+    // Adjust Body's margin.
+    pos = goog.math.Coordinate.difference(pos, goog.style.getPageOffset(body));
+
+    if (goog.userAgent.IE && !origBase.isCss1CompatMode()) {
+      pos = goog.math.Coordinate.difference(pos, origBase.getDocumentScroll());
+    }
+
+    rect.left += pos.x;
+    rect.top += pos.y;
+  }
+};
+
+
+/**
  * Returns the position of an element relative to another element in the
  * document.  A relative to B
- * @param {Element|Event} a Element or mouse event who's position we're
- *     calculating.
- * @param {Element|Event} b Element or mouse event position is relative to.
+ * @param {Element|Event|goog.events.Event} a Element or mouse event who's
+ *     position we're calculating.
+ * @param {Element|Event|goog.events.Event} b Element or mouse event position
+ *     is relative to.
  * @return {goog.math.Coordinate} The relative position.
  */
 goog.style.getRelativePosition = function(a, b) {
@@ -374,14 +616,14 @@ goog.style.getRelativePosition = function(a, b) {
 goog.style.getClientPosition = function(el) {
   var pos = new goog.math.Coordinate;
   if (el.nodeType == goog.dom.NodeType.ELEMENT) {
-    if (el.getBoundingClientRect) { // IE
-      var box = el.getBoundingClientRect();
+    if (el.getBoundingClientRect) {  // IE and Gecko 1.9+
+      var box = goog.style.getBoundingClientRect_(el);
       pos.x = box.left;
       pos.y = box.top;
     } else {
-      var scrollCoord = goog.dom.getPageScroll(
-          goog.dom.getWindow(goog.dom.getOwnerDocument(el)));
-      var pageCoord = goog.style.getPageOffset(el);
+      var scrollCoord = goog.dom.getDomHelper(/** @type {Element} */ (el))
+          .getDocumentScroll();
+      var pageCoord = goog.style.getPageOffset(/** @type {Element} */ (el));
       pos.x = pageCoord.x - scrollCoord.x;
       pos.y = pageCoord.y - scrollCoord.y;
     }
@@ -423,14 +665,17 @@ goog.style.setPageOffset = function(el, x, opt_y) {
 
 
 /**
- * Sets the width/height values of an element.  If no unit is specified in the
- * argument then it will add px. (This just sets the CSS width and height
- * properties so it might set content-box or border-box size depending on the
- * box model the browser is using.)
+ * Sets the width/height values of an element.  If an argument is numeric,
+ * or a goog.math.Size is passed, it is assumed to be pixels and will add
+ * 'px' after converting it to an integer in string form. (This just sets the
+ * CSS width and height properties so it might set content-box or border-box
+ * size depending on the box model the browser is using.)
  *
  * @param {Element} element Element to move.
- * @param {string|number|goog.math.Size} w Width or a size object.
- * @param {string|number} opt_h Height.
+ * @param {string|number|goog.math.Size} w Width of the element, or a
+ *     size object.
+ * @param {string|number} opt_h Height of the element. Required if w is not a
+ *     size object.
  */
 goog.style.setSize = function(element, w, opt_h) {
   var h;
@@ -438,11 +683,16 @@ goog.style.setSize = function(element, w, opt_h) {
     h = w.height;
     w = w.width;
   } else {
+    if (opt_h == undefined) {
+      throw Error('missing height argument');
+    }
     h = opt_h;
   }
 
-  element.style.width = typeof w == 'number' ? Math.round(w) + 'px' : w;
-  element.style.height = typeof h == 'number' ? Math.round(h) + 'px' : h;
+  element.style.width = typeof w == 'number' ? Math.round(w) + 'px' :
+                                               /** @type {string} */(w);
+  element.style.height = typeof h == 'number' ? Math.round(h) + 'px' :
+                                                /** @type {string} */(h);
 };
 
 
@@ -454,22 +704,35 @@ goog.style.setSize = function(element, w, opt_h) {
  * @return {goog.math.Size} Object with width/height properties.
  */
 goog.style.getSize = function(element) {
+  var hasOperaBug = goog.userAgent.OPERA && !goog.userAgent.isVersion('10');
   if (goog.style.getStyle_(element, 'display') != 'none') {
-    return new goog.math.Size(element.offsetWidth, element.offsetHeight);
+    if (hasOperaBug) {
+      return new goog.math.Size(element.offsetWidth || element.clientWidth,
+                                element.offsetHeight || element.clientHeight);
+    } else {
+      return new goog.math.Size(element.offsetWidth, element.offsetHeight);
+    }
   }
 
   var style = element.style;
+  var originalDisplay = style.display;
   var originalVisibility = style.visibility;
   var originalPosition = style.position;
 
   style.visibility = 'hidden';
   style.position = 'absolute';
-  style.display = '';
+  style.display = 'inline';
 
-  var originalWidth = element.offsetWidth;
-  var originalHeight = element.offsetHeight;
+  var originalWidth, originalHeight;
+  if (hasOperaBug) {
+    originalWidth = element.offsetWidth || element.clientWidth;
+    originalHeight = element.offsetHeight || element.clientHeight;
+  } else {
+    originalWidth = element.offsetWidth;
+    originalHeight = element.offsetHeight;
+  }
 
-  style.display = 'none';
+  style.display = originalDisplay;
   style.position = originalPosition;
   style.visibility = originalVisibility;
 
@@ -490,14 +753,24 @@ goog.style.getBounds = function(element) {
 
 
 /**
+ * A memoized cache for goog.style.toCamelCase.
+ * @type {Object}
+ * @private
+ */
+goog.style.toCamelCaseCache_ = {};
+
+
+/**
  * Converts a CSS selector in the form style-property to styleProperty
  * @param {string} selector CSS Selector.
  * @return {string} Camel case selector.
  */
 goog.style.toCamelCase = function(selector) {
-  return String(selector).replace(/\-([a-z])/g, function(all, match) {
-    return match.toUpperCase();
-  });
+  return goog.style.toCamelCaseCache_[selector] ||
+    (goog.style.toCamelCaseCache_[selector] =
+        String(selector).replace(/\-([a-z])/g, function(all, match) {
+          return match.toUpperCase();
+        }));
 };
 
 
@@ -512,9 +785,35 @@ goog.style.toSelectorCase = function(selector) {
 
 
 /**
- * Sets the opacity of a node (x-browser)
- * @param {Element} el Elements.
- * @param {number} alpha Opacity between 0 and 1.
+ * Gets the opacity of a node (x-browser). This gets the inline style opacity
+ * of the node, and does not take into account the cascaded or the computed
+ * style for this node.
+ * @param {Element} el Element whose opacity has to be found.
+ * @return {number|string} Opacity between 0 and 1 or an empty string {@code ''}
+ *     if the opacity is not set.
+ */
+goog.style.getOpacity = function(el) {
+  var style = el.style;
+  var result = '';
+  if ('opacity' in style) {
+    result = style.opacity;
+  } else if ('MozOpacity' in style) {
+    result = style.MozOpacity;
+  } else if ('filter' in style) {
+    var match = style.filter.match(/alpha\(opacity=([\d.]+)\)/);
+    if (match) {
+      result = String(match[1] / 100);
+    }
+  }
+  return result == '' ? result : Number(result);
+};
+
+
+/**
+ * Sets the opacity of a node (x-browser).
+ * @param {Element} el Elements whose opacity has to be set.
+ * @param {number|string} alpha Opacity between 0 and 1 or an empty string
+ *     {@code ''} to clear the opacity.
  */
 goog.style.setOpacity = function(el, alpha) {
   var style = el.style;
@@ -523,7 +822,11 @@ goog.style.setOpacity = function(el, alpha) {
   } else if ('MozOpacity' in style) {
     style.MozOpacity = alpha;
   } else if ('filter' in style) {
-    style.filter = 'alpha(opacity=' + (alpha * 100) + ')';
+    if (alpha === '') {
+      style.filter = '';
+    } else {
+      style.filter = 'alpha(opacity=' + alpha * 100 + ')';
+    }
   }
 };
 
@@ -544,7 +847,8 @@ goog.style.setTransparentBackgroundImage = function(el, src) {
   var style = el.style;
   // It is safe to use the style.filter in IE only. In Safari 'filter' is in
   // style object but access to style.filter causes it to throw an exception.
-  if (goog.userAgent.IE) {
+  // Note: IE8 supports images with an alpha channel.
+  if (goog.userAgent.IE && !goog.userAgent.isVersion('8')) {
     style.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader(' +
         'src="' + src + '", sizingMethod="crop")';
   } else {
@@ -589,11 +893,29 @@ goog.style.clearTransparentBackgroundImage = function(el) {
  * showElement will clear that setting and defer to the inherited style in the
  * stylesheet.
  * @param {Element} el Element to show or hide.
- * @param {boolean} display True to render the element in its default style,
+ * @param {*} display True to render the element in its default style,
  * false to disable rendering the element.
  */
 goog.style.showElement = function(el, display) {
   el.style.display = display ? '' : 'none';
+};
+
+
+/**
+ * Test whether the given element has been shown or hidden via a call to
+ * {@link #showElement}.
+ *
+ * Note this is strictly a companion method for a call
+ * to {@link #showElement} and the same caveats apply; in particular, this
+ * method does not guarantee that the return value will be consistent with
+ * whether or not the element is actually visible.
+ *
+ * @param {Element} el The element to test.
+ * @return {boolean} Whether the element has been shown.
+ * @see #showElement
+ */
+goog.style.isElementShown = function(el) {
+  return el.style.display != 'none';
 };
 
 
@@ -687,7 +1009,8 @@ goog.style.setInlineBlock = function(el) {
   // Without position:relative, weirdness ensues.  Just accept it and move on.
   style.position = 'relative';
 
-  if (goog.userAgent.IE) {
+  if (goog.userAgent.IE && !goog.userAgent.isVersion('8')) {
+    // IE8 supports inline-block so fall through to the else
     // Zoom:1 forces hasLayout, display:inline gives inline behavior.
     style.zoom = '1';
     style.display = 'inline';
@@ -702,6 +1025,52 @@ goog.style.setInlineBlock = function(el) {
     style.display = 'inline-block';
   }
 };
+
+
+/**
+ * Determines whether the given content element needs to be placed in a wrapper
+ * div before being appended to an inline-block element. Because Firefox2
+ * does not properly support inline-block, some elements need this so that RTL
+ * characters are preserved.
+ * @param {string|Node|NodeList|Array.<Node>} content Content element in the
+ *     form of a child argument to {@link goog.dom.createDom}.
+ * @return {boolean} Whether a wrapper is needed.
+ */
+goog.style.needsInlineBlockWrapper = function(content) {
+  return goog.style.browserNeedsInlineBlockWrapper_ &&
+      goog.style.hasUnguardedText_(content);
+};
+
+
+/**
+ * Determines whether the given content element has text nodes that are not
+ * wrapped in a div.
+ * @param {string|Node|Array.<Node>} content Content element in the form
+ *     of a child argument to {@link goog.dom.createDom}.
+ * @return {boolean} Whether there are text nodes.
+ * @private
+ */
+goog.style.hasUnguardedText_ = function(content) {
+  if (!content) {
+    return false;
+  } else if (goog.isString(content) ||
+      content.nodeType == goog.dom.NodeType.TEXT) {
+    return true;
+  } else {
+    // content must be an array.
+    return goog.array.some(content, goog.style.hasUnguardedText_);
+  }
+};
+
+
+/**
+ * On FF2, text nodes cannot be placed directly under an inline-block element.
+ * If they are, FF2 will change all RTL characters to LTR characters.
+ * @type {boolean}
+ * @private
+ */
+goog.style.browserNeedsInlineBlockWrapper_ = goog.userAgent.GECKO &&
+    !goog.userAgent.isVersion('1.9');
 
 
 /**
@@ -799,10 +1168,13 @@ goog.style.getBorderBoxSize = function(element) {
  * @param {goog.math.Size} size  The new size.
  */
 goog.style.setBorderBoxSize = function(element, size) {
-  if (goog.userAgent.IE) {
-    var doc = goog.dom.getOwnerDocument(element);
+  var doc = goog.dom.getOwnerDocument(element);
+  var isCss1CompatMode = goog.dom.getDomHelper(doc).isCss1CompatMode();
+
+  if (goog.userAgent.IE &&
+      (!isCss1CompatMode || !goog.userAgent.isVersion('8'))) {
     var style = element.style;
-    if (doc.compatMode == 'CSS1Compat') {
+    if (isCss1CompatMode) {
       var paddingBox = goog.style.getPaddingBox(element);
       var borderBox = goog.style.getBorderBox(element);
       style.pixelWidth = size.width - borderBox.left - paddingBox.left -
@@ -828,8 +1200,12 @@ goog.style.setBorderBoxSize = function(element, size) {
 goog.style.getContentBoxSize = function(element) {
   var doc = goog.dom.getOwnerDocument(element);
   var ieCurrentStyle = goog.userAgent.IE && element.currentStyle;
-  if (ieCurrentStyle && doc.compatMode == 'CSS1Compat' &&
-      ieCurrentStyle.width != 'auto' && ieCurrentStyle.height != 'auto') {
+  if (ieCurrentStyle &&
+      goog.dom.getDomHelper(doc).isCss1CompatMode() &&
+      ieCurrentStyle.width != 'auto' && ieCurrentStyle.height != 'auto' &&
+      !ieCurrentStyle.boxSizing) {
+    // If IE in CSS1Compat mode than just use the width and height.
+    // If we have a boxSizing then fall back on measuring the borders etc.
     var width = goog.style.getIePixelValue_(element, ieCurrentStyle.width,
                                             'width', 'pixelWidth');
     var height = goog.style.getIePixelValue_(element, ieCurrentStyle.height,
@@ -856,10 +1232,12 @@ goog.style.getContentBoxSize = function(element) {
  * @param {goog.math.Size} size  The new size.
  */
 goog.style.setContentBoxSize = function(element, size) {
-  if (goog.userAgent.IE) {
-    var doc = goog.dom.getOwnerDocument(element);
+  var doc = goog.dom.getOwnerDocument(element);
+  var isCss1CompatMode = goog.dom.getDomHelper(doc).isCss1CompatMode();
+  if (goog.userAgent.IE &&
+      (!isCss1CompatMode || !goog.userAgent.isVersion('8'))) {
     var style = element.style;
-    if (doc.compatMode == 'CSS1Compat') {
+    if (isCss1CompatMode) {
       style.pixelWidth = size.width;
       style.pixelHeight = size.height;
     } else {
@@ -889,13 +1267,16 @@ goog.style.setBoxSizingSize_ = function(element, size, boxSizing) {
     style.MozBoxSizing = boxSizing;
   } else if (goog.userAgent.WEBKIT) {
     style.WebkitBoxSizing = boxSizing;
-  } else if (goog.userAgent.OPERA) {
-    // Opera does not expose box-sizing to the CSS DOM so we update the style
-    // attribute instead.
-    var value = element.getAttribute('style') || '';
-    value = value.replace(/box-sizing:[^;]+/g, '') + ';box-sizing:' + boxSizing;
-    element.setAttribute('style', value);
+  } else if (goog.userAgent.OPERA && !goog.userAgent.isVersion('9.50')) {
+    // Opera pre-9.5 does not have CSSStyleDeclaration::boxSizing, but
+    // box-sizing can still be set via CSSStyleDeclaration::setProperty.
+    if (boxSizing) {
+      style.setProperty('box-sizing', boxSizing);
+    } else {
+      style.removeProperty('box-sizing');
+    }
   } else {
+    // Includes IE8
     style.boxSizing = boxSizing;
   }
   style.width = size.width + 'px';
@@ -936,13 +1317,13 @@ goog.style.getIePixelValue_ = function(element, value, name, pixelName) {
 
 
 /**
- * Helper function for getting the pixel padding for IE.
+ * Helper function for getting the pixel padding or margin for IE.
  * @param {Element} element  The element to get the padding for.
  * @param {string} propName  The property name.
  * @return {number} The pixel padding.
  * @private
  */
-goog.style.getIePixelPadding_ = function(element, propName) {
+goog.style.getIePixelDistance_ = function(element, propName) {
   return goog.style.getIePixelValue_(element,
       goog.style.getCascadedStyle(element, propName),
       'left', 'pixelLeft');
@@ -950,22 +1331,31 @@ goog.style.getIePixelPadding_ = function(element, propName) {
 
 
 /**
- * Gets the computed paddings (on all sides) in pixels
+ * Gets the computed paddings or margins (on all sides) in pixels.
  * @param {Element} element  The element to get the padding for.
- * @return {goog.math.Box} The computed paddings.
+ * @param {string} stylePrefix  Pass 'padding' to retrieve the padding box,
+ *     or 'margin' to retrieve the margin box.
+ * @return {goog.math.Box} The computed paddings or margins.
+ * @private
  */
-goog.style.getPaddingBox = function(element) {
+goog.style.getBox_ = function(element, stylePrefix) {
   if (goog.userAgent.IE) {
-    var left = goog.style.getIePixelPadding_(element, 'paddingLeft');
-    var right = goog.style.getIePixelPadding_(element, 'paddingRight');
-    var top = goog.style.getIePixelPadding_(element, 'paddingTop');
-    var bottom = goog.style.getIePixelPadding_(element, 'paddingBottom');
+    var left = goog.style.getIePixelDistance_(element, stylePrefix + 'Left');
+    var right = goog.style.getIePixelDistance_(element, stylePrefix + 'Right');
+    var top = goog.style.getIePixelDistance_(element, stylePrefix + 'Top');
+    var bottom = goog.style.getIePixelDistance_(
+        element, stylePrefix + 'Bottom');
     return new goog.math.Box(top, right, bottom, left);
   } else {
-    var left = goog.style.getComputedStyle(element, 'paddingLeft');
-    var right = goog.style.getComputedStyle(element, 'paddingRight');
-    var top = goog.style.getComputedStyle(element, 'paddingTop');
-    var bottom = goog.style.getComputedStyle(element, 'paddingBottom');
+    // On non-IE browsers, getComputedStyle is always non-null.
+    var left = /** @type {string} */ (
+        goog.style.getComputedStyle(element, stylePrefix + 'Left'));
+    var right = /** @type {string} */ (
+        goog.style.getComputedStyle(element, stylePrefix + 'Right'));
+    var top = /** @type {string} */ (
+        goog.style.getComputedStyle(element, stylePrefix + 'Top'));
+    var bottom = /** @type {string} */ (
+        goog.style.getComputedStyle(element, stylePrefix + 'Bottom'));
 
     // NOTE(arv): Gecko can return floating point numbers for the computed
     // style values.
@@ -975,6 +1365,27 @@ goog.style.getPaddingBox = function(element) {
                              parseFloat(left));
   }
 };
+
+
+/**
+ * Gets the computed paddings (on all sides) in pixels.
+ * @param {Element} element  The element to get the padding for.
+ * @return {goog.math.Box} The computed paddings.
+ */
+goog.style.getPaddingBox = function(element) {
+  return goog.style.getBox_(element, 'padding');
+};
+
+
+/**
+ * Gets the computed margins (on all sides) in pixels.
+ * @param {Element} element  The element to get the margins for.
+ * @return {goog.math.Box} The computed margins.
+ */
+goog.style.getMarginBox = function(element) {
+  return goog.style.getBox_(element, 'margin');
+};
+
 
 /**
  * A map used to map the border width keywords to a pixel width.
@@ -992,6 +1403,7 @@ goog.style.ieBorderWidthKeywords_ = {
  * Helper function for IE to get the pixel border.
  * @param {Element} element  The element to get the pixel border for.
  * @param {string} prop  The part of the property name.
+ * @return {number} The value in pixels.
  * @private
  */
 goog.style.getIePixelBorder_ = function(element, prop) {
@@ -1019,10 +1431,16 @@ goog.style.getBorderBox = function(element) {
     var bottom = goog.style.getIePixelBorder_(element, 'borderBottom');
     return new goog.math.Box(top, right, bottom, left);
   } else {
-    var left = goog.style.getComputedStyle(element, 'borderLeftWidth');
-    var right = goog.style.getComputedStyle(element, 'borderRightWidth');
-    var top = goog.style.getComputedStyle(element, 'borderTopWidth');
-    var bottom = goog.style.getComputedStyle(element, 'borderBottomWidth');
+    // On non-IE browsers, getComputedStyle is always non-null.
+    var left = /** @type {string} */ (
+        goog.style.getComputedStyle(element, 'borderLeftWidth'));
+    var right = /** @type {string} */ (
+        goog.style.getComputedStyle(element, 'borderRightWidth'));
+    var top = /** @type {string} */ (
+        goog.style.getComputedStyle(element, 'borderTopWidth'));
+    var bottom = /** @type {string} */ (
+        goog.style.getComputedStyle(element, 'borderBottomWidth'));
+
     return new goog.math.Box(parseFloat(top),
                              parseFloat(right),
                              parseFloat(bottom),
@@ -1163,7 +1581,7 @@ goog.style.getFontSize = function(el) {
 /**
  * Parses a style attribute value.  Converts CSS property names to camel case.
  * @param {string} value The style attribute value.
- * @return {Object} Map of CSS properties to string values.
+ * @return {!Object} Map of CSS properties to string values.
  */
 goog.style.parseStyleAttribute = function(value) {
   var result = {};
@@ -1190,4 +1608,25 @@ goog.style.toStyleAttribute = function(obj) {
     buffer.push(goog.style.toSelectorCase(key), ':', value, ';');
   });
   return buffer.join('');
+};
+
+
+/**
+ * Sets CSS float property on an element.
+ * @param {Element} el The element to set float property on.
+ * @param {string} value The value of float CSS property to set on this element.
+ */
+goog.style.setFloat = function(el, value) {
+  el.style[goog.userAgent.IE ? 'styleFloat' : 'cssFloat'] = value;
+};
+
+
+/**
+ * Gets value of explicitly-set float CSS property on an element.
+ * @param {Element} el The element to get float property of.
+ * @return {string} The value of explicitly-set float CSS property on this
+ *     element.
+ */
+goog.style.getFloat = function(el) {
+  return el.style[goog.userAgent.IE ? 'styleFloat' : 'cssFloat'] || '';
 };

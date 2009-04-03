@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -28,11 +27,6 @@
 /**
  * @fileoverview Utilities for manipulating objects/maps/hashes.
  */
-
-// NOTE(arv): This does not use hasOwnProperty because some (not so) old
-//            browsers failed to implement ECMAScript. Also that would prevent
-//            us from using 'hasOwnProperty' as a key
-
 
 goog.provide('goog.object');
 
@@ -151,7 +145,7 @@ goog.object.every = function(obj, f, opt_obj) {
  * @return {number} The number of key-value pairs in the object map.
  */
 goog.object.getCount = function(obj) {
-  // JS1.5 has __count__ but it has been depreciated so it raises a warning...
+  // JS1.5 has __count__ but it has been deprecated so it raises a warning...
   // in other words do not use. Also __count__ only includes the fields on the
   // actual object and not in the prototype chain.
   var rv = 0;
@@ -213,8 +207,9 @@ goog.object.contains = function(obj, val) {
  */
 goog.object.getValues = function(obj) {
   var res = [];
+  var i = 0;
   for (var key in obj) {
-    res.push(obj[key]);
+    res[i++] = obj[key];
   }
   return res;
 };
@@ -228,8 +223,9 @@ goog.object.getValues = function(obj) {
  */
 goog.object.getKeys = function(obj) {
   var res = [];
+  var i = 0;
   for (var key in obj) {
-    res.push(key);
+    res[i++] = key;
   }
   return res;
 };
@@ -261,6 +257,44 @@ goog.object.containsValue = function(obj, val) {
     }
   }
   return false;
+};
+
+
+/**
+ * Searches an object for an element that satisfies the given condition and
+ * returns its key.
+ * @param {Object} obj The object to search in.
+ * @param {function(*, string, Object): boolean} f The function to call for
+ *     every element. Takes 3 arguments (the value, the key and the object) and
+ *     should return a boolean.
+ * @param {Object} opt_this An optional "this" context for the function.
+ * @return {string|undefined} The key of an element for which the function
+ *     returns true or undefined if no such element is found.
+ */
+goog.object.findKey = function(obj, f, opt_this) {
+  for (var key in obj) {
+    if (f.call(opt_this, obj[key], key, obj)) {
+      return key;
+    }
+  }
+  return undefined;
+};
+
+
+/**
+ * Searches an object for an element that satisfies the given condition and
+ * returns its value.
+ * @param {Object} obj The object to search in.
+ * @param {function(*, string, Object): boolean} f The function to call for
+ *     every element. Takes 3 arguments (the value, the key and the object) and
+ *     should return a boolean.
+ * @param {Object} opt_this An optional "this" context for the function.
+ * @return {*} The value of an element for which the function returns true or
+ *     undefined if no such element is found.
+ */
+goog.object.findValue = function(obj, f, opt_this) {
+  var key = goog.object.findKey(obj, f, opt_this);
+  return key && obj[key];
 };
 
 
@@ -354,13 +388,26 @@ goog.object.set = function(obj, key, value) {
 
 
 /**
+ * Adds a key-value pair to the object/map/hash if it doesn't exist yet.
+ *
+ * @param {Object} obj The object to which to add the key-value pair.
+ * @param {string} key The key to add.
+ * @param {*} value The value to add if the key wasn't present.
+ * @return {*} The value of the entry at the end of the function.
+ */
+goog.object.setIfUndefined = function(obj, key, value) {
+  return key in obj ? obj[key] : (obj[key] = value);
+};
+
+
+/**
  * Does a flat clone of the object.
  *
  * @param {Object} obj Object to clone.
  * @return {Object} Clone of the input object.
  */
 goog.object.clone = function(obj) {
-  // we canot use the prototype trick because a lot of methods depend on where
+  // We cannot use the prototype trick because a lot of methods depend on where
   // the actual key is set.
 
   var res = {};
@@ -368,7 +415,7 @@ goog.object.clone = function(obj) {
     res[key] = obj[key];
   }
   return res;
-  // we could also use goog.mixin but I wanted this to be independent from that
+  // We could also use goog.mixin but I wanted this to be independent from that.
 };
 
 
@@ -386,7 +433,7 @@ goog.object.transpose = function(obj) {
   for (var i = 0, len = keys.length; i < len; i++) {
     var key = keys[i];
     transposed[obj[key]] = key;
-  };
+  }
   return transposed;
 };
 
@@ -416,7 +463,7 @@ goog.object.PROTOTYPE_FIELDS_ = [
  * goog.object.extend(o, {a: 0, b: 1});
  * o; // {a: 0, b: 1}
  * goog.object.extend(o, {c: 2});
- * a; // {a: 0, b: 1, c: 2}
+ * o; // {a: 0, b: 1, c: 2}
  *
  * @param {Object} target  The object to modify.
  * @param {Object} var_args The objects from which values will be copied.
@@ -442,4 +489,53 @@ goog.object.extend = function(target, var_args) {
       }
     }
   }
+};
+
+
+/**
+ * Creates a new object built from the key-value pairs provided as arguments.
+ * @param {*} var_args If only one argument is provided and it is an array then
+ *     this is used as the arguments,  otherwise even arguments are used as the
+ *     property names and odd arguments are used as the property values.
+ * @return {Object} The new object.
+ * @throws {Error} If there are uneven number of arguments or there is only one
+ *     non array argument.
+ */
+goog.object.create = function(var_args) {
+  var argLength = arguments.length;
+  if (argLength == 1 && goog.isArray(arguments[0])) {
+    return goog.object.create.apply(null, arguments[0]);
+  }
+
+  if (argLength % 2) {
+    throw Error('Uneven number of arguments');
+  }
+
+  var rv = {};
+  for (var i = 0; i < argLength; i += 2) {
+    rv[arguments[i]] = arguments[i + 1];
+  }
+  return rv;
+};
+
+
+/**
+ * Creates a new object where the property names come from the arguments but
+ * the value is always set to true
+ * @param {*} var_args If only one argument is provided and it is an array then
+ *     this is used as the arguments,  otherwise the arguments are used as the
+ *     property names.
+ * @return {Object} The new object.
+ */
+goog.object.createSet = function(var_args) {
+  var argLength = arguments.length;
+  if (argLength == 1 && goog.isArray(arguments[0])) {
+    return goog.object.createSet.apply(null, arguments[0]);
+  }
+
+  var rv = {};
+  for (var i = 0; i < argLength; i++) {
+    rv[arguments[i]] = true;
+  }
+  return rv;
 };

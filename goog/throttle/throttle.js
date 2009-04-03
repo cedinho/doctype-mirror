@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -27,9 +26,12 @@
 
 /**
  * @fileoverview Definition of the goog.util.Throttle class.
+ *
  */
 
 goog.provide('goog.Throttle');
+
+goog.require('goog.Disposable');
 goog.require('goog.Timer');
 
 /**
@@ -42,8 +44,11 @@ goog.require('goog.Timer');
  *     only be called once per interval.
  * @param {Object} opt_handler Object in who's scope to call the listener.
  * @constructor
+ * @extends {goog.Disposable}
  */
 goog.Throttle = function(listener, interval, opt_handler) {
+  goog.Disposable.call(this);
+
   /**
    * Function to callback
    * @type {Function}
@@ -72,6 +77,8 @@ goog.Throttle = function(listener, interval, opt_handler) {
    */
   this.callback_ = goog.bind(this.onTimer_, this);
 };
+goog.inherits(goog.Throttle, goog.Disposable);
+
 
 /**
  * Indicates that the action is pending and needs to be fired.
@@ -79,6 +86,17 @@ goog.Throttle = function(listener, interval, opt_handler) {
  * @private
  */
 goog.Throttle.prototype.shouldFire_ = false;
+
+
+/**
+ * Indicates the count of nested pauses currently in effect on the throttle.
+ * When this count is not zero, fired actions will be postponed until the
+ * throttle is resumed enough times to drop the pause count to zero.
+ * @type {number}
+ * @private
+ */
+goog.Throttle.prototype.pauseCount_ = 0;
+
 
 /**
  * Timer for scheduling the next callback
@@ -94,7 +112,7 @@ goog.Throttle.prototype.timer_ = null;
  * parameter passed to the constructor.
  */
 goog.Throttle.prototype.fire = function() {
-  if (this.timer_ == null) {
+  if (!this.timer_ && !this.pauseCount_) {
     this.doAction_();
   } else {
     this.shouldFire_ = true;
@@ -103,13 +121,46 @@ goog.Throttle.prototype.fire = function() {
 
 
 /**
- * Disposes the object.
+ * Cancels any pending action callback. The throttle can be restarted by
+ * calling {@link #fire}.
  */
-goog.Throttle.prototype.dispose = function() {
+goog.Throttle.prototype.stop = function() {
   if (this.timer_) {
     goog.Timer.clear(this.timer_);
     this.timer_ = null;
+    this.shouldFire_ = false;
   }
+};
+
+
+/**
+ * Pauses the throttle.  All pending and future action callbacks will be
+ * delayed until the throttle is resumed.  Pauses can be nested.
+ */
+goog.Throttle.prototype.pause = function() {
+  this.pauseCount_++;
+};
+
+
+/**
+ * Resumes the throttle.  If doing so drops the pausing count to zero, pending
+ * action callbacks will be executed as soon as possible, but still no sooner
+ * than an interval's delay after the previous call.  Future action callbacks
+ * will be executed as normal.
+ */
+goog.Throttle.prototype.resume = function() {
+  this.pauseCount_--;
+  if (!this.pauseCount_ && this.shouldFire_ && !this.timer_) {
+    this.shouldFire_ = false;
+    this.doAction_();
+  }
+};
+
+
+/** {@inheritDoc} */
+goog.Throttle.prototype.disposeInternal = function() {
+  goog.Throttle.superClass_.disposeInternal.call(this);
+  this.stop();
 };
 
 
@@ -120,7 +171,7 @@ goog.Throttle.prototype.dispose = function() {
 goog.Throttle.prototype.onTimer_ = function() {
   this.timer_ = null;
 
-  if (this.shouldFire_) {
+  if (this.shouldFire_ && !this.pauseCount_) {
     this.shouldFire_ = false;
     this.doAction_();
   }

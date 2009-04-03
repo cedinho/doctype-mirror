@@ -1,5 +1,4 @@
 // Copyright 2006 Google Inc.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,6 +25,7 @@
 
 /**
  * @fileoverview Constant declarations for common key codes.
+ *
  */
 
 goog.provide('goog.events.KeyNames');
@@ -73,7 +73,6 @@ goog.events.KeyNames = {
   55: '7',
   56: '8',
   57: '9',
-  61: 'equals',
   65: 'a',
   66: 'b',
   67: 'c',
@@ -115,6 +114,7 @@ goog.events.KeyNames = {
   121: 'f10',
   122: 'f11',
   123: 'f12',
+  187: 'equals',
   188: ',',
   190: '.',
   191: '/',

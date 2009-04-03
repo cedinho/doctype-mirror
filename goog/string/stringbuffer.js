@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -38,11 +37,13 @@ goog.require('goog.userAgent.jscript');
  * using Array.join() rather than the '+' operator.  For other browsers
  * we simply use the '+' operator.
  *
- * @param {Object} var_args Initial items to append.
- *     e.g., new goog.string.StringBuffer('foo', 'bar').
+ * @param {Object|number|string|boolean} opt_a1 Optional first initial item
+ *     to append.
+ * @param {Object|number|string|boolean} var_args Other initial items to
+ *     append, e.g., new goog.string.StringBuffer('foo', 'bar').
  * @constructor
  */
-goog.string.StringBuffer = function(var_args) {
+goog.string.StringBuffer = function(opt_a1, var_args) {
   /**
    * Internal buffer for the string to be concatenated.
    * @type {string|Array}
@@ -50,12 +51,14 @@ goog.string.StringBuffer = function(var_args) {
    */
   this.buffer_ = goog.userAgent.jscript.HAS_JSCRIPT ? [] : '';
 
-  this.append.apply(this, arguments);
+  if (opt_a1 != null) {
+    this.append.apply(this, arguments);
+  }
 };
 
 
 /**
- * Sets the contents of the string buffer object, replacing what's currently 
+ * Sets the contents of the string buffer object, replacing what's currently
  * there.
  *
  * @param {string} s String to set.
@@ -78,31 +81,56 @@ if (goog.userAgent.jscript.HAS_JSCRIPT) {
   /**
    * Appends one or more items to the buffer.
    *
-   * @param {Object} var_args Items to append. e.g., sb.append('foo', 'bar').
+   * Calling this with null, undefined, or empty arguments is an error.
+   *
+   * @param {Object|number|string|boolean} a1 Required first string.
+   * @param {Object|number|string|boolean} opt_a2 Optional second string.
+   * @param {Object|number|string|boolean} var_args Other items to append,
+   *     e.g., sb.append('foo', 'bar', 'baz').
    * @return {goog.string.StringBuffer} This same StringBuffer object.
    */
-  goog.string.StringBuffer.prototype.append = function(var_args) {
+  goog.string.StringBuffer.prototype.append = function(a1, opt_a2, var_args) {
     // IE version.
-    if (arguments.length == 1) {
-      // Array assignment is 2x faster than Array push.
-      this.buffer_[this.bufferLength_++] = arguments[0];
+    if (!COMPILED && !goog.isDef(a1)) {
+      throw Error('Cannot call StringBuffer.append with zero arguments.');
+    }
+
+    if (opt_a2 == null) { // second argument is undefined (null == undefined)
+      // Array assignment is 2x faster than Array push.  Also, use a1
+      // directly to avoid arguments instantiation, another 2x improvement.
+      this.buffer_[this.bufferLength_++] = a1;
     } else {
-      this.buffer_.push.apply(this.buffer_, arguments);
+      this.buffer_.push.apply(/** @type {Array} */ (this.buffer_), arguments);
       this.bufferLength_ = this.buffer_.length;
     }
     return this;
   };
 } else {
+
   /**
    * Appends one or more items to the buffer.
    *
-   * @param {Object} var_args Items to append. e.g., sb.append('foo', 'bar').
+   * Calling this with null, undefined, or empty arguments is an error.
+   *
+   * @param {Object|number|string|boolean} a1 Required first string.
+   * @param {Object|number|string|boolean} opt_a2 Optional second string.
+   * @param {Object|number|string|boolean} var_args Other items to append,
+   *     e.g., sb.append('foo', 'bar', 'baz').
    * @return {goog.string.StringBuffer} This same StringBuffer object.
+   * @suppress {duplicate}
    */
-  goog.string.StringBuffer.prototype.append = function(var_args) {
+  goog.string.StringBuffer.prototype.append = function(a1, opt_a2, var_args) {
     // W3 version.
-    for (var i = 0; i < arguments.length; i++) {
-      this.buffer_ += arguments[i];
+    if (!COMPILED && !goog.isDef(a1)) {
+      throw Error('Cannot call StringBuffer.append with zero arguments.');
+    }
+
+    // Use a1 directly to avoid arguments instantiation for single-arg case.
+    this.buffer_ += a1;
+    if (opt_a2 != null) { // second argument is undefined (null == undefined)
+      for (var i = 1; i < arguments.length; i++) {
+        this.buffer_ += arguments[i];
+      }
     }
     return this;
   };
@@ -138,6 +166,6 @@ goog.string.StringBuffer.prototype.toString = function() {
     }
     return str;
   } else {
-    return this.buffer_;
+    return /** @type {string} */ (this.buffer_);
   }
 };

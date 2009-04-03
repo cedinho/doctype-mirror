@@ -1,6 +1,5 @@
 // Copyright 2005 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -46,10 +45,16 @@
  * - ctrlKey        {Boolean}   Was ctrl key depressed
  * - altKey         {Boolean}   Was alt key depressed
  * - shiftKey       {Boolean}   Was shift key depressed
+ * - metaKey        {Boolean}   Was meta key depressed
+ *
+ * NOTE: The keyCode member contains the raw browser keyCode. For normalized
+ * key and character code use {@link goog.events.KeyHandler}.
  * </pre>
+ *
  */
 
 goog.provide('goog.events.BrowserEvent');
+goog.provide('goog.events.BrowserEvent.MouseButton');
 
 goog.require('goog.events.Event');
 goog.require('goog.userAgent');
@@ -62,6 +67,7 @@ goog.require('goog.userAgent');
  * @param {Event} opt_e Browser event object.
  * @param {Node} opt_currentTarget Current target for event.
  * @constructor
+ * @extends {goog.events.Event}
  */
 goog.events.BrowserEvent = function(opt_e, opt_currentTarget) {
  if (opt_e) {
@@ -73,7 +79,7 @@ goog.inherits(goog.events.BrowserEvent, goog.events.Event);
 
 /**
  * Normalized button constants for the mouse.
- * @enum number
+ * @enum {number}
  */
 goog.events.BrowserEvent.MouseButton = {
   LEFT: 0,
@@ -110,9 +116,9 @@ goog.events.BrowserEvent.prototype.target = null;
 
 /**
  * Node that had the listener attached
- * @type {Node?}
+ * @type {Node|null|undefined}
  */
-goog.events.BrowserEvent.prototype.currentTarget = null;
+goog.events.BrowserEvent.prototype.currentTarget;
 
 
 /**
@@ -215,7 +221,7 @@ goog.events.BrowserEvent.prototype.metaKey = false;
 
 /**
  * The browser event object
- * @type {Event?}
+ * @type {Event}
  * @private
  */
 goog.events.BrowserEvent.prototype.event_ = null;
@@ -232,7 +238,7 @@ goog.events.BrowserEvent.prototype.init = function(e, opt_currentTarget) {
   this.target = e.target || e.srcElement;
   this.currentTarget = opt_currentTarget;
   if (e.relatedTarget) {
-    this.relatedTarget = e.relatedTarget;
+    this.relatedTarget = /** @type {Node} */ (e.relatedTarget);
   } else if (this.type == goog.events.EventType.MOUSEOVER) {
     this.relatedTarget = e.fromElement;
   } else if (this.type == goog.events.EventType.MOUSEOUT) {
@@ -258,17 +264,21 @@ goog.events.BrowserEvent.prototype.init = function(e, opt_currentTarget) {
   this.shiftKey = e.shiftKey;
   this.metaKey = e.metaKey;
   this.event_ = e;
-  this.returnValue_ = null;
-  this.propagationStopped_ = null;
+  delete this.returnValue_;
+  delete this.propagationStopped_;
 };
 
 /**
- * Tests to see which button was pressed during the event. This is really
- * only useful in IE and Gecko browsers. Safari and Opera report that the
- * left button was clicked. Safari expects a 1-button mouse, and Opera has
- * default behavior for left and middle click that can only be overridden
- * via a configuration setting. There's a nice table of this mess at
- * http://www.unixpapa.com/js/mouse.html.
+ * Tests to see which button was pressed during the event. This is really only
+ * useful in IE and Gecko browsers. And in IE, it's only useful for
+ * mousedown/mouseup events, because click only fires for the left mouse button.
+ *
+ * Safari 2 only reports the left button being clicked, and uses the value '1'
+ * instead of 0. Opera only reports a mousedown event for the middle button, and
+ * no mouse events for the right button. Opera has default behavior for left and
+ * middle click that can only be overridden via a configuration setting.
+ *
+ * There's a nice table of this mess at http://www.unixpapa.com/js/mouse.html.
  *
  * @param {goog.events.BrowserEvent.MouseButton} button The button
  *     to test for.
@@ -276,8 +286,16 @@ goog.events.BrowserEvent.prototype.init = function(e, opt_currentTarget) {
  */
 goog.events.BrowserEvent.prototype.isButton = function(button) {
   if (goog.userAgent.IE) {
-    return !!(this.event_.button &
-        goog.events.BrowserEvent.IEButtonMap_[button]);
+    if (this.type == goog.events.EventType.CLICK) {
+      return button == goog.events.BrowserEvent.MouseButton.LEFT;
+    } else {
+      return !!(this.event_.button &
+          goog.events.BrowserEvent.IEButtonMap_[button]);
+    }
+  } else if (goog.userAgent.WEBKIT && !goog.userAgent.isVersion('420')) {
+    // Safari 2 only reports mouse events for the left button.
+    return this.event_.button == 1 &&
+        button == goog.events.BrowserEvent.MouseButton.LEFT;
   } else {
     return this.event_.button == button;
   }
@@ -322,7 +340,7 @@ goog.events.BrowserEvent.prototype.preventDefault = function() {
 
 
 /**
- * Returns the underlying browser event object
+ * @return {Event} The underlying browser event object.
  */
 goog.events.BrowserEvent.prototype.getBrowserEvent = function() {
   return this.event_;
@@ -330,11 +348,9 @@ goog.events.BrowserEvent.prototype.getBrowserEvent = function() {
 
 
 /**
- * Disposes the object
+ * Disposes of the event.
  */
-goog.events.BrowserEvent.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.events.Event.prototype.dispose.call(this);
-    this.event_ = null;
-  }
+goog.events.BrowserEvent.prototype.disposeInternal = function() {
+  goog.events.BrowserEvent.superClass_.disposeInternal.call(this);
+  this.event_ = null;
 };

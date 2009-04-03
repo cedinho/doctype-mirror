@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -27,6 +26,7 @@
 
 /**
  * @fileoverview Utility class that monitors viewport size changes.
+ *
  */
 
 goog.require('goog.dom');
@@ -65,7 +65,7 @@ goog.provide('goog.dom.ViewportSizeMonitor');
  * @param {Window} opt_window The window to monitor; defaults to the window in
  *    which this code is executing.
  * @constructor
- * @extends goog.events.EventTarget
+ * @extends {goog.events.EventTarget}
  */
 goog.dom.ViewportSizeMonitor = function(opt_window) {
   goog.events.EventTarget.call(this);
@@ -80,26 +80,27 @@ goog.dom.ViewportSizeMonitor = function(opt_window) {
   // Set the initial size.
   this.size_ = goog.dom.getViewportSize(this.window_);
 
-  if (goog.userAgent.WEBKIT && goog.userAgent.WINDOWS) {
+  if (this.isPollingRequired_()) {
     this.windowSizePollInterval_ = window.setInterval(
         goog.bind(this.checkForSizeChange_, this),
-        goog.dom.ViewportSizeMonitor.WIN_WEBKIT_WINDOW_SIZE_POLL_RATE);
+        goog.dom.ViewportSizeMonitor.WINDOW_SIZE_POLL_RATE);
   }
 };
 goog.inherits(goog.dom.ViewportSizeMonitor, goog.events.EventTarget);
 
 
 /**
- * Rate in milliseconds at which to poll the window size on Windows Safari.
+ * Rate in milliseconds at which to poll the window size on browsers that
+ * need polling.
  * @type {number}
  */
-goog.dom.ViewportSizeMonitor.WIN_WEBKIT_WINDOW_SIZE_POLL_RATE = 500;
+goog.dom.ViewportSizeMonitor.WINDOW_SIZE_POLL_RATE = 500;
 
 
 /**
  * Event listener key for window the window resize handler, as returned by
  * {@link goog.events.listen}.
- * @type {string?}
+ * @type {?number}
  * @private
  */
 goog.dom.ViewportSizeMonitor.prototype.listenerKey_ = null;
@@ -131,6 +132,18 @@ goog.dom.ViewportSizeMonitor.prototype.windowSizePollInterval_ = null;
 
 
 /**
+ * Checks if polling is required for this user agent. Opera only requires
+ * polling when the page is loaded within an IRAME.
+ * @return {boolean} Whether polling is required.
+ * @private
+ */
+goog.dom.ViewportSizeMonitor.prototype.isPollingRequired_ = function() {
+  return goog.userAgent.WEBKIT && goog.userAgent.WINDOWS ||
+      goog.userAgent.OPERA && this.window_.self != this.window_.top;
+};
+
+
+/**
  * Returns the most recently recorded size of the viewport, in pixels.  May
  * return null if no window resize event has been handled yet.
  * @return {goog.math.Size} The viewport dimensions, in pixels.
@@ -142,25 +155,23 @@ goog.dom.ViewportSizeMonitor.prototype.getSize = function() {
 
 
 /**
- * Disposes of the object.  Overrides {@link goog.events.EventTarget#dispose}.
+ * Disposes of the object.
  */
-goog.dom.ViewportSizeMonitor.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.dom.ViewportSizeMonitor.superClass_.dispose.call(this);
+goog.dom.ViewportSizeMonitor.prototype.disposeInternal = function() {
+  goog.dom.ViewportSizeMonitor.superClass_.disposeInternal.call(this);
 
-    if (this.listenerKey_) {
-      goog.events.unlistenByKey(this.listenerKey_);
-      this.listenerKey_ = null;
-    }
-
-    if (this.windowSizePollInterval_) {
-      window.clearInterval(this.windowSizePollInterval_);
-      this.windowSizePollInterval_ = null;
-    }
-
-    this.window_ = null;
-    this.size_ = null;
+  if (this.listenerKey_) {
+    goog.events.unlistenByKey(this.listenerKey_);
+    this.listenerKey_ = null;
   }
+
+  if (this.windowSizePollInterval_) {
+    window.clearInterval(this.windowSizePollInterval_);
+    this.windowSizePollInterval_ = null;
+  }
+
+  this.window_ = null;
+  this.size_ = null;
 };
 
 

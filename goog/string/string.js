@@ -1,6 +1,5 @@
 // Copyright 2006 Google Inc.
 // All Rights Reserved.
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -26,7 +25,7 @@
 // POSSIBILITY OF SUCH DAMAGE. 
 
 /**
- * @fileoverview Utilities for string manipulation
+ * @fileoverview Utilities for string manipulation.
  */
 
 
@@ -34,6 +33,16 @@
  * Namespace for string utilities
  */
 goog.provide('goog.string');
+goog.provide('goog.string.Unicode');
+
+
+/**
+ * Common Unicode string characters.
+ * @enum {string}
+ */
+goog.string.Unicode = {
+  NBSP: '\xa0'
+};
 
 
 /**
@@ -89,7 +98,7 @@ goog.string.caseInsensitiveEndsWith = function(str, suffix) {
  * Does simple python-style string substitution.
  * subs("foo%s hot%s", "bar", "dog") becomes "foobar hotdog".
  * @param {string} str The string containing the pattern.
- * @param {Array.<Object>} var_args The items to substitute into the pattern.
+ * @param {*} var_args The items to substitute into the pattern.
  * @return {string} A copy of {@code str} in which each occurrence of
  *     {@code %s} has been replaced an argument from {@code var_args}.
  */
@@ -170,7 +179,8 @@ goog.string.isAlpha = function(str) {
 
 /**
  * Checks if a string contains only numbers.
- * @param {string} str string to check.
+ * @param {*} str string to check. If not a string, it will be
+ *     casted to one.
  * @return {boolean} True if {@code str} is numeric.
  */
 goog.string.isNumeric = function(str) {
@@ -400,7 +410,7 @@ goog.string.encodeUriRegExp_ = /^[a-zA-Z0-9\-_.!~*'()]*$/;
 
 /**
  * URL-encodes a string
- * @param {string} str The string to url-encode.
+ * @param {*} str The string to url-encode.
  * @return {string} An encoded copy of {@code str} that is safe for urls.
  *     Note that '#', ':', and other characters used to delimit portions
  *     of URLs *will* be encoded.
@@ -414,7 +424,8 @@ goog.string.urlEncode = function(str) {
   if (!goog.string.encodeUriRegExp_.test(str)) {
     return encodeURIComponent(str);
   }
-  return str;
+
+  return /** @type {string} */ (str);
 };
 
 
@@ -733,7 +744,7 @@ goog.string.truncateMiddle = function(str, chars,
 
 
 /**
- * Character mappings used internally for goog.string.quote
+ * Character mappings used internally for goog.string.quote.
  * @private
  * @type {Object}
  */
@@ -878,9 +889,10 @@ goog.string.removeAll = function(s, ss) {
 };
 
 
-/**p
+/**
  * Escapes characters in the string that are not safe to use in a RegExp.
- * @param {string} s The string to escape.
+ * @param {*} s The string to escape. If not a string, it will be casted
+ *     to one.
  * @return {string} A RegExp safe, escaped copy of {@code s}.
  */
 goog.string.regExpEscape = function(s) {
@@ -915,10 +927,12 @@ goog.string.repeat = function(string, length) {
  * @return {string} {@code num} as a string with the given options.
  */
 goog.string.padNumber = function(num, length, opt_precision) {
-  var i = Math.floor(num);
-  var s = String(i);
-  return goog.string.repeat('0', (Math.max(0, length - s.length))) +
-      (goog.isDef(opt_precision) ? num.toFixed(opt_precision) : num);
+  var s = goog.isDef(opt_precision) ? num.toFixed(opt_precision) : String(num);
+  var index = s.indexOf('.');
+  if (index == -1) {
+    index = s.length;
+  }
+  return goog.string.repeat('0', Math.max(0, length - index)) + s;
 };
 
 
@@ -944,7 +958,8 @@ goog.string.makeSafe = function(obj) {
  * <pre>buildString('a', 'b', 'c', 'd') -> 'abcd'
  * buildString(null, undefined) -> ''
  * </pre>
- * @param {Array.<Object>} var_args A list of strings to concatenate.
+ * @param {*} var_args A list of strings to concatenate. If not a string,
+ *     it will be casted to one.
  * @return {string} The concatenation of {@code var_args}.
  */
 goog.string.buildString = function(var_args) {
@@ -980,9 +995,10 @@ goog.string.getRandomString = function() {
  */
 goog.string.compareVersions = function(version1, version2) {
   var order = 0;
-  // Split the versions into subversions.
-  var v1Subs = String(version1).split('.');
-  var v2Subs = String(version2).split('.');
+  // Trim leading and trailing whitespace and split the versions into
+  // subversions.
+  var v1Subs = goog.string.trim(String(version1)).split('.');
+  var v2Subs = goog.string.trim(String(version2)).split('.');
   var subCount = Math.max(v1Subs.length, v2Subs.length);
 
   // Iterate over the subversions, as long as they appear to be equivalent.
@@ -1027,8 +1043,8 @@ goog.string.compareVersions = function(version1, version2) {
 /**
  * Compares elements of a version number.
  *
- * @param {string|number} left An element from a version number.
- * @param {string|number} right An element from a version number.
+ * @param {string|number|boolean} left An element from a version number.
+ * @param {string|number|boolean} right An element from a version number.
  *
  * @return {number}  1 if {@code left} is higher.
  *                   0 if arguments are equal.
@@ -1072,4 +1088,43 @@ goog.string.hashCode = function(str) {
     result %= goog.string.HASHCODE_MAX_;
   }
   return result;
+};
+
+
+/**
+ * The most recent globally unique ID.
+ * @type {number}
+ * @private
+ */
+goog.string.uniqueStringCounter_ = goog.now();
+
+
+/**
+ * Generates and returns a unique string based on the current date so strings
+ * remain unique between sessions.  This is useful, for example, to create
+ * unique IDs for DOM elements.
+ * @return {string} A unique id.
+ */
+goog.string.createUniqueString = function() {
+  return 'goog_' + goog.string.uniqueStringCounter_++;
+};
+
+
+/**
+ * Converts the supplied string to a number, which may be Ininity or NaN.
+ * This function strips whitespace: (toNumber(' 123') === 123)
+ * This function accepts scientific notation: (toNumber('1e1') === 10)
+ *
+ * This is better than Javascript's built-in conversions because, sadly:
+ *     (Number(' ') === 0) and (parseFloat('123a') === 123)
+ *
+ * @param {string} str The string to convert.
+ * @return {number} The number the supplied string represents, or NaN.
+ */
+goog.string.toNumber = function(str) {
+  var num = Number(str);
+  if (num == 0 && goog.string.isEmpty(str)) {
+    return NaN;
+  }
+  return num;
 };

@@ -1,6 +1,5 @@
 // Copyright 2007 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -41,11 +40,13 @@
  *    new goog.events.ActionHandler(el),
  *    ACTION,
  *    this.onAction_);<code>
+ *
  */
 
 goog.provide('goog.events.ActionEvent');
 goog.provide('goog.events.ActionHandler');
 goog.provide('goog.events.ActionHandler.EventType');
+goog.provide('goog.events.BeforeActionEvent');
 
 goog.require('goog.events.EventTarget');
 goog.require('goog.events.KeyCodes');
@@ -54,7 +55,7 @@ goog.require('goog.events.KeyCodes');
  * A wrapper around an element that you want to listen to ACTION events on.
  * @param {Element|Document} element The element or document to listen on.
  * @constructor
- * @extends goog.events.EventTarget
+ * @extends {goog.events.EventTarget}
  */
 goog.events.ActionHandler = function(element) {
   goog.events.EventTarget.call(this);
@@ -86,7 +87,7 @@ goog.events.ActionHandler.EventType = {
 
 /**
  * Handles key press events.
- * @param {goog.event.BrowserEvent} e The key press event.
+ * @param {!goog.events.BrowserEvent} e The key press event.
  * @private
  */
 goog.events.ActionHandler.prototype.handleKeyDown_ = function(e) {
@@ -99,7 +100,7 @@ goog.events.ActionHandler.prototype.handleKeyDown_ = function(e) {
 
 /**
  * Handles mouse events.
- * @param {goog.event.BrowserEvent} e The click event.
+ * @param {!goog.events.BrowserEvent} e The click event.
  * @private
  */
 goog.events.ActionHandler.prototype.handleClick_ = function(e) {
@@ -109,24 +110,24 @@ goog.events.ActionHandler.prototype.handleClick_ = function(e) {
 
 /**
  * Dispatches BeforeAction and Action events to the element
- * @param {goog.event.BrowserEvent} e The event causing dispatches.
+ * @param {!goog.events.BrowserEvent} e The event causing dispatches.
  * @private
  */
 goog.events.ActionHandler.prototype.dispatchEvents_ = function(e) {
   var beforeActionEvent = new goog.events.BeforeActionEvent(e);
 
-  var dispatched = false;
   try {
     // Allow application specific logic here before the ACTION event.
     // For example, Finto uses this event to restore keyboard focus
-    dispatched = this.dispatchEvent(beforeActionEvent);
+    if (!this.dispatchEvent(beforeActionEvent)) {
+      // If the listener swallowed the BEFOREACTION event, don't dispatch the
+      // ACTION event.
+      return;
+    }
   } finally {
     beforeActionEvent.dispose();
   }
 
-  if (dispatched) {
-    return true;
-  }
 
   // Wrap up original event and send it off
   var actionEvent = new goog.events.ActionEvent(e);
@@ -135,50 +136,50 @@ goog.events.ActionHandler.prototype.dispatchEvents_ = function(e) {
   } finally {
     actionEvent.dispose();
 
-    // Stop propogating the event 
+    // Stop propagating the event
     e.stopPropagation();
   }
 };
 
 
 /**
- * Disposes the actionhandler.
+ * Disposes of the action handler.
  */
-goog.events.ActionHandler.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.events.ActionHandler.superClass_.dispose.call(this);
-    goog.events.unlisten(this.element_, goog.events.EventType.KEYDOWN,
-        this.handleKeyDown_, false, this);
-    goog.events.unlisten(this.element_, goog.events.EventType.CLICK,
-        this.handleClick_, false, this);
-    this.element_ = null;
-  }
+goog.events.ActionHandler.prototype.disposeInternal = function() {
+  goog.events.ActionHandler.superClass_.disposeInternal.call(this);
+  goog.events.unlisten(this.element_, goog.events.EventType.KEYDOWN,
+      this.handleKeyDown_, false, this);
+  goog.events.unlisten(this.element_, goog.events.EventType.CLICK,
+      this.handleClick_, false, this);
+  delete this.element_;
 };
 
 
+
 /**
- * This class is used for the goog.event.ActionHandler.EventType.ACTION event.
- * @param {Object} browserEvent Browser event object.
+ * This class is used for the goog.events.ActionHandler.EventType.ACTION event.
+ * @param {!goog.events.BrowserEvent} browserEvent Browser event object.
  * @constructor
- * @extends goog.events.BrowserEvent
+ * @extends {goog.events.BrowserEvent}
  */
 goog.events.ActionEvent = function(browserEvent) {
-  goog.events.BrowserEvent.call(this, browserEvent);
+  goog.events.BrowserEvent.call(this, browserEvent.getBrowserEvent());
   this.type = goog.events.ActionHandler.EventType.ACTION;
 };
 goog.inherits(goog.events.ActionEvent, goog.events.BrowserEvent);
 
 
+
 /**
- * This class is used for the goog.event.ActionHandler.EventType.BEFOREACTION
- * event. BEFOREACTION gives a chance to the application (such as Pinto) so the
- * keyboard focus can be restored back, if required.
- * @param {Object} browserEvent Browser event object.
+ * This class is used for the goog.events.ActionHandler.EventType.BEFOREACTION
+ * event. BEFOREACTION gives a chance to the application so the keyboard focus
+ * can be restored back, if required.
+ * @param {!goog.events.BrowserEvent} browserEvent Browser event object.
  * @constructor
- * @extends goog.events.BrowserEvent
+ * @extends {goog.events.BrowserEvent}
  */
 goog.events.BeforeActionEvent = function(browserEvent) {
-  goog.events.BrowserEvent.call(this, browserEvent);
+  goog.events.BrowserEvent.call(this, browserEvent.getBrowserEvent());
   this.type = goog.events.ActionHandler.EventType.BEFOREACTION;
 };
 goog.inherits(goog.events.BeforeActionEvent, goog.events.BrowserEvent);

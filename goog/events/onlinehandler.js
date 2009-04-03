@@ -1,6 +1,5 @@
 // Copyright 2008 Google Inc.
 // All Rights Reserved
-// 
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions
 // are met:
@@ -35,7 +34,12 @@
  *
  * Note that this class only reflects what the browser tells us and this usually
  * only reflects changes to the File -> Work Offline menu item.
+ *
  */
+
+// TODO(arv): We should probably implement some kind of polling service and/or
+// a poll for changes event handler that can be used to fire events when a state
+// changes.
 
 goog.provide('goog.events.OnlineHandler');
 goog.provide('goog.events.OnlineHandler.EventType');
@@ -50,19 +54,19 @@ goog.require('goog.userAgent');
 /**
  * Basic object for detecting whether the online state changes.
  * @constructor
- * @extends goog.events.EventTarget
+ * @extends {goog.events.EventTarget}
  */
 goog.events.OnlineHandler = function() {
   goog.events.EventTarget.call(this);
 
   this.eventHandler_ = new goog.events.EventHandler(this);
 
-  // WebKit does not support navigator.onLine and therefore we don't
-  // bother setting up events or timers. See
-  // http://bugs.webkit.org/show_bug.cgi?id=11284
-  if (!goog.userAgent.WEBKIT) {
+  // Earlier WebKit versions do not support navigator.onLine and therefore we
+  // don't bother setting up events or timers.
+  if (!goog.userAgent.WEBKIT ||
+      goog.userAgent.WEBKIT && goog.userAgent.isVersion('528')) {
     if (goog.events.OnlineHandler.supportsHtml5Events_()) {
-      this.eventHandler_.listen(window, ['online', 'offline'],
+      this.eventHandler_.listen(document.body, ['online', 'offline'],
                                 this.handleChange_);
     } else {
       this.online_ = this.isOnline();
@@ -100,7 +104,8 @@ goog.events.OnlineHandler.POLL_INTERVAL_ = 250;
 goog.events.OnlineHandler.supportsHtml5Events_ = function() {
   return goog.userAgent.GECKO && goog.userAgent.isVersion('1.9b') ||
       goog.userAgent.IE && goog.userAgent.isVersion('8') ||
-      goog.userAgent.OPERA && goog.userAgent.isVersion('9.5');
+      goog.userAgent.OPERA && goog.userAgent.isVersion('9.5') ||
+      goog.userAgent.WEBKIT && goog.userAgent.isVersion('528');
 };
 
 
@@ -172,14 +177,12 @@ goog.events.OnlineHandler.prototype.handleChange_ = function(e) {
  * {@inheritDoc}
  * @override
  */
-goog.events.OnlineHandler.prototype.dispose = function() {
-  if (!this.getDisposed()) {
-    goog.events.OnlineHandler.superClass_.dispose.call(this);
-    this.eventHandler_.dispose();
-    delete this.eventHandler_;
-    if (this.timer_) {
-      this.timer_.dispose();
-      delete this.timer_;
-    }
+goog.events.OnlineHandler.prototype.disposeInternal = function() {
+  goog.events.OnlineHandler.superClass_.disposeInternal.call(this);
+  this.eventHandler_.dispose();
+  delete this.eventHandler_;
+  if (this.timer_) {
+    this.timer_.dispose();
+    delete this.timer_;
   }
 };
