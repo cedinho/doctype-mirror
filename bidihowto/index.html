@@ -1,0 +1,353 @@
+
+
+
+
+<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head><title>BiDi HowTo: What To Do and How To Do It</title></head>
+<body>
+<div style="font-style:italic; margin-bottom: -1em; color: green">
+  This document is version-controlled off-site.
+  Any changes made here will be lost when it is next updated.
+</div>
+<h1>
+  <span style="font-size:medium">
+    BiDi HowTo &gt;
+  </span>
+  <br>
+  BiDi Support in a UI: What To Do and How To Do It
+</h1>
+
+
+
+Hebrew, Arabic and several other languages are written right-to-left (RTL).
+However, when RTL text contains numbers or left-to-right language words and phrases,
+these are still written left-to-right (LTR).
+Thus, the RTL languages are also known as bidirectional (BiDi).
+Handling BiDi languages in a UI presents some unique difficulties.
+These fall into two categories:
+<br>
+<br>
+<h2>
+  Mixed Directionality Support<br>
+</h2>
+One source of difficulties is the need to display - and accept as input - both LTR and RTL text in a single page
+without sacrficing readability.
+This applies to an LTR-language UI just as much as to an RTL-language UI and is a very common and basic need.
+Unfortunately, achieving this requires explicit action by the UI code,
+and naively doing nothing often results in a garbled,
+nearly unreadable UI.
+Furthermore, there are different recipes for the actions to take - some with better results than others.
+<br />
+<br />
+Have no fear!
+Here is what you have to do in order to support opposite-directionality text
+(click on the links for more information, including how to do it):
+<br>
+<br>
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse;"
+  border="1" bordercolor="#888888" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 189px; height: 19px;" align="center">Requirement</td>
+      <td style="width: 296px; height: 19px;" align="center">Example: Before...</td>
+      <td style="width: 296px; height: 19px;" align="center">... and After ...</td>
+      <td style="width: 296px; text-align: center;">... and the HTML (*)</td>
+    </tr>
+    <tr>
+      <td style="height: 38px; padding-left:5px">
+        <a
+           href="declaring-opposite-directionality"
+           style="font-weight: bold">Declare opposite-directionality text</a>
+        to prevent its garbling.<br>
+      </td>
+      <td dir="rtl" style="height: 38px;" align="center">
+        כתובת: <span style="background-color: yellow;">17</span> Main St<span
+          style="background-color: yellow;">.</span>
+      </td>
+      <td dir="rtl" style="height: 38px;" align="center">
+        כתובת: <span dir="ltr">17 Main St.</span>
+      </td>
+      <td style="padding-left:5px"><code>
+        כתובת:
+        &lt;span <span style="background-color: Yellow">dir="ltr"</span>&gt;17 Main St.&lt;/span&gt;</code></td>
+    </tr>
+    <tr>
+      <td style="width: 189px; height: 76px; padding-left:5px">
+        <b
+          href="resetting-directionality"
+          style="font-weight: bold">Reset directionality after opposite-directionality text</b>
+        to prevent garbling what follows it.<br>
+      </td>
+      <td style="height: 76px;" align="center">
+        <a href="#">In Hebrew, it's "שלום<span style="background-color: yellow;">"</span></a><span style="background-color: yellow;"> (17</span> May, 2008)</td>
+      <td style="height: 76px;" align="center">
+        <a href="#">In Hebrew, it's "שלום"</a>&lrm; (17 May, 2008)</td>
+      <td style="padding-left:5px"><code>
+        &lt;a href="..."&gt;In Hebrew, it's "שלום"&lt;/a&gt;<span style="background-color: Yellow">&amp;lrm;</span> (17 May, 2008)</code></td>
+    </tr>
+    <tr>
+      <td style="padding-left:5px">
+        <b href="#" style="font-weight: bold">Avoid BiDi formatting characters in all-LTR pages</b>.<br>
+      </td>
+      <td align="center">
+        A<span style="background-color: Yellow">&lrm;, </span>B<span style="background-color: Yellow">&lrm;, </span>C
+        <br />
+        <i>Try it: Search for "A, B, C" on this page.</i>
+      </td>
+      <td align="center">
+        A, B, C
+      </td>
+      <td style="padding-left:5px"><code>
+        A<span style="background-color: Yellow; text-decoration: line-through">&amp;lrm;</span>,
+        B<span style="background-color: Yellow; text-decoration: line-through">&amp;lrm;</span>,
+        C</code></td>
+    </tr>
+    <tr>
+      <td style="width: 189px; height: 19px; padding-left:5px">
+        <b href="#" style="font-weight: bold">Set plain-text input directionality according to its content</b>; where it can vary, do it dynamically.<br>
+      </td>
+      <td>
+        <span dir=rtl>
+          &#x05d8;&#x05dc;&#x05e4;&#x05d5;&#x05df;:
+          <input width=15 value="(212) 123 4567" style="background-color: yellow" />
+          <br><i dir="ltr">Try it: type in a phone number.</i>
+        </span>
+      </td>
+      <td dir="rtl" style="height: 19px;" align="center">
+        <span dir=rtl>
+          &#x05d8;&#x05dc;&#x05e4;&#x05d5;&#x05df;:
+          <input dir=ltr width=15 value="(212) 123 4567" />
+          <br><i dir="ltr">Try it: type in a phone number.</i>
+        </span>
+      </td>
+      <td style="padding-left:5px"><code>
+        &lt;input <span style="background-color: Yellow">dir="ltr"</span>&gt;</code></td>
+    </tr>
+    <tr>
+      <td style="padding-left:5px">
+        Give the <b href="#" style="font-weight: bold">user control of directionality in rich-text inputs</b>.<br>
+      </td>
+      <td style="padding-left:5px"></td>
+      <td style="padding-left:5px" align="center">
+        <img title="Left to Right"
+             src="http://mail.google.com/mail/images/cleardot.gif"
+             style="background-image: url(http://mail.google.com/mail/images/bidi_controls.gif); background-position: 18px 0px;
+                    border-right: #fafafc 1px solid; border-top: #fafafc 1px solid; border-left: #fafafc 1px solid; border-bottom: #fafafc 1px solid;
+                    margin-left: 1px; margin-right: 2px; width: 18px; height: 18px" />
+        <img title="Right to Left"
+             src="http://mail.google.com/mail/images/cleardot.gif"
+             style="background-image: url(http://mail.google.com/mail/images/bidi_controls.gif); background-color: #fbee99;
+                    border-right: #e6e8ed 1px solid; border-top: #ccc 1px solid; border-left: #ccc 1px solid; border-bottom: #e6e8ed 1px solid;
+                    margin-left: 1px; margin-right: 2px; width: 18px; height: 18px" />
+      </td>
+      <td style="padding-left:5px">
+        (You've got to be kidding... :-) Use
+        an online editor with <span style="background-color: Yellow">built-in directionality controls</span>.
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-left:5px">
+        <b href="#" style="font-weight: bold">Adjust opposite-directionality text alignment</b>,
+        balancing between readability and a smooth layout.<br>
+      </td>
+      <td style="text-align: right; background-color: yellow; padding-right:5px">
+        An RTL page is right-aligned by default, but this really would look better if it
+        were left-aligned, don't you think?<br>
+      </td>
+      <td style="padding-left:5px">
+        An RTL page is right-aligned by default, but this really does look so much better left-aligned,
+        don't you think?
+      </td>
+      <td style="padding-left:5px"><code>&lt;td dir="ltr"&gt;</code>
+        <br /><span style="background-color: Yellow">On a block element like td, setting direction also sets the default alignment.
+        Sometimes that's good and sometimes it isn't.</span>
+        <code>&lt;/td&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h2>
+  UI Mirroring</h2>
+Generally, an RTL-language UI should flow right-to-left, a mirror image of the left-to-right
+UI. This means:<br>
+<br>
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse;"
+  border="1" bordercolor="#888888" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 189px; height: 19px;" align="center">Requirement</td>
+      <td style="width: 296px; height: 19px;" align="center">Example: Before...</td>
+      <td style="width: 296px; height: 19px;" align="center">... and After ...</td>
+      <td style="width: 296px; text-align: center;">... and the HTML (*)</td>
+    </tr>
+    <tr>
+      <td style="padding-left:5px">
+        <b href="#" style="font-weight: bold">Declare overall page directionality</b>
+        according to UI language.<br>
+      </td>
+      <td style="background-color: yellow;">
+        <table>
+          <tbody>
+            <tr>
+              <td style="width: 60px; height: 19px; padding-left:5px">שם:</td>
+              <td dir="ltr" style="width: 102px; height: 19px; padding-left:5px">John</td>
+            </tr>
+            <tr>
+              <td style="width: 60px; height: 19px; padding-left:5px">כתובת:</td>
+              <td dir="ltr" style="width: 102px; height: 19px; padding-left:5px">17 Main St.</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td dir="rtl">
+        <table>
+          <tbody>
+            <tr>
+              <td style="width: 60px; height: 19px; padding-right:5px">שם:</td>
+              <td dir="ltr" align="right" style="width: 102px; height: 19px; padding-right:5px">John</td>
+            </tr>
+            <tr>
+              <td style="width: 60px; height: 19px; padding-right:5px">כתובת:</td>
+              <td dir="ltr" align="right" style="width: 102px; height: 19px; padding-left:5px">17 Main St.</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td style="padding-left:5px"><code>&lt;body <span style="background-color: Yellow">dir="rtl"</span>&gt;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </code></td>
+    </tr>
+    <tr>
+      <td style="padding-left:5px">
+        <b href="#" style="font-weight: bold">Translate - or pseudo-translate - the boilerplate</b>
+        to prevent garbling RTL layout.
+      </td>
+      <td>
+          <div dir=rtl align=right>
+            <span style="background-color: Yellow"><input name="color" id="Red" value="Red" title="Red" type="radio" checked="checked"/>Red</span>
+            &nbsp;&nbsp;
+            <span style="background-color: Green"><input name="color" id="Green" value="Green" title="Green" type="radio" />Green</span>
+            &nbsp;&nbsp;
+            <span style="background-color: Blue"><input name="color" id="Blue" value="Blue" title="Blue" type="radio" />Blue</span>
+          </div>
+      </td>
+      <td>
+          <div dir=rtl align=right>
+            <span style="background-color: Red"><input name="color2" id="Red" value="Red" title="Red" type="radio" checked="checked"/>&#x202e;Red&#x202c;</span>
+            &nbsp;&nbsp;
+            <span style="background-color: Green"><input name="color2" id="Green" value="Green" title="Green" type="radio" />&#x202e;Green&#x202c;</span>
+            &nbsp;&nbsp;
+            <span style="background-color: Blue"><input name="color2" id="Blue" value="Blue" title="Blue" type="radio" />&#x202e;Blue&#x202c;</span>
+          </div>
+      </td>
+      <td style="padding-left:5px"><code>
+        &lt;input&nbsp;value=R/&gt;<span style="background-color: yellow;">&amp;#x202E;</span>Red<span style="background-color: yellow;">&amp;#x202C;</span><br />
+        &lt;input&nbsp;value=G/&gt;<span style="background-color: yellow;">&amp;#x202E;</span>Green<span style="background-color: yellow;">&amp;#x202C;</span><br />
+        &lt;input&nbsp;value=B/&gt;<span style="background-color: yellow;">&amp;#x202E;</span>Blue<span style="background-color: yellow;">&amp;#x202C;</span>
+      </code></td>
+    </tr>
+    <tr>
+      <td style="height: 38px; padding-left:5px">
+        <b style="font-weight: bold">Declare formatted numbers as LTR</b>
+        to prevent their garbling.
+      </td>
+      <td dir="rtl" style="height: 38px;" align="center">
+        اختلاف: <span style="background-color: yellow;">-</span>17.3<span style="background-color: yellow;">%</span>
+      </td>
+      <td dir="rtl" style="height: 38px;" align="center">
+        اختلاف: <span dir="ltr">-17.3%</span>
+      </td>
+      <td style="padding-left:5px"><code>
+        اختلاف:
+        <br /><span style="background-color: Yellow">&lt;span dir="ltr"&gt;</span>-17.3%<span style="background-color: Yellow">&lt;/span&gt;</span>
+      </code></td>
+    </tr>
+    <tr>
+      <td style="padding-left:5px"><b href="#" style="font-weight: bold">Mirror the explicit positioning</b>.</td>
+      <td dir="rtl" align="right" style="padding-right:5px">
+        <img src="http://books.google.com/googlebooks/images/dialog_close_x.gif" style="border: medium solid yellow; float: right;" />
+        <div>שלום.</div>
+      </td>
+      <td dir="rtl" align="right" style="padding-right:5px">
+        <img src="http://books.google.com/googlebooks/images/dialog_close_x.gif" style="float: left;" />
+        <div>שלום.</div>
+      </td>
+      <td style="padding-left:5px"><code>
+        &lt;img src="x.gif" style="float: <span style="background-color: Yellow">left</span>;"&gt;
+      </code></td>
+    </tr>
+    <tr>
+      <td style="padding-left:5px"><b href="#" style="font-weight: bold">Mirror directional images</b>.</td>
+      <td dir="rtl" align="right" style="padding-right:5px">
+        <a href="#"><img src="http://books.google.com/googlebooks/images/pagination_left.gif"></a>
+        <a href="#"><img src="http://books.google.com/googlebooks/images/pagination_right.gif"></a>
+      </td>
+      <td dir="rtl" align="right" style="padding-right:5px">
+        <a href="#"><img src="http://books.google.com/googlebooks/images/pagination_right.gif"></a>
+        <a href="#"><img src="http://books.google.com/googlebooks/images/pagination_left.gif"></a>
+      </td>
+      <td style="padding-left:5px"><code>
+        &lt;a onclick="goNext();"&gt;&lt;img src="arrow-<span style="background-color: Yellow">left</span>.gif"&gt;&lt;/a&gt;
+      </code></td>
+    </tr>
+    <tr>
+      <td style="padding-left:5px">
+        <b href="#" style="font-weight: bold">Un-mirror where necessary</b> or convenient. Some parts of the UI can stay LTR.</td>
+      <td dir="rtl" align="center">
+        <img style="border: medium solid white;" src="http://www.google.com/images/showtimes-star-on.gif">
+        <img style="border: medium solid white;" src="http://www.google.com/images/showtimes-star-on.gif">
+        <img style="border: medium solid white;" src="http://www.google.com/images/showtimes-star-on.gif">
+        <img style="border: medium solid yellow;" src="http://www.google.com/images/showtimes-star-half.gif">
+        <img style="border: medium solid white;" src="http://www.google.com/images/showtimes-star-off.gif">
+      </td>
+      <td dir="ltr" align="center">
+        <img style="border: medium solid white;" src="http://www.google.com/images/showtimes-star-on.gif">
+        <img style="border: medium solid white;" src="http://www.google.com/images/showtimes-star-on.gif">
+        <img style="border: medium solid white;" src="http://www.google.com/images/showtimes-star-on.gif">
+        <img style="border: medium solid white;" src="http://www.google.com/images/showtimes-star-half.gif">
+        <img style="border: medium solid white;" src="http://www.google.com/images/showtimes-star-off.gif">
+      </td>
+      <td style="padding-left:5px"><code>
+        &lt;div <span style="background-color: Yellow">dir="ltr"</span>&gt;
+        &lt;img src="star-on.gif"&gt;<br />
+        &lt;img src="star-half.gif"&gt;<br />
+        &lt;img src="star-off.gif"&gt;
+        &lt;/div&gt;
+      </code></td>
+    </tr>
+  </tbody>
+</table>
+<br />
+(*) - Although the examples above are in HTML, these same requirements apply to all other platforms,
+like plain text documents and "native" UIs.
+<br>
+<br>
+Each of the requirements above contains a link to a page describing best practices for achieving this requirement on various platforms.
+<br>
+<br>
+<h2>
+  Additional Resources
+</h2>
+<ul>
+  <li><a
+    href="toolkit"
+    style="font-weight: bold">APIs and Tools</a></li>
+  <li><a
+    href="moredocs"
+    style="font-weight: bold">More Documentation</a></li>
+</ul>
+
+</body>
+</html>
+

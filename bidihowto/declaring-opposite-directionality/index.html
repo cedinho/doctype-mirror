@@ -1,0 +1,232 @@
+
+
+
+
+<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head><title>BiDi HowTo: Declaring Opposite Directionality</title></head>
+<body>
+<div style="font-style:italic; margin-bottom: -1em; color: green">
+  This document is version-controlled off-site.
+  Any changes made here will be lost when it is next updated.
+</div>
+<h1>
+  <span style="font-size:medium">
+    BiDi HowTo &gt;
+    <a href="..">BiDi Support in a UI: What To Do and How To Do It</a>
+  </span>
+  <br>
+  Declaring Opposite Directionality
+</h1>
+
+
+
+<h2>The Problem</h2>
+When visible text whose directionality is the opposite of the current directionality context
+(e.g. Arabic text in an English UI) is not explicitly declared as such,
+it may be displayed garbled.
+Here are some of the most common garbling cases:<br>
+<br>
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse;" border="1" bordercolor="#888888" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 150px; height: 35px;"></td>
+<td style="width: 200px; height: 35px; text-align: center">LTR Example...</td>
+<td style="width: 200px; height: 35px; text-align: center">...Garbled in RTL</td>
+<td style="width: 30px"></td>
+<td style="width: 200px; height: 35px; text-align: center">RTL Example...</td>
+<td style="width: 200px; height: 35px; text-align: center">...Garbled in LTR</td>
+</tr>
+<tr>
+<td style="font-weight: bold; padding-left:5px">Leading numbers<br>
+</td>
+<td style="text-align: center">
+<div>17 Main Street</div>
+<div>(212) 123-4567</div>
+</td>
+<td dir="rtl" style="text-align: center">
+<div><span style="background-color: Yellow">17</span> Main Street</div>
+<div><span style="background-color: Yellow">(212)</span> 123-4567</div>
+</td>
+<td></td>
+<td dir="rtl" style="text-align: center">
+<div>17 &#x202e;Main&#x202c; &#x202e;Street&#x202c;</div>
+<div>17 בדצמבר, 2008</div>
+</td>
+<td style="text-align: center">
+<div><span style="background-color: Yellow">17</span> &#x202e;Main&#x202c; &#x202e;Street&#x202c;</div>
+<div><span style="background-color: Yellow">17</span> בדצמבר, 2008</div>
+</td>
+</tr>
+<tr>
+<td style="font-weight: bold; padding-left:5px">Leading punctuation</td>
+<td style="text-align: center">"Ok" is not Ok</td>
+<td dir="rtl" style="text-align: center"><span style="background-color: Yellow">"</span>Ok" is not Ok</td>
+<td></td>
+<td dir="rtl" style="text-align: center">
+<div>"&#x202e;Ok&#x202c;" &#x202e;is&#x202c; &#x202e;not&#x202c; &#x202e;Ok&#x202c;</div>
+<div>"בסדר" אינו בסדר</div>
+</td>
+<td style="text-align: center">
+<div>"&#x202e;Ok&#x202c;" &#x202e;is&#x202c; &#x202e;not&#x202c; &#x202e;Ok&#x202c;</div>
+<div><span style="background-color: Yellow">"</span>בסדר" אינו בסדר</div>
+</td>
+</tr>
+<tr>
+<td style="font-weight: bold; padding-left:5px">Trailing punctuation</td>
+<td style="text-align: center">A good example (I think).</td>
+<td dir="rtl" style="text-align: center">A good example (I think<span style="background-color: Yellow">).</span></td>
+<td></td>
+<td dir="rtl" style="text-align: center">
+<div>&#x202e;A&#x202c; &#x202e;good&#x202c; &#x202e;example&#x202c; (&#x202e;I&#x202c; &#x202e;think&#x202c;).</div>
+<div>שלום!</div>
+</td>
+<td style="text-align: center">
+<div>&#x202e;A&#x202c; &#x202e;good&#x202c; &#x202e;example&#x202c; (&#x202e;I&#x202c; &#x202e;think&#x202c;<span style="background-color: Yellow">).</span></div>
+<div>שלום<span style="background-color: Yellow">!</span></div>
+</td>
+</tr>
+<tr>
+<td style="font-weight: bold; padding-left:5px">Embedded opposite</td>
+<td style="text-align: center">With א, you never know</td>
+<td dir="rtl" style="text-align: center"><span style="background-color: Yellow">With</span> א<span style="background-color: Yellow">, you never know</span></td>
+<td></td>
+<td dir="rtl" style="text-align: center">
+<div>&#x202e;With&#x202c; ALEF, &#x202e;you&#x202c; &#x202e;never&#x202c; &#x202e;know&#x202c;</div>
+<div>הכי cool בעולם</div>
+</td>
+<td style="text-align: center">
+<div><span style="background-color: Yellow">&#x202e;With&#x202c;</span> ALEF<span style="background-color: Yellow">, &#x202e;you&#x202c; &#x202e;never&#x202c; &#x202e;know&#x202c;</span></div>
+<div><span style="background-color: Yellow">הכי</span> cool <span style="background-color: Yellow">בעולם</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+This happens because internally, all the text is stored in <i>logical</i> order, the order in which the characters are meant to be read.
+The visual layout -
+whether the next character or word goes to the left or right of the one before it,
+and the glyphs used for directional punctuation such as parentheses -
+is a function of the standard <a href="http://unicode.org/reports/tr9/">Unicode BiDi algorithm</a>,
+as implemented by browsers and other platforms.
+To get good results, this algorithm uses not only the innate, well-defined directionality of specific characters,
+but also metadata:
+the overall directionality of the text,
+and the exact boundaries of any embedded opposite-directionality phrases.
+Although it makes a brave attempt to function well in the absence of directionality metadata,
+in the cases above it simply can't.
+<br />
+<br />
+<h2>What To Do</h2>
+<h3>Declare Directionality</h3>
+The directionality of all opposite-directionality phrases needs to be explicitly declared.
+<br />
+<br />
+One way to declare directionality is to use Unicode formatting characters:
+either LRE ("left-to-right embedding", U+202A) or RLE ("right-to-left embedding", U+202B)
+at the beginning of the opposite-directionality phrase and PDF ("pop directional formatting", U+202C) at the end,
+e.g. <code><b>\u202A</b>Hello world!<b>\u202C</b></code>.
+In a plain-text environment, this is the only way to declare directionality.
+<br>
+<br>
+Another set of Unicode formatting characters, LRM ("left-to-right mark", U+200E) and RLM ("right-to-left mark", U+200F),
+can also fix many of the garbles above.
+However, they do <i>not</i> declare directionality.
+They are simply zero-width characters with strong directionality, like an invisible A or א,
+and putting one of them at the beginning and end of a phrase (according to the phrase's directionality)
+means there can be no leading or trailing punctuation or numbers, and thus fixes those garbles.
+However, they do <i>not</i> fix the "embedded opposite" garble.
+Although LRM and RLM are useful for <span href="resetting-directionality">another purpose</span>,
+directionality declaration in a plain-text environment should be done with LRE/RLE/PDF, not LRM/RLM.
+<br>
+<br>
+In HTML, the right way to declare directionality is with the dir attribute,
+e.g. <code>&lt;span <b>dir=ltr</b>&gt;Hello world!&lt;/span&gt;</code>, not Unicode formatting characters.
+The W3C highly deprecates using LRE/RLE/PDF to declare directionality in HTML documents.
+The only exception is places where mark-up is not allowed,
+e.g. inside the &lt;title&gt; and &lt;option&gt; elements.<br>
+<br>
+Although a CSS attribute (e.g. <code>style="direction: ltr"</code>) can also be used to declare text directionality,
+this property of the text is not truly a presentation style, and its use is discouraged by the W3C for this purpose.
+<br />
+<br />
+In summary, use <code>dir=ltr|rtl</code> wherever HTML mark-up is allowed.
+Where it isn't, use LRE/RLE/PDF.
+<br>
+<br>
+<h3>Estimate Directionality When It Isn't Known</h3>
+Typically, directionality of potentially opposite-directionality data is unknown,
+and thus has to be determined by examining the characters of the text.
+It is a fairly cheap task, and is completely deterministic when the text does not mix LTR and RTL characters.
+When the text is mixed, various heuristics can be used to estimate the overall directionality.
+<br>
+<br>
+A few types of text data are always LTR:
+<ul>
+<li>Phone numbers</li>
+<li>Other formatted numbers (leading sign, trailing percent, etc.)</li>
+<li>URLs and paths</li>
+<li>Source code: HTML source, script, etc.</li>
+</ul>
+These should not undergo directionality estimation,
+for fear of erroneously deciding that they are RTL or neutral.
+For example, the result of displaying "http://whatever/א" in RTL is <span dir=rtl>"http://whatever/א"</span>,
+and of "C:\a\" is <span dir=rtl>"C:\a\"</span>.
+<br>
+<br>
+Since HTML mark-up and entities (escape codes) use LTR characters,
+it is important to ignore these when estimating the directionality of HTML excerpts or HTML-escaped text.
+<br />
+<br>
+However, directionality estimation of full-blown HTML is far from perfect.
+Ideally, rich text stored as HTML should declare its own directionality.
+<br />
+<br />
+<h2>Where To Do It</h2>
+Opposite-directionality text typically makes its way into a UI as data to be displayed,
+data whose language the UI does not control.
+This is in contrast to localized content -
+messages localized to the same language as the UI, whatever it may be.
+Perhaps suprisingly, the vast majority of the textual data displayed by a UI can be of the opposite directionality.
+Even if, for example, the database providing the data is known to be all-LTR,
+the same UI code may one day have to support an RTL UI.
+Or, an additional data provider that does provide RTL data may have to be handled.
+It pays to prepare for these eventualities when originally writing the UI code,
+because it is typically a lot more expensive to do it later,
+when it is no longer so clear what is localized and what isn't,
+what has already had its directionality declared and what hasn't.<br>
+<br>
+Directionality should be declared immediately around the opposite-directionality phrase.
+For example, if a Hebrew name is embedded in an English "by &lt;name&gt;" message,
+it is only the name that should be declared as RTL - not the "by".
+<u>Thus, directionality declaration is done at every point where code mixes text data
+of potentially opposite directionality into localized output.</u>
+In HTML, when no element encloses just the opposite-directionality phrase,
+it is necessary to add a <code>&lt;span&gt;</code> or some other element around the phrase
+in order to declare its directionality.
+<br />
+<br />
+If the text is indeed of the opposite directionality, declare it.
+If not, ideally do nothing and keep the output as small and simple as possible.
+<br>
+<br>
+Once a phrase's directionality has been declared, it should be treated as localized output,
+and it - or any string into which it has been inserted - should not need to undergo directionality declaration again.
+<br>
+<br>
+In many ways, the task of declaring directionality is similar to the task of HTML-escaping text before inserting it into HTML.
+The code needs to know what string has been escaped (or is safe HTML), and what string still needs to be escaped.
+The same way, the code needs to know what string is localized and thus does not need directionality declaration,
+and what string is potentially of opposite directionality,
+and must have its directionality declared (if opposite) before being inserted into localized output.
+<br />
+<br />
+Many or most of the points where potentially opposite-directionality text is inserted into localized output occur in templates,
+so template systems are a natural place to add APIs for declaring directionality -
+just as they are a natural place to do HTML escaping.
+<br />
+<br>
+
+</body>
+</html>
