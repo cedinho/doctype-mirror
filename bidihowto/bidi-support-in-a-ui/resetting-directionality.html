@@ -1,0 +1,350 @@
+
+
+
+
+<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head><title>BiDi HowTo: Resetting Directionality</title></head>
+<body>
+<div style="font-style:italic; margin-bottom: -1em; color: green">
+  This document is version-controlled off-site.
+  Any changes made here will be lost when it is next updated.
+</div>
+<h1>
+  <span style="font-size:medium">
+    BiDi HowTo &gt;
+    <a href="../bidi-support-in-a-ui.html">BiDi Support in a UI: What To Do and How To Do It</a>
+  </span>
+  <br>
+  Resetting Directionality
+</h1>
+
+
+
+<h2>The Problem</h2>
+While <a
+href="declaring-opposite-directionality.html"
+>declaring an opposite-directionality phrase</a>
+makes sure that the phrase itself is displayed properly,
+the presence of such a phrase, despite its declaration, may still cause severe garbling of what follows it in-line.
+Fortunately, this kind of garbling, which is also known as spillover,
+only happens when the opposite-directionality text is followed
+(possibly after some intervening neutral characters) by one of just two kinds of characters:
+<br>
+<br>
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse" border="1" bordercolor="#888888" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 250px"></td>
+<td style="width: 250px; padding-left:5px">HTML (for LTR context)</td>
+<td style="width: 310px; padding-left:5px">Intended Result</td>
+<td style="width: 310px; padding-left:5px">Actual Garbled Result</td>
+</tr>
+<tr>
+<td style="font-weight: bold; padding-left:5px">Spillover to Number</td>
+<td style="padding-left:5px"><code>&lt;span dir=rtl&gt;פיקאסו&lt;/span&gt;
+<br />(&lt;a href="..."&gt;3 reviews&lt;/a&gt;)</code></td>
+<td style="padding-left:5px"><span dir=rtl>פיקאסו</span>&lrm; (<a href="#">3 reviews</a>)</td>
+<td style="padding-left:5px"><span dir=rtl>פיקאסו</span><span style="background-color: Yellow">
+(</span><a href="#"><span style="background-color: Yellow">3</span> reviews</a>)</td>
+</tr>
+<tr>
+<td style="font-weight: bold; padding-left:5px">Spillover to Another<br />Opposite-Directionality Phrase</td>
+<td style="padding-left:5px"><code>Documents &amp;gt;
+<br />Hebrew &amp;gt;
+<br />&lt;span dir=rtl&gt;חומש&lt;/span&gt; &amp;gt;
+<br />&lt;span dir=rtl&gt;בראשית&lt;/span&gt;</code></td>
+<td style="padding-left:5px">Documents &gt; Hebrew &gt; <span dir=rtl>חומש</span>&lrm; &gt; <span dir=rtl>בראשית</span></td>
+<td style="padding-left:5px">Documents &gt; Hebrew &gt; <span style="background-color: Yellow"><span dir=rtl>חומש</span> &gt; <span dir=rtl>בראשית</span></span></td>
+</tr>
+</tbody>
+</table>
+<br />
+Spillover happens because the <a target="_blank" href="http://unicode.org/reports/tr9/">Unicode BiDi algorithm</a>
+combines the opposite-directionality phrase
+and the following number or second opposite-directionality phrase
+(as well as any intervening neutral characters like whitespace and punctuation)
+into a single opposite-directionality run.
+When the opposite directionality phrase is not explicitly declared, and thus its actual end is unclear,
+this behaviour makes sense,
+making sure that strings like "February 2008" and "x < x + 1"
+display the same way in an both LTR and RTL contexts
+(instead of as "<span dir=rtl>February&rlm; 2008</span>" and "<span dir=rtl>x&rlm; < x&rlm; + 1</span>" in RTL).
+That this behaviour persists when the extent of the opposite-directionality area is explicitly declared
+appears to be a shortcoming of the algorithm, faithfully reproduced by all known implementations.
+<br />
+<br />
+<h2>What To Do</h2>
+To prevent spillover, directionality must be explicitly reset after the opposite-directionality phrase back to the overall context,
+breaking the opposite-directionality run.
+There are three known ways to do so - but only one works completely reliably:
+<br />
+<br>
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse" border="1" bordercolor="#888888" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 120px; padding-left:5px">Method</td>
+<td style="width: 400px; padding-left:5px">HTML (for LTR context)</td>
+<td style="width: 150px; padding-left:5px">Result</td>
+<td style="width: 300px; padding-left:5px">Works?</td>
+</tr>
+<tr>
+<td style="font-weight:bold; padding-left:5px">LRM|RLM</td>
+<td style="padding-left:5px"><code>&lt;span dir=rtl&gt;פיקאסו&lt;/span&gt;<span style="background-color:Yellow">&amp;lrm;</span>
+<br />(&lt;a href="..."&gt;3 reviews&lt;/a&gt;)</code></td>
+<td style="padding-left:5px"><span dir=rtl>פיקאסו</span>&lrm; (<a href="#">3 reviews</a>)</td>
+<td style="padding-left:5px">Yes, on all known platforms.</td>
+</tr>
+<tr>
+<td style="font-weight:bold; padding-left:5px">Double Wrap</td>
+<td style="padding-left:5px"><code><span style="background-color:Yellow">&lt;span dir=ltr&gt;</span>&lt;span dir=rtl&gt;פיקאסו&lt;/span&gt;<span style="background-color:Yellow">&lt;/span&gt;</span>
+<br />(&lt;a href="..."&gt;3 reviews&lt;/a&gt;)</code></td>
+<td style="padding-left:5px"><span dir=ltr><span dir=rtl>פיקאסו</span></span> (<a href="#">3 reviews</a>)</td>
+<td style="padding-left:5px">Not on Firefox, or Chrome 2 and up, or Safari 4 and up, unless there is a space between the two closing <code>&lt;/span&gt;</code> tags.</td>
+</tr>
+<tr>
+<td style="font-weight:bold; padding-left:5px">Empty Span</td>
+<td style="padding-left:5px"><code>&lt;span dir=rtl&gt;פיקאסו&lt;/span&gt;<span style="background-color:Yellow">&lt;span dir=ltr&gt;&lt;/span&gt;</span>
+<br />(&lt;a href="..."&gt;3 reviews&lt;/a&gt;)</code></td>
+<td style="padding-left:5px"><span dir=rtl>פיקאסו</span><span dir=ltr></span> (<a href="#">3 reviews</a>)</td>
+<td style="padding-left:5px">Only when there is an intervening neutral character,
+and not on IE below version 7 or FF below version 3.</td>
+</tr>
+</tbody>
+</table>
+<br />
+The reliable method consists of placing an LRM character ("left-to-right mark", U+200E)
+after an RTL phrase in an LTR context,
+and RLM ("right-to-left mark", U+200F) after an LTR phrase in an RTL context.
+These are simply zero-width characters with strong directionality, like an invisible A and א, respectively.
+<br />
+<br />
+Why look for more methods when we have one that works reliably and takes the least space possible?
+Because using LRM and RLM characters has some <b style="font-weight: bold">mildly undesirable side-effects</b>
+that we would prefer to avoid.
+Although we do use LRM and RLM to reset directionality for lack of a reliable alternative,
+it is important to at least avoid putting them in when they are unnecessary.
+At the very minimum, a page that is entirely LTR should not contain any LRM or RLM characters.
+<br />
+<br />
+<h2>When To Do It</h2>
+Spillover happens when all of the following come together:
+<ul>
+<li>
+<b>An opposite-directionality phrase</b>.
+As we have seen, declaring an opposite-directionality phrase does not prevent spillover.
+In fact, once a phrase has been declared to be of opposite directionality,
+it will cause spillover even if it actually ends in a character of the outside directionality.
+But neither is declaration required for spillover to happen.
+Thus, even if the phrase is overall of the same directionality as the outside,
+and thus does not need to be declared, it will still cause spillover if it happens to end in an opposite-directionality character.
+As a result, to determine whether reset is needed after a phrase of unknown directionality,
+we must not only check and declare its overall directionality,
+but also its <i>exit directionality</i> - the directionality of its last strongly-directional character.
+For example, the Hebrew sentence "<span dir=rtl>מצתרפים למהפכת ה-HTML!</span>" happens to end in LTR characters,
+and can cause spillover when inserted into a Hebrew UI (where it does not need declaration).
+It can also cause spillover in an English UI, even though it ends in LTR characters,
+because it would be declared as RTL overall.
+Thus, it needs directionality reset in both contexts!
+As a result of this complexity,
+one is often tempted to take it easy
+and reset directionality after every unknown-directionality string,
+regardless of its overall or exit directionality.
+Unfortunately, this leads to LRM characters appearing needlessly in all-LTR pages,
+something we want to avoid.
+The bottom line is that reset should only be done when either the overall or the exit directionality of a string
+is opposite to the context.
+</li>
+<li>
+<b>Followed by a number or another opposite-directionality phrase</b>
+(possibly after some intervening neutral characters).
+In practice, it is often difficult to know a-priori what kind of characters are going to follow
+the opposite-directionality text.
+Punctuation and whitespace, being neutral, are immaterial.
+If what comes after that is localized text,
+it could begin with a term that does not get translated, e.g. "HTML",
+and thus can be of opposite directionality.
+Or, it could begin with a number, even though in English the number might only occur later.
+And if what comes after is another string of unknown directionality,
+this may or may not turn out to be of opposite directionality - or start with a number.
+It is thus best to ignore this condition when deciding whether reset is needed.
+</li>
+<li>
+<b>Within the same "paragraph"</b>.
+Spillover does not cross from one "paragraph" to another.
+In HTML, a "paragraph" is any block element,
+e.g. <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;td&gt;</code>, etc. -
+unless it has been made inline by the <code>display:inline</code> style.
+Thus, there is no spillover problem in
+"<code>&lt;div&gt;1. His name is אהרון&lt;/div&gt;&lt;div&gt;2. אהרון is his name&lt;/div&gt;</code>".
+Note, however, that this does <i>not</i> mean that spillover is stopped
+by an <i>embedded</i> block element
+or a line-breaking element like <code>&lt;br&gt;</code> or <code>&lt;hr&gt;</code>
+(which are not even considered to be block elements).
+These stop spillover in IE and WebKit, but not in Forefox or Opera.
+Thus, there <i>is</i> a spillover problem with "<code>1. His name is אהרון&lt;br&gt;2. אהרון is his name</code>"
+and even with "<code>1. His name is אהרון&lt;div&gt;&lt;/div&gt;2. אהרון is his name</code>".
+</li>
+</ul>
+LTR (usually English) words occur surprisingly frequently in localized RTL boilerplate,
+where one normally would not expect them.
+Examples include brands like "Google", technical acronyms like "HTTP" and "KB", URLs, and so on.
+Often enough, these are the last words in the phrase and can thus cause spillover in what follows them.
+It is thus sometimes necessary to reset directionality after localized boilerplate,
+not just arbitrary-directionality data.
+<br />
+<br />
+An important note of caution:
+two (or more) successive strings sometimes are - and sometimes aren't -
+a single logical entity,
+and as such must <i>not</i> be broken up by a reset.
+For example, in the following UI, the person's name and favorite programming language
+are two logically separate entities
+that require reset between them as described above
+so that they are displayed in a consistent order:
+<br />
+<br />
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse" border="1" bordercolor="#888888" cellspacing="0">
+<tbody>
+<tr>
+<td></td>
+<td style="text-align: center">HTML (for RTL context)</td>
+<td style="text-align: center">Result</td>
+</tr>
+<tr>
+<td style="padding:5px; font-weight: bold">Good (Reset)</td>
+<td style="padding:5px; vertical-align: middle">
+<code>
+&lt;li&gt;&lt;b&gt;דוד כהן&lt;/b&gt; - Cobol&lt;/li&gt;
+<br />
+&lt;li&gt;&lt;b&gt;John Doe<span style="background-color: Yellow">&amp;rlm;</span>&lt;/b&gt; - Fortran&lt;/li&gt;
+</code>
+</td>
+<td dir=rtl style="padding: 0px 0px 0px 15px; text-align: right">
+<ul>
+<li><b>דוד כהן</b> - Cobol</li>
+<li><b>John Doe</b>&rlm; - Fortran</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding:5px; font-weight: bold">Bad (No Reset)</td>
+<td style="padding:5px; vertical-align: middle">
+<code>
+&lt;li&gt;&lt;b&gt;דוד כהן&lt;/b&gt; - Cobol&lt;/li&gt;
+<br />
+&lt;li&gt;&lt;b&gt;John Doe&lt;/b&gt; - Fortran&lt;/li&gt;
+</code>
+</td>
+<td dir=rtl style="padding: 0px 0px 0px 15px; text-align: right">
+<ul>
+<li><b>דוד כהן</b> - Cobol</li>
+<li><b>John Doe</b><span style="background-color: Yellow"> - Fortran</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+On the other hand, you do <i>not</i> want to reset directionality between the first and last names
+when these happen to be given as separate values, since there is no logical break between them:
+<br />
+<br />
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse" border="1" bordercolor="#888888" cellspacing="0">
+<tbody>
+<tr>
+<td></td>
+<td style="text-align: center">HTML (for RTL context)</td>
+<td style="text-align: center">Result</td>
+</tr>
+<tr>
+<td style="padding:5px; font-weight: bold">Good (single entity)</td>
+<td style="padding:5px; vertical-align: middle">
+<code>
+&lt;li&gt;דוד כהן&lt;/li&gt;
+<br />
+&lt;li&gt;John Doe&lt;/li&gt;
+</code>
+</td>
+<td dir=rtl style="padding: 0px 0px 0px 15px; text-align: right">
+<ul>
+<li>דוד כהן</li>
+<li>John Doe</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="padding:5px; font-weight: bold">Bad (two entities with reset between them)</td>
+<td style="padding:5px; vertical-align: middle">
+<code>
+&lt;li&gt;דוד כהן&lt;/li&gt;
+<br />
+&lt;li&gt;John<span style="background-color: Yellow">&amp;rlm;</span> Doe&lt;/li&gt;
+</code>
+</td>
+<td dir=rtl style="padding: 0px 0px 0px 15px; text-align: right">
+<ul>
+<li>דוד כהן</li>
+<li>John&rlm;<span style="background-color: Yellow"> Doe</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+(For clarity, the <code>&lt;span dir=ltr&gt;</code>'s have been omitted in the two examples above.
+They would not have made any difference in the result anyway.)
+<br />
+<br />
+Differentiating between the two situations is not always easy,
+and is sometimes more of a judgement call.
+It is not whether the two strings are instrinsically separate entities or parts of a single one,
+but how the UI layout, e.g. style and punctuation, seems to want to show them.
+<br />
+<br />
+When the two strings are a single logical entity, the preferable solution is to process them as a single entity,
+not to simply omit the reset between them.
+This not only save the bytes of a second a <code>&lt;span dir=...&gt;</code>,
+but prevents garbling when punctuation (like parentheses or quotes) surrounds the second string
+without being included in its <code>&lt;span dir=...&gt;</code>.
+Thus, we still recommend resetting directionality after every opposite-directionality string
+(possibly except when it is at the end of a "paragraph");
+the trick is combining a sequence of opposite-directionality strings that are really a single logical entity
+into a single opposite-directionality string.
+<br />
+<br>
+<h2>Toolkit</h2>
+The following APIs are useful for resetting directionality;
+many of these also <a
+href="declaring-opposite-directionality.html"
+>declare directionality</a>:
+<ul>
+  <li>Template systems</li>
+  <ul>
+    <li><a target="_blank" href="http://code.google.com/closure/templates/docs/bidi_support.html">Closure Templates</a></li>
+    <ul>
+      <li>|bidiSpanWrap, |bidiUnicodeWrap - declare and reset directionality</li>
+      <li>bidiMarkAfter - emits directionality reset if the input parameter needs it; input is <i>not</i> emitted</li>
+    </ul>
+  </ul>
+  <li>JavaScript</li>
+  <ul>
+    <li><a target="_blank"
+      href="http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/i18n/bidiformatter.js"
+      >BiDi String Formatter</a></li>
+    <ul>
+      <li>spanWrap, spanWrapWithKnownDir, unicodeWrap, unicodeWrapWithKnownDir - declare and reset directionality</li>
+      <li>markAfter - emits directionality reset if the input parameter needs it; input is <i>not</i> emitted</li>
+    </ul>
+    <li>Closure's <a target="_blank"
+        href="http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/i18n/bidi.js"
+        >goog.i18n.bidi</a></li>
+    <ul>
+      <li>endsWithLtr, endsWithRtl - detect exit directionality</li>
+    </ul>
+  </ul>
+</ul>
+</body>
+</html>
+

@@ -1,0 +1,215 @@
+
+
+
+
+<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head><title>BiDi HowTo: Declaring Page Directionality</title></head>
+<body>
+<div style="font-style:italic; margin-bottom: -1em; color: green">
+  This document is version-controlled off-site.
+  Any changes made here will be lost when it is next updated.
+</div>
+<h1>
+  <span style="font-size:medium">
+    BiDi HowTo &gt;
+    <a href="../bidi-support-in-a-ui.html">BiDi Support in a UI: What To Do and How To Do It</a>
+  </span>
+  <br>
+  Declaring Page Directionality
+</h1>
+
+
+
+<h2>The Problem</h2>
+Simply translating the text of a document into an RTL language does not make it an RTL document.
+As long as the document still has LTR directionality, which is the default,
+it will have the following LTR properties:
+<ul>
+<li>
+Lines will be left-aligned by default.
+</li>
+<li>
+Table columns will be arranged left-to-right.
+</li>
+<li>
+Any "neutral" items - punctuation, images, inputs, etc. -
+at the beginning of a line will be placed at its left end,
+while those at the end will be placed on the right,
+garbling the line.
+</li>
+</ul>
+Here is an example:
+<br />
+<br />
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse;" border="1" bordercolor="#888888" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 200px; height: 35px; text-align: center; font-weight:bold">Intended RTL Page...</td>
+<td style="width: 200px; height: 35px; text-align: center; font-weight:bold">...Garbled as LTR</td>
+</tr>
+<tr>
+<td dir=rtl style="padding:10px">
+המשתתפים:
+<br />
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse;" border="1" bordercolor="#888888" cellspacing="0">
+<tbody>
+<tr>
+<td style="font-weight:bold">שם</td>
+<td style="font-weight:bold">טל'</td>
+</tr>
+<tr>
+<td>דוד</td>
+<td>123-4567</td>
+</tr>
+<tr>
+<td>חני</td>
+<td>234-5678</td>
+</tr>
+<tr>
+<td>שושי</td>
+<td>345-6789</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="padding:10px">
+המשתתפים:
+<br />
+<table style="border-color: rgb(136, 136, 136); border-width: 1px; border-collapse: collapse;" border="1" bordercolor="#888888" cellspacing="0">
+<tbody>
+<tr>
+<td style="font-weight:bold">שם</td>
+<td style="font-weight:bold">טל'</td>
+</tr>
+<tr>
+<td>דוד</td>
+<td>123-4567</td>
+</tr>
+<tr>
+<td>חני</td>
+<td>234-5678</td>
+</tr>
+<tr>
+<td>שושי</td>
+<td>345-6789</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+The result is a thoroughly broken document:
+just like RTL text is supposed to flow right-to-left,
+the overall layout of a document in an RTL language is supposed to flow right-to-left.
+Generally, an item that "belongs" on the left side of an LTR page
+belongs on the right in an RTL page, and vice-versa;
+the page is supposed to be "mirrored".
+Nevertheless, to someone who does not read the language,
+it looks no worse than any other foreign language page.
+In fact it looks less foreign than in its correct RTL directionality!
+This makes this problem a suprisingly common occurrence even in production pages.
+<br />
+<br />
+<h2>What To Do</h2>
+For an RTL HTML page, page directionality must be explicitly declared:
+<code>&lt;body dir=rtl&gt;</code>.
+Since the directionality of an element by default propagates to all its descendants,
+this will:
+<ul>
+<li>Make text throughout the page right-aligned by default.</li>
+<li>Lay out table columns right-to-left.</li>
+<li>Lay out the neutral items like images and punctuation at the beginning of a block element on the right and those at the end on the left.</li>
+</ul>
+This goes a long way towards mirroring the page's layout.
+Note, however, that the page's CSS and <code>align</code> attributes
+may still contain many absolute "left" and "right" instructions,
+each of which must be mirrored separately.
+Similarly, "handed" images that somehow point left or right will point the wrong way in the new layout,
+and must therefore be flipped.
+And changing the page's directionality to RTL will also make RTL some things that need to stay LTR,
+e.g. formatted numbers.
+Thus, mirroring a page typically involves a number of steps beyond setting its overall directionality,
+but it's a good start.
+<br />
+<br />
+The <code>dir=rtl</code> will have very similar effects when applied at any of three different levels:
+<ul>
+<li>
+<code>&lt;body dir=rtl&gt;</code> -
+The usual approach.
+In IE (and only in IE) will put the page's scrollbar on the left.</li>
+<li>
+<code>&lt;body&gt;&lt;div dir=rtl&gt;</code>...<code>&lt;/div&gt;&lt;/body&gt;</code> -
+same as <code>&lt;body dir=rtl&gt;</code>, but will leave the page's scrollbar in its usual place.
+</li>
+<li>
+<code>&lt;html dir=rtl&gt;</code> -
+same as <code>&lt;body dir=rtl&gt;</code>, but, in principle, should also apply to the <code>&lt;head&gt;</code>,
+including the <code>title</code>.
+Unfortunately, this is <i>not</i> the case in all current browsers (IE8, Forefox 3.5, Chrome 3, etc.),
+and it has exactly the same effect as <code>&lt;body dir=rtl&gt;</code>.
+This should hopefully change in future browser versions.
+</li>
+</ul>
+As mentioned above, setting the page's directionality does <i>not</i> set it for the page's <code>title</code> element.
+Neither does it affect the dialogs produced by the page's script (e.g. the <code>alert</code> and <code>confirm</code> JavaScript functions).
+Instead, the title and dialogs appear in the operating system's directionality context, which may be either LTR or RTL,
+and which the page has no way to control or even determine.
+As a result, these are often garbled when RTL,
+unless explicitly declared as such using Unicode formatting characters
+(see <a target="_blank"
+href="declaring-opposite-directionality.html"
+>Declaring Opposite Directionality</a>).
+Although in principle the same is true for LTR titles and dialogs when the operating system's directionality context is RTL,
+it is important <i>not</i> to use Unicode formatting characters for them in an LTR page,
+since most LTR systems will erroneously display these characters.
+(This is not a concern for RTL pages because their RTL titles and dialogs will not be displayed directly by such LTR systems anyway.)
+Thus, it is best to assume that the context for titles and dialogs is always LTR.
+<br />
+<br />
+<h2>When To Do It</h2>
+You must declare a document to have RTL directionality when it is, overall, in an RTL language.
+Many platforms have APIs that, given a language code or locale object, return its directionality.
+It is unnecessary to declare LTR directionality, since it is the default.
+<br />
+<br />
+<h2>Toolkit</h2>
+The following APIs are useful for determining and declaring page directionality:
+<ul>
+  <li>Template systems</li>
+  <ul>
+    <li><a target="_blank" href="http://code.google.com/closure/templates/docs/bidi_support.html">Closure Templates</a></li>
+    <ul>
+      <li>bidiGlobalDir() < 0 - condition checking whether the page locale is RTL</li>
+      <li>{bidiGlobalDir() < 0 ? 'dir=rtl' : ''} - evaluates to <code>dir=rtl</code> for an RTL locale page, empty string otherwise</li>
+    </ul>
+  </ul>
+  <li>GWT</li>
+  <ul>
+    <li>GWT automatically mirrors page layout for RTL locales, including setting the page directionality
+    </li>
+    <li>
+      Use
+      <a target="_blank"
+         href="http://google-web-toolkit.googlecode.com/svn/javadoc/1.6/com/google/gwt/i18n/client/LocaleInfo.html"
+      >com.google.gwt.i18n.client.LocaleInfo</a>'s
+      <code>getCurrentLocale().isRTL()</code> to determine whether the current locale is RTL.
+    </li>
+  </ul>
+  <li>JavaScript</li>
+  <ul>
+    <li>Closure's <a target="_blank"
+      href="http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/i18n/bidi.js"
+      >goog.i18n.bidi</a></li>
+    <ul>
+      <li>isRtlLanguage - whether a language is RTL</li>
+    </ul>
+  </ul>
+</ul>
+
+</body>
+</html>

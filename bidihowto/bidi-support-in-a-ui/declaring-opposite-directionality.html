@@ -14,7 +14,7 @@
 <h1>
   <span style="font-size:medium">
     BiDi HowTo &gt;
-    <a href="..">BiDi Support in a UI: What To Do and How To Do It</a>
+    <a href="../bidi-support-in-a-ui.html">BiDi Support in a UI: What To Do and How To Do It</a>
   </span>
   <br>
   Declaring Opposite Directionality
@@ -108,7 +108,7 @@ This happens because internally, all the text is stored in <i>logical</i> order,
 The visual layout -
 whether the next character or word goes to the left or right of the one before it,
 and the glyphs used for directional punctuation such as parentheses -
-is a function of the standard <a href="http://unicode.org/reports/tr9/">Unicode BiDi algorithm</a>,
+is a function of the standard <a target="_blank" href="http://unicode.org/reports/tr9/">Unicode BiDi algorithm</a>,
 as implemented by browsers and other platforms.
 To get good results, this algorithm uses not only the innate, well-defined directionality of specific characters,
 but also metadata:
@@ -123,34 +123,45 @@ in the cases above it simply can't.
 The directionality of all opposite-directionality phrases needs to be explicitly declared.
 <br />
 <br />
-One way to declare directionality is to use Unicode formatting characters:
+In HTML, the usual way to declare directionality is with the dir attribute,
+e.g. <code>&lt;span <b>dir=ltr</b>&gt;Hello world!&lt;/span&gt;</code>.
+It is also the right way to do it.
+Although a CSS attribute (e.g. <code>style="direction: ltr"</code>) can also be used to declare text directionality,
+this property of the text is not purely decorative in function,
+and its use is <a target="_blank" href="http://www.w3.org/International/questions/qa-bidi-css-markup">discouraged by the W3C</a>
+for this purpose.
+<br />
+<br />
+However, there are places in an HTML document, like inside the <code>&lt;title&gt;</code> and <code>&lt;option&gt;</code> elements,
+that mark-up is not allowed and directionality can not be declared using the methods above.
+Here, as in plain text documents, the only way to do it is using Unicode formatting characters:
 either LRE ("left-to-right embedding", U+202A) or RLE ("right-to-left embedding", U+202B)
-at the beginning of the opposite-directionality phrase and PDF ("pop directional formatting", U+202C) at the end,
+at the beginning of the opposite-directionality phrase,
+and PDF ("pop directional formatting", U+202C) at the end,
 e.g. <code><b>\u202A</b>Hello world!<b>\u202C</b></code>.
-In a plain-text environment, this is the only way to declare directionality.
 <br>
 <br>
-Another set of Unicode formatting characters, LRM ("left-to-right mark", U+200E) and RLM ("right-to-left mark", U+200F),
-can also fix many of the garbles above.
+LRE/RLE/PDF currently also work elsewhere in an HTML document,
+but their use is <a target="_blank" href="http://www.w3.org/International/questions/qa-bidi-controls.en.php">highly discouraged</a> by the W3C
+except where mark-up is not allowed.
+It is especially problematic <i>around</i> mark-up, or when not properly balanced.
+In the future, browsers may start ignoring LRE/RLE/PDF in inappropriate contexts.
+<br>
+<br>
+In addition to LRE/RLE/PDF, another couple of Unicode formatting characters,
+LRM ("left-to-right mark", U+200E) and RLM ("right-to-left mark", U+200F),
+can also be used to fix many of the garbles above.
 However, they do <i>not</i> declare directionality.
 They are simply zero-width characters with strong directionality, like an invisible A or א,
 and putting one of them at the beginning and end of a phrase (according to the phrase's directionality)
 means there can be no leading or trailing punctuation or numbers, and thus fixes those garbles.
 However, they do <i>not</i> fix the "embedded opposite" garble.
-Although LRM and RLM are useful for <span href="resetting-directionality">another purpose</span>,
+Although LRM and RLM are useful for <a target="_blank"
+    href="resetting-directionality.html"
+>another purpose</a>,
 directionality declaration in a plain-text environment should be done with LRE/RLE/PDF, not LRM/RLM.
 <br>
 <br>
-In HTML, the right way to declare directionality is with the dir attribute,
-e.g. <code>&lt;span <b>dir=ltr</b>&gt;Hello world!&lt;/span&gt;</code>, not Unicode formatting characters.
-The W3C highly deprecates using LRE/RLE/PDF to declare directionality in HTML documents.
-The only exception is places where mark-up is not allowed,
-e.g. inside the &lt;title&gt; and &lt;option&gt; elements.<br>
-<br>
-Although a CSS attribute (e.g. <code>style="direction: ltr"</code>) can also be used to declare text directionality,
-this property of the text is not truly a presentation style, and its use is discouraged by the W3C for this purpose.
-<br />
-<br />
 In summary, use <code>dir=ltr|rtl</code> wherever HTML mark-up is allowed.
 Where it isn't, use LRE/RLE/PDF.
 <br>
@@ -166,7 +177,7 @@ A few types of text data are always LTR:
 <ul>
 <li>Phone numbers</li>
 <li>Other formatted numbers (leading sign, trailing percent, etc.)</li>
-<li>URLs and paths</li>
+<li>URLs, paths, filenames, domain names, e-mail addresses, etc.</li>
 <li>Source code: HTML source, script, etc.</li>
 </ul>
 These should not undergo directionality estimation,
@@ -183,12 +194,16 @@ However, directionality estimation of full-blown HTML is far from perfect.
 Ideally, rich text stored as HTML should declare its own directionality.
 <br />
 <br />
-<h2>Where To Do It</h2>
+<h2>When To Do It</h2>
 Opposite-directionality text typically makes its way into a UI as data to be displayed,
 data whose language the UI does not control.
 This is in contrast to localized content -
 messages localized to the same language as the UI, whatever it may be.
-Perhaps suprisingly, the vast majority of the textual data displayed by a UI can be of the opposite directionality.
+Nevertheless, sometimes one does encounter "localized" boilerplate of opposite directionality (thus needing declaration),
+for example "&copy; Copyright ..." notices in an RTL UI.
+<br>
+<br>
+Perhaps suprisingly, most of the textual data displayed by a UI can be of the opposite directionality.
 Even if, for example, the database providing the data is known to be all-LTR,
 the same UI code may one day have to support an RTL UI.
 Or, an additional data provider that does provide RTL data may have to be handled.
@@ -227,6 +242,67 @@ so template systems are a natural place to add APIs for declaring directionality
 just as they are a natural place to do HTML escaping.
 <br />
 <br>
+<h2>Toolkit</h2>
+The following APIs are useful for estimating and/or declaring directionality.
+<ul>
+  <li>Template systems</li>
+  <ul>
+    <li><a target="_blank" href="http://code.google.com/closure/templates/docs/bidi_support.html">Closure Templates</a></li>
+    <ul>
+      <li>bidiDirAttr - estimates directionality and returns <code>dir=ltr|rtl</code></li>
+      <li>|bidiSpanWrap - estimates directionality and wraps in <code>&lt;span dir=ltr|rtl&gt;</code></li>
+      <li>|bidiUnicodeWrap - estimates directionality and wraps in LRE|RLE and PDF</li>
+      <li>bidiTextDir - returns estimated directionality</li>
+      <li>bidiGlobalDir - returns locale directionality</li>
+    </ul>
+  </ul>
+  <li>GWT</li>
+  <ul>
+    <li>
+      Several widgets (including TextBox, Label, InlineLabel, etc.) implement the
+      <a target="_blank"
+         href="http://google-web-toolkit.googlecode.com/svn/javadoc/1.6/com/google/gwt/i18n/client/HasDirection.html"
+         >com.google.gwt.i18n.client.HasDirection</a>
+      interface, which allows controlling their directionality.
+    </li>
+  </ul>
+  <li>JavaScript</li>
+  <ul>
+    <li><a target="_blank"
+      href="http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/i18n/bidiformatter.js"
+      >BiDi String Formatter</a></li>
+    <ul>
+      <li>spanWrap - estimates directionality and wraps in <code>&lt;span dir=ltr|rtl&gt;</code>
+        plus <a target="_blank"
+          href="resetting-directionality.html"
+        >directionality reset</a></li>
+      <li>spanWrapWithKnownDir - wraps in <code>&lt;span dir=ltr|rtl&gt;</code>
+        plus <a target="_blank"
+          href="resetting-directionality.html"
+        >directionality reset</a></li>
+      <li>unicodeWrap - estimates directionality and wraps in LRE|RLE and PDF
+        plus <a target="_blank"
+          href="resetting-directionality.html"
+        >directionality reset</a></li>
+      <li>unicodeWrapWithKnownDir - wraps in LRE|RLE and PDF
+        plus <a target="_blank"
+          href="resetting-directionality.html"
+        >directionality reset</a></li>
+      <li>dirAttr - estimates directionality and returns <code>dir=ltr|rtl</code></li>
+      <li>knownDirAttr - returns <code>dir=ltr|rtl</code> using given directionality</li>
+      <li>estimateDirection - returns estimated directionality</li>
+      <li>getContextDir - returns context directionality</li>
+    </ul>
+    <li>Closure's <a target="_blank"
+      href="http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/i18n/bidi.js"
+      >goog.i18n.bidi</a></li>
+    <ul>
+      <li>estimateDirection - returns estimated directionality</li>
+      <li>hasAnyRtl - returns estimated directionality by simpler algorithm (are any characters RTL?)</li>
+      <li>isRtlLanguage - checks directionality of language code (currently simple two-letter codes only)</li>
+    </ul>
+  </ul>
+</ul>
 
 </body>
 </html>

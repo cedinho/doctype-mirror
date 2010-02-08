@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+<head><title>BiDi HowTo: APIs and Tools</title></head>
+<body>
+<div style="font-style:italic; margin-bottom: -1em; color: green">
+  This document is version-controlled off-site.
+  Any changes made here will be lost when it is next updated.
+</div>
+<h1>
+  <span style="font-size:medium">
+    BiDi HowTo &gt;
+    <a href="../bidi-support-in-a-ui.html">BiDi Support in a UI: What To Do and How To Do It</a>
+  </span>
+  <br>
+  APIs and Tools
+</h1>
+
+
+
+The following is a list of
+APIs and tools useful for implementing BiDi support.
+<br />
+<h2>Template Systems</h2>
+<ul>
+  <li><a target="_blank" href="http://code.google.com/closure/templates/docs/bidi_support.html">Closure Templates</a></li>
+</ul>
+<h2>GWT</h2>
+<ul>
+  <li>GWT automatically mirrors page layout for RTL locales (try
+    the <a target="_blank" href="http://gwt.google.com/samples/Showcase/Showcase.html">Showcase</a>
+    in Arabic)<br>
+  </li>
+  <li>
+    Use <a target="_blank" href="http://google-web-toolkit.googlecode.com/svn/javadoc/1.6/com/google/gwt/i18n/client/LocaleInfo.html">com.google.gwt.i18n.client.LocaleInfo</a>'s
+    <code>getCurrentLocale().isRTL()</code> to determine whether the current locale is RTL.
+  </li>
+  <li>com.google.gwt.resources.client.CssResource mirrors the CSS in an RTL locale.</li>
+  <li>com.google.gwt.resources.client.ImageResource flips images with the @ImageOptions(flipRtl = true) annotation in an RTL locale.</li>
+  <li>
+    Several widgets (including TextBox, Label, InlineLabel, etc.) implement the
+    <a target="_blank" href="http://google-web-toolkit.googlecode.com/svn/javadoc/1.6/com/google/gwt/i18n/client/HasDirection.html">com.google.gwt.i18n.client.HasDirection</a>
+    interface, which allows controlling their directionality.
+  </li>
+</ul>
+<h2>JavaScript</h2>
+<ul>
+  <li>Closure's <a target="_blank"
+    href="http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/i18n/bidiformatter.js"
+    >goog.i18n.BidiFormatter</a> does directionality estimation,
+    declaration, and reset, as well as style mirroring.</li>
+  <li>Closure's <a target="_blank"
+    href="http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/i18n/bidi.js"
+    >goog.i18n.bidi</a> has functions
+    for directionality estimation as well as style mirroring and other useful stuff.</li>
+  <li>Closure's <a target="_blank"
+    href="http://code.google.com/p/closure-library/source/browse/trunk/closure/goog/ui/bidiinput.js"
+    >goog.ui.BidiInput</a> is a text input widget that includes directionality auto-detection,
+    adjusting its directionality as the user enters text.<br>
+  </li>
+  <li>Many of Closure's goog.ui widgets support BiDi, including:
+    Button,
+    Component,
+    Container,
+    BasicMenu,
+    Popup,
+    SubMenu,
+    Toolbar,
+    ToolbarButton.
+  </li>
+</ul>
+<h2>
+  Tools</h2>
+<ul>
+  <li>Use <a target="_blank" href="http://code.google.com/p/cssjanus/">CSSJanus</a>
+    to mirror CSS files developed for LTR pages for use in RTL pages.</li>
+</ul>
+
+</body>
+</html>
